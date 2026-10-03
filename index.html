@@ -25,16 +25,18 @@
     </div>
   </div>
 
-  <div id="footerBar" class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 px-4 py-3 shadow-lg">
+  <!-- 底部固定循环播放控制器 -->
+  <div id="footerBar" class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 px-3 py-3 shadow-lg z-50">
     <div class="max-w-lg mx-auto flex items-center justify-between gap-2">
       <div class="flex-1 truncate">
         <span id="currentTag" class="bg-blue-600 text-white text-[11px] px-1.5 py-0.5 rounded font-bold mr-1">句 1</span>
-        <span id="currentJp" class="text-xs font-medium text-slate-700 truncate inline-block max-w-[170px] align-middle">准备就绪</span>
+        <span id="currentJp" class="text-xs font-medium text-slate-700 truncate inline-block max-w-[130px] align-middle">准备就绪</span>
       </div>
       <div class="flex items-center gap-1.5 shrink-0">
-        <button id="prevBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-lg text-xs font-bold">◀ 上句</button>
-        <button id="repeatBtn" class="bg-emerald-600 active:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm">🔁 单句循环</button>
-        <button id="nextBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-lg text-xs font-bold">下句 ▶</button>
+        <button id="prevBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">◀ 上句</button>
+        <button id="playPauseBtn" class="bg-amber-500 active:bg-amber-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm">⏸ 暂停</button>
+        <button id="repeatBtn" class="bg-emerald-600 active:bg-emerald-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm">🔁 单句循环</button>
+        <button id="nextBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">下句 ▶</button>
       </div>
     </div>
   </div>
@@ -48,6 +50,7 @@
     const currentTag = document.getElementById('currentTag');
     const currentJp = document.getElementById('currentJp');
     const courseSelect = document.getElementById('courseSelect');
+    const playPauseBtn = document.getElementById('playPauseBtn');
 
     async function loadLesson(lessonName) {
       try {
@@ -56,7 +59,7 @@
         const res = await fetch(`lessons/${lessonName}.json`);
         sentences = await res.json();
         renderList();
-        if (sentences.length > 0) selectSentence(0);
+        if (sentences.length > 0) selectSentence(0, false);
       } catch (err) {
         listContainer.innerHTML = '<div class="text-center py-10 text-rose-500 text-sm">加载课件失败，请确认 lessons 文件夹下是否有对应文件！</div>';
       }
@@ -76,12 +79,12 @@
           <div class="text-base text-slate-900 font-medium leading-relaxed">${item.jp}</div>
           ${item.cn ? `<div class="text-xs text-slate-500 mt-1 pt-1 border-t border-slate-100">${item.cn}</div>` : ''}
         `;
-        card.onclick = () => selectSentence(idx);
+        card.onclick = () => selectSentence(idx, true);
         listContainer.appendChild(card);
       });
     }
 
-    function selectSentence(index) {
+    function selectSentence(index, autoPlay = true) {
       if (index < 0 || index >= sentences.length) return;
       currentIndex = index;
       const s = sentences[currentIndex];
@@ -98,7 +101,9 @@
       });
 
       player.currentTime = s.start;
-      player.play();
+      if (autoPlay) {
+        player.play();
+      }
     }
 
     player.ontimeupdate = () => {
@@ -111,8 +116,20 @@
       }
     };
 
-    document.getElementById('prevBtn').onclick = () => selectSentence(currentIndex - 1);
-    document.getElementById('nextBtn').onclick = () => selectSentence(currentIndex + 1);
+    player.onplay = () => { playPauseBtn.textContent = '⏸ 暂停'; };
+    player.onpause = () => { playPauseBtn.textContent = '▶ 播放'; };
+
+    playPauseBtn.onclick = () => {
+      if (player.paused) {
+        if (currentIndex === -1 && sentences.length > 0) selectSentence(0, true);
+        else player.play();
+      } else {
+        player.pause();
+      }
+    };
+
+    document.getElementById('prevBtn').onclick = () => selectSentence(currentIndex - 1, true);
+    document.getElementById('nextBtn').onclick = () => selectSentence(currentIndex + 1, true);
     document.getElementById('repeatBtn').onclick = () => {
       if (currentIndex !== -1) {
         player.currentTime = sentences[currentIndex].start;
