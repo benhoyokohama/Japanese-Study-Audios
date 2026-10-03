@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "start": 2.37,
+    "end": 6.81,
+    "jp": "auミニッツストアはほぼすべての<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>無人<rt>むじん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>っています。",
+    "cn": "au Minute Store几乎所有的操作都是无人进行的。"
+  },
+  {
+    "id": 2,
+    "start": 6.81,
+    "end": 18.66,
+    "jp": "<ruby>客<rt>きゃく</rt></ruby>がスマホのアプリで<ruby>注文<rt>ちゅうもん</rt></ruby>すると、<ruby>店<rt>みせ</rt></ruby>のロボットやセンサーが<ruby>食品<rt>しょくひん</rt></ruby>や<ruby>日用品<rt>にちようひん</rt></ruby>などを<ruby>選<rt>えら</rt></ruby>んで<ruby>集<rt>あつ</rt></ruby>め、<ruby>受取口<rt>うけとりぐち</rt></ruby>まで<ruby>運<rt>はこ</rt></ruby>んで<ruby>袋<rt>ふくろ</rt></ruby>に<ruby>詰<rt>つ</rt></ruby>めてくれます。",
+    "cn": "顾客用手机App下单后，店内的机器人和传感器就会挑选并收集食品和日用品等，运送到取货口并装袋。"
+  },
+  {
+    "id": 3,
+    "start": 18.66,
+    "end": 27.67,
+    "jp": "<ruby>扱<rt>あつか</rt></ruby>っている<ruby>商品<rt>しょうひん</rt></ruby>はローソンやコストコのおよそ70<ruby>品目<rt>ひんもく</rt></ruby>で、<ruby>自宅<rt>じたく</rt></ruby>などへの<ruby>配送<rt>はいそう</rt></ruby>も<ruby>可能<rt>かのう</rt></ruby>だということです。",
+    "cn": "经营的商品包括罗森和Costco的大约70种品类，据悉还可以配送至家中等地点。"
+  },
+  {
+    "id": 4,
+    "start": 27.67,
+    "end": 33.16,
+    "jp": "<ruby>小売り<rt>こうり</rt></ruby><ruby>業界<rt>ぎょうかい</rt></ruby>では<ruby>自動化<rt>じどうか</rt></ruby>や<ruby>無人化<rt>むじんか</rt></ruby>が<ruby>進<rt>すす</rt></ruby>んでいます。",
+    "cn": "零售行业正在推进自动化和无人化。"
+  }
+]
