@@ -207,7 +207,8 @@
       }
     }
 
-    function toggleAnalysis(id) {
+    function toggleAnalysis(event, id) {
+      if (event) event.stopPropagation();
       const el = document.getElementById("analysis-" + id);
       if (el) el.classList.toggle("show");
     }
@@ -227,19 +228,22 @@
           let gHtml = (item.grammar || []).map(g => `<div class="grammar-item">📌 ${g}</div>`).join("");
           let vHtml = (item.vocab || []).map(v => `<div class="vocab-item"><span class="vocab-badge">${v.level}</span><strong>${v.word}</strong>: ${v.meaning}</div>`).join("");
           analysisSection = `
-            <div class="analysis-btn" onclick="toggleAnalysis(${item.id})">💡 查看语法与N4+词汇</div>
-            <div class="analysis-box" id="analysis-${item.id}">
+            <div class="analysis-btn" onclick="toggleAnalysis(event, ${item.id})">💡 查看语法与N4+词汇</div>
+            <div class="analysis-box" id="analysis-${item.id}" onclick="event.stopPropagation()">
               ${gHtml ? `<div><strong>【句型解析】</strong>${gHtml}</div>` : ""}
               ${vHtml ? `<div style="margin-top:6px;"><strong>【重点词汇】</strong>${vHtml}</div>` : ""}
             </div>
           `;
         }
 
+        // 点击整张卡片任意位置直接播放本句
+        card.onclick = () => playSegment(item.start, item.end, index);
+
         card.innerHTML = `
           <div class="card-header">
             <span class="index-badge">句 ${item.id}</span>
             <span class="time-tag">[${item.start.toFixed(2)}s - ${item.end.toFixed(2)}s]</span>
-            <button class="play-btn" onclick="playSegment(${item.start}, ${item.end}, ${index})">点击播放 🔊</button>
+            <button class="play-btn">点击播放 🔊</button>
           </div>
           <div class="jp-text">${item.jp}</div>
           <div class="cn-text">${item.cn}</div>
