@@ -5,154 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>日语听力循环跟读</title>
   <style>
-    :root {
-      --primary: #4F46E5;
-      --bg: #F8FAFC;
-      --card-bg: #FFFFFF;
-      --text-main: #0F172A;
-      --text-sub: #64748B;
-      --highlight: #EEF2FF;
-      --border: #E2E8F0;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--text-main);
-      padding-bottom: 120px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 16px 12px 140px 12px;
+      background-color: #f7f9fa;
+      color: #333;
     }
-    .header {
+    .header-panel {
       position: sticky;
       top: 0;
-      background: rgba(255,255,255,0.95);
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
       padding: 12px 16px;
-      z-index: 50;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
     }
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .lesson-title {
+      font-size: 1.15rem;
+      font-weight: 700;
       margin-bottom: 10px;
+      color: #1e293b;
     }
-    h1 { font-size: 1.1rem; font-weight: 700; }
+    .select-wrap {
+      margin-bottom: 12px;
+    }
     select {
       width: 100%;
       padding: 8px 12px;
       border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #fff;
+      border: 1px solid #cbd5e1;
       font-size: 0.95rem;
-      margin-bottom: 10px;
+      background-color: #fff;
+      color: #334155;
     }
-    audio { width: 100%; height: 36px; }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 16px;
+    audio {
+      width: 100%;
+      height: 40px;
+      outline: none;
+    }
+    .card-list {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
     }
     .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
+      background: #ffffff;
       border-radius: 12px;
-      padding: 16px;
-      cursor: pointer;
+      padding: 14px 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1.5px solid transparent;
       transition: all 0.2s ease;
     }
     .card.active {
-      border-color: var(--primary);
-      background: var(--highlight);
-      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.12);
+      border-color: #3b82f6;
+      background-color: #eff6ff;
     }
-    .card-meta {
+    .card-header {
       display: flex;
       justify-content: space-between;
-      font-size: 0.75rem;
-      color: var(--text-sub);
-      margin-bottom: 6px;
+      align-items: center;
+      margin-bottom: 8px;
     }
+    .index-badge {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+    .time-tag {
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+    .play-btn {
+      background: none;
+      border: 1px solid #cbd5e1;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      cursor: pointer;
+      color: #475569;
+      background-color: #fff;
+    }
+    .play-btn:hover { background-color: #f1f5f9; }
     .jp-text {
       font-size: 1.15rem;
-      line-height: 1.9;
-      margin-bottom: 8px;
-      word-break: break-all;
+      line-height: 2.2;
+      color: #0f172a;
+      margin-bottom: 6px;
     }
-    ruby rt {
+    ruby {
+      ruby-position: over;
+    }
+    rt {
       font-size: 0.65em;
-      color: var(--primary);
+      color: #64748b;
+      font-weight: 400;
     }
     .cn-text {
-      font-size: 0.9rem;
-      color: var(--text-sub);
+      font-size: 0.92rem;
+      color: #64748b;
       line-height: 1.5;
     }
-    .footer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
-      border-top: 1px solid var(--border);
-      padding: 12px 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 600px;
-      margin: 0 auto;
-      z-index: 50;
-    }
-    .controls-group {
-      display: flex;
-      gap: 8px;
-    }
-    .btn {
-      background: #fff;
-      border: 1px solid var(--border);
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .btn.primary {
-      background: var(--primary);
-      color: #fff;
-      border-color: var(--primary);
-    }
-  
-    /* 语法与词汇解析卡片 */
+    /* AI 语法与词汇分析区域 */
     .analysis-btn {
       display: inline-block;
-      margin-top: 8px;
-      font-size: 0.78rem;
-      color: #6366f1;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #4f46e5;
       background: #eef2ff;
       border: 1px solid #c7d2fe;
-      border-radius: 4px;
-      padding: 3px 8px;
+      border-radius: 6px;
+      padding: 4px 10px;
       cursor: pointer;
       user-select: none;
+      font-weight: 500;
     }
     .analysis-btn:hover { background: #e0e7ff; }
     .analysis-box {
       display: none;
       margin-top: 8px;
-      padding: 10px;
+      padding: 10px 14px;
       background: #f8fafc;
       border-left: 3px solid #6366f1;
       border-radius: 4px;
       font-size: 0.85rem;
-      line-height: 1.5;
+      line-height: 1.6;
     }
     .analysis-box.show { display: block; }
-    .grammar-tag { color: #4338ca; font-weight: bold; margin-top: 4px; }
+    .grammar-item { color: #3730a3; margin: 3px 0; }
+    .vocab-item { margin: 4px 0; }
     .vocab-badge {
       display: inline-block;
       background: #e0e7ff;
@@ -160,258 +144,228 @@
       padding: 1px 5px;
       border-radius: 3px;
       font-size: 0.72rem;
-      margin-right: 4px;
+      font-weight: bold;
+      margin-right: 5px;
     }
-
+    /* 底部控制栏 */
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid #e2e8f0;
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+    }
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .ctrl-btn {
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      cursor: pointer;
+      color: #334155;
+    }
+    .ctrl-btn.active {
+      background: #3b82f6;
+      color: #fff;
+      border-color: #3b82f6;
+    }
+    .loop-toggle {
+      font-size: 0.82rem;
+      padding: 5px 10px;
+    }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="header-top">
-      <h1>🇯🇵 随身日语听力跟读</h1>
-    </div>
-    <select id="lessonSelect" onchange="switchLesson(this.value)">
-      <option value="2026-001">第 1 课：au 无人商店</option>
-      <option value="2026-002">第 2 课：FRB金利をあげる</option>
-      <option value="2026-003">第 3 课：自動運転タクシー</option>
+  <div class="header-panel">
+    <div class="lesson-title">🇯🇵 随身日语听力跟读</div>
+    <div class="select-wrap">
+      <select id="lessonSelect" onchange="changeLesson(this.value)">
+        <option value="2026-001">第 1 课：au 无人商店</option>
+        <option value="2026-002">第 2 课：FRB金利をあげる</option>
+        <option value="2026-003">第 3 课：自動運転タクシー</option>
         <option value="2026-004">第 4 课：結婚したい若い人</option>
-      <option value="2026-005">第 5 课：秀吉の全国統一と大坂城</option>
-      <option value="2026-006">第 6 课：信長から秀吉の台頭へ</option>
-      <option value="2026-010">第 10 课：食中毒の予防と注意点</option>
-      <option value="2026-011">第 11 课：4〜6月期GDP改定値</option>
-      <option value="2026-012">第 12 课：火星衛星探査機MMXの打ち上げ</option>
-      <option value="2026-013">第 13 课：行方不明事件の捜査</option>
-      <option value="2026-014">第 14 课：米消費者物価指数40年ぶり高水準</option>
-      <option value="2026-100">第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
-    </select>
-    <audio id="audioPlayer" controls preload="metadata"></audio>
+        <option value="2026-005">第 5 课：秀吉の全国統一と大坂城</option>
+        <option value="2026-006">第 6 课：信長から秀吉の台頭へ</option>
+        <option value="2026-010">第 10 课：食中毒の予防と注意点</option>
+        <option value="2026-011">第 11 课：4〜6月期GDP改定値</option>
+        <option value="2026-012">第 12 课：火星衛星探査機MMXの打ち上げ</option>
+        <option value="2026-013">第 13 课：行方不明事件の捜査</option>
+        <option value="2026-014">第 14 课：米消費者物価指数40年ぶり高水準</option>
+        <option value="2026-100">第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
+      </select>
+    </div>
+    <audio id="audioPlayer" controls></audio>
   </div>
 
-  <div class="container" id="sentencesList"></div>
+  <div class="card-list" id="cardList"></div>
 
   <div class="footer-bar">
-    <div id="stats" style="font-size: 0.85rem; color: var(--text-sub);">加载中...</div>
-    <div class="controls-group">
-      <button class="btn" id="prevBtn" onclick="prevSentence()">◀ 上句</button>
-      <button class="btn primary" id="playPauseBtn" onclick="togglePlay()">⏸ 暂停</button>
-      <button class="btn" id="modeBtn" onclick="toggleMode()">🔁 列表循环</button>
-      <button class="btn" id="timerBtn" onclick="toggleTimer()">⏱ 定时关闭</button>
-      <button class="btn" id="nextBtn" onclick="nextSentence()">下句 ▶</button>
+    <div style="font-size: 0.85rem; color: #64748b;" id="statusText">准备就绪</div>
+    <div class="control-group">
+      <button class="ctrl-btn" onclick="prevSentence()">◀ 上句</button>
+      <button class="ctrl-btn" id="playPauseBtn" onclick="togglePlay()">▶ 播放</button>
+      <button class="ctrl-btn loop-toggle" id="loopBtn" onclick="toggleLoopMode()">🔁 列表循环</button>
+      <button class="ctrl-btn" onclick="nextSentence()">下句 ▶</button>
     </div>
   </div>
 
   <script>
-    const audio = document.getElementById('audioPlayer');
-    const container = document.getElementById('sentencesList');
-    const stats = document.getElementById('stats');
-    const modeBtn = document.getElementById('modeBtn');
-    const timerBtn = document.getElementById('timerBtn');
-    const playPauseBtn = document.getElementById('playPauseBtn');
-
-    let sentences = [];
+    let lessonData = [];
     let currentIndex = 0;
-    // 播放模式: 'loop' (列表循环) -> 'single' (单句循环) -> 'order' (顺序播放)
-    let playMode = 'loop';
+    let loopMode = "list"; // list | single
+    let isSegmentPlaying = false;
+    let segmentEnd = 0;
 
-    // --- 定时停止逻辑 ---
-    let timerDuration = 0; // 0, 900, 1800, 3600
-    let timerRemaining = 0;
-    let timerInterval = null;
+    const audio = document.getElementById("audioPlayer");
+    const cardList = document.getElementById("cardList");
+    const statusText = document.getElementById("statusText");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+    const loopBtn = document.getElementById("loopBtn");
 
-    function toggleTimer() {
-      if (timerDuration === 0) {
-        startTimer(15 * 60);
-      } else if (timerDuration === 15 * 60) {
-        startTimer(30 * 60);
-      } else if (timerDuration === 30 * 60) {
-        startTimer(60 * 60);
-      } else {
-        clearTimer();
-      }
-    }
-
-    function startTimer(seconds) {
-      timerDuration = seconds;
-      timerRemaining = seconds;
-      updateTimerDisplay();
-      if (timerInterval) clearInterval(timerInterval);
-      timerInterval = setInterval(() => {
-        if (!audio.paused) {
-          timerRemaining--;
-          updateTimerDisplay();
-          if (timerRemaining <= 0) {
-            audio.pause();
-            playPauseBtn.innerText = '▶️ 播放';
-            clearTimer();
-            alert('⏱ 定时时间已到，已自动停止播放。');
-          }
-        }
-      }, 1000);
-    }
-
-    function clearTimer() {
-      timerDuration = 0;
-      timerRemaining = 0;
-      if (timerInterval) clearInterval(timerInterval);
-      timerInterval = null;
-      timerBtn.innerText = '⏱ 定时关闭';
-    }
-
-    function updateTimerDisplay() {
-      if (timerDuration === 0) {
-        timerBtn.innerText = '⏱ 定时关闭';
-      } else {
-        const m = Math.floor(timerRemaining / 60);
-        const s = timerRemaining % 60;
-        timerBtn.innerText = `⏱ ${m}:${s < 10 ? '0' : ''}${s}`;
-      }
-    }
-
-    // --- 播放模式切换 ---
-    function toggleMode() {
-      if (playMode === 'loop') {
-        playMode = 'single';
-        modeBtn.innerText = '🔂 单句循环';
-      } else if (playMode === 'single') {
-        playMode = 'order';
-        modeBtn.innerText = '➡️ 顺序播放';
-      } else {
-        playMode = 'loop';
-        modeBtn.innerText = '🔁 列表循环';
-      }
-    }
-
-    function togglePlay() {
-      if (audio.paused) {
-        audio.play();
-        playPauseBtn.innerText = '⏸ 暂停';
-      } else {
-        audio.pause();
-        playPauseBtn.innerText = '▶️ 播放';
-      }
-    }
-
-    async function loadLesson(lessonId) {
+    async function changeLesson(lessonId) {
+      audio.src = `lessons/${lessonId}.mp3`;
       try {
-        audio.src = `lessons/${lessonId}.mp3`;
-        const res = await fetch(`lessons/${lessonId}.json`);
-        sentences = await res.json();
-        renderSentences();
+        const resp = await fetch(`lessons/${lessonId}.json`);
+        lessonData = await resp.json();
+        renderCards();
         currentIndex = 0;
-        stats.innerText = `共 ${sentences.length} 句`;
+        highlightCard(0);
+        statusText.innerText = `共 ${lessonData.length} 句`;
       } catch (e) {
-        console.error('加载失败:', e);
+        console.error("加载课件失败", e);
+        cardList.innerHTML = `<div style="text-align:center;padding:20px;color:#94a3b8;">课件加载失败</div>`;
       }
     }
 
-    function switchLesson(lessonId) {
-      loadLesson(lessonId);
+    function toggleAnalysis(id) {
+      const el = document.getElementById("analysis-" + id);
+      if (el) el.classList.toggle("show");
     }
 
-    function renderSentences() {
-      container.innerHTML = '';
-      sentences.forEach((item, index) => {
-        const div = document.createElement('div');
-        div.className = `card ${index === currentIndex ? 'active' : ''}`;
-        div.id = `card-${index}`;
-        div.onclick = () => playSentence(index);
-        div.innerHTML = `
-          <div class="card-meta">
-            <span>句 ${item.id} [${item.start.toFixed(2)}s - ${item.end.toFixed(2)}s]</span>
-            <span style="color: var(--primary);">点击播放 🔊</span>
+    function renderCards() {
+      cardList.innerHTML = "";
+      lessonData.forEach((item, index) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.id = `card-${index}`;
+
+        let analysisSection = "";
+        if ((item.grammar && item.grammar.length > 0) || (item.vocab && item.vocab.length > 0)) {
+          let gHtml = (item.grammar || []).map(g => `<div class="grammar-item">📌 ${g}</div>`).join("");
+          let vHtml = (item.vocab || []).map(v => `<div class="vocab-item"><span class="vocab-badge">${v.level}</span><strong>${v.word}</strong>: ${v.meaning}</div>`).join("");
+          analysisSection = `
+            <div class="analysis-btn" onclick="toggleAnalysis(${item.id})">💡 查看语法与N4+词汇</div>
+            <div class="analysis-box" id="analysis-${item.id}">
+              ${gHtml ? `<div><strong>【句型解析】</strong>${gHtml}</div>` : ""}
+              ${vHtml ? `<div style="margin-top:6px;"><strong>【重点词汇】</strong>${vHtml}</div>` : ""}
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="card-header">
+            <span class="index-badge">句 ${item.id}</span>
+            <span class="time-tag">[${item.start.toFixed(2)}s - ${item.end.toFixed(2)}s]</span>
+            <button class="play-btn" onclick="playSegment(${item.start}, ${item.end}, ${index})">点击播放 🔊</button>
           </div>
           <div class="jp-text">${item.jp}</div>
           <div class="cn-text">${item.cn}</div>
+          ${analysisSection}
         `;
-        container.appendChild(div);
+        cardList.appendChild(card);
       });
     }
 
-    function playSentence(index) {
-      if (index < 0 || index >= sentences.length) return;
+    function highlightCard(index) {
+      document.querySelectorAll(".card").forEach(c => c.classList.remove("active"));
+      const target = document.getElementById(`card-${index}`);
+      if (target) {
+        target.classList.add("active");
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+
+    function playSegment(start, end, index) {
       currentIndex = index;
-      updateActiveCard();
-      audio.currentTime = sentences[index].start;
+      highlightCard(index);
+      audio.currentTime = start;
+      segmentEnd = end;
+      isSegmentPlaying = true;
       audio.play();
-      playPauseBtn.innerText = '⏸ 暂停';
     }
 
-    function updateActiveCard() {
-      document.querySelectorAll('.card').forEach((el, i) => {
-        if (i === currentIndex) {
-          el.classList.add('active');
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    audio.ontimeupdate = () => {
+      if (isSegmentPlaying && audio.currentTime >= segmentEnd) {
+        if (loopMode === "single") {
+          audio.currentTime = lessonData[currentIndex].start;
+          audio.play();
         } else {
-          el.classList.remove('active');
+          audio.pause();
+          isSegmentPlaying = false;
         }
-      });
+      }
+    };
+
+    audio.onplay = () => playPauseBtn.innerText = "⏸ 暂停";
+    audio.onpause = () => playPauseBtn.innerText = "▶ 播放";
+
+    function togglePlay() {
+      if (audio.paused) {
+        if (lessonData.length > 0) {
+          playSegment(lessonData[currentIndex].start, lessonData[currentIndex].end, currentIndex);
+        } else {
+          audio.play();
+        }
+      } else {
+        audio.pause();
+      }
+    }
+
+    function toggleLoopMode() {
+      if (loopMode === "list") {
+        loopMode = "single";
+        loopBtn.innerText = "🔂 单句循环";
+        loopBtn.classList.add("active");
+      } else {
+        loopMode = "list";
+        loopBtn.innerText = "🔁 列表循环";
+        loopBtn.classList.remove("active");
+      }
     }
 
     function prevSentence() {
-      if (currentIndex > 0) playSentence(currentIndex - 1);
+      if (currentIndex > 0) {
+        currentIndex--;
+        playSegment(lessonData[currentIndex].start, lessonData[currentIndex].end, currentIndex);
+      }
     }
 
     function nextSentence() {
-      if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
-    }
-
-    // 统一处理句子结束与循环逻辑
-    function handleSentenceEnd() {
-      if (!sentences.length) return;
-      const lessonSelect = document.getElementById('lessonSelect');
-      const options = Array.from(lessonSelect.options);
-      const currentOptIndex = lessonSelect.selectedIndex;
-
-      if (playMode === 'single') {
-        // 单句循环：单句无限复读
-        audio.currentTime = sentences[currentIndex].start;
-        audio.play();
-      } else if (playMode === 'loop') {
-        // 列表循环：仅在本课内大循环
-        if (currentIndex < sentences.length - 1) {
-          playSentence(currentIndex + 1);
-        } else {
-          // 本课播完，回到本课第 1 句重新开播
-          playSentence(0);
-        }
-      } else if (playMode === 'order') {
-        // 顺序播放：自动切下一课
-        if (currentIndex < sentences.length - 1) {
-          playSentence(currentIndex + 1);
-        } else {
-          // 当前课播完，自动切到下一课（最后一课则回第 1 课）并从第 1 句播放
-          const nextOptIndex = (currentOptIndex + 1) % options.length;
-          lessonSelect.selectedIndex = nextOptIndex;
-          loadLesson(options[nextOptIndex].value).then(() => {
-            playSentence(0);
-          });
-        }
+      if (currentIndex < lessonData.length - 1) {
+        currentIndex++;
+        playSegment(lessonData[currentIndex].start, lessonData[currentIndex].end, currentIndex);
       }
     }
 
-    audio.addEventListener('timeupdate', () => {
-      if (!sentences.length) return;
-      const cur = audio.currentTime;
-      const current = sentences[currentIndex];
-      // 容差判断
-      if (cur >= current.end - 0.2) {
-        handleSentenceEnd();
-      }
-    });
-
-    // 针对整首音频自然结束的强保险监听
-    audio.addEventListener('ended', () => {
-      // 只要音频自然放完，直接视作最后一句结束
-      currentIndex = sentences.length - 1;
-      handleSentenceEnd();
-    });
-
-    audio.addEventListener('play', () => playPauseBtn.innerText = '⏸ 暂停');
-    audio.addEventListener('pause', () => playPauseBtn.innerText = '▶️ 播放');
-
-    // 默认加载第一课
-    loadLesson('2026-001');
+    // 默认加载第 100 课方便立即检验
+    window.onload = () => {
+      document.getElementById("lessonSelect").value = "2026-100";
+      changeLesson("2026-100");
+    };
   </script>
 </body>
 </html>
