@@ -263,39 +263,31 @@
       }
     }
 
-    // 核心循环控制逻辑
-    function handleSentenceEnd() {
-      if (currentIndex < 0 || currentIndex >= sentences.length) return;
-      const s = sentences[currentIndex];
-
-      if (playMode === 0) {
-        // 1. 单句循环：强制回到句首重新起播
-        audio.currentTime = s.start;
-        audio.play().catch(() => {});
-      } else if (playMode === 1) {
-        // 2. 列表循环：下句，到底回到第0句
-        if (currentIndex + 1 < sentences.length) {
-          playSentence(currentIndex + 1);
-        } else {
-          playSentence(0);
-        }
-      } else {
-        // 3. 顺序播放：下句，到底暂停
-        if (currentIndex + 1 < sentences.length) {
-          playSentence(currentIndex + 1);
-        } else {
-          audio.pause();
-        }
-      }
-    }
-
-    // 高频监听进度，提前 0.05 秒捕获句尾，防止浏览器原生卡顿
+    // 严格按照昨天稳定的逻辑：自然到达句尾后精准触发下一次行为
     audio.addEventListener('timeupdate', () => {
       const cur = audio.currentTime;
       if (currentIndex >= 0) {
         const s = sentences[currentIndex];
-        if (cur >= s.end - 0.05) {
-          handleSentenceEnd();
+        if (cur >= s.end) {
+          if (playMode === 0) {
+            // 单句循环：回到本句起点
+            audio.currentTime = s.start;
+            audio.play().catch(() => {});
+          } else if (playMode === 1) {
+            // 列表循环：下句，到底回到第0句
+            if (currentIndex + 1 < sentences.length) {
+              playSentence(currentIndex + 1);
+            } else {
+              playSentence(0);
+            }
+          } else {
+            // 顺序播放：下句，到底暂停
+            if (currentIndex + 1 < sentences.length) {
+              playSentence(currentIndex + 1);
+            } else {
+              audio.pause();
+            }
+          }
         }
       } else {
         const idx = sentences.findIndex(s => cur >= s.start && cur < s.end);
@@ -304,11 +296,6 @@
           updateUI();
         }
       }
-    });
-
-    // 防止音频自然播放到文件末尾时停止触发
-    audio.addEventListener('ended', () => {
-      handleSentenceEnd();
     });
 
     audio.addEventListener('play', () => playPauseBtn.textContent = '⏸ 暂停');
