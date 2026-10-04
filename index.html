@@ -311,11 +311,32 @@
     audio.ontimeupdate = () => {
       if (isSegmentPlaying && audio.currentTime >= segmentEnd) {
         if (loopMode === "single") {
+          // 🔂 单句循环：重复播放当前句
           audio.currentTime = lessonData[currentIndex].start;
           audio.play();
-        } else {
-          audio.pause();
-          isSegmentPlaying = false;
+        } else if (loopMode === "list") {
+          // 🔁 列表循环：下句播放，全篇结束则回本课第1句
+          if (currentIndex < lessonData.length - 1) {
+            nextSentence();
+          } else {
+            currentIndex = 0;
+            playSegment(lessonData[0].start, lessonData[0].end, 0);
+          }
+        } else if (loopMode === "none") {
+          // ➡️ 顺序播放：下句播放；若播到最后一句，切到第一篇(2026-001)第1句
+          if (currentIndex < lessonData.length - 1) {
+            nextSentence();
+          } else {
+            const select = document.getElementById("lessonSelect");
+            const firstLessonVal = select.options[0].value;
+            select.value = firstLessonVal;
+            changeLesson(firstLessonVal).then(() => {
+              if (lessonData.length > 0) {
+                currentIndex = 0;
+                playSegment(lessonData[0].start, lessonData[0].end, 0);
+              }
+            });
+          }
         }
       }
     };
@@ -339,8 +360,17 @@
       if (loopMode === "list") {
         loopMode = "single";
         loopBtn.innerText = "🔂 单句循环";
-        loopBtn.classList.add("active");
+        loopBtn.className = "ctrl-btn loop-toggle active";
+      } else if (loopMode === "single") {
+        loopMode = "none";
+        loopBtn.innerText = "➡️ 顺序播放";
+        loopBtn.className = "ctrl-btn loop-toggle active";
       } else {
+        loopMode = "list";
+        loopBtn.innerText = "🔁 列表循环";
+        loopBtn.className = "ctrl-btn loop-toggle active";
+      }
+    } else {
         loopMode = "list";
         loopBtn.innerText = "🔁 列表循环";
         loopBtn.classList.remove("active");
