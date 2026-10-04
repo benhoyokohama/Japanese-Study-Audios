@@ -139,13 +139,13 @@
       align-items: center;
       gap: 3px;
       color: var(--text);
-      transition: all 0.2s;
+      transition: all 0.15s ease-in-out;
     }
     .btn:active {
       background: #e5e7eb;
     }
 
-    /* 三态专属配色 */
+    /* 三种模式的高对比度专属配色 */
     .btn.mode-single {
       background: #e0e7ff;
       border-color: #6366f1;
@@ -159,10 +159,10 @@
       font-weight: 600;
     }
     .btn.mode-seq {
-      background: #f3f4f6;
-      border-color: #9ca3af;
-      color: #4b5563;
-      font-weight: 500;
+      background: #ffedd5;
+      border-color: #f97316;
+      color: #c2410c;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -267,7 +267,7 @@
       document.querySelectorAll('.card').forEach((c, idx) => {
         c.classList.toggle('active', idx === currentIndex);
       });
-      if (currentIndex >= 0) {
+      if (currentIndex >= 0 && currentIndex < sentences.length) {
         const s = sentences[currentIndex];
         badge.innerHTML = `<strong>句 ${s.id}</strong> ${s.jp.replace(/<[^>]+>/g, '').slice(0, 10)}...`;
         const card = document.getElementById(`card-${currentIndex}`);
@@ -277,39 +277,40 @@
       }
     }
 
-    // 核心播放监听器：完全采用昨天稳定的流式步进
+    // 播放监听器：彻底解决顺序播放被抢断问题
     audio.addEventListener('timeupdate', () => {
       const cur = audio.currentTime;
-      if (currentIndex >= 0) {
-        const s = sentences[currentIndex];
-        if (cur >= s.end) {
-          if (playMode === 0) {
-            // 1. 单句循环：回到本句开头
+      if (sentences.length === 0) return;
+
+      // 1. 单句循环模式：到达当前句尾，强制跳回句首
+      if (playMode === 0) {
+        if (currentIndex >= 0 && currentIndex < sentences.length) {
+          const s = sentences[currentIndex];
+          if (cur >= s.end) {
             audio.currentTime = s.start;
             audio.play().catch(() => {});
-          } else if (playMode === 1) {
-            // 2. 列表循环：下一句，到底回到第0句
-            if (currentIndex + 1 < sentences.length) {
-              playSentence(currentIndex + 1);
-            } else {
-              playSentence(0);
-            }
-          } else {
-            // 3. 顺序播放：下一句，到底暂停
-            if (currentIndex + 1 < sentences.length) {
-              playSentence(currentIndex + 1);
-            } else {
-              audio.pause();
-            }
+            return;
           }
         }
+      }
+
+      // 2. 列表循环 / 顺序播放：让音频顺畅播放，由时间自然高亮对应的句子卡片
+      const idx = sentences.findIndex(s => cur >= s.start && cur < s.end);
+      if (idx !== -1 && idx !== currentIndex) {
+        currentIndex = idx;
+        updateUI();
+      }
+    });
+
+    // 当整个音频播放自然到达末尾时
+    audio.addEventListener('ended', () => {
+      if (playMode === 1) {
+        // 列表循环：从头再播
+        playSentence(0);
       } else {
-        // 未手动点选卡片时的自然追踪
-        const idx = sentences.findIndex(s => cur >= s.start && cur < s.end);
-        if (idx !== -1 && idx !== currentIndex) {
-          currentIndex = idx;
-          updateUI();
-        }
+        // 顺序播放：自然停止
+        currentIndex = sentences.length - 1;
+        updateUI();
       }
     });
 
