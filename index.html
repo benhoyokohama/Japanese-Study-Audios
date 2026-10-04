@@ -310,34 +310,47 @@
       if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
     }
 
-    // 核心时间监听与模式轮换
+    // 统一处理句子结束与循环逻辑
+    function handleSentenceEnd() {
+      if (!sentences.length) return;
+      const current = sentences[currentIndex];
+
+      if (playMode === 'single') {
+        // 单句循环
+        audio.currentTime = current.start;
+        audio.play();
+      } else if (playMode === 'loop') {
+        // 列表循环：如果没到底播下句，到底了从句 1 重新循环
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          playSentence(0);
+        }
+      } else if (playMode === 'order') {
+        // 顺序播放：未到底播下句，到底则停止
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          audio.pause();
+          playPauseBtn.innerText = '▶️ 播放';
+        }
+      }
+    }
+
+    // 时间监听
     audio.addEventListener('timeupdate', () => {
       if (!sentences.length) return;
       const cur = audio.currentTime;
       const current = sentences[currentIndex];
-
-      if (cur >= current.end) {
-        if (playMode === 'single') {
-          // 单句循环
-          audio.currentTime = current.start;
-          audio.play();
-        } else if (playMode === 'loop') {
-          // 列表循环
-          if (currentIndex < sentences.length - 1) {
-            playSentence(currentIndex + 1);
-          } else {
-            playSentence(0); // 到底了，回到第一句
-          }
-        } else if (playMode === 'order') {
-          // 顺序播放
-          if (currentIndex < sentences.length - 1) {
-            playSentence(currentIndex + 1);
-          } else {
-            audio.pause();
-            playPauseBtn.innerText = '▶️ 播放';
-          }
-        }
+      // 容差 0.15 秒，避免音频末尾截断
+      if (cur >= current.end - 0.1) {
+        handleSentenceEnd();
       }
+    });
+
+    // 音频自然播放结束触发（防止最后一句 timeupdate 不触发）
+    audio.addEventListener('ended', () => {
+      handleSentenceEnd();
     });
 
     audio.addEventListener('play', () => playPauseBtn.innerText = '⏸ 暂停');
