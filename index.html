@@ -139,15 +139,30 @@
       align-items: center;
       gap: 3px;
       color: var(--text);
+      transition: all 0.2s;
     }
     .btn:active {
       background: #e5e7eb;
     }
-    .btn.active {
+
+    /* 三态专属配色 */
+    .btn.mode-single {
       background: #e0e7ff;
-      border-color: #818cf8;
-      color: var(--primary);
+      border-color: #6366f1;
+      color: #4338ca;
       font-weight: 600;
+    }
+    .btn.mode-list {
+      background: #dcfce7;
+      border-color: #22c55e;
+      color: #15803d;
+      font-weight: 600;
+    }
+    .btn.mode-seq {
+      background: #f3f4f6;
+      border-color: #9ca3af;
+      color: #4b5563;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -177,7 +192,7 @@
     <div class="controls">
       <button class="btn" id="prev-btn">◀ 上句</button>
       <button class="btn" id="play-pause-btn">⏸ 暂停</button>
-      <button class="btn active" id="loop-mode-btn">🔁 单句循环</button>
+      <button class="btn mode-single" id="loop-mode-btn">🔁 单句循环</button>
       <button class="btn" id="next-btn">下句 ▶</button>
     </div>
   </div>
@@ -198,14 +213,14 @@
     // 0: 单句循环, 1: 列表循环, 2: 顺序播放
     let playMode = 0;
     const modeConfigs = [
-      { text: '🔁 单句循环', active: true },
-      { text: '🔄 列表循环', active: true },
-      { text: '➡️ 顺序播放', active: false }
+      { text: '🔁 单句循环', className: 'mode-single' },
+      { text: '🔄 列表循环', className: 'mode-list' },
+      { text: '➡️ 顺序播放', className: 'mode-seq' }
     ];
 
     function updateModeBtn() {
       loopModeBtn.textContent = modeConfigs[playMode].text;
-      loopModeBtn.classList.toggle('active', modeConfigs[playMode].active);
+      loopModeBtn.className = 'btn ' + modeConfigs[playMode].className;
     }
 
     loopModeBtn.onclick = () => {
@@ -262,22 +277,25 @@
       }
     }
 
-    // 核心播放监听：严格自然到达句尾后切入目标状态
+    // 核心播放监听器：完全采用昨天稳定的流式步进
     audio.addEventListener('timeupdate', () => {
       const cur = audio.currentTime;
       if (currentIndex >= 0) {
         const s = sentences[currentIndex];
         if (cur >= s.end) {
           if (playMode === 0) {
+            // 1. 单句循环：回到本句开头
             audio.currentTime = s.start;
             audio.play().catch(() => {});
           } else if (playMode === 1) {
+            // 2. 列表循环：下一句，到底回到第0句
             if (currentIndex + 1 < sentences.length) {
               playSentence(currentIndex + 1);
             } else {
               playSentence(0);
             }
           } else {
+            // 3. 顺序播放：下一句，到底暂停
             if (currentIndex + 1 < sentences.length) {
               playSentence(currentIndex + 1);
             } else {
@@ -286,6 +304,7 @@
           }
         }
       } else {
+        // 未手动点选卡片时的自然追踪
         const idx = sentences.findIndex(s => cur >= s.start && cur < s.end);
         if (idx !== -1 && idx !== currentIndex) {
           currentIndex = idx;
