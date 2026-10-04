@@ -156,8 +156,8 @@
 
   <div class="header-panel">
     <div class="lesson-title">🇯🇵 随身日语听力跟读</div>
-    <div class="select-wrap">
-      <select id="lessonSelect" onchange="changeLesson(this.value)">
+        <div class="select-wrap" style="display: flex; gap: 8px;">
+      <select id="lessonSelect" style="flex: 2;" onchange="changeLesson(this.value)">
         <option value="2026-001" selected>第 1 课：au 无人商店</option>
         <option value="2026-002">第 2 课：FRB金利をあげる</option>
         <option value="2026-003">第 3 课：自動運転タクシー</option>
@@ -171,6 +171,12 @@
         <option value="2026-014">第 14 课：米消費者物価指数40年ぶり高水準</option>
         <option value="2026-100">第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
         <option value="2026-101">第 101 课：中田敦彦・止まらない円安と骨太ショック（二）</option>
+            </select>
+      <select id="sleepTimerSelect" style="flex: 1;" onchange="setSleepTimer(this.value)">
+        <option value="0">⏱ 定时：关</option>
+        <option value="15">⏱ 15 分钟</option>
+        <option value="30">⏱ 30 分钟</option>
+        <option value="60">⏱ 60 分钟</option>
       </select>
     </div>
     <audio id="audioPlayer" controls></audio>
@@ -200,6 +206,28 @@
     const statusText = document.getElementById("statusText");
     const playPauseBtn = document.getElementById("playPauseBtn");
     const loopBtn = document.getElementById("loopBtn");
+    // 睡眠定时器相关逻辑
+    let sleepTimerId = null;
+
+    function setSleepTimer(minutes) {
+      if (sleepTimerId) {
+        clearTimeout(sleepTimerId);
+        sleepTimerId = null;
+      }
+      const mins = parseInt(minutes, 10);
+      if (mins > 0) {
+        statusText.innerText = `已设置 ${mins} 分钟后停止`;
+        sleepTimerId = setTimeout(() => {
+          audio.pause();
+          isSegmentPlaying = false;
+          statusText.innerText = "定时时间到，已自动暂停播放";
+          document.getElementById("sleepTimerSelect").value = "0";
+        }, mins * 60 * 1000);
+      } else {
+        statusText.innerText = "定时已关闭";
+      }
+    }
+
 
     async function changeLesson(lessonId, autoPlayFirst = false) {
       statusText.innerText = "正在加载课件...";
