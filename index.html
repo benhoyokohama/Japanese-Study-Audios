@@ -145,7 +145,7 @@
       background: #e5e7eb;
     }
 
-    /* 三种模式的高对比度专属配色 */
+    /* 三种模式配色 */
     .btn.mode-single {
       background: #e0e7ff;
       border-color: #6366f1;
@@ -172,14 +172,6 @@
     <div class="select-wrap">
       <select id="lesson-select">
         <option value="2026-001">第 1 课：au 无人商店</option>
-        <option value="2026-002">第 2 课：FRB加息</option>
-        <option value="2026-003">第 3 课：自动驾驶出租车 (NHK)</option>
-        <option value="2026-004">第 4 课：年轻人结婚意愿 (NHK)</option>
-        <option value="2026-005">第 5 课：大塚家具配送确认电话</option>
-        <option value="2026-006">第 6 课：火星卫星探测器MMX (NHK)</option>
-        <option value="2026-007">第 7 课：文京区女性失踪事件 (News)</option>
-        <option value="2026-008">第 8 课：美国物价上涨与CPI (News)</option>
-        <option value="2026-012">第 12 课：中田敦彦-止不住的日元贬值(1)</option>
       </select>
     </div>
     <audio id="audio-player" controls preload="metadata"></audio>
@@ -192,7 +184,7 @@
     <div class="controls">
       <button class="btn" id="prev-btn">◀ 上句</button>
       <button class="btn" id="play-pause-btn">⏸ 暂停</button>
-      <button class="btn mode-single" id="loop-mode-btn">🔁 单句循环</button>
+      <button class="btn mode-seq" id="loop-mode-btn">➡️ 顺序播放</button>
       <button class="btn" id="next-btn">下句 ▶</button>
     </div>
   </div>
@@ -210,12 +202,12 @@
     let sentences = [];
     let currentIndex = -1;
 
-    // 0: 单句循环, 1: 列表循环, 2: 顺序播放
+    // 默认进入顺序播放模式 (0: 顺序播放, 1: 单句循环, 2: 列表循环)
     let playMode = 0;
     const modeConfigs = [
+      { text: '➡️ 顺序播放', className: 'mode-seq' },
       { text: '🔁 单句循环', className: 'mode-single' },
-      { text: '🔄 列表循环', className: 'mode-list' },
-      { text: '➡️ 顺序播放', className: 'mode-seq' }
+      { text: '🔄 列表循环', className: 'mode-list' }
     ];
 
     function updateModeBtn() {
@@ -277,24 +269,22 @@
       }
     }
 
-    // 播放监听器：彻底解决顺序播放被抢断问题
+    // 核心播放控制监听
     audio.addEventListener('timeupdate', () => {
       const cur = audio.currentTime;
       if (sentences.length === 0) return;
 
-      // 1. 单句循环模式：到达当前句尾，强制跳回句首
-      if (playMode === 0) {
-        if (currentIndex >= 0 && currentIndex < sentences.length) {
-          const s = sentences[currentIndex];
-          if (cur >= s.end) {
-            audio.currentTime = s.start;
-            audio.play().catch(() => {});
-            return;
-          }
+      // 1. 只有在【单句循环】(playMode === 1) 下，到达当前句尾时才强行跳回句首
+      if (playMode === 1 && currentIndex >= 0 && currentIndex < sentences.length) {
+        const s = sentences[currentIndex];
+        if (cur >= s.end) {
+          audio.currentTime = s.start;
+          audio.play().catch(() => {});
+          return;
         }
       }
 
-      // 2. 列表循环 / 顺序播放：让音频顺畅播放，由时间自然高亮对应的句子卡片
+      // 2. 在【顺序播放】或【列表循环】下，音频自然向下流淌，只根据时间更新高亮卡片
       const idx = sentences.findIndex(s => cur >= s.start && cur < s.end);
       if (idx !== -1 && idx !== currentIndex) {
         currentIndex = idx;
@@ -302,15 +292,15 @@
       }
     });
 
-    // 当整个音频播放自然到达末尾时
+    // 整篇文章播放到达末尾时处理
     audio.addEventListener('ended', () => {
-      if (playMode === 1) {
-        // 列表循环：从头再播
+      if (playMode === 2) {
+        // 列表循环：整篇放完，从第 0 句重新播放
         playSentence(0);
       } else {
-        // 顺序播放：自然停止
-        currentIndex = sentences.length - 1;
-        updateUI();
+        // 顺序播放：整篇放完，自然停止，不再重复
+        audio.pause();
+        badge.textContent = '整篇播放完毕';
       }
     });
 
@@ -338,7 +328,7 @@
 
     select.onchange = () => loadLesson(select.value);
 
-    // 默认加载选中的课程
+    // 默认加载第 1 课
     loadLesson(select.value);
   </script>
 </body>
