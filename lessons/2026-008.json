@@ -2,43 +2,29 @@
   {
     "id": 1,
     "start": 0.0,
-    "end": 4.0,
+    "end": 4.1,
     "jp": "アメリカの<ruby>物価<rt>ぶっか</rt></ruby><ruby>上昇<rt>じょうしょう</rt></ruby>が<ruby>止<rt>と</rt></ruby>まりません。",
     "cn": "美国的物价上涨未见停歇。"
   },
   {
     "id": 2,
-    "start": 4.0,
-    "end": 11.5,
+    "start": 4.1,
+    "end": 12.0,
     "jp": "5<ruby>月<rt>がつ</rt></ruby>の<ruby>消費者<rt>しょうひしゃ</rt></ruby><ruby>物価<rt>ぶっか</rt></ruby><ruby>指数<rt>しすう</rt></ruby>は、<ruby>過去<rt>かこ</rt></ruby>40<ruby>年<rt>ねん</rt></ruby>で<ruby>最<rt>もっと</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い<ruby>水準<rt>すいじゅん</rt></ruby>を<ruby>更新<rt>こうしん</rt></ruby>しました。",
     "cn": "5月份消费者物价指数刷新了过去40年来的最高水平。"
   },
   {
     "id": 3,
-    "start": 11.5,
-    "end": 19.5,
-    "jp": "アメリカ<ruby>労働省<rt>ろうどうしょう</rt></ruby>が10<ruby>日<rt>とおか</rt></ruby>に<ruby>発表<rt>はっぴょう</rt></ruby>した5<ruby>月<rt>がつ</rt></ruby>の<ruby>消費者<rt>しょうひしゃ</rt></ruby><ruby>物価<rt>ぶっか</rt></ruby><ruby>指数<rt>しすう</rt></ruby>は、",
-    "cn": "美国劳工部10日公布的5月份消费者物价指数，"
+    "start": 12.0,
+    "end": 22.8,
+    "jp": "アメリカ<ruby>労働省<rt>ろうどうしょう</rt></ruby>が10<ruby>日<rt>とおか</rt></ruby>に<ruby>発表<rt>はっぴょう</rt></ruby>した5<ruby>月<rt>がつ</rt></ruby>の<ruby>消費者<rt>しょうひしゃ</rt></ruby><ruby>物価<rt>ぶっか</rt></ruby><ruby>指数<rt>しすう</rt></ruby>は、<ruby>前<rt>まえ</rt></ruby>の<ruby>年<rt>とし</rt></ruby>の<ruby>同<rt>おな</rt></ruby>じ<ruby>月<rt>つき</rt></ruby>に<ruby>比<rt>くら</rt></ruby>べて8.6%<ruby>上昇<rt>じょうしょう</rt></ruby>しました。",
+    "cn": "美国劳工部10日公布的5月份消费者物价指数，与去年同月相比上涨了8.6%。"
   },
   {
     "id": 4,
-    "start": 19.5,
-    "end": 25.5,
-    "jp": "<ruby>前<rt>まえ</rt></ruby>の<ruby>年<rt>とし</rt></ruby>の<ruby>同<rt>おな</rt></ruby>じ<ruby>月<rt>つき</rt></ruby>に<ruby>比<rt>くら</rt></ruby>べて8.6%<ruby>上昇<rt>じょうしょう</rt></ruby>しました。",
-    "cn": "与去年同月相比上涨了8.6%。"
-  },
-  {
-    "id": 5,
-    "start": 25.5,
-    "end": 30.5,
-    "jp": "3<ruby>月<rt>がつ</rt></ruby>に<ruby>記録<rt>きろく</rt></ruby>した<ruby>伸<rt>の</rt></ruby>び<ruby>率<rt>りつ</rt></ruby>8.5%を<ruby>上回<rt>うわまわ</rt></ruby>り、",
-    "cn": "超过了3月份创下的8.5%涨幅，"
-  },
-  {
-    "id": 6,
-    "start": 30.5,
+    "start": 22.8,
     "end": 38.0,
-    "jp": "1981<ruby>年<rt>ねん</rt></ruby>12<ruby>月<rt>がつ</rt></ruby><ruby>以来<rt>いらい</rt></ruby>、<ruby>最<rt>もっと</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い<ruby>水準<rt>すいじゅん</rt></ruby>を<ruby>更新<rt>こうしん</rt></ruby>しました。",
-    "cn": "刷新了1981年12月以来的最高纪录。"
+    "jp": "3<ruby>月<rt>がつ</rt></ruby>に<ruby>記録<rt>きろく</rt></ruby>した<ruby>伸<rt>の</rt></ruby>び<ruby>率<rt>りつ</rt></ruby>8.5%を<ruby>上回<rt>うわまわ</rt></ruby>り、1981<ruby>年<rt>ねん</rt></ruby>12<ruby>月<rt>がつ</rt></ruby><ruby>以来<rt>いらい</rt></ruby>、<ruby>最<rt>もっと</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い<ruby>水準<rt>すいじゅん</rt></ruby>を<ruby>更新<rt>こうしん</rt></ruby>しました。",
+    "cn": "超过了3月份创下的8.5%涨幅，刷新了1981年12月以来的最高纪录。"
   }
 ]

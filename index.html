@@ -7,7 +7,6 @@
   <style>
     :root {
       --primary: #4f46e5;
-      --primary-light: #eef2ff;
       --text: #1f2937;
       --text-muted: #6b7280;
       --border: #e5e7eb;
@@ -263,25 +262,22 @@
       }
     }
 
-    // 严格按照昨天稳定的逻辑：自然到达句尾后精准触发下一次行为
+    // 核心播放监听：严格自然到达句尾后切入目标状态
     audio.addEventListener('timeupdate', () => {
       const cur = audio.currentTime;
       if (currentIndex >= 0) {
         const s = sentences[currentIndex];
         if (cur >= s.end) {
           if (playMode === 0) {
-            // 单句循环：回到本句起点
             audio.currentTime = s.start;
             audio.play().catch(() => {});
           } else if (playMode === 1) {
-            // 列表循环：下句，到底回到第0句
             if (currentIndex + 1 < sentences.length) {
               playSentence(currentIndex + 1);
             } else {
               playSentence(0);
             }
           } else {
-            // 顺序播放：下句，到底暂停
             if (currentIndex + 1 < sentences.length) {
               playSentence(currentIndex + 1);
             } else {
