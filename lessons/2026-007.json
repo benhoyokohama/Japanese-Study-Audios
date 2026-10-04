@@ -2,48 +2,48 @@
   {
     "id": 1,
     "start": 0.0,
-    "end": 7.0,
+    "end": 6.5,
     "jp": "<ruby>東京<rt>とうきょう</rt></ruby><ruby>文京区<rt>ぶんきょうく</rt></ruby>の<ruby>新野<rt>あらの</rt></ruby><ruby>理奈<rt>りな</rt></ruby>さんの<ruby>行方<rt>ゆくえ</rt></ruby>が<ruby>今月<rt>こんげつ</rt></ruby>5<ruby>日<rt>いつか</rt></ruby>から<ruby>分<rt>わ</rt></ruby>からなくなり、",
     "cn": "东京文京区的新野理奈女士从本月5日起下落不明，"
   },
   {
     "id": 2,
-    "start": 7.0,
-    "end": 11.5,
+    "start": 6.5,
+    "end": 11.0,
     "jp": "<ruby>家族<rt>かぞく</rt></ruby>から<ruby>連絡<rt>れんらく</rt></ruby>が<ruby>取<rt>と</rt></ruby>れないと<ruby>相談<rt>そうだん</rt></ruby>があったため、",
     "cn": "因家属向警方求助称无法与其取得联系，"
   },
   {
     "id": 3,
-    "start": 11.5,
-    "end": 17.5,
+    "start": 11.0,
+    "end": 16.8,
     "jp": "<ruby>警視庁<rt>けいしちょう</rt></ruby>は<ruby>事件<rt>じけん</rt></ruby>に<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>まれた<ruby>可能性<rt>かのうせい</rt></ruby>があるとして、",
     "cn": "警视厅认为其有可能被卷入案件，"
   },
   {
     "id": 4,
-    "start": 17.5,
-    "end": 23.5,
+    "start": 16.8,
+    "end": 22.8,
     "jp": "<ruby>接点<rt>せってん</rt></ruby>のあった<ruby>人物<rt>じんぶつ</rt></ruby>の<ruby>特定<rt>とくてい</rt></ruby>など<ruby>捜査<rt>そうさ</rt></ruby>を<ruby>進<rt>すす</rt></ruby>めていました。",
     "cn": "推进了包括排查相关接触人员等搜查工作。"
   },
   {
     "id": 5,
-    "start": 23.5,
-    "end": 31.0,
+    "start": 22.8,
+    "end": 30.5,
     "jp": "その<ruby>結果<rt>けっか</rt></ruby>、<ruby>神奈川県<rt>かながわけん</rt></ruby><ruby>南足柄市<rt>みなみあしがらし</rt></ruby>の<ruby>会社員<rt>かいしゃいん</rt></ruby>、<ruby>三瓶<rt>さんぺい</rt></ruby><ruby>博幸<rt>ひろゆき</rt></ruby><ruby>容疑者<rt>ようぎしゃ</rt></ruby>が、",
     "cn": "结果查明，神奈川县南足柄市的公司职员、犯罪嫌疑人三瓶博幸，"
   },
   {
     "id": 6,
-    "start": 31.0,
-    "end": 37.0,
+    "start": 30.5,
+    "end": 36.5,
     "jp": "<ruby>茨城県<rt>いばらきけん</rt></ruby><ruby>常陸太田市<rt>ひたちおおたし</rt></ruby>にある<ruby>自分<rt>じぶん</rt></ruby>の<ruby>別荘<rt>べっそう</rt></ruby>で<ruby>一緒<rt>いっしょ</rt></ruby>にいたことが<ruby>分<rt>わ</rt></ruby>かり、",
     "cn": "曾与受害者一起位于茨城县常陆太田市其自己的别墅内，"
   },
   {
     "id": 7,
-    "start": 37.0,
+    "start": 36.5,
     "end": 42.0,
     "jp": "<ruby>監禁<rt>かんきん</rt></ruby>の<ruby>疑<rt>うたが</rt></ruby>いで<ruby>逮捕<rt>たいほ</rt></ruby>しました。",
     "cn": "警方已涉嫌非法拘禁将其逮捕。"
