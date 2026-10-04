@@ -124,22 +124,22 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 40%;
+      max-width: 36%;
     }
     .controls {
       display: flex;
-      gap: 8px;
+      gap: 6px;
     }
     .btn {
       background: #f3f4f6;
       border: 1px solid var(--border);
-      padding: 6px 12px;
+      padding: 6px 10px;
       border-radius: 6px;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
       color: var(--text);
     }
     .btn:active {
@@ -157,17 +157,17 @@
   <div class="header">
     <h1>🇯🇵 随身日语听力跟读</h1>
     <div class="select-wrap">
-          <select id="lesson-select">
-      <option value="2026-001">第 1 课：au 无人商店</option>
-      <option value="2026-002">第 2 课：FRB加息</option>
-      <option value="2026-003">第 3 课：自动驾驶出租车 (NHK)</option>
-      <option value="2026-004">第 4 课：年轻人结婚意愿 (NHK)</option>
-      <option value="2026-005">第 5 课：大塚家具配送确认电话</option>
-      <option value="2026-006">第 6 课：火星卫星探测器MMX (NHK)</option>
-      <option value="2026-007">第 7 课：文京区女性失踪事件 (News)</option>
-      <option value="2026-008">第 8 课：美国物价上涨与CPI (News)</option>
-      <option value="2026-012">第 12 课：中田敦彦-止不住的日元贬值(1)</option>
-    </select>
+      <select id="lesson-select">
+        <option value="2026-001">第 1 课：au 无人商店</option>
+        <option value="2026-002">第 2 课：FRB加息</option>
+        <option value="2026-003">第 3 课：自动驾驶出租车 (NHK)</option>
+        <option value="2026-004">第 4 课：年轻人结婚意愿 (NHK)</option>
+        <option value="2026-005">第 5 课：大塚家具配送确认电话</option>
+        <option value="2026-006">第 6 课：火星卫星探测器MMX (NHK)</option>
+        <option value="2026-007">第 7 课：文京区女性失踪事件 (News)</option>
+        <option value="2026-008">第 8 课：美国物价上涨与CPI (News)</option>
+        <option value="2026-012">第 12 课：中田敦彦-止不住的日元贬值(1)</option>
+      </select>
     </div>
     <audio id="audio-player" controls preload="metadata"></audio>
   </div>
@@ -179,7 +179,7 @@
     <div class="controls">
       <button class="btn" id="prev-btn">◀ 上句</button>
       <button class="btn" id="play-pause-btn">⏸ 暂停</button>
-      <button class="btn" id="loop-btn">🔁 单句循环</button>
+      <button class="btn active" id="loop-mode-btn">🔁 单句循环</button>
       <button class="btn" id="next-btn">下句 ▶</button>
     </div>
   </div>
@@ -189,27 +189,43 @@
     const select = document.getElementById('lesson-select');
     const list = document.getElementById('sentences-list');
     const badge = document.getElementById('current-badge');
-    const loopBtn = document.getElementById('loop-btn');
+    const loopModeBtn = document.getElementById('loop-mode-btn');
     const playPauseBtn = document.getElementById('play-pause-btn');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
 
     let sentences = [];
     let currentIndex = -1;
-    let isLooping = true;
+    
+    // 循环模式：0=单句循环, 1=列表循环, 2=顺序播放
+    let playMode = 0; 
+    const modeConfigs = [
+      { text: '🔁 单句循环', active: true },
+      { text: '🔄 列表循环', active: true },
+      { text: '➡️ 顺序播放', active: false }
+    ];
 
-    loopBtn.classList.toggle('active', isLooping);
+    function updateModeBtn() {
+      loopModeBtn.textContent = modeConfigs[playMode].text;
+      loopModeBtn.classList.toggle('active', modeConfigs[playMode].active);
+    }
+
+    loopModeBtn.onclick = () => {
+      playMode = (playMode + 1) % 3;
+      updateModeBtn();
+    };
 
     async function loadLesson(lessonId) {
       audio.src = `lessons/${lessonId}.mp3`;
       try {
         const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
+        if (!res.ok) throw new Error('File not found');
         sentences = await res.json();
         renderList();
         currentIndex = -1;
         badge.textContent = `共 ${sentences.length} 句`;
       } catch (e) {
-        list.innerHTML = '<p style="text-align:center;color:red;">数据加载失败</p>';
+        list.innerHTML = '<p style="text-align:center;color:red;padding:20px;">数据加载失败，请检查 lessons/' + lessonId + '.json 文件</p>';
       }
     }
 
@@ -253,10 +269,19 @@
       if (currentIndex >= 0) {
         const s = sentences[currentIndex];
         if (cur >= s.end) {
-          if (isLooping) {
+          if (playMode === 0) {
+            // 单句循环
             audio.currentTime = s.start;
             audio.play();
+          } else if (playMode === 1) {
+            // 列表循环
+            if (currentIndex + 1 < sentences.length) {
+              playSentence(currentIndex + 1);
+            } else {
+              playSentence(0);
+            }
           } else {
+            // 顺序播放
             if (currentIndex + 1 < sentences.length) {
               playSentence(currentIndex + 1);
             } else {
@@ -285,22 +310,19 @@
       }
     };
 
-    loopBtn.onclick = () => {
-      isLooping = !isLooping;
-      loopBtn.classList.toggle('active', isLooping);
-    };
-
     prevBtn.onclick = () => {
       if (currentIndex > 0) playSentence(currentIndex - 1);
+      else if (sentences.length > 0) playSentence(sentences.length - 1);
     };
 
     nextBtn.onclick = () => {
       if (currentIndex + 1 < sentences.length) playSentence(currentIndex + 1);
+      else if (sentences.length > 0) playSentence(0);
     };
 
     select.onchange = () => loadLesson(select.value);
 
-    // 默认加载第一课
+    // 默认加载选中的课程
     loadLesson(select.value);
   </script>
 </body>
