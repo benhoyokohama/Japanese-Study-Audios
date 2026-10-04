@@ -145,7 +145,6 @@
       background: #e5e7eb;
     }
 
-    /* 三种模式配色 */
     .btn.mode-seq {
       background: #ffedd5;
       border-color: #f97316;
@@ -173,13 +172,6 @@
       <select id="lesson-select">
         <option value="2026-001">第 1 课：au 无人商店</option>
         <option value="2026-002">第 2 课：FRB加息</option>
-        <option value="2026-003">第 3 课：自动驾驶出租车 (NHK)</option>
-        <option value="2026-004">第 4 课：年轻人结婚意愿 (NHK)</option>
-        <option value="2026-005">第 5 课：大塚家具配送确认电话</option>
-        <option value="2026-006">第 6 课：火星卫星探测器MMX (NHK)</option>
-        <option value="2026-007">第 7 课：文京区女性失踪事件 (News)</option>
-        <option value="2026-008">第 8 课：美国物价上涨与CPI (News)</option>
-        <option value="2026-012">第 12 课：中田敦彦-止不住的日元贬值(1)</option>
       </select>
     </div>
     <audio id="audio-player" controls preload="metadata"></audio>
@@ -238,7 +230,11 @@
         currentIndex = -1;
         badge.textContent = `共 ${sentences.length} 句`;
         if (autoPlay && sentences.length > 0) {
-          playSentence(0);
+          audio.onloadeddata = () => {
+            playSentence(0);
+            audio.onloadeddata = null;
+          };
+          audio.load();
         }
       } catch (e) {
         list.innerHTML = '<p style="text-align:center;color:red;padding:20px;">数据加载失败，请检查 lessons/' + lessonId + '.json 文件</p>';
@@ -280,7 +276,6 @@
       }
     }
 
-    // 核心跨课与跨句调度
     audio.addEventListener('timeupdate', () => {
       const cur = audio.currentTime;
       if (sentences.length === 0 || currentIndex < 0 || currentIndex >= sentences.length) return;
@@ -289,15 +284,12 @@
 
       if (cur >= currentSentence.end) {
         if (playMode === 1) {
-          // 1. 【单句循环】：回到本句开头
           audio.currentTime = currentSentence.start;
           audio.play().catch(() => {});
         } else if (playMode === 0) {
-          // 2. 【顺序播放】：本课下一句；若本课已完，自动跨入下一课
           if (currentIndex + 1 < sentences.length) {
             playSentence(currentIndex + 1);
           } else {
-            // 最后一课检测
             const nextOptionIdx = select.selectedIndex + 1;
             if (nextOptionIdx < select.options.length) {
               select.selectedIndex = nextOptionIdx;
@@ -309,7 +301,6 @@
             }
           }
         } else if (playMode === 2) {
-          // 3. 【列表循环】：在当前课内循环
           if (currentIndex + 1 < sentences.length) {
             playSentence(currentIndex + 1);
           } else {
@@ -343,7 +334,6 @@
 
     select.onchange = () => loadLesson(select.value, false);
 
-    // 默认加载第一课
     loadLesson(select.value, false);
   </script>
 </body>
