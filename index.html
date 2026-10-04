@@ -313,26 +313,47 @@
     // 统一处理句子结束与循环逻辑
     function handleSentenceEnd() {
       if (!sentences.length) return;
-      const current = sentences[currentIndex];
+      const lessonSelect = document.getElementById('lessonSelect');
+      const options = Array.from(lessonSelect.options);
+      const currentOptIndex = lessonSelect.selectedIndex;
 
       if (playMode === 'single') {
         // 单句循环
-        audio.currentTime = current.start;
+        audio.currentTime = sentences[currentIndex].start;
         audio.play();
       } else if (playMode === 'loop') {
-        // 列表循环：如果没到底播下句，到底了从句 1 重新循环
+        // 列表循环
         if (currentIndex < sentences.length - 1) {
           playSentence(currentIndex + 1);
         } else {
-          playSentence(0);
+          // 当前课到底：切下一课；最后一课到底则回第 1 课无限循环
+          const nextOptIndex = (currentOptIndex + 1) % options.length;
+          lessonSelect.selectedIndex = nextOptIndex;
+          loadLesson(options[nextOptIndex].value).then(() => {
+            playSentence(0);
+          });
         }
       } else if (playMode === 'order') {
-        // 顺序播放：未到底播下句，到底则停止
+        // 顺序播放
         if (currentIndex < sentences.length - 1) {
           playSentence(currentIndex + 1);
         } else {
-          audio.pause();
-          playPauseBtn.innerText = '▶️ 播放';
+          // 当前课到底
+          if (currentOptIndex < options.length - 1) {
+            lessonSelect.selectedIndex = currentOptIndex + 1;
+            loadLesson(options[currentOptIndex + 1].value).then(() => {
+              playSentence(0);
+            });
+          } else {
+            // 最后一课到底：回到第 1 课，并停止播放
+            lessonSelect.selectedIndex = 0;
+            loadLesson(options[0].value).then(() => {
+              audio.pause();
+              audio.currentTime = 0;
+              playPauseBtn.innerText = '▶️ 播放';
+              updateActiveCard();
+            });
+          }
         }
       }
     }
@@ -342,14 +363,16 @@
       if (!sentences.length) return;
       const cur = audio.currentTime;
       const current = sentences[currentIndex];
-      // 容差 0.15 秒，避免音频末尾截断
-      if (cur >= current.end - 0.1) {
+      // 容差判断
+      if (cur >= current.end - 0.2) {
         handleSentenceEnd();
       }
     });
 
-    // 音频自然播放结束触发（防止最后一句 timeupdate 不触发）
+    // 针对整首音频自然结束的强保险监听
     audio.addEventListener('ended', () => {
+      // 只要音频自然放完，直接视作最后一句结束
+      currentIndex = sentences.length - 1;
       handleSentenceEnd();
     });
 
