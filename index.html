@@ -274,29 +274,37 @@
     audio.ontimeupdate = () => {
       if (isSegmentPlaying && audio.currentTime >= segmentEnd) {
         if (loopMode === "single") {
-          // 🔂 单句循环：重复播放当前句
+          // 🔂 单句循环：回到本句起点
           audio.currentTime = lessonData[currentIndex].start;
           audio.play();
         } else if (loopMode === "list") {
-          // 🔁 列表循环：下句播放，全篇结束则回本课第1句
+          // 🔁 列表循环：不是最后一句则切下句；到切片最后一句时，强制重置音频到第 1 句起点
           if (currentIndex < lessonData.length - 1) {
             nextSentence();
           } else {
             currentIndex = 0;
+            audio.currentTime = lessonData[0].start;
             playSegment(lessonData[0].start, lessonData[0].end, 0);
           }
         } else if (loopMode === "none") {
-          // ➡️ 顺序播放：下句播放；若播到最后一句，切到第一篇(2026-001)第1句
+          // ➡️ 顺序播放：切下句；到本课切片最后一句时，直接切入下一课
           if (currentIndex < lessonData.length - 1) {
             nextSentence();
           } else {
             const select = document.getElementById("lessonSelect");
-            const firstLessonVal = select.options[0].value;
-            select.value = firstLessonVal;
-            changeLesson(firstLessonVal).then(() => {
-              if (lessonData.length > 0) {
-                currentIndex = 0;
-                playSegment(lessonData[0].start, lessonData[0].end, 0);
+            let nextIdx = select.selectedIndex + 1;
+            if (nextIdx >= select.options.length) {
+              nextIdx = 0; // 最后一课播完切回第 1 课
+            }
+            select.selectedIndex = nextIdx;
+            changeLesson(select.value).then(newData => {
+              if (newData && newData.length > 0) {
+                // 确保新课音频就绪后起播第 1 句
+                const startNext = () => {
+                  audio.removeEventListener("canplay", startNext);
+                  playSegment(newData[0].start, newData[0].end, 0);
+                };
+                audio.addEventListener("canplay", startNext);
               }
             });
           }
