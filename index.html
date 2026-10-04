@@ -144,7 +144,6 @@
     .btn:active {
       background: #e5e7eb;
     }
-
     .btn.mode-seq {
       background: #ffedd5;
       border-color: #f97316;
@@ -171,7 +170,7 @@
     <div class="select-wrap">
       <select id="lesson-select">
         <option value="2026-001">第 1 课：au 无人商店</option>
-        <option value="2026-002b">第 2 课：FRB加息</option></option>
+        <option value="2026-002">第 2 课</option>
       </select>
     </div>
     <audio id="audio-player" controls preload="metadata"></audio>
@@ -222,6 +221,7 @@
     async function loadLesson(lessonId, autoPlay = false) {
       const buster = Date.now();
       audio.src = `lessons/${lessonId}.mp3?v=${buster}`;
+
       try {
         const res = await fetch(`lessons/${lessonId}.json?v=${buster}`);
         if (!res.ok) throw new Error('File not found');
@@ -249,7 +249,7 @@
             <span class="play-badge">点击播放 🔊</span>
           </div>
           <div class="jp-text">${s.jp}</div>
-          <div class="cn-text">${s.cn}</div>
+          <div class="cn-text">${s.cn || ''}</div>
         </div>
       `).join('');
     }
