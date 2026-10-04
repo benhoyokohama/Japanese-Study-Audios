@@ -171,7 +171,6 @@
     <div class="select-wrap">
       <select id="lesson-select">
         <option value="2026-001">第 1 课：au 无人商店</option>
-        <option value="2026-002">第 2 课：FRB加息</option>
       </select>
     </div>
     <audio id="audio-player" controls preload="metadata"></audio>
@@ -202,7 +201,6 @@
     let sentences = [];
     let currentIndex = -1;
 
-    // 0: 顺序播放, 1: 单句循环, 2: 列表循环
     let playMode = 0;
     const modeConfigs = [
       { text: '➡️ 顺序播放', className: 'mode-seq' },
@@ -221,9 +219,10 @@
     };
 
     async function loadLesson(lessonId, autoPlay = false) {
-      audio.src = `lessons/${lessonId}.mp3?t=${Date.now()}`;
+      const buster = Date.now();
+      audio.src = `lessons/${lessonId}.mp3?v=${buster}`;
       try {
-        const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
+        const res = await fetch(`lessons/${lessonId}.json?v=${buster}`);
         if (!res.ok) throw new Error('File not found');
         sentences = await res.json();
         renderList();
@@ -237,7 +236,7 @@
           audio.load();
         }
       } catch (e) {
-        list.innerHTML = '<p style="text-align:center;color:red;padding:20px;">数据加载失败，请检查 lessons/' + lessonId + '.json 文件</p>';
+        list.innerHTML = '<p style="text-align:center;color:red;padding:20px;">数据加载失败</p>';
       }
     }
 
