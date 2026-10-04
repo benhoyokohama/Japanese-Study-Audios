@@ -31,12 +31,12 @@
     <div class="max-w-lg mx-auto flex items-center justify-between gap-2">
       <div class="flex-1 truncate">
         <span id="currentTag" class="bg-blue-600 text-white text-[11px] px-1.5 py-0.5 rounded font-bold mr-1">句 1</span>
-        <span id="currentJp" class="text-xs font-medium text-slate-700 truncate inline-block max-w-[130px] align-middle">准备就绪</span>
+        <span id="currentJp" class="text-xs font-medium text-slate-700 truncate inline-block max-w-[120px] align-middle">准备就绪</span>
       </div>
       <div class="flex items-center gap-1.5 shrink-0">
         <button id="prevBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">◀ 上句</button>
         <button id="playPauseBtn" class="bg-amber-500 active:bg-amber-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm">⏸ 暂停</button>
-        <button id="repeatBtn" class="bg-emerald-600 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition">🔁 单句循环</button>
+        <button id="modeBtn" class="bg-emerald-600 active:bg-emerald-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition">🔁 单句循环</button>
         <button id="nextBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">下句 ▶</button>
       </div>
     </div>
@@ -45,23 +45,33 @@
   <script>
     let sentences = [];
     let currentIndex = -1;
-    let isSingleRepeat = true; // 默认单句循环
+    // 播放模式: 0: 单句循环, 1: 本课整体循环, 2: 自动进入下一课连播
+    let playMode = 0; 
+
     const player = document.getElementById('player');
     const listContainer = document.getElementById('sentenceList');
     const currentTag = document.getElementById('currentTag');
     const currentJp = document.getElementById('currentJp');
     const courseSelect = document.getElementById('courseSelect');
     const playPauseBtn = document.getElementById('playPauseBtn');
-    const repeatBtn = document.getElementById('repeatBtn');
+    const modeBtn = document.getElementById('modeBtn');
 
-    async function loadLesson(lessonName) {
+    const MODE_CONFIGS = [
+      { text: '🔁 单句循环', class: 'bg-emerald-600 active:bg-emerald-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition' },
+      { text: '🔄 本课循环', class: 'bg-blue-600 active:bg-blue-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition' },
+      { text: '⏭️ 连播下课', class: 'bg-purple-600 active:bg-purple-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition' }
+    ];
+
+    async function loadLesson(lessonName, autoPlay = false) {
       try {
         listContainer.innerHTML = '<div class="text-center py-10 text-slate-400 text-sm">加载中...</div>';
         player.src = `lessons/${lessonName}.mp3`;
         const res = await fetch(`lessons/${lessonName}.json`);
         sentences = await res.json();
         renderList();
-        if (sentences.length > 0) selectSentence(0, false);
+        if (sentences.length > 0) {
+          selectSentence(0, autoPlay);
+        }
       } catch (err) {
         listContainer.innerHTML = '<div class="text-center py-10 text-rose-500 text-sm">加载课件失败，请确认 lessons 文件夹下是否有对应文件！</div>';
       }
@@ -104,27 +114,36 @@
 
       player.currentTime = s.start;
       if (autoPlay) {
-        player.play();
+        player.play().catch(() => {});
       }
     }
 
-    // 播放进度监听：判断是单句循环还是整体顺延
     player.ontimeupdate = () => {
       if (currentIndex === -1 || sentences.length === 0) return;
       const s = sentences[currentIndex];
       
       if (player.currentTime >= s.end) {
-        if (isSingleRepeat) {
-          // 单句循环：跳回当前句句首继续播放
+        if (playMode === 0) {
+          // 1. 单句循环
           player.currentTime = s.start;
-          player.play();
-        } else {
-          // 整体播放：自动跳到下一句
+          player.play().catch(() => {});
+        } else if (playMode === 1) {
+          // 2. 本课整体循环
           if (currentIndex + 1 < sentences.length) {
             selectSentence(currentIndex + 1, true);
           } else {
-            // 全篇结束
-            player.pause();
+            selectSentence(0, true); // 播完本课回到第1句
+          }
+        } else if (playMode === 2) {
+          // 3. 自动进入下一课
+          if (currentIndex + 1 < sentences.length) {
+            selectSentence(currentIndex + 1, true);
+          } else {
+            // 切下一课
+            const totalCourses = courseSelect.options.length;
+            const nextCourseIdx = (courseSelect.selectedIndex + 1) % totalCourses;
+            courseSelect.selectedIndex = nextCourseIdx;
+            loadLesson(courseSelect.value, true);
           }
         }
       }
@@ -145,20 +164,15 @@
     document.getElementById('prevBtn').onclick = () => selectSentence(currentIndex - 1, true);
     document.getElementById('nextBtn').onclick = () => selectSentence(currentIndex + 1, true);
 
-    // 点击切换“单句循环”与“整篇顺延”模式
-    repeatBtn.onclick = () => {
-      isSingleRepeat = !isSingleRepeat;
-      if (isSingleRepeat) {
-        repeatBtn.textContent = '🔁 单句循环';
-        repeatBtn.className = 'bg-emerald-600 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition';
-      } else {
-        repeatBtn.textContent = '➡️ 整体播放';
-        repeatBtn.className = 'bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-lg text-xs font-bold transition';
-      }
+    // 循环切换 3 种播放模式
+    modeBtn.onclick = () => {
+      playMode = (playMode + 1) % 3;
+      modeBtn.textContent = MODE_CONFIGS[playMode].text;
+      modeBtn.className = MODE_CONFIGS[playMode].class;
     };
 
-    courseSelect.onchange = (e) => loadLesson(e.target.value);
-    loadLesson(courseSelect.value);
+    courseSelect.onchange = (e) => loadLesson(e.target.value, false);
+    loadLesson(courseSelect.value, false);
   </script>
 </body>
 </html>
