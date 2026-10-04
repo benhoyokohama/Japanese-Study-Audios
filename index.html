@@ -201,7 +201,7 @@
     const modeConfigs = [
       { text: '🔁 单句循环', active: true },
       { text: '🔄 列表循环', active: true },
-      { text: '➡️️ 顺序播放', active: false }
+      { text: '➡️ 顺序播放', active: false }
     ];
 
     function updateModeBtn() {
@@ -246,7 +246,7 @@
       currentIndex = idx;
       updateUI();
       audio.currentTime = sentences[idx].start;
-      audio.play();
+      audio.play().catch(() => {});
     };
 
     function updateUI() {
@@ -263,27 +263,39 @@
       }
     }
 
+    // 核心循环控制逻辑
+    function handleSentenceEnd() {
+      if (currentIndex < 0 || currentIndex >= sentences.length) return;
+      const s = sentences[currentIndex];
+
+      if (playMode === 0) {
+        // 1. 单句循环：强制回到句首重新起播
+        audio.currentTime = s.start;
+        audio.play().catch(() => {});
+      } else if (playMode === 1) {
+        // 2. 列表循环：下句，到底回到第0句
+        if (currentIndex + 1 < sentences.length) {
+          playSentence(currentIndex + 1);
+        } else {
+          playSentence(0);
+        }
+      } else {
+        // 3. 顺序播放：下句，到底暂停
+        if (currentIndex + 1 < sentences.length) {
+          playSentence(currentIndex + 1);
+        } else {
+          audio.pause();
+        }
+      }
+    }
+
+    // 高频监听进度，提前 0.05 秒捕获句尾，防止浏览器原生卡顿
     audio.addEventListener('timeupdate', () => {
       const cur = audio.currentTime;
       if (currentIndex >= 0) {
         const s = sentences[currentIndex];
-        if (cur >= s.end) {
-          if (playMode === 0) {
-            audio.currentTime = s.start;
-            audio.play();
-          } else if (playMode === 1) {
-            if (currentIndex + 1 < sentences.length) {
-              playSentence(currentIndex + 1);
-            } else {
-              playSentence(0);
-            }
-          } else {
-            if (currentIndex + 1 < sentences.length) {
-              playSentence(currentIndex + 1);
-            } else {
-              audio.pause();
-            }
-          }
+        if (cur >= s.end - 0.05) {
+          handleSentenceEnd();
         }
       } else {
         const idx = sentences.findIndex(s => cur >= s.start && cur < s.end);
@@ -294,13 +306,18 @@
       }
     });
 
+    // 防止音频自然播放到文件末尾时停止触发
+    audio.addEventListener('ended', () => {
+      handleSentenceEnd();
+    });
+
     audio.addEventListener('play', () => playPauseBtn.textContent = '⏸ 暂停');
     audio.addEventListener('pause', () => playPauseBtn.textContent = '▶ 播放');
 
     playPauseBtn.onclick = () => {
       if (audio.paused) {
         if (currentIndex === -1 && sentences.length > 0) playSentence(0);
-        else audio.play();
+        else audio.play().catch(() => {});
       } else {
         audio.pause();
       }
