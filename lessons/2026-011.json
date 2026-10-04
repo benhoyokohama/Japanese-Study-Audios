@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "start": 0.00,
+    "end": 21.00,
+    "jp": "<ruby>今年<rt>ことし</rt></ruby>4<ruby>月<rt>がつ</rt></ruby>から6<ruby>月<rt>がつ</rt></ruby>までのGDP・<ruby>国内総生産<rt>こくないそうせいさん</rt></ruby>の<ruby>改定値<rt>かいていち</rt></ruby>は、<ruby>最新<rt>さいしん</rt></ruby>の<ruby>統計<rt>とうけい</rt></ruby>を<ruby>反映<rt>はんえい</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby>、<ruby>実質<rt>じっしつ</rt></ruby>の<ruby>伸<rt>の</rt></ruby>び<ruby>率<rt>りつ</rt></ruby>が<ruby>年率<rt>ねんりつ</rt></ruby><ruby>換算<rt>かんさん</rt></ruby>でプラス2.9%と、<ruby>先月<rt>せんげつ</rt></ruby><ruby>発表<rt>はっぴょう</rt></ruby>された<ruby>速報値<rt>そくほうち</rt></ruby>のプラス3.1%から<ruby>下方修正<rt>かほうしゅうせい</rt></ruby>されました。",
+    "cn": "今年4月至6月的GDP（国内生产总值）改定值，在反映了最新统计数据后，按年率换算的实际增长率为+2.9%，较上月公布的初值（+3.1%）出现了下修。"
+  },
+  {
+    "id": 2,
+    "start": 22.00,
+    "end": 34.00,
+    "jp": "<ruby>内閣府<rt>ないかくふ</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>した<ruby>今年<rt>ことし</rt></ruby>4<ruby>月<rt>がつ</rt></ruby>から6<ruby>月<rt>がつ</rt></ruby>までのGDPの<ruby>改定値<rt>かいていち</rt></ruby>は、<ruby>物価<rt>ぶっか</rt></ruby>の<ruby>変動<rt>へんどう</rt></ruby>を<ruby>除<rt>のぞ</rt></ruby>いた<ruby>実質<rt>じっしつ</rt></ruby>の<ruby>伸<rt>の</rt></ruby>び<ruby>率<rt>りつ</rt></ruby>が<ruby>前<rt>まえ</rt></ruby>の3か<ruby>月<rt>げつ</rt></ruby>と<ruby>比<rt>くら</rt></ruby>べてプラス0.7%でした。",
+    "cn": "内阁府公布的今年4月至6月GDP改定值中，剔除物价变动影响后的实际环比增长率为+0.7%。"
+  },
+  {
+    "id": 3,
+    "start": 35.00,
+    "end": 47.00,
+    "jp": "これが1<ruby>年間<rt>ねんかん</rt></ruby><ruby>続<rt>つづ</rt></ruby>いた<ruby>場合<rt>ばあい</rt></ruby>の<ruby>年率<rt>ねんりつ</rt></ruby>に<ruby>換算<rt>かんさん</rt></ruby>するとプラス2.9%となり、<ruby>先月<rt>せんげつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby>に<ruby>発表<rt>はっぴょう</rt></ruby>された<ruby>速報値<rt>そくほうち</rt></ruby>から0.2ポイント<ruby>下方修正<rt>かほうしゅうせい</rt></ruby>されました。",
+    "cn": "若该增速持续一年，折合年率增幅为+2.9%，比上月15日公布的初值下调了0.2个百分点。"
+  },
+  {
+    "id": 4,
+    "start": 48.00,
+    "end": 51.00,
+    "jp": "GDPの<ruby>伸<rt>の</rt></ruby>び<ruby>率<rt>りつ</rt></ruby>がプラスとなるのは2<ruby>期<rt>き</rt></ruby>ぶりです。",
+    "cn": "GDP增长率转正为两个季度以来的首次。"
+  },
+  {
+    "id": 5,
+    "start": 52.00,
+    "end": 63.00,
+    "jp": "GDPの<ruby>半分<rt>はんぶん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>を<ruby>占<rt>し</rt></ruby>める<ruby>個人消費<rt>こじんしょうひ</rt></ruby>は、<ruby>前<rt>まえ</rt></ruby>の3か<ruby>月<rt>げつ</rt></ruby>からの<ruby>伸<rt>の</rt></ruby>び<ruby>率<rt>りつ</rt></ruby>が<ruby>速報値<rt>そくほうち</rt></ruby>のプラス1.0%からプラス0.9%に<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げられました。",
+    "cn": "占GDP半数以上的个人消费，相较前三个月的增长率由初值的+1.0%下调至+0.9%。"
+  },
+  {
+    "id": 6,
+    "start": 64.00,
+    "end": 75.00,
+    "jp": "<ruby>企業<rt>きぎょう</rt></ruby>の<ruby>設備投資<rt>せつびとうし</rt></ruby>も<ruby>最新<rt>さいしん</rt></ruby>の<ruby>統計<rt>とうけい</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>を<ruby>反映<rt>はんえい</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby>、<ruby>速報値<rt>そくほうち</rt></ruby>のプラス0.9%からプラス0.8%に<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げられました。",
+    "cn": "企业设备投资同样在结合最新统计结果后，由初值的+0.9%调降至+0.8%。"
+  },
+  {
+    "id": 7,
+    "start": 76.00,
+    "end": 84.00,
+    "jp": "<ruby>一方<rt>いっぽう</rt></ruby>、モノやサービスの<ruby>輸出<rt>ゆしゅつ</rt></ruby>はプラス1.5%と、<ruby>速報値<rt>そくほうち</rt></ruby>から0.1ポイント<ruby>引<rt>ひ</rt></ruby>き<ruby>上<rt>あ</rt></ruby>げられました。",
+    "cn": "另一方面，商品与服务出口为+1.5%，较初值上调了0.1个百分点。"
+  },
+  {
+    "id": 8,
+    "start": 85.00,
+    "end": 90.00,
+    "jp": "<ruby>輸入<rt>ゆにゅう</rt></ruby>はプラス1.7%と、<ruby>速報値<rt>そくほうち</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>水準<rt>すいじゅん</rt></ruby>でした。",
+    "cn": "进口为+1.7%，维持与初值相同的水平。"
+  },
+  {
+    "id": 9,
+    "start": 91.00,
+    "end": 103.00,
+    "jp": "4<ruby>月<rt>がつ</rt></ruby>から6<ruby>月<rt>がつ</rt></ruby>までのGDPでは<ruby>個人消費<rt>こじんしょうひ</rt></ruby>が5<ruby>期<rt>き</rt></ruby>ぶりにプラスに<ruby>転<rt>てん</rt></ruby>じていて、<ruby>今後<rt>こんご</rt></ruby>も<ruby>消費<rt>しょうひ</rt></ruby>の<ruby>伸<rt>の</rt></ruby>びが<ruby>続<rt>つづ</rt></ruby>き、<ruby>経済<rt>けいざい</rt></ruby>の<ruby>成長<rt>せいちょう</rt></ruby>に<ruby>勢<rt>いきお</rt></ruby>いがつくかが<ruby>焦点<rt>しょうてん</rt></ruby>です。",
+    "cn": "在4至6月的GDP中，个人消费时隔5个季度转正，今后消费能否持续增长并带动经济增长势头将是关注的焦点。"
+  }
+]
