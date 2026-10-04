@@ -274,11 +274,11 @@
     audio.ontimeupdate = () => {
       if (isSegmentPlaying && audio.currentTime >= segmentEnd) {
         if (loopMode === "single") {
-          // 🔂 单句循环：回到本句起点
+          // 🔂 单句循环：重复播放当前句
           audio.currentTime = lessonData[currentIndex].start;
-          audio.play();
+          audio.play().catch(e => console.log(e));
         } else if (loopMode === "list") {
-          // 🔁 列表循环：不是最后一句则切下句；到切片最后一句时，强制重置音频到第 1 句起点
+          // 🔁 列表循环：不是最后一句则切下句；到最后一句则重回本课第 1 句
           if (currentIndex < lessonData.length - 1) {
             nextSentence();
           } else {
@@ -287,33 +287,24 @@
             playSegment(lessonData[0].start, lessonData[0].end, 0);
           }
         } else if (loopMode === "none") {
-          // ➡️ 顺序播放：未到本课结尾则播下一句
+          // ➡️ 顺序播放：下句播放；全课播完自动切下一课并自动播放第 1 句
           if (currentIndex < lessonData.length - 1) {
             nextSentence();
           } else {
-            // 已到本课最后一句，计算下一课
             const select = document.getElementById("lessonSelect");
-            let curIdx = select.selectedIndex;
-            let nextIdx = curIdx + 1;
-            
-            // 如果已经是最后一课，回到第一课（索引 0）
-            if (nextIdx >= select.options.length) {
-              nextIdx = 0;
+            let nextIndex = select.selectedIndex + 1;
+            // 播到下拉列表的最后一课时，循环回第一项
+            if (nextIndex >= select.options.length) {
+              nextIndex = 0;
             }
-            
-            // 切换下拉框选中项
-            select.selectedIndex = nextIdx;
-            const nextLessonVal = select.options[nextIdx].value;
-            
-            // 加载新课件并在音频准备好后立即起播第 1 句
-            changeLesson(nextLessonVal).then(newData => {
-              if (newData && newData.length > 0) {
-                const autoStart = () => {
-                  audio.removeEventListener("canplaythrough", autoStart);
-                  audio.removeEventListener("loadeddata", autoStart);
-                  currentIndex = 0;
-                  playSegment(newData[0].start, newData[0].end, 0);
-                };
+            select.selectedIndex = nextIndex;
+            const nextLessonVal = select.options[nextIndex].value;
+            // 切换并直接自动起播第 1 句
+            changeLesson(nextLessonVal, true);
+          }
+        }
+      }
+    };
                 
                 // 监听新音频就绪，双重保险
                 if (audio.readyState >= 2) {
