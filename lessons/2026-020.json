@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 5.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>い",
+    "cn": "蓝色的。"
+  },
+  {
+    "id": 2,
+    "start": 5.0,
+    "end": 12.0,
+    "jp": "みんな<ruby>青<rt>あお</rt></ruby>いです",
+    "cn": "大家全都是蓝色的。"
+  },
+  {
+    "id": 3,
+    "start": 12.0,
+    "end": 17.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>い<ruby>空<rt>そら</rt></ruby>",
+    "cn": "蓝色的天空。"
+  },
+  {
+    "id": 4,
+    "start": 17.0,
+    "end": 22.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>い<ruby>海<rt>うみ</rt></ruby>",
+    "cn": "蔚蓝的大海。"
+  },
+  {
+    "id": 5,
+    "start": 22.0,
+    "end": 28.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>い<ruby>車<rt>くるま</rt></ruby>",
+    "cn": "蓝色的汽车。"
+  },
+  {
+    "id": 6,
+    "start": 28.0,
+    "end": 35.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>い<ruby>自転車<rt>じてんしゃ</rt></ruby>",
+    "cn": "蓝色的自行车。"
+  },
+  {
+    "id": 7,
+    "start": 35.0,
+    "end": 41.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>い<ruby>傘<rt>かさ</rt></ruby>",
+    "cn": "蓝色的雨伞。"
+  },
+  {
+    "id": 8,
+    "start": 41.0,
+    "end": 48.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>いゴミ<ruby>箱<rt>ばこ</rt></ruby>",
+    "cn": "蓝色的垃圾桶。"
+  },
+  {
+    "id": 9,
+    "start": 48.0,
+    "end": 57.0,
+    "jp": "これも<ruby>青<rt>あお</rt></ruby>？<ruby>青<rt>あお</rt></ruby>リンゴ",
+    "cn": "这也是“青（蓝）”吗？青苹果。"
+  },
+  {
+    "id": 10,
+    "start": 57.0,
+    "end": 63.0,
+    "jp": "<ruby>青<rt>あお</rt></ruby>い<ruby>野菜<rt>やさい</rt></ruby>",
+    "cn": "绿叶蔬菜（青菜）。"
+  },
+  {
+    "id": 11,
+    "start": 63.0,
+    "end": 69.0,
+    "jp": "<ruby>青信号<rt>あおしんごう</rt></ruby>",
+    "cn": "绿灯（安全通行信号）。"
+  },
+  {
+    "id": 12,
+    "start": 69.0,
+    "end": 75.0,
+    "jp": "みんな<ruby>青<rt>あお</rt></ruby>いです",
+    "cn": "它们全部都叫“青（あおい）”哦。"
+  }
+]
