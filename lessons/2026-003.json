@@ -1,36 +1,36 @@
 [
   {
     "id": 1,
-    "start": 0.0,
-    "end": 7.7,
+    "start": 0.00,
+    "end": 8.55,
     "jp": "<ruby>来年<rt>らいねん</rt></ruby>から<ruby>人<rt>ひと</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>しない<ruby>自動<rt>じどう</rt></ruby><ruby>運転<rt>うんてん</rt></ruby>のタクシーが<ruby>東京<rt>とうきょう</rt></ruby>でも<ruby>走<rt>はし</rt></ruby>るかもしれません。",
     "cn": "从明年开始，无人驾驶的自动驾驶出租车也可能会在东京行驶。"
   },
   {
     "id": 2,
-    "start": 7.7,
-    "end": 17.5,
+    "start": 8.55,
+    "end": 17.90,
     "jp": "アメリカで<ruby>自動<rt>じどう</rt></ruby><ruby>運転<rt>うんてん</rt></ruby>のタクシーのサービスをしている<ruby>会社<rt>かいしゃ</rt></ruby>が、<ruby>日本<rt>にほん</rt></ruby>のタクシーの<ruby>会社<rt>かいしゃ</rt></ruby>などと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>計画<rt>けいかく</rt></ruby>しています。",
     "cn": "在美国提供自动驾驶出租车服务的公司，正与日本的出租车公司等共同推进计划。"
   },
   {
     "id": 3,
-    "start": 17.5,
-    "end": 26.2,
+    "start": 17.90,
+    "end": 26.40,
     "jp": "<ruby>利用<rt>りよう</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>はスマートフォンアプリでタクシーを<ruby>呼<rt>よ</rt></ruby>びます。<ruby>運転<rt>うんてん</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>はいません。",
     "cn": "使用者通过智能手机应用程序叫车。车里没有驾驶员。"
   },
   {
     "id": 4,
-    "start": 26.2,
-    "end": 39.8,
+    "start": 26.40,
+    "end": 39.80,
     "jp": "<ruby>車<rt>くるま</rt></ruby>が<ruby>自動<rt>じどう</rt></ruby>で<ruby>地図<rt>ちず</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べて、<ruby>客<rt>きゃく</rt></ruby>が<ruby>行<rt>い</rt></ruby>きたい<ruby>場所<rt>ばしょ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。<ruby>会社<rt>かいしゃ</rt></ruby>は<ruby>来年<rt>らいねん</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に<ruby>車<rt>くるま</rt></ruby>を100<ruby>台<rt>だい</rt></ruby>ぐらいにする<ruby>計画<rt>けいかく</rt></ruby>です。",
     "cn": "车辆会自动查询地图前往乘客想去的地方。该公司计划在明年内将车辆增加到100辆左右。"
   },
   {
     "id": 5,
-    "start": 39.8,
-    "end": 57.5,
+    "start": 39.80,
+    "end": 57.50,
     "jp": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は「アメリカでは24<ruby>時間<rt>じかん</rt></ruby>サービスをしています。<ruby>人<rt>ひと</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>するより<ruby>事故<rt>じこ</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなっています。<ruby>安全<rt>あんぜん</rt></ruby>を<ruby>一番<rt>いちばん</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えていきます」と<ruby>話<rt>はな</rt></ruby>しています。",
     "cn": "公司人员表示：“在美国我们提供24小时服务。事故率比人类驾驶更低。我们会把安全放在第一位来推进业务。”"
   }
