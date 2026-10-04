@@ -4,176 +4,304 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>日语听力循环跟读</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    ruby rt { font-size: 0.65em; color: #64748b; }
+    :root {
+      --primary: #4f46e5;
+      --primary-light: #eef2ff;
+      --text: #1f2937;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #f9fafb;
+      --card-bg: #ffffff;
+      --active-card: #eff6ff;
+      --active-border: #3b82f6;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 16px;
+      padding-bottom: 120px;
+    }
+    .header {
+      max-width: 600px;
+      margin: 0 auto 16px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 1.25rem;
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+    .select-wrap {
+      margin-bottom: 16px;
+    }
+    select {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card-bg);
+      color: var(--text);
+      outline: none;
+    }
+    audio {
+      width: 100%;
+      height: 40px;
+      outline: none;
+      margin-bottom: 16px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .card.active {
+      border-color: var(--active-border);
+      background: var(--active-card);
+      box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.15);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .play-badge {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .jp-text {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 6px;
+      font-feature-settings: "palt";
+    }
+    ruby rt {
+      font-size: 0.65em;
+      color: var(--text-muted);
+      user-select: none;
+    }
+    .cn-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 600px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      z-index: 100;
+    }
+    .current-info {
+      font-size: 0.85rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 40%;
+    }
+    .controls {
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      background: #f3f4f6;
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: var(--text);
+    }
+    .btn:active {
+      background: #e5e7eb;
+    }
+    .btn.active {
+      background: #e0e7ff;
+      border-color: #818cf8;
+      color: var(--primary);
+      font-weight: 600;
+    }
   </style>
 </head>
-<body class="bg-slate-100 text-slate-800 pb-36">
-  <div class="max-w-lg mx-auto p-4 space-y-4">
-    <header class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
-      <h1 class="text-lg font-bold text-slate-800 mb-2">🇯🇵 随身日语听力跟读</h1>
-      <label class="block text-xs font-semibold text-slate-500 mb-1">选择课程：</label>
-      <select id="courseSelect" class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none">
-        <option value="2026-009">第 1 课：au 无人商店</option>
+<body>
+  <div class="header">
+    <h1>🇯🇵 随身日语听力跟读</h1>
+    <div class="select-wrap">
+      <select id="lesson-select">
+        <option value="2026-001">第 1 课：au 无人商店</option>
         <option value="2026-002">第 2 课：FRB加息</option>
+        <option value="2026-003">第 3 课：自动驾驶出租车 (NHK)</option>
+        <option value="2026-004">第 4 课：年轻人结婚意愿 (NHK)</option>
+        <option value="2026-005">第 5 课：大塚家具配送确认电话</option>
+        <option value="2026-006">第 6 课：火星卫星探测器MMX (NHK)</option>
+        <option value="2026-007">第 7 课：文京区女性失踪事件 (News)</option>
+        <option value="2026-008">第 8 课：美国物价上涨与CPI (News)</option>
         <option value="2026-012">第 12 课：中田敦彦-止不住的日元贬值(1)</option>
       </select>
-      <audio id="player" controls class="w-full h-10 mt-3"></audio>
-    </header>
-
-    <div id="sentenceList" class="space-y-2.5">
-      <div class="text-center py-10 text-slate-400 text-sm">正在加载课程内容...</div>
     </div>
+    <audio id="audio-player" controls preload="metadata"></audio>
   </div>
 
-  <!-- 底部固定播放控制器 -->
-  <div id="footerBar" class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 px-3 py-3 shadow-lg z-50">
-    <div class="max-w-lg mx-auto flex items-center justify-between gap-2">
-      <div class="flex-1 truncate">
-        <span id="currentTag" class="bg-blue-600 text-white text-[11px] px-1.5 py-0.5 rounded font-bold mr-1">句 1</span>
-        <span id="currentJp" class="text-xs font-medium text-slate-700 truncate inline-block max-w-[120px] align-middle">准备就绪</span>
-      </div>
-      <div class="flex items-center gap-1.5 shrink-0">
-        <button id="prevBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">◀ 上句</button>
-        <button id="playPauseBtn" class="bg-amber-500 active:bg-amber-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm">⏸ 暂停</button>
-        <button id="modeBtn" class="bg-emerald-600 active:bg-emerald-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition">🔁 单句循环</button>
-        <button id="nextBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">下句 ▶</button>
-      </div>
+  <div class="container" id="sentences-list"></div>
+
+  <div class="bottom-bar">
+    <div class="current-info" id="current-badge">准备中...</div>
+    <div class="controls">
+      <button class="btn" id="prev-btn">◀ 上句</button>
+      <button class="btn" id="play-pause-btn">⏸ 暂停</button>
+      <button class="btn" id="loop-btn">🔁 单句循环</button>
+      <button class="btn" id="next-btn">下句 ▶</button>
     </div>
   </div>
 
   <script>
+    const audio = document.getElementById('audio-player');
+    const select = document.getElementById('lesson-select');
+    const list = document.getElementById('sentences-list');
+    const badge = document.getElementById('current-badge');
+    const loopBtn = document.getElementById('loop-btn');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
     let sentences = [];
     let currentIndex = -1;
-    // 播放模式: 0: 单句循环, 1: 本课整体循环, 2: 自动进入下一课连播
-    let playMode = 0; 
+    let isLooping = true;
 
-    const player = document.getElementById('player');
-    const listContainer = document.getElementById('sentenceList');
-    const currentTag = document.getElementById('currentTag');
-    const currentJp = document.getElementById('currentJp');
-    const courseSelect = document.getElementById('courseSelect');
-    const playPauseBtn = document.getElementById('playPauseBtn');
-    const modeBtn = document.getElementById('modeBtn');
+    loopBtn.classList.toggle('active', isLooping);
 
-    const MODE_CONFIGS = [
-      { text: '🔁 单句循环', class: 'bg-emerald-600 active:bg-emerald-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition' },
-      { text: '🔄 本课循环', class: 'bg-blue-600 active:bg-blue-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition' },
-      { text: '⏭️ 连播下课', class: 'bg-purple-600 active:bg-purple-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition' }
-    ];
-
-    async function loadLesson(lessonName, autoPlay = false) {
+    async function loadLesson(lessonId) {
+      audio.src = `lessons/${lessonId}.mp3`;
       try {
-        listContainer.innerHTML = '<div class="text-center py-10 text-slate-400 text-sm">加载中...</div>';
-        player.src = `lessons/${lessonName}.mp3`;
-        const res = await fetch(`lessons/${lessonName}.json`);
+        const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
         sentences = await res.json();
         renderList();
-        if (sentences.length > 0) {
-          selectSentence(0, autoPlay);
-        }
-      } catch (err) {
-        listContainer.innerHTML = '<div class="text-center py-10 text-rose-500 text-sm">加载课件失败，请确认 lessons 文件夹下是否有对应文件！</div>';
+        currentIndex = -1;
+        badge.textContent = `共 ${sentences.length} 句`;
+      } catch (e) {
+        list.innerHTML = '<p style="text-align:center;color:red;">数据加载失败</p>';
       }
     }
 
     function renderList() {
-      listContainer.innerHTML = '';
-      sentences.forEach((item, idx) => {
-        const card = document.createElement('div');
-        card.id = `item-${idx}`;
-        card.className = "p-3.5 bg-white rounded-xl border border-slate-200 transition cursor-pointer active:bg-blue-50";
-        card.innerHTML = `
-          <div class="flex justify-between items-center text-[11px] text-blue-600 font-semibold mb-1">
-            <span>句 ${item.id} [${item.start}s - ${item.end}s]</span>
-            <span class="text-slate-400">点击播放 🔊</span>
+      list.innerHTML = sentences.map((s, idx) => `
+        <div class="card" id="card-${idx}" onclick="playSentence(${idx})">
+          <div class="card-header">
+            <span>句 ${s.id} [${s.start.toFixed(2)}s - ${s.end.toFixed(2)}s]</span>
+            <span class="play-badge">点击播放 🔊</span>
           </div>
-          <div class="text-base text-slate-900 font-medium leading-relaxed">${item.jp}</div>
-          ${item.cn ? `<div class="text-xs text-slate-500 mt-1 pt-1 border-t border-slate-100">${item.cn}</div>` : ''}
-        `;
-        card.onclick = () => selectSentence(idx, true);
-        listContainer.appendChild(card);
-      });
+          <div class="jp-text">${s.jp}</div>
+          <div class="cn-text">${s.cn}</div>
+        </div>
+      `).join('');
     }
 
-    function selectSentence(index, autoPlay = true) {
-      if (index < 0 || index >= sentences.length) return;
-      currentIndex = index;
-      const s = sentences[currentIndex];
-      currentTag.textContent = `句 ${s.id}`;
-      currentJp.innerHTML = s.jp.replace(/<[^>]+>/g, '');
-
-      document.querySelectorAll('#sentenceList > div').forEach((el, i) => {
-        if (i === currentIndex) {
-          el.className = "p-3.5 bg-blue-50 rounded-xl border-2 border-blue-500 shadow-sm transition";
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          el.className = "p-3.5 bg-white rounded-xl border border-slate-200 transition";
-        }
-      });
-
-      player.currentTime = s.start;
-      if (autoPlay) {
-        player.play().catch(() => {});
-      }
-    }
-
-    player.ontimeupdate = () => {
-      if (currentIndex === -1 || sentences.length === 0) return;
-      const s = sentences[currentIndex];
-      
-      if (player.currentTime >= s.end) {
-        if (playMode === 0) {
-          // 1. 单句循环
-          player.currentTime = s.start;
-          player.play().catch(() => {});
-        } else if (playMode === 1) {
-          // 2. 本课整体循环
-          if (currentIndex + 1 < sentences.length) {
-            selectSentence(currentIndex + 1, true);
-          } else {
-            selectSentence(0, true); // 播完本课回到第1句
-          }
-        } else if (playMode === 2) {
-          // 3. 自动进入下一课
-          if (currentIndex + 1 < sentences.length) {
-            selectSentence(currentIndex + 1, true);
-          } else {
-            // 切下一课
-            const totalCourses = courseSelect.options.length;
-            const nextCourseIdx = (courseSelect.selectedIndex + 1) % totalCourses;
-            courseSelect.selectedIndex = nextCourseIdx;
-            loadLesson(courseSelect.value, true);
-          }
-        }
-      }
+    window.playSentence = function(idx) {
+      if (idx < 0 || idx >= sentences.length) return;
+      currentIndex = idx;
+      updateUI();
+      audio.currentTime = sentences[idx].start;
+      audio.play();
     };
 
-    player.onplay = () => { playPauseBtn.textContent = '⏸ 暂停'; };
-    player.onpause = () => { playPauseBtn.textContent = '▶ 播放'; };
+    function updateUI() {
+      document.querySelectorAll('.card').forEach((c, idx) => {
+        c.classList.toggle('active', idx === currentIndex);
+      });
+      if (currentIndex >= 0) {
+        const s = sentences[currentIndex];
+        badge.innerHTML = `<strong>句 ${s.id}</strong> ${s.jp.replace(/<[^>]+>/g, '').slice(0, 10)}...`;
+        const card = document.getElementById(`card-${currentIndex}`);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    }
+
+    audio.addEventListener('timeupdate', () => {
+      const cur = audio.currentTime;
+      if (currentIndex >= 0) {
+        const s = sentences[currentIndex];
+        if (cur >= s.end) {
+          if (isLooping) {
+            audio.currentTime = s.start;
+            audio.play();
+          } else {
+            if (currentIndex + 1 < sentences.length) {
+              playSentence(currentIndex + 1);
+            } else {
+              audio.pause();
+            }
+          }
+        }
+      } else {
+        const idx = sentences.findIndex(s => cur >= s.start && cur < s.end);
+        if (idx !== -1 && idx !== currentIndex) {
+          currentIndex = idx;
+          updateUI();
+        }
+      }
+    });
+
+    audio.addEventListener('play', () => playPauseBtn.textContent = '⏸ 暂停');
+    audio.addEventListener('pause', () => playPauseBtn.textContent = '▶ 播放');
 
     playPauseBtn.onclick = () => {
-      if (player.paused) {
-        if (currentIndex === -1 && sentences.length > 0) selectSentence(0, true);
-        else player.play();
+      if (audio.paused) {
+        if (currentIndex === -1 && sentences.length > 0) playSentence(0);
+        else audio.play();
       } else {
-        player.pause();
+        audio.pause();
       }
     };
 
-    document.getElementById('prevBtn').onclick = () => selectSentence(currentIndex - 1, true);
-    document.getElementById('nextBtn').onclick = () => selectSentence(currentIndex + 1, true);
-
-    // 循环切换 3 种播放模式
-    modeBtn.onclick = () => {
-      playMode = (playMode + 1) % 3;
-      modeBtn.textContent = MODE_CONFIGS[playMode].text;
-      modeBtn.className = MODE_CONFIGS[playMode].class;
+    loopBtn.onclick = () => {
+      isLooping = !isLooping;
+      loopBtn.classList.toggle('active', isLooping);
     };
 
-    courseSelect.onchange = (e) => loadLesson(e.target.value, false);
-    loadLesson(courseSelect.value, false);
+    prevBtn.onclick = () => {
+      if (currentIndex > 0) playSentence(currentIndex - 1);
+    };
+
+    nextBtn.onclick = () => {
+      if (currentIndex + 1 < sentences.length) playSentence(currentIndex + 1);
+    };
+
+    select.onchange = () => loadLesson(select.value);
+
+    // 默认加载第一课
+    loadLesson(select.value);
   </script>
 </body>
 </html>
