@@ -1,44 +1,142 @@
 [
   {
     "id": 1,
-    "start": 0.0,
-    "end": 6.5,
-    "jp": "<ruby>火星<rt>かせい</rt></ruby>の<ruby>衛星<rt>えいせい</rt></ruby>フォボスから<ruby>表面<rt>ひょうめん</rt></ruby>の<ruby>砂<rt>すな</rt></ruby>を<ruby>地球<rt>ちきゅう</rt></ruby>に<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>る<ruby>日本<rt>にほん</rt></ruby>の<ruby>探査機<rt>たんさき</rt></ruby>MMXについて、",
-    "cn": "关于从火星卫星福博斯将表面沙土带回地球的日本探测器MMX，"
+    "start": 0.00,
+    "end": 8.00,
+    "jp": "<ruby>今回<rt>こんかい</rt></ruby><ruby>探究<rt>たんきゅう</rt></ruby>するのは16<ruby>世紀<rt>せいき</rt></ruby>の<ruby>後半<rt>こうはん</rt></ruby>です。<ruby>前回<rt>ぜんかい</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>が<ruby>近世<rt>きんせい</rt></ruby>に<ruby>転換<rt>てんかん</rt></ruby>しようとするところを<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げました。",
+    "cn": "本次我们要探究的是16世纪后半叶。上节课我们探讨了日本向近世转变的阶段。"
   },
   {
     "id": 2,
-    "start": 6.5,
-    "end": 16.5,
-    "jp": "JAXA・<ruby>宇宙<rt>うちゅう</rt></ruby><ruby>航空<rt>こうくう</rt></ruby><ruby>研究<rt>けんきゅう</rt></ruby><ruby>開発<rt>かいはつ</rt></ruby><ruby>機構<rt>きこう</rt></ruby>は<ruby>今年<rt>ことし</rt></ruby>10<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>はつか</rt></ruby>の<ruby>午前<rt>ごぜん</rt></ruby>5<ruby>時<rt>じ</rt></ruby><ruby>前<rt>まえ</rt></ruby>にH3ロケットで<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げると<ruby>発表<rt>はっぴょう</rt></ruby>しました。",
-    "cn": "JAXA宣布将于今年10月20日凌晨5点前使用H3火箭发射。"
+    "start": 8.00,
+    "end": 13.00,
+    "jp": "<ruby>今回<rt>こんかい</rt></ruby>はその<ruby>続<rt>つづ</rt></ruby>きを<ruby>見<rt>み</rt></ruby>ていくんですけど、この<ruby>時代<rt>じだい</rt></ruby>で<ruby>気<rt>き</rt></ruby>になること、<ruby>何<rt>なに</rt></ruby>かあるかな？",
+    "cn": "这次我们继续来看后续发展，关于这个时代大家有什么感兴趣的地方吗？"
   },
   {
     "id": 3,
-    "start": 16.5,
-    "end": 33.2,
-    "jp": "<ruby>火星<rt>かせい</rt></ruby><ruby>衛星<rt>えいせい</rt></ruby><ruby>探査機<rt>たんさき</rt></ruby>MMXは、<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めて<ruby>火星<rt>かせい</rt></ruby>の<ruby>衛星<rt>えいせい</rt></ruby>フォボスに<ruby>着陸<rt>ちゃくりく</rt></ruby>して<ruby>砂<rt>すな</rt></ruby>を<ruby>採取<rt>さいしゅ</rt></ruby>し、<ruby>地球<rt>ちきゅう</rt></ruby>に<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>ることを<ruby>目指<rt>めざ</rt></ruby>して553<ruby>億<rt>おく</rt></ruby><ruby>円<rt>えん</rt></ruby>をかけて<ruby>開発<rt>かいはつ</rt></ruby>されました。",
-    "cn": "火星卫星探测器MMX是世界上首个着陆火星卫星福博斯采集沙土，并以将其带回地球为目标、耗资553亿日元研发的探测器。"
+    "start": 13.00,
+    "end": 18.00,
+    "jp": "<ruby>前回<rt>ぜんかい</rt></ruby>、キリスト<ruby>教<rt>きょう</rt></ruby>が<ruby>結構<rt>けっこう</rt></ruby><ruby>西日本<rt>にしにほん</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>がっていったので、",
+    "cn": "上一课提到基督教在西日本一带传播得相当广，"
   },
   {
     "id": 4,
-    "start": 33.2,
-    "end": 49.8,
-    "jp": "この<ruby>探査機<rt>たんさき</rt></ruby>についてJAXAは、10<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>はつか</rt></ruby>の<ruby>午前<rt>ごぜん</rt></ruby>4<ruby>時<rt>じ</rt></ruby>41<ruby>分<rt>ふん</rt></ruby>3<ruby>秒<rt>びょう</rt></ruby>に、H3ロケット10<ruby>号機<rt>ごうき</rt></ruby>で、<ruby>鹿児島県<rt>かごしまけん</rt></ruby>の<ruby>種子島<rt>たねがしま</rt></ruby><ruby>宇宙<rt>うちゅう</rt></ruby>センターから<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げると<ruby>発表<rt>はっぴょう</rt></ruby>しました。",
-    "cn": "关于该探测器，JAXA宣布将于10月20日凌晨4点41分03秒用H3火箭10号机，从鹿儿岛县种子岛宇宙中心发射升空。"
+    "start": 18.00,
+    "end": 21.00,
+    "jp": "ここからもっと<ruby>広<rt>ひろ</rt></ruby>がっていくのかな？",
+    "cn": "之后会进一步向外扩散吗？"
   },
   {
     "id": 5,
-    "start": 49.8,
-    "end": 67.2,
-    "jp": "<ruby>探査機<rt>たんさき</rt></ruby>にはフォボスに<ruby>着陸<rt>ちゃくりく</rt></ruby>するための4つの<ruby>足<rt>あし</rt></ruby>が<ruby>取<rt>と</rt></ruby>り<ruby>付<rt>つ</rt></ruby>けられ、<ruby>表面<rt>ひょうめん</rt></ruby>の<ruby>砂<rt>すな</rt></ruby>を<ruby>採取<rt>さいしゅ</rt></ruby>する<ruby>装置<rt>そうち</rt></ruby>や、さまざまな<ruby>観測<rt>かんそく</rt></ruby><ruby>機器<rt>きき</rt></ruby>のほか、NHKとJAXAが<ruby>共同<rt>きょうどう</rt></ruby>で<ruby>開発<rt>かいはつ</rt></ruby>したスーパーハイビジョンカメラが<ruby>搭載<rt>とうさい</rt></ruby>されています。",
-    "cn": "探测器上安装了用于在福博斯着陆的4条着陆腿，除了采集表面沙土的装置和各种观测设备外，还搭载了NHK与JAXA联合研发的超高清8K摄像机。"
+    "start": 21.00,
+    "end": 28.00,
+    "jp": "<ruby>前回<rt>ぜんかい</rt></ruby>、<ruby>織田信長<rt>おだのぶなが</rt></ruby>が<ruby>出<rt>で</rt></ruby>てきたので、ここからどう<ruby>変<rt>か</rt></ruby>わっていくのか<ruby>気<rt>き</rt></ruby>になります。",
+    "cn": "上节课织田信长登场了，我很想知道局势从这里开始会如何演变。"
   },
   {
     "id": 6,
-    "start": 67.2,
-    "end": 87.0,
-    "jp": "MMXは1<ruby>年<rt>ねん</rt></ruby>ほどかけて<ruby>火星<rt>かせい</rt></ruby><ruby>付近<rt>ふきん</rt></ruby>に<ruby>到着<rt>とうちゃく</rt></ruby>し、3<ruby>年間<rt>ねんかん</rt></ruby><ruby>探査<rt>たんさ</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けたあと、<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げからおよそ5<ruby>年後<rt>ねんご</rt></ruby>の2031<ruby>年度<rt>ねんど</rt></ruby>にフォボスの<ruby>砂<rt>すな</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>る<ruby>計画<rt>けいかく</rt></ruby>で、<ruby>世界<rt>せかい</rt></ruby><ruby>初<rt>はつ</rt></ruby>の<ruby>探査<rt>たんさ</rt></ruby>に<ruby>国際的<rt>こくさいてき</rt></ruby>な<ruby>注目<rt>ちゅうもく</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まっています。",
-    "cn": "MMX将耗时约1年抵达火星附近，持续探测3年后，计划在发射约5年后的2031财年将福博斯的沙土带回地球，这项世界首次的探测任务正受到国际社会的广泛关注。"
+    "start": 29.00,
+    "end": 35.00,
+    "jp": "<ruby>私<rt>わたし</rt></ruby>は<ruby>織田信長<rt>おだのぶなが</rt></ruby>がやろうとしていた<ruby>天下統一<rt>てんかとういつ</rt></ruby>が<ruby>果<rt>は</rt></ruby>たされたのかというのと、",
+    "cn": "我关心的是织田信长生前谋求的天下统一最终是否实现了，"
+  },
+  {
+    "id": 7,
+    "start": 35.00,
+    "end": 40.00,
+    "jp": "<ruby>他<rt>ほか</rt></ruby>の<ruby>国<rt>くに</rt></ruby>とも<ruby>関<rt>かか</rt></ruby>わりが<ruby>増<rt>ふ</rt></ruby>えるのかなと<ruby>気<rt>き</rt></ruby>になりました。",
+    "cn": "以及与其他国家的往来交流是否会继续增加。"
+  },
+  {
+    "id": 8,
+    "start": 40.00,
+    "end": 48.00,
+    "jp": "<ruby>確<rt>たし</rt></ruby>かに。では、まずリアさん、イチカさんが<ruby>気<rt>き</rt></ruby>になっている<ruby>全国統一<rt>ぜんこくとういつ</rt></ruby>についてVTRで<ruby>見<rt>み</rt></ruby>ていきましょう。",
+    "cn": "确实呢。那么，首先针对莉亚和一花两位同学关心的全国统一进程，来看一段影像记录吧。"
+  },
+  {
+    "id": 9,
+    "start": 49.00,
+    "end": 56.00,
+    "jp": "<ruby>群雄割拠<rt>ぐんゆうかっきょ</rt></ruby>の<ruby>全国<rt>ぜんこく</rt></ruby>の<ruby>大名<rt>だいみょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>から<ruby>頭角<rt>とうかく</rt></ruby>を<ruby>現<rt>あらわ</rt></ruby>した<ruby>織田信長<rt>おだのぶなが</rt></ruby>。",
+    "cn": "在群雄割据的全国大名当中脱颖而出的织田信长。"
+  },
+  {
+    "id": 10,
+    "start": 56.00,
+    "end": 66.00,
+    "jp": "しかし、1582<ruby>年<rt>ねん</rt></ruby>、<ruby>家臣<rt>かしん</rt></ruby>の<ruby>明智光秀<rt>あけちみつひで</rt></ruby>に<ruby>背<rt>そむ</rt></ruby>かれ、<ruby>本能寺<rt>ほんのうじ</rt></ruby>で<ruby>滅<rt>ほろ</rt></ruby>びた。",
+    "cn": "然而在1582年，他遭到部将明智光秀的背叛，在京都本能寺饮恨殒命。"
+  },
+  {
+    "id": 11,
+    "start": 66.00,
+    "end": 72.00,
+    "jp": "この<ruby>後<rt>あと</rt></ruby>、<ruby>織田家<rt>おだけ</rt></ruby>の<ruby>後継者<rt>こうけいしゃ</rt></ruby><ruby>争<rt>あらそ</rt></ruby>いで<ruby>頭角<rt>とうかく</rt></ruby>を<ruby>現<rt>あらわ</rt></ruby>すのが、",
+    "cn": "此后，在织田家的继承人争夺中崛起的是，"
+  },
+  {
+    "id": 12,
+    "start": 72.00,
+    "end": 77.00,
+    "jp": "<ruby>後<rt>のち</rt></ruby>に<ruby>豊臣秀吉<rt>とよとみひでよし</rt></ruby>となる<ruby>羽柴秀吉<rt>はしばひでよし</rt></ruby>だ。",
+    "cn": "日后成为丰臣秀吉的羽柴秀吉。"
+  },
+  {
+    "id": 13,
+    "start": 77.00,
+    "end": 84.00,
+    "jp": "<ruby>本能寺の変<rt>ほんのうじのへん</rt></ruby>を<ruby>知<rt>し</rt></ruby>った<ruby>秀吉<rt>ひでよし</rt></ruby>は、この<ruby>時<rt>とき</rt></ruby><ruby>交戦中<rt>こうせんちゅう</rt></ruby>だった<ruby>毛利氏<rt>もうりし</rt></ruby>と<ruby>急<rt>いそ</rt></ruby>いで<ruby>講和<rt>こうわ</rt></ruby>し、",
+    "cn": "得知本能寺之变后，秀吉火速与当时交战中的毛利氏达成讲和，"
+  },
+  {
+    "id": 14,
+    "start": 84.00,
+    "end": 89.00,
+    "jp": "<ruby>山崎<rt>やまざき</rt></ruby>まで<ruby>引<rt>ひ</rt></ruby>き<ruby>返<rt>かえ</rt></ruby>し、<ruby>光秀<rt>みつひで</rt></ruby>を<ruby>討<rt>う</rt></ruby>ち<ruby>破<rt>やぶ</rt></ruby>った。",
+    "cn": "大军迅速折返至山崎，击溃了明智光秀（中国大返还与山崎之战）。"
+  },
+  {
+    "id": 15,
+    "start": 89.00,
+    "end": 97.00,
+    "jp": "さらに、1583<ruby>年<rt>ねん</rt></ruby>、<ruby>対立<rt>たいりつ</rt></ruby>していた<ruby>織田家<rt>おだけ</rt></ruby>の<ruby>重臣<rt>じゅうしん</rt></ruby>、<ruby>柴田勝家<rt>しばたかついえ</rt></ruby>を<ruby>破<rt>やぶ</rt></ruby>り、",
+    "cn": "随后在1583年，他又击败了与之对立的织田家重臣柴田胜家（贱岳之战），"
+  },
+  {
+    "id": 16,
+    "start": 97.00,
+    "end": 106.00,
+    "jp": "<ruby>織田家<rt>おだけ</rt></ruby>の<ruby>後継者<rt>こうけいしゃ</rt></ruby>としての<ruby>地位<rt>ちい</rt></ruby>を<ruby>固<rt>かた</rt></ruby>め、<ruby>石山本願寺<rt>いしやまほんがんじ</rt></ruby>の<ruby>跡地<rt>あとち</rt></ruby>に<ruby>大坂城<rt>おおさかじょう</rt></ruby>を<ruby>築<rt>きず</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めたんだよ。",
+    "cn": "巩固了作为织田政权实质继承人的地位，并在石山本愿寺原址上开始营建宏伟的大坂城。"
+  },
+  {
+    "id": 17,
+    "start": 106.00,
+    "end": 114.00,
+    "jp": "そして、<ruby>翌年<rt>よくねん</rt></ruby>、<ruby>秀吉<rt>ひでよし</rt></ruby>は<ruby>織田家<rt>おだけ</rt></ruby>の<ruby>次男<rt>じなん</rt></ruby>、<ruby>織田信雄<rt>おだのぶかつ</rt></ruby>と<ruby>徳川家康<rt>とくがわいえやす</rt></ruby>の<ruby>連合軍<rt>れんごうぐん</rt></ruby>と<ruby>戦<rt>たたか</rt></ruby>い、",
+    "cn": "次年，秀吉与织田家次子织田信雄及德川家康的联军展开交锋（小牧长久手之战），"
+  },
+  {
+    "id": 18,
+    "start": 114.00,
+    "end": 120.00,
+    "jp": "<ruby>信雄<rt>のぶかつ</rt></ruby>と<ruby>講和<rt>こうわ</rt></ruby>。その<ruby>後<rt>あと</rt></ruby>、<ruby>臣下<rt>しんか</rt></ruby>として<ruby>服従<rt>ふくじゅう</rt></ruby>させたんだ。",
+    "cn": "迫使织田信雄单独议和，其后将其降为臣下使其归顺服从。"
+  },
+  {
+    "id": 19,
+    "start": 120.00,
+    "end": 127.00,
+    "jp": "1585<ruby>年<rt>ねん</rt></ruby>、<ruby>摂関家<rt>せっかんけ</rt></ruby>の<ruby>関白職<rt>かんぱくしょく</rt></ruby>を<ruby>巡<rt>めぐ</rt></ruby>る<ruby>争<rt>あらそ</rt></ruby>いに<ruby>介入<rt>かいにゅう</rt></ruby>した<ruby>秀吉<rt>ひでよし</rt></ruby>は、",
+    "cn": "1585年，介入了摄关家内部关于关白职位的争夺后，秀吉"
+  },
+  {
+    "id": 20,
+    "start": 127.00,
+    "end": 130.00,
+    "jp": "<ruby>自<rt>みずか</rt></ruby>らが<ruby>関白<rt>かんぱく</rt></ruby>について……",
+    "cn": "自己登上了关白宝座……"
   }
 ]
