@@ -47,10 +47,16 @@
       border-radius: 12px;
       padding: 14px 16px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      border: 1.5px solid transparent;
+      border: 2px solid transparent;
+      cursor: pointer;
+      user-select: none;
       transition: all 0.2s ease;
     }
-    .card.active { border-color: #3b82f6; background-color: #eff6ff; }
+    .card:hover { border-color: #cbd5e1; }
+    .card.active {
+      border-color: #3b82f6;
+      background-color: #eff6ff;
+    }
     .card-header {
       display: flex;
       justify-content: space-between;
@@ -60,16 +66,18 @@
     .index-badge { font-size: 0.8rem; font-weight: 600; color: #64748b; }
     .time-tag { font-size: 0.75rem; color: #94a3b8; }
     .play-btn {
-      background: none;
+      background: #fff;
       border: 1px solid #cbd5e1;
       padding: 3px 8px;
       border-radius: 6px;
       font-size: 0.78rem;
-      cursor: pointer;
       color: #475569;
-      background-color: #fff;
     }
-    .play-btn:hover { background-color: #f1f5f9; }
+    .card.active .play-btn {
+      background-color: #3b82f6;
+      color: #fff;
+      border-color: #3b82f6;
+    }
     .jp-text {
       font-size: 1.15rem;
       line-height: 2.2;
@@ -80,7 +88,7 @@
     rt { font-size: 0.65em; color: #64748b; font-weight: 400; }
     .cn-text { font-size: 0.92rem; color: #64748b; line-height: 1.5; }
     
-    /* AI 语法与词汇分析按钮 */
+    /* 语法折叠面板 */
     .analysis-btn {
       display: inline-block;
       margin-top: 10px;
@@ -104,6 +112,7 @@
       border-radius: 6px;
       font-size: 0.86rem;
       line-height: 1.6;
+      cursor: auto;
     }
     .analysis-box.show { display: block !important; }
     .grammar-item { color: #3730a3; margin: 4px 0; }
@@ -182,7 +191,7 @@
   <script>
     let lessonData = [];
     let currentIndex = 0;
-    let loopMode = "list"; // list: 列表循环 | single: 单句循环 | none: 顺序播放（末句回第1篇）
+    let loopMode = "list"; // list: 本课循环 | single: 单句循环 | none: 顺序播放（末课回第1课）
     let isSegmentPlaying = false;
     let segmentEnd = 0;
 
@@ -192,7 +201,8 @@
     const playPauseBtn = document.getElementById("playPauseBtn");
     const loopBtn = document.getElementById("loopBtn");
 
-    async function changeLesson(lessonId) {
+    async function changeLesson(lessonId, autoPlay = false) {
+      statusText.innerText = "正在加载...";
       audio.src = `lessons/${lessonId}.mp3`;
       try {
         const resp = await fetch(`lessons/${lessonId}.json?v=${Date.now()}`);
@@ -201,14 +211,18 @@
         currentIndex = 0;
         highlightCard(0);
         statusText.innerText = `共 ${lessonData.length} 句`;
+        if (autoPlay && lessonData.length > 0) {
+          playSegment(lessonData[0].start, lessonData[0].end, 0);
+        }
       } catch (e) {
         console.error("加载课件失败", e);
-        cardList.innerHTML = `<div style="text-align:center;padding:20px;color:#94a3b8;">课件加载失败</div>`;
+        statusText.innerText = "课件加载失败";
+        cardList.innerHTML = `<div style="text-align:center;padding:20px;color:#94a3b8;">课件数据读取中，请稍候刷新...</div>`;
       }
     }
 
     function toggleAnalysis(event, id) {
-      if (event) event.stopPropagation();
+      event.stopPropagation();
       const el = document.getElementById("analysis-" + id);
       if (el) el.classList.toggle("show");
     }
@@ -219,6 +233,9 @@
         const card = document.createElement("div");
         card.className = "card";
         card.id = `card-${index}`;
+        
+        // 点击整张卡片任意位置播放该句
+        card.onclick = () => playSegment(item.start, item.end, index);
 
         let analysisSection = "";
         const hasGrammar = item.grammar && item.grammar.length > 0;
@@ -235,9 +252,6 @@
             </div>
           `;
         }
-
-        // 点击整张卡片任意位置直接播放本句
-        card.onclick = () => playSegment(item.start, item.end, index);
 
         card.innerHTML = `
           <div class="card-header">
@@ -268,17 +282,17 @@
       audio.currentTime = start;
       segmentEnd = end;
       isSegmentPlaying = true;
-      audio.play();
+      audio.play().catch(e => console.log("等待手势唤醒播放", e));
     }
 
     audio.ontimeupdate = () => {
       if (isSegmentPlaying && audio.currentTime >= segmentEnd) {
         if (loopMode === "single") {
-          // 🔂 单句循环：重复播放当前句
+          // 🔂 单句循环：回到本句开头
           audio.currentTime = lessonData[currentIndex].start;
           audio.play().catch(e => console.log(e));
         } else if (loopMode === "list") {
-          // 🔁 列表循环：不是最后一句则切下句；到最后一句则重回本课第 1 句
+          // 🔁 列表循环：不是末句则切下句；到本课切片最后一句时，倒回第 1 句重新循环
           if (currentIndex < lessonData.length - 1) {
             nextSentence();
           } else {
@@ -287,34 +301,18 @@
             playSegment(lessonData[0].start, lessonData[0].end, 0);
           }
         } else if (loopMode === "none") {
-          // ➡️ 顺序播放：下句播放；全课播完自动切下一课并自动播放第 1 句
+          // ➡️ 顺序播放：自动播下一句；播完本课切下一课并立即自动起播
           if (currentIndex < lessonData.length - 1) {
             nextSentence();
           } else {
             const select = document.getElementById("lessonSelect");
             let nextIndex = select.selectedIndex + 1;
-            // 播到下拉列表的最后一课时，循环回第一项
+            // 最后一课（第100课）播完回第1课
             if (nextIndex >= select.options.length) {
               nextIndex = 0;
             }
             select.selectedIndex = nextIndex;
-            const nextLessonVal = select.options[nextIndex].value;
-            // 切换并直接自动起播第 1 句
-            changeLesson(nextLessonVal, true);
-          }
-        }
-      }
-    };
-                
-                // 监听新音频就绪，双重保险
-                if (audio.readyState >= 2) {
-                  autoStart();
-                } else {
-                  audio.addEventListener("canplaythrough", autoStart, { once: true });
-                  audio.addEventListener("loadeddata", autoStart, { once: true });
-                }
-              }
-            });
+            changeLesson(select.options[nextIndex].value, true);
           }
         }
       }
@@ -342,7 +340,7 @@
         loopBtn.className = "ctrl-btn loop-toggle active";
       } else if (loopMode === "single") {
         loopMode = "none";
-        loopBtn.innerText = "➡️️ 顺序播放";
+        loopBtn.innerText = "➡️ 顺序播放";
         loopBtn.className = "ctrl-btn loop-toggle active";
       } else {
         loopMode = "list";
@@ -365,6 +363,7 @@
       }
     }
 
+    // 默认加载下拉菜单第一课（第 1 课）
     window.onload = () => {
       const select = document.getElementById("lessonSelect");
       changeLesson(select.value);
