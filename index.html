@@ -318,47 +318,32 @@
       const currentOptIndex = lessonSelect.selectedIndex;
 
       if (playMode === 'single') {
-        // 单句循环
+        // 单句循环：单句无限复读
         audio.currentTime = sentences[currentIndex].start;
         audio.play();
       } else if (playMode === 'loop') {
-        // 列表循环
+        // 列表循环：仅在本课内大循环
         if (currentIndex < sentences.length - 1) {
           playSentence(currentIndex + 1);
         } else {
-          // 当前课到底：切下一课；最后一课到底则回第 1 课无限循环
+          // 本课播完，回到本课第 1 句重新开播
+          playSentence(0);
+        }
+      } else if (playMode === 'order') {
+        // 顺序播放：自动切下一课
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          // 当前课播完，自动切到下一课（最后一课则回第 1 课）并从第 1 句播放
           const nextOptIndex = (currentOptIndex + 1) % options.length;
           lessonSelect.selectedIndex = nextOptIndex;
           loadLesson(options[nextOptIndex].value).then(() => {
             playSentence(0);
           });
         }
-      } else if (playMode === 'order') {
-        // 顺序播放
-        if (currentIndex < sentences.length - 1) {
-          playSentence(currentIndex + 1);
-        } else {
-          // 当前课到底
-          if (currentOptIndex < options.length - 1) {
-            lessonSelect.selectedIndex = currentOptIndex + 1;
-            loadLesson(options[currentOptIndex + 1].value).then(() => {
-              playSentence(0);
-            });
-          } else {
-            // 最后一课到底：回到第 1 课，并停止播放
-            lessonSelect.selectedIndex = 0;
-            loadLesson(options[0].value).then(() => {
-              audio.pause();
-              audio.currentTime = 0;
-              playPauseBtn.innerText = '▶️ 播放';
-              updateActiveCard();
-            });
-          }
-        }
       }
     }
 
-    // 时间监听
     audio.addEventListener('timeupdate', () => {
       if (!sentences.length) return;
       const cur = audio.currentTime;
