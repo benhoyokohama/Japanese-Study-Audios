@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "start": 0.00,
+    "end": 15.00,
+    "jp": "<ruby>食中毒<rt>しょくちゅうどく</rt></ruby>には<ruby>大<rt>おお</rt></ruby>きく<ruby>分<rt>わ</rt></ruby>けてこちら、ウイルス<ruby>性<rt>せい</rt></ruby><ruby>食中毒<rt>しょくちゅうどく</rt></ruby>と<ruby>細菌性<rt>さいきんせい</rt></ruby><ruby>食中毒<rt>しょくちゅうどく</rt></ruby>がありますが、<ruby>今<rt>いま</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>に<ruby>多<rt>おお</rt></ruby>いのが<ruby>下<rt>した</rt></ruby>の<ruby>段<rt>だん</rt></ruby>、",
+    "cn": "食物中毒大致分为这两种：病毒性食物中毒和细菌性食物中毒，而当前季节高发的则是下面这一类——"
+  },
+  {
+    "id": 2,
+    "start": 15.00,
+    "end": 24.00,
+    "jp": "<ruby>細菌<rt>さいきん</rt></ruby>が<ruby>原因<rt>げんいん</rt></ruby>の<ruby>食中毒<rt>しょくちゅうどく</rt></ruby>です。しかもこれらの<ruby>細菌<rt>さいきん</rt></ruby>は30<ruby>度<rt>ど</rt></ruby>から40<ruby>度<rt>ど</rt></ruby>くらいで<ruby>最<rt>もっと</rt></ruby>も<ruby>活発<rt>かっぱつ</rt></ruby>に<ruby>増殖<rt>ぞうしょく</rt></ruby>するんです。",
+    "cn": "由细菌引起的食物中毒。而且这些细菌在30度到40度左右繁殖得最为活跃。"
+  },
+  {
+    "id": 3,
+    "start": 24.00,
+    "end": 33.00,
+    "jp": "まさに<ruby>今<rt>いま</rt></ruby>この<ruby>時期<rt>じき</rt></ruby>の<ruby>気温<rt>きおん</rt></ruby>ということなんですね。<ruby>今<rt>いま</rt></ruby><ruby>危険<rt>きけん</rt></ruby>な<ruby>食中毒<rt>しょくちゅうどく</rt></ruby>を<ruby>防止<rt>ぼうし</rt></ruby>するために<ruby>避<rt>さ</rt></ruby>けていただきたいのがこちらです。",
+    "cn": "正好就是当下这一时期的气温呢。为了预防当下危险的食物中毒，希望大家避免的行为是下面这个："
+  },
+  {
+    "id": 4,
+    "start": 33.00,
+    "end": 42.00,
+    "jp": "<ruby>生肉<rt>なまにく</rt></ruby>をトングでつまんで<ruby>焼<rt>や</rt></ruby>いて、<ruby>焼<rt>や</rt></ruby>き<ruby>上<rt>あ</rt></ruby>がった<ruby>肉<rt>にく</rt></ruby>を<ruby>同<rt>おな</rt></ruby>じトングを<ruby>使<rt>つか</rt></ruby>って<ruby>取<rt>と</rt></ruby>る、これはやめてください。",
+    "cn": "用夹子夹起生肉去烤，然后又用同一个夹子去夹烤熟的肉，请千万不要这么做。"
+  },
+  {
+    "id": 5,
+    "start": 42.00,
+    "end": 46.00,
+    "jp": "<ruby>楽<rt>たの</rt></ruby>しいとついつい<ruby>油断<rt>ゆだん</rt></ruby>してやってしまうかもしれないですね。",
+    "cn": "玩得开心时可能不知不觉一时大意就这么做了呢。"
+  }
+]
