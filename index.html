@@ -286,35 +286,40 @@
     }
 
     audio.ontimeupdate = () => {
-      if (isSegmentPlaying && audio.currentTime >= segmentEnd) {
+      if (isSegmentPlaying && audio.currentTime >= (segmentEnd - 0.05)) {
         const select = document.getElementById("lessonSelect");
         const isLastSentence = (currentIndex >= lessonData.length - 1);
 
         if (loopMode === "single") {
-          // 🔂 单句循环：持续重播当前句
+          // 🔂 单句循环：回到本句开头重播
           audio.currentTime = lessonData[currentIndex].start;
           audio.play().catch(e => console.log(e));
         } else if (loopMode === "list") {
-          // 🔁 列表循环：不是末句切下句；到末句回本课第 1 句重新循环
+          // 🔁 列表循环：下一句；若是最后一句则强行回到第 1 句循环
           if (!isLastSentence) {
             nextSentence();
           } else {
             currentIndex = 0;
-            audio.currentTime = lessonData[0].start;
             playSegment(lessonData[0].start, lessonData[0].end, 0);
           }
         } else if (loopMode === "none") {
-          // ➡️ 顺序播放：未到本课末句切下句；到本课末句切下一课
+          // ➡️ 顺序播放：下一句；若是全课最后一句则切入下一课
           if (!isLastSentence) {
             nextSentence();
           } else {
             let nextIndex = select.selectedIndex + 1;
-            // 最后一课播完自动切回第 1 课（索引 0）
+            // 如果已经是最后一课，循环回到第一课（第 0 项）
             if (nextIndex >= select.options.length) {
               nextIndex = 0;
             }
             select.selectedIndex = nextIndex;
-            changeLesson(select.options[nextIndex].value, true);
+            changeLesson(select.options[nextIndex].value);
+            // 切换后确保直接开播新课第 1 句
+            setTimeout(() => {
+              if (lessonData.length > 0) {
+                playSegment(lessonData[0].start, lessonData[0].end, 0);
+              }
+            }, 300);
           }
         }
       }
