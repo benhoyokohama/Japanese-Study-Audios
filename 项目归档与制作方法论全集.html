@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>随身日语听力跟读播放器 - 归档与制作方法论全集</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1e293b; background: #f8fafc; }
+    .card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 24px; }
+    h1 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; font-size: 24px; }
+    h2 { color: #2563eb; margin-top: 24px; font-size: 18px; border-left: 4px solid #2563eb; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { border: 1px solid #cbd5e1; padding: 10px 14px; text-align: left; font-size: 14px; }
+    th { background: #f1f5f9; font-weight: 600; }
+    code, pre { background: #0f172a; color: #e2e8f0; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    code { padding: 2px 6px; font-size: 13px; background: #e2e8f0; color: #0f172a; }
+    pre { padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.5; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; background: #dbeafe; color: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>随身日语听力跟读播放器（Japanese Study Audios）项目归档与制作方法论全集</h1>
+    <p><strong>版本号：</strong>v1.0.0 (Release Candidate) &nbsp;|&nbsp; <strong>归档日期：</strong>2026-10-04</p>
+    
+    <h2>一、 账号与项目资产清单</h2>
+    <table>
+      <tr><th>配置类别</th><th>详细信息</th><th>用途说明</th></tr>
+      <tr><td><strong>在线访问地址</strong></td><td>https://benhoyokohama.github.io/Japanese-Study-Audios/</td><td>在线单页应用（SPA），手机/电脑即开即用</td></tr>
+      <tr><td><strong>GitHub 账号</strong></td><td>benhoyokohama</td><td>代码与资源托管账号</td></tr>
+      <tr><td><strong>GitHub 仓库</strong></td><td>Japanese-Study-Audios</td><td>前端源码及 lessons 课件主仓库</td></tr>
+      <tr><td><strong>Mac 本地路径</strong></td><td>~/jp-reader/</td><td>本地开发、Whisper 切片与 Git 同步工作区</td></tr>
+      <tr><td><strong>PAT 授权 Token</strong></td><td>MacBook Push (classic repo 权限，至 2027-04-03)</td><td>本地推送代码与大音频的免密凭证</td></tr>
+    </table>
+
+    <h2>二、 课件制作标准流水线（半自动化）</h2>
+    <p><code>[MP3 音频] ➔ Whisper 本地声波切片 (.srt) ➔ Python 注入假名/语法/词汇 (.json) ➔ 注册 index.html ➔ Git Push 上线</code></p>
+    <ol>
+      <li><strong>音频归档：</strong>录音统一转换为 <code>2026-xxx.mp3</code> 存放在 <code>lessons/</code> 目录。</li>
+      <li><strong>Whisper 物理切片：</strong>终端运行 <code>whisper lessons/2026-xxx.mp3 --language Japanese --model small --output_format srt --output_dir .</code> 提取精准毫秒级声学时间戳。</li>
+      <li><strong>JSON 课件增强：</strong>脚本将 SRT 转换为带 <code>&lt;ruby&gt;</code> 汉字注音、中文翻译，以及每句专属语法考点与 N4+ 词汇的 <code>lessons/2026-xxx.json</code>。</li>
+      <li><strong>挂载与发布：</strong>在 <code>index.html</code> 添加 <code>&lt;option&gt;</code> 选项，执行 <code>git push origin main</code> 即可全球 CDN 秒级生效。</li>
+    </ol>
+
+    <h2>三、 播放器核心引擎技术规范</h2>
+    <ul>
+      <li><strong>切句与防卡死机制：</strong>同时监听 <code>ontimeupdate</code> 与 <code>onended</code> 事件，彻底解决移动端音频尾帧卡死问题。</li>
+      <li><strong>三模循环状态机：</strong>单句循环（🔂）、本课列表循环（🔁）、跨课顺序播放（➡️）。</li>
+      <li><strong>高精度倒计时：</strong>独立秒级倒计时徽标，不受播放或切句打扰，到时自动暂停复位。</li>
+    </ul>
+  </div>
+</body>
+</html>
