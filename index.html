@@ -206,24 +206,42 @@
     const statusText = document.getElementById("statusText");
     const playPauseBtn = document.getElementById("playPauseBtn");
     const loopBtn = document.getElementById("loopBtn");
-    // 睡眠定时器相关逻辑
-    let sleepTimerId = null;
+        // 实时动态倒计时定时器引擎
+    let sleepTimerInterval = null;
+    let remainingSeconds = 0;
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    }
 
     function setSleepTimer(minutes) {
-      if (sleepTimerId) {
-        clearTimeout(sleepTimerId);
-        sleepTimerId = null;
+      if (sleepTimerInterval) {
+        clearInterval(sleepTimerInterval);
+        sleepTimerInterval = null;
       }
       const mins = parseInt(minutes, 10);
       if (mins > 0) {
-        statusText.innerText = `已设置 ${mins} 分钟后停止`;
-        sleepTimerId = setTimeout(() => {
-          audio.pause();
-          isSegmentPlaying = false;
-          statusText.innerText = "定时时间到，已自动暂停播放";
-          document.getElementById("sleepTimerSelect").value = "0";
-        }, mins * 60 * 1000);
+        remainingSeconds = mins * 60;
+        statusText.innerText = `⏱ 剩余 ${formatTime(remainingSeconds)}`;
+        
+        sleepTimerInterval = setInterval(() => {
+          remainingSeconds--;
+          if (remainingSeconds > 0) {
+            statusText.innerText = `⏱ 剩余 ${formatTime(remainingSeconds)}`;
+          } else {
+            clearInterval(sleepTimerInterval);
+            sleepTimerInterval = null;
+            audio.pause();
+            isSegmentPlaying = false;
+            statusText.innerText = "⏱ 定时已到，已停止播放";
+            const timerSelect = document.getElementById("sleepTimerSelect");
+            if (timerSelect) timerSelect.value = "0";
+          }
+        }, 1000);
       } else {
+        remainingSeconds = 0;
         statusText.innerText = "定时已关闭";
       }
     }
