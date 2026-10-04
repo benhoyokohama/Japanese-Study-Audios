@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 8.5,
+    "jp": "<ruby>将来<rt>しょうらい</rt></ruby>、<ruby>結婚<rt>けっこん</rt></ruby>したいと<ruby>考<rt>かんが</rt></ruby>えている<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>の<ruby>割合<rt>わりあい</rt></ruby>が80%より<ruby>低<rt>ひく</rt></ruby>くなりました。",
+    "cn": "将来想要结婚的年轻人比例降到了80%以下。"
+  },
+  {
+    "id": 2,
+    "start": 8.5,
+    "end": 18.0,
+    "jp": "<ruby>国<rt>くに</rt></ruby>の<ruby>研究所<rt>けんきゅうじょ</rt></ruby>は<ruby>去年<rt>きょねん</rt></ruby>、18<ruby>歳<rt>さい</rt></ruby>から34<ruby>歳<rt>さい</rt></ruby>までの<ruby>結婚<rt>けっこん</rt></ruby>したことがない<ruby>人<rt>ひと</rt></ruby>に<ruby>結婚<rt>けっこん</rt></ruby>について<ruby>聞<rt>き</rt></ruby>きました。",
+    "cn": "国家研究所去年就结婚问题询问了18至34岁未婚人士。"
+  },
+  {
+    "id": 3,
+    "start": 18.0,
+    "end": 29.0,
+    "jp": "その<ruby>結果<rt>けっか</rt></ruby>、<ruby>将来<rt>しょうらい</rt></ruby><ruby>結婚<rt>けっこん</rt></ruby>するつもりと<ruby>答<rt>こた</rt></ruby>えた<ruby>人<rt>ひと</rt></ruby>は<ruby>男性<rt>だんせい</rt></ruby>が75.1%、<ruby>女性<rt>じょせい</rt></ruby>が77.8%でした。",
+    "cn": "结果显示，回答将来打算结婚的人中男性占75.1%，女性占77.8%。"
+  },
+  {
+    "id": 4,
+    "start": 29.0,
+    "end": 37.0,
+    "jp": "<ruby>男性<rt>だんせい</rt></ruby>も<ruby>女性<rt>じょせい</rt></ruby>も<ruby>初<rt>はじ</rt></ruby>めて80%より<ruby>少<rt>すく</rt></ruby>なくなりました。",
+    "cn": "男性和女性的比例均首次低于80%。"
+  },
+  {
+    "id": 5,
+    "start": 37.0,
+    "end": 47.0,
+    "jp": "<ruby>結婚<rt>けっこん</rt></ruby>にいいことはないと<ruby>答<rt>こた</rt></ruby>えた<ruby>人<rt>ひと</rt></ruby>は<ruby>男性<rt>だんせい</rt></ruby>が42.8%、<ruby>女性<rt>じょせい</rt></ruby>が36%でした。",
+    "cn": "回答结婚没有好处的人中男性为42.8%，女性为36%。"
+  },
+  {
+    "id": 6,
+    "start": 47.0,
+    "end": 54.0,
+    "jp": "2021<ruby>年<rt>ねん</rt></ruby>に<ruby>調<rt>しら</rt></ruby>べたときより<ruby>男性<rt>だんせい</rt></ruby>も<ruby>女性<rt>じょせい</rt></ruby>も<ruby>増<rt>ふ</rt></ruby>えました。",
+    "cn": "男女比例均比2021年调查时有所增加。"
+  },
+  {
+    "id": 7,
+    "start": 54.0,
+    "end": 63.0,
+    "jp": "<ruby>国<rt>くに</rt></ruby>の<ruby>研究所<rt>けんきゅうじょ</rt></ruby>は「<ruby>結婚<rt>けっこん</rt></ruby>したいと<ruby>思<rt>おも</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなっている<ruby>理由<rt>りゆう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べたいです」と<ruby>話<rt>はな</rt></ruby>しています。",
+    "cn": "国家研究所表示：“希望能调查想要结婚的人减少的原因。”"
+  }
+]

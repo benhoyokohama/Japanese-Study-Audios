@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 5.0,
+    "jp": "お<ruby>世話<rt>せわ</rt></ruby>になっております。匠大塚<ruby>春日部<rt>かすかべ</rt></ruby><ruby>本店<rt>ほんてん</rt></ruby><ruby>長島<rt>ながしま</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。",
+    "cn": "承蒙关照。我是匠大塚春日部总店的长岛。"
+  },
+  {
+    "id": 2,
+    "start": 5.0,
+    "end": 12.0,
+    "jp": "<ruby>家具<rt>かぐ</rt></ruby>のお<ruby>届<rt>とど</rt></ruby>け<ruby>日<rt>び</rt></ruby>が9<ruby>月<rt>がつ</rt></ruby>28<ruby>日<rt>にち</rt></ruby>となっております、なっておりますが、お<ruby>日<rt>ひ</rt></ruby><ruby>取<rt>ど</rt></ruby>りお<ruby>変<rt>か</rt></ruby>わりないでしょうか。",
+    "cn": "家具的送货日期定于9月28日，请问您的预定日期有变动吗？"
+  },
+  {
+    "id": 3,
+    "start": 12.0,
+    "end": 19.5,
+    "jp": "また、ご<ruby>変更<rt>へんこう</rt></ruby>ある<ruby>場合<rt>ばあい</rt></ruby>、ご<ruby>連絡<rt>れんらく</rt></ruby>いただければ<ruby>幸<rt>さいわ</rt></ruby>いです。<ruby>宜<rt>よろ</rt></ruby>しくお<ruby>願<rt>ねが</rt></ruby>いいたします。<ruby>失礼<rt>しつれい</rt></ruby>いたします。",
+    "cn": "另外如有变更，若能联系我们则不胜感激。拜托您了，打扰了。"
+  }
+]
