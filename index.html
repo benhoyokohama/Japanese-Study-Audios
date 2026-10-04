@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <!-- 底部固定循环播放控制器 -->
+  <!-- 底部固定播放控制器 -->
   <div id="footerBar" class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 px-3 py-3 shadow-lg z-50">
     <div class="max-w-lg mx-auto flex items-center justify-between gap-2">
       <div class="flex-1 truncate">
@@ -36,7 +36,7 @@
       <div class="flex items-center gap-1.5 shrink-0">
         <button id="prevBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">◀ 上句</button>
         <button id="playPauseBtn" class="bg-amber-500 active:bg-amber-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm">⏸ 暂停</button>
-        <button id="repeatBtn" class="bg-emerald-600 active:bg-emerald-700 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm">🔁 单句循环</button>
+        <button id="repeatBtn" class="bg-emerald-600 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition">🔁 单句循环</button>
         <button id="nextBtn" class="bg-slate-100 active:bg-slate-200 text-slate-700 px-2 py-1.5 rounded-lg text-xs font-bold">下句 ▶</button>
       </div>
     </div>
@@ -45,13 +45,14 @@
   <script>
     let sentences = [];
     let currentIndex = -1;
-    let isLooping = true;
+    let isSingleRepeat = true; // 默认单句循环
     const player = document.getElementById('player');
     const listContainer = document.getElementById('sentenceList');
     const currentTag = document.getElementById('currentTag');
     const currentJp = document.getElementById('currentJp');
     const courseSelect = document.getElementById('courseSelect');
     const playPauseBtn = document.getElementById('playPauseBtn');
+    const repeatBtn = document.getElementById('repeatBtn');
 
     async function loadLesson(lessonName) {
       try {
@@ -75,7 +76,7 @@
         card.innerHTML = `
           <div class="flex justify-between items-center text-[11px] text-blue-600 font-semibold mb-1">
             <span>句 ${item.id} [${item.start}s - ${item.end}s]</span>
-            <span class="text-slate-400">点击循环 🔄</span>
+            <span class="text-slate-400">点击播放 🔊</span>
           </div>
           <div class="text-base text-slate-900 font-medium leading-relaxed">${item.jp}</div>
           ${item.cn ? `<div class="text-xs text-slate-500 mt-1 pt-1 border-t border-slate-100">${item.cn}</div>` : ''}
@@ -107,12 +108,24 @@
       }
     }
 
+    // 播放进度监听：判断是单句循环还是整体顺延
     player.ontimeupdate = () => {
-      if (currentIndex !== -1 && isLooping) {
-        const s = sentences[currentIndex];
-        if (player.currentTime >= s.end) {
+      if (currentIndex === -1 || sentences.length === 0) return;
+      const s = sentences[currentIndex];
+      
+      if (player.currentTime >= s.end) {
+        if (isSingleRepeat) {
+          // 单句循环：跳回当前句句首继续播放
           player.currentTime = s.start;
           player.play();
+        } else {
+          // 整体播放：自动跳到下一句
+          if (currentIndex + 1 < sentences.length) {
+            selectSentence(currentIndex + 1, true);
+          } else {
+            // 全篇结束
+            player.pause();
+          }
         }
       }
     };
@@ -131,10 +144,16 @@
 
     document.getElementById('prevBtn').onclick = () => selectSentence(currentIndex - 1, true);
     document.getElementById('nextBtn').onclick = () => selectSentence(currentIndex + 1, true);
-    document.getElementById('repeatBtn').onclick = () => {
-      if (currentIndex !== -1) {
-        player.currentTime = sentences[currentIndex].start;
-        player.play();
+
+    // 点击切换“单句循环”与“整篇顺延”模式
+    repeatBtn.onclick = () => {
+      isSingleRepeat = !isSingleRepeat;
+      if (isSingleRepeat) {
+        repeatBtn.textContent = '🔁 单句循环';
+        repeatBtn.className = 'bg-emerald-600 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold shadow-sm transition';
+      } else {
+        repeatBtn.textContent = '➡️ 整体播放';
+        repeatBtn.className = 'bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-lg text-xs font-bold transition';
       }
     };
 
