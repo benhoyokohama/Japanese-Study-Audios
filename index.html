@@ -219,6 +219,11 @@
         statusText.innerText = "课件加载失败";
         cardList.innerHTML = `<div style="text-align:center;padding:20px;color:#94a3b8;">课件加载失败</div>`;
       }
+    } catch (e) {
+        console.error("加载课件失败", e);
+        statusText.innerText = "课件加载失败";
+        cardList.innerHTML = `<div style="text-align:center;padding:20px;color:#94a3b8;">课件加载失败</div>`;
+      }
     }
 
     function toggleAnalysis(event, id) {
@@ -291,11 +296,11 @@
         const isLastSentence = (currentIndex >= lessonData.length - 1);
 
         if (loopMode === "single") {
-          // 🔂 单句循环：无论哪一课，都循环本句
+          // 🔂 单句循环：持续循环当前句
           audio.currentTime = lessonData[currentIndex].start;
           audio.play().catch(e => console.log(e));
         } else if (loopMode === "list") {
-          // 🔁 列表循环：不是末句切下句；到末句回本课第 1 句重新循环
+          // 🔁 列表循环：不是末句则切下句；到本课末句重回本课第 1 句重新循环
           if (!isLastSentence) {
             nextSentence();
           } else {
@@ -304,12 +309,12 @@
             playSegment(lessonData[0].start, lessonData[0].end, 0);
           }
         } else if (loopMode === "none") {
-          // ➡️ 顺序播放：未到本课末句切下句；到本课末句切下一课并开播
+          // ➡️ 顺序播放：未到本课末句切下句；播完本课切下一课
           if (!isLastSentence) {
             nextSentence();
           } else {
             let nextIndex = select.selectedIndex + 1;
-            // 如果已是下拉菜单最后一项，回到第 1 项（索引 0）
+            // 最后一课（下拉列表末项）播完，自动切回第一课（第 0 项）
             if (nextIndex >= select.options.length) {
               nextIndex = 0;
             }
