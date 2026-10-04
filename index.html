@@ -100,7 +100,6 @@
     .cn-text {
       font-size: 0.9rem;
       color: var(--text-muted);
-      line-height: 1.4;
     }
     .bottom-bar {
       position: fixed;
@@ -202,7 +201,7 @@
     const modeConfigs = [
       { text: '🔁 单句循环', active: true },
       { text: '🔄 列表循环', active: true },
-      { text: '➡️ 顺序播放', active: false }
+      { text: '➡️️ 顺序播放', active: false }
     ];
 
     function updateModeBtn() {
@@ -216,7 +215,7 @@
     };
 
     async function loadLesson(lessonId) {
-      audio.src = `lessons/${lessonId}.mp3`;
+      audio.src = `lessons/${lessonId}.mp3?t=${Date.now()}`;
       try {
         const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
         if (!res.ok) throw new Error('File not found');
@@ -270,18 +269,15 @@
         const s = sentences[currentIndex];
         if (cur >= s.end) {
           if (playMode === 0) {
-            // 1. 单句循环
             audio.currentTime = s.start;
             audio.play();
           } else if (playMode === 1) {
-            // 2. 列表循环
             if (currentIndex + 1 < sentences.length) {
               playSentence(currentIndex + 1);
             } else {
               playSentence(0);
             }
           } else {
-            // 3. 顺序播放
             if (currentIndex + 1 < sentences.length) {
               playSentence(currentIndex + 1);
             } else {
