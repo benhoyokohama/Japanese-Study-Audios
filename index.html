@@ -287,24 +287,41 @@
             playSegment(lessonData[0].start, lessonData[0].end, 0);
           }
         } else if (loopMode === "none") {
-          // ➡️ 顺序播放：切下句；到本课切片最后一句时，直接切入下一课
+          // ➡️ 顺序播放：未到本课结尾则播下一句
           if (currentIndex < lessonData.length - 1) {
             nextSentence();
           } else {
+            // 已到本课最后一句，计算下一课
             const select = document.getElementById("lessonSelect");
-            let nextIdx = select.selectedIndex + 1;
+            let curIdx = select.selectedIndex;
+            let nextIdx = curIdx + 1;
+            
+            // 如果已经是最后一课，回到第一课（索引 0）
             if (nextIdx >= select.options.length) {
-              nextIdx = 0; // 最后一课播完切回第 1 课
+              nextIdx = 0;
             }
+            
+            // 切换下拉框选中项
             select.selectedIndex = nextIdx;
-            changeLesson(select.value).then(newData => {
+            const nextLessonVal = select.options[nextIdx].value;
+            
+            // 加载新课件并在音频准备好后立即起播第 1 句
+            changeLesson(nextLessonVal).then(newData => {
               if (newData && newData.length > 0) {
-                // 确保新课音频就绪后起播第 1 句
-                const startNext = () => {
-                  audio.removeEventListener("canplay", startNext);
+                const autoStart = () => {
+                  audio.removeEventListener("canplaythrough", autoStart);
+                  audio.removeEventListener("loadeddata", autoStart);
+                  currentIndex = 0;
                   playSegment(newData[0].start, newData[0].end, 0);
                 };
-                audio.addEventListener("canplay", startNext);
+                
+                // 监听新音频就绪，双重保险
+                if (audio.readyState >= 2) {
+                  autoStart();
+                } else {
+                  audio.addEventListener("canplaythrough", autoStart, { once: true });
+                  audio.addEventListener("loadeddata", autoStart, { once: true });
+                }
               }
             });
           }
