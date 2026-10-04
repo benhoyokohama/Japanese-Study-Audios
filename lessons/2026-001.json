@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "start": 2.37,
+    "end": 6.81,
+    "jp": "auミニッツストアはほぼすべての<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>無人<rt>むじん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>っています。",
+    "cn": "au Minute Store几乎所有的操作都是无人进行的。"
+  },
+  {
+    "id": 2,
+    "start": 7.37,
+    "end": 14.18,
+    "jp": "アプリをかざして<ruby>入店<rt>にゅうてん</rt></ruby>し、<ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>った<ruby>商品<rt>しょうひん</rt></ruby>をカメラやセンサーが<ruby>認識<rt>にんしき</rt></ruby>します。",
+    "cn": "扫码应用程序进店，摄像头和传感器会识别拿取的商品。"
+  },
+  {
+    "id": 3,
+    "start": 14.85,
+    "end": 20.30,
+    "jp": "レジを<ruby>通<rt>とお</rt></ruby>らずに<ruby>店<rt>みせ</rt></ruby>を<ruby>出<rt>で</rt></ruby>るだけで、<ruby>自動<rt>じどう</rt></ruby>で<ruby>決済<rt>けっさい</rt></ruby>されます。",
+    "cn": "无需通过收银台，只要走出门店就会自动结账。"
+  },
+  {
+    "id": 4,
+    "start": 20.91,
+    "end": 26.31,
+    "jp": "<ruby>店舗<rt>てんぽ</rt></ruby>の<ruby>裏<rt>うら</rt></ruby>では、ロボットが<ruby>品出<rt>しなだ</rt></ruby>しを<ruby>行<rt>おこな</rt></ruby>っています。",
+    "cn": "在店铺后方，机器人正在进行商品上架。"
+  },
+  {
+    "id": 5,
+    "start": 26.96,
+    "end": 35.88,
+    "jp": "センサーが「おにぎりが<ruby>少<rt>すく</rt></ruby>なくなっている」と<ruby>判断<rt>はんだん</rt></ruby>すると、ロボットがアームを<ruby>使<rt>つか</rt></ruby>って<ruby>補充<rt>ほじゅう</rt></ruby>します。",
+    "cn": "当传感器判断“饭团变少了”时，机器人会使用机械臂进行补充。"
+  }
+]
