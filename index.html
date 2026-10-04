@@ -88,7 +88,6 @@
     rt { font-size: 0.65em; color: #64748b; font-weight: 400; }
     .cn-text { font-size: 0.92rem; color: #64748b; line-height: 1.5; }
     
-    /* 语法折叠面板 */
     .analysis-btn {
       display: inline-block;
       margin-top: 10px;
@@ -159,7 +158,7 @@
     <div class="lesson-title">🇯🇵 随身日语听力跟读</div>
     <div class="select-wrap">
       <select id="lessonSelect" onchange="changeLesson(this.value)">
-        <option value="2026-001">第 1 课：au 无人商店</option>
+        <option value="2026-001" selected>第 1 课：au 无人商店</option>
         <option value="2026-002">第 2 课：FRB金利をあげる</option>
         <option value="2026-003">第 3 课：自動運転タクシー</option>
         <option value="2026-004">第 4 课：結婚したい若い人</option>
@@ -170,7 +169,7 @@
         <option value="2026-012">第 12 课：火星衛星探査機MMXの打ち上げ</option>
         <option value="2026-013">第 13 课：行方不明事件の捜査</option>
         <option value="2026-014">第 14 课：米消費者物価指数40年ぶり高水準</option>
-        <option value="2026-100" selected>第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
+        <option value="2026-100">第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
       </select>
     </div>
     <audio id="audioPlayer" controls></audio>
@@ -191,7 +190,7 @@
   <script>
     let lessonData = [];
     let currentIndex = 0;
-    let loopMode = "list"; // list: 列表循环 | single: 单句循环 | none: 顺序播放
+    let loopMode = "list"; // list | single | none
     let isSegmentPlaying = false;
     let segmentEnd = 0;
 
@@ -202,10 +201,11 @@
     const loopBtn = document.getElementById("loopBtn");
 
     async function changeLesson(lessonId, autoPlayFirst = false) {
-      statusText.innerText = "正在加载...";
+      statusText.innerText = "正在加载课件...";
       audio.src = `lessons/${lessonId}.mp3`;
       try {
         const resp = await fetch(`lessons/${lessonId}.json?v=${Date.now()}`);
+        if (!resp.ok) throw new Error("课件文件未找到");
         lessonData = await resp.json();
         renderCards();
         currentIndex = 0;
@@ -217,12 +217,7 @@
       } catch (e) {
         console.error("加载课件失败", e);
         statusText.innerText = "课件加载失败";
-        cardList.innerHTML = `<div style="text-align:center;padding:20px;color:#94a3b8;">课件加载失败</div>`;
-      }
-    } catch (e) {
-        console.error("加载课件失败", e);
-        statusText.innerText = "课件加载失败";
-        cardList.innerHTML = `<div style="text-align:center;padding:20px;color:#94a3b8;">课件加载失败</div>`;
+        cardList.innerHTML = `<div style="text-align:center;padding:30px 10px;color:#94a3b8;">课件内容读取失败，请检查网络或刷新重试。</div>`;
       }
     }
 
@@ -261,7 +256,7 @@
         card.innerHTML = `
           <div class="card-header">
             <span class="index-badge">句 ${item.id}</span>
-            <span class="time-tag">[${item.start.toFixed(2)}s - ${item.end.toFixed(2)}s]</span>
+            <span class="time-tag">[${Number(item.start).toFixed(2)}s - ${Number(item.end).toFixed(2)}s]</span>
             <button class="play-btn">点击播放 🔊</button>
           </div>
           <div class="jp-text">${item.jp}</div>
@@ -287,7 +282,7 @@
       audio.currentTime = start;
       segmentEnd = end;
       isSegmentPlaying = true;
-      audio.play().catch(e => console.log("播放被拦截", e));
+      audio.play().catch(e => console.log("播放被限制", e));
     }
 
     audio.ontimeupdate = () => {
@@ -296,11 +291,11 @@
         const isLastSentence = (currentIndex >= lessonData.length - 1);
 
         if (loopMode === "single") {
-          // 🔂 单句循环：持续循环当前句
+          // 🔂 单句循环：持续重播当前句
           audio.currentTime = lessonData[currentIndex].start;
           audio.play().catch(e => console.log(e));
         } else if (loopMode === "list") {
-          // 🔁 列表循环：不是末句则切下句；到本课末句重回本课第 1 句重新循环
+          // 🔁 列表循环：不是末句切下句；到末句回本课第 1 句重新循环
           if (!isLastSentence) {
             nextSentence();
           } else {
@@ -309,12 +304,12 @@
             playSegment(lessonData[0].start, lessonData[0].end, 0);
           }
         } else if (loopMode === "none") {
-          // ➡️ 顺序播放：未到本课末句切下句；播完本课切下一课
+          // ➡️ 顺序播放：未到本课末句切下句；到本课末句切下一课
           if (!isLastSentence) {
             nextSentence();
           } else {
             let nextIndex = select.selectedIndex + 1;
-            // 最后一课（下拉列表末项）播完，自动切回第一课（第 0 项）
+            // 最后一课播完自动切回第 1 课（索引 0）
             if (nextIndex >= select.options.length) {
               nextIndex = 0;
             }
@@ -370,6 +365,7 @@
       }
     }
 
+    // 默认打开第 1 课
     window.onload = () => {
       const select = document.getElementById("lessonSelect");
       changeLesson(select.value);
