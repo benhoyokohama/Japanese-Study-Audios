@@ -126,6 +126,43 @@
       color: #fff;
       border-color: var(--primary);
     }
+  
+    /* 语法与词汇解析卡片 */
+    .analysis-btn {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.78rem;
+      color: #6366f1;
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      border-radius: 4px;
+      padding: 3px 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .analysis-btn:hover { background: #e0e7ff; }
+    .analysis-box {
+      display: none;
+      margin-top: 8px;
+      padding: 10px;
+      background: #f8fafc;
+      border-left: 3px solid #6366f1;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .analysis-box.show { display: block; }
+    .grammar-tag { color: #4338ca; font-weight: bold; margin-top: 4px; }
+    .vocab-badge {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 0.72rem;
+      margin-right: 4px;
+    }
+
   </style>
 </head>
 <body>
