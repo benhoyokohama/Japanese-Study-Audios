@@ -2,43 +2,43 @@
   {
     "id": 1,
     "start": 0.00,
-    "end": 10.74,
+    "end": 9.80,
     "jp": "FRBは16<ruby>日<rt>にち</rt></ruby>、<ruby>中央<rt>ちゅうおう</rt></ruby><ruby>銀行<rt>ぎんこう</rt></ruby>がお<ruby>金<rt>かね</rt></ruby>を<ruby>貸<rt>か</rt></ruby>すときの<ruby>金利<rt>きんり</rt></ruby>を0.25%<ruby>上<rt>あ</rt></ruby>げることを<ruby>決<rt>き</rt></ruby>めました。",
     "cn": "美联储（FRB）于16日决定，将中央银行贷款利率上调0.25个百分点。"
   },
   {
     "id": 2,
-    "start": 10.74,
-    "end": 17.80,
+    "start": 10.30,
+    "end": 17.50,
     "jp": "アメリカではお<ruby>金<rt>かね</rt></ruby>を<ruby>借<rt>か</rt></ruby>りるときや、<ruby>預<rt>あず</rt></ruby>けるときの<ruby>利子<rt>りし</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がりそうです。",
     "cn": "在美国，借款和存款的利息似乎都将上升。"
   },
   {
     "id": 3,
-    "start": 17.80,
-    "end": 26.68,
+    "start": 18.00,
+    "end": 25.50,
     "jp": "FRBは2023<ruby>年<rt>ねん</rt></ruby>7<ruby>月<rt>がつ</rt></ruby>のあとでは<ruby>初<rt>はじ</rt></ruby>めて<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げます。",
     "cn": "这是美联储自2023年7月以来首次加息。"
   },
   {
     "id": 4,
-    "start": 26.68,
-    "end": 35.80,
-    "jp": "FRBのパウエル<ruby>議長<rt>ぎちょう</rt></ruby>は、インフレなので<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げて、ものの<ruby>値段<rt>ねだん</rt></ruby>を<ruby>安定<rt>あんてい</rt></ruby>させたいと<ruby>言<rt>い</rt></ruby>いました。",
-    "cn": "美联储主席鲍威尔表示，由于通货膨胀，希望通过加息来稳定物价。"
+    "start": 26.00,
+    "end": 33.60,
+    "jp": "FRBのウォッシュ<ruby>議長<rt>ぎちょう</rt></ruby>は、インフレなので<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げて、ものの<ruby>値段<rt>ねだん</rt></ruby>を<ruby>安定<rt>あんてい</rt></ruby>させたいと<ruby>言<rt>い</rt></ruby>いました。",
+    "cn": "美联储沃什主席表示，由于通货膨胀，希望通过加息来稳定物价。"
   },
   {
     "id": 5,
-    "start": 35.80,
-    "end": 47.96,
-    "jp": "そして「アメリカの<ruby>経済<rt>けいざい</rt></ruby>はとても<ruby>強<rt>つよ</rt></ruby>いので、お<ruby>金<rt>かね</rt></ruby>を<ruby>借<rt>か</rt></ruby>りにくくなっても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です」と<ruby>話<rt>はな</rt></ruby>しました。",
-    "cn": "他还表示：“因为美国经济非常强劲，即使借钱变得困难也没有问题。”"
+    "start": 34.00,
+    "end": 42.60,
+    "jp": "トランプ<ruby>大統領<rt>だいとうりょう</rt></ruby>は「アメリカの<ruby>金利<rt>きんり</rt></ruby>は<ruby>世界<rt>せかい</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>低<rt>ひく</rt></ruby>くていい」と<ruby>話<rt>はな</rt></ruby>して、FRBが<ruby>決<rt>き</rt></ruby>めた<ruby>金利<rt>きんり</rt></ruby>に<ruby>反対<rt>はんたい</rt></ruby>しています。",
+    "cn": "特朗普总统则表示“美国的利率应该是全球最低的”，对美联储决定的利率表示反对。"
   },
   {
     "id": 6,
-    "start": 47.96,
-    "end": 65.00,
-    "jp": "FRBは、<ruby>今年<rt>ことし</rt></ruby>あと6<ruby>回<rt>かい</rt></ruby><ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げるかもしれないと<ruby>考<rt>かんが</rt></ruby>えています。",
-    "cn": "美联储预计，今年可能还会再加息6次。"
+    "start": 43.00,
+    "end": 48.00,
+    "jp": "しかし、FRBは<ruby>今年<rt>ことし</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりまでにまた<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げるかもしれません。",
+    "cn": "但美联储在今年年底前可能还会再次加息。"
   }
 ]
