@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 9.0,
+    "jp": "5<ruby>日<rt>いつか</rt></ruby>、<ruby>国会<rt>こっかい</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まりました。<ruby>高市<rt>たかいち</rt></ruby><ruby>総理大臣<rt>そうりだいじん</rt></ruby>が、これからどんな<ruby>政治<rt>せいじ</rt></ruby>をするか<ruby>話<rt>はな</rt></ruby>しました。",
+    "cn": "5日，国会开幕。高市首相就今后将推行怎样的政治施政发表了讲话。"
+  },
+  {
+    "id": 2,
+    "start": 9.0,
+    "end": 15.14,
+    "jp": "<ruby>経済<rt>けいざい</rt></ruby>をよくして<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>助<rt>たす</rt></ruby>けることをいちばんに<ruby>考<rt>かんが</rt></ruby>えると<ruby>話<rt>はな</rt></ruby>しました。",
+    "cn": "她表示，将把改善经济和援助民众生活放在首位考虑。"
+  },
+  {
+    "id": 3,
+    "start": 15.14,
+    "end": 22.68,
+    "jp": "いろいろな<ruby>物<rt>もの</rt></ruby>の<ruby>値段<rt>ねだん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がっています。<ruby>食料品<rt>しょくりょうひん</rt></ruby>の<ruby>税金<rt>ぜいきん</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らすことを<ruby>考<rt>かんが</rt></ruby>えます。",
+    "cn": "各类物品的价格都在上涨。政府正在考虑降低食品的税费。"
+  },
+  {
+    "id": 4,
+    "start": 22.68,
+    "end": 32.9,
+    "jp": "<ruby>収入<rt>しゅうにゅう</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ない<ruby>人<rt>ひと</rt></ruby>には、<ruby>国<rt>くに</rt></ruby>がお<ruby>金<rt>かね</rt></ruby>を<ruby>出<rt>だ</rt></ruby>すことも<ruby>考<rt>かんが</rt></ruby>えます。そして、<ruby>毎日<rt>まいにち</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>助<rt>たす</rt></ruby>けたいと<ruby>言<rt>い</rt></ruby>いました。",
+    "cn": "对于低收入人群，也在考虑由国家发放补助资金。并表示希望以此帮助改善大家的日常生活。"
+  },
+  {
+    "id": 5,
+    "start": 32.9,
+    "end": 41.11,
+    "jp": "11<ruby>月<rt>がつ</rt></ruby>にできる<ruby>防災庁<rt>ぼうさいちょう</rt></ruby>が、<ruby>災害<rt>さいがい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きたとき、すぐに<ruby>対応<rt>たいおう</rt></ruby>できるようにしたいと<ruby>言<rt>い</rt></ruby>いました。",
+    "cn": "她表示，希望定于11月成立的“防灾厅”在灾害发生时能够迅速进行应对。"
+  }
+]

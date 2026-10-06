@@ -104,6 +104,8 @@
         <select id="lessonSelect">
           <option value="2026-001">第 1 课：沖縄 米軍兵士逮捕（Easy版）</option>
           <option value="2026-002">第 2 课：沖縄 米軍兵士強盗殺人（一般版）</option>
+          <option value="2026-003">第 3 课：高市総理 食料品減税へ（Easy版）</option>
+          <option value="2026-004">第 4 课：高市首相 臨時国会所信表明（一般版）</option>
           <option value="2026-021">第 21 课：青い（青色与绿色）</option>
           <option value="2026-100">第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
           <option value="2026-101">第 101 课：中田敦彦・止まらない円安と骨太ショック（二）</option>
@@ -203,11 +205,11 @@
         }
 
         card.innerHTML = `
-          <div class="card-top">
+                    <div class="card-top">
             <span>句 ${s.id || idx + 1} &nbsp; [${s.start.toFixed(2)}s - ${s.end.toFixed(2)}s]</span>
             <div style="display:flex; gap:8px;">
-              <button class="icon-btn" title="复制句子纯文本" onclick="event.stopPropagation(); copySentenceText(${idx}, this);">📋</button>
-              <button class="icon-btn play" title="播放当前句" onclick="event.stopPropagation(); playSentence(${idx});">▶</button>
+              <button class="icon-btn" title="复制日文句子" onclick="event.stopPropagation(); copySentenceText(${idx}, this);">📋</button>
+              <button class="icon-btn play" title="播放单句" onclick="event.stopPropagation(); playSentence(${idx});">▶</button>
             </div>
           </div>
           <div class="jp-text">${s.jp}</div>
