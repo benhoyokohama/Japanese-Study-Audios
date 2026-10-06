@@ -159,12 +159,10 @@
     }
 
     function updateLoopModeUI() {
-      if (playMode === 0) {
-        btnLoopMode.textContent = '🔂 单句循环';
-      } else if (playMode === 1) {
-        btnLoopMode.textContent = '🔁 全文循环';
-      } else {
-        btnLoopMode.textContent = '➡️ 顺序播放';
+      if (btnLoopMode) {
+        if (playMode === 0) btnLoopMode.textContent = '🔂 单句循环';
+        else if (playMode === 1) btnLoopMode.textContent = '🔁 全文循环';
+        else btnLoopMode.textContent = '➡️ 顺序播放';
       }
     }
 
@@ -176,8 +174,8 @@
       }
     }
 
-    audio.onplay = () => { btnPlayPause.textContent = '⏸ 暂停'; };
-    audio.onpause = () => { btnPlayPause.textContent = '▶ 播放'; };
+    audio.onplay = () => { if (btnPlayPause) btnPlayPause.textContent = '⏸ 暂停'; };
+    audio.onpause = () => { if (btnPlayPause) btnPlayPause.textContent = '▶ 播放'; };
 
     function playSentence(idx) {
       if (!sentences || idx < 0 || idx >= sentences.length) return;
@@ -197,7 +195,7 @@
       if (card) {
         card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
-      statusText.textContent = `播放中: 第 ${idx + 1} / ${sentences.length} 句`;
+      if (statusText) statusText.textContent = `播放中: 第 ${idx + 1} / ${sentences.length} 句`;
     }
 
     function playNextLesson() {
@@ -208,7 +206,6 @@
       loadLesson(options[next].value, 0, true);
     }
 
-    // 单句循环下按下一曲：切换到下一句并继续以该句进行单句循环
     function nextSentence() {
       if (!sentences || sentences.length === 0) return;
       if (currentIndex < sentences.length - 1) {
@@ -231,7 +228,6 @@
       }
     }
 
-    // 句尾流转控制
     function handleSentenceEnd() {
       if (isTransitioning) return;
       isTransitioning = true;
@@ -240,12 +236,10 @@
       const s = sentences[currentIndex];
 
       if (playMode === 0) {
-        // 单句循环：无缝重新从句首播放
         audio.currentTime = s.start;
         isTransitioning = false;
         audio.play().catch(() => {});
       } else if (playMode === 1) {
-        // 全文循环：播放下一句或跳回句 1
         isTransitioning = false;
         if (currentIndex < sentences.length - 1) {
           playSentence(currentIndex + 1);
@@ -253,7 +247,6 @@
           playSentence(0);
         }
       } else if (playMode === 2) {
-        // 顺序播放：播放下一句，最后一句则跳入下一课开始播放
         isTransitioning = false;
         if (currentIndex < sentences.length - 1) {
           playSentence(currentIndex + 1);
@@ -263,7 +256,6 @@
       }
     }
 
-    // 进度监听（留 0.08 秒容错区间防撞 ended 卡死）
     audio.ontimeupdate = () => {
       if (!sentences || currentIndex < 0 || currentIndex >= sentences.length) return;
       const s = sentences[currentIndex];
@@ -272,12 +264,10 @@
       }
     };
 
-    // 兜底监听：解决原生音频 ended 后停止的问题
     audio.onended = () => {
       handleSentenceEnd();
     };
 
-    // 纯文本复制（去除 ruby 注音标签）
     function copySentenceText(idx, btn) {
       if (!sentences || !sentences[idx]) return;
       const tempDiv = document.createElement('div');
@@ -294,6 +284,7 @@
     }
 
     function renderCards() {
+      if (!cardsList) return;
       cardsList.innerHTML = '';
       sentences.forEach((s, idx) => {
         const card = document.createElement('div');
@@ -328,7 +319,7 @@
     }
 
     async function loadLesson(lessonId, startSentenceIdx = 0, autoPlay = false) {
-      statusText.textContent = '正在加载课文与音频...';
+      if (statusText) statusText.textContent = '正在加载课文与音频...';
       try {
         const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
         if (!res.ok) throw new Error('课件加载失败');
@@ -339,13 +330,13 @@
         renderCards();
         currentIndex = startSentenceIdx;
         highlightSentence(currentIndex);
-        statusText.textContent = '准备就绪';
+        if (statusText) statusText.textContent = '准备就绪';
 
         if (autoPlay) {
           playSentence(currentIndex);
         }
       } catch (err) {
-        statusText.textContent = '⚠️ 课件加载失败，请检查网络或重试';
+        if (statusText) statusText.textContent = '⚠️ 课件加载失败，请检查网络或重试';
         console.error(err);
       }
     }
@@ -356,21 +347,27 @@
       if (mins > 0) {
         sleepTimer = setTimeout(() => {
           audio.pause();
-          statusText.textContent = '⏱ 定时已到，自动停止播放';
+          if (statusText) statusText.textContent = '⏱ 定时已到，自动停止播放';
         }, mins * 60 * 1000);
       }
     }
 
-    timerSelect.onchange = setupSleepTimer;
-    lessonSelect.onchange = () => loadLesson(lessonSelect.value, 0, false);
+    if (timerSelect) timerSelect.onchange = setupSleepTimer;
+    if (lessonSelect) lessonSelect.onchange = () => loadLesson(lessonSelect.value, 0, false);
 
     if ('mediaSession' in navigator) {
       navigator.mediaSession.setActionHandler('previoustrack', () => prevSentence());
       navigator.mediaSession.setActionHandler('nexttrack', () => nextSentence());
     }
 
+    window.addEventListener('DOMContentLoaded', () => {
+      updateLoopModeUI();
+      if (lessonSelect) loadLesson(lessonSelect.value, 0, false);
+    });
+
+    // 备用兜底自执行
     updateLoopModeUI();
-    loadLesson(lessonSelect.value, 0, false);
+    if (lessonSelect) loadLesson(lessonSelect.value, 0, false);
   </script>
 </body>
 </html>
