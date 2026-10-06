@@ -448,22 +448,96 @@ function handleLoopToStart() {
     };
   
 // 联动播放模式的耳机与锁屏控制
+// 联动播放模式的耳机与锁屏控制（支持单击播放/暂停，切课自动起播）
 if ('mediaSession' in navigator) {
-  // 下一曲（Next Track）
+  // 单击：播放
+  navigator.mediaSession.setActionHandler('play', () => {
+    if (audio.paused) {
+      audio.play().catch(() => {});
+      if (typeof updatePlayPauseBtn === 'function') updatePlayPauseBtn(true);
+    }
+  });
+
+  // 单击：暂停
+  navigator.mediaSession.setActionHandler('pause', () => {
+    if (!audio.paused) {
+      audio.pause();
+      if (typeof updatePlayPauseBtn === 'function') updatePlayPauseBtn(false);
+    }
+  });
+
+  // 辅助函数：切换课程并确保自动播放
+  function changeLessonAndPlay(targetIndex) {
+    const select = document.getElementById('lessonSelect');
+    if (!select || targetIndex < 0 || targetIndex >= select.options.length) return;
+    
+    select.selectedIndex = targetIndex;
+    select.dispatchEvent(new Event('change'));
+
+    // 监听新音频加载并自动起播
+    const onCanPlay = () => {
+      audio.removeEventListener('canplay', onCanPlay);
+      audio.currentTime = 0;
+      if (typeof currentSentenceIndex !== 'undefined') currentSentenceIndex = 0;
+      if (typeof activeIndex !== 'undefined') activeIndex = 0;
+      if (typeof currentIndex !== 'undefined') currentIndex = 0;
+      audio.play().then(() => {
+        if (typeof renderActiveSentence === 'function') renderActiveSentence(0);
+        if (typeof highlightSentence === 'function') highlightSentence(0);
+        if (typeof updatePlayPauseBtn === 'function') updatePlayPauseBtn(true);
+      }).catch(() => {});
+    };
+    audio.addEventListener('canplay', onCanPlay, { once: true });
+    // 兜底超时起播
+    setTimeout(() => {
+      audio.play().catch(() => {});
+    }, 400);
+  }
+
+  // 双击：下一曲（Next Track）
   navigator.mediaSession.setActionHandler('nexttrack', () => {
-    // 检查是否为单句循环模式（匹配当前界面状态或全局变量）
     const isSingleLoop = (typeof playMode !== 'undefined' && playMode === 'single') ||
                          (typeof isSingleSentenceLoop !== 'undefined' && isSingleSentenceLoop) ||
                          document.querySelector('.mode-btn.active, button.active')?.textContent.includes('单句');
 
     if (isSingleLoop) {
-      // 单句循环：切到下一句
+      // 单句循环：切到下一句并继续播放
       if (typeof nextSentence === 'function') {
         nextSentence();
       } else if (typeof currentIndex !== 'undefined' && typeof playSentence === 'function') {
         playSentence(currentIndex + 1);
       }
     } else {
+      // 顺序/列表播放：切到下一课并直接播放
+      const select = document.getElementById('lessonSelect');
+      if (select && select.selectedIndex < select.options.length - 1) {
+        changeLessonAndPlay(select.selectedIndex + 1);
+      }
+    }
+  });
+
+  // 三击：上一曲（Previous Track）
+  navigator.mediaSession.setActionHandler('previoustrack', () => {
+    const isSingleLoop = (typeof playMode !== 'undefined' && playMode === 'single') ||
+                         (typeof isSingleSentenceLoop !== 'undefined' && isSingleSentenceLoop) ||
+                         document.querySelector('.mode-btn.active, button.active')?.textContent.includes('单句');
+
+    if (isSingleLoop) {
+      // 单句循环：切到上一句并继续播放
+      if (typeof prevSentence === 'function') {
+        prevSentence();
+      } else if (typeof currentIndex !== 'undefined' && typeof playSentence === 'function') {
+        playSentence(Math.max(0, currentIndex - 1));
+      }
+    } else {
+      // 顺序/列表播放：切到上一课并直接播放
+      const select = document.getElementById('lessonSelect');
+      if (select && select.selectedIndex > 0) {
+        changeLessonAndPlay(select.selectedIndex - 1);
+      }
+    }
+  });
+} else {
       // 顺序/列表播放：切到下一课
       const select = document.getElementById('lessonSelect');
       if (select && select.selectedIndex < select.options.length - 1) {
