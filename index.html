@@ -39,7 +39,58 @@
     .btn { padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: #fff; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; gap: 4px; font-weight: 500; }
     .btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
     .status-text { font-size: 0.85rem; color: #64748b; font-weight: 500; }
-  </style>
+  
+    /* 折叠分析框样式 */
+    details.analysis-details {
+      margin-top: 10px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #f8fafc;
+      overflow: hidden;
+      font-size: 0.85rem;
+    }
+    details.analysis-details summary {
+      padding: 8px 12px;
+      font-weight: 600;
+      color: #3b82f6;
+      cursor: pointer;
+      user-select: none;
+      background: #eff6ff;
+      outline: none;
+    }
+    details.analysis-details[open] summary {
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .analysis-content {
+      padding: 10px 12px;
+      line-height: 1.65;
+      color: #334155;
+      background: #ffffff;
+    }
+    /* 纯图标按钮样式 */
+    .icon-btn {
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 4px 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+    }
+    .icon-btn:hover {
+      background: #e2e8f0;
+    }
+    .icon-btn.play {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+</style>
 </head>
 <body>
 
@@ -140,15 +191,24 @@
         card.id = `card-${idx}`;
         card.onclick = () => playSentence(idx);
 
+        // 仅当含有 analysis 内容时，渲染折叠式解析框（Easy 版不含 analysis 则不渲染）
         let grammarHtml = '';
-        if (s.analysis) {
-          grammarHtml = `<div class="grammar-box">${s.analysis}</div>`;
+        if (s.analysis && s.analysis.trim() !== '') {
+          grammarHtml = `
+            <details class="analysis-details" onclick="event.stopPropagation();">
+              <summary>📚 词汇与语法解析（点击展开）</summary>
+              <div class="analysis-content">${s.analysis}</div>
+            </details>
+          `;
         }
 
         card.innerHTML = `
           <div class="card-top">
             <span>句 ${s.id || idx + 1} &nbsp; [${s.start.toFixed(2)}s - ${s.end.toFixed(2)}s]</span>
-            <button class="play-btn" onclick="event.stopPropagation(); playSentence(${idx});">点击播放 🔊</button>
+            <div style="display:flex; gap:8px;">
+              <button class="icon-btn" title="复制句子纯文本" onclick="event.stopPropagation(); copySentenceText(${idx}, this);">📋</button>
+              <button class="icon-btn play" title="播放当前句" onclick="event.stopPropagation(); playSentence(${idx});">▶</button>
+            </div>
           </div>
           <div class="jp-text">${s.jp}</div>
           <div class="cn-text">${s.cn || ''}</div>
