@@ -200,6 +200,19 @@
   </div>
 
   <script>
+
+// 增强型列表循环：到达末尾时强制精准归零
+function handleLoopToStart() {
+  currentSentenceIndex = 0;
+  if (typeof activeIndex !== 'undefined') activeIndex = 0;
+  if (typeof currentIndex !== 'undefined') currentIndex = 0;
+  audio.currentTime = 0;
+  if (typeof updateUI === 'function') updateUI();
+  if (typeof renderActiveSentence === 'function') renderActiveSentence(0);
+  if (typeof highlightSentence === 'function') highlightSentence(0);
+  audio.play();
+}
+
     let lessonData = [];
     let currentIndex = 0;
     let loopMode = "list"; // list | single | none
