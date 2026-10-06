@@ -1,30 +1,23 @@
 [
   {
     "id": 1,
-    "start": 0.05,
-    "end": 7.9,
-    "jp": "<ruby>沖縄県<rt>おきなわけん</rt></ruby>で<ruby>女性<rt>じょせい</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>して<ruby>財布<rt>さいふ</rt></ruby>などをとったとして、アメリカ<ruby>軍<rt>ぐん</rt></ruby>の<ruby>兵士<rt>へいし</rt></ruby>が<ruby>逮捕<rt>たいほ</rt></ruby>されました。",
-    "cn": "因涉嫌在冲绳县杀害女性并抢走钱包等物品，一名美军士兵被逮捕。"
+    "start": 0.00,
+    "end": 9.00,
+    "jp": "<ruby>東京<rt>とうきょう</rt></ruby><ruby>文京区<rt>ぶんきょうく</rt></ruby>の<ruby>新野理奈<rt>あらりのりな</rt></ruby>さんの<ruby>行方<rt>ゆくえ</rt></ruby>が<ruby>今月<rt>こんげつ</rt></ruby>5<ruby>日<rt>にち</rt></ruby>から<ruby>分<rt>わ</rt></ruby>からなくなり、<ruby>家族<rt>かぞく</rt></ruby>から<ruby>連絡<rt>れんらく</rt></ruby>が<ruby>取<rt>と</rt></ruby>れないと<ruby>相談<rt>そうだん</rt></ruby>があったため、",
+    "cn": "东京都文京区的新野理奈自本月5日起下落不明，因家属反映无法取得联系向警方求助，"
   },
   {
     "id": 2,
-    "start": 7.9,
-    "end": 18.03,
-    "jp": "<ruby>警察<rt>けいさつ</rt></ruby>によると、<ruby>先月<rt>せんげつ</rt></ruby>、<ruby>沖縄市<rt>おきなわし</rt></ruby>にあるアパートの<ruby>部屋<rt>へや</rt></ruby>で<ruby>女性<rt>じょせい</rt></ruby>が<ruby>倒<rt>たお</rt></ruby>れているのが<ruby>見<rt>み</rt></ruby>つかり、<ruby>死亡<rt>しぼう</rt></ruby>が<ruby>確認<rt>かくにん</rt></ruby>されました。",
-    "cn": "据警方透露，上个月在冲绳市一处公寓的房间内发现受害女性倒地，并确认死亡。"
+    "start": 9.00,
+    "end": 17.00,
+    "jp": "<ruby>警視庁<rt>けいしちょう</rt></ruby>は<ruby>事件<rt>じけん</rt></ruby>に<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>まれた<ruby>可能性<rt>かのうせい</rt></ruby>があるとして、<ruby>接点<rt>せってん</rt></ruby>のあった<ruby>人物<rt>じんぶつ</rt></ruby>の<ruby>特定<rt>とくてい</rt></ruby>など<ruby>捜査<rt>そうさ</rt></ruby>を<ruby>進<rt>すす</rt></ruby>めていました。",
+    "cn": "警视厅认为其有可能卷入案件，随即展开搜查，排查锁定曾与其有接触的人员。"
   },
   {
     "id": 3,
-    "start": 18.03,
-    "end": 24.31,
-    "jp": "<ruby>首<rt>くび</rt></ruby>などに<ruby>傷<rt>きず</rt></ruby>があったため、<ruby>警察<rt>けいさつ</rt></ruby>は<ruby>殺人<rt>さつじん</rt></ruby><ruby>事件<rt>じけん</rt></ruby>として<ruby>捜査<rt>そうさ</rt></ruby>していました。",
-    "cn": "因颈部等处有伤痕，警方作为杀人案件展开了侦查。"
-  },
-  {
-    "id": 4,
-    "start": 24.31,
-    "end": 31.8,
-    "jp": "アメリカ<ruby>軍<rt>ぐん</rt></ruby>の21<ruby>歳<rt>さい</rt></ruby>の<ruby>兵士<rt>へいし</rt></ruby>が<ruby>容疑<rt>ようぎ</rt></ruby>を<ruby>認<rt>みと</rt></ruby>めたため、<ruby>強盗<rt>ごうとう</rt></ruby><ruby>殺人<rt>さつじん</rt></ruby>の<ruby>疑<rt>うたが</rt></ruby>いで<ruby>逮捕<rt>たいほ</rt></ruby>しました。",
-    "cn": "因该名21岁的驻日美军士兵承认了犯罪事实，警方以抢劫杀人嫌疑将其逮捕。"
+    "start": 17.00,
+    "end": 29.00,
+    "jp": "その<ruby>結果<rt>けっか</rt></ruby>、<ruby>神奈川県<rt>かながわけん</rt></ruby><ruby>南足柄市<rt>みなみあしがらし</rt></ruby>の<ruby>会社員<rt>かいしゃいん</rt></ruby>、<ruby>三瓶博幸<rt>さんぺいひろゆき</rt></ruby><ruby>容疑者<rt>ようぎしゃ</rt></ruby>が、<ruby>茨城県<rt>いばらきけん</rt></ruby><ruby>常陸太田市<rt>ひたちおおたし</rt></ruby>にある<ruby>自分<rt>じぶん</rt></ruby>の<ruby>別荘<rt>べっそう</rt></ruby>で<ruby>一緒<rt>いっしょ</rt></ruby>にいたことが<ruby>分<rt>わ</rt></ruby>かり、<ruby>監禁<rt>かんきん</rt></ruby>の<ruby>疑<rt>うたが</rt></ruby>いで<ruby>逮捕<rt>たいほ</rt></ruby>しました。",
+    "cn": "调查查明，神奈川县南足柄市的公司职员三瓶博幸嫌疑人曾与其在位于茨城县常陆太田市的自家别墅中独处，遂以涉嫌非法监禁将其逮捕。"
   }
 ]

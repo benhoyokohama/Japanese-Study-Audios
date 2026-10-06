@@ -2,43 +2,64 @@
   {
     "id": 1,
     "start": 0.00,
-    "end": 13.00,
-    "jp": "FRBは16<ruby>日<rt>にち</rt></ruby>、<ruby>中央<rt>ちゅうおう</rt></ruby><ruby>銀行<rt>ぎんこう</rt></ruby>がお<ruby>金<rt>かね</rt></ruby>を<ruby>貸<rt>か</rt></ruby>す<ruby>時<rt>とき</rt></ruby>の<ruby>金利<rt>きんり</rt></ruby>を0.25%<ruby>上<rt>あ</rt></ruby>げることを<ruby>決<rt>き</rt></ruby>めました。",
-    "cn": "美联储于16日决定，将中央银行贷款时的利率提高0.25%。"
+    "end": 10.00,
+    "jp": "<ruby>来年<rt>らいねん</rt></ruby>から、<ruby>人<rt>ひと</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>しない<ruby>自動<rt>じどう</rt></ruby><ruby>運転<rt>うんてん</rt></ruby>のタクシーが<ruby>東京<rt>とうきょう</rt></ruby>でも<ruby>走<rt>はし</rt></ruby>るかもしれません。",
+    "cn": "从明年开始，无人驾驶的自动驾驶出租车也可能在东京行驶。"
   },
   {
     "id": 2,
-    "start": 13.00,
-    "end": 21.00,
-    "jp": "アメリカではお<ruby>金<rt>かね</rt></ruby>を<ruby>借<rt>か</rt></ruby>りる<ruby>時<rt>とき</rt></ruby>や<ruby>預<rt>あず</rt></ruby>ける<ruby>時<rt>とき</rt></ruby>の<ruby>利息<rt>りそく</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がりそうです。",
-    "cn": "在美国，借钱和存款的利息似乎要上涨了。"
+    "start": 10.00,
+    "end": 22.00,
+    "jp": "アメリカで<ruby>自動<rt>じどう</rt></ruby><ruby>運転<rt>うんてん</rt></ruby>のタクシーのサービスをしている<ruby>会社<rt>かいしゃ</rt></ruby>が、<ruby>日本<rt>にほん</rt></ruby>のタクシーの<ruby>会社<rt>かいしゃ</rt></ruby>などと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>計画<rt>けいかく</rt></ruby>しています。",
+    "cn": "在美国提供自动驾驶出租车服务的公司，正与日本的出租车公司等共同进行规划。"
   },
   {
     "id": 3,
-    "start": 21.00,
-    "end": 30.00,
-    "jp": "FRBは2023<ruby>年<rt>ねん</rt></ruby>7<ruby>月<rt>がつ</rt></ruby>の<ruby>後<rt>あと</rt></ruby>では<ruby>初<rt>はじ</rt></ruby>めて<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げます。",
-    "cn": "这是美联储自2023年7月以来首次加息。"
+    "start": 22.00,
+    "end": 29.00,
+    "jp": "<ruby>利用<rt>りよう</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>はスマートフォンのアプリでタクシーを<ruby>呼<rt>よ</rt></ruby>びます。",
+    "cn": "乘客可以通过智能手机应用程序叫出租车。"
   },
   {
     "id": 4,
-    "start": 30.00,
-    "end": 42.00,
-    "jp": "FRBのウォーシュ<ruby>議長<rt>ぎちょう</rt></ruby>は、インフレなので<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げて<ruby>物<rt>もの</rt></ruby>の<ruby>値段<rt>ねだん</rt></ruby>を<ruby>安定<rt>あんてい</rt></ruby>させたいと<ruby>言<rt>い</rt></ruby>いました。",
-    "cn": "美联储沃什主席表示，由于通货膨胀，希望提高利率以稳定物价。"
+    "start": 29.00,
+    "end": 33.00,
+    "jp": "<ruby>運転<rt>うんてん</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>はいません。",
+    "cn": "车上没有司机。"
   },
   {
     "id": 5,
-    "start": 42.00,
-    "end": 55.00,
-    "jp": "トランプ<ruby>大統領<rt>だいとうりょう</rt></ruby>は、アメリカの<ruby>金利<rt>きんり</rt></ruby>は<ruby>世界<rt>せかい</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>低<rt>ひく</rt></ruby>くていいと<ruby>話<rt>はな</rt></ruby>して、FRBが<ruby>決<rt>き</rt></ruby>めた<ruby>金利<rt>きんり</rt></ruby>に<ruby>反対<rt>はんたい</rt></ruby>しています。",
-    "cn": "特朗普总统表示，美国的利率在世界上是最低的就可以，反对美联储决定的利率。"
+    "start": 33.00,
+    "end": 40.00,
+    "jp": "<ruby>車<rt>くるま</rt></ruby>が<ruby>自動<rt>じどう</rt></ruby>で<ruby>地図<rt>ちず</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べて<ruby>客<rt>きゃく</rt></ruby>が<ruby>行<rt>い</rt></ruby>きたい<ruby>場所<rt>ばしょ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+    "cn": "车辆会自动查询地图，前往乘客想去的地方。"
   },
   {
     "id": 6,
+    "start": 40.00,
+    "end": 48.00,
+    "jp": "<ruby>会社<rt>かいしゃ</rt></ruby>は<ruby>来年<rt>らいねん</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に<ruby>車<rt>くるま</rt></ruby>を100<ruby>台<rt>だい</rt></ruby>ぐらいにする<ruby>計画<rt>けいかく</rt></ruby>です。",
+    "cn": "该公司计划在明年期间将车辆增加到约100辆。"
+  },
+  {
+    "id": 7,
+    "start": 48.00,
+    "end": 55.00,
+    "jp": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はアメリカでは24<ruby>時間<rt>じかん</rt></ruby>サービスをしています。",
+    "cn": "该公司人员表示，在美国提供24小时服务。"
+  },
+  {
+    "id": 8,
     "start": 55.00,
-    "end": 65.00,
-    "jp": "しかし、FRBは<ruby>今年<rt>ことし</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりまでにまた<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げるかもしれません。",
-    "cn": "但是，美联储可能在今年年底前还会再次加息。"
+    "end": 59.00,
+    "jp": "<ruby>人<rt>ひと</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>するより<ruby>事故<rt>じこ</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなっています。",
+    "cn": "事故比人类驾驶要少。"
+  },
+  {
+    "id": 9,
+    "start": 59.00,
+    "end": 63.00,
+    "jp": "<ruby>安全<rt>あんぜん</rt></ruby>を<ruby>一番<rt>いちばん</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えていきますと<ruby>話<rt>はな</rt></ruby>しています。",
+    "cn": "表示将把安全放在第一位考虑。"
   }
 ]

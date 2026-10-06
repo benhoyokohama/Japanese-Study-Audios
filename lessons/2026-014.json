@@ -1,23 +1,86 @@
 [
   {
     "id": 1,
-    "start": 0.00,
-    "end": 11.00,
-    "jp": "アメリカの<ruby>物価上昇<rt>ぶっかじょうしょう</rt></ruby>が<ruby>止<rt>と</rt></ruby>まりません。5<ruby>月<rt>がつ</rt></ruby>の<ruby>消費者物価指数<rt>しょうひしゃぶっかしすう</rt></ruby>は、<ruby>過去<rt>かこ</rt></ruby>40<ruby>年<rt>ねん</rt></ruby>で<ruby>最<rt>もっと</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い<ruby>水準<rt>すいじゅん</rt></ruby>を<ruby>更新<rt>こうしん</rt></ruby>しました。",
-    "cn": "美国的物价上涨势头仍未停歇。5月份的消费者物价指数（CPI）创下了过去40年来的最高水平。"
+    "start": 0.0,
+    "end": 7.44,
+    "jp": "<ruby>火星<rt>かせい</rt></ruby>の<ruby>衛星<rt>えいせい</rt></ruby>フォボスから<ruby>表面<rt>ひょうめん</rt></ruby>の<ruby>砂<rt>すな</rt></ruby>を<ruby>地球<rt>ちきゅう</rt></ruby>に<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>る<ruby>日本<rt>にほん</rt></ruby>の<ruby>探査機<rt>たんさき</rt></ruby>MMXについて、",
+    "cn": "关于计划从火星卫星“火卫一（Phobos）”表面采集砂土样本带回地球的日本探测器MMX，"
   },
   {
     "id": 2,
-    "start": 11.00,
-    "end": 21.00,
-    "jp": "アメリカ<ruby>労働省<rt>ろうどうしょう</rt></ruby>が10<ruby>日<rt>にち</rt></ruby>に<ruby>発表<rt>はっぴょう</rt></ruby>した5<ruby>月<rt>がつ</rt></ruby>の<ruby>消費者物価指数<rt>しょうひしゃぶっかしすう</rt></ruby>は、<ruby>前<rt>まえ</rt></ruby>の<ruby>年<rt>とし</rt></ruby>の<ruby>同<rt>おな</rt></ruby>じ<ruby>月<rt>つき</rt></ruby>に<ruby>比<rt>くら</rt></ruby>べて8.6%<ruby>上昇<rt>じょうしょう</rt></ruby>しました。",
-    "cn": "美国劳工部10日公布的5月份消费者物价指数，比去年同期上涨了8.6%。"
+    "start": 7.44,
+    "end": 18.86,
+    "jp": "JAXA・<ruby>宇宙航空研究開発機構<rt>うちゅうこうくうけんきゅうかいはつきこう</rt></ruby>は<ruby>今年<rt>ことし</rt></ruby>10<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>にち</rt></ruby>の<ruby>午前<rt>ごぜん</rt></ruby>5<ruby>時<rt>じ</rt></ruby><ruby>前<rt>まえ</rt></ruby>にH3ロケットで<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げると<ruby>発表<rt>はっぴょう</rt></ruby>しました。",
+    "cn": "JAXA（日本宇宙航空研究开发机构）宣布，将于今年10月20日凌晨5点前由H3运载火箭发射升空。"
   },
   {
     "id": 3,
-    "start": 21.00,
-    "end": 31.00,
-    "jp": "3<ruby>月<rt>がつ</rt></ruby>に<ruby>記録<rt>きろく</rt></ruby>した<ruby>伸<rt>の</rt></ruby>び<ruby>率<rt>りつ</rt></ruby>8.5%を<ruby>上回<rt>うわまわ</rt></ruby>り、1981<ruby>年<rt>ねん</rt></ruby>12<ruby>月<rt>がつ</rt></ruby><ruby>以来<rt>いらい</rt></ruby>、<ruby>最<rt>もっと</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い<ruby>水準<rt>すいじゅん</rt></ruby>を<ruby>更新<rt>こうしん</rt></ruby>しました。",
-    "cn": "这一涨幅超过了3月份创下的8.5%，刷新了自1981年12月以来的最高纪录。"
+    "start": 18.86,
+    "end": 26.78,
+    "jp": "<ruby>火星衛星探査機<rt>かせいえいせいたんさき</rt></ruby>MMXは<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めて<ruby>火星<rt>かせい</rt></ruby>の<ruby>衛星<rt>えいせい</rt></ruby>フォボスに<ruby>着陸<rt>ちゃくりく</rt></ruby>して<ruby>砂<rt>すな</rt></ruby>を<ruby>採取<rt>さいしゅ</rt></ruby>し、",
+    "cn": "火星卫星探测器MMX作为全球首次着陆火星卫星“火卫一”采集砂土样本、"
+  },
+  {
+    "id": 4,
+    "start": 26.78,
+    "end": 33.5,
+    "jp": "<ruby>地球<rt>ちきゅう</rt></ruby>に<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>ることを<ruby>目指<rt>めざ</rt></ruby>して553<ruby>億円<rt>おくえん</rt></ruby>をかけて<ruby>開発<rt>かいはつ</rt></ruby>されました。",
+    "cn": "并将其带回地球为目标的任务，耗资553亿日元研发而成。"
+  },
+  {
+    "id": 5,
+    "start": 33.5,
+    "end": 44.3,
+    "jp": "この<ruby>探査機<rt>たんさき</rt></ruby>についてJAXAは、10<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>にち</rt></ruby>の<ruby>午前<rt>ごぜん</rt></ruby>4<ruby>時<rt>じ</rt></ruby>41<ruby>分<rt>ふん</rt></ruby>3<ruby>秒<rt>びょう</rt></ruby>にH3ロケットで、",
+    "cn": "关于该探测器，JAXA宣布将于10月20日凌晨4点41分03秒通过H3火箭，"
+  },
+  {
+    "id": 6,
+    "start": 44.3,
+    "end": 49.9,
+    "jp": "<ruby>鹿児島県<rt>かごしまけん</rt></ruby>の<ruby>種子島宇宙センター<rt>たねがしまうちゅうせんたー</rt></ruby>から<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げると<ruby>発表<rt>はっぴょう</rt></ruby>しました。",
+    "cn": "从鹿儿岛县的种子岛宇宙中心发射升空。"
+  },
+  {
+    "id": 7,
+    "start": 49.9,
+    "end": 54.82,
+    "jp": "<ruby>探査機<rt>たんさき</rt></ruby>にはフォボスに<ruby>着陸<rt>ちゃくりく</rt></ruby>するための4つの<ruby>足<rt>あし</rt></ruby>が<ruby>取<rt>と</rt></ruby>り<ruby>付<rt>つ</rt></ruby>けられ、",
+    "cn": "探测器上安装了用于在火卫一着陆的4只着陆支腿，"
+  },
+  {
+    "id": 8,
+    "start": 54.82,
+    "end": 59.66,
+    "jp": "<ruby>表面<rt>ひょうめん</rt></ruby>の<ruby>砂<rt>すな</rt></ruby>を<ruby>採取<rt>さいしゅ</rt></ruby>する<ruby>装置<rt>そうち</rt></ruby>やさまざまな<ruby>観測機器<rt>かんそくきき</rt></ruby>のほか、",
+    "cn": "除了采集表面砂土的装置与各类科学观测设备之外，"
+  },
+  {
+    "id": 9,
+    "start": 59.66,
+    "end": 66.5,
+    "jp": "NHKとJAXAが<ruby>共同<rt>きょうどう</rt></ruby>で<ruby>開発<rt>かいはつ</rt></ruby>したスーパーハイビジョンカメラが<ruby>搭載<rt>とうさい</rt></ruby>されています。",
+    "cn": "还搭载了由NHK与JAXA联合研发的超高清超高像素（8K）摄像机。"
+  },
+  {
+    "id": 10,
+    "start": 66.5,
+    "end": 73.2,
+    "jp": "MMXは1<ruby>年<rt>ねん</rt></ruby>ほどかけて<ruby>火星<rt>かせい</rt></ruby><ruby>付近<rt>ふきん</rt></ruby>に<ruby>到着<rt>とうちゃく</rt></ruby>し、3<ruby>年間<rt>ねんかん</rt></ruby><ruby>探査<rt>たんさ</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けた<ruby>後<rt>あと</rt></ruby>、",
+    "cn": "MMX将历时约1年抵达火星附近，在展开为期3年的科学探测后，"
+  },
+  {
+    "id": 11,
+    "start": 73.2,
+    "end": 79.8,
+    "jp": "<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げからおよそ5<ruby>年後<rt>ねんご</rt></ruby>の2031<ruby>年度<rt>ねんど</rt></ruby>にフォボスの<ruby>砂<rt>すな</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>る<ruby>計画<rt>けいかく</rt></ruby>で、",
+    "cn": "计划在发射后约5年的2031年度将火卫一的砂样带回地球，"
+  },
+  {
+    "id": 12,
+    "start": 79.8,
+    "end": 86.5,
+    "jp": "<ruby>世界初<rt>せかいはつ</rt></ruby>の<ruby>探査<rt>たんさ</rt></ruby>に<ruby>国際的<rt>こくさいてき</rt></ruby>な<ruby>注目<rt>ちゅうもく</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まっています。",
+    "cn": "这项全球首次的深空采样探测任务正受到国际上的广泛瞩目。"
   }
 ]

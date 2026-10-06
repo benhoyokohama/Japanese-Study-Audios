@@ -1,30 +1,44 @@
 [
   {
     "id": 1,
-    "start": 0.0,
-    "end": 6.8,
-    "jp": "auミニッツストアは、ほぼすべての<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>無人<rt>むじん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>っています。",
-    "cn": "au Minute Store几乎所有的操作都是无人进行的。"
+    "start": 0.00,
+    "end": 13.00,
+    "jp": "FRBは16<ruby>日<rt>にち</rt></ruby>、<ruby>中央<rt>ちゅうおう</rt></ruby><ruby>銀行<rt>ぎんこう</rt></ruby>がお<ruby>金<rt>かね</rt></ruby>を<ruby>貸<rt>か</rt></ruby>す<ruby>時<rt>とき</rt></ruby>の<ruby>金利<rt>きんり</rt></ruby>を0.25%<ruby>上<rt>あ</rt></ruby>げることを<ruby>決<rt>き</rt></ruby>めました。",
+    "cn": "美联储于16日决定，将中央银行贷款时的利率提高0.25%。"
   },
   {
     "id": 2,
-    "start": 6.8,
-    "end": 19.3,
-    "jp": "<ruby>客<rt>きゃく</rt></ruby>がスマホのアプリで<ruby>注文<rt>ちゅうもん</rt></ruby>すると、<ruby>店<rt>みせ</rt></ruby>のロボットやセンサーが<ruby>食品<rt>しょくひん</rt></ruby>や<ruby>日用品<rt>にちようひん</rt></ruby>などを<ruby>選<rt>えら</rt></ruby>んで<ruby>集<rt>あつ</rt></ruby>め、<ruby>受取口<rt>うけとりぐち</rt></ruby>まで<ruby>運<rt>はこ</rt></ruby>んで<ruby>袋<rt>ふくろ</rt></ruby>に<ruby>詰<rt>つ</rt></ruby>めてくれます。",
-    "cn": "顾客用手机应用程序下单后，店里的机器人和传感器会挑选并集齐食品与日用品，运送到取货口并帮忙装袋。"
+    "start": 13.00,
+    "end": 21.00,
+    "jp": "アメリカではお<ruby>金<rt>かね</rt></ruby>を<ruby>借<rt>か</rt></ruby>りる<ruby>時<rt>とき</rt></ruby>や<ruby>預<rt>あず</rt></ruby>ける<ruby>時<rt>とき</rt></ruby>の<ruby>利息<rt>りそく</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がりそうです。",
+    "cn": "在美国，借钱和存款的利息似乎要上涨了。"
   },
   {
     "id": 3,
-    "start": 19.3,
-    "end": 28.6,
-    "jp": "<ruby>扱<rt>あつか</rt></ruby>っている<ruby>商品<rt>しょうひん</rt></ruby>はローソンやコストコのおよそ70<ruby>品目<rt>ひんもく</rt></ruby>で、<ruby>自宅<rt>じたく</rt></ruby>などへの<ruby>配送<rt>はいそう</rt></ruby>も<ruby>可能<rt>かのう</rt></ruby>だということです。",
-    "cn": "经营的商品包括罗森与Costco的大约70种品类，也可以配送到家。"
+    "start": 21.00,
+    "end": 30.00,
+    "jp": "FRBは2023<ruby>年<rt>ねん</rt></ruby>7<ruby>月<rt>がつ</rt></ruby>の<ruby>後<rt>あと</rt></ruby>では<ruby>初<rt>はじ</rt></ruby>めて<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げます。",
+    "cn": "这是美联储自2023年7月以来首次加息。"
   },
   {
     "id": 4,
-    "start": 28.6,
-    "end": 34.0,
-    "jp": "<ruby>小売<rt>こうり</rt></ruby><ruby>業界<rt>ぎょうかい</rt></ruby>では、<ruby>自動化<rt>じどうか</rt></ruby>や<ruby>無人化<rt>むじんか</rt></ruby>が<ruby>進<rt>すす</rt></ruby>んでいます。",
-    "cn": "在零售行业，自动化与无人化正在不断推进。"
+    "start": 30.00,
+    "end": 42.00,
+    "jp": "FRBのウォーシュ<ruby>議長<rt>ぎちょう</rt></ruby>は、インフレなので<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げて<ruby>物<rt>もの</rt></ruby>の<ruby>値段<rt>ねだん</rt></ruby>を<ruby>安定<rt>あんてい</rt></ruby>させたいと<ruby>言<rt>い</rt></ruby>いました。",
+    "cn": "美联储沃什主席表示，由于通货膨胀，希望提高利率以稳定物价。"
+  },
+  {
+    "id": 5,
+    "start": 42.00,
+    "end": 55.00,
+    "jp": "トランプ<ruby>大統領<rt>だいとうりょう</rt></ruby>は、アメリカの<ruby>金利<rt>きんり</rt></ruby>は<ruby>世界<rt>せかい</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>低<rt>ひく</rt></ruby>くていいと<ruby>話<rt>はな</rt></ruby>して、FRBが<ruby>決<rt>き</rt></ruby>めた<ruby>金利<rt>きんり</rt></ruby>に<ruby>反対<rt>はんたい</rt></ruby>しています。",
+    "cn": "特朗普总统表示，美国的利率在世界上是最低的就可以，反对美联储决定的利率。"
+  },
+  {
+    "id": 6,
+    "start": 55.00,
+    "end": 65.00,
+    "jp": "しかし、FRBは<ruby>今年<rt>ことし</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりまでにまた<ruby>金利<rt>きんり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げるかもしれません。",
+    "cn": "但是，美联储可能在今年年底前还会再次加息。"
   }
 ]
