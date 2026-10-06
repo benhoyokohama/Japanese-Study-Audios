@@ -153,6 +153,7 @@
     let sleepTimer = null;
     let isTransitioning = false;
 
+    btnLoopMode.onclick = toggleLoopMode;
     function toggleLoopMode() {
       playMode = (playMode + 1) % 3;
       updateLoopModeUI();
