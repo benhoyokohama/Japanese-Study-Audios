@@ -314,6 +314,35 @@
     }
 
     // 8. 默认载入第一课
+        // 耳机线控双击/三击联动控制（单句循环支持首尾闭环）
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.setActionHandler('play', () => audio.play().catch(() => {}));
+      navigator.mediaSession.setActionHandler('pause', () => audio.pause());
+
+      navigator.mediaSession.setActionHandler('nexttrack', () => {
+        if (playMode === 'single') {
+          // 双击耳机：最后一句循环跳回第 1 句，其他情况跳下一句
+          const nextIdx = (currentIndex >= sentences.length - 1) ? 0 : currentIndex + 1;
+          playSentence(nextIdx);
+        } else {
+          nextLesson();
+        }
+      });
+
+      navigator.mediaSession.setActionHandler('previoustrack', () => {
+        if (playMode === 'single') {
+          // 三击耳机：第 1 句跳回最后一句，其他情况跳上一句
+          const prevIdx = (currentIndex <= 0) ? sentences.length - 1 : currentIndex - 1;
+          playSentence(prevIdx);
+        } else {
+          if (lessonSelect.selectedIndex > 0) {
+            lessonSelect.selectedIndex -= 1;
+            loadLesson(lessonSelect.value, true);
+          }
+        }
+      });
+    }
+
     loadLesson(lessonSelect.value, false);
   </script>
 </body>
