@@ -39,7 +39,6 @@
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      flex-wrap: nowrap;
     }
     .header-top h1 {
       font-size: 1.05rem;
@@ -68,7 +67,7 @@
       white-space: nowrap;
     }
     #timerSelect {
-      width: 95px;
+      width: 96px;
       padding: 6px 6px;
       border-radius: 8px;
       border: 1px solid var(--border);
@@ -78,15 +77,6 @@
       color: #1e293b;
       outline: none;
       text-align: center;
-    }
-    #countdownDisplay {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #ef4444;
-      background: #fee2e2;
-      padding: 3px 8px;
-      border-radius: 6px;
-      display: none;
     }
     audio {
       width: 100%;
@@ -230,7 +220,7 @@
   </style>
 </head>
 <body>
-    <header>
+  <header>
     <div class="header-top">
       <h1>🇯🇵 随身日语</h1>
       <div class="control-selects">
@@ -272,7 +262,6 @@
     const audio = document.getElementById('audioPlayer');
     const lessonSelect = document.getElementById('lessonSelect');
     const timerSelect = document.getElementById('timerSelect');
-    const countdownDisplay = document.getElementById('countdownDisplay');
     const cardsList = document.getElementById('cardsList');
     const statusText = document.getElementById('statusText');
     const btnPlayPause = document.getElementById('btnPlayPause');
@@ -280,11 +269,8 @@
 
     let sentences = [];
     let currentIndex = 0;
-    // 0: 单句循环, 1: 全文循环, 2: 顺序播放
-    let playMode = 0;
+    let playMode = 0; // 0: 单句循环, 1: 全文循环, 2: 顺序播放
     let isTransitioning = false;
-
-    // 倒计时相关变量
     let timerInterval = null;
     let remainingSeconds = 0;
 
@@ -478,9 +464,8 @@
       }
     }
 
-    // 动态实时倒计时时钟逻辑
-    // 倒计时核心：直接更新 timerSelect 框内的文字显示
     function resetTimerOptions() {
+      if (!timerSelect) return;
       timerSelect.options[0].text = '⏱ 关';
       timerSelect.options[1].text = '⏱ 15m';
       timerSelect.options[2].text = '⏱ 30m';
@@ -520,11 +505,6 @@
         remainingSeconds = 0;
         resetTimerOptions();
       }
-    }, 1000);
-      } else {
-        remainingSeconds = 0;
-        updateCountdownUI();
-      }
     }
 
     if (timerSelect) timerSelect.onchange = setupSleepTimer;
@@ -536,7 +516,7 @@
     }
 
     updateLoopModeUI();
-    const initLesson = lessonSelect ? lessonSelect.value : '2026-101';
+    const initLesson = lessonSelect ? lessonSelect.value : '2026-001';
     loadLesson(initLesson, 0, false);
   </script>
 </body>
