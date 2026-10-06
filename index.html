@@ -32,52 +32,52 @@
       z-index: 100;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
-    .header-row-1 {
+    .header-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      flex-wrap: nowrap;
     }
-    .header-row-1 h1 {
+    .header-top h1 {
       font-size: 1.05rem;
       font-weight: 700;
       white-space: nowrap;
     }
-    .lesson-select-wrap {
-      flex: 1;
+    .control-selects {
       display: flex;
+      align-items: center;
+      gap: 6px;
+      flex: 1;
       justify-content: flex-end;
+      min-width: 0;
     }
     #lessonSelect {
-      width: 100%;
-      max-width: 260px;
-      padding: 6px 10px;
+      flex: 1;
+      min-width: 0;
+      max-width: 220px;
+      padding: 6px 8px;
       border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #fff;
-      font-size: 0.85rem;
-      outline: none;
-    }
-    .header-row-2 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .timer-wrap {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    #timerSelect {
-      padding: 5px 8px;
-      border-radius: 6px;
       border: 1px solid var(--border);
       background: #fff;
       font-size: 0.82rem;
       outline: none;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    #timerSelect {
+      width: 95px;
+      padding: 6px 6px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #1e293b;
+      outline: none;
+      text-align: center;
     }
     #countdownDisplay {
       font-size: 0.85rem;
@@ -230,10 +230,10 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="header-row-1">
+    <header>
+    <div class="header-top">
       <h1>🇯🇵 随身日语</h1>
-      <div class="lesson-select-wrap">
+      <div class="control-selects">
         <select id="lessonSelect">
           <option value="2026-001">第 1 课：沖縄 米軍兵士逮捕（Easy版）</option>
           <option value="2026-002">第 2 课：沖縄 米軍兵士強盗殺人（一般版）</option>
@@ -245,17 +245,12 @@
           <option value="2026-200">第 200 课：信長から秀吉の台頭へ</option>
           <option value="2026-201">第 201 课：秀吉の全国統一と大坂城</option>
         </select>
-      </div>
-    </div>
-    <div class="header-row-2">
-      <div class="timer-wrap">
         <select id="timerSelect">
-          <option value="0">⏱ 定时：关</option>
-          <option value="15">⏱ 15 分钟</option>
-          <option value="30">⏱ 30 分钟</option>
-          <option value="60">⏱ 60 分钟</option>
+          <option value="0">⏱ 关</option>
+          <option value="15">⏱ 15m</option>
+          <option value="30">⏱ 30m</option>
+          <option value="60">⏱ 60m</option>
         </select>
-        <span id="countdownDisplay">⏱ 00:00</span>
       </div>
     </div>
     <audio id="audioPlayer" controls></audio>
@@ -484,34 +479,48 @@
     }
 
     // 动态实时倒计时时钟逻辑
-    function updateCountdownUI() {
-      if (remainingSeconds <= 0) {
-        countdownDisplay.style.display = 'none';
-        return;
-      }
-      countdownDisplay.style.display = 'inline-block';
-      const m = Math.floor(remainingSeconds / 60).toString().padStart(2, '0');
-      const s = (remainingSeconds % 60).toString().padStart(2, '0');
-      countdownDisplay.textContent = `⏱ ${m}:${s}`;
+    // 倒计时核心：直接更新 timerSelect 框内的文字显示
+    function resetTimerOptions() {
+      timerSelect.options[0].text = '⏱ 关';
+      timerSelect.options[1].text = '⏱ 15m';
+      timerSelect.options[2].text = '⏱ 30m';
+      timerSelect.options[3].text = '⏱ 60m';
     }
 
     function setupSleepTimer() {
       if (timerInterval) clearInterval(timerInterval);
+      resetTimerOptions();
+
       const mins = parseInt(timerSelect.value, 10);
       if (mins > 0) {
         remainingSeconds = mins * 60;
-        updateCountdownUI();
+        const selIdx = timerSelect.selectedIndex;
+
+        const updateClockText = () => {
+          const m = Math.floor(remainingSeconds / 60).toString().padStart(2, '0');
+          const s = (remainingSeconds % 60).toString().padStart(2, '0');
+          timerSelect.options[selIdx].text = `⏱ ${m}:${s}`;
+        };
+
+        updateClockText();
+
         timerInterval = setInterval(() => {
           remainingSeconds--;
           if (remainingSeconds <= 0) {
             clearInterval(timerInterval);
             audio.pause();
-            updateCountdownUI();
+            resetTimerOptions();
+            timerSelect.value = '0';
             if (statusText) statusText.textContent = '⏱ 定时已到，自动停止播放';
           } else {
-            updateCountdownUI();
+            updateClockText();
           }
         }, 1000);
+      } else {
+        remainingSeconds = 0;
+        resetTimerOptions();
+      }
+    }, 1000);
       } else {
         remainingSeconds = 0;
         updateCountdownUI();
