@@ -157,7 +157,85 @@
     let secondsLeft = 0;
 
     // 1. 加载课件数据
-    async function loadLesson(lessonId, autoPlay = false) {
+    async // 切换到下一课辅助函数
+    function playNextLesson() {
+      const options = Array.from(lessonSelect.options);
+      let curIdx = options.findIndex(opt => opt.value === lessonSelect.value);
+      let nextIdx = (curIdx + 1) % options.length;
+      lessonSelect.selectedIndex = nextIdx;
+      loadLesson(options[nextIdx].value, 0, true);
+    }
+
+    // 下一句控制（修复单句循环跳到下一句并继续单句循环；顺序播放最后一句跳下一课）
+    function nextSentence() {
+      if (!sentences || sentences.length === 0) return;
+      if (currentIndex < sentences.length - 1) {
+        playSentence(currentIndex + 1);
+      } else {
+        // 当前课已是最后一句
+        if (playMode === 1) {
+          // 列表循环：跳回本课第 1 句
+          playSentence(0);
+        } else {
+          // 单句循环 或 顺序播放：跳至下一课第 1 句
+          playNextLesson();
+        }
+      }
+    }
+
+    // 上一句控制
+    function prevSentence() {
+      if (!sentences || sentences.length === 0) return;
+      if (currentIndex > 0) {
+        playSentence(currentIndex - 1);
+      } else {
+        playSentence(0);
+      }
+    }
+
+    // 音频时间更新监听（防漏报，留 0.08 秒容错区间）
+    audio.ontimeupdate = () => {
+      if (currentIndex < 0 || currentIndex >= sentences.length) return;
+      const s = sentences[currentIndex];
+      // 容错提前 0.08s 触发切句，防止直接撞上 audio ended 导致暂停
+      if (audio.currentTime >= s.end - 0.08) {
+        handleSentenceEnd();
+      }
+    };
+
+    // 音频自然结束兜底监听（彻底消灭最后一句播完停摆的 bug）
+    audio.onended = () => {
+      handleSentenceEnd();
+    };
+
+    // 句子结束核心分流处理
+    function handleSentenceEnd() {
+      if (currentIndex < 0 || currentIndex >= sentences.length) return;
+      const s = sentences[currentIndex];
+
+      if (playMode === 0) {
+        // 【单句循环】重新回到当前句开头继续播
+        audio.currentTime = s.start;
+        audio.play().catch(() => {});
+      } else if (playMode === 1) {
+        // 【列表循环】
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          playSentence(0); // 本课播完，回到第一句
+        }
+      } else if (playMode === 2) {
+        // 【顺序播放】
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          // 本课播完，自动跳入下一课开始播放
+          playNextLesson();
+        }
+      }
+    }
+
+    function loadLesson(lessonId, autoPlay = false) {
       try {
         statusText.textContent = "载入中...";
         cardsList.innerHTML = '<div style="text-align:center; padding: 40px; color: #94a3b8;">正在加载课文...</div>';
