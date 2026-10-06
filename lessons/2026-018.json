@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 7.0,
+    "jp": "<ruby>北海道<rt>ほっかいどう</rt></ruby><ruby>苫小牧市<rt>とまこまいし</rt></ruby>で、<ruby>子<rt>こ</rt></ruby>どもたちが<ruby>車<rt>くるま</rt></ruby>の<ruby>楽<rt>たの</rt></ruby>しさを<ruby>体験<rt>たいけん</rt></ruby>するイベントがありました。",
+    "cn": "在北海道苫小牧市，举办了让孩子们体验汽车乐趣的活动。"
+  },
+  {
+    "id": 2,
+    "start": 7.0,
+    "end": 13.02,
+    "jp": "<ruby>自動車<rt>じどうしゃ</rt></ruby>の<ruby>部品<rt>ぶひん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る<ruby>工場<rt>こうじょう</rt></ruby>に、100<ruby>人<rt>にん</rt></ruby>ぐらいの<ruby>親子<rt>おやこ</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まりました。",
+    "cn": "大约100名家长和孩子来到了生产汽车零部件的工厂。"
+  },
+  {
+    "id": 3,
+    "start": 13.02,
+    "end": 19.82,
+    "jp": "<ruby>電気<rt>でんき</rt></ruby>で<ruby>動<rt>うご</rt></ruby>くバスやピックアップトラックなどに<ruby>乗<rt>の</rt></ruby>って、コースを<ruby>走<rt>はし</rt></ruby>りました。",
+    "cn": "他们乘坐电动巴士、皮卡等车辆在赛道上行驶体验。"
+  },
+  {
+    "id": 4,
+    "start": 19.82,
+    "end": 25.46,
+    "jp": "<ruby>環境<rt>かんきょう</rt></ruby>にいい<ruby>水素<rt>すいそ</rt></ruby>エネルギーをどう<ruby>使<rt>つか</rt></ruby>っているか、<ruby>勉強<rt>べんきょう</rt></ruby>しました。",
+    "cn": "还学习了如何利用环保的氢能源。"
+  },
+  {
+    "id": 5,
+    "start": 25.46,
+    "end": 30.32,
+    "jp": "<ruby>水素<rt>すいそ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うストーブや<ruby>自動<rt>じどう</rt></ruby><ruby>販売機<rt>はんばいき</rt></ruby>などを<ruby>見学<rt>けんがく</rt></ruby>しました。",
+    "cn": "参观了使用氢气的取暖炉和自动售货机等设施。"
+  },
+  {
+    "id": 6,
+    "start": 30.32,
+    "end": 39.65,
+    "jp": "8<ruby>歳<rt>さい</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもは、「<ruby>初<rt>はじ</rt></ruby>めて<ruby>乗<rt>の</rt></ruby>った<ruby>車<rt>くるま</rt></ruby>があったからとても<ruby>楽<rt>たの</rt></ruby>しかった。<ruby>又<rt>また</rt></ruby><ruby>来<rt>き</rt></ruby>てみたい」と<ruby>話<rt>はな</rt></ruby>していました。",
+    "cn": "一名8岁的小朋友高兴地表示：“坐到了以前没坐过的车，非常开心，下次还想来。”"
+  }
+]
