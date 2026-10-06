@@ -97,6 +97,7 @@
   <script>
     const audio = document.getElementById('audioPlayer');
     const lessonSelect = document.getElementById('lessonSelect');
+    const timerSelect = document.getElementById('timerSelect');
     const cardsList = document.getElementById('cardsList');
     const playBtn = document.getElementById('playBtn');
     const loopModeBtn = document.getElementById('loopModeBtn');
@@ -106,10 +107,14 @@
 
     let sentences = [];
     let currentIndex = 0;
-    // playMode: 'list' (列表循环) 或 'single' (单句循环)
-    let playMode = 'list';
+    // 三种播放模式: 'single' (单句循环) | 'list' (列表循环) | 'sequence' (顺序播放)
+    let playMode = 'single';
 
-    // 1. 加载课程数据
+    // 倒计时定时器
+    let countdownInterval = null;
+    let secondsLeft = 0;
+
+    // 1. 加载课件数据
     async function loadLesson(lessonId, autoPlay = false) {
       try {
         statusText.textContent = "载入中...";
@@ -164,7 +169,7 @@
       });
     }
 
-    // 3. 高亮指定句子并滚动视图
+    // 3. 高亮句子
     function highlightSentence(idx) {
       currentIndex = idx;
       document.querySelectorAll('.sentence-card').forEach((el, i) => {
@@ -176,7 +181,7 @@
       }
     }
 
-    // 4. 播放指定句子
+    // 4. 播放单句
     function playSentence(idx) {
       if (!sentences || idx < 0 || idx >= sentences.length) return;
       highlightSentence(idx);
@@ -184,7 +189,18 @@
       audio.play().catch(() => {});
     }
 
-    // 5. 播放进度监听与自动循环驱动
+    // 切到下一课
+    function nextLesson() {
+      if (lessonSelect.selectedIndex < lessonSelect.options.length - 1) {
+        lessonSelect.selectedIndex += 1;
+        loadLesson(lessonSelect.value, true);
+      } else {
+        lessonSelect.selectedIndex = 0;
+        loadLesson(lessonSelect.value, true);
+      }
+    }
+
+    // 5. 播放驱动与三种模式流转
     audio.addEventListener('timeupdate', () => {
       if (!sentences || sentences.length === 0) return;
       const t = audio.currentTime;
@@ -192,27 +208,32 @@
 
       if (!current) return;
 
-      // 判断当前句子是否播完
       if (t >= current.end) {
         if (playMode === 'single') {
-          // 单句循环：稳稳跳回当前句起点
+          // 🔂 单句循环
           audio.currentTime = Math.max(0, current.start);
           audio.play().catch(() => {});
         } else {
-          // 列表播放/循环
           if (currentIndex < sentences.length - 1) {
+            // 播放下一句
             highlightSentence(currentIndex + 1);
           } else {
-            // 到达全篇末尾：列表循环回句 1
-            audio.currentTime = Math.max(0, sentences[0].start);
-            highlightSentence(0);
-            audio.play().catch(() => {});
+            // 课文最后一句话播完：
+            if (playMode === 'list') {
+              // 🔁 列表循环：从本篇第 1 句重播
+              audio.currentTime = Math.max(0, sentences[0].start);
+              highlightSentence(0);
+              audio.play().catch(() => {});
+            } else if (playMode === 'sequence') {
+              // ▶️ 顺序播放：进入下一课并播放
+              nextLesson();
+            }
           }
         }
       }
     });
 
-    // 6. 控制按键交互
+    // 6. 按钮交互
     playBtn.addEventListener('click', () => {
       if (audio.paused) {
         audio.play().catch(() => {});
@@ -224,13 +245,17 @@
     audio.addEventListener('play', () => { playBtn.textContent = '⏸ 暂停'; });
     audio.addEventListener('pause', () => { playBtn.textContent = '▶ 播放'; });
 
+    // 模式切换顺序：🔂 单句循环 -> 🔁 列表循环 -> ▶️ 顺序播放
     loopModeBtn.addEventListener('click', () => {
-      if (playMode === 'list') {
-        playMode = 'single';
-        loopModeBtn.textContent = '🔂 单句循环';
-      } else {
+      if (playMode === 'single') {
         playMode = 'list';
         loopModeBtn.textContent = '🔁 列表循环';
+      } else if (playMode === 'list') {
+        playMode = 'sequence';
+        loopModeBtn.textContent = '▶️ 顺序播放';
+      } else {
+        playMode = 'single';
+        loopModeBtn.textContent = '🔂 单句循环';
       }
     });
 
@@ -246,7 +271,51 @@
       loadLesson(e.target.value, false);
     });
 
-    // 7. 耳机线控与锁屏操作（MediaSession）
+    // 7. 定时器倒计时准确还原
+    function resetTimerLabels() {
+      const options = timerSelect.querySelectorAll('option');
+      options.forEach(opt => {
+        const val = opt.value;
+        if (val === "0") opt.textContent = "⏱ 定时：关";
+        else opt.textContent = `⏱ ${val} 分钟`;
+      });
+    }
+
+    if (timerSelect) {
+      timerSelect.addEventListener('change', (e) => {
+        if (countdownInterval) {
+          clearInterval(countdownInterval);
+          countdownInterval = null;
+        }
+        resetTimerLabels();
+
+        const minutes = parseInt(e.target.value, 10);
+        if (minutes > 0) {
+          secondsLeft = minutes * 60;
+          const currentOption = timerSelect.querySelector(`option[value="${minutes}"]`);
+
+          countdownInterval = setInterval(() => {
+            secondsLeft -= 1;
+            const m = Math.floor(secondsLeft / 60);
+            const s = secondsLeft % 60;
+            if (currentOption) {
+              currentOption.textContent = `⏱ ${m}:${s < 10 ? '0' : ''}${s}`;
+            }
+
+            if (secondsLeft <= 0) {
+              clearInterval(countdownInterval);
+              countdownInterval = null;
+              audio.pause();
+              timerSelect.value = "0";
+              resetTimerLabels();
+              alert("⏱ 定时时间已到，已自动停止播放。");
+            }
+          }, 1000);
+        }
+      });
+    }
+
+    // 8. 耳机与锁屏联动控制
     if ('mediaSession' in navigator) {
       navigator.mediaSession.setActionHandler('play', () => audio.play().catch(() => {}));
       navigator.mediaSession.setActionHandler('pause', () => audio.pause());
@@ -255,11 +324,7 @@
         if (playMode === 'single') {
           playSentence(Math.min(sentences.length - 1, currentIndex + 1));
         } else {
-          // 列表模式：下一课并自动起播
-          if (lessonSelect.selectedIndex < lessonSelect.options.length - 1) {
-            lessonSelect.selectedIndex += 1;
-            loadLesson(lessonSelect.value, true);
-          }
+          nextLesson();
         }
       });
 
@@ -267,7 +332,6 @@
         if (playMode === 'single') {
           playSentence(Math.max(0, currentIndex - 1));
         } else {
-          // 列表模式：上一课并自动起播
           if (lessonSelect.selectedIndex > 0) {
             lessonSelect.selectedIndex -= 1;
             loadLesson(lessonSelect.value, true);
@@ -276,7 +340,9 @@
       });
     }
 
-    // 8. 页面初次载入
+    // 初始状态
+    loopModeBtn.textContent = '🔂 单句循环';
+
     window.addEventListener('DOMContentLoaded', () => {
       loadLesson(lessonSelect.value, false);
     });
