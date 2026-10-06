@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>随身日语听力跟读</title>
   <style>
     :root {
@@ -17,48 +17,76 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", Meiryo, sans-serif;
       background: var(--bg);
       color: var(--text-main);
-      padding-bottom: 90px;
+      padding-bottom: 95px;
     }
     header {
       position: sticky;
       top: 0;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
-      padding: 12px 16px;
+      padding: 10px 14px;
       z-index: 100;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
-    .header-top {
+    .header-row-1 {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 10px;
     }
-    .header-top h1 {
-      font-size: 1.1rem;
+    .header-row-1 h1 {
+      font-size: 1.05rem;
       font-weight: 700;
       white-space: nowrap;
     }
-    .select-group {
-      display: flex;
-      gap: 8px;
+    .lesson-select-wrap {
       flex: 1;
+      display: flex;
       justify-content: flex-end;
     }
-    select {
+    #lessonSelect {
+      width: 100%;
+      max-width: 260px;
       padding: 6px 10px;
       border-radius: 8px;
       border: 1px solid var(--border);
       background: #fff;
       font-size: 0.85rem;
       outline: none;
-      max-width: 220px;
+    }
+    .header-row-2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .timer-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    #timerSelect {
+      padding: 5px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 0.82rem;
+      outline: none;
+    }
+    #countdownDisplay {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #ef4444;
+      background: #fee2e2;
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: none;
     }
     audio {
       width: 100%;
@@ -68,7 +96,7 @@
     .container {
       max-width: 720px;
       margin: 0 auto;
-      padding: 16px;
+      padding: 14px;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -106,9 +134,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.15s;
     }
-    .icon-btn:hover { background: #e2e8f0; }
     .icon-btn.play {
       background: var(--primary);
       color: #fff;
@@ -160,10 +186,10 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
       border-top: 1px solid var(--border);
-      padding: 10px 16px;
+      padding: 10px 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -172,31 +198,29 @@
       margin: 0 auto;
     }
     .footer-left {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--text-muted);
       font-weight: 500;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 140px;
+      max-width: 130px;
     }
     .footer-controls {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       align-items: center;
     }
     .ctrl-btn {
-      padding: 8px 14px;
+      padding: 8px 12px;
       border-radius: 8px;
       border: 1px solid var(--border);
       background: #fff;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
       cursor: pointer;
       color: var(--text-main);
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
+      white-space: nowrap;
     }
     .ctrl-btn.primary {
       background: var(--primary);
@@ -207,9 +231,9 @@
 </head>
 <body>
   <header>
-    <div class="header-top">
-      <h1>🇯🇵 随身日语听力跟读</h1>
-      <div class="select-group">
+    <div class="header-row-1">
+      <h1>🇯🇵 随身日语</h1>
+      <div class="lesson-select-wrap">
         <select id="lessonSelect">
           <option value="2026-001">第 1 课：沖縄 米軍兵士逮捕（Easy版）</option>
           <option value="2026-002">第 2 课：沖縄 米軍兵士強盗殺人（一般版）</option>
@@ -221,12 +245,17 @@
           <option value="2026-200">第 200 课：信長から秀吉の台頭へ</option>
           <option value="2026-201">第 201 课：秀吉の全国統一と大坂城</option>
         </select>
+      </div>
+    </div>
+    <div class="header-row-2">
+      <div class="timer-wrap">
         <select id="timerSelect">
           <option value="0">⏱ 定时：关</option>
           <option value="15">⏱ 15 分钟</option>
           <option value="30">⏱ 30 分钟</option>
           <option value="60">⏱ 60 分钟</option>
         </select>
+        <span id="countdownDisplay">⏱ 00:00</span>
       </div>
     </div>
     <audio id="audioPlayer" controls></audio>
@@ -245,10 +274,10 @@
   </footer>
 
   <script>
-    // 基础元素引用
     const audio = document.getElementById('audioPlayer');
     const lessonSelect = document.getElementById('lessonSelect');
     const timerSelect = document.getElementById('timerSelect');
+    const countdownDisplay = document.getElementById('countdownDisplay');
     const cardsList = document.getElementById('cardsList');
     const statusText = document.getElementById('statusText');
     const btnPlayPause = document.getElementById('btnPlayPause');
@@ -258,10 +287,12 @@
     let currentIndex = 0;
     // 0: 单句循环, 1: 全文循环, 2: 顺序播放
     let playMode = 0;
-    let sleepTimer = null;
     let isTransitioning = false;
 
-    // 核心函数置顶，确保任何时候点击都不会找不到定义
+    // 倒计时相关变量
+    let timerInterval = null;
+    let remainingSeconds = 0;
+
     function toggleLoopMode() {
       playMode = (playMode + 1) % 3;
       updateLoopModeUI();
@@ -269,13 +300,9 @@
 
     function updateLoopModeUI() {
       if (!btnLoopMode) return;
-      if (playMode === 0) {
-        btnLoopMode.textContent = '🔂 单句循环';
-      } else if (playMode === 1) {
-        btnLoopMode.textContent = '🔁 全文循环';
-      } else {
-        btnLoopMode.textContent = '➡️ 顺序播放';
-      }
+      if (playMode === 0) btnLoopMode.textContent = '🔂 单句循环';
+      else if (playMode === 1) btnLoopMode.textContent = '🔁 全文循环';
+      else btnLoopMode.textContent = '➡️ 顺序播放';
     }
 
     function togglePlayPause() {
@@ -323,11 +350,10 @@
       if (currentIndex < sentences.length - 1) {
         playSentence(currentIndex + 1);
       } else {
-        // 当前课最后一句
         if (playMode === 1) {
-          playSentence(0); // 全文循环回第一句
+          playSentence(0);
         } else {
-          playNextLesson(); // 单句循环或顺序播放跳下一课
+          playNextLesson();
         }
       }
     }
@@ -341,7 +367,6 @@
       }
     }
 
-    // 句尾流转控制
     function handleSentenceEnd() {
       if (isTransitioning) return;
       isTransitioning = true;
@@ -350,12 +375,10 @@
       const s = sentences[currentIndex];
 
       if (playMode === 0) {
-        // 单句循环：拉回句首继续播放
         audio.currentTime = s.start || 0;
         isTransitioning = false;
         audio.play().catch(() => {});
       } else if (playMode === 1) {
-        // 全文循环
         isTransitioning = false;
         if (currentIndex < sentences.length - 1) {
           playSentence(currentIndex + 1);
@@ -363,7 +386,6 @@
           playSentence(0);
         }
       } else if (playMode === 2) {
-        // 顺序播放
         isTransitioning = false;
         if (currentIndex < sentences.length - 1) {
           playSentence(currentIndex + 1);
@@ -373,7 +395,6 @@
       }
     }
 
-    // 进度监听（留 0.08 秒容错区间防撞 ended 停摆）
     audio.ontimeupdate = () => {
       if (!sentences || currentIndex < 0 || currentIndex >= sentences.length) return;
       const s = sentences[currentIndex];
@@ -382,7 +403,6 @@
       }
     };
 
-    // 兜底监听：解决原生音频自然 ended 停止的极端情况
     audio.onended = () => {
       handleSentenceEnd();
     };
@@ -402,7 +422,6 @@
       });
     }
 
-    // 渲染卡片：完全防御式容错，保证 100% 成功绘制
     function renderCards() {
       if (!cardsList) return;
       cardsList.innerHTML = '';
@@ -441,12 +460,11 @@
       });
     }
 
-    // 加载课文与音频
     async function loadLesson(lessonId, startSentenceIdx = 0, autoPlay = false) {
       if (statusText) statusText.textContent = '正在加载课文与音频...';
       try {
         const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
-        if (!res.ok) throw new Error('课件数据加载失败');
+        if (!res.ok) throw new Error('课件加载失败');
         sentences = await res.json();
         audio.src = `lessons/${lessonId}.mp3?t=${Date.now()}`;
         audio.load();
@@ -465,14 +483,38 @@
       }
     }
 
+    // 动态实时倒计时时钟逻辑
+    function updateCountdownUI() {
+      if (remainingSeconds <= 0) {
+        countdownDisplay.style.display = 'none';
+        return;
+      }
+      countdownDisplay.style.display = 'inline-block';
+      const m = Math.floor(remainingSeconds / 60).toString().padStart(2, '0');
+      const s = (remainingSeconds % 60).toString().padStart(2, '0');
+      countdownDisplay.textContent = `⏱ ${m}:${s}`;
+    }
+
     function setupSleepTimer() {
-      if (sleepTimer) clearTimeout(sleepTimer);
+      if (timerInterval) clearInterval(timerInterval);
       const mins = parseInt(timerSelect.value, 10);
       if (mins > 0) {
-        sleepTimer = setTimeout(() => {
-          audio.pause();
-          if (statusText) statusText.textContent = '⏱ 定时已到，自动停止播放';
-        }, mins * 60 * 1000);
+        remainingSeconds = mins * 60;
+        updateCountdownUI();
+        timerInterval = setInterval(() => {
+          remainingSeconds--;
+          if (remainingSeconds <= 0) {
+            clearInterval(timerInterval);
+            audio.pause();
+            updateCountdownUI();
+            if (statusText) statusText.textContent = '⏱ 定时已到，自动停止播放';
+          } else {
+            updateCountdownUI();
+          }
+        }, 1000);
+      } else {
+        remainingSeconds = 0;
+        updateCountdownUI();
       }
     }
 
@@ -484,9 +526,8 @@
       navigator.mediaSession.setActionHandler('nexttrack', () => nextSentence());
     }
 
-    // 页面初始化：单次执行，杜绝竞态与报错
     updateLoopModeUI();
-    const initLesson = lessonSelect ? lessonSelect.value : '2026-001';
+    const initLesson = lessonSelect ? lessonSelect.value : '2026-101';
     loadLesson(initLesson, 0, false);
   </script>
 </body>
