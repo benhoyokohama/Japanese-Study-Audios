@@ -326,25 +326,45 @@
       loadLesson(options[next].value, 0, true);
     }
 
+    function playPrevLesson() {
+      const options = Array.from(lessonSelect.options);
+      let cur = options.findIndex(o => o.value === lessonSelect.value);
+      let prev = (cur - 1 + options.length) % options.length;
+      lessonSelect.selectedIndex = prev;
+      loadLesson(options[prev].value, 0, true);
+    }
+
+    // 双击耳机 / 点击下句控制流
     function nextSentence() {
       if (!sentences || sentences.length === 0) return;
-      if (currentIndex < sentences.length - 1) {
-        playSentence(currentIndex + 1);
-      } else {
-        if (playMode === 1) {
-          playSentence(0);
+
+      if (playMode === 0) {
+        // 单句循环：切下一句；若已是最后一句，双击回本课第 1 句
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
         } else {
-          playNextLesson();
+          playSentence(0);
         }
+      } else {
+        // 全文循环(1) 或 顺序播放(2)：无论在哪一句，直接切入下一课；最后一课切入第 1 课
+        playNextLesson();
       }
     }
 
+    // 三击耳机 / 点击上句控制流
     function prevSentence() {
       if (!sentences || sentences.length === 0) return;
-      if (currentIndex > 0) {
-        playSentence(currentIndex - 1);
+
+      if (playMode === 0) {
+        // 单句循环：切上一句；若在第 1 句，切到最后一句
+        if (currentIndex > 0) {
+          playSentence(currentIndex - 1);
+        } else {
+          playSentence(sentences.length - 1);
+        }
       } else {
-        playSentence(0);
+        // 全文循环(1) 或 顺序播放(2)：切回上一课
+        playPrevLesson();
       }
     }
 
