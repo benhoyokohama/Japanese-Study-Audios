@@ -1,0 +1,8 @@
+{
+"error" : {
+"status": 401,
+"code": 4000,
+"id": "missing_token",
+"message": "JWT token is required in the Authorization header."
+}
+}

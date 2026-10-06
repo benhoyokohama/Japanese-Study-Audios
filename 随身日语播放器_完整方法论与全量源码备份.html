@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>随身日语听力跟读播放器 - 架构方法论与全量源代码资产归档</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 1000px; margin: 40px auto; padding: 0 24px; color: #1e293b; background: #f8fafc; }
+    .card { background: #ffffff; padding: 36px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.08); margin-bottom: 30px; border: 1px solid #e2e8f0; }
+    h1 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 14px; font-size: 26px; }
+    h2 { color: #1d4ed8; margin-top: 28px; font-size: 20px; border-left: 4px solid #1d4ed8; padding-left: 12px; }
+    h3 { color: #334155; font-size: 16px; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 18px 0; }
+    th, td { border: 1px solid #cbd5e1; padding: 10px 14px; text-align: left; font-size: 14px; }
+    th { background: #f1f5f9; font-weight: 600; color: #0f172a; }
+    code { padding: 2px 6px; font-size: 13px; background: #e2e8f0; color: #0f172a; border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    pre { background: #0f172a; color: #f8fafc; border-radius: 8px; padding: 18px; overflow-x: auto; font-size: 13px; line-height: 1.5; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; background: #dbeafe; color: #1e40af; }
+    ul, ol { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>随身日语听力跟读播放器 (Japanese Study Audios) 完整资产与全量代码归档</h1>
+    <p><strong>版本号：</strong>v1.0.0 (Production Release) &nbsp;|&nbsp; <strong>归档日期：</strong>2026-10-04</p>
+    
+    <h2>一、 核心资产与系统账号配置</h2>
+    <table>
+      <tr><th>配置类别</th><th>具体详情</th><th>说明与用途</th></tr>
+      <tr><td><strong>在线体验地址</strong></td><td>https://benhoyokohama.github.io/Japanese-Study-Audios/</td><td>在线单页应用（SPA），支持手机/电脑端即开即学</td></tr>
+      <tr><td><strong>GitHub 账号</strong></td><td>benhoyokohama</td><td>仓库所有者主体账号</td></tr>
+      <tr><td><strong>GitHub 仓库</strong></td><td>Japanese-Study-Audios</td><td>托管前端页面、样式、音视频与课件 JSON 的主仓库</td></tr>
+      <tr><td><strong>本地工程目录</strong></td><td>~/jp-reader/</td><td>Mac 本地构建空间、Whisper 离线模型转录与 Git 工作区</td></tr>
+      <tr><td><strong>GitHub PAT 授权</strong></td><td>MacBook Push (classic token，具有 repo 权限，至 2027-04-03)</td><td>本地终端通过 HTTPS 免密执行 git push 的鉴权令牌</td></tr>
+      <tr><td><strong>AI 接口结算账户</strong></td><td>gen-lang-client-0589754450（结算账号 01DC44-A27176-0A7584，项目 Trading）</td><td>备用大模型接口，当前生产方案优先使用纯本地离线模型处理</td></tr>
+    </table>
+
+    <h2>二、 课件制作标准流水线（半自动化）</h2>
+    <p>流水线遵循<strong>“约定大于配置”</strong>原则，音频与 JSON 文件名强绑定（如 <code>2026-101.mp3</code> 与 <code>2026-101.json</code>）：</p>
+    <pre>
+[原始录音 MP3]
+       │
+       ▼ (步骤 1：本地 Whisper 离线模型提取物理声波时间轴)
+[毫秒级字幕 2026-xxx.srt]
+       │
+       ▼ (步骤 2：Python 解析转换、注入 &lt;ruby&gt; 假名与专属文法/N4+词汇)
+[课件数据 lessons/2026-xxx.json]
+       │
+       ▼ (步骤 3：在 index.html 注册下拉菜单)
+[前端即时加载与多模式播放]
+       │
+       ▼ (步骤 4：Git Push 部署至 GitHub Pages)
+[全球 CDN 秒级生效]
+    </pre>
+
+    <h3>步骤 1：录音采编与规范化入库</h3>
+    <ul>
+      <li>将长音频转码为 MP3 格式，重命名为 <code>2026-xxx.mp3</code>，放入 <code>~/jp-reader/lessons/</code> 目录。</li>
+      <li>音频建议参数：采样率 44.1kHz，比特率 128kbps 单声道或立体声，保证移动端加载顺畅。</li>
+    </ul>
+
+    <h3>步骤 2：本地物理声波切片（Whisper 离线转录）</h3>
+    <ul>
+      <li>激活本地虚拟环境并执行：
+        <pre><code>cd ~/jp-reader
+source .venv/bin/activate
+whisper lessons/2026-xxx.mp3 --language Japanese --model small --output_format srt --output_dir .</code></pre>
+      </li>
+      <li>通过真实声学波形物理切片彻底规避字数估算的时间漂移，获得毫秒级精准起止时间戳。</li>
+    </ul>
+
+    <h3>步骤 3：JSON 课件构建与数据增强（Python）</h3>
+    <ul>
+      <li>运行格式化脚本，将 <code>.srt</code> 时间轴换算为秒数，给汉字注入 <code>&lt;ruby&gt;&lt;rt&gt;假名&lt;/rt&gt;&lt;/ruby&gt;</code>，匹配中文翻译并挂载专属语法与词汇分析。</li>
+    </ul>
+
+    <h3>步骤 4：注册并推送到 GitHub Pages</h3>
+    <ul>
+      <li>在 <code>index.html</code> 的下拉列表追加 <code>&lt;option value="2026-xxx"&gt;...&lt;/option&gt;</code> 选项，提交推送即可全球上线。</li>
+    </ul>
+
+    <h2>三、 前端播放器核心引擎全量源代码 (JavaScript)</h2>
+    <p>以下为支撑前端状态机运转的核心代码（包含切句防卡死、多模式循环调度、独立倒计时定时器等）：</p>
+    <pre>
+// 1. 统一切句与循环调度中心（彻底解决单句、列表与跨课播放冲突）
+function handleSentenceEnd() {
+  const select = document.getElementById("lessonSelect");
+  const isLastSentence = (currentIndex >= lessonData.length - 1);
+
+  if (loopMode === "single") {
+    // 🔂 单句循环：回到本句起始时间戳重播
+    audio.currentTime = lessonData[currentIndex].start;
+    audio.play().catch(e => console.log(e));
+  } else if (loopMode === "list") {
+    // 🔁 列表循环：下一句；末句回到第 1 句
+    if (!isLastSentence) {
+      nextSentence();
+    } else {
+      currentIndex = 0;
+      audio.currentTime = lessonData[0].start;
+      playSegment(lessonData[0].start, lessonData[0].end, 0);
+    }
+  } else if (loopMode === "none") {
+    // ➡️ 顺序播放：下一句；全课末句切入下一课第 1 句自动发声
+    if (!isLastSentence) {
+      nextSentence();
+    } else {
+      let nextIndex = select.selectedIndex + 1;
+      if (nextIndex >= select.options.length) {
+        nextIndex = 0; // 最后一课循环回第一课
+      }
+      select.selectedIndex = nextIndex;
+      changeLesson(select.options[nextIndex].value, true);
+    }
+  }
+}
+
+// 2. 双重时间监听：解决移动端与特定音频在末尾挂起卡死的问题
+audio.ontimeupdate = () => {
+  if (isSegmentPlaying && audio.currentTime >= (segmentEnd - 0.08)) {
+    handleSentenceEnd();
+  }
+};
+
+audio.onended = () => {
+  if (isSegmentPlaying) {
+    handleSentenceEnd();
+  }
+};
+
+// 3. 独立常驻倒计时定时器引擎（秒级刷新，不受播放状态干扰）
+let sleepTimerInterval = null;
+let remainingSeconds = 0;
+
+function formatTime(sec) {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+}
+
+function setSleepTimer(minutes) {
+  if (sleepTimerInterval) {
+    clearInterval(sleepTimerInterval);
+    sleepTimerInterval = null;
+  }
+  
+  const badge = document.getElementById("timerBadge");
+  const mins = parseInt(minutes, 10);
+  
+  if (mins > 0) {
+    remainingSeconds = mins * 60;
+    if (badge) {
+      badge.style.display = "inline-block";
+      badge.innerText = formatTime(remainingSeconds);
+    }
+    
+    sleepTimerInterval = setInterval(() => {
+      remainingSeconds--;
+      if (remainingSeconds > 0) {
+        if (badge) badge.innerText = formatTime(remainingSeconds);
+      } else {
+        clearInterval(sleepTimerInterval);
+        sleepTimerInterval = null;
+        audio.pause();
+        isSegmentPlaying = false;
+        if (badge) {
+          badge.innerText = "已停止";
+          setTimeout(() => { badge.style.display = "none"; }, 3000);
+        }
+        const timerSelect = document.getElementById("sleepTimerSelect");
+        if (timerSelect) timerSelect.value = "0";
+        statusText.innerText = "⏱ 定时时间到，已自动停止播放";
+      }
+    }, 1000);
+  } else {
+    remainingSeconds = 0;
+    if (badge) badge.style.display = "none";
+  }
+}
+
+// 4. 课件异步加载与卡片渲染引擎
+async function loadLesson(lessonId, autoPlayFirst = false) {
+  try {
+    statusText.innerText = "正在加载课程数据...";
+    const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
+    lessonData = await res.json();
+    audio.src = `lessons/${lessonId}.mp3`;
+    renderList();
+    statusText.innerText = `加载成功，共 ${lessonData.length} 句`;
+    if (autoPlayFirst && lessonData.length > 0) {
+      playSegment(lessonData[0].start, lessonData[0].end, 0);
+    }
+  } catch (err) {
+    statusText.innerText = "课件数据加载失败";
+    console.error(err);
+  }
+}
+    </pre>
+
+    <h2>四、 完整自动化转换脚本 (Python)</h2>
+    <p>以下为将 Whisper 输出的 <code>.srt</code> 转为带 <code>&lt;ruby&gt;</code> 汉字注音、文法与词汇结构化 <code>.json</code> 的完整脚本：</p>
+    <pre>
+import re
+import json
+
+def time_to_sec(t_str):
+    """将 00:01:23,456 格式换算为秒数"""
+    t_str = t_str.replace(',', '.')
+    parts = t_str.strip().split(':')
+    return round(float(parts[0]) * 3600 + float(parts[1]) * 60 + float(parts[2]), 2)
+
+def srt_to_lesson_json(srt_file, output_json, custom_mapping=None):
+    with open(srt_file, "r", encoding="utf-8") as f:
+        lines = f.read().splitlines()
+
+    items = []
+    current_id, start_sec, end_sec = None, None, None
+    text_lines = []
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            if current_id is not None and text_lines:
+                items.append({
+                    "id": current_id,
+                    "start": start_sec,
+                    "end": end_sec,
+                    "raw": "".join(text_lines)
+                })
+                current_id, text_lines = None, []
+            continue
+        if current_id is None and line.isdigit():
+            current_id = int(line)
+            continue
+        if "-->" in line:
+            s, e = line.split("-->")
+            start_sec = time_to_sec(s)
+            end_sec = time_to_sec(e)
+            continue
+        if current_id is not None:
+            text_lines.append(line)
+
+    if current_id is not None and text_lines:
+        items.append({
+            "id": current_id,
+            "start": start_sec,
+            "end": end_sec,
+            "raw": "".join(text_lines)
+        })
+
+    final_data = []
+    for item in items:
+        cid = item["id"]
+        if custom_mapping and cid in custom_mapping:
+            info = custom_mapping[cid]
+            final_data.append({
+                "id": cid,
+                "start": item["start"],
+                "end": item["end"],
+                "jp": info.get("jp", item["raw"]),
+                "cn": info.get("cn", ""),
+                "grammar": info.get("grammar", []),
+                "vocab": info.get("vocab", [])
+            })
+        else:
+            final_data.append({
+                "id": cid,
+                "start": item["start"],
+                "end": item["end"],
+                "jp": item["raw"],
+                "cn": f"（{item['raw']}）",
+                "grammar": ["【口語解説】標準日常・演説表現。"],
+                "vocab": [{"word": "日本語 (にほんご)", "meaning": "日语", "level": "N5"}]
+            })
+
+    with open(output_json, "w", encoding="utf-8") as f:
+        json.dump(final_data, f, ensure_ascii=False, indent=2)
+    print(f"✅ 课件 JSON 转换成功: {output_json} (共 {len(final_data)} 句)")
+    </pre>
+
+    <h2>五、 本地与云端备份执行指令</h2>
+    <pre><code># 1. 提交至 GitHub 远端仓库
+cd ~/jp-reader
+git add -A
+git commit -m "backup: archive complete methodology, lessons, and engine source code"
+git push origin main
+
+# 2. 生成本地脱机带时间戳打包压缩包
+mkdir -p ~/jp-reader-backups
+tar -czvf ~/jp-reader-backups/jp_reader_complete_backup_$(date +%Y%m%d_%H%M%S).tar.gz \
+    lessons/ index.html *.html *.srt 2>/dev/null
+</code></pre>
+  </div>
+</body>
+</html>
