@@ -447,16 +447,7 @@ function handleLoopToStart() {
       changeLesson(select.value);
     };
   
-// 联动播放模式的耳机与锁屏控制
-// 联动播放模式的耳机与锁屏控制（支持单击播放/暂停，切课自动起播）
-if ('mediaSession' in navigator) {
-  // 单击：播放
-  navigator.mediaSession.setActionHandler('play', () => {
-    if (audio.paused) {
-      audio.play().catch(() => {});
-      if (typeof updatePlayPauseBtn === 'function') updatePlayPauseBtn(true);
-    }
-  });
+);
 
   // 单击：暂停
   navigator.mediaSession.setActionHandler('pause', () => {
@@ -566,6 +557,58 @@ if ('mediaSession' in navigator) {
       if (select && select.selectedIndex > 0) {
         select.selectedIndex -= 1;
         select.dispatchEvent(new Event('change'));
+      }
+    }
+  });
+}
+
+
+// 联动播放模式的耳机与锁屏控制（健壮容错版）
+if ('mediaSession' in navigator) {
+  navigator.mediaSession.setActionHandler('play', () => {
+    const aud = document.querySelector('audio');
+    if (aud && aud.paused) {
+      aud.play().catch(() => {});
+    }
+  });
+
+  navigator.mediaSession.setActionHandler('pause', () => {
+    const aud = document.querySelector('audio');
+    if (aud && !aud.paused) {
+      aud.pause();
+    }
+  });
+
+  navigator.mediaSession.setActionHandler('nexttrack', () => {
+    const isSingleLoop = document.querySelector('.mode-btn.active, button.active')?.textContent.includes('单句');
+    if (isSingleLoop) {
+      if (typeof nextSentence === 'function') nextSentence();
+    } else {
+      const select = document.getElementById('lessonSelect');
+      if (select && select.selectedIndex < select.options.length - 1) {
+        select.selectedIndex += 1;
+        select.dispatchEvent(new Event('change'));
+        setTimeout(() => {
+          const aud = document.querySelector('audio');
+          if (aud) aud.play().catch(() => {});
+        }, 300);
+      }
+    }
+  });
+
+  navigator.mediaSession.setActionHandler('previoustrack', () => {
+    const isSingleLoop = document.querySelector('.mode-btn.active, button.active')?.textContent.includes('单句');
+    if (isSingleLoop) {
+      if (typeof prevSentence === 'function') prevSentence();
+    } else {
+      const select = document.getElementById('lessonSelect');
+      if (select && select.selectedIndex > 0) {
+        select.selectedIndex -= 1;
+        select.dispatchEvent(new Event('change'));
+        setTimeout(() => {
+          const aud = document.querySelector('audio');
+          if (aud) aud.play().catch(() => {});
+        }, 300);
       }
     }
   });
