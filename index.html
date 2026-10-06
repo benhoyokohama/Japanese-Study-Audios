@@ -19,11 +19,13 @@
     body { background-color: var(--bg); color: var(--text-main); padding-bottom: 90px; }
     .header { position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 12px 16px; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
     .title-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-weight: bold; font-size: 1.1rem; }
-    .select-row { display: flex; gap: 8px; }
-    select { flex: 1; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: #fff; font-size: 0.95rem; outline: none; }
+    .select-row { display: flex; gap: 8px; align-items: center; }
+    select { padding: 8px 8px; border-radius: 8px; border: 1px solid var(--border); background: #fff; font-size: 0.9rem; outline: none; }
+    #lessonSelect { flex: 1; min-width: 0; }
+    #timerSelect { width: 105px; flex-shrink: 0; }
     audio { width: 100%; margin-top: 10px; height: 36px; }
     .container { max-width: 720px; margin: 0 auto; padding: 16px; }
-    .sentence-card { background: var(--card-bg); border-radius: 12px; padding: 16px; margin-bottom: 14px; border: 1px solid var(--border); transition: all 0.2s ease; }
+    .sentence-card { background: var(--card-bg); border-radius: 12px; padding: 16px; margin-bottom: 14px; border: 1px solid var(--border); transition: all 0.2s ease; cursor: pointer; }
     .sentence-card.active { border-color: var(--primary); background-color: var(--active-card); box-shadow: 0 4px 12px rgba(37,99,235,0.12); transform: translateY(-1px); }
     .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 0.85rem; color: #64748b; }
     .play-btn { background: var(--primary); color: #fff; border: none; border-radius: 16px; padding: 4px 12px; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; gap: 4px; }
@@ -32,10 +34,9 @@
     .cn-text { font-size: 0.95rem; color: var(--text-sub); line-height: 1.5; }
     .grammar-box { margin-top: 10px; background: #fff; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 10px 12px; font-size: 0.85rem; line-height: 1.6; color: #334155; }
     
-    /* 底部悬浮控制栏 */
     .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); border-top: 1px solid var(--border); padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; z-index: 100; max-width: 720px; margin: 0 auto; }
     .btn-group { display: flex; gap: 8px; }
-    .btn { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); background: #fff; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 4px; font-weight: 500; }
+    .btn { padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: #fff; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; gap: 4px; font-weight: 500; }
     .btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
     .status-text { font-size: 0.85rem; color: #64748b; font-weight: 500; }
   </style>
@@ -69,7 +70,7 @@
           <option value="2026-100">第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
           <option value="2026-101">第 101 课：中田敦彦・止まらない円安と骨太ショック（二）</option>
         </select>
-        <select id="timerSelect" style="max-width: 110px;">
+        <select id="timerSelect">
           <option value="0">⏱ 定时：关</option>
           <option value="15">⏱ 15 分钟</option>
           <option value="30">⏱ 30 分钟</option>
@@ -89,7 +90,7 @@
     <div class="btn-group">
       <button class="btn" id="prevBtn">◀ 上句</button>
       <button class="btn" id="playBtn">▶ 播放</button>
-      <button class="btn active" id="loopModeBtn">🔁 列表循环</button>
+      <button class="btn" id="loopModeBtn">🔂 单句循环</button>
       <button class="btn" id="nextBtn">下句 ▶</button>
     </div>
   </div>
@@ -107,10 +108,9 @@
 
     let sentences = [];
     let currentIndex = 0;
-    // 三种播放模式: 'single' (单句循环) | 'list' (列表循环) | 'sequence' (顺序播放)
+    // 循环模式：'single' (单句循环) | 'list' (列表循环) | 'sequence' (顺序播放)
     let playMode = 'single';
 
-    // 倒计时定时器
     let countdownInterval = null;
     let secondsLeft = 0;
 
@@ -123,8 +123,8 @@
         audio.src = `lessons/${lessonId}.mp3`;
         audio.load();
 
-        const res = await fetch(`lessons/${lessonId}.json?t=${Date.now()}`);
-        if (!res.ok) throw new Error("无法读取课件 JSON");
+        const res = await fetch(`lessons/${lessonId}.json?v=${Date.now()}`);
+        if (!res.ok) throw new Error(`未找到课件文件 lessons/${lessonId}.json (状态: ${res.status})`);
         sentences = await res.json();
         
         currentIndex = 0;
@@ -138,7 +138,7 @@
         }
       } catch (err) {
         console.error(err);
-        cardsList.innerHTML = `<div style="text-align:center; padding: 40px; color: #ef4444;">课件加载失败: ${err.message}</div>`;
+        cardsList.innerHTML = `<div style="text-align:center; padding: 40px; color: #ef4444;">${err.message}</div>`;
       }
     }
 
@@ -169,7 +169,7 @@
       });
     }
 
-    // 3. 高亮句子
+    // 3. 高亮并滚动到句子
     function highlightSentence(idx) {
       currentIndex = idx;
       document.querySelectorAll('.sentence-card').forEach((el, i) => {
@@ -200,7 +200,7 @@
       }
     }
 
-    // 5. 播放驱动与三种模式流转
+    // 5. 播放进度监听与模式流转
     audio.addEventListener('timeupdate', () => {
       if (!sentences || sentences.length === 0) return;
       const t = audio.currentTime;
@@ -215,17 +215,15 @@
           audio.play().catch(() => {});
         } else {
           if (currentIndex < sentences.length - 1) {
-            // 播放下一句
             highlightSentence(currentIndex + 1);
           } else {
-            // 课文最后一句话播完：
             if (playMode === 'list') {
-              // 🔁 列表循环：从本篇第 1 句重播
+              // 🔁 列表循环
               audio.currentTime = Math.max(0, sentences[0].start);
               highlightSentence(0);
               audio.play().catch(() => {});
             } else if (playMode === 'sequence') {
-              // ▶️ 顺序播放：进入下一课并播放
+              // ▶️ 顺序播放
               nextLesson();
             }
           }
@@ -233,7 +231,7 @@
       }
     });
 
-    // 6. 按钮交互
+    // 6. 控制按键交互
     playBtn.addEventListener('click', () => {
       if (audio.paused) {
         audio.play().catch(() => {});
@@ -245,7 +243,7 @@
     audio.addEventListener('play', () => { playBtn.textContent = '⏸ 暂停'; });
     audio.addEventListener('pause', () => { playBtn.textContent = '▶ 播放'; });
 
-    // 模式切换顺序：🔂 单句循环 -> 🔁 列表循环 -> ▶️ 顺序播放
+    // 模式切换: 🔂 单句循环 -> 🔁 列表循环 -> ▶️ 顺序播放
     loopModeBtn.addEventListener('click', () => {
       if (playMode === 'single') {
         playMode = 'list';
@@ -271,7 +269,7 @@
       loadLesson(e.target.value, false);
     });
 
-    // 7. 定时器倒计时准确还原
+    // 7. 定时器倒计时
     function resetTimerLabels() {
       const options = timerSelect.querySelectorAll('option');
       options.forEach(opt => {
@@ -315,37 +313,8 @@
       });
     }
 
-    // 8. 耳机与锁屏联动控制
-    if ('mediaSession' in navigator) {
-      navigator.mediaSession.setActionHandler('play', () => audio.play().catch(() => {}));
-      navigator.mediaSession.setActionHandler('pause', () => audio.pause());
-
-      navigator.mediaSession.setActionHandler('nexttrack', () => {
-        if (playMode === 'single') {
-          playSentence(Math.min(sentences.length - 1, currentIndex + 1));
-        } else {
-          nextLesson();
-        }
-      });
-
-      navigator.mediaSession.setActionHandler('previoustrack', () => {
-        if (playMode === 'single') {
-          playSentence(Math.max(0, currentIndex - 1));
-        } else {
-          if (lessonSelect.selectedIndex > 0) {
-            lessonSelect.selectedIndex -= 1;
-            loadLesson(lessonSelect.value, true);
-          }
-        }
-      });
-    }
-
-    // 初始状态
-    loopModeBtn.textContent = '🔂 单句循环';
-
-    window.addEventListener('DOMContentLoaded', () => {
-      loadLesson(lessonSelect.value, false);
-    });
+    // 8. 默认载入第一课
+    loadLesson(lessonSelect.value, false);
   </script>
 </body>
 </html>
