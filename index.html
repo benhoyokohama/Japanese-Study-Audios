@@ -320,7 +320,13 @@
       audio.play().catch(e => console.log('play blocked:', e));
     }
 
+    let isSwitchingLesson = false;
+
     function playNextLesson() {
+      if (isSwitchingLesson) return;
+      isSwitchingLesson = true;
+      setTimeout(() => { isSwitchingLesson = false; }, 1200);
+
       const options = Array.from(lessonSelect.options);
       let cur = options.findIndex(o => o.value === lessonSelect.value);
       let next = (cur + 1) % options.length;
@@ -329,6 +335,10 @@
     }
 
     function playPrevLesson() {
+      if (isSwitchingLesson) return;
+      isSwitchingLesson = true;
+      setTimeout(() => { isSwitchingLesson = false; }, 1200);
+
       const options = Array.from(lessonSelect.options);
       let cur = options.findIndex(o => o.value === lessonSelect.value);
       let prev = (cur - 1 + options.length) % options.length;
@@ -407,7 +417,15 @@
     };
 
     audio.onended = () => {
-      handleSentenceEnd();
+      if (playMode === 0) {
+        // 单句循环兜底：重置回句首
+        if (sentences && sentences[currentIndex]) {
+          audio.currentTime = sentences[currentIndex].start || 0;
+          audio.play().catch(() => {});
+        }
+      } else {
+        handleSentenceEnd();
+      }
     };
 
     function copySentenceText(idx, btn) {
