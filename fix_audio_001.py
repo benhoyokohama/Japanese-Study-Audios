@@ -9,7 +9,7 @@ JSON_PATH = f"lessons/{LESSON_ID}.json"
 MP3_PATH = f"lessons/{LESSON_ID}.mp3"
 
 async def regenerate_audio():
-    print(f"[*] 开始针对单课 {LESSON_ID} 进行强制假名纠错音频重合成...")
+    print(f"[*] 开始针对单课 {LESSON_ID} 使用片假名重音优化进行音频重合成...")
     if not os.path.exists(JSON_PATH):
         print(f"[!] 找不到 {JSON_PATH}")
         return
@@ -20,16 +20,16 @@ async def regenerate_audio():
     full_text = ""
     for item in sentences:
         jp_text = item["jp"]
-        # 核心纠错：在送往 TTS 朗读时，将容易读错的“海兵隊”直接替换为正确的假名串
-        clean_text = jp_text.replace("海兵隊", "かいへいたい")
+        # 优化纠错：将“海兵隊”替换为片假名“カイヘイタイ”，改善 Edge-TTS 的复合词重音和断句
+        clean_text = jp_text.replace("海兵隊", "カイヘイタイ")
         # 剥离所有 ruby 标签，仅保留纯文本供 TTS 朗读
         clean_text = re.sub(r'<ruby>(.*?)<rt>.*?</rt></ruby>', r'\1', clean_text)
         full_text += clean_text + " "
 
-    print(f"[*] 正在调用 edge-tts 生成完美纠错音频...")
+    print(f"[*] 正在调用 edge-tts 生成优化后的音频...")
     communicate = edge_tts.Communicate(full_text.strip(), "ja-JP-NanamiNeural")
     await communicate.save(MP3_PATH)
-    print(f"[+] 课件 {LESSON_ID} 音频已强制重合成完毕: {MP3_PATH}")
+    print(f"[+] 课件 {LESSON_ID} 音频已通过片假名优化重合成完毕: {MP3_PATH}")
 
 if __name__ == "__main__":
     asyncio.run(regenerate_audio())
