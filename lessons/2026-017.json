@@ -2,22 +2,197 @@
   {
     "id": 1,
     "start": 0.0,
-    "end": 9.03,
-    "jp": "<ruby>高市<rt>たかいち</rt></ruby><ruby>総理大臣<rt>そうりだいじん</rt></ruby>は、<ruby>食料品<rt>しょくりょうひん</rt></ruby>の<ruby>消費税率<rt>しょうひぜいりつ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げることについて<ruby>前向<rt>まえむ</rt></ruby>きに<ruby>検討<rt>けんとう</rt></ruby>する<ruby>考<rt>かんが</rt></ruby>えを<ruby>示<rt>しめ</rt></ruby>しました。",
-    "cn": "高市首相表示将积极考虑降低食品的消费税税率。"
+    "end": 3,
+    "jp": "コーヒー<ruby>一杯<rt>いっぱい</rt></ruby>ぶんくらい。",
+    "cn": "差不多和一杯咖啡的价格一样。"
   },
   {
     "id": 2,
-    "start": 9.03,
-    "end": 17.26,
-    "jp": "<ruby>物価<rt>ぶっか</rt></ruby>の<ruby>上昇<rt>じょうしょう</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>く<ruby>中<rt>なか</rt></ruby>、<ruby>日々<rt>ひび</rt></ruby>の<ruby>暮<rt>く</rt></ruby>らしや<ruby>家計<rt>かけい</rt></ruby>を<ruby>助<rt>たす</rt></ruby>けるための<ruby>対策<rt>たいさく</rt></ruby>として<ruby>議論<rt>ぎろん</rt></ruby>を<ruby>進<rt>すす</rt></ruby>めています。",
-    "cn": "在物价持续上涨的背景下，正作为缓解居民日常生活和家庭开支压力的对策展开讨论。"
+    "start": 3,
+    "end": 9,
+    "jp": "でも、<ruby>気持<rt>きも</rt></ruby>ちはプライスレスなんですよね。",
+    "cn": "但它们带给我的感觉却是无价的。"
   },
   {
     "id": 3,
-    "start": 17.26,
-    "end": 25.08,
-    "jp": "<ruby>野党側<rt>やとうがわ</rt></ruby>とも<ruby>意見<rt>いけん</rt></ruby>を<ruby>交<rt>か</rt></ruby>わしながら、<ruby>効果的<rt>こうかてき</rt></ruby>な<ruby>経済<rt>けいざい</rt></ruby><ruby>支援<rt>しえん</rt></ruby>の<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えていくとしています。",
-    "cn": "表示将一边与在野党交换意见，一边探索切实有效的经济扶持方案。"
+    "start": 9,
+    "end": 15,
+    "jp": "プライスレスっていうのは、お<ruby>金<rt>きん</rt></ruby>で<ruby>買<rt>か</rt></ruby>えないってことです。",
+    "cn": "无价的意思就是用钱买不到。"
+  },
+  {
+    "id": 4,
+    "start": 15,
+    "end": 20,
+    "jp": "あと、<ruby>少<rt>すこ</rt></ruby>しだけ<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>についてもお<ruby>話<rt>はな</rt></ruby>ししますね。",
+    "cn": "我还想稍微谈一谈日本文化。"
+  },
+  {
+    "id": 5,
+    "start": 20,
+    "end": 29,
+    "jp": "<ruby>今日<rt>きょう</rt></ruby><ruby>紹介<rt>しょうかい</rt></ruby>したことって、<ruby>実<rt>じつ</rt></ruby>は<ruby>全部<rt>ぜんぶ</rt></ruby>「<ruby>小<rt>ちい</rt></ruby>さな<ruby>気遣<rt>きづか</rt></ruby>い」なんですよね。",
+    "cn": "我今天所谈论的一切，其实都关乎“细微的体贴之举”。"
+  },
+  {
+    "id": 6,
+    "start": 29,
+    "end": 35,
+    "jp": "<ruby>昔<rt>むかし</rt></ruby>から<ruby>日本<rt>にっぽん</rt></ruby>では、「<ruby>相手<rt>あいて</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>察<rt>さっ</rt></ruby>すること」",
+    "cn": "在日本，人们历来非常重视“体察他人的感受”。"
+  },
+  {
+    "id": 7,
+    "start": 35,
+    "end": 44,
+    "jp": "<ruby>要<rt>よう</rt></ruby>は、「<ruby>言<rt>い</rt></ruby>われる<ruby>前<rt>まえ</rt></ruby>に<ruby>気<rt>き</rt></ruby>づいてあげること」を、とても<ruby>大切<rt>たいせつ</rt></ruby>にしてきました。",
+    "cn": "换句话说，就是在对方还没开口之前，就察觉到他们的需求。"
+  },
+  {
+    "id": 8,
+    "start": 44,
+    "end": 47,
+    "jp": "「<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>？」と<ruby>声<rt>こえ</rt></ruby>をかけること。",
+    "cn": "问一句：“你还好吗？”"
+  },
+  {
+    "id": 9,
+    "start": 47,
+    "end": 50,
+    "jp": "<ruby>重<rt>おも</rt></ruby>い<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってあげること。",
+    "cn": "帮别人提个沉重的包。"
+  },
+  {
+    "id": 10,
+    "start": 50,
+    "end": 54,
+    "jp": "<ruby>好<rt>す</rt></ruby>きなものを<ruby>覚<rt>おぼ</rt></ruby>えておくこと。",
+    "cn": "记住对方喜欢什么。"
+  },
+  {
+    "id": 11,
+    "start": 54,
+    "end": 58,
+    "jp": "<ruby>頑張<rt>がんば</rt></ruby>っていることに<ruby>気<rt>き</rt></ruby>づいてあげること。",
+    "cn": "注意到对方正在努力工作。"
+  },
+  {
+    "id": 12,
+    "start": 58,
+    "end": 62,
+    "jp": "どれも、<ruby>大<rt>おお</rt></ruby>きなことではありません。",
+    "cn": "这些都不是什么大事。"
+  },
+  {
+    "id": 13,
+    "start": 62,
+    "end": 67,
+    "jp": "でも、「あなたのことをちゃんと<ruby>見<rt>み</rt></ruby>ていますよ」",
+    "cn": "但它们传递出“我在关注你”的感觉。"
+  },
+  {
+    "id": 14,
+    "start": 67,
+    "end": 70,
+    "jp": "「あなたのことを<ruby>大切<rt>たいせつ</rt></ruby>に<ruby>思<rt>おも</rt></ruby>っていますよ」",
+    "cn": "同时也传递出“你对我来说很重要”的感觉。"
+  },
+  {
+    "id": 15,
+    "start": 70,
+    "end": 76,
+    "jp": "という<ruby>気持<rt>きも</rt></ruby>ちが、そこに<ruby>込<rt>こ</rt></ruby>められているんです。",
+    "cn": "这些情感正是这些小举动背后的意义。"
+  },
+  {
+    "id": 16,
+    "start": 76,
+    "end": 86,
+    "jp": "<ruby>日本<rt>にっぽん</rt></ruby>では、<ruby>愛情<rt>あいじょう</rt></ruby>や<ruby>優<rt>やさ</rt></ruby>しさを、<ruby>言葉<rt>ことば</rt></ruby>ではなく<ruby>小<rt>ちい</rt></ruby>さな<ruby>行動<rt>こうどう</rt></ruby>で<ruby>表<rt>あらわ</rt></ruby>すことも<ruby>多<rt>おお</rt></ruby>いんです。",
+    "cn": "在日本，人们往往通过细微的举动而非言语来表达爱与善意。"
+  },
+  {
+    "id": 17,
+    "start": 86,
+    "end": 93,
+    "jp": "もちろん、<ruby>日本人<rt>にほんじん</rt></ruby><ruby>女性<rt>じょせい</rt></ruby>みんなが<ruby>同<rt>おな</rt></ruby>じように<ruby>感<rt>かん</rt></ruby>じるわけではありません。",
+    "cn": "当然，并非所有日本女性都持同样观点。"
+  },
+  {
+    "id": 18,
+    "start": 93,
+    "end": 98,
+    "jp": "<ruby>人<rt>にん</rt></ruby>によって<ruby>嬉<rt>うれ</rt></ruby>しいことは<ruby>違<rt>ちが</rt></ruby>います。",
+    "cn": "让人们感到幸福的因素因人而异。"
+  },
+  {
+    "id": 19,
+    "start": 98,
+    "end": 104,
+    "jp": "でも、「<ruby>相手<rt>あいて</rt></ruby>のことをよく<ruby>見<rt>み</rt></ruby>て、さりげなく<ruby>気遣<rt>きづか</rt></ruby>う」という<ruby>文化<rt>ぶんか</rt></ruby>は、",
+    "cn": "这种密切关注他人、并以细微方式展现体贴的心意……"
+  },
+  {
+    "id": 20,
+    "start": 104,
+    "end": 109,
+    "jp": "「その<ruby>人<rt>にん</rt></ruby>が<ruby>喜<rt>よろこ</rt></ruby>ぶようなことをしてあげたい」",
+    "cn": "就像是想做些能让对方开心的事。"
+  },
+  {
+    "id": 21,
+    "start": 109,
+    "end": 118,
+    "jp": "こういう<ruby>文化<rt>ぶんか</rt></ruby>は、<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>人間関係<rt>にんげんかんけい</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>大切<rt>たいせつ</rt></ruby>にされてきたものの<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。",
+    "cn": "我认为这是日本人际关系中长久以来所珍视的价值观之一。"
+  },
+  {
+    "id": 22,
+    "start": 118,
+    "end": 125,
+    "jp": "だからこそ、<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>女性<rt>じょせい</rt></ruby>は、こういう<ruby>何気<rt>なにげ</rt></ruby>ない<ruby>一歩<rt>いっぽ</rt></ruby>や<ruby>一言<rt>ひとこと</rt></ruby>に、",
+    "cn": "这或许就是为什么日本女性会因这些看似平凡的小举动或话语而深受感动或感到惊喜。"
+  },
+  {
+    "id": 23,
+    "start": 125,
+    "end": 131,
+    "jp": "ドキッとしたり、<ruby>嬉<rt>うれ</rt></ruby>しくなったりするのかもしれません。",
+    "cn": "这些举动可能会让她的心怦然一动，或者仅仅是让她感到开心。"
+  },
+  {
+    "id": 24,
+    "start": 131,
+    "end": 140,
+    "jp": "みなさんの<ruby>国<rt>くに</rt></ruby>では、どんな<ruby>行動<rt>こうどう</rt></ruby>が「<ruby>優<rt>やさ</rt></ruby>しさ」や「<ruby>愛情<rt>あいじょう</rt></ruby>」として<ruby>受け取<rt>うけと</rt></ruby>られますか？",
+    "cn": "在你的国家，哪些行为被视为善意或关爱的表现呢？"
+  },
+  {
+    "id": 25,
+    "start": 140,
+    "end": 144,
+    "jp": "ぜひコメントで<ruby>教<rt>おし</rt></ruby>えてください。",
+    "cn": "请在评论区告诉我！"
+  },
+  {
+    "id": 26,
+    "start": 144,
+    "end": 147,
+    "jp": "1<ruby>周目<rt>しゅうめ</rt></ruby><ruby>終了<rt>しゅうりょう</rt></ruby>です。",
+    "cn": "第一轮已经结束。"
+  },
+  {
+    "id": 27,
+    "start": 147,
+    "end": 151,
+    "jp": "<ruby>次<rt>つぎ</rt></ruby>は「シャドーイング」に<ruby>挑戦<rt>ちょうせん</rt></ruby>しましょう。",
+    "cn": "接下来，我们来试试“跟读”。"
+  },
+  {
+    "id": 28,
+    "start": 151,
+    "end": 155,
+    "jp": "それでは、2<ruby>周目<rt>しゅうめ</rt></ruby>スタート！",
+    "cn": "好，开始第二轮吧！"
   }
 ]

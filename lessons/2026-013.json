@@ -1,0 +1,331 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 5,
+    "jp": "<ruby>実<rt>じつ</rt></ruby>はね、これ、けっこう<ruby>大事<rt>だいじ</rt></ruby>なんですよ。",
+    "cn": "其实，这一点相当重要。"
+  },
+  {
+    "id": 2,
+    "start": 5,
+    "end": 11,
+    "jp": "<ruby>車<rt>くるま</rt></ruby>がたくさん<ruby>通<rt>とう</rt></ruby>る<ruby>道<rt>みち</rt></ruby>ってありますよね。",
+    "cn": "有些街道车流很大，对吧？"
+  },
+  {
+    "id": 3,
+    "start": 11,
+    "end": 16,
+    "jp": "その<ruby>時<rt>とき</rt></ruby>、<ruby>男性<rt>だんせい</rt></ruby>が<ruby>車道<rt>しゃどう</rt></ruby>の<ruby>側<rt>がわ</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いてくれる。",
+    "cn": "在那种地方走路时，男人会走在离马路更近的那一边。"
+  },
+  {
+    "id": 4,
+    "start": 16,
+    "end": 22,
+    "jp": "そうすると、<ruby>女子<rt>じょし</rt></ruby>はね、「<ruby>守<rt>まも</rt></ruby>られてる」って<ruby>感<rt>かん</rt></ruby>じるんです。",
+    "cn": "当他这样做时，女方会感到自己受到了保护。"
+  },
+  {
+    "id": 5,
+    "start": 22,
+    "end": 28,
+    "jp": "<ruby>特<rt>とく</rt></ruby>にね、<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>歩道<rt>ほどう</rt></ruby>はとても<ruby>狭<rt>せま</rt></ruby>いんですよ。",
+    "cn": "尤其是因为日本的人行道非常狭窄。"
+  },
+  {
+    "id": 6,
+    "start": 28,
+    "end": 31,
+    "jp": "<ruby>歩道<rt>ほどう</rt></ruby>というのは、<ruby>歩<rt>ある</rt></ruby>く<ruby>道<rt>みち</rt></ruby>です。",
+    "cn": "“人行道（Hodou）”是供行人行走的通道。"
+  },
+  {
+    "id": 7,
+    "start": 31,
+    "end": 38,
+    "jp": "<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>歩道<rt>ほどう</rt></ruby>はすごく<ruby>狭<rt>せま</rt></ruby>いので、<ruby>車<rt>くるま</rt></ruby>がすぐ<ruby>横<rt>よこ</rt></ruby>を<ruby>通<rt>とう</rt></ruby>ります。",
+    "cn": "由于日本的人行道非常狭窄，汽车会从你身旁呼啸而过。"
+  },
+  {
+    "id": 8,
+    "start": 38,
+    "end": 44,
+    "jp": "<ruby>車道<rt>しゃどう</rt></ruby><ruby>側<rt>がわ</rt></ruby>っていうのが、<ruby>歩道<rt>ほどう</rt></ruby>の<ruby>外側<rt>そとがわ</rt></ruby>のことです。",
+    "cn": "“路边（Shadougawa）”指的是人行道的最外侧。"
+  },
+  {
+    "id": 9,
+    "start": 44,
+    "end": 49,
+    "jp": "つまり、<ruby>車<rt>くるま</rt></ruby>が<ruby>通<rt>とう</rt></ruby>るサイドのことです。",
+    "cn": "换句话说，就是汽车从旁边驶过的那一侧。"
+  },
+  {
+    "id": 10,
+    "start": 49,
+    "end": 52,
+    "jp": "<ruby>言葉<rt>ことば</rt></ruby>は、なくてもいいんです。",
+    "cn": "你甚至不需要说什么。"
+  },
+  {
+    "id": 11,
+    "start": 52,
+    "end": 60,
+    "jp": "もし<ruby>女性<rt>じょせい</rt></ruby>が<ruby>車道<rt>しゃどう</rt></ruby><ruby>側<rt>がわ</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>何<rt>なに</rt></ruby>も<ruby>言<rt>い</rt></ruby>わずに<ruby>場所<rt>ばしょ</rt></ruby>をかわってあげてください。",
+    "cn": "如果女生走在路边，只需不发一语地和她换个位置。"
+  },
+  {
+    "id": 12,
+    "start": 60,
+    "end": 67,
+    "jp": "「こっちが<ruby>安全<rt>あんぜん</rt></ruby>だよ」って、さりげなくできる<ruby>人<rt>にん</rt></ruby>。",
+    "cn": "一个能不经意间做出“这边更安全”这种举动的男生。"
+  },
+  {
+    "id": 13,
+    "start": 67,
+    "end": 72,
+    "jp": "もうね、かなりかっこいいんですよ。",
+    "cn": "我的意思是，这真的超帅。"
+  },
+  {
+    "id": 14,
+    "start": 72,
+    "end": 75,
+    "jp": "<ruby>日本<rt>にっぽん</rt></ruby>でとてもモテると<ruby>思<rt>おも</rt></ruby>います。",
+    "cn": "我觉得他在日本肯定会很受女生欢迎。"
+  },
+  {
+    "id": 15,
+    "start": 75,
+    "end": 80,
+    "jp": "え、そんなことで？って<ruby>思<rt>おも</rt></ruby>いましたか？",
+    "cn": "你是不是在想，“ 等等，就这？”"
+  },
+  {
+    "id": 16,
+    "start": 80,
+    "end": 83,
+    "jp": "これが<ruby>本当<rt>ほんとう</rt></ruby>なんです。",
+    "cn": "这其实是真的。"
+  },
+  {
+    "id": 17,
+    "start": 83,
+    "end": 91,
+    "jp": "その<ruby>小<rt>ちー</rt></ruby>さい<ruby>行動<rt>こうどう</rt></ruby>だけで、<ruby>女子<rt>じょし</rt></ruby>はドキッとしちゃうんですよね。",
+    "cn": "仅仅是这个小小的举动，就足以让女孩心跳加速。"
+  },
+  {
+    "id": 18,
+    "start": 91,
+    "end": 99,
+    "jp": "あとはね、ドアをさっと<ruby>開<rt>ひら</rt></ruby>けてくれたり。<ruby>何<rt>なに</rt></ruby>も<ruby>言<rt>い</rt></ruby>わずに、<ruby>守<rt>まも</rt></ruby>ってくれる。",
+    "cn": "还有一点是，当一个男生迅速为她拉开门时。他一言不发地保护着她。"
+  },
+  {
+    "id": 19,
+    "start": 99,
+    "end": 102,
+    "jp": "こういう<ruby>人<rt>にん</rt></ruby>がモテますね。",
+    "cn": "这种男生在日本很受欢迎。"
+  },
+  {
+    "id": 20,
+    "start": 102,
+    "end": 107,
+    "jp": "こういうの、みなさんの<ruby>国<rt>くに</rt></ruby>でもありますか？",
+    "cn": "你们国家也有这样的事吗？"
+  },
+  {
+    "id": 21,
+    "start": 107,
+    "end": 110,
+    "jp": "はい、で、<ruby>次<rt>つぎ</rt></ruby>は3つ<ruby>目<rt>め</rt></ruby>です。",
+    "cn": "好，接下来是第三点。"
+  },
+  {
+    "id": 22,
+    "start": 110,
+    "end": 115,
+    "jp": "<ruby>今度<rt>こんど</rt></ruby>はね、「<ruby>食べ物<rt>たべもの</rt></ruby>」の<ruby>話<rt>はなし</rt></ruby>です。",
+    "cn": "这次要讲的是“食物”。"
+  },
+  {
+    "id": 23,
+    "start": 115,
+    "end": 121,
+    "jp": "みなさん、<ruby>好<rt>す</rt></ruby>きな<ruby>人<rt>にん</rt></ruby>の<ruby>好<rt>す</rt></ruby>きな<ruby>食べ物<rt>たべもの</rt></ruby>、<ruby>言<rt>い</rt></ruby>えますか？",
+    "cn": "大家，能说出你喜欢的人最喜欢的食物吗？"
+  },
+  {
+    "id": 24,
+    "start": 121,
+    "end": 125,
+    "jp": "<ruby>実<rt>じつ</rt></ruby>はこれ、<ruby>女子<rt>じょし</rt></ruby>はすごく<ruby>嬉<rt>うれ</rt></ruby>しいんです。",
+    "cn": "其实，这会让女生特别开心。"
+  },
+  {
+    "id": 25,
+    "start": 125,
+    "end": 132,
+    "jp": "「これ、<ruby>好<rt>す</rt></ruby>きだったよね」って<ruby>出<rt>だ</rt></ruby>してもらう。",
+    "cn": "当他端出来说：“你喜欢这个，对吧？”"
+  },
+  {
+    "id": 26,
+    "start": 132,
+    "end": 137,
+    "jp": "これをされるとね、<ruby>胸<rt>むね</rt></ruby>があたたかくなるんですよ。",
+    "cn": "当他这么做的时候，真的让人心里暖暖的。"
+  },
+  {
+    "id": 27,
+    "start": 137,
+    "end": 141,
+    "jp": "なんでこんなに<ruby>嬉<rt>うれ</rt></ruby>しいと<ruby>思<rt>おも</rt></ruby>いますか？",
+    "cn": "你们觉得为什么这会让女生这么开心呢？"
+  },
+  {
+    "id": 28,
+    "start": 141,
+    "end": 146,
+    "jp": "<ruby>食べ物<rt>たべもの</rt></ruby>がおいしいから、じゃないんです。",
+    "cn": "不仅仅是因为食物好吃。"
+  },
+  {
+    "id": 29,
+    "start": 146,
+    "end": 151,
+    "jp": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を、ちゃんと<ruby>覚<rt>おぼ</rt></ruby>えてくれてる。",
+    "cn": "其实他记得我们聊过的话题。"
+  },
+  {
+    "id": 30,
+    "start": 151,
+    "end": 155,
+    "jp": "それが<ruby>分<rt>わ</rt></ruby>かるから、<ruby>嬉<rt>うれ</rt></ruby>しいんですよね。",
+    "cn": "女生会开心，是因为她们能感觉到这一点。"
+  },
+  {
+    "id": 31,
+    "start": 155,
+    "end": 162,
+    "jp": "<ruby>要<rt>よう</rt></ruby>は、<ruby>自分<rt>じぶん</rt></ruby>に<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってくれてる。そう<ruby>感<rt>かん</rt></ruby>じるんです。",
+    "cn": "说白了，他是在关注她们。这就是她们的感受。"
+  },
+  {
+    "id": 32,
+    "start": 162,
+    "end": 166,
+    "jp": "これって、すごく<ruby>大事<rt>だいじ</rt></ruby>なことじゃないですか？",
+    "cn": "这难道不是很重要吗？"
+  },
+  {
+    "id": 33,
+    "start": 166,
+    "end": 171,
+    "jp": "で、<ruby>私<rt>わたし</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>をしますね。",
+    "cn": "所以，让我跟大家聊聊我自己吧。"
+  },
+  {
+    "id": 34,
+    "start": 171,
+    "end": 179,
+    "jp": "<ruby>私<rt>わたし</rt></ruby>、<ruby>鹿児<rt>かこ</rt></ruby><ruby>島<rt>しま</rt></ruby>の<ruby>徳之<rt>のりゆき</rt></ruby><ruby>島<rt>しま</rt></ruby>っていう<ruby>小<rt>ちー</rt></ruby>さい<ruby>島<rt>しま</rt></ruby>の<ruby>出身<rt>しゅっしん</rt></ruby>なんです。",
+    "cn": "我来自鹿儿岛一个叫德之岛的小岛。"
+  },
+  {
+    "id": 35,
+    "start": 179,
+    "end": 183,
+    "jp": "<ruby>島<rt>しま</rt></ruby>にね、<ruby>黒糖<rt>こくとう</rt></ruby>のお<ruby>菓子<rt>かし</rt></ruby>があるんですよ。",
+    "cn": "岛上有种黑糖糖果。"
+  },
+  {
+    "id": 36,
+    "start": 183,
+    "end": 186,
+    "jp": "<ruby>子<rt>こ</rt></ruby>どもの<ruby>頃<rt>ごろ</rt></ruby>から、ずっと<ruby>好<rt>す</rt></ruby>きで。",
+    "cn": "我从小就特别喜欢它。"
+  },
+  {
+    "id": 37,
+    "start": 186,
+    "end": 190,
+    "jp": "<ruby>甘<rt>あま</rt></ruby>くて、ちょっと<ruby>香<rt>こー</rt></ruby>ばしくて。",
+    "cn": "它很甜，还有点焦香的味道。"
+  },
+  {
+    "id": 38,
+    "start": 190,
+    "end": 194,
+    "jp": "<ruby>今<rt>いま</rt></ruby>でも<ruby>食<rt>た</rt></ruby>べたいなあと<ruby>思<rt>おも</rt></ruby>うぐらいです。",
+    "cn": "直到现在，我依然会突然想吃它。"
+  },
+  {
+    "id": 39,
+    "start": 194,
+    "end": 201,
+    "jp": "それを、ある<ruby>日<rt>にち</rt></ruby>、<ruby>旦那<rt>だんな</rt></ruby>が<ruby>急<rt>きゅう</rt></ruby>に<ruby>買<rt>か</rt></ruby>ってきてくれたんです。",
+    "cn": "后来有一天，我丈夫突然给我带了一些回家。"
+  },
+  {
+    "id": 40,
+    "start": 201,
+    "end": 205,
+    "jp": "「これ、<ruby>前<rt>まえ</rt></ruby>に<ruby>好<rt>す</rt></ruby>きって<ruby>言<rt>い</rt></ruby>ってたよね」って。",
+    "cn": "他说：“你以前说过喜欢这个，对吧？”"
+  },
+  {
+    "id": 41,
+    "start": 205,
+    "end": 208,
+    "jp": "<ruby>正直<rt>しょうじき</rt></ruby>、びっくりしました。",
+    "cn": "说实话，我挺惊讶的。"
+  },
+  {
+    "id": 42,
+    "start": 208,
+    "end": 214,
+    "jp": "<ruby>私<rt>わたし</rt></ruby>、そのお<ruby>菓子<rt>かし</rt></ruby>が<ruby>好<rt>す</rt></ruby>きって<ruby>一回<rt>いっかい</rt></ruby>しか<ruby>話<rt>はな</rt></ruby>してないんですよ。",
+    "cn": "我只提过一次喜欢那种糖果。"
+  },
+  {
+    "id": 43,
+    "start": 214,
+    "end": 218,
+    "jp": "それを、<ruby>覚<rt>おぼ</rt></ruby>えててくれたんです。",
+    "cn": "而他竟然还记得。"
+  },
+  {
+    "id": 44,
+    "start": 218,
+    "end": 227,
+    "jp": "その<ruby>黒糖<rt>こくとう</rt></ruby>をね、<ruby>口<rt>くち</rt></ruby>に<ruby>入<rt>い</rt></ruby>れた<ruby>瞬間<rt>しゅんかん</rt></ruby>。<ruby>甘<rt>あま</rt></ruby>さがふわっと<ruby>広<rt>ひろ</rt></ruby>がって、すごく<ruby>幸<rt>しあわ</rt></ruby>せでした。",
+    "cn": "当我把那块红糖糖果放进嘴里的一瞬间，甜味轻轻地在口中蔓延开来，我感到无比幸福。"
+  },
+  {
+    "id": 45,
+    "start": 227,
+    "end": 235,
+    "jp": "でもね、お<ruby>菓子<rt>かし</rt></ruby>の<ruby>味<rt>あじ</rt></ruby>より、その<ruby>覚<rt>おぼ</rt></ruby>えててくれたっていう<ruby>気持<rt>きも</rt></ruby>ちが<ruby>嬉<rt>うれ</rt></ruby>しかったんです。",
+    "cn": "但你知道吗，比起零食本身的味道，真正让我开心的是他竟然还记得这件事。"
+  },
+  {
+    "id": 46,
+    "start": 235,
+    "end": 238,
+    "jp": "たった<ruby>一言<rt>ひとこと</rt></ruby>を、<ruby>覚<rt>おぼ</rt></ruby>えててくれた。",
+    "cn": "他记得我曾说过的那句微不足道的小话。"
+  },
+  {
+    "id": 47,
+    "start": 238,
+    "end": 243,
+    "jp": "それだけで、<ruby>心<rt>こころ</rt></ruby>がじーんとしました。",
+    "cn": "光是这一点就真的让我很感动。"
+  }
+]
