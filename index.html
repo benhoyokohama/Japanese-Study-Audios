@@ -1,5 +1,474 @@
-<!DOCTYPE html>🔁 全文循环</button>
-      <button class="ctrl-btn" id="btnNext" onclick="nextSentence()">🔁 全文循环</button>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>随身日语听力跟读</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-active: #eff6ff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --active-border: #3b82f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", Meiryo, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      padding-bottom: 95px;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 14px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .header-top h1 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .control-selects {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex: 1;
+      justify-content: flex-end;
+      min-width: 0;
+    }
+    #lessonSelect {
+      flex: 1;
+      min-width: 0;
+      max-width: 220px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 0.82rem;
+      outline: none;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    #timerSelect {
+      width: 96px;
+      padding: 6px 6px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #1e293b;
+      outline: none;
+      text-align: center;
+    }
+    audio {
+      width: 100%;
+      height: 36px;
+      outline: none;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .sentence-card {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .sentence-card.active {
+      background: var(--card-active);
+      border-color: var(--active-border);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .icon-btn {
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 4px 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-btn.play {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .jp-text {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 6px;
+      word-break: break-all;
+    }
+    ruby rt {
+      font-size: 0.65em;
+      color: #64748b;
+    }
+    .cn-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    details.analysis-details {
+      margin-top: 10px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #f8fafc;
+      overflow: hidden;
+      font-size: 0.85rem;
+    }
+    details.analysis-details summary {
+      padding: 8px 12px;
+      font-weight: 600;
+      color: #3b82f6;
+      cursor: pointer;
+      user-select: none;
+      background: #eff6ff;
+      outline: none;
+    }
+    details.analysis-details[open] summary {
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .analysis-content {
+      padding: 10px 12px;
+      line-height: 1.65;
+      color: #334155;
+      background: #ffffff;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border);
+      padding: 10px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .footer-left {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 130px;
+    }
+    .footer-controls {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .ctrl-btn {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-main);
+      white-space: nowrap;
+    }
+    .ctrl-btn.primary {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>🇯🇵 随身日语</h1>
+      <div class="control-selects">
+        <select id="lessonSelect">
+          <option selected value="2026-007">第 7 课：森林浴とマインドフルネス (一)</option>
+          <option value="2026-008">第 8 课：森林浴とマインドフルネス (二)</option>
+          <option value="2026-009">第 9 课：森林浴とマインドフルネス (三)</option>
+          <option value="2026-010">第 10 课：森林浴とマインドフルネス (四)</option>
+          <option value="2026-011">第 11 课：森林浴とマインドフルネス (五)</option>
+          <option value="2026-021">第 21 课：青い（青色与绿色）</option>
+          <option value="2026-100">第 100 课：中田敦彦・止まらない円安と骨太ショック</option>
+          <option value="2026-101">第 101 课：中田敦彦・止まらない円安と骨太ショック（二）</option>
+          <option value="2026-200">第 200 课：信長から秀吉の台頭へ</option>
+          <option value="2026-201">第 201 课：秀吉の全国統一と大坂城</option>
+        </select>
+        <select id="timerSelect">
+          <option value="0">⏱ 关</option>
+          <option value="15">⏱ 15m</option>
+          <option value="30">⏱ 30m</option>
+          <option value="60">⏱ 60m</option>
+        </select>
+      </div>
+    </div>
+    <audio id="audioPlayer" controls></audio>
+  </header>
+
+  <main class="container" id="cardsList"></main>
+
+  <footer>
+    <div class="footer-left" id="statusText">准备就绪</div>
+    <div class="footer-controls">
+      <button class="ctrl-btn" id="btnPrev" onclick="prevSentence()">◀ 上句</button>
+      <button class="ctrl-btn primary" id="btnPlayPause" onclick="togglePlayPause()">▶ 播放</button>
+      <button class="ctrl-btn" id="btnLoopMode" onclick="toggleLoopMode()">🔂 单句循环</button>
+      <button class="ctrl-btn" id="btnNext" onclick="nextSentence()">下句 ▶</button>
+    </div>
+  </footer>
+
+  <script>
+    const audio = document.getElementById('audioPlayer');
+    const lessonSelect = document.getElementById('lessonSelect');
+    const timerSelect = document.getElementById('timerSelect');
+    const cardsList = document.getElementById('cardsList');
+    const statusText = document.getElementById('statusText');
+    const btnPlayPause = document.getElementById('btnPlayPause');
+    const btnLoopMode = document.getElementById('btnLoopMode');
+
+    let sentences = [];
+    let currentIndex = 0;
+    let playMode = 0; // 0: 单句循环, 1: 全文循环, 2: 顺序播放
+    let isTransitioning = false;
+    let timerInterval = null;
+    let remainingSeconds = 0;
+
+    function toggleLoopMode() {
+      playMode = (playMode + 1) % 3;
+      updateLoopModeUI();
+    }
+
+    function updateLoopModeUI() {
+      if (!btnLoopMode) return;
+      if (playMode === 0) btnLoopMode.textContent = '🔂 单句循环';
+      else if (playMode === 1) btnLoopMode.textContent = '🔁 全文循环';
+      else btnLoopMode.textContent = '➡️ 顺序播放';
+    }
+
+    function togglePlayPause() {
+      if (audio.paused) {
+        audio.play().catch(() => {});
+      } else {
+        audio.pause();
+      }
+    }
+
+    audio.onplay = () => { if (btnPlayPause) btnPlayPause.textContent = '⏸ 暂停'; };
+    audio.onpause = () => { if (btnPlayPause) btnPlayPause.textContent = '▶ 播放'; };
+
+    function highlightSentence(idx) {
+      document.querySelectorAll('.sentence-card').forEach((c, i) => {
+        c.classList.toggle('active', i === idx);
+      });
+      const card = document.getElementById(`card-${idx}`);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      if (statusText) statusText.textContent = `播放中: 第 ${idx + 1} / ${sentences.length} 句`;
+    }
+
+    function playSentence(idx) {
+      if (!sentences || idx < 0 || idx >= sentences.length) return;
+      currentIndex = idx;
+      highlightSentence(idx);
+
+      audio.currentTime = sentences[idx].start || 0;
+      isTransitioning = false;
+      audio.play().catch(e => console.log('play blocked:', e));
+    }
+
+    let isSwitchingLesson = false;
+
+    function playNextLesson() {
+      if (isSwitchingLesson) return;
+      isSwitchingLesson = true;
+      setTimeout(() => { isSwitchingLesson = false; }, 1200);
+
+      const options = Array.from(lessonSelect.options);
+      let cur = options.findIndex(o => o.value === lessonSelect.value);
+      let next = (cur + 1) % options.length;
+      lessonSelect.selectedIndex = next;
+      loadLesson(options[next].value, 0, true);
+    }
+
+    function playPrevLesson() {
+      if (isSwitchingLesson) return;
+      isSwitchingLesson = true;
+      setTimeout(() => { isSwitchingLesson = false; }, 1200);
+
+      const options = Array.from(lessonSelect.options);
+      let cur = options.findIndex(o => o.value === lessonSelect.value);
+      let prev = (cur - 1 + options.length) % options.length;
+      lessonSelect.selectedIndex = prev;
+      loadLesson(options[prev].value, 0, true);
+    }
+
+    // 双击耳机 / 点击下句控制流
+    function nextSentence() {
+      if (!sentences || sentences.length === 0) return;
+
+      if (playMode === 0) {
+        // 单句循环：切下一句；若已是最后一句，双击回本课第 1 句
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          playSentence(0);
+        }
+      } else {
+        // 全文循环(1) 或 顺序播放(2)：无论在哪一句，直接切入下一课；最后一课切入第 1 课
+        playNextLesson();
+      }
+    }
+
+    // 三击耳机 / 点击上句控制流
+    function prevSentence() {
+      if (!sentences || sentences.length === 0) return;
+
+      if (playMode === 0) {
+        // 单句循环：切上一句；若在第 1 句，切到最后一句
+        if (currentIndex > 0) {
+          playSentence(currentIndex - 1);
+        } else {
+          playSentence(sentences.length - 1);
+        }
+      } else {
+        // 全文循环(1) 或 顺序播放(2)：切回上一课
+        playPrevLesson();
+      }
+    }
+
+    function handleSentenceEnd() {
+      if (isTransitioning) return;
+      isTransitioning = true;
+      if (!sentences || currentIndex < 0 || currentIndex >= sentences.length) return;
+      
+      const s = sentences[currentIndex];
+
+      if (playMode === 0) {
+        audio.currentTime = s.start || 0;
+        isTransitioning = false;
+        audio.play().catch(() => {});
+      } else if (playMode === 1) {
+        isTransitioning = false;
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          playSentence(0);
+        }
+      } else if (playMode === 2) {
+        isTransitioning = false;
+        if (currentIndex < sentences.length - 1) {
+          playSentence(currentIndex + 1);
+        } else {
+          playNextLesson();
+        }
+      }
+    }
+
+    audio.ontimeupdate = () => {
+      if (!sentences || currentIndex < 0 || currentIndex >= sentences.length) return;
+      const s = sentences[currentIndex];
+      if (audio.currentTime >= (s.end || 0) - 0.08) {
+        handleSentenceEnd();
+      }
+    };
+
+    audio.onended = () => {
+      if (playMode === 0) {
+        // 单句循环兜底：重置回句首
+        if (sentences && sentences[currentIndex]) {
+          audio.currentTime = sentences[currentIndex].start || 0;
+          audio.play().catch(() => {});
+        }
+      } else {
+        handleSentenceEnd();
+      }
+    };
+
+    function copySentenceText(idx, btn) {
+      if (!sentences || !sentences[idx]) return;
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = (sentences[idx].jp || '').replace(/<rt>.*?<\/rt>/g, '').replace(/<\/?ruby>/g, '');
+      const rawJp = tempDiv.textContent.trim();
+      const textToCopy = rawJp + (sentences[idx].cn ? "\n" + sentences[idx].cn : "");
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        btn.textContent = '✅';
+        setTimeout(() => { btn.textContent = '📋'; }, 1200);
+      }).catch(err => {
+        alert('复制失败');
+      });
+    }
+
+    function renderCards() {
+      if (!cardsList) return;
+      cardsList.innerHTML = '';
+      sentences.forEach((s, idx) => {
+        const card = document.createElement('div');
+        card.className = `sentence-card ${idx === currentIndex ? 'active' : ''}`;
+        card.id = `card-${idx}`;
+        card.onclick = () => playSentence(idx);
+
+        let grammarHtml = '';
+        if (s.analysis && s.analysis.trim() !== '') {
+          grammarHtml = `
+            <details class="analysis-details" onclick="event.stopPropagation();">
+              <summary>📚 词汇与语法解析（点击展开）</summary>
+              <div class="analysis-content">${s.analysis}</div>
+            </details>
+          `;
+        }
+
+        const startT = (s.start !== undefined) ? s.start.toFixed(2) : '0.00';
+        const endT = (s.end !== undefined) ? s.end.toFixed(2) : '0.00';
+
+        card.innerHTML = `
+          <div class="card-top">
+            <span>句 ${s.id || idx + 1} &nbsp; [${startT}s - ${endT}s]</span>
+            <div style="display:flex; gap:8px;">
+              <button class="icon-btn" title="复制日文句子" onclick="event.stopPropagation(); copySentenceText(${idx}, this);">📋</button>
               <button class="icon-btn play" title="播放单句" onclick="event.stopPropagation(); playSentence(${idx});">▶</button>
             </div>
           </div>
