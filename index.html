@@ -254,7 +254,7 @@
     <div class="footer-controls">
       <button class="ctrl-btn" id="btnPrev" onclick="prevSentence()">◀ 上句</button>
       <button class="ctrl-btn primary" id="btnPlayPause" onclick="togglePlayPause()">▶ 播放</button>
-      <button class="ctrl-btn" id="btnLoopMode" onclick="toggleLoopMode()">🔂 单句循环</button>
+      <button class="ctrl-btn" id="btnLoopMode" onclick="toggleLoopMode()">🔁 全文循环</button>
       <button class="ctrl-btn" id="btnNext" onclick="nextSentence()">下句 ▶</button>
     </div>
   </footer>
@@ -270,7 +270,7 @@
 
     let sentences = [];
     let currentIndex = 0;
-    let playMode = 0; // 0: 单句循环, 1: 全文循环, 2: 顺序播放
+    let playMode = 1; // 0: 单句循环, 1: 全文循环, 2: 顺序播放
     let isTransitioning = false;
     let timerInterval = null;
     let remainingSeconds = 0;
