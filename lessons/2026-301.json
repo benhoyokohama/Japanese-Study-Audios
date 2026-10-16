@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 13.07,
+    "jp": "<b>0022. <ruby>揚<rt>あ</rt></ruby>げる ⓪</b><br>△ <ruby>花火<rt>はなび</rt></ruby>を<ruby>揚<rt>あ</rt></ruby>げる。 ／ △ <ruby>旗<rt>はた</rt></ruby>を<ruby>揚<rt>あ</rt></ruby>げる。 ／ △ <ruby>天<rt>てん</rt></ruby>ぷらを<ruby>揚<rt>あ</rt></ruby>げる。",
+    "cn": "[他動2] 放（烟火等）；升起（旗子）；油炸 ｜ 放烟火。 ／ 升起旗子。 ／ 炸天妇罗。"
+  },
+  {
+    "id": 2,
+    "start": 13.07,
+    "end": 26.14,
+    "jp": "<b>0023. <ruby>憧<rt>あこが</rt></ruby>れる ⓪</b><br>△ <ruby>都会<rt>とかい</rt></ruby><ruby>生活<rt>せいかつ</rt></ruby>に<ruby>憧<rt>あこが</rt></ruby>れる。",
+    "cn": "[自動2] 憧憬、向往 ｜ 向往城市生活。"
+  },
+  {
+    "id": 3,
+    "start": 26.14,
+    "end": 39.21,
+    "jp": "<b>0024. <ruby>朝晩<rt>あさばん</rt></ruby> ①</b><br>△ <ruby>最近<rt>さいきん</rt></ruby>、<ruby>朝晩<rt>あさばん</rt></ruby>は<ruby>涼<rt>すず</rt></ruby>しくなった。",
+    "cn": "[名] 早晚 ｜ 最近早晚变凉了。"
+  },
+  {
+    "id": 4,
+    "start": 39.21,
+    "end": 52.28,
+    "jp": "<b>0025. <ruby>朝日<rt>あさひ</rt></ruby> ①</b><br>△ <ruby>朝日<rt>あさひ</rt></ruby>に<ruby>照<rt>て</rt></ruby>らされる。",
+    "cn": "[名] 朝日，旭日；早晨的阳光 ｜ 被朝阳照耀。"
+  },
+  {
+    "id": 5,
+    "start": 52.28,
+    "end": 65.35,
+    "jp": "<b>0026. <ruby>足音<rt>あしおと</rt></ruby> ③④</b><br>△ <ruby>足音<rt>あしおと</rt></ruby>がする。 ／ △ <ruby>足音<rt>あしおと</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる。",
+    "cn": "[名] 脚步声 ｜ 有脚步声。 ／ 发出脚步声。"
+  },
+  {
+    "id": 6,
+    "start": 65.35,
+    "end": 78.42,
+    "jp": "<b>0027. <ruby>味見<rt>あじみ</rt></ruby> ⓪③</b><br>△ <ruby>味見<rt>あじみ</rt></ruby>をする。",
+    "cn": "[名] 尝口味，尝咸淡 ｜ 尝尝味道。"
+  },
+  {
+    "id": 7,
+    "start": 78.42,
+    "end": 91.5,
+    "jp": "<b>0028. <ruby>足元<rt>あしもと</rt></ruby>／<ruby>足下<rt>あしもと</rt></ruby> ③④</b><br>△ <ruby>転<rt>ころ</rt></ruby>ばないように<ruby>足元<rt>あしもと</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけてください。 ／ △ <ruby>年<rt>ねん</rt></ruby>を<ruby>取<rt>と</rt></ruby>って<ruby>足元<rt>あしもと</rt></ruby>がおぼつかない。",
+    "cn": "[名] 脚下、身边；脚步，步伐 ｜ 为了不跌倒，请小心脚下。 ／ 上了年纪，脚步不稳。"
+  },
+  {
+    "id": 8,
+    "start": 91.5,
+    "end": 104.57,
+    "jp": "<b>0029. <ruby>明日<rt>あした</rt></ruby> ②</b><br>△ <ruby>明日<rt>あした</rt></ruby>は<ruby>明日<rt>あした</rt></ruby>の<ruby>風<rt>かぜ</rt></ruby>が<ruby>吹<rt>ふ</rt></ruby>く。",
+    "cn": "[名] 明天；（最近的）将来 ｜ 明天吹明天的风（车到山前必有路）。"
+  },
+  {
+    "id": 9,
+    "start": 104.57,
+    "end": 117.64,
+    "jp": "<b>0030. <ruby>預<rt>あず</rt></ruby>ける ③</b><br>△ <ruby>荷物<rt>にもつ</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける。 ／ △ <ruby>子供<rt>こども</rt></ruby>を<ruby>幼稚園<rt>ようちえん</rt></ruby>に<ruby>預<rt>あず</rt></ruby>ける。",
+    "cn": "[他動2] 寄存，存放；托付 ｜ 寄存行李。 ／ 把孩子托付给幼儿园。"
+  },
+  {
+    "id": 10,
+    "start": 117.64,
+    "end": 130.71,
+    "jp": "<b>0031. <ruby>汗<rt>あせ</rt></ruby> ①</b><br>△ <ruby>汗<rt>あせ</rt></ruby>をかく。",
+    "cn": "[名] 汗、汗水 ｜ 出汗。"
+  },
+  {
+    "id": 11,
+    "start": 130.71,
+    "end": 143.78,
+    "jp": "<b>0032. <ruby>汗臭<rt>あせくさ</rt></ruby>い ④</b><br>△ <ruby>汗臭<rt>あせくさ</rt></ruby>いシャツ",
+    "cn": "[イ形] 有汗臭味的 ｜ 有汗臭味的衬衫"
+  },
+  {
+    "id": 12,
+    "start": 143.78,
+    "end": 156.85,
+    "jp": "<b>0033. あたし ⓪</b><br>△ あたしがやります。",
+    "cn": "[代] 我（非正式场合女性自称） ｜ 我来做。"
+  },
+  {
+    "id": 13,
+    "start": 156.85,
+    "end": 169.92,
+    "jp": "<b>0034. <ruby>暖<rt>あたた</rt></ruby>まる／<ruby>温<rt>あたた</rt></ruby>まる ④</b><br>△ <ruby>部屋<rt>へや</rt></ruby>が<ruby>暖<rt>あたた</rt></ruby>まる。 ／ △ スープで<ruby>体<rt>からだ</rt></ruby>が<ruby>温<rt>あたた</rt></ruby>まる。",
+    "cn": "[自動1] 感到温暖，暖和；感到温馨 ｜ 房间变暖和了。 ／ 喝汤身子暖和起来了。"
+  },
+  {
+    "id": 14,
+    "start": 169.92,
+    "end": 182.99,
+    "jp": "<b>0035. <ruby>暖<rt>あたた</rt></ruby>める／<ruby>温<rt>あたた</rt></ruby>める ④</b><br>△ <ruby>冷<rt>ひ</rt></ruby>えた<ruby>手<rt>て</rt></ruby>を<ruby>暖<rt>あたた</rt></ruby>める。 ／ △ <ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>める。",
+    "cn": "[他動2] 使……变暖；加热 ｜ 暖和冰冷的手。 ／ 热牛奶。"
+  },
+  {
+    "id": 15,
+    "start": 182.99,
+    "end": 196.06,
+    "jp": "<b>0036. <ruby>当<rt>あ</rt></ruby>たる ⓪</b><br>△ ボールが<ruby>頭<rt>あたま</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たる。 ／ △ <ruby>宝<rt>たから</rt></ruby>くじに<ruby>当<rt>あ</rt></ruby>たる。",
+    "cn": "[自動1] 碰上、撞上；命中；相当于 ｜ 球碰到了头上。 ／ 中彩票。"
+  },
+  {
+    "id": 16,
+    "start": 196.06,
+    "end": 209.13,
+    "jp": "<b>0037. <ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby> ⓪</b><br>△ お<ruby>礼<rt>れい</rt></ruby>を<ruby>言<rt>い</rt></ruby>うのは<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>だ。",
+    "cn": "[名・ナ形] 理所当然，自然；普通，一般 ｜ 道谢是理所当然的。"
+  },
+  {
+    "id": 17,
+    "start": 209.13,
+    "end": 222.2,
+    "jp": "<b>0038. あっという<ruby>間<rt>ま</rt></ruby>に ④</b><br>△ あっという<ruby>間<rt>ま</rt></ruby>に<ruby>夏休<rt>なつやす</rt></ruby>みが<ruby>終<rt>お</rt></ruby>わった。",
+    "cn": "[連語] 转眼之间，眨眼工夫 ｜ 转眼间暑假就结束了。"
+  },
+  {
+    "id": 18,
+    "start": 222.2,
+    "end": 235.27,
+    "jp": "<b>0039. <ruby>扱<rt>あつか</rt></ruby>う ⓪③</b><br>△ <ruby>丁寧<rt>ていねい</rt></ruby>に<ruby>扱<rt>あつか</rt></ruby>う。 ／ △ <ruby>機械<rt>きかい</rt></ruby>を<ruby>扱<rt>あつか</rt></ruby>う。",
+    "cn": "[他動1] 对待，接待；操作；经办 ｜ 礼貌对待，轻拿轻放。 ／ 操作机器。"
+  },
+  {
+    "id": 19,
+    "start": 235.27,
+    "end": 248.34,
+    "jp": "<b>0040. <ruby>集<rt>あつ</rt></ruby>まり ④③</b><br>△ <ruby>集<rt>あつ</rt></ruby>まりに<ruby>遅<rt>おく</rt></ruby>れる。",
+    "cn": "[名] 集会，聚会 ｜ 聚会迟到。"
+  },
+  {
+    "id": 20,
+    "start": 248.34,
+    "end": 261.42,
+    "jp": "<b>0041. <ruby>宛先<rt>あてさき</rt></ruby> ⓪</b><br>△ <ruby>手紙<rt>てがみ</rt></ruby>の<ruby>宛先<rt>あてさき</rt></ruby>を<ruby>書<rt>か</rt></ruby>く。",
+    "cn": "[名] 收信人地址 ｜ 写信件的收件地址。"
+  },
+  {
+    "id": 21,
+    "start": 261.42,
+    "end": 274.49,
+    "jp": "<b>0042. <ruby>宛名<rt>あてな</rt></ruby> ⓪</b><br>△ <ruby>宛名<rt>あてな</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>える。",
+    "cn": "[名] 收信人姓名 ｜ 弄错收件人姓名。"
+  },
+  {
+    "id": 22,
+    "start": 274.49,
+    "end": 287.56,
+    "jp": "<b>0043. <ruby>当<rt>あ</rt></ruby>ててみてください ⓪</b><br>△ <ruby>当<rt>あ</rt></ruby>ててみてください。",
+    "cn": "[表現] 请猜猜看 ｜ 请猜猜看。"
+  },
+  {
+    "id": 23,
+    "start": 287.56,
+    "end": 300.63,
+    "jp": "<b>0044. <ruby>跡<rt>あと</rt></ruby> ①</b><br>△ <ruby>足<rt>あし</rt></ruby>の<ruby>跡<rt>あと</rt></ruby> ／ △ <ruby>焼<rt>や</rt></ruby>け<ruby>跡<rt>あと</rt></ruby>",
+    "cn": "[名] 痕迹、印迹；后方 ｜ 脚印 ／ 火灾后的废墟"
+  }
+]

@@ -1,0 +1,190 @@
+{
+  "2026-300": {
+    "name": "第 300 课：N3 文字词汇·あ行 (一)",
+    "raw_mp3": "raw_materials/mp3/あ-1.mp3",
+    "entries": [
+      {
+        "word": "愛", "reading": "あい", "accent": "①", "num": "0001", "pos": "[名]", "meaning": "爱，爱情；友爱",
+        "examples_jp": ["愛の告白", "愛の手を差し伸べる。"], "examples_cn": ["爱的告白", "伸出友爱之手。"]
+      },
+      {
+        "word": "愛情", "reading": "あいじょう", "accent": "⓪", "num": "0002", "pos": "[名]", "meaning": "爱；爱情；喜爱，热爱",
+        "examples_jp": ["母の愛情", "愛情のない結婚は罪悪だ。", "仕事に愛情を持つ。"], "examples_cn": ["母爱", "没有爱情的婚姻是一种罪恶。", "热爱工作。"]
+      },
+      {
+        "word": "アイス", "reading": "アイス", "accent": "①", "num": "0003", "pos": "[名]", "meaning": "冰淇淋；冰（咖啡）",
+        "examples_jp": ["アイスコーヒー"], "examples_cn": ["冰咖啡"]
+      },
+      {
+        "word": "あいつ", "reading": "あいつ", "accent": "③①", "num": "0004", "pos": "[名]", "meaning": "他，她，那个家伙，那小子",
+        "examples_jp": ["あいつはいい男だ。"], "examples_cn": ["那个家伙是个好男人。"]
+      },
+      {
+        "word": "相手", "reading": "あいて", "accent": "③", "num": "0005", "pos": "[名]", "meaning": "伙伴，共事者；对方，对手",
+        "examples_jp": ["遊び相手", "相手の選手"], "examples_cn": ["玩伴", "对方选手"]
+      },
+      {
+        "word": "アイデア・アイディア", "reading": "アイデア", "accent": "①③", "num": "0006", "pos": "[名]", "meaning": "想法，主意，点子",
+        "examples_jp": ["すばらしいアイデア", "アイデアマン"], "examples_cn": ["好办法", "点子多的人，智多星"]
+      },
+      {
+        "word": "あいにく", "reading": "あいにく", "accent": "⓪", "num": "0007", "pos": "[副・ナ形]", "meaning": "不凑巧，偏巧",
+        "examples_jp": ["先生を訪ねたが、あいにく留守だった。", "あいにくなことに旅行中で会えなかった。"], "examples_cn": ["去拜访老师了，不凑巧家里没有人。", "偏巧正在旅行，没能见着面。"]
+      },
+      {
+        "word": "曖昧", "reading": "あいまい", "accent": "⓪", "num": "0008", "pos": "[ナ形]", "meaning": "含糊不清、模棱两可",
+        "examples_jp": ["曖昧な返事をする。"], "examples_cn": ["含糊不清地回答。"]
+      },
+      {
+        "word": "アイロン", "reading": "アイロン", "accent": "⓪", "num": "0009", "pos": "[名]", "meaning": "熨斗，电熨斗",
+        "examples_jp": ["スチームアイロン", "ワイシャツにアイロンをかける。"], "examples_cn": ["蒸汽熨斗", "熨衬衫。"]
+      },
+      {
+        "word": "青空", "reading": "あおぞら", "accent": "③", "num": "0010", "pos": "[名]", "meaning": "蓝天、青天",
+        "examples_jp": ["青空を見上げる。"], "examples_cn": ["仰望蓝天。"]
+      },
+      {
+        "word": "赤字", "reading": "あかじ", "accent": "⓪", "num": "0011", "pos": "[名]", "meaning": "赤字，亏损",
+        "examples_jp": ["赤字を埋める。"], "examples_cn": ["弥补赤字。"]
+      },
+      {
+        "word": "明かり", "reading": "あかり", "accent": "⓪", "num": "0012", "pos": "[名]", "meaning": "光，光亮；灯；希望",
+        "examples_jp": ["明かりをつける。", "蝋燭の明かりで本を読む。", "将来に明かりが差した。"], "examples_cn": ["点灯。", "伴着烛光看书。", "将来有希望了。"]
+      },
+      {
+        "word": "上がる", "reading": "あがる", "accent": "⓪", "num": "0013", "pos": "[自動1]", "meaning": "上、登；提高，上升",
+        "examples_jp": ["陸に上がる。", "値段が上がる。"], "examples_cn": ["靠岸登陆。", "价格上涨。"]
+      },
+      {
+        "word": "明らか", "reading": "あきらか", "accent": "②", "num": "0014", "pos": "[ナ形]", "meaning": "明显、显然，清楚",
+        "examples_jp": ["明らかに間違っている。", "機械の壊れた原因が明らかになった。"], "examples_cn": ["明显错了。", "机器发生故障的原因弄清楚了。"]
+      },
+      {
+        "word": "諦める", "reading": "あきらめる", "accent": "④", "num": "0015", "pos": "[他動2]", "meaning": "放弃、死心",
+        "examples_jp": ["進学を諦める。"], "examples_cn": ["放弃升学。"]
+      },
+      {
+        "word": "飽きる", "reading": "あきる", "accent": "②", "num": "0016", "pos": "[自動2]", "meaning": "厌烦、厌倦",
+        "examples_jp": ["飽きることを知らない。"], "examples_cn": ["不知厌倦。"]
+      },
+      {
+        "word": "アクション", "reading": "アクション", "accent": "①", "num": "0017", "pos": "[名]", "meaning": "动作，行动；动作片",
+        "examples_jp": ["アクション絵画"], "examples_cn": ["行动绘画"]
+      },
+      {
+        "word": "アクセント", "reading": "アクセント", "accent": "①", "num": "0018", "pos": "[名]", "meaning": "语调，口音；重点",
+        "examples_jp": ["大阪のアクセント", "～にアクセントを置く"], "examples_cn": ["大阪口音", "以……为重点"]
+      },
+      {
+        "word": "欠伸", "reading": "あくび", "accent": "⓪", "num": "0019", "pos": "[名・自動3]", "meaning": "哈欠",
+        "examples_jp": ["欠伸をする。", "欠伸をかみ殺す。"], "examples_cn": ["打哈欠。", "忍住哈欠。"]
+      },
+      {
+        "word": "明ける", "reading": "あける", "accent": "⓪", "num": "0020", "pos": "[自動2]", "meaning": "天亮；新年伊始；结束",
+        "examples_jp": ["夜が明けた。", "年が明けた。", "梅雨が明ける。"], "examples_cn": ["天亮了。", "新年伊始。", "梅雨季节结束。"]
+      },
+      {
+        "word": "上げる", "reading": "あげる", "accent": "⓪", "num": "0021", "pos": "[他動2]", "meaning": "举、抬；提高，增加",
+        "examples_jp": ["手を上げる。", "スピードを上げる。"], "examples_cn": ["举手。", "提高速度。"]
+      }
+    ]
+  },
+  "2026-301": {
+    "name": "第 301 课：N3 文字词汇·あ行 (二)",
+    "raw_mp3": "raw_materials/mp3/あ-2.mp3",
+    "entries": [
+      {
+        "word": "揚げる", "reading": "あげる", "accent": "⓪", "num": "0022", "pos": "[他動2]", "meaning": "放（烟火等）；升起（旗子）；油炸",
+        "examples_jp": ["花火を揚げる。", "旗を揚げる。", "天ぷらを揚げる。"], "examples_cn": ["放烟火。", "升起旗子。", "炸天妇罗。"]
+      },
+      {
+        "word": "憧れる", "reading": "あこがれる", "accent": "⓪", "num": "0023", "pos": "[自動2]", "meaning": "憧憬、向往",
+        "examples_jp": ["都会生活に憧れる。"], "examples_cn": ["向往城市生活。"]
+      },
+      {
+        "word": "朝晩", "reading": "あさばん", "accent": "①", "num": "0024", "pos": "[名]", "meaning": "早晚",
+        "examples_jp": ["最近、朝晩は涼しくなった。"], "examples_cn": ["最近早晚变凉了。"]
+      },
+      {
+        "word": "朝日", "reading": "あさひ", "accent": "①", "num": "0025", "pos": "[名]", "meaning": "朝日，旭日；早晨的阳光",
+        "examples_jp": ["朝日に照らされる。"], "examples_cn": ["被朝阳照耀。"]
+      },
+      {
+        "word": "足音", "reading": "あしおと", "accent": "③④", "num": "0026", "pos": "[名]", "meaning": "脚步声",
+        "examples_jp": ["足音がする。", "足音を立てる。"], "examples_cn": ["有脚步声。", "发出脚步声。"]
+      },
+      {
+        "word": "味見", "reading": "あじみ", "accent": "⓪③", "num": "0027", "pos": "[名]", "meaning": "尝口味，尝咸淡",
+        "examples_jp": ["味見をする。"], "examples_cn": ["尝尝味道。"]
+      },
+      {
+        "word": "足元／足下", "reading": "あしもと", "accent": "③④", "num": "0028", "pos": "[名]", "meaning": "脚下、身边；脚步，步伐",
+        "examples_jp": ["転ばないように足元に気をつけてください。", "年を取って足元がおぼつかない。"], "examples_cn": ["为了不跌倒，请小心脚下。", "上了年纪，脚步不稳。"]
+      },
+      {
+        "word": "明日", "reading": "あす", "accent": "②", "num": "0029", "pos": "[名]", "meaning": "明天；（最近的）将来",
+        "examples_jp": ["明日は明日の風が吹く。"], "examples_cn": ["明天吹明天的风（车到山前必有路）。"]
+      },
+      {
+        "word": "預ける", "reading": "あずける", "accent": "③", "num": "0030", "pos": "[他動2]", "meaning": "寄存，存放；托付",
+        "examples_jp": ["荷物を預ける。", "子供を幼稚園に預ける。"], "examples_cn": ["寄存行李。", "把孩子托付给幼儿园。"]
+      },
+      {
+        "word": "汗", "reading": "あせ", "accent": "①", "num": "0031", "pos": "[名]", "meaning": "汗、汗水",
+        "examples_jp": ["汗をかく。"], "examples_cn": ["出汗。"]
+      },
+      {
+        "word": "汗臭い", "reading": "あせくさい", "accent": "④", "num": "0032", "pos": "[イ形]", "meaning": "有汗臭味的",
+        "examples_jp": ["汗臭いシャツ"], "examples_cn": ["有汗臭味的衬衫"]
+      },
+      {
+        "word": "あたし", "reading": "あたし", "accent": "⓪", "num": "0033", "pos": "[代]", "meaning": "我（非正式场合女性自称）",
+        "examples_jp": ["あたしがやります。"], "examples_cn": ["我来做。"]
+      },
+      {
+        "word": "暖まる／温まる", "reading": "あたたまる", "accent": "④", "num": "0034", "pos": "[自動1]", "meaning": "感到温暖，暖和；感到温馨",
+        "examples_jp": ["部屋が暖まる。", "スープで体が温まる。"], "examples_cn": ["房间变暖和了。", "喝汤身子暖和起来了。"]
+      },
+      {
+        "word": "暖める／温める", "reading": "あたためる", "accent": "④", "num": "0035", "pos": "[他動2]", "meaning": "使……变暖；加热",
+        "examples_jp": ["冷えた手を暖める。", "牛乳を温める。"], "examples_cn": ["暖和冰冷的手。", "热牛奶。"]
+      },
+      {
+        "word": "当たる", "reading": "あたる", "accent": "⓪", "num": "0036", "pos": "[自動1]", "meaning": "碰上、撞上；命中；相当于",
+        "examples_jp": ["ボールが頭に当たる。", "宝くじに当たる。"], "examples_cn": ["球碰到了头上。", "中彩票。"]
+      },
+      {
+        "word": "当たり前", "reading": "あたりまえ", "accent": "⓪", "num": "0037", "pos": "[名・ナ形]", "meaning": "理所当然，自然；普通，一般",
+        "examples_jp": ["お礼を言うのは当たり前だ。"], "examples_cn": ["道谢是理所当然的。"]
+      },
+      {
+        "word": "あっという間に", "reading": "あっというまに", "accent": "④", "num": "0038", "pos": "[連語]", "meaning": "转眼之间，眨眼工夫",
+        "examples_jp": ["あっという間に夏休みが終わった。"], "examples_cn": ["转眼间暑假就结束了。"]
+      },
+      {
+        "word": "扱う", "reading": "あつかう", "accent": "⓪③", "num": "0039", "pos": "[他動1]", "meaning": "对待，接待；操作；经办",
+        "examples_jp": ["丁寧に扱う。", "機械を扱う。"], "examples_cn": ["礼貌对待，轻拿轻放。", "操作机器。"]
+      },
+      {
+        "word": "集まり", "reading": "あつまり", "accent": "④③", "num": "0040", "pos": "[名]", "meaning": "集会，聚会",
+        "examples_jp": ["集まりに遅れる。"], "examples_cn": ["聚会迟到。"]
+      },
+      {
+        "word": "宛先", "reading": "あてさき", "accent": "⓪", "num": "0041", "pos": "[名]", "meaning": "收信人地址",
+        "examples_jp": ["手紙の宛先を書く。"], "examples_cn": ["写信件的收件地址。"]
+      },
+      {
+        "word": "宛名", "reading": "あてな", "accent": "⓪", "num": "0042", "pos": "[名]", "meaning": "收信人姓名",
+        "examples_jp": ["宛名を間違える。"], "examples_cn": ["弄错收件人姓名。"]
+      },
+      {
+        "word": "当ててみてください", "reading": "あててみてください", "accent": "⓪", "num": "0043", "pos": "[表現]", "meaning": "请猜猜看",
+        "examples_jp": ["当ててみてください。"], "examples_cn": ["请猜猜看。"]
+      },
+      {
+        "word": "跡", "reading": "あと", "accent": "①", "num": "0044", "pos": "[名]", "meaning": "痕迹、印迹；后方",
+        "examples_jp": ["足の跡", "焼け跡"], "examples_cn": ["脚印", "火灾后的废墟"]
+      }
+    ]
+  }
+}
