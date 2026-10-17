@@ -242,6 +242,19 @@
       line-height: 1;
     }
 
+  
+    .speed-btn {
+      padding: 5px 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #f1f5f9;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
   </style>
 </head>
 <body>
@@ -264,6 +277,7 @@
           <option value="2026-301">第 301 课：N3 文字词汇·あ行 (二)</option>
           <option value="2026-302">第 302 课：N3 文字词汇·あ行 (三)</option>
         </select>
+        <button class="speed-btn" id="speedBtn" onclick="cycleSpeed()">1.0x</button>
         <select id="timerSelect">
           <option value="0">⏱ 关</option>
           <option value="15">⏱ 15m</option>
@@ -373,6 +387,7 @@
 
       playbackStartTime = ctx.currentTime;
       startOffset = target;
+      if (currentSource.playbackRate) { try { currentSource.playbackRate.value = currentSpeed; } catch(e){} }
       currentSource.start(0, target);
       isPlaying = true;
       btnPlayPause.textContent = '⏸ 暂停';
@@ -648,6 +663,24 @@
       topPlayBtn.onclick = () => {
         if (btnPlayPause) btnPlayPause.click();
       };
+    }
+
+  
+    // 语速切换安全逻辑
+    let currentSpeed = 1.0;
+    const speedList = [1.0, 1.2, 1.5, 0.8];
+
+    function cycleSpeed() {
+      const idx = (speedList.indexOf(currentSpeed) + 1) % speedList.length;
+      currentSpeed = speedList[idx];
+      const sBtn = document.getElementById("speedBtn");
+      if (sBtn) sBtn.textContent = `${currentSpeed}x`;
+
+      if (currentSource && currentSource.playbackRate) {
+        try {
+          currentSource.playbackRate.setValueAtTime(currentSpeed, audioCtx.currentTime);
+        } catch(e) {}
+      }
     }
 
   </script>
