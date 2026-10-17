@@ -464,6 +464,14 @@
       if (!audioBuffer) return;
       const target = (seekSlider.value / 100) * audioBuffer.duration;
       playAtTime(target);
+      // 拖动释放后，自动在课文列表中定位匹配的生词并高亮
+      if (sentences && sentences.length > 0) {
+        const found = sentences.findIndex(s => target >= Number(s.start) && target < Number(s.end));
+        if (found !== -1) {
+          currentIndex = found;
+          highlightSentence(currentIndex);
+        }
+      }
     };
 
     function copySentenceText(idx, btn) {
