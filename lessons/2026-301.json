@@ -2,160 +2,160 @@
   {
     "id": 1,
     "start": 0.0,
-    "end": 17.5,
+    "end": 15.5,
     "jp": "<ruby>上<rt>あ</rt></ruby>げる ⓪ [他動2] 扬起；炸\n△<ruby>花火<rt>はなび</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げる。/ 放烟花。\n△<ruby>旗<rt>はた</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げる。/ 升旗。\n△<ruby>天麩羅<rt>てんぷら</rt></ruby>を<ruby>揚<rt>あ</rt></ruby>げる。/ 炸天妇罗。",
     "cn": ""
   },
   {
     "id": 2,
-    "start": 17.5,
-    "end": 28.5,
+    "start": 15.5,
+    "end": 26.5,
     "jp": "<ruby>憧<rt>あこが</rt></ruby>れる ⓪ [自動2] 向往，憧憬\n△<ruby>都会<rt>とかい</rt></ruby><ruby>生活<rt>せいかつ</rt></ruby>に<ruby>憧<rt>あこが</rt></ruby>れる。/ 向往城市生活。",
     "cn": ""
   },
   {
     "id": 3,
-    "start": 28.5,
-    "end": 40.5,
+    "start": 26.5,
+    "end": 38.0,
     "jp": "<ruby>朝晩<rt>あさばん</rt></ruby> ① [名・副] 早晚，早晨和晚上；天天\n△<ruby>最近<rt>さいきん</rt></ruby>、<ruby>朝晩<rt>あさばん</rt></ruby>は<ruby>涼<rt>すず</rt></ruby>しくなった。/ 最近早晚变凉爽了。",
     "cn": ""
   },
   {
     "id": 4,
-    "start": 40.5,
-    "end": 54.0,
+    "start": 38.0,
+    "end": 50.0,
     "jp": "<ruby>朝日<rt>あさひ</rt></ruby> ① [名] 朝阳，朝曦，旭日\n△<ruby>朝日<rt>あさひ</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>る。/ 旭日东升。\n△この<ruby>部屋<rt>へや</rt></ruby>は<ruby>朝日<rt>あさひ</rt></ruby>が<ruby>差<rt>さ</rt></ruby>す。/ 这个房间有朝阳照进来。",
     "cn": ""
   },
   {
     "id": 5,
-    "start": 54.0,
-    "end": 65.5,
+    "start": 50.0,
+    "end": 60.0,
     "jp": "<ruby>朝飯<rt>あさめし</rt></ruby> ③ [名] 早饭，早餐\n△<ruby>朝飯<rt>あさめし</rt></ruby>はパンで<ruby>済<rt>す</rt></ruby>ます。/ 早饭吃面包对付一下。",
     "cn": ""
   },
   {
     "id": 6,
-    "start": 65.5,
-    "end": 74.5,
+    "start": 60.0,
+    "end": 69.0,
     "jp": "<ruby>足音<rt>あしおと</rt></ruby> ③ [名] 脚步声，脚步\n△<ruby>足音<rt>あしおと</rt></ruby>がする。/ 有脚步声。",
     "cn": ""
   },
   {
     "id": 7,
-    "start": 74.5,
-    "end": 83.5,
+    "start": 69.0,
+    "end": 78.0,
     "jp": "<ruby>味見<rt>あじみ</rt></ruby> ⓪ [名・他動3] 尝味道，品尝\n△<ruby>味見<rt>あじみ</rt></ruby>をする。/ 尝尝味道。",
     "cn": ""
   },
   {
     "id": 8,
-    "start": 83.5,
-    "end": 102.5,
+    "start": 78.0,
+    "end": 96.0,
     "jp": "<ruby>足元<rt>あしもと</rt></ruby> ③ [名] 脚下，脚步；身边\n△<ruby>転<rt>ころ</rt></ruby>ばないように、<ruby>足元<rt>あしもと</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけてください。/ 请留神脚下，不要摔倒。\n△<ruby>年<rt>とし</rt></ruby>を<ruby>取<rt>と</rt></ruby>っていて、<ruby>足元<rt>あしもと</rt></ruby>が<ruby>危<rt>あぶ</rt></ruby>ない。/ 上了年纪，脚步不稳。",
     "cn": ""
   },
   {
     "id": 9,
-    "start": 102.5,
-    "end": 111.0,
+    "start": 96.0,
+    "end": 104.0,
     "jp": "<ruby>明日<rt>あす</rt></ruby> ② [名] 明天",
     "cn": ""
   },
   {
     "id": 10,
-    "start": 111.0,
-    "end": 128.5,
+    "start": 104.0,
+    "end": 120.0,
     "jp": "<ruby>預<rt>あず</rt></ruby>ける ③ [他動2] 存放，寄托；委托，交托\n△<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける。/ 寄存行李。\n△<ruby>子供<rt>こども</rt></ruby>を<ruby>幼稚園<rt>ようちえん</rt></ruby>に<ruby>預<rt>あず</rt></ruby>ける。/ 把孩子寄托在幼儿园。",
     "cn": ""
   },
   {
     "id": 11,
-    "start": 128.5,
-    "end": 141.5,
+    "start": 120.0,
+    "end": 132.5,
     "jp": "<ruby>汗<rt>あせ</rt></ruby> ① [名] 汗，汗水\n△<ruby>汗<rt>あせ</rt></ruby>をかく。/ 出汗。\n△<ruby>冷や汗<rt>ひやあせ</rt></ruby>をかく。/ 出冷汗。",
     "cn": ""
   },
   {
     "id": 12,
-    "start": 141.5,
-    "end": 153.5,
+    "start": 132.5,
+    "end": 144.0,
     "jp": "<ruby>汗臭<rt>あせくさ</rt></ruby>い ④ [形] 汗臭的，有汗酸味的\n△<ruby>汗臭<rt>あせくさ</rt></ruby>い<ruby>着物<rt>きもの</rt></ruby>を<ruby>着<rt>き</rt></ruby>ている。/ 穿着有汗臭味的衣服。",
     "cn": ""
   },
   {
     "id": 13,
-    "start": 153.5,
-    "end": 164.5,
+    "start": 144.0,
+    "end": 154.5,
     "jp": "あたし ⓪ [代] 我（女性用语）\n△あたしも<ruby>行<rt>い</rt></ruby>きたいわよ。/ 我也想去呀。",
     "cn": ""
   },
   {
     "id": 14,
-    "start": 164.5,
-    "end": 182.5,
+    "start": 154.5,
+    "end": 171.5,
     "jp": "<ruby>暖<rt>あたた</rt></ruby>まる ④ [自動1] 感到温暖，变热；富足\n△<ruby>部屋<rt>へや</rt></ruby>が<ruby>暖<rt>あたた</rt></ruby>まる。/ 房间暖和了。\n△<ruby>心<rt>こころ</rt></ruby><ruby>暖<rt>あたた</rt></ruby>まる<ruby>思<rt>おも</rt></ruby>い。/ 感到心里暖融融的。",
     "cn": ""
   },
   {
     "id": 15,
-    "start": 182.5,
-    "end": 199.5,
+    "start": 171.5,
+    "end": 188.0,
     "jp": "<ruby>温<rt>あたた</rt></ruby>める ④ [他動2] 加热，温；使暖和\n△ストーブで<ruby>部屋<rt>へや</rt></ruby>を<ruby>暖<rt>あたた</rt></ruby>める。/ 用炉子让房间暖和起来。\n△お<ruby>酒<rt>さけ</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>める。/ 温酒。",
     "cn": ""
   },
   {
     "id": 16,
-    "start": 199.5,
-    "end": 218.0,
+    "start": 188.0,
+    "end": 206.0,
     "jp": "<ruby>当<rt>あ</rt></ruby>たる ⓪ [自動1] 撞上；击中；晒，照\n△ボールが<ruby>頭<rt>あたま</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たった。/ 球碰到了头上。\n△くじに<ruby>当<rt>あ</rt></ruby>たる。/ 中彩。\n△<ruby>日<rt>ひ</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たる。/ 晒太阳。",
     "cn": ""
   },
   {
     "id": 17,
-    "start": 218.0,
-    "end": 234.5,
+    "start": 206.0,
+    "end": 221.5,
     "jp": "<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby> ⓪ [ナ形・名] 理所当然，应当；普通，一般\n△<ruby>借<rt>か</rt></ruby>りたお<ruby>金<rt>かね</rt></ruby>を<ruby>返<rt>かえ</rt></ruby>すのは<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>だ。/ 借钱还钱是理所当然的。",
     "cn": ""
   },
   {
     "id": 18,
-    "start": 234.5,
-    "end": 249.0,
+    "start": 221.5,
+    "end": 235.0,
     "jp": "あっという<ruby>間<rt>ま</rt></ruby>に ④ [組] 转眼之间，眨眼工夫\n△あっという<ruby>間<rt>ま</rt></ruby>に<ruby>夏休<rt>なつやす</rt></ruby>みが<ruby>終<rt>お</rt></ruby>わってしまった。/ 转眼间暑假就结束了。",
     "cn": ""
   },
   {
     "id": 19,
-    "start": 249.0,
-    "end": 266.0,
+    "start": 235.0,
+    "end": 252.0,
     "jp": "<ruby>扱<rt>あつく</rt></ruby>う ③ [他動1] 操作；对待，待；经营，办理\n△<ruby>人<rt>ひと</rt></ruby>を<ruby>優<rt>やさ</rt></ruby>しく<ruby>扱<rt>あつく</rt></ruby>う。/ 和蔼待人。\n△<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みを<ruby>扱<rt>あつく</rt></ruby>う。/ 受理申请。",
     "cn": ""
   },
   {
     "id": 20,
-    "start": 266.0,
-    "end": 277.5,
+    "start": 252.0,
+    "end": 263.0,
     "jp": "<ruby>集<rt>あつ</rt></ruby>まり ⓪ [名] 集合，集会；聚集\n△<ruby>集<rt>あつ</rt></ruby>まりがある。/ 有集会。\n△<ruby>客<rt>きゃく</rt></ruby>の<ruby>集<rt>あつ</rt></ruby>まりが<ruby>悪<rt>わる</rt></ruby>い。/ 顾客来得少。",
     "cn": ""
   },
   {
     "id": 21,
-    "start": 277.5,
-    "end": 286.0,
+    "start": 263.0,
+    "end": 271.0,
     "jp": "<ruby>宛先<rt>あてさき</rt></ruby> ⓪ [名] 收件人姓名和地址\n△<ruby>宛先<rt>あてさき</rt></ruby><ruby>不明<rt>ふめい</rt></ruby> / 查无此人（收件人不明）",
     "cn": ""
   },
   {
     "id": 22,
-    "start": 286.0,
-    "end": 294.0,
+    "start": 271.0,
+    "end": 279.0,
     "jp": "<ruby>宛名<rt>あてな</rt></ruby> ⓪ [名] 收信人姓名\n△<ruby>宛名<rt>あてな</rt></ruby>が<ruby>間違<rt>まちが</rt></ruby>っている。/ 收信人姓名写错了。",
     "cn": ""
   },
   {
     "id": 23,
-    "start": 294.0,
+    "start": 279.0,
     "end": 303.0,
     "jp": "<ruby>当<rt>あ</rt></ruby>てる ⓪ [他動2] 碰撞；晒，烤；猜，推测\n△<ruby>日光<rt>にっこう</rt></ruby>に<ruby>当<rt>あ</rt></ruby>てて<ruby>乾<rt>かわ</rt></ruby>かす。/ 放在阳光下晒干。\n△<ruby>一等賞<rt>いっとうしょう</rt></ruby>を<ruby>当<rt>あ</rt></ruby>てる。/ 抽中一等奖。\n△<ruby>当<rt>あ</rt></ruby>ててみてください。/ 请猜猜看。\n\n<ruby>跡<rt>あと</rt></ruby> ① [名] 痕迹；印迹\n△<ruby>足<rt>あし</rt></ruby>の<ruby>跡<rt>あと</rt></ruby> / 足迹\n△<ruby>焼<rt>や</rt></ruby>け<ruby>跡<rt>あと</rt></ruby> / 火灾遗迹",
     "cn": ""
