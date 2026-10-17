@@ -564,6 +564,55 @@
       }
     }
 
+    
+    // ------------------ 倒计时自动停止功能 ------------------
+    let sleepRemainingSec = 0;
+    let sleepInterval = null;
+
+    timerSelect.onchange = () => {
+      const minutes = parseInt(timerSelect.value, 10);
+      if (sleepInterval) clearInterval(sleepInterval);
+
+      if (minutes === 0) {
+        sleepRemainingSec = 0;
+        resetTimerOptions();
+        return;
+      }
+
+      sleepRemainingSec = minutes * 60;
+      updateTimerDisplay(minutes);
+
+      sleepInterval = setInterval(() => {
+        sleepRemainingSec--;
+        if (sleepRemainingSec <= 0) {
+          clearInterval(sleepInterval);
+          pauseAudio(); // 时间到，暂停播放
+          timerSelect.value = "0";
+          resetTimerOptions();
+        } else {
+          const remMinutes = Math.ceil(sleepRemainingSec / 60);
+          updateTimerDisplay(remMinutes);
+        }
+      }, 1000);
+    };
+
+    function updateTimerDisplay(m) {
+      const curVal = timerSelect.value;
+      Array.from(timerSelect.options).forEach(opt => {
+        if (opt.value === curVal) {
+          opt.text = `⏱ ${m}m`;
+        }
+      });
+    }
+
+    function resetTimerOptions() {
+      const defaults = {"0": "⏱ 关", "15": "⏱ 15m", "30": "⏱ 30m", "60": "⏱ 60m"};
+      Array.from(timerSelect.options).forEach(opt => {
+        if (defaults[opt.value]) opt.text = defaults[opt.value];
+      });
+    }
+    // --------------------------------------------------------
+
     lessonSelect.onchange = () => loadLesson(lessonSelect.value, 0, false);
     loadLesson(lessonSelect.value || '2026-300', 0, false);
   </script>
