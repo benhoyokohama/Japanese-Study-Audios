@@ -231,6 +231,17 @@
       color: #fff;
       border-color: var(--primary);
     }
+  
+    .top-play-btn {
+      background: none;
+      border: none;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: var(--primary);
+      padding: 0 4px;
+      line-height: 1;
+    }
+
   </style>
 </head>
 <body>
@@ -262,6 +273,7 @@
       </div>
     </div>
     <div class="progress-bar-wrap">
+      <button class="top-play-btn" id="topPlayBtn">▶</button>
       <span id="timeCurrent">0:00</span>
       <input type="range" id="seekSlider" class="custom-range" min="0" max="100" value="0">
       <span id="timeDuration">0:00</span>
@@ -440,6 +452,7 @@
       const dur = audioBuffer.duration;
 
       timeCurrent.textContent = formatTime(cur);
+      if (topPlayBtn) topPlayBtn.textContent = isPlaying ? '⏸' : '▶';
       timeDuration.textContent = formatTime(dur);
       if (!seekSlider.matches(':active')) {
         seekSlider.value = (cur / dur) * 100 || 0;
@@ -627,6 +640,15 @@
       });
     }
     // =======================================================
+
+  
+    // 顶栏播放按钮：完全代理底层正常的播放控制
+    const topPlayBtn = document.getElementById("topPlayBtn");
+    if (topPlayBtn) {
+      topPlayBtn.onclick = () => {
+        if (btnPlayPause) btnPlayPause.click();
+      };
+    }
 
   </script>
 </body>
