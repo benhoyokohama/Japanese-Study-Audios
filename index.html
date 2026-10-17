@@ -385,9 +385,9 @@
 
       playbackStartTime = ctx.currentTime;
       startOffset = target;
-      if (currentSource.playbackRate) currentSource.playbackRate.value = currentSpeed;\n      currentSource.start(0, target);
+      currentSource.start(0, target);
       isPlaying = true;
-      btnPlayPause.textContent = '⏸ 暂停'; syncTopPlayIcon(true); if (topPlayBtn) topPlayBtn.textContent = '⏸';
+      btnPlayPause.textContent = '⏸ 暂停'; if (topPlayBtn) topPlayBtn.textContent = '⏸';
     }
 
     function pauseAudio() {
@@ -399,7 +399,7 @@
         currentSource = null;
       }
       isPlaying = false;
-      btnPlayPause.textContent = '▶ 播放'; syncTopPlayIcon(false); if (topPlayBtn) topPlayBtn.textContent = '▶';
+      btnPlayPause.textContent = '▶ 播放'; if (topPlayBtn) topPlayBtn.textContent = '▶';
     }
 
     function togglePlayPause() {
@@ -488,13 +488,6 @@
       if (!audioBuffer) return;
       const target = (seekSlider.value / 100) * audioBuffer.duration;
       playAtTime(target);
-      if (sentences && sentences.length > 0) {
-        const found = sentences.findIndex(s => target >= Number(s.start) && target < Number(s.end));
-        if (found !== -1) {
-          currentIndex = found;
-          highlightSentence(currentIndex);
-        }
-      }
     };
 
     function copySentenceText(idx, btn) {
@@ -601,28 +594,6 @@
     lessonSelect.onchange = () => loadLesson(lessonSelect.value, 0, false);
     loadLesson(lessonSelect.value || '2026-300', 0, false);
   
-    // ----------------- 顶栏播放与语速 -----------------
-    let currentSpeed = 1.0;
-    const speedList = [1.0, 1.2, 1.5, 0.8];
-
-    function cycleSpeed() {
-      const idx = (speedList.indexOf(currentSpeed) + 1) % speedList.length;
-      currentSpeed = speedList[idx];
-      const sBtn = document.getElementById("speedBtn");
-      if (sBtn) sBtn.textContent = `${currentSpeed}x`;
-      if (currentSource && currentSource.playbackRate) {
-        try {
-          currentSource.playbackRate.value = currentSpeed;
-        } catch(e) {}
-      }
-    }
-
-    function syncTopPlayIcon(playing) {
-      const tp = document.getElementById("topPlayBtn");
-      if (tp) tp.textContent = playing ? "⏸" : "▶";
-    }
-    // --------------------------------------------------
-
     // ==================== 倒计时停止逻辑 (精确到秒) ====================
     let sleepSecondsLeft = 0;
     let sleepTimerId = null;
