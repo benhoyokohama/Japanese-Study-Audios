@@ -307,6 +307,15 @@
     let audioBuffer = null;
     let currentSource = null;
     let isPlaying = false;
+
+      const anchor = document.getElementById("sessionAnchor");
+      if (anchor) {
+        anchor.pause();
+      }
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.playbackState = "paused";
+      }
+
     let playbackStartTime = 0;
     let startOffset = 0;
     let sentences = [];
@@ -376,6 +385,15 @@
       startOffset = target;
       currentSource.start(0, target);
       isPlaying = true;
+
+      const anchor = document.getElementById("sessionAnchor");
+      if (anchor) {
+        anchor.play().catch(() => {});
+      }
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.playbackState = "playing";
+      }
+
       btnPlayPause.textContent = '⏸ 暂停';
     }
 
@@ -388,6 +406,15 @@
         currentSource = null;
       }
       isPlaying = false;
+
+      const anchor = document.getElementById("sessionAnchor");
+      if (anchor) {
+        anchor.pause();
+      }
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.playbackState = "paused";
+      }
+
       btnPlayPause.textContent = '▶ 播放';
     }
 
@@ -693,5 +720,6 @@
     // =============================================================
 
   </script>
+<audio id="sessionAnchor" loop playsinline style="display:none;" src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="></audio>
 </body>
 </html>
