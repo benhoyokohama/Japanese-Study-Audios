@@ -331,63 +331,58 @@
       return `${m}:${s}`;
     }
 
-    const nativeAudio = document.getElementById("nativeAudio");
-    const speedSelect = document.getElementById("speedSelect");
-    let audioCtxNode = null;
-
-    if (nativeAudio) {
-      nativeAudio.preservesPitch = true;
-      nativeAudio.webkitPreservesPitch = true;
-      nativeAudio.mozPreservesPitch = true;
-    }
-
-    function initAudioOutput() {
-      const ctx = getAudioContext();
-      if (!audioCtxNode && nativeAudio) {
-        try {
-          audioCtxNode = ctx.createMediaElementSource(nativeAudio);
-          audioCtxNode.connect(ctx.destination);
-        } catch(e) {}
-      }
-    }
-
-    if (speedSelect && nativeAudio) {
-      speedSelect.addEventListener("change", function() {
-        nativeAudio.playbackRate = parseFloat(this.value) || 1.0;
-      });
-    }
-
     function getCurrentTime() {
-      return nativeAudio ? (nativeAudio.currentTime || 0) : 0;
+      if (!isPlaying) return startOffset;
+      return startOffset + (audioCtx.currentTime - playbackStartTime);
+    }
+
+    function toggleLoopMode() {
+      playMode = (playMode + 1) % 3;
+      if (playMode === 0) btnLoopMode.textContent = '🔂 单句循环';
+      else if (playMode === 1) btnLoopMode.textContent = '🔁 全文循环';
+      else btnLoopMode.textContent = '➡️ 顺序播放';
+    }
+
+    function highlightSentence(idx) {
+      document.querySelectorAll('.sentence-card').forEach((c, i) => {
+        c.classList.toggle('active', i === idx);
+      });
+      const card = document.getElementById(`card-${idx}`);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      if (statusText) statusText.textContent = `播放中: 第 ${idx + 1} / ${sentences.length} 句`;
     }
 
     function playAtTime(offsetSec) {
-      if (!nativeAudio) return;
+      if (!audioBuffer) return;
       const ctx = getAudioContext();
-      initAudioOutput();
 
-      const totalDur = nativeAudio.duration || 0;
-      let target = Math.max(0, totalDur > 0 ? Math.min(offsetSec, totalDur) : offsetSec);
+      if (currentSource) {
+        try { currentSource.stop(); } catch(e) {}
+        currentSource.disconnect();
+        currentSource = null;
+      }
 
-      nativeAudio.currentTime = target;
-      if (speedSelect) nativeAudio.playbackRate = parseFloat(speedSelect.value) || 1.0;
+      const totalDur = audioBuffer.duration;
+      let target = Math.max(0, Math.min(offsetSec, totalDur));
 
-      nativeAudio.play().then(() => {
-        isPlaying = true;
-        btnPlayPause.textContent = "⏸ 暂停";
-        if (topPlayBtn) topPlayBtn.textContent = "⏸";
-      }).catch(err => {
-        console.warn("Autoplay deferred:", err);
-      });
+      currentSource = ctx.createBufferSource();
+      currentSource.buffer = audioBuffer;
+      currentSource.connect(ctx.destination);
+
+      playbackStartTime = ctx.currentTime;
+      startOffset = target;
+      currentSource.start(0, target);
+      isPlaying = true;
+      btnPlayPause.textContent = '⏸ 暂停';
     }
 
     function pauseAudio() {
-      if (!nativeAudio) return;
-      nativeAudio.pause();
-      isPlaying = false;
-      btnPlayPause.textContent = "▶ 播放";
-      if (topPlayBtn) topPlayBtn.textContent = "▶";
-    } catch(e) {}
+      if (!isPlaying) return;
+      startOffset = getCurrentTime();
+      if (currentSource) {
+        try { currentSource.stop(); } catch(e) {}
         currentSource.disconnect();
         currentSource = null;
       }
@@ -656,6 +651,5 @@
     }
 
   </script>
-<audio id="nativeAudio" playsinline preload="auto" style="display:none;"></audio>
 </body>
 </html>
