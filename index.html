@@ -149,6 +149,42 @@
       font-size: 0.65em;
       color: #64748b;
     }
+    .cn-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      white-space: pre-wrap !important;
+      word-break: break-word !important;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #e2e8f0;
+    }
+    details.analysis-details {
+      margin-top: 10px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #f8fafc;
+      overflow: hidden;
+      font-size: 0.85rem;
+    }
+    details.analysis-details summary {
+      padding: 8px 12px;
+      font-weight: 600;
+      color: #3b82f6;
+      cursor: pointer;
+      user-select: none;
+      background: #eff6ff;
+      outline: none;
+    }
+    details.analysis-details[open] summary {
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .analysis-content {
+      padding: 10px 12px;
+      line-height: 1.65;
+      color: #334155;
+      background: #ffffff;
+    }
     footer {
       position: fixed;
       bottom: 0;
@@ -327,10 +363,6 @@
       currentSource.start(0, target);
       isPlaying = true;
       btnPlayPause.textContent = '⏸ 暂停';
-
-      currentSource.onended = () => {
-        // 自然播放结束
-      };
     }
 
     function pauseAudio() {
@@ -361,6 +393,18 @@
       playAtTime(targetTime);
     }
 
+    function handleEndAction() {
+      if (playMode === 0) {
+        playSentence(currentIndex);
+      } else if (playMode === 1) {
+        if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
+        else playSentence(0);
+      } else if (playMode === 2) {
+        if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
+        else playNextLesson();
+      }
+    }
+
     function nextSentence() {
       if (!sentences || sentences.length === 0) return;
       if (currentIndex < sentences.length - 1) {
@@ -388,7 +432,6 @@
       loadLesson(options[next].value, 0, true);
     }
 
-    // 播放心跳：负责更新进度条与句子结束自动切句
     clearInterval(tickerInterval);
     tickerInterval = setInterval(() => {
       if (!audioBuffer) return;
@@ -403,17 +446,9 @@
 
       if (isPlaying && sentences && sentences[currentIndex]) {
         const s = sentences[currentIndex];
-        const endTime = Number(s.end) || dur;
+        const endTime = Math.min(Number(s.end) || dur, dur);
         if (cur >= endTime - 0.05) {
-          if (playMode === 0) {
-            playSentence(currentIndex);
-          } else if (playMode === 1) {
-            if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
-            else playSentence(0);
-          } else if (playMode === 2) {
-            if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
-            else playNextLesson();
-          }
+          handleEndAction();
         }
       }
     }, 100);
@@ -435,8 +470,9 @@
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = (sentences[idx].jp || '').replace(/<rt>.*?<\/rt>/g, '').replace(/<\/?ruby>/g, '');
       const rawJp = tempDiv.textContent.trim();
+      const textToCopy = rawJp + (sentences[idx].cn ? "\n" + sentences[idx].cn : "");
 
-      navigator.clipboard.writeText(rawJp).then(() => {
+      navigator.clipboard.writeText(textToCopy).then(() => {
         btn.textContent = '✅';
         setTimeout(() => { btn.textContent = '📋'; }, 1200);
       });
@@ -453,6 +489,21 @@
         const startT = (s.start !== undefined) ? s.start.toFixed(2) : '0.00';
         const endT = (s.end !== undefined) ? s.end.toFixed(2) : '0.00';
 
+        let cnHtml = '';
+        if (s.cn && s.cn.trim() !== '') {
+          cnHtml = `<div class="cn-text">${s.cn}</div>`;
+        }
+
+        let grammarHtml = '';
+        if (s.analysis && s.analysis.trim() !== '') {
+          grammarHtml = `
+            <details class="analysis-details" onclick="event.stopPropagation();">
+              <summary>📚 词汇与语法解析（点击展开）</summary>
+              <div class="analysis-content">${s.analysis}</div>
+            </details>
+          `;
+        }
+
         card.innerHTML = `
           <div class="card-top">
             <span>句 ${s.id || idx + 1} &nbsp; [${startT}s - ${endT}s]</span>
@@ -462,6 +513,8 @@
             </div>
           </div>
           <div class="jp-text">${s.jp || ''}</div>
+          ${cnHtml}
+          ${grammarHtml}
         `;
         cardsList.appendChild(card);
       });
