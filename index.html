@@ -231,6 +231,28 @@
       color: #fff;
       border-color: var(--primary);
     }
+  
+    .speed-btn {
+      padding: 5px 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #f1f5f9;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .top-play-btn {
+      background: none;
+      border: none;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: var(--primary);
+      padding: 0 4px;
+      line-height: 1;
+    }
+
   </style>
 </head>
 <body>
@@ -253,6 +275,7 @@
           <option value="2026-301">第 301 课：N3 文字词汇·あ行 (二)</option>
           <option value="2026-302">第 302 课：N3 文字词汇·あ行 (三)</option>
         </select>
+        <button class="speed-btn" id="speedBtn" onclick="cycleSpeed()">1.0x</button>
         <select id="timerSelect">
           <option value="0">⏱ 关</option>
           <option value="15">⏱ 15m</option>
@@ -262,6 +285,7 @@
       </div>
     </div>
     <div class="progress-bar-wrap">
+      <button class="top-play-btn" id="topPlayBtn" onclick="togglePlayPause()">▶</button>
       <span id="timeCurrent">0:00</span>
       <input type="range" id="seekSlider" class="custom-range" min="0" max="100" value="0">
       <span id="timeDuration">0:00</span>
@@ -361,9 +385,10 @@
 
       playbackStartTime = ctx.currentTime;
       startOffset = target;
+      if (currentSource.playbackRate) { try { currentSource.playbackRate.value = currentSpeed; } catch(e){} }
       currentSource.start(0, target);
       isPlaying = true;
-      btnPlayPause.textContent = '⏸ 暂停';
+      btnPlayPause.textContent = '⏸ 暂停'; syncTopPlayBtn(true);
     }
 
     function pauseAudio() {
@@ -375,7 +400,7 @@
         currentSource = null;
       }
       isPlaying = false;
-      btnPlayPause.textContent = '▶ 播放';
+      btnPlayPause.textContent = '▶ 播放'; syncTopPlayBtn(false);
     }
 
     function togglePlayPause() {
