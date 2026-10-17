@@ -565,56 +565,50 @@
     }
 
     
-    // ------------------ 倒计时自动停止功能 ------------------
-    let sleepRemainingSec = 0;
-    let sleepInterval = null;
-
-    timerSelect.onchange = () => {
-      const minutes = parseInt(timerSelect.value, 10);
-      if (sleepInterval) clearInterval(sleepInterval);
-
-      if (minutes === 0) {
-        sleepRemainingSec = 0;
-        resetTimerOptions();
-        return;
-      }
-
-      sleepRemainingSec = minutes * 60;
-      updateTimerDisplay(minutes);
-
-      sleepInterval = setInterval(() => {
-        sleepRemainingSec--;
-        if (sleepRemainingSec <= 0) {
-          clearInterval(sleepInterval);
-          pauseAudio(); // 时间到，暂停播放
-          timerSelect.value = "0";
-          resetTimerOptions();
-        } else {
-          const remMinutes = Math.ceil(sleepRemainingSec / 60);
-          updateTimerDisplay(remMinutes);
-        }
-      }, 1000);
-    };
-
-    function updateTimerDisplay(m) {
-      const curVal = timerSelect.value;
-      Array.from(timerSelect.options).forEach(opt => {
-        if (opt.value === curVal) {
-          opt.text = `⏱ ${m}m`;
-        }
-      });
-    }
-
-    function resetTimerOptions() {
-      const defaults = {"0": "⏱ 关", "15": "⏱ 15m", "30": "⏱ 30m", "60": "⏱ 60m"};
-      Array.from(timerSelect.options).forEach(opt => {
-        if (defaults[opt.value]) opt.text = defaults[opt.value];
-      });
-    }
-    // --------------------------------------------------------
+    
 
     lessonSelect.onchange = () => loadLesson(lessonSelect.value, 0, false);
     loadLesson(lessonSelect.value || '2026-300', 0, false);
+  
+    // ==================== 倒计时停止逻辑 ====================
+    let sleepSecondsLeft = 0;
+    let sleepTimerId = null;
+
+    if (timerSelect) {
+      timerSelect.addEventListener("change", function() {
+        const val = parseInt(this.value, 10);
+        if (sleepTimerId) {
+          clearInterval(sleepTimerId);
+          sleepTimerId = null;
+        }
+
+        if (val === 0) {
+          sleepSecondsLeft = 0;
+          this.options[0].text = "⏱ 关";
+          return;
+        }
+
+        sleepSecondsLeft = val * 60;
+        this.options[this.selectedIndex].text = `⏱ ${val}m`;
+
+        sleepTimerId = setInterval(() => {
+          sleepSecondsLeft--;
+          if (sleepSecondsLeft <= 0) {
+            clearInterval(sleepTimerId);
+            sleepTimerId = null;
+            pauseAudio(); // 时间到，立刻暂停
+            timerSelect.value = "0";
+            timerSelect.options[0].text = "⏱ 关";
+            alert("⏰ 倒计时结束，音频已自动暂停");
+          } else {
+            const mins = Math.ceil(sleepSecondsLeft / 60);
+            timerSelect.options[timerSelect.selectedIndex].text = `⏱ ${mins}m`;
+          }
+        }, 1000);
+      });
+    }
+    // =======================================================
+
   </script>
 </body>
 </html>
