@@ -570,9 +570,15 @@
     lessonSelect.onchange = () => loadLesson(lessonSelect.value, 0, false);
     loadLesson(lessonSelect.value || '2026-300', 0, false);
   
-    // ==================== 倒计时停止逻辑 ====================
+    // ==================== 倒计时停止逻辑 (精确到秒) ====================
     let sleepSecondsLeft = 0;
     let sleepTimerId = null;
+
+    function formatTimerDisplay(totalSeconds) {
+      const m = Math.floor(totalSeconds / 60);
+      const s = Math.floor(totalSeconds % 60).toString().padStart(2, "0");
+      return `⏱ ${m}:${s}`;
+    }
 
     if (timerSelect) {
       timerSelect.addEventListener("change", function() {
@@ -582,27 +588,32 @@
           sleepTimerId = null;
         }
 
+        // 恢复所有选项的默认文字
+        const defaults = {"0": "⏱ 关", "15": "⏱ 15m", "30": "⏱ 30m", "60": "⏱ 60m"};
+        Array.from(this.options).forEach(opt => {
+          if (defaults[opt.value]) opt.text = defaults[opt.value];
+        });
+
         if (val === 0) {
           sleepSecondsLeft = 0;
-          this.options[0].text = "⏱ 关";
           return;
         }
 
         sleepSecondsLeft = val * 60;
-        this.options[this.selectedIndex].text = `⏱ ${val}m`;
+        this.options[this.selectedIndex].text = formatTimerDisplay(sleepSecondsLeft);
 
         sleepTimerId = setInterval(() => {
           sleepSecondsLeft--;
           if (sleepSecondsLeft <= 0) {
             clearInterval(sleepTimerId);
             sleepTimerId = null;
-            pauseAudio(); // 时间到，立刻暂停
+            pauseAudio(); // 时间到自动暂停
             timerSelect.value = "0";
-            timerSelect.options[0].text = "⏱ 关";
-            alert("⏰ 倒计时结束，音频已自动暂停");
+            Array.from(timerSelect.options).forEach(opt => {
+              if (defaults[opt.value]) opt.text = defaults[opt.value];
+            });
           } else {
-            const mins = Math.ceil(sleepSecondsLeft / 60);
-            timerSelect.options[timerSelect.selectedIndex].text = `⏱ ${mins}m`;
+            timerSelect.options[timerSelect.selectedIndex].text = formatTimerDisplay(sleepSecondsLeft);
           }
         }, 1000);
       });
