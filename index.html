@@ -352,6 +352,7 @@
         card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
       if (statusText) statusText.textContent = `播放中: 第 ${idx + 1} / ${sentences.length} 句`;
+      updateMediaSessionInfo(idx);
     }
 
     function playAtTime(offsetSec) {
@@ -649,6 +650,47 @@
         if (btnPlayPause) btnPlayPause.click();
       };
     }
+
+  
+    // ==================== 蓝牙耳机线控与锁屏中心 ====================
+    function updateMediaSessionInfo(sentenceIdx) {
+      if (!("mediaSession" in navigator)) return;
+      
+      const s = sentences && sentences[sentenceIdx] ? sentences[sentenceIdx] : null;
+      let titleText = "随身日语跟读";
+      if (s) {
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = (s.jp || "").replace(/<rt>.*?<\/rt>/g, "").replace(/<\/?ruby>/g, "");
+        titleText = tempDiv.textContent.trim() || `第 ${sentenceIdx + 1} 句`;
+      }
+
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: titleText,
+        artist: lessonSelect ? lessonSelect.options[lessonSelect.selectedIndex].text : "随身日语",
+        album: "日语听力与词汇练习"
+      });
+    }
+
+    if ("mediaSession" in navigator) {
+      // 耳机单击：播放 / 暂停
+      navigator.mediaSession.setActionHandler("play", () => {
+        if (!isPlaying) togglePlayPause();
+      });
+      navigator.mediaSession.setActionHandler("pause", () => {
+        if (isPlaying) togglePlayPause();
+      });
+
+      // 耳机双击（下一曲）：切到下一句
+      navigator.mediaSession.setActionHandler("nexttrack", () => {
+        nextSentence();
+      });
+
+      // 耳机三击（上一曲）：切到上一句
+      navigator.mediaSession.setActionHandler("previoustrack", () => {
+        prevSentence();
+      });
+    }
+    // =============================================================
 
   </script>
 </body>
