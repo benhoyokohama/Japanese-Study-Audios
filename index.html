@@ -242,20 +242,6 @@
       line-height: 1;
     }
 
-  
-    #speedSelect {
-      width: 70px;
-      padding: 6px 4px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #fff;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: #1e293b;
-      outline: none;
-      text-align: center;
-    }
-
   </style>
 </head>
 <body>
@@ -277,12 +263,6 @@
           <option selected value="2026-300">第 300 课：N3 文字词汇·あ行 (一)</option>
           <option value="2026-301">第 301 课：N3 文字词汇·あ行 (二)</option>
           <option value="2026-302">第 302 课：N3 文字词汇·あ行 (三)</option>
-        </select>
-        <select id="speedSelect">
-          <option value="0.8">0.8x</option>
-          <option value="1.0" selected>1.0x</option>
-          <option value="1.2">1.2x</option>
-          <option value="1.5">1.5x</option>
         </select>
         <select id="timerSelect">
           <option value="0">⏱ 关</option>
@@ -375,7 +355,7 @@
     }
 
     function playAtTime(offsetSec) {
-      if (!nativeAudio || !nativeAudio.duration) return;
+      if (!audioBuffer) return;
       const ctx = getAudioContext();
 
       if (currentSource) {
@@ -384,7 +364,7 @@
         currentSource = null;
       }
 
-      const totalDur = nativeAudio.duration;
+      const totalDur = audioBuffer.duration;
       let target = Math.max(0, Math.min(offsetSec, totalDur));
 
       currentSource = ctx.createBufferSource();
@@ -467,9 +447,9 @@
 
     clearInterval(tickerInterval);
     tickerInterval = setInterval(() => {
-      if (!nativeAudio || !nativeAudio.duration) return;
+      if (!audioBuffer) return;
       const cur = getCurrentTime();
-      const dur = nativeAudio.duration;
+      const dur = audioBuffer.duration;
 
       timeCurrent.textContent = formatTime(cur);
       if (topPlayBtn) topPlayBtn.textContent = isPlaying ? '⏸' : '▶';
@@ -488,14 +468,14 @@
     }, 100);
 
     seekSlider.oninput = () => {
-      if (!nativeAudio || !nativeAudio.duration) return;
-      const target = (seekSlider.value / 100) * nativeAudio.duration;
+      if (!audioBuffer) return;
+      const target = (seekSlider.value / 100) * audioBuffer.duration;
       timeCurrent.textContent = formatTime(target);
     };
 
     seekSlider.onchange = () => {
-      if (!nativeAudio || !nativeAudio.duration) return;
-      const target = (seekSlider.value / 100) * nativeAudio.duration;
+      if (!audioBuffer) return;
+      const target = (seekSlider.value / 100) * audioBuffer.duration;
       playAtTime(target);
       // 拖动释放后，自动在课文列表中定位匹配的生词并高亮
       if (sentences && sentences.length > 0) {
@@ -564,34 +544,40 @@
 
     async function loadLesson(lessonId, startSentenceIdx = 0, autoPlay = false) {
       pauseAudio();
-      statusText.textContent = "正在加载课文与音频...";
+      startOffset = 0;
+      audioBuffer = null;
+      statusText.textContent = '正在解码音频与课文...';
 
       try {
         const jsonUrl = `./lessons/${lessonId}.json?t=${Date.now()}`;
         const mp3Url = `./lessons/${lessonId}.mp3?t=${Date.now()}`;
 
-        const jsonRes = await fetch(jsonUrl);
+        const [jsonRes, mp3Res] = await Promise.all([
+          fetch(jsonUrl),
+          fetch(mp3Url)
+        ]);
+
         if (!jsonRes.ok) throw new Error(`课文加载失败: ${jsonRes.status}`);
+        if (!mp3Res.ok) throw new Error(`音频加载失败: ${mp3Res.status}`);
+
         sentences = await jsonRes.json();
+        const arrayBuf = await mp3Res.arrayBuffer();
 
-        nativeAudio.src = mp3Url;
-        nativeAudio.load();
+        const ctx = getAudioContext();
+        audioBuffer = await ctx.decodeAudioData(arrayBuf);
 
-        nativeAudio.onloadedmetadata = () => {
-          timeDuration.textContent = formatTime(nativeAudio.duration);
-        };
-
+        timeDuration.textContent = formatTime(audioBuffer.duration);
         currentIndex = startSentenceIdx;
         renderCards();
         highlightSentence(currentIndex);
-        statusText.textContent = "准备就绪";
+        statusText.textContent = '准备就绪';
 
         if (autoPlay) {
           playSentence(currentIndex);
         }
       } catch (err) {
         console.error(err);
-        statusText.textContent = "⚠️ 加载失败: " + err.message;
+        statusText.textContent = '⚠️ 加载失败: ' + err.message;
         cardsList.innerHTML = `<div style="padding:20px;text-align:center;color:#ef4444;background:#fee2e2;border-radius:10px;">
           加载失败: ${err.message}<br><br>
           <button onclick="location.reload()" style="padding:6px 12px;cursor:pointer;">刷新重试</button>
@@ -665,6 +651,5 @@
     }
 
   </script>
-<audio id="nativeAudio" style="display:none;" playsinline preload="auto"></audio>
 </body>
 </html>
