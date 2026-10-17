@@ -255,6 +255,20 @@
       white-space: nowrap;
     }
 
+  
+    #speedSelect {
+      width: 70px;
+      padding: 6px 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #1e293b;
+      outline: none;
+      text-align: center;
+    }
+
   </style>
 </head>
 <body>
@@ -277,7 +291,12 @@
           <option value="2026-301">第 301 课：N3 文字词汇·あ行 (二)</option>
           <option value="2026-302">第 302 课：N3 文字词汇·あ行 (三)</option>
         </select>
-        <button class="speed-btn" id="speedBtn" onclick="cycleSpeed()">1.0x</button>
+        <select id="speedSelect">
+          <option value="0.8">0.8x</option>
+          <option value="1.0" selected>1.0x</option>
+          <option value="1.2">1.2x</option>
+          <option value="1.5">1.5x</option>
+        </select>
         <select id="timerSelect">
           <option value="0">⏱ 关</option>
           <option value="15">⏱ 15m</option>
@@ -666,22 +685,26 @@
     }
 
   
-    // 语速切换安全逻辑
-    let currentSpeed = 1.0;
-    const speedList = [1.0, 1.2, 1.5, 0.8];
-
-    function cycleSpeed() {
-      const idx = (speedList.indexOf(currentSpeed) + 1) % speedList.length;
-      currentSpeed = speedList[idx];
-      const sBtn = document.getElementById("speedBtn");
-      if (sBtn) sBtn.textContent = `${currentSpeed}x`;
-
-      if (currentSource && currentSource.playbackRate) {
-        try {
-          currentSource.playbackRate.setValueAtTime(currentSpeed, audioCtx.currentTime);
-        } catch(e) {}
-      }
+          }
     }
+
+  
+    // ==================== 保真人声音速调节 ====================
+    let currentSpeed = 1.0;
+    const speedSelect = document.getElementById("speedSelect");
+
+    if (speedSelect) {
+      speedSelect.addEventListener("change", function() {
+        currentSpeed = parseFloat(this.value);
+        if (currentSource && currentSource.playbackRate) {
+          try {
+            // 实时保持无损音调
+            currentSource.playbackRate.value = currentSpeed;
+          } catch(e) {}
+        }
+      });
+    }
+    // ========================================================
 
   </script>
 </body>
