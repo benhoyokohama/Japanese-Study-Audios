@@ -11,6 +11,7 @@ window.LESSONS_CONFIG = [
   { id: "2026-201", title: "第 201 课：秀吉の全国統一と大坂城" },
   { id: "2026-300", title: "第 300 课：N3 文字词汇·あ行 (一)" },
   { id: "2026-301", title: "第 301 课：N3 文字词汇·あ行 (二)" },
-  { id: "2026-302", title: "第 302 课：N3 文字词汇·あ行 (三)", default: true },
+  { id: "2026-302", title: "第 302 课：N3 文字词汇·あ行 (三)", default: false },
   { id: "2026-303", title: "第 303 课：N3 文字词汇·あ行 (收尾)", default: false},
+  { id: "2026-304", title: "第 304 课：N3 文字词汇·い行 (一)", default: true },
 ];
