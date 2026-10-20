@@ -1,142 +1,242 @@
 [
   {
     "id": 1,
-    "start": 0.0,
-    "end": 10.94,
-    "jp": "<ruby>現<rt>あらわ</rt></ruby>れる ④ [自動2] 出现，出来；显现，露出\n△<ruby>月<rt>つき</rt></ruby>が<ruby>現<rt>あらわ</rt></ruby>れる。/ 月亮出来。\n△<ruby>効果<rt>こうか</rt></ruby>が<ruby>現<rt>あらわ</rt></ruby>れる。/ 效果显现出来。",
+    "word_id": "1-91",
+    "start": 0.2,
+    "end": 19.09,
+    "jp": "【1-91】 <ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby> ③② [名] 生物，动物；有生命力的东西，活的东西\n△<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>を<ruby>可愛<rt>かわい</rt></ruby>がる。/ 爱护生物。\n△<ruby>文章<rt>ぶんしょう</rt></ruby>は<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>だ。/ 文章是活的东西。",
     "cn": ""
   },
   {
     "id": 2,
-    "start": 10.94,
-    "end": 21.87,
-    "jp": "<ruby>表<rt>あらわ</rt></ruby>れる ③ [自動2] 表现，显出\n△<ruby>態度<rt>たいど</rt></ruby>に<ruby>表<rt>あらわ</rt></ruby>れる。/ 表现在态度上。\n△<ruby>努力<rt>どりょく</rt></ruby>が<ruby>結果<rt>けっか</rt></ruby>に<ruby>表<rt>あらわ</rt></ruby>れる。/ 努力有了结果。",
+    "word_id": "1-92",
+    "start": 19.09,
+    "end": 30.98,
+    "jp": "【1-92】 <ruby>育児<rt>いくじ</rt></ruby> ①⓪ [名] 育儿\n△<ruby>母<rt>はは</rt></ruby>は<ruby>育児<rt>いくじ</rt></ruby>に<ruby>忙<rt>いそが</rt></ruby>しい。/ 母亲忙于育儿。",
     "cn": ""
   },
   {
     "id": 3,
-    "start": 21.87,
-    "end": 35.7,
-    "jp": "<ruby>有難<rt>ありがた</rt></ruby>い ④ [イ形] 难得，少有；值得感谢的\n△<ruby>有難<rt>ありがた</rt></ruby>い<ruby>機会<rt>きかい</rt></ruby> / 难得的机会\n△それは<ruby>有難<rt>ありがた</rt></ruby>いことだ。/ 那太值得感谢了。",
+    "word_id": "1-93",
+    "start": 30.98,
+    "end": 53.4,
+    "jp": "【1-93】 いくらなんでも ①⑤ [副] 无论怎样，即使……也\n△いくらなんでもそのお<ruby>金<rt>かね</rt></ruby>は<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>れない。/ 无论怎样那笔钱都不能收下。\n△いくらなんでも<ruby>君<rt>きみ</rt></ruby>もあんまりだ。/ 不管怎么说你也太过分了。",
     "cn": ""
   },
   {
     "id": 4,
-    "start": 35.7,
-    "end": 51.58,
-    "jp": "<ruby>或<rt>ある</rt></ruby>いは ② [副・接] 或是，或者；也许，或许\n△コーヒー<ruby>或<rt>ある</rt></ruby>いはジュースを<ruby>飲<rt>の</rt></ruby>む。/ 喝咖啡或者果汁。\n△<ruby>明日<rt>あした</rt></ruby>は<ruby>或<rt>ある</rt></ruby>いは<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るかもしれない。/ 明天也许要下雨。",
+    "word_id": "1-94",
+    "start": 53.4,
+    "end": 71.55,
+    "jp": "【1-94】 <ruby>以後<rt>いご</rt></ruby> ① [名] 今后，将来；（某时期、时间）之后\n△<ruby>以後<rt>いご</rt></ruby><ruby>気<rt>き</rt></ruby>をつけるように。/ 今后要小心。\n△<ruby>六時<rt>ろくじ</rt></ruby><ruby>以後<rt>いご</rt></ruby>は<ruby>会社<rt>かいしゃ</rt></ruby>にいません。/ 六点之后不在办公室。",
     "cn": ""
   },
   {
     "id": 5,
-    "start": 51.58,
-    "end": 62.34,
-    "jp": "<ruby>歩<rt>ある</rt></ruby>き<ruby>回<rt>まわ</rt></ruby>る ⑤⓪ [自動1] 走遍，到处走\n△<ruby>田舎<rt>いなか</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>き<ruby>回<rt>まわ</rt></ruby>る。/ 在乡间到处走。",
+    "word_id": "1-95",
+    "start": 71.55,
+    "end": 83.51,
+    "jp": "【1-95】 イコール ② [名] 等于，相等；等号\n△AイコールB / A等于B",
     "cn": ""
   },
   {
     "id": 6,
-    "start": 62.34,
-    "end": 73.65,
-    "jp": "アルバイト ③ [名] （课余时间）打工，工读\n△アルバイトに<ruby>家庭教師<rt>かていきょうし</rt></ruby>をしている。/ 打工当家庭教师。",
+    "word_id": "1-96",
+    "start": 83.51,
+    "end": 95.2,
+    "jp": "【1-96】 <ruby>意志<rt>いし</rt></ruby> ① [名] 意志，意向，志向\n△<ruby>意志<rt>いし</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>い<ruby>人<rt>ひと</rt></ruby> / 意志坚强的人",
     "cn": ""
   },
   {
     "id": 7,
-    "start": 73.65,
-    "end": 88.46,
-    "jp": "あれくらい／あれぐらい ⑤⓪ [副] 那么，那般\n△あれくらい<ruby>暑<rt>あつ</rt></ruby>い<ruby>日<rt>ひ</rt></ruby>は<ruby>体験<rt>たいけん</rt></ruby>したことがない。/ 从来没有遇到过那么炎热的日子。",
+    "word_id": "1-97",
+    "start": 95.2,
+    "end": 105.91,
+    "jp": "【1-97】 <ruby>医師<rt>いし</rt></ruby> ① [名] 医生，大夫\n△<ruby>医師資格<rt>いししかく</rt></ruby> / 医生资格",
     "cn": ""
   },
   {
     "id": 8,
-    "start": 88.46,
-    "end": 99.38,
-    "jp": "あれこれ ② [名・副] 这个那个，种种\n△あれこれ<ruby>考<rt>かんが</rt></ruby>えて<ruby>眠<rt>ねむ</rt></ruby>れなかった。/ 想这想那，睡不着。\n△あれこれ<ruby>不都合<rt>ふつごう</rt></ruby>な<ruby>事情<rt>じじょう</rt></ruby>がある。/ 有种种不方便。",
+    "word_id": "1-98",
+    "start": 105.91,
+    "end": 132.97,
+    "jp": "【1-98】 <ruby>意識<rt>いしき</rt></ruby> ① [名・他動3] 意识，认识；神智，知觉；自觉\n△<ruby>存在<rt>そんざい</rt></ruby>が<ruby>意識<rt>いしき</rt></ruby>を<ruby>決定<rt>けってい</rt></ruby>する。/ 存在决定意识。\n△<ruby>車<rt>くるま</rt></ruby>にぶつかって<ruby>意識<rt>いしき</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う。/ 撞在车上失去知觉。\n△<ruby>自分<rt>じぶん</rt></ruby>の<ruby>不足<rt>ふそく</rt></ruby>を<ruby>意識<rt>いしき</rt></ruby>する。/ 认识到自己的不足。",
     "cn": ""
   },
   {
     "id": 9,
-    "start": 99.38,
-    "end": 111.63,
-    "jp": "あれほど ⓪ [副] 那样，那么\n△あれほど<ruby>汚<rt>きたな</rt></ruby>いのに、<ruby>洗濯<rt>せんたく</rt></ruby>もしないで<ruby>着<rt>き</rt></ruby>ている。/ 明明那么脏了，洗都没洗就穿了。",
+    "word_id": "1-99",
+    "start": 132.97,
+    "end": 145.52,
+    "jp": "【1-99】 <ruby>苛<rt>いじ</rt></ruby>め ⓪ [名] （学校）暴力欺负，欺凌\n△<ruby>苛<rt>いじ</rt></ruby>め<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>こった。/ 发生了（校园）欺凌事件。",
     "cn": ""
   },
   {
     "id": 10,
-    "start": 111.63,
-    "end": 121.92,
-    "jp": "アレルギー ③ [名] （医）过敏，变态反应\n△アレルギー<ruby>体質<rt>たいしつ</rt></ruby> / 过敏性体质\n△<ruby>卵<rt>たまご</rt></ruby>アレルギー / 对鸡蛋过敏",
+    "word_id": "1-100",
+    "start": 145.52,
+    "end": 163.0,
+    "jp": "【1-100】 <ruby>意地悪<rt>いじわる</rt></ruby> ③ [名・ナ形] 使坏，刁难，捉弄\n△<ruby>人<rt>ひと</rt></ruby>に<ruby>意地悪<rt>いじわる</rt></ruby>をする。/ 捉弄人。\n△<ruby>意地悪<rt>いじわる</rt></ruby>そうな<ruby>笑<rt>わら</rt></ruby>い / 坏笑",
     "cn": ""
   },
   {
     "id": 11,
-    "start": 121.92,
-    "end": 131.46,
-    "jp": "<ruby>泡<rt>あわ</rt></ruby> ⓪ [名] 泡，沫，水花儿\n△<ruby>石鹸<rt>せっけん</rt></ruby>の<ruby>泡<rt>あわ</rt></ruby> / 肥皂泡\n△<ruby>泡<rt>あわ</rt></ruby>が<ruby>立<rt>た</rt></ruby>つ。/ 起泡。",
+    "word_id": "1-101",
+    "start": 163.0,
+    "end": 180.17,
+    "jp": "【1-101】 <ruby>異常<rt>いじょう</rt></ruby> ⓪ [名・ナ形] 异常，怪异，不正常\n△<ruby>体<rt>からだ</rt></ruby>に<ruby>異常<rt>いじょう</rt></ruby>がない。/ 身体没有异常。\n△<ruby>異常<rt>いじょう</rt></ruby>な<ruby>行動<rt>こうどう</rt></ruby> / 怪异的行动",
     "cn": ""
   },
   {
     "id": 12,
-    "start": 131.46,
-    "end": 151.71,
-    "jp": "<ruby>合<rt>あ</rt></ruby>わせる ③ [他動2] 合二为一，合并；使一致\n△<ruby>二<rt>ふた</rt></ruby>つの<ruby>部屋<rt>へや</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせて<ruby>一<rt>ひと</rt></ruby>つの<ruby>部屋<rt>へや</rt></ruby>に<ruby>改造<rt>かいぞう</rt></ruby>する。/ 将两间屋子合并成一间。\n△<ruby>力<rt>ちから</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせて<ruby>働<rt>はたら</rt></ruby>く。/ 同心协力地工作。\n△<ruby>調子<rt>ちょうし</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる。/ 使步调一致。",
+    "word_id": "1-102",
+    "start": 180.17,
+    "end": 192.27,
+    "jp": "【1-102】 <ruby>衣食住<rt>いしょくじゅう</rt></ruby> ③⓪ [名] 吃穿住\n△<ruby>衣食住<rt>いしょくじゅう</rt></ruby>に<ruby>困<rt>こま</rt></ruby>らない。/ 不愁吃穿住。",
     "cn": ""
   },
   {
     "id": 13,
-    "start": 151.71,
-    "end": 162.88,
-    "jp": "<ruby>慌<rt>あわ</rt></ruby>ただしい ⑤ [イ形] 慌张，匆忙；繁忙\n△<ruby>慌<rt>あわ</rt></ruby>ただしく<ruby>入<rt>はい</rt></ruby>ってくる。/ 慌张地走进来。\n△<ruby>慌<rt>あわ</rt></ruby>ただしい<ruby>都市生活<rt>としせいかつ</rt></ruby> / 繁忙的都市生活",
+    "word_id": "1-103",
+    "start": 192.27,
+    "end": 210.61,
+    "jp": "【1-103】 いずれ ⓪ [名・副] 哪个；早晚，迟早会\n△いずれがよいかわからない。/ 不知道哪个好。\n△いずれはわかってくれるだろう。/ 迟早会理解我的吧。",
     "cn": ""
   },
   {
     "id": 14,
-    "start": 162.88,
-    "end": 173.74,
-    "jp": "<ruby>暗記<rt>あんき</rt></ruby> ⓪ [名・他動3] 熟记，记住，背诵\n△<ruby>公式<rt>こうしき</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する。/ 熟记公式。\n△<ruby>習<rt>なら</rt></ruby>ったことを<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>暗記<rt>あんき</rt></ruby>する。/ 将学到的东西全部背诵下来。",
+    "word_id": "1-104",
+    "start": 210.61,
+    "end": 231.02,
+    "jp": "【1-104】 いずれにせよ ④ [連語] 反正，总之；（两者中）不管哪一个\n△いずれにせよよくないことだ。/ 反正不是好事情。\n△いずれにせよ<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>んでください。/ 请任选其中一个。",
     "cn": ""
   },
   {
     "id": 15,
-    "start": 173.74,
-    "end": 183.95,
-    "jp": "アンケート ①③ [名] 问卷调查，民意测验\n△アンケートをとる。/ 进行问卷调查。",
+    "word_id": "1-105",
+    "start": 231.02,
+    "end": 244.9,
+    "jp": "【1-105】 いずれにしても ④ [連語] 反正，总之，不管怎样\n△いずれにしても<ruby>無理<rt>むり</rt></ruby>だ。/ 不管怎样是做不到的。",
     "cn": ""
   },
   {
     "id": 16,
-    "start": 183.95,
-    "end": 195.33,
-    "jp": "<ruby>暗証番号<rt>あんしょうばんごう</rt></ruby> ⑤ [名] 密码\n△<ruby>暗証番号<rt>あんしょうばんごう</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>える。/ 记住密码。",
+    "word_id": "1-106",
+    "start": 244.9,
+    "end": 256.66,
+    "jp": "【1-106】 いずれまた ⓪ [副] 改日，过几天\n△いずれまた<ruby>行<rt>い</rt></ruby>く。/ 改日再去一次。",
     "cn": ""
   },
   {
     "id": 17,
-    "start": 195.33,
-    "end": 206.05,
-    "jp": "<ruby>安全<rt>あんぜん</rt></ruby> ⓪ [名・ナ形] 安全，保险，平安\n△<ruby>安全第一主義<rt>あんぜんだいいちしゅぎ</rt></ruby> / 安全第一的原则\n△<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>安全<rt>あんぜん</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いた。/ 行李平安到达。",
+    "word_id": "1-107",
+    "start": 256.66,
+    "end": 268.54,
+    "jp": "【1-107】 いずれも ② [副] 无论哪个（人）都，全都\n△いずれも<ruby>間違<rt>まちが</rt></ruby>いだ。/ 全都是错误的。",
     "cn": ""
   },
   {
     "id": 18,
-    "start": 206.05,
-    "end": 216.22,
-    "jp": "あんた ① [代] （比「あなた」随便）你\n△あんた、<ruby>何<rt>なに</rt></ruby>しているの？/ 你干什么呢？",
+    "word_id": "1-108",
+    "start": 268.54,
+    "end": 284.85,
+    "jp": "【1-108】 <ruby>急<rt>いそ</rt></ruby>いで ② [副] 赶紧，赶快，急忙\n△<ruby>急<rt>いそ</rt></ruby>いで<ruby>書<rt>か</rt></ruby>く。/ 赶快写。\n△<ruby>急<rt>いそ</rt></ruby>いで<ruby>食<rt>た</rt></ruby>べる。/ 赶紧吃，赶快吃。",
     "cn": ""
   },
   {
     "id": 19,
-    "start": 216.22,
-    "end": 231.25,
-    "jp": "<ruby>安定<rt>あんてい</rt></ruby> ⓪ [名・自動3] 安稳，稳定；安定\n△<ruby>底<rt>そこ</rt></ruby>の<ruby>広<rt>ひろ</rt></ruby>い<ruby>瓶<rt>びん</rt></ruby>は<ruby>安定<rt>あんてい</rt></ruby>がいい。/ 底部大的瓶子放得稳。\n△<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>安定<rt>あんてい</rt></ruby>している。/ 物价稳定。",
+    "word_id": "1-109",
+    "start": 284.85,
+    "end": 301.08,
+    "jp": "【1-109】 <ruby>抱<rt>いだ</rt></ruby>く ② [他動1] 抱，搂；怀有，怀抱\n△<ruby>子供<rt>こども</rt></ruby>を<ruby>抱<rt>いだ</rt></ruby>く。/ 抱小孩。\n△<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>抱<rt>いだ</rt></ruby>く。/ 怀有梦想。",
     "cn": ""
   },
   {
     "id": 20,
-    "start": 231.25,
-    "end": 245.3,
-    "jp": "あんまり ⓪ [ナ形・副] 太，过于；（下接否定）（不）那么\n△それはあんまりな<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>だ。/ 那样说太过分了。\n△あんまり<ruby>甘<rt>あま</rt></ruby>くない。/ 不那么甜。",
+    "word_id": "1-110",
+    "start": 301.08,
+    "end": 323.1,
+    "jp": "【1-110】 <ruby>悪戯<rt>いたずら</rt></ruby> ⓪ [名・ナ形・他動3] 捉弄；（小孩）淘气，恶作剧\n△<ruby>運命<rt>うんめい</rt></ruby>の<ruby>悪戯<rt>いたずら</rt></ruby> / 命运的捉弄\n△<ruby>悪戯<rt>いたずら</rt></ruby>な<ruby>子供<rt>こども</rt></ruby> / 淘气的孩子\n△<ruby>悪戯<rt>いたずら</rt></ruby>をするな。/ 不要搞恶作剧。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "1-111",
+    "start": 323.1,
+    "end": 340.55,
+    "jp": "【1-111】 <ruby>痛<rt>いた</rt></ruby>み ③ [名] （肉体上的）疼痛；（精神上的）痛苦\n△<ruby>激<rt>はげ</rt></ruby>しい<ruby>痛<rt>いた</rt></ruby>みを<ruby>感<rt>かん</rt></ruby>じる。/ 感到剧烈的疼痛。\n△<ruby>心<rt>こころ</rt></ruby>の<ruby>痛<rt>いた</rt></ruby>みを<ruby>訴<rt>うった</rt></ruby>える。/ 倾诉内心的痛苦。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "1-112",
+    "start": 340.55,
+    "end": 359.57,
+    "jp": "【1-112】 <ruby>痛<rt>いた</rt></ruby>む ② [自動1] （肉体上的）疼痛；（精神上的）悲痛，痛苦\n△<ruby>歯<rt>は</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>む。/ 牙痛。\n△<ruby>死<rt>し</rt></ruby>んだ<ruby>親友<rt>しんゆう</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>すと<ruby>胸<rt>むね</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>む。/ 想起去世的挚友心里很悲痛。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "1-113",
+    "start": 359.57,
+    "end": 380.62,
+    "jp": "【1-113】 <ruby>痛<rt>いた</rt></ruby>める ③ [他動2] 弄疼，使疼痛；令人痛苦，伤脑筋\n△<ruby>足<rt>あし</rt></ruby>を<ruby>痛<rt>いた</rt></ruby>めてよく<ruby>歩<rt>ある</rt></ruby>けない。/ 弄伤了脚行走不便。\n△その<ruby>計画<rt>けいかく</rt></ruby>に<ruby>頭<rt>あたま</rt></ruby>を<ruby>痛<rt>いた</rt></ruby>める。/ 为了那个计划伤透脑筋。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "1-114",
+    "start": 380.62,
+    "end": 396.71,
+    "jp": "【1-114】 ～<ruby>一<rt>いち</rt></ruby> [造語] （接在名词后）……第一，……最好\n△クラス<ruby>一<rt>いち</rt></ruby>の<ruby>成績<rt>せいかく</rt></ruby> / 全班第一的成绩\n△<ruby>日本一<rt>にほんいち</rt></ruby> / 日本第一",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "1-115",
+    "start": 396.71,
+    "end": 412.92,
+    "jp": "【1-115】 <ruby>位置<rt>いち</rt></ruby> ① [名・自動3] （地理）位置；位于\n△<ruby>位置<rt>いち</rt></ruby>が<ruby>良<rt>よ</rt></ruby>い。/ 位置好。\n△<ruby>市<rt>し</rt></ruby>の<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>に<ruby>位置<rt>いち</rt></ruby>する。/ 位于市中心。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "1-116",
+    "start": 412.92,
+    "end": 424.82,
+    "jp": "【1-116】 いちいち ② [副] 一一，逐一\n△いちいち<ruby>理由<rt>りゆう</rt></ruby>をあげる。/ 逐一列举理由。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "1-117",
+    "start": 424.82,
+    "end": 446.77,
+    "jp": "【1-117】 <ruby>一応<rt>いちおう</rt></ruby> ⓪ [副] 大致，粗略；姑且，暂且\n△<ruby>一応<rt>いちおう</rt></ruby><ruby>調<rt>しら</rt></ruby>べてみた。/ （大致）查了一下。\n△もう<ruby>遅<rt>おそ</rt></ruby>いかもしれませんが、<ruby>一応<rt>いちおう</rt></ruby><ruby>行<rt>い</rt></ruby>ってみよう。/ 也许已经晚了，但姑且去看一下。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "1-118",
+    "start": 446.77,
+    "end": 457.4,
+    "jp": "【1-118】 <ruby>苺<rt>いちご</rt></ruby> ⓪① [名] 草莓\n△<ruby>苺<rt>いちご</rt></ruby>ジャム / 草莓酱",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "1-119",
+    "start": 457.4,
+    "end": 483.93,
+    "jp": "【1-119】 <ruby>一時<rt>いちじ</rt></ruby> ② [副] 某一时期；当时，那时\n△<ruby>一時<rt>いちじ</rt></ruby>は<ruby>貿易会社<rt>ぼうえきがいしゃ</rt></ruby>に<ruby>勤<rt>つと</rt></ruby>めた。/ 有一时期在贸易公司工作。\n△<ruby>一時<rt>いちじ</rt></ruby>はどうなることか<ruby>心配<rt>しんばい</rt></ruby>した。/ 当时担心不知会怎样。\n△<ruby>一時<rt>いちじ</rt></ruby>の<ruby>思<rt>おも</rt></ruby>いつき / 一时心血来潮",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "1-120",
+    "start": 483.93,
+    "end": 503.0,
+    "jp": "【1-120】 <ruby>一度<rt>いちど</rt></ruby>に ③ [副] 同时，一下子，一齐\n△<ruby>一度<rt>いちど</rt></ruby>に<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる。/ 同时涌过来。\n△<ruby>正月<rt>しょうがつ</rt></ruby>と<ruby>盆<rt>ぼん</rt></ruby>が<ruby>一度<rt>いちど</rt></ruby>に<ruby>来<rt>き</rt></ruby>たよう。/ 十分繁忙；双喜临门。",
     "cn": ""
   }
 ]

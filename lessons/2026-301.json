@@ -1,170 +1,242 @@
 [
   {
     "id": 1,
-    "start": 0.0,
-    "end": 13.56,
-    "jp": "<ruby>上<rt>あ</rt></ruby>げる ⓪ [他動2] 扬起；炸\n△<ruby>花火<rt>はなび</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げる。/ 放烟花。\n△<ruby>旗<rt>はた</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げる。/ 升旗。\n△<ruby>天麩羅<rt>てんぷら</rt></ruby>を<ruby>揚<rt>あ</rt></ruby>げる。/ 炸天妇罗。",
+    "word_id": "1-31",
+    "start": 0.2,
+    "end": 17.34,
+    "jp": "【1-31】 <ruby>暖<rt>あたた</rt></ruby>まる ④ [自動1] 暖和；感到温暖\n△<ruby>部屋<rt>へや</rt></ruby>が<ruby>暖<rt>あたた</rt></ruby>まる。/ 房间暖和。\n△<ruby>心温<rt>こころあたた</rt></ruby>まる<ruby>思<rt>おも</rt></ruby>い / 内心感到温暖的回忆",
     "cn": ""
   },
   {
     "id": 2,
-    "start": 13.56,
-    "end": 24.36,
-    "jp": "<ruby>憧<rt>あこが</rt></ruby>れる ⓪ [自動2] 向往，憧憬\n△<ruby>都会<rt>とかい</rt></ruby><ruby>生活<rt>せいかつ</rt></ruby>に<ruby>憧<rt>あこが</rt></ruby>れる。/ 向往城市生活。",
+    "word_id": "1-32",
+    "start": 17.34,
+    "end": 34.77,
+    "jp": "【1-32】 <ruby>暖<rt>あたた</rt></ruby>める ④ [他動2] 使……温暖，加热\n△ストーブで<ruby>部屋<rt>へや</rt></ruby>を<ruby>暖<rt>あたた</rt></ruby>める。/ 用火炉把屋子烘暖。\n△お<ruby>酒<rt>さけ</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>める。/ 烫酒。",
     "cn": ""
   },
   {
     "id": 3,
-    "start": 24.36,
-    "end": 35.34,
-    "jp": "<ruby>朝晩<rt>あさばん</rt></ruby> ① [名・副] 早晚，早晨和晚上；天天\n△<ruby>最近<rt>さいきん</rt></ruby>、<ruby>朝晩<rt>あさばん</rt></ruby>は<ruby>涼<rt>すず</rt></ruby>しくなった。/ 最近早晚变凉爽了。",
+    "word_id": "1-33",
+    "start": 34.77,
+    "end": 66.09,
+    "jp": "【1-33】 <ruby>当<rt>あ</rt></ruby>たる ⓪ [自動1] 碰上，撞上；命中，猜中；晒，照；相当于……\n△ボールが<ruby>頭<rt>あたま</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たった。/ 球碰在头上了。\n△くじに<ruby>当<rt>あ</rt></ruby>たる。/ 中奖。\n△<ruby>日<rt>ひ</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たる。/ 晒太阳。\n△<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>省<rt>しょう</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>の<ruby>県<rt>けん</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たる。/ 中国的省相当于日本的县。",
     "cn": ""
   },
   {
     "id": 4,
-    "start": 35.34,
-    "end": 49.24,
-    "jp": "<ruby>朝日<rt>あさひ</rt></ruby> ① [名] 朝阳，朝曦，旭日\n△<ruby>朝日<rt>あさひ</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>る。/ 旭日东升。\n△この<ruby>部屋<rt>へや</rt></ruby>は<ruby>朝日<rt>あさひ</rt></ruby>が<ruby>差<rt>さ</rt></ruby>す。/ 这个房间有朝阳照进来。",
+    "word_id": "1-34",
+    "start": 66.09,
+    "end": 79.19,
+    "jp": "【1-34】 <ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby> ⓪ [名・ナ形] 应该，理所当然\n△<ruby>借<rt>か</rt></ruby>りたお<ruby>金<rt>かね</rt></ruby>を<ruby>返<rt>かえ</rt></ruby>すのは<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>だ。/ 欠债还钱是理所当然的。",
     "cn": ""
   },
   {
     "id": 5,
-    "start": 49.24,
-    "end": 59.92,
-    "jp": "<ruby>朝飯<rt>あさめし</rt></ruby> ③ [名] 早饭，早餐\n△<ruby>朝飯<rt>あさめし</rt></ruby>はパンで<ruby>済<rt>す</rt></ruby>ます。/ 早饭吃面包对付一下。",
+    "word_id": "1-35",
+    "start": 79.19,
+    "end": 93.91,
+    "jp": "【1-35】 あっという<ruby>間<rt>ま</rt></ruby>に ⓪ [副] 眨眼间，转眼间\n△あっという<ruby>間<rt>ま</rt></ruby>に<ruby>夏休<rt>なつやす</rt></ruby>みが<ruby>終<rt>お</rt></ruby>わってしまった。/ 转眼间暑假就结束了。",
     "cn": ""
   },
   {
     "id": 6,
-    "start": 59.92,
-    "end": 71.0,
-    "jp": "<ruby>足音<rt>あしおと</rt></ruby> ③ [名] 脚步声，脚步\n△<ruby>足音<rt>あしおと</rt></ruby>がする。/ 有脚步声。",
+    "word_id": "1-36",
+    "start": 93.91,
+    "end": 118.62,
+    "jp": "【1-36】 <ruby>扱<rt>あつか</rt></ruby>う ⓪③ [他動1] 对待，招待；办理，处理（事务）；使用，操作\n△<ruby>人<rt>ひと</rt></ruby>を<ruby>優<rt>やさ</rt></ruby>しく<ruby>扱<rt>あつか</rt></ruby>う。/ 待人亲切。\n△<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みを<ruby>扱<rt>あつか</rt></ruby>う。/ 办理报名。\n△コンピューターを<ruby>扱<rt>あつか</rt></ruby>う。/ 使用计算机。",
     "cn": ""
   },
   {
     "id": 7,
-    "start": 71.0,
-    "end": 80.98,
-    "jp": "<ruby>味見<rt>あじみ</rt></ruby> ⓪ [名・他動3] 尝味道，品尝\n△<ruby>味見<rt>あじみ</rt></ruby>をする。/ 尝尝味道。",
+    "word_id": "1-37",
+    "start": 118.62,
+    "end": 135.38,
+    "jp": "【1-37】 <ruby>集<rt>あつ</rt></ruby>まり ④③ [名] 集会，聚会；汇集\n△<ruby>集<rt>あつ</rt></ruby>まりがある。/ 有集会。\n△<ruby>客<rt>きゃく</rt></ruby>の<ruby>集<rt>あつ</rt></ruby>まりが<ruby>悪<rt>わる</rt></ruby>い。/ 汇集的客人少。",
     "cn": ""
   },
   {
     "id": 8,
-    "start": 80.98,
-    "end": 97.46,
-    "jp": "<ruby>足元<rt>あしもと</rt></ruby> ③ [名] 脚下，脚步；身边\n△<ruby>転<rt>ころ</rt></ruby>ばないように、<ruby>足元<rt>あしもと</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけてください。/ 请留神脚下，不要摔倒。\n△<ruby>年<rt>とし</rt></ruby>を<ruby>取<rt>と</rt></ruby>っていて、<ruby>足元<rt>あしもと</rt></ruby>が<ruby>危<rt>あぶ</rt></ruby>ない。/ 上了年纪，脚步不稳。",
+    "word_id": "1-38",
+    "start": 135.38,
+    "end": 156.12,
+    "jp": "【1-38】 <ruby>宛先<rt>あてさき</rt></ruby> ⓪ [名] 收信人的姓名、地址\n△<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>すには<ruby>宛先<rt>あてさき</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だ。/ 寄信需要收信人的姓名、地址。\n△<ruby>宛先不明<rt>あてさきふめい</rt></ruby> / 收信人的姓名、地址不详",
     "cn": ""
   },
   {
     "id": 9,
-    "start": 97.46,
-    "end": 104.04,
-    "jp": "<ruby>明日<rt>あす</rt></ruby> ② [名] 明天",
+    "word_id": "1-39",
+    "start": 156.12,
+    "end": 173.62,
+    "jp": "【1-39】 <ruby>宛名<rt>あてな</rt></ruby> ⓪ [名] 收信人姓名（地址）\n△<ruby>宛名<rt>あてな</rt></ruby>が<ruby>間違<rt>まちが</rt></ruby>っている。/ 收信人姓名（地址）有误。\n△<ruby>宛名<rt>あてな</rt></ruby>を<ruby>書<rt>か</rt></ruby>く。/ 写收信人姓名（地址）。",
     "cn": ""
   },
   {
     "id": 10,
-    "start": 104.04,
-    "end": 117.86,
-    "jp": "<ruby>預<rt>あず</rt></ruby>ける ③ [他動2] 存放，寄托；委托，交托\n△<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける。/ 寄存行李。\n△<ruby>子供<rt>こども</rt></ruby>を<ruby>幼稚園<rt>ようちえん</rt></ruby>に<ruby>預<rt>あず</rt></ruby>ける。/ 把孩子寄托在幼儿园。",
+    "word_id": "1-40",
+    "start": 173.62,
+    "end": 189.3,
+    "jp": "【1-40】 <ruby>跡<rt>あと</rt></ruby> ① [名] 痕迹，印迹\n△<ruby>足<rt>あし</rt></ruby>の<ruby>跡<rt>あと</rt></ruby> / 足迹\n△<ruby>焼<rt>や</rt></ruby>け<ruby>跡<rt>あと</rt></ruby> / 火灾后的痕迹，废墟",
     "cn": ""
   },
   {
     "id": 11,
-    "start": 117.86,
-    "end": 129.44,
-    "jp": "<ruby>汗<rt>あせ</rt></ruby> ① [名] 汗，汗水\n△<ruby>汗<rt>あせ</rt></ruby>をかく。/ 出汗。\n△<ruby>冷や汗<rt>ひやあせ</rt></ruby>をかく。/ 出冷汗。",
+    "word_id": "1-41",
+    "start": 189.3,
+    "end": 203.06,
+    "jp": "【1-41】 アドバイス ①③ [名・他動3] 劝告，建议\n△<ruby>先輩<rt>せんぱい</rt></ruby>としてアドバイスする。/ 作为学长、前辈提出建议。",
     "cn": ""
   },
   {
     "id": 12,
-    "start": 129.44,
-    "end": 140.66,
-    "jp": "<ruby>汗臭<rt>あせくさ</rt></ruby>い ④ [形] 汗臭的，有汗酸味的\n△<ruby>汗臭<rt>あせくさ</rt></ruby>い<ruby>着物<rt>きもの</rt></ruby>を<ruby>着<rt>き</rt></ruby>ている。/ 穿着有汗臭味的衣服。",
+    "word_id": "1-42",
+    "start": 203.06,
+    "end": 209.7,
+    "jp": "【1-42】 アドレス ①② [名] 住址，地址",
     "cn": ""
   },
   {
     "id": 13,
-    "start": 140.66,
-    "end": 150.84,
-    "jp": "あたし ⓪ [代] 我（女性用语）\n△あたしも<ruby>行<rt>い</rt></ruby>きたいわよ。/ 我也想去呀。",
+    "word_id": "1-43",
+    "start": 209.7,
+    "end": 238.62,
+    "jp": "【1-43】 <ruby>穴<rt>あな</rt></ruby> ② [名] 洞窟，洞穴；缺点，漏洞；亏空\n△<ruby>穴<rt>あな</rt></ruby>を<ruby>開<rt>あ</rt></ruby>ける。/ 钻洞，挖洞。\n△<ruby>熊<rt>くま</rt></ruby>が<ruby>穴<rt>あな</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れる。/ 熊藏在洞穴里。\n△その<ruby>計画<rt>けいかく</rt></ruby>は<ruby>穴<rt>あな</rt></ruby>だらけだ。/ 那个计划充满漏洞。\n△<ruby>穴<rt>あな</rt></ruby>を<ruby>埋<rt>う</rt></ruby>める。/ 填补亏空。",
     "cn": ""
   },
   {
     "id": 14,
-    "start": 150.84,
-    "end": 164.18,
-    "jp": "<ruby>暖<rt>あたた</rt></ruby>まる ④ [自動1] 感到温暖，变热；富足\n△<ruby>部屋<rt>へや</rt></ruby>が<ruby>暖<rt>あたた</rt></ruby>まる。/ 房间暖和了。\n△<ruby>心<rt>こころ</rt></ruby><ruby>暖<rt>あたた</rt></ruby>まる<ruby>思<rt>おも</rt></ruby>い。/ 感到心里暖融融的。",
+    "word_id": "1-44",
+    "start": 238.62,
+    "end": 257.01,
+    "jp": "【1-44】 アナウンス ②③ [名・他動3] 广告，广播，通知，报告\n△<ruby>機内<rt>きない</rt></ruby>アナウンス / 机内广播\n△ニュースをアナウンスする。/ 报告新闻。",
     "cn": ""
   },
   {
     "id": 15,
-    "start": 164.18,
-    "end": 178.46,
-    "jp": "<ruby>温<rt>あたた</rt></ruby>める ④ [他動2] 加热，温；使暖和\n△ストーブで<ruby>部屋<rt>へや</rt></ruby>を<ruby>暖<rt>あたた</rt></ruby>める。/ 用炉子让房间暖和起来。\n△お<ruby>酒<rt>さけ</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>める。/ 温酒。",
+    "word_id": "1-45",
+    "start": 257.01,
+    "end": 273.38,
+    "jp": "【1-45】 <ruby>暴<rt>あば</rt></ruby>れる ⓪ [自動2] 胡闹，乱闹\n△<ruby>酒<rt>さけ</rt></ruby>に<ruby>酔<rt>よ</rt></ruby>って<ruby>暴<rt>あば</rt></ruby>れる。/ 喝醉了乱闹。\n△<ruby>暴<rt>あば</rt></ruby>れ<ruby>者<rt>もの</rt></ruby> / 好打架的人，粗暴的人",
     "cn": ""
   },
   {
     "id": 16,
-    "start": 178.46,
-    "end": 194.72,
-    "jp": "<ruby>当<rt>あ</rt></ruby>たる ⓪ [自動1] 撞上；击中；晒，照\n△ボールが<ruby>頭<rt>あたま</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たった。/ 球碰到了头上。\n△くじに<ruby>当<rt>あ</rt></ruby>たる。/ 中彩。\n△<ruby>日<rt>ひ</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たる。/ 晒太阳。",
+    "word_id": "1-46",
+    "start": 273.38,
+    "end": 295.21,
+    "jp": "【1-46】 <ruby>浴<rt>あ</rt></ruby>びる ⓪ [他動2] 浇，淋；照，晒；蒙受\n△シャワーを<ruby>浴<rt>あ</rt></ruby>びる。/ 洗淋浴。\n△<ruby>日光<rt>にっこう</rt></ruby>を<ruby>浴<rt>あ</rt></ruby>びる。/ 晒太阳。\n△<ruby>非難<rt>ひなん</rt></ruby>を<ruby>浴<rt>あ</rt></ruby>びる。/ 蒙受指责。",
     "cn": ""
   },
   {
     "id": 17,
-    "start": 194.72,
-    "end": 206.47,
-    "jp": "<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby> ⓪ [ナ形・名] 理所当然，应当；普通，一般\n△<ruby>借<rt>か</rt></ruby>りたお<ruby>金<rt>かね</rt></ruby>を<ruby>返<rt>かえ</rt></ruby>すのは<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>だ。/ 借钱还钱是理所当然的。",
+    "word_id": "1-47",
+    "start": 295.21,
+    "end": 313.46,
+    "jp": "【1-47】 <ruby>溢<rt>あふ</rt></ruby>れる ③ [自動2] （液体）溢出；充满，洋溢\n△<ruby>目<rt>め</rt></ruby>には<ruby>涙<rt>なみだ</rt></ruby>が<ruby>溢<rt>あふ</rt></ruby>れている。/ 热泪盈眶。\n△<ruby>子供<rt>こども</rt></ruby>は<ruby>元気<rt>げんき</rt></ruby>に<ruby>溢<rt>あふ</rt></ruby>れている。/ 孩子充满朝气。",
     "cn": ""
   },
   {
     "id": 18,
-    "start": 206.47,
-    "end": 219.1,
-    "jp": "あっという<ruby>間<rt>ま</rt></ruby>に ④ [組] 转眼之间，眨眼工夫\n△あっという<ruby>間<rt>ま</rt></ruby>に<ruby>夏休<rt>なつやす</rt></ruby>みが<ruby>終<rt>お</rt></ruby>わってしまった。/ 转眼间暑假就结束了。",
+    "word_id": "1-48",
+    "start": 313.46,
+    "end": 329.64,
+    "jp": "【1-48】 <ruby>雨戸<rt>あまど</rt></ruby> ⓪ [名] 木板套窗，护窗板\n△<ruby>雨戸<rt>あまど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>める。/ 关上套窗。\n△<ruby>雨戸<rt>あまど</rt></ruby>を<ruby>開<rt>あ</rt></ruby>ける。/ 拉开套窗。",
     "cn": ""
   },
   {
     "id": 19,
-    "start": 219.1,
-    "end": 233.5,
-    "jp": "<ruby>扱<rt>あつく</rt></ruby>う ③ [他動1] 操作；对待，待；经营，办理\n△<ruby>人<rt>ひと</rt></ruby>を<ruby>優<rt>やさ</rt></ruby>しく<ruby>扱<rt>あつく</rt></ruby>う。/ 和蔼待人。\n△<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みを<ruby>扱<rt>あつく</rt></ruby>う。/ 受理申请。",
+    "word_id": "1-49",
+    "start": 329.64,
+    "end": 345.73,
+    "jp": "【1-49】 <ruby>甘<rt>あま</rt></ruby>やかす ④ [他動1] 娇养，放纵\n△<ruby>甘<rt>あま</rt></ruby>やかした<ruby>子供<rt>こども</rt></ruby> / 娇惯坏了的孩子\n△<ruby>自分<rt>じぶん</rt></ruby>を<ruby>甘<rt>あま</rt></ruby>やかすな。/ 不要放纵自己。",
     "cn": ""
   },
   {
     "id": 20,
-    "start": 233.5,
-    "end": 246.64,
-    "jp": "<ruby>集<rt>あつ</rt></ruby>まり ⓪ [名] 集合，集会；聚集\n△<ruby>集<rt>あつ</rt></ruby>まりがある。/ 有集会。\n△<ruby>客<rt>きゃく</rt></ruby>の<ruby>集<rt>あつ</rt></ruby>まりが<ruby>悪<rt>わる</rt></ruby>い。/ 顾客来得少。",
+    "word_id": "1-50",
+    "start": 345.73,
+    "end": 364.55,
+    "jp": "【1-50】 <ruby>余<rt>あま</rt></ruby>り ③⓪ [名・副] 剩余，剩下；过于，过分地\n△<ruby>給料<rt>きゅうりょう</rt></ruby>の<ruby>余<rt>あま</rt></ruby>りを<ruby>貯金<rt>ちょきん</rt></ruby>する。/ 把剩余的工资存起来。\n△<ruby>余<rt>あま</rt></ruby>り<ruby>心配<rt>しんぱい</rt></ruby>しないでいい。/ 不必太担心。",
     "cn": ""
   },
   {
     "id": 21,
-    "start": 246.64,
-    "end": 256.76,
-    "jp": "<ruby>宛先<rt>あてさき</rt></ruby> ⓪ [名] 收件人姓名和地址\n△<ruby>宛先<rt>あてさき</rt></ruby><ruby>不明<rt>ふめい</rt></ruby> / 查无此人（收件人不明）",
+    "word_id": "1-51",
+    "start": 364.55,
+    "end": 383.37,
+    "jp": "【1-51】 <ruby>余<rt>あま</rt></ruby>る ② [自動1] 剩余，剩下；过分，承担不起\n△<ruby>旅費<rt>りょひ</rt></ruby>が<ruby>一万円<rt>いちまんえん</rt></ruby><ruby>余<rt>あま</rt></ruby>った。/ 旅费剩下了一万日元。\n△<ruby>身<rt>み</rt></ruby>に<ruby>余<rt>あま</rt></ruby>る<ruby>光栄<rt>こうえい</rt></ruby> / 无上光荣",
     "cn": ""
   },
   {
     "id": 22,
-    "start": 256.76,
-    "end": 267.22,
-    "jp": "<ruby>宛名<rt>あてな</rt></ruby> ⓪ [名] 收信人姓名\n△<ruby>宛名<rt>あてな</rt></ruby>が<ruby>間違<rt>まちが</rt></ruby>っている。/ 收信人姓名写错了。",
+    "word_id": "1-52",
+    "start": 383.37,
+    "end": 399.17,
+    "jp": "【1-52】 <ruby>網戸<rt>あみど</rt></ruby> ② [名] 纱门，纱窗\n△<ruby>網戸<rt>あみど</rt></ruby>をつける。/ 安装纱窗。\n△<ruby>網戸<rt>あみど</rt></ruby>の<ruby>隙間<rt>すきま</rt></ruby> / 纱窗上的缝隙",
     "cn": ""
   },
   {
     "id": 23,
-    "start": 267.22,
-    "end": 284.26,
-    "jp": "<ruby>当<rt>あ</rt></ruby>てる ⓪ [他動2] 碰撞；晒，烤；猜，推测\n△<ruby>日光<rt>にっこう</rt></ruby>に<ruby>当<rt>あ</rt></ruby>てて<ruby>乾<rt>かわ</rt></ruby>かす。/ 放在阳光下晒干。\n△<ruby>一等賞<rt>いっとうしょう</rt></ruby>を<ruby>当<rt>あ</rt></ruby>てる。/ 抽中一等奖。\n△<ruby>当<rt>あ</rt></ruby>ててみてください。/ 请猜猜看。",
+    "word_id": "1-53",
+    "start": 399.17,
+    "end": 417.64,
+    "jp": "【1-53】 <ruby>危<rt>あや</rt></ruby>うく ③ [副] 好不容易；险些，几乎\n△<ruby>危<rt>あや</rt></ruby>うく<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>った。/ 好不容易赶上了电车。\n△<ruby>危<rt>あや</rt></ruby>うく<ruby>乗<rt>の</rt></ruby>り<ruby>過<rt>す</rt></ruby>ごすところだった。/ 险些坐过了站。",
     "cn": ""
   },
   {
     "id": 24,
-    "start": 284.26,
-    "end": 303.0,
-    "jp": "<ruby>跡<rt>あと</rt></ruby> ① [名] 痕迹；印迹\n△<ruby>足<rt>あし</rt></ruby>の<ruby>跡<rt>あと</rt></ruby> / 足迹\n△<ruby>焼<rt>や</rt></ruby>け<ruby>跡<rt>あと</rt></ruby> / 火灾遗迹",
+    "word_id": "1-54",
+    "start": 417.64,
+    "end": 443.59,
+    "jp": "【1-54】 <ruby>怪<rt>あや</rt></ruby>しい ③ [イ形] 奇怪，可疑；靠不住，难以相信；不好，拙劣\n△<ruby>怪<rt>あや</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby> / 可疑的男子\n△ニュースの<ruby>出所<rt>でどころ</rt></ruby>が<ruby>怪<rt>あや</rt></ruby>しい。/ 消息的出处不可靠。\n△<ruby>怪<rt>あや</rt></ruby>しい<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>演説<rt>えんぜつ</rt></ruby>した。/ 用拙劣的日语演讲。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "1-55",
+    "start": 443.59,
+    "end": 465.95,
+    "jp": "【1-55】 <ruby>荒<rt>あら</rt></ruby>い ⓪ [イ形] 粗暴；剧烈，凶猛；胡乱\n△<ruby>荒<rt>あら</rt></ruby>い<ruby>気性<rt>きしょう</rt></ruby> / 粗暴的性格\n△<ruby>波<rt>なみ</rt></ruby>が<ruby>荒<rt>あら</rt></ruby>い。/ 波涛汹涌。\n△<ruby>金遣<rt>かねづか</rt></ruby>いが<ruby>荒<rt>あら</rt></ruby>い。/ 胡乱花钱，花钱如流水。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "1-56",
+    "start": 465.95,
+    "end": 481.6,
+    "jp": "【1-56】 <ruby>粗<rt>あら</rt></ruby>い ⓪ [イ形] （做工）粗糙；（计算等）粗枝大叶\n△<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>が<ruby>粗<rt>あら</rt></ruby>い。/ 做法粗糙。\n△<ruby>粗<rt>あら</rt></ruby>い<ruby>計算<rt>けいさん</rt></ruby> / 粗略的计算",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "1-57",
+    "start": 481.6,
+    "end": 500.02,
+    "jp": "【1-57】 <ruby>争<rt>あらそ</rt></ruby>う ③ [他動1] 争夺，竞争；争吵，争辩\n△<ruby>優勝<rt>ゆうしょう</rt></ruby>を<ruby>争<rt>あらそ</rt></ruby>う。/ 争夺冠军。\n△つまらないことで<ruby>争<rt>あらそ</rt></ruby>う。/ 为无聊的事情争吵。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "1-58",
+    "start": 500.02,
+    "end": 515.87,
+    "jp": "【1-58】 <ruby>新<rt>あら</rt></ruby>た ① [ナ形] 新；重新\n△<ruby>新<rt>あら</rt></ruby>たにできた<ruby>店<rt>みせ</rt></ruby> / 新开的店铺\n△<ruby>新<rt>あら</rt></ruby>たに<ruby>始<rt>はじ</rt></ruby>める。/ 重新开始。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "1-59",
+    "start": 515.87,
+    "end": 532.94,
+    "jp": "【1-59】 あらゆる ③ [連体] 所有，一切\n△あらゆる<ruby>方面<rt>ほうめん</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる。/ 调查所有方面。\n△あらゆる<ruby>問題<rt>もんだい</rt></ruby> / 一切问题",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "1-60",
+    "start": 532.94,
+    "end": 551.9,
+    "jp": "【1-60】 <ruby>現<rt>あらわ</rt></ruby>す ③ [他動1] 出现，显露；表现，表达\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>突然<rt>とつぜん</rt></ruby><ruby>姿<rt>すがた</rt></ruby>を<ruby>現<rt>あらわ</rt></ruby>した。/ 他突然出现了。\n△<ruby>思想<rt>しそう</rt></ruby>を<ruby>言語<rt>げんご</rt></ruby>で<ruby>現<rt>あらわ</rt></ruby>す。/ 用语言表达思想。",
     "cn": ""
   }
 ]
