@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+raw_books/
+*.pdf
+temp_tts/
+__pycache__/
+.DS_Store
