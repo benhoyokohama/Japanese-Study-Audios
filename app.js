@@ -17,14 +17,38 @@ let playMode = 1;
 let isPlaying = false;
 let tickerInterval = null;
 
+const STORAGE_LAST_LESSON = 'jp_reader_last_lesson';
+function getSavedProgress(lessonId) {
+  try {
+    const raw = localStorage.getItem('jp_reader_prog_' + lessonId);
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) { return null; }
+}
+function saveProgress(lessonId, idx, timeSec) {
+  if (!lessonId) return;
+  try {
+    localStorage.setItem(STORAGE_LAST_LESSON, lessonId);
+    localStorage.setItem('jp_reader_prog_' + lessonId, JSON.stringify({
+      idx: idx || 0,
+      time: timeSec || 0,
+      updatedAt: Date.now()
+    }));
+  } catch (e) {}
+}
+
 function initLessonOptions() {
   if (!window.LESSONS_CONFIG) return;
   lessonSelect.innerHTML = '';
+  const savedLessonId = localStorage.getItem(STORAGE_LAST_LESSON);
+  const hasSaved = savedLessonId && window.LESSONS_CONFIG.some(item => item.id === savedLessonId);
+
   window.LESSONS_CONFIG.forEach(item => {
     const opt = document.createElement('option');
     opt.value = item.id;
     opt.textContent = item.title;
-    if (item.default) opt.selected = true;
+    if (hasSaved ? (item.id === savedLessonId) : item.default) {
+      opt.selected = true;
+    }
     lessonSelect.appendChild(opt);
   });
 }
@@ -75,6 +99,7 @@ function highlightSentence(idx) {
     card.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
   if (statusText) statusText.textContent = `播放中: 第 ${idx + 1} / ${sentences.length} 句`;
+  saveProgress(lessonSelect.value, idx, coreAudio.currentTime || (sentences[idx] ? Number(sentences[idx].start) : 0));
   updateMediaSessionInfo(idx);
 }
 
@@ -190,6 +215,9 @@ tickerInterval = setInterval(() => {
     topPlayBtn.textContent = isPlaying ? '⏸' : '▶';
   }
 
+  if (isPlaying) {
+    saveProgress(lessonSelect.value, currentIndex, cur);
+  }
   if (isPlaying && sentences && sentences[currentIndex]) {
     const s = sentences[currentIndex];
     const endTime = Math.min(Number(s.end) || dur, dur > 0 ? dur : Infinity);
@@ -294,29 +322,47 @@ function renderCards() {
   });
 }
 
-async function loadLesson(lessonId, startSentenceIdx = 0, autoPlay = false) {
+async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
   pauseAudio();
   statusText.textContent = '正在加载课文与音频...';
+  localStorage.setItem(STORAGE_LAST_LESSON, lessonId);
 
   try {
     const jsonUrl = `./lessons/${lessonId}.json?t=${Date.now()}`;
-    const mp3Url = `./lessons/${lessonId}.mp3`;
+    const mp3Url = `./lessons/${lessonId}.mp3?v=u1_done`;
 
     const jsonRes = await fetch(jsonUrl);
     if (!jsonRes.ok) throw new Error(`课文加载失败: ${jsonRes.status}`);
     sentences = await jsonRes.json();
 
+    // 读取该课上次保存的进度
+    const savedProg = getSavedProgress(lessonId);
+    let targetIdx = (startSentenceIdx !== null && startSentenceIdx !== undefined)
+      ? startSentenceIdx
+      : (savedProg ? savedProg.idx : 0);
+    if (targetIdx < 0 || targetIdx >= sentences.length) targetIdx = 0;
+
+    let targetTime = (startSentenceIdx === null && savedProg && savedProg.time > 0)
+      ? savedProg.time
+      : (sentences[targetIdx] ? Number(sentences[targetIdx].start) || 0 : 0);
+
     coreAudio.src = mp3Url;
     coreAudio.load();
 
     coreAudio.onloadedmetadata = () => {
-      timeDuration.textContent = formatTime(coreAudio.duration);
+      const dur = coreAudio.duration || 0;
+      timeDuration.textContent = formatTime(dur);
+      if (targetTime > 0 && targetTime < dur) {
+        coreAudio.currentTime = targetTime;
+        timeCurrent.textContent = formatTime(targetTime);
+        seekSlider.value = (targetTime / dur) * 100 || 0;
+      }
     };
 
-    currentIndex = startSentenceIdx;
+    currentIndex = targetIdx;
     renderCards();
     highlightSentence(currentIndex);
-    statusText.textContent = '准备就绪';
+    statusText.textContent = `已恢复至: 第 ${currentIndex + 1} / ${sentences.length} 句`;
 
     if (autoPlay) {
       playSentence(currentIndex);
@@ -331,8 +377,8 @@ async function loadLesson(lessonId, startSentenceIdx = 0, autoPlay = false) {
   }
 }
 
-lessonSelect.onchange = () => loadLesson(lessonSelect.value, 0, false);
-loadLesson(lessonSelect.value || '2026-302', 0, false);
+lessonSelect.onchange = () => loadLesson(lessonSelect.value, null, false);
+loadLesson(lessonSelect.value || '2026-300', null, false);
 
 // 显式挂载到全局，确保所有外部调用和事件100%生效
 window.playSentence = playSentence;
