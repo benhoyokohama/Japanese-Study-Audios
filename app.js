@@ -323,13 +323,31 @@ function renderCards() {
 }
 
 async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
-  pauseAudio();
+  if (!autoPlay) {
+    pauseAudio();
+  }
   statusText.textContent = '正在加载课文与音频...';
   localStorage.setItem(STORAGE_LAST_LESSON, lessonId);
 
   try {
     const jsonUrl = `./lessons/${lessonId}.json?t=${Date.now()}`;
     const mp3Url = `./lessons/${lessonId}.mp3?v=u1_done`;
+
+    // 关键修复：如果是自动连播下一课 (autoPlay)，必须在 await fetch 之前同步切换音频源并立即调用 play()，
+    // 否则手机熄屏状态下经过 await 网络异步等待后，系统会剥夺后台自动播放权限！
+    if (autoPlay) {
+      coreAudio.src = mp3Url;
+      coreAudio.playbackRate = parseFloat(speedSelect.value) || 1.0;
+      const playPromise = coreAudio.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          isPlaying = true;
+          btnPlayPause.textContent = '⏸ 暂停';
+          if (topPlayBtn) topPlayBtn.textContent = '⏸';
+          if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
+        }).catch(err => console.warn('Auto-play next lesson blocked:', err));
+      }
+    }
 
     const jsonRes = await fetch(jsonUrl);
     if (!jsonRes.ok) throw new Error(`课文加载失败: ${jsonRes.status}`);
@@ -346,8 +364,10 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
       ? savedProg.time
       : (sentences[targetIdx] ? Number(sentences[targetIdx].start) || 0 : 0);
 
-    coreAudio.src = mp3Url;
-    coreAudio.load();
+    if (!autoPlay) {
+      coreAudio.src = mp3Url;
+      coreAudio.load();
+    }
 
     coreAudio.onloadedmetadata = () => {
       const dur = coreAudio.duration || 0;
@@ -357,15 +377,22 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
         timeCurrent.textContent = formatTime(targetTime);
         seekSlider.value = (targetTime / dur) * 100 || 0;
       }
+      if (autoPlay) {
+        coreAudio.playbackRate = parseFloat(speedSelect.value) || 1.0;
+        coreAudio.play().catch(() => {});
+      }
     };
 
     currentIndex = targetIdx;
     renderCards();
     highlightSentence(currentIndex);
-    statusText.textContent = `已恢复至: 第 ${currentIndex + 1} / ${sentences.length} 句`;
+    statusText.textContent = autoPlay
+      ? `播放中: 第 ${currentIndex + 1} / ${sentences.length} 句`
+      : `已恢复至: 第 ${currentIndex + 1} / ${sentences.length} 句`;
 
     if (autoPlay) {
-      playSentence(currentIndex);
+      playAtTime(targetTime);
+      requestWakeLock();
     }
   } catch (err) {
     console.error(err);
@@ -434,3 +461,29 @@ if (timerSelect) {
     }, 1000);
   });
 }
+
+// 手机熄屏/后台兜底：当整条音频自然播放结束时，直接触发末尾动作（跳下一课或循环）
+coreAudio.addEventListener('ended', () => {
+  if (playMode === 0) {
+    playSentence(currentIndex);
+  } else if (playMode === 1) {
+    playSentence(0);
+  } else if (playMode === 2) {
+    playNextLesson();
+  }
+});
+
+// 辅助功能：支持 Screen Wake Lock API，播放期间尽量保持屏幕唤醒
+let wakeLock = null;
+async function requestWakeLock() {
+  if ('wakeLock' in navigator && isPlaying) {
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+    } catch (e) {}
+  }
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && isPlaying) {
+    requestWakeLock();
+  }
+});
