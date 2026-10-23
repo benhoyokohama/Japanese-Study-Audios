@@ -19,15 +19,21 @@ os.makedirs(AUDIO_BANK_DIR, exist_ok=True)
 os.makedirs("temp_tts", exist_ok=True)
 
 def extract_full_word_kana(first_line: str) -> str:
-    """提取词条首行完整纯假名读音（保留送假名，支持复合词头，绝不重复朗读）"""
+    """提取词条首行完整纯假名读音（支持整词注音与单字注音，绝不重复朗读）"""
     word_part = first_line.strip().split()[0]
-    def repl(match):
-        kana = match.group(2).strip()
-        if POS_PATTERN.match(kana):
-            return match.group(0)
-        return kana
-    full_kana = RUBY_PATTERN.sub(repl, word_part)
-    return full_kana.lstrip("～~").strip()
+    word_part = re.sub(r'\[([^\]]+)\]', lambda m: '' if POS_PATTERN.match(m.group(1).strip()) else m.group(0), word_part)
+    word_part = re.sub(r'[⓪①②③④⑤⑥⑦⑧⑨⑩⑪⑫～~・]', '', word_part).strip()
+
+    brackets = re.findall(r'\[([ぁ-んー]+)\]', word_part)
+    if len(brackets) == 1 and word_part.endswith(f"[{brackets[0]}]"):
+        base_before = word_part[:word_part.rfind('[')]
+        kana_inside = brackets[0]
+        m_tail = re.search(r'([ぁ-ん]+)$', base_before)
+        if (m_tail and kana_inside.endswith(m_tail.group(1))) or (base_before[:1] in 'おご' and kana_inside.startswith(base_before[:1])):
+            return kana_inside
+
+    res = re.sub(r'[一-龥々ヶ]+\[([ぁ-んー]+)\]', lambda m: m.group(1), word_part)
+    return res.strip()
 
 def parse_item_to_segments(raw_text: str):
     """将词条原始文本拆解为 [(语言, 朗读文本, 停顿毫秒), ...]"""
