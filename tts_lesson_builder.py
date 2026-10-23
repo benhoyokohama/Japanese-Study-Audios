@@ -9,7 +9,7 @@ import asyncio
 import argparse
 import edge_tts
 from pydub import AudioSegment
-from furigana import POS_PATTERN, to_ruby, strip_furigana
+from furigana import POS_PATTERN, RUBY_PATTERN, to_ruby, strip_furigana
 
 VOICE_JA = "ja-JP-NanamiNeural"
 VOICE_ZH = "zh-CN-XiaoxiaoNeural"
@@ -19,14 +19,14 @@ os.makedirs(AUDIO_BANK_DIR, exist_ok=True)
 os.makedirs("temp_tts", exist_ok=True)
 
 def extract_full_word_kana(first_line: str) -> str:
-    """提取词条首行完整纯假名读音（保留送假名，绝不在 '[' 处截断）"""
+    """提取词条首行完整纯假名读音（保留送假名，支持复合词头，绝不重复朗读）"""
     word_part = first_line.strip().split()[0]
     def repl(match):
         kana = match.group(2).strip()
         if POS_PATTERN.match(kana):
             return match.group(0)
         return kana
-    full_kana = re.sub(r'([一-龯々ヶ]+)\[([^\]]+)\]', repl, word_part)
+    full_kana = RUBY_PATTERN.sub(repl, word_part)
     return full_kana.lstrip("～~").strip()
 
 def parse_item_to_segments(raw_text: str):

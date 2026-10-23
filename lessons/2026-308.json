@@ -36,7 +36,7 @@
     "word_id": "3-5",
     "start": 48.26,
     "end": 61.42,
-    "jp": "【3-5】 追いかける[おいかける] ④ [他動2] 追赶\n△<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>追<rt>お</rt></ruby>いかける。/ 追赶犯人。",
+    "jp": "【3-5】 <ruby>追<rt>お</rt></ruby>いかける ④ [他動2] 追赶\n△<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>追<rt>お</rt></ruby>いかける。/ 追赶犯人。",
     "cn": ""
   },
   {
@@ -44,7 +44,7 @@
     "word_id": "3-6",
     "start": 61.42,
     "end": 74.69,
-    "jp": "【3-6】 追い越す[おいこす] ③ [他動1] 赶过，超过\n△<ruby>前<rt>まえ</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>を<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>す。/ 超过前面的车。",
+    "jp": "【3-6】 <ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>す ③ [他動1] 赶过，超过\n△<ruby>前<rt>まえ</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>を<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>す。/ 超过前面的车。",
     "cn": ""
   },
   {
@@ -52,7 +52,7 @@
     "word_id": "3-7",
     "start": 74.69,
     "end": 88.33,
-    "jp": "【3-7】 追い付く[おいつく] ③ [自動1] 赶上，追上\n△やっと<ruby>先頭<rt>せんとう</rt></ruby>に<ruby>追<rt>お</rt></ruby>い<ruby>付<rt>つ</rt></ruby>いた。/ 终于追上了第一名。",
+    "jp": "【3-7】 <ruby>追<rt>お</rt></ruby>い<ruby>付<rt>つ</rt></ruby>く ③ [自動1] 赶上，追上\n△やっと<ruby>先頭<rt>せんとう</rt></ruby>に<ruby>追<rt>お</rt></ruby>い<ruby>付<rt>つ</rt></ruby>いた。/ 终于追上了第一名。",
     "cn": ""
   },
   {
@@ -76,7 +76,7 @@
     "word_id": "3-10",
     "start": 117.31,
     "end": 129.46,
-    "jp": "【3-10】 追う[おう] ⓪ [他動1] 追赶，驱赶；追求\n△<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>追<rt>お</rt></ruby>う。/ 追逐梦想。",
+    "jp": "【3-10】 <ruby>追<rt>お</rt></ruby>う ⓪ [他動1] 追赶，驱赶；追求\n△<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>追<rt>お</rt></ruby>う。/ 追逐梦想。",
     "cn": ""
   },
   {
@@ -148,7 +148,7 @@
     "word_id": "3-19",
     "start": 234.85,
     "end": 247.88,
-    "jp": "【3-19】 終える[おえる] ⓪ [他動2] 结束，完成\n△<ruby>仕事<rt>しごと</rt></ruby>を<ruby>無事<rt>ぶじ</rt></ruby>に<ruby>終<rt>お</rt></ruby>える。/ 顺利完成工作。",
+    "jp": "【3-19】 <ruby>終<rt>お</rt></ruby>える ⓪ [他動2] 结束，完成\n△<ruby>仕事<rt>しごと</rt></ruby>を<ruby>無事<rt>ぶじ</rt></ruby>に<ruby>終<rt>お</rt></ruby>える。/ 顺利完成工作。",
     "cn": ""
   },
   {
@@ -164,7 +164,7 @@
     "word_id": "3-21",
     "start": 259.93,
     "end": 273.52,
-    "jp": "【3-21】 大いに[おおいに] ① [副] 很，非常，大大地\n△<ruby>大<rt>おお</rt></ruby>いに<ruby>賛成<rt>さんせい</rt></ruby>する。/ 非常赞成。",
+    "jp": "【3-21】 <ruby>大<rt>おお</rt></ruby>いに ① [副] 很，非常，大大地\n△<ruby>大<rt>おお</rt></ruby>いに<ruby>賛成<rt>さんせい</rt></ruby>する。/ 非常赞成。",
     "cn": ""
   },
   {
@@ -172,7 +172,7 @@
     "word_id": "3-22",
     "start": 273.52,
     "end": 293.18,
-    "jp": "【3-22】 覆う[おおう] ③ [他動1] 遮盖，覆盖；掩盖\n△<ruby>両手<rt>りょうて</rt></ruby>で<ruby>顔<rt>かお</rt></ruby>を<ruby>覆<rt>おお</rt></ruby>う。/ 用双手捂住脸。\n△<ruby>空<rt>そら</rt></ruby>が<ruby>黒<rt>くろ</rt></ruby>い<ruby>雲<rt>くも</rt></ruby>に<ruby>覆<rt>おお</rt></ruby>われる。/ 天空被乌云笼罩。",
+    "jp": "【3-22】 <ruby>覆<rt>おお</rt></ruby>う ③ [他動1] 遮盖，覆盖；掩盖\n△<ruby>両手<rt>りょうて</rt></ruby>で<ruby>顔<rt>かお</rt></ruby>を<ruby>覆<rt>おお</rt></ruby>う。/ 用双手捂住脸。\n△<ruby>空<rt>そら</rt></ruby>が<ruby>黒<rt>くろ</rt></ruby>い<ruby>雲<rt>くも</rt></ruby>に<ruby>覆<rt>おお</rt></ruby>われる。/ 天空被乌云笼罩。",
     "cn": ""
   },
   {
@@ -180,7 +180,7 @@
     "word_id": "3-23",
     "start": 293.18,
     "end": 308.0,
-    "jp": "【3-23】 大売出し[おおうりだし] ④ [名] 大甩卖，大酬宾\n△<ruby>年末<rt>ねんまつ</rt></ruby>の<ruby>大売出<rt>おおうりだ</rt></ruby>し / 年末大甩卖。",
+    "jp": "【3-23】 <ruby>大売出<rt>おおうりだ</rt></ruby>し ④ [名] 大甩卖，大酬宾\n△<ruby>年末<rt>ねんまつ</rt></ruby>の<ruby>大売出<rt>おおうりだ</rt></ruby>し / 年末大甩卖。",
     "cn": ""
   },
   {
@@ -236,7 +236,7 @@
     "word_id": "3-30",
     "start": 385.75,
     "end": 401.81,
-    "jp": "【3-30】 大安売り[おおやすうり] ④ [名] 大廉价，大减价\n△スーパーで<ruby>大安売<rt>おおやすう</rt></ruby>りをしている。/ 超市正在搞大减价。",
+    "jp": "【3-30】 <ruby>大安売<rt>おおやすう</rt></ruby>り ④ [名] 大廉价，大减价\n△スーパーで<ruby>大安売<rt>おおやすう</rt></ruby>りをしている。/ 超市正在搞大减价。",
     "cn": ""
   }
 ]

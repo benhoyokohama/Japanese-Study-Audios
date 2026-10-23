@@ -7,36 +7,40 @@ POS_PATTERN = re.compile(
 
 def _format_ruby_with_okurigana(base: str, reading: str) -> str:
     """
-    智能对齐带送假名的词头，将假名精准放在汉字上方，送假名留在外侧：
+    智能对齐带送假名的词头，将假名精准放在汉字上方，送假名与助词留在外侧：
     - 動かす[うごかす] -> <ruby>動<rt>うご</rt></ruby>かす
-    - 受け持つ[うけもつ] -> <ruby>受け持<rt>うけも</rt></ruby>つ
-    - 嘘つき[うそつき] -> <ruby>嘘<rt>うそ</rt></ruby>つき
-    - 市場[いちば] -> <ruby>市場<rt>いちば</rt></ruby>
+    - 受け持つ[うけもつ] -> <ruby>受<rt>う</rt></ruby>け<ruby>持<rt>も</rt></ruby>つ
+    - お札[おさつ] -> お<ruby>札<rt>さつ</rt></ruby>
+    - や山梨県[やまなしけん] -> や<ruby>山梨県<rt>やまなしけん</rt></ruby>
     """
     prefix = ""
     while base and base[0] in "～~・":
         prefix += base[0]
         base = base[1:]
 
-    # 剥离开头相同的平假名（如 お札[おさつ] -> お + 札[さつ]）
-    while base and reading and base[0] == reading[0] and ('\u3040' <= base[0] <= '\u309f'):
-        prefix += base[0]
-        base = base[1:]
-        reading = reading[1:]
-
     # 剥离末尾相同的平假名送假名（如 動かす[うごかす] -> 動[うご] + かす）
     suffix = ""
-    while base and reading and base[-1] == reading[-1] and ('\u3040' <= base[-1] <= '\u309f'):
+    while base and reading and base[-1] == reading[-1] and ('ぁ' <= base[-1] <= 'ん'):
         suffix = base[-1] + suffix
         base = base[:-1]
         reading = reading[:-1]
 
-    # 如果中间夹有单个平假名（如 受け持つ / うけもつ，base="受け持", reading="うけも"）
-    # 尝试进一步精确拆分为 <ruby>受<rt>う</rt></ruby>け<ruby>持<rt>も</rt></ruby>
+    # 处理开头的平假名（仅当 base 以平假名开头时）
+    while base and ('ぁ' <= base[0] <= 'ん'):
+        # 只有当 reading 比剩余汉字数明显更长、且首假名一致（如词头 お札[おさつ]）时，才剥离 reading 首假名
+        # 若只是句子中的助词粘连（如 や山梨県[やまなしけん]），只把助词移到 prefix，绝不吞掉 reading！
+        if reading and base[0] == reading[0] and base[0] in "おご" and len(reading) > len(base):
+            prefix += base[0]
+            base = base[1:]
+            reading = reading[1:]
+        else:
+            prefix += base[0]
+            base = base[1:]
+
+    # 如果中间夹有平假名送假名（如 受け持つ / うけもつ，此时 base="受け持", reading="うけも"）
     m_mid = re.match(r'^([一-龥々ヶ]+)([ぁ-ん]+)([一-龥々ヶ]+)$', base)
     if m_mid:
         k1, okuri, k2 = m_mid.groups()
-        # 在 reading 中寻找中间的 okuri（从第2个字符开始找）
         pos = reading.find(okuri, 1)
         if pos != -1 and pos + len(okuri) < len(reading):
             r1 = reading[:pos]
@@ -47,6 +51,9 @@ def _format_ruby_with_okurigana(base: str, reading: str) -> str:
         return f"{prefix}<ruby>{base}<rt>{reading}</rt></ruby>{suffix}"
     return f"{prefix}{reading}{suffix}"
 
+# 匹配词块：可选波浪号 + 可选接头词(お/ご) + 汉字块(可含中间送假名及末尾送假名) + [平假名读音]
+RUBY_PATTERN = re.compile(r'([～~]?[おご]?[一-龥々ヶ]+(?:[ぁ-ん]+[一-龥々ヶ]+)*[ぁ-ん]*)\[([ぁ-んー]+)\]')
+
 def to_ruby(text: str) -> str:
     """将 漢字[かな] 及 带送假名词头[かな] 转换为标准 <ruby> 标签，保留词性 [名] 等不变"""
     def repl(match):
@@ -56,9 +63,7 @@ def to_ruby(text: str) -> str:
             return match.group(0)
         return _format_ruby_with_okurigana(base, reading)
 
-    # 匹配包含至少一个汉字或数字温度符号的词块 + [平假名读音]
-    pattern = re.compile(r'([～~]?[ぁ-ん]*[一-龥々ヶ0-9０-９℃]+[ぁ-ん一-龥々ヶ0-9０-９℃]*)\[([ぁ-んー]+)\]')
-    return pattern.sub(repl, text)
+    return RUBY_PATTERN.sub(repl, text)
 
 def strip_furigana(text: str) -> str:
     """去除例句中的 [かな] 注音括号，供日语 TTS 自然朗读汉字"""
@@ -68,5 +73,4 @@ def strip_furigana(text: str) -> str:
         if POS_PATTERN.match(reading):
             return match.group(0)
         return base
-    pattern = re.compile(r'([～~]?[ぁ-ん]*[一-龥々ヶ0-9０-９℃]+[ぁ-ん一-龥々ヶ0-9０-９℃]*)\[([ぁ-んー]+)\]')
-    return pattern.sub(repl, text)
+    return RUBY_PATTERN.sub(repl, text)

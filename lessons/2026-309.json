@@ -12,7 +12,7 @@
     "word_id": "3-32",
     "start": 12.83,
     "end": 29.39,
-    "jp": "【3-32】 大喜び[おおよろこび] ③ [名・自動3] 欢天喜地，非常高兴\n△プレゼントをもらって<ruby>大喜<rt>おおよろこ</rt></ruby>びする。/ 收到礼物欢天喜地。",
+    "jp": "【3-32】 <ruby>大喜<rt>おおよろこ</rt></ruby>び ③ [名・自動3] 欢天喜地，非常高兴\n△プレゼントをもらって<ruby>大喜<rt>おおよろこ</rt></ruby>びする。/ 收到礼物欢天喜地。",
     "cn": ""
   },
   {
@@ -28,7 +28,7 @@
     "word_id": "3-34",
     "start": 41.25,
     "end": 58.37,
-    "jp": "【3-34】 犯す[おかす] ② [他動1] 犯（罪、错），违犯\n△<ruby>過<rt>あやま</rt></ruby>ちを<ruby>犯<rt>おか</rt></ruby>す。/ 犯错误。\n△<ruby>法律<rt>ほうりつ</rt></ruby>を<ruby>犯<rt>おか</rt></ruby>す。/ 触犯法律。",
+    "jp": "【3-34】 <ruby>犯<rt>おか</rt></ruby>す ② [他動1] 犯（罪、错），违犯\n△<ruby>過<rt>あやま</rt></ruby>ちを<ruby>犯<rt>おか</rt></ruby>す。/ 犯错误。\n△<ruby>法律<rt>ほうりつ</rt></ruby>を<ruby>犯<rt>おか</rt></ruby>す。/ 触犯法律。",
     "cn": ""
   },
   {
@@ -44,7 +44,7 @@
     "word_id": "3-36",
     "start": 72.1,
     "end": 85.23,
-    "jp": "【3-36】 お代わり[おかわり] ② [名・他動3] 再来一碗，添饭\n△ご<ruby>飯<rt>はん</rt></ruby>をお<ruby>代<rt>か</rt></ruby>わりする。/ 再添一碗饭。",
+    "jp": "【3-36】 お<ruby>代<rt>おか</rt></ruby>わり ② [名・他動3] 再来一碗，添饭\n△ご<ruby>飯<rt>はん</rt></ruby>をお<ruby>代<rt>か</rt></ruby>わりする。/ 再添一碗饭。",
     "cn": ""
   },
   {
@@ -52,7 +52,7 @@
     "word_id": "3-37",
     "start": 85.23,
     "end": 101.63,
-    "jp": "【3-37】 置き忘れる[おきわすれる] ⑤ [他動2] 忘拿，落下\n△<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>網棚<rt>あみだな</rt></ruby>に<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>置<rt>お</rt></ruby>き<ruby>忘<rt>わす</rt></ruby>れた。/ 把行李忘在电车行李架上了。",
+    "jp": "【3-37】 <ruby>置<rt>お</rt></ruby>き<ruby>忘<rt>わす</rt></ruby>れる ⑤ [他動2] 忘拿，落下\n△<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>網棚<rt>あみだな</rt></ruby>に<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>置<rt>お</rt></ruby>き<ruby>忘<rt>わす</rt></ruby>れた。/ 把行李忘在电车行李架上了。",
     "cn": ""
   },
   {
@@ -68,7 +68,7 @@
     "word_id": "3-39",
     "start": 113.51,
     "end": 128.78,
-    "jp": "【3-39】 遅れる[おくれる] ⓪ [自動2] 迟到，晚点；落后\n△<ruby>事故<rt>じこ</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>十分遅<rt>じゅっぷんおく</rt></ruby>れた。/ 因为事故电车晚点了十分钟。",
+    "jp": "【3-39】 <ruby>遅<rt>おく</rt></ruby>れる ⓪ [自動2] 迟到，晚点；落后\n△<ruby>事故<rt>じこ</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>十分遅<rt>じゅっぷんおく</rt></ruby>れた。/ 因为事故电车晚点了十分钟。",
     "cn": ""
   },
   {
@@ -76,7 +76,7 @@
     "word_id": "3-40",
     "start": 128.78,
     "end": 142.01,
-    "jp": "【3-40】 奢り[おごり] ⓪ [名] 请客，做东；奢侈\n△<ruby>今日<rt>きょう</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の<ruby>奢<rt>おご</rt></ruby>りだ。/ 今天我请客。",
+    "jp": "【3-40】 <ruby>奢<rt>おご</rt></ruby>り ⓪ [名] 请客，做东；奢侈\n△<ruby>今日<rt>きょう</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の<ruby>奢<rt>おご</rt></ruby>りだ。/ 今天我请客。",
     "cn": ""
   },
   {
@@ -84,7 +84,7 @@
     "word_id": "3-41",
     "start": 142.01,
     "end": 155.76,
-    "jp": "【3-41】 奢る[おごる] ⓪ [他動1] 请客，做东；奢侈\n△<ruby>後輩<rt>こうはい</rt></ruby>に<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>奢<rt>おご</rt></ruby>る。/ 请晚辈吃午饭。",
+    "jp": "【3-41】 <ruby>奢<rt>おご</rt></ruby>る ⓪ [他動1] 请客，做东；奢侈\n△<ruby>後輩<rt>こうはい</rt></ruby>に<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>奢<rt>おご</rt></ruby>る。/ 请晚辈吃午饭。",
     "cn": ""
   },
   {
@@ -92,7 +92,7 @@
     "word_id": "3-42",
     "start": 155.76,
     "end": 178.14,
-    "jp": "【3-42】 押さえる[おさえる] ③ [他動2] 按住，压住；捂住；控制，掌握\n△<ruby>風<rt>かぜ</rt></ruby>で<ruby>飛<rt>と</rt></ruby>ばないように<ruby>紙<rt>かみ</rt></ruby>を<ruby>押<rt>お</rt></ruby>さえる。/ 按住纸张以免被风吹走。\n△<ruby>要点<rt>ようてん</rt></ruby>を<ruby>押<rt>お</rt></ruby>さえる。/ 把握要点。",
+    "jp": "【3-42】 <ruby>押<rt>お</rt></ruby>さえる ③ [他動2] 按住，压住；捂住；控制，掌握\n△<ruby>風<rt>かぜ</rt></ruby>で<ruby>飛<rt>と</rt></ruby>ばないように<ruby>紙<rt>かみ</rt></ruby>を<ruby>押<rt>お</rt></ruby>さえる。/ 按住纸张以免被风吹走。\n△<ruby>要点<rt>ようてん</rt></ruby>を<ruby>押<rt>お</rt></ruby>さえる。/ 把握要点。",
     "cn": ""
   },
   {
@@ -100,7 +100,7 @@
     "word_id": "3-43",
     "start": 178.14,
     "end": 191.12,
-    "jp": "【3-43】 お<ruby>札<rt>おさつ</rt></ruby> ⓪ [名] 纸币，钞票\n△<ruby>一万円<rt>いちまんえん</rt></ruby>のお<ruby>札<rt>さつ</rt></ruby>を<ruby>崩<rt>くず</rt></ruby>す。/ 把一万日元纸币破开。",
+    "jp": "【3-43】 お<ruby>札<rt>さつ</rt></ruby> ⓪ [名] 纸币，钞票\n△<ruby>一万円<rt>いちまんえん</rt></ruby>のお<ruby>札<rt>さつ</rt></ruby>を<ruby>崩<rt>くず</rt></ruby>す。/ 把一万日元纸币破开。",
     "cn": ""
   },
   {
@@ -108,7 +108,7 @@
     "word_id": "3-44",
     "start": 191.12,
     "end": 210.48,
-    "jp": "【3-44】 幼い[おさない] ③ [イ形] 幼小，年幼；幼稚\n△<ruby>幼<rt>おさな</rt></ruby>い<ruby>子供<rt>こども</rt></ruby> / 年幼的孩子。\n△<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>がまだ<ruby>幼<rt>おさな</rt></ruby>い。/ 想法还很幼稚。",
+    "jp": "【3-44】 <ruby>幼<rt>おさな</rt></ruby>い ③ [イ形] 幼小，年幼；幼稚\n△<ruby>幼<rt>おさな</rt></ruby>い<ruby>子供<rt>こども</rt></ruby> / 年幼的孩子。\n△<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>がまだ<ruby>幼<rt>おさな</rt></ruby>い。/ 想法还很幼稚。",
     "cn": ""
   },
   {
@@ -124,7 +124,7 @@
     "word_id": "3-46",
     "start": 224.42,
     "end": 240.53,
-    "jp": "【3-46】 惜しい[おしい] ② [イ形] 可惜，遗憾；珍惜，舍不得\n△あと<ruby>一歩<rt>いっぽ</rt></ruby>のところで<ruby>負<rt>ま</rt></ruby>けて<ruby>惜<rt>お</rt></ruby>しかった。/ 差一点就赢了，真可惜。",
+    "jp": "【3-46】 <ruby>惜<rt>お</rt></ruby>しい ② [イ形] 可惜，遗憾；珍惜，舍不得\n△あと<ruby>一歩<rt>いっぽ</rt></ruby>のところで<ruby>負<rt>ま</rt></ruby>けて<ruby>惜<rt>お</rt></ruby>しかった。/ 差一点就赢了，真可惜。",
     "cn": ""
   },
   {
@@ -148,7 +148,7 @@
     "word_id": "3-49",
     "start": 266.87,
     "end": 280.84,
-    "jp": "【3-49】 お<ruby>洒落<rt>おしゃれ</rt></ruby> ② [名・ナ形・自動3] 爱打扮，时髦，考究\n△お<ruby>洒落<rt>しゃれ</rt></ruby>なレストランで<ruby>食事<rt>しょくじ</rt></ruby>する。/ 在格调时髦的餐厅用餐。",
+    "jp": "【3-49】 お<ruby>洒落<rt>しゃれ</rt></ruby> ② [名・ナ形・自動3] 爱打扮，时髦，考究\n△お<ruby>洒落<rt>しゃれ</rt></ruby>なレストランで<ruby>食事<rt>しょくじ</rt></ruby>する。/ 在格调时髦的餐厅用餐。",
     "cn": ""
   },
   {
@@ -156,7 +156,7 @@
     "word_id": "3-50",
     "start": 280.84,
     "end": 294.45,
-    "jp": "【3-50】 お<ruby>尻<rt>おしり</rt></ruby> ⓪ [名] 屁股，臀部；末尾\n△<ruby>滑<rt>すべ</rt></ruby>ってお<ruby>尻<rt>しり</rt></ruby>をついた。/ 脚下一滑一屁股坐在地上。",
+    "jp": "【3-50】 お<ruby>尻<rt>しり</rt></ruby> ⓪ [名] 屁股，臀部；末尾\n△<ruby>滑<rt>すべ</rt></ruby>ってお<ruby>尻<rt>しり</rt></ruby>をついた。/ 脚下一滑一屁股坐在地上。",
     "cn": ""
   },
   {
@@ -164,7 +164,7 @@
     "word_id": "3-51",
     "start": 294.45,
     "end": 308.2,
-    "jp": "【3-51】 お住まい[おすまい] ② [名] （敬语）您的住处，府上\n△お<ruby>住<rt>す</rt></ruby>まいはどちらですか。/ 请问您住在哪里？",
+    "jp": "【3-51】 お<ruby>住<rt>おす</rt></ruby>まい ② [名] （敬语）您的住处，府上\n△お<ruby>住<rt>す</rt></ruby>まいはどちらですか。/ 请问您住在哪里？",
     "cn": ""
   },
   {
@@ -188,7 +188,7 @@
     "word_id": "3-54",
     "start": 333.96,
     "end": 349.01,
-    "jp": "【3-54】 恐れる[おそれる] ③ [他動2] 害怕，畏惧；担心\n△<ruby>失敗<rt>しっぱい</rt></ruby>を<ruby>恐<rt>おそ</rt></ruby>れずに<ruby>挑戦<rt>ちょうせん</rt></ruby>する。/ 不惧失败勇于挑战。",
+    "jp": "【3-54】 <ruby>恐<rt>おそ</rt></ruby>れる ③ [他動2] 害怕，畏惧；担心\n△<ruby>失敗<rt>しっぱい</rt></ruby>を<ruby>恐<rt>おそ</rt></ruby>れずに<ruby>挑戦<rt>ちょうせん</rt></ruby>する。/ 不惧失败勇于挑战。",
     "cn": ""
   },
   {
@@ -196,7 +196,7 @@
     "word_id": "3-55",
     "start": 349.01,
     "end": 364.55,
-    "jp": "【3-55】 恐ろしい[おそろしい] ④ [イ形] 可怕的，恐怖的；惊人的\n△<ruby>恐<rt>おそ</rt></ruby>ろしい<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きた。/ 发生了可怕的事件。",
+    "jp": "【3-55】 <ruby>恐<rt>おそ</rt></ruby>ろしい ④ [イ形] 可怕的，恐怖的；惊人的\n△<ruby>恐<rt>おそ</rt></ruby>ろしい<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きた。/ 发生了可怕的事件。",
     "cn": ""
   },
   {
@@ -204,7 +204,7 @@
     "word_id": "3-56",
     "start": 364.55,
     "end": 380.2,
-    "jp": "【3-56】 教わる[おそわる] ⓪ [他動1] 受教，学习，请教\n△<ruby>母<rt>はは</rt></ruby>に<ruby>料理<rt>りょうり</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おそ</rt></ruby>わる。/ 向母亲学习做菜的方法。",
+    "jp": "【3-56】 <ruby>教<rt>おそ</rt></ruby>わる ⓪ [他動1] 受教，学习，请教\n△<ruby>母<rt>はは</rt></ruby>に<ruby>料理<rt>りょうり</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おそ</rt></ruby>わる。/ 向母亲学习做菜的方法。",
     "cn": ""
   },
   {
@@ -212,7 +212,7 @@
     "word_id": "3-57",
     "start": 380.2,
     "end": 393.76,
-    "jp": "【3-57】 お互いに[おたがいに] ⓪ [副] 互相，彼此\n△お<ruby>互<rt>たが</rt></ruby>いに<ruby>助<rt>たす</rt></ruby>け<ruby>合<rt>あ</rt></ruby>う。/ 互相帮助。",
+    "jp": "【3-57】 お<ruby>互<rt>たが</rt></ruby>いに ⓪ [副] 互相，彼此\n△お<ruby>互<rt>たが</rt></ruby>いに<ruby>助<rt>たす</rt></ruby>け<ruby>合<rt>あ</rt></ruby>う。/ 互相帮助。",
     "cn": ""
   },
   {
@@ -220,7 +220,7 @@
     "word_id": "3-58",
     "start": 393.76,
     "end": 415.13,
-    "jp": "【3-58】 穏やか[おだやか] ② [ナ形] 平静，平稳；温和，安详\n△<ruby>穏<rt>おだ</rt></ruby>やかな<ruby>天気<rt>てんき</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>く。/ 持续着风和日丽的好天气。\n△<ruby>穏<rt>おだ</rt></ruby>やかな<ruby>性格<rt>せいかく</rt></ruby>の<ruby>人<rt>ひと</rt></ruby> / 性格温和的人。",
+    "jp": "【3-58】 <ruby>穏<rt>おだ</rt></ruby>やか ② [ナ形] 平静，平稳；温和，安详\n△<ruby>穏<rt>おだ</rt></ruby>やかな<ruby>天気<rt>てんき</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>く。/ 持续着风和日丽的好天气。\n△<ruby>穏<rt>おだ</rt></ruby>やかな<ruby>性格<rt>せいかく</rt></ruby>の<ruby>人<rt>ひと</rt></ruby> / 性格温和的人。",
     "cn": ""
   },
   {
@@ -228,7 +228,7 @@
     "word_id": "3-59",
     "start": 415.13,
     "end": 431.05,
-    "jp": "【3-59】 落ち着く[おちつく] ⓪ [自動1] 冷静，沉着；平息，安定\n△<ruby>慌<rt>あわ</rt></ruby>てないで<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いてください。/ 请不要慌张，冷静下来。",
+    "jp": "【3-59】 <ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>く ⓪ [自動1] 冷静，沉着；平息，安定\n△<ruby>慌<rt>あわ</rt></ruby>てないで<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いてください。/ 请不要慌张，冷静下来。",
     "cn": ""
   },
   {
@@ -236,7 +236,7 @@
     "word_id": "3-60",
     "start": 431.05,
     "end": 443.24,
-    "jp": "【3-60】 落ち<ruby>葉<rt>おちば</rt></ruby> ① [名] 落叶\n△<ruby>庭<rt>にわ</rt></ruby>の<ruby>落<rt>お</rt></ruby>ち<ruby>葉<rt>ば</rt></ruby>を<ruby>掃<rt>は</rt></ruby>く。/ 清扫院子里的落叶。",
+    "jp": "【3-60】 <ruby>落<rt>お</rt></ruby>ち<ruby>葉<rt>ば</rt></ruby> ① [名] 落叶\n△<ruby>庭<rt>にわ</rt></ruby>の<ruby>落<rt>お</rt></ruby>ち<ruby>葉<rt>ば</rt></ruby>を<ruby>掃<rt>は</rt></ruby>く。/ 清扫院子里的落叶。",
     "cn": ""
   }
 ]

@@ -4,7 +4,7 @@
     "word_id": "3-61",
     "start": 0.2,
     "end": 20.03,
-    "jp": "【3-61】 落ちる[おちる] ② [自動2] 落下，掉下；考不上，落榜；（污垢）脱落\n△<ruby>木<rt>き</rt></ruby>から<ruby>葉<rt>は</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちる。/ 树叶从树上掉下来。\n△<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる。/ 考试落榜。",
+    "jp": "【3-61】 <ruby>落<rt>お</rt></ruby>ちる ② [自動2] 落下，掉下；考不上，落榜；（污垢）脱落\n△<ruby>木<rt>き</rt></ruby>から<ruby>葉<rt>は</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちる。/ 树叶从树上掉下来。\n△<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる。/ 考试落榜。",
     "cn": ""
   },
   {
@@ -12,7 +12,7 @@
     "word_id": "3-62",
     "start": 20.03,
     "end": 32.95,
-    "jp": "【3-62】 お釣り[おつり] ⓪ [名] 找零，找头\n△お<ruby>釣<rt>つ</rt></ruby>りをもらうのを<ruby>忘<rt>わす</rt></ruby>れた。/ 忘了拿找零。",
+    "jp": "【3-62】 お<ruby>釣<rt>おつ</rt></ruby>り ⓪ [名] 找零，找头\n△お<ruby>釣<rt>つ</rt></ruby>りをもらうのを<ruby>忘<rt>わす</rt></ruby>れた。/ 忘了拿找零。",
     "cn": ""
   },
   {
@@ -20,7 +20,7 @@
     "word_id": "3-63",
     "start": 32.95,
     "end": 47.52,
-    "jp": "【3-63】 お出かけ[おでかけ] ⓪ [名・自動3] 外出，出门\n△<ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>家族<rt>かぞく</rt></ruby>でお<ruby>出<rt>で</rt></ruby>かけする。/ 周日全家人一起外出。",
+    "jp": "【3-63】 お<ruby>出<rt>おで</rt></ruby>かけ ⓪ [名・自動3] 外出，出门\n△<ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>家族<rt>かぞく</rt></ruby>でお<ruby>出<rt>で</rt></ruby>かけする。/ 周日全家人一起外出。",
     "cn": ""
   },
   {
@@ -28,7 +28,7 @@
     "word_id": "3-64",
     "start": 47.52,
     "end": 63.46,
-    "jp": "【3-64】 お手伝いさん[おてつだいさん] ④ [名] 保姆，家政服务员\n△お<ruby>手伝<rt>てつだ</rt></ruby>いさんに<ruby>掃除<rt>そうじ</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>む。/ 请家政人员帮忙打扫。",
+    "jp": "【3-64】 お<ruby>手伝<rt>てつだ</rt></ruby>いさん ④ [名] 保姆，家政服务员\n△お<ruby>手伝<rt>てつだ</rt></ruby>いさんに<ruby>掃除<rt>そうじ</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>む。/ 请家政人员帮忙打扫。",
     "cn": ""
   },
   {
@@ -36,7 +36,7 @@
     "word_id": "3-65",
     "start": 63.46,
     "end": 77.33,
-    "jp": "【3-65】 お<ruby>年玉<rt>おとしだま</rt></ruby> ⓪ [名] 压岁钱\n△お<ruby>正月<rt>しょうがつ</rt></ruby>に<ruby>子供<rt>こども</rt></ruby>にお<ruby>年玉<rt>としだま</rt></ruby>をやる。/ 过年给孩子发压岁钱。",
+    "jp": "【3-65】 お<ruby>年玉<rt>としだま</rt></ruby> ⓪ [名] 压岁钱\n△お<ruby>正月<rt>しょうがつ</rt></ruby>に<ruby>子供<rt>こども</rt></ruby>にお<ruby>年玉<rt>としだま</rt></ruby>をやる。/ 过年给孩子发压岁钱。",
     "cn": ""
   },
   {
@@ -44,7 +44,7 @@
     "word_id": "3-66",
     "start": 77.33,
     "end": 93.01,
-    "jp": "【3-66】 お年寄り[おとしより] ⓪ [名] 老人，上年纪的人\n△<ruby>電車<rt>でんしゃ</rt></ruby>でお<ruby>年寄<rt>としよ</rt></ruby>りに<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>る。/ 在电车上给老人让座。",
+    "jp": "【3-66】 お<ruby>年寄<rt>としよ</rt></ruby>り ⓪ [名] 老人，上年纪的人\n△<ruby>電車<rt>でんしゃ</rt></ruby>でお<ruby>年寄<rt>としよ</rt></ruby>りに<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>る。/ 在电车上给老人让座。",
     "cn": ""
   },
   {
@@ -52,7 +52,7 @@
     "word_id": "3-67",
     "start": 93.01,
     "end": 114.64,
-    "jp": "【3-67】 落とす[おとす] ② [他動1] 弄掉，使落下；遗失，丢掉；降低\n△うっかり<ruby>財布<rt>さいふ</rt></ruby>を<ruby>落<rt>お</rt></ruby>としてしまった。/ 一不留神把钱包弄丢了。\n△スピードを<ruby>落<rt>お</rt></ruby>とす。/ 放慢速度。",
+    "jp": "【3-67】 <ruby>落<rt>お</rt></ruby>とす ② [他動1] 弄掉，使落下；遗失，丢掉；降低\n△うっかり<ruby>財布<rt>さいふ</rt></ruby>を<ruby>落<rt>お</rt></ruby>としてしまった。/ 一不留神把钱包弄丢了。\n△スピードを<ruby>落<rt>お</rt></ruby>とす。/ 放慢速度。",
     "cn": ""
   },
   {
@@ -60,7 +60,7 @@
     "word_id": "3-68",
     "start": 114.64,
     "end": 129.96,
-    "jp": "【3-68】 大人しい[おとなしい] ④ [イ形] 老实，温顺，文静，听话\n△<ruby>大人<rt>おとな</rt></ruby>しい<ruby>子供<rt>こども</rt></ruby> / 听话文静的孩子。",
+    "jp": "【3-68】 <ruby>大人<rt>おとな</rt></ruby>しい ④ [イ形] 老实，温顺，文静，听话\n△<ruby>大人<rt>おとな</rt></ruby>しい<ruby>子供<rt>こども</rt></ruby> / 听话文静的孩子。",
     "cn": ""
   },
   {
@@ -68,7 +68,7 @@
     "word_id": "3-69",
     "start": 129.96,
     "end": 146.38,
-    "jp": "【3-69】 驚かす[おどろかす] ④ [他動1] 使吃惊，吓唬\n△<ruby>後<rt>うし</rt></ruby>ろから<ruby>声<rt>こえ</rt></ruby>をかけて<ruby>友達<rt>ともだち</rt></ruby>を<ruby>驚<rt>おどろ</rt></ruby>かす。/ 从背后出声吓朋友一跳。",
+    "jp": "【3-69】 <ruby>驚<rt>おどろ</rt></ruby>かす ④ [他動1] 使吃惊，吓唬\n△<ruby>後<rt>うし</rt></ruby>ろから<ruby>声<rt>こえ</rt></ruby>をかけて<ruby>友達<rt>ともだち</rt></ruby>を<ruby>驚<rt>おどろ</rt></ruby>かす。/ 从背后出声吓朋友一跳。",
     "cn": ""
   },
   {
@@ -84,7 +84,7 @@
     "word_id": "3-71",
     "start": 156.94,
     "end": 171.05,
-    "jp": "【3-71】 お願い[おねがい] ⓪ [名・他動3] 请求，拜托，愿望\n△<ruby>一<rt>ひと</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いがあるのですが。/ 我有一个不情之请。",
+    "jp": "【3-71】 お<ruby>願<rt>ねが</rt></ruby>い ⓪ [名・他動3] 请求，拜托，愿望\n△<ruby>一<rt>ひと</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いがあるのですが。/ 我有一个不情之请。",
     "cn": ""
   },
   {
@@ -108,7 +108,7 @@
     "word_id": "3-74",
     "start": 200.22,
     "end": 212.03,
-    "jp": "【3-74】 お<ruby>花<rt>おはな</rt></ruby> ② [名] 插花，花道；鲜花\n△お<ruby>花<rt>はな</rt></ruby>を<ruby>習<rt>なら</rt></ruby>う。/ 学习花道。",
+    "jp": "【3-74】 お<ruby>花<rt>はな</rt></ruby> ② [名] 插花，花道；鲜花\n△お<ruby>花<rt>はな</rt></ruby>を<ruby>習<rt>なら</rt></ruby>う。/ 学习花道。",
     "cn": ""
   },
   {
@@ -116,7 +116,7 @@
     "word_id": "3-75",
     "start": 212.03,
     "end": 224.16,
-    "jp": "【3-75】 お<ruby>昼<rt>おひる</rt></ruby> ② [名] 中午，午饭\n△もうすぐお<ruby>昼<rt>ひる</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>だ。/ 快到吃午饭的时间了。",
+    "jp": "【3-75】 お<ruby>昼<rt>ひる</rt></ruby> ② [名] 中午，午饭\n△もうすぐお<ruby>昼<rt>ひる</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>だ。/ 快到吃午饭的时间了。",
     "cn": ""
   },
   {
@@ -132,7 +132,7 @@
     "word_id": "3-77",
     "start": 236.88,
     "end": 252.7,
-    "jp": "【3-77】 溺れる[おぼれる] ③ [自動2] 溺水，淹没；沉迷，耽溺\n△<ruby>川<rt>かわ</rt></ruby>で<ruby>溺<rt>おぼ</rt></ruby>れている<ruby>子<rt>こ</rt></ruby>を<ruby>助<rt>たす</rt></ruby>ける。/ 救起在河里溺水的孩子。",
+    "jp": "【3-77】 <ruby>溺<rt>おぼ</rt></ruby>れる ③ [自動2] 溺水，淹没；沉迷，耽溺\n△<ruby>川<rt>かわ</rt></ruby>で<ruby>溺<rt>おぼ</rt></ruby>れている<ruby>子<rt>こ</rt></ruby>を<ruby>助<rt>たす</rt></ruby>ける。/ 救起在河里溺水的孩子。",
     "cn": ""
   },
   {
@@ -140,7 +140,7 @@
     "word_id": "3-78",
     "start": 252.7,
     "end": 265.21,
-    "jp": "【3-78】 お<ruby>盆<rt>おぼん</rt></ruby> ⓪ [名] 盂兰盆节；托盘\n△お<ruby>盆<rt>ぼん</rt></ruby>にふるさとへ<ruby>帰<rt>かえ</rt></ruby>る。/ 盂兰盆节回老家。",
+    "jp": "【3-78】 お<ruby>盆<rt>ぼん</rt></ruby> ⓪ [名] 盂兰盆节；托盘\n△お<ruby>盆<rt>ぼん</rt></ruby>にふるさとへ<ruby>帰<rt>かえ</rt></ruby>る。/ 盂兰盆节回老家。",
     "cn": ""
   },
   {
@@ -148,7 +148,7 @@
     "word_id": "3-79",
     "start": 265.21,
     "end": 283.35,
-    "jp": "【3-79】 思いがけない[おもいがけない] ⑤ [イ形] 意想不到的，出乎意料的\n△<ruby>思<rt>おも</rt></ruby>いがけないところで<ruby>昔<rt>むかし</rt></ruby>の<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>った。/ 在意想不到的地方遇到了老朋友。",
+    "jp": "【3-79】 <ruby>思<rt>おも</rt></ruby>いがけない ⑤ [イ形] 意想不到的，出乎意料的\n△<ruby>思<rt>おも</rt></ruby>いがけないところで<ruby>昔<rt>むかし</rt></ruby>の<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>った。/ 在意想不到的地方遇到了老朋友。",
     "cn": ""
   },
   {
@@ -156,7 +156,7 @@
     "word_id": "3-80",
     "start": 283.35,
     "end": 298.74,
-    "jp": "【3-80】 思い出す[おもいだす] ④ [他動1] 想起，回忆起\n△<ruby>子供<rt>こども</rt></ruby>のころのことを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す。/ 回想起孩提时代的往事。",
+    "jp": "【3-80】 <ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す ④ [他動1] 想起，回忆起\n△<ruby>子供<rt>こども</rt></ruby>のころのことを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す。/ 回想起孩提时代的往事。",
     "cn": ""
   },
   {
@@ -164,7 +164,7 @@
     "word_id": "3-81",
     "start": 298.74,
     "end": 311.49,
-    "jp": "【3-81】 思い<ruby>出<rt>おもいで</rt></ruby> ⓪ [名] 回忆，往事\n△<ruby>楽<rt>たの</rt></ruby>しい<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>で</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る。/ 留下美好的回忆。",
+    "jp": "【3-81】 <ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>で</rt></ruby> ⓪ [名] 回忆，往事\n△<ruby>楽<rt>たの</rt></ruby>しい<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>で</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る。/ 留下美好的回忆。",
     "cn": ""
   },
   {
@@ -172,7 +172,7 @@
     "word_id": "3-82",
     "start": 311.49,
     "end": 327.24,
-    "jp": "【3-82】 思える[おもえる] ③ [自動2] 觉得，感到，似乎\n△<ruby>彼<rt>かれ</rt></ruby>の<ruby>言<rt>い</rt></ruby>うことは<ruby>本当<rt>ほんとう</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>える。/ 觉得他说的话似乎是真的。",
+    "jp": "【3-82】 <ruby>思<rt>おも</rt></ruby>える ③ [自動2] 觉得，感到，似乎\n△<ruby>彼<rt>かれ</rt></ruby>の<ruby>言<rt>い</rt></ruby>うことは<ruby>本当<rt>ほんとう</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>える。/ 觉得他说的话似乎是真的。",
     "cn": ""
   },
   {
@@ -180,7 +180,7 @@
     "word_id": "3-83",
     "start": 327.24,
     "end": 344.88,
-    "jp": "【3-83】 表通り[おもてどおり] ④ [名] 大街，干道，临街马路\n△<ruby>表通<rt>おもてどお</rt></ruby>りは<ruby>車<rt>くるま</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くてにぎやかだ。/ 临街大道车水马龙十分热闹。",
+    "jp": "【3-83】 <ruby>表通<rt>おもてどお</rt></ruby>り ④ [名] 大街，干道，临街马路\n△<ruby>表通<rt>おもてどお</rt></ruby>りは<ruby>車<rt>くるま</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くてにぎやかだ。/ 临街大道车水马龙十分热闹。",
     "cn": ""
   },
   {
@@ -188,7 +188,7 @@
     "word_id": "3-84",
     "start": 344.88,
     "end": 361.92,
-    "jp": "【3-84】 思わず[おもわず] ② [副] 不禁，不由得，不假思索地\n△あまりのおかしさに<ruby>思<rt>おも</rt></ruby>わず<ruby>笑<rt>わら</rt></ruby>ってしまった。/ 太好笑了，不由得笑了出来。",
+    "jp": "【3-84】 <ruby>思<rt>おも</rt></ruby>わず ② [副] 不禁，不由得，不假思索地\n△あまりのおかしさに<ruby>思<rt>おも</rt></ruby>わず<ruby>笑<rt>わら</rt></ruby>ってしまった。/ 太好笑了，不由得笑了出来。",
     "cn": ""
   },
   {
@@ -220,7 +220,7 @@
     "word_id": "3-88",
     "start": 397.98,
     "end": 420.57,
-    "jp": "【3-88】 折れる[おれる] ② [自動2] 折断，断裂；弯曲，拐弯；让步，妥协\n△<ruby>強<rt>つよ</rt></ruby>い<ruby>風<rt>かぜ</rt></ruby>で<ruby>木<rt>き</rt></ruby>の<ruby>枝<rt>えだ</rt></ruby>が<ruby>折<rt>お</rt></ruby>れた。/ 树枝被狂风吹断了。\n△<ruby>次<rt>つぎ</rt></ruby>の<ruby>角<rt>かど</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>に<ruby>折<rt>お</rt></ruby>れる。/ 在下一个路口向右拐。",
+    "jp": "【3-88】 <ruby>折<rt>お</rt></ruby>れる ② [自動2] 折断，断裂；弯曲，拐弯；让步，妥协\n△<ruby>強<rt>つよ</rt></ruby>い<ruby>風<rt>かぜ</rt></ruby>で<ruby>木<rt>き</rt></ruby>の<ruby>枝<rt>えだ</rt></ruby>が<ruby>折<rt>お</rt></ruby>れた。/ 树枝被狂风吹断了。\n△<ruby>次<rt>つぎ</rt></ruby>の<ruby>角<rt>かど</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>に<ruby>折<rt>お</rt></ruby>れる。/ 在下一个路口向右拐。",
     "cn": ""
   },
   {
@@ -228,7 +228,7 @@
     "word_id": "3-89",
     "start": 420.57,
     "end": 441.05,
-    "jp": "【3-89】 下ろす[おろす] ② [他動1] 取下，卸下；让下车；提取（存款）\n△<ruby>棚<rt>たな</rt></ruby>から<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>下<rt>お</rt></ruby>ろす。/ 从架子上取下行李。\n△<ruby>銀行<rt>ぎんこう</rt></ruby>でお<ruby>金<rt>かね</rt></ruby>を<ruby>下<rt>お</rt></ruby>ろす。/ 从银行取钱。",
+    "jp": "【3-89】 <ruby>下<rt>お</rt></ruby>ろす ② [他動1] 取下，卸下；让下车；提取（存款）\n△<ruby>棚<rt>たな</rt></ruby>から<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>下<rt>お</rt></ruby>ろす。/ 从架子上取下行李。\n△<ruby>銀行<rt>ぎんこう</rt></ruby>でお<ruby>金<rt>かね</rt></ruby>を<ruby>下<rt>お</rt></ruby>ろす。/ 从银行取钱。",
     "cn": ""
   },
   {
@@ -236,7 +236,7 @@
     "word_id": "3-90",
     "start": 441.05,
     "end": 454.5,
-    "jp": "【3-90】 お詫び[おわび] ⓪ [名・自動3] 道歉，赔礼\n△お<ruby>詫<rt>わ</rt></ruby>びするほどのことでもない。/ 用不着特意道歉。",
+    "jp": "【3-90】 お<ruby>詫<rt>おわ</rt></ruby>び ⓪ [名・自動3] 道歉，赔礼\n△お<ruby>詫<rt>わ</rt></ruby>びするほどのことでもない。/ 用不着特意道歉。",
     "cn": ""
   }
 ]

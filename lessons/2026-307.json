@@ -4,7 +4,7 @@
     "word_id": "2-91",
     "start": 0.2,
     "end": 14.7,
-    "jp": "【2-91】 売り切れ[うりきれ] ⓪ [名] 售罄，卖光，脱销\n△<ruby>本日売<rt>ほんじつう</rt></ruby>り<ruby>切<rt>き</rt></ruby>れだ。/ 今天的货品已经全部售罄。",
+    "jp": "【2-91】 <ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れ ⓪ [名] 售罄，卖光，脱销\n△<ruby>本日売<rt>ほんじつう</rt></ruby>り<ruby>切<rt>き</rt></ruby>れだ。/ 今天的货品已经全部售罄。",
     "cn": ""
   },
   {
@@ -12,7 +12,7 @@
     "word_id": "2-92",
     "start": 14.7,
     "end": 29.22,
-    "jp": "【2-92】 売り切れる[うりきれる] ④ [自動2] 全部售完，卖光\n△あっという<ruby>間<rt>ま</rt></ruby>に<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れた。/ 转眼工夫就卖光了。",
+    "jp": "【2-92】 <ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れる ④ [自動2] 全部售完，卖光\n△あっという<ruby>間<rt>ま</rt></ruby>に<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れた。/ 转眼工夫就卖光了。",
     "cn": ""
   },
   {
@@ -20,7 +20,7 @@
     "word_id": "2-93",
     "start": 29.22,
     "end": 40.67,
-    "jp": "【2-93】 売り<ruby>手<rt>うりて</rt></ruby> ⓪ [名] 卖主，卖方\n△<ruby>売<rt>う</rt></ruby>り<ruby>手市場<rt>てしじょう</rt></ruby> / 卖方市场。",
+    "jp": "【2-93】 <ruby>売<rt>う</rt></ruby>り<ruby>手<rt>て</rt></ruby> ⓪ [名] 卖主，卖方\n△<ruby>売<rt>う</rt></ruby>り<ruby>手市場<rt>てしじょう</rt></ruby> / 卖方市场。",
     "cn": ""
   },
   {
@@ -28,7 +28,7 @@
     "word_id": "2-94",
     "start": 40.67,
     "end": 59.79,
-    "jp": "【2-94】 売り<ruby>物<rt>うりもの</rt></ruby> ⓪ [名] 出售的商品；招牌，噱头\n△<ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby>に<ruby>出<rt>だ</rt></ruby>す。/ 作为商品出售。\n△<ruby>親切<rt>しんせつ</rt></ruby>を<ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby>にする。/ 把热心肠当作招牌。",
+    "jp": "【2-94】 <ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby> ⓪ [名] 出售的商品；招牌，噱头\n△<ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby>に<ruby>出<rt>だ</rt></ruby>す。/ 作为商品出售。\n△<ruby>親切<rt>しんせつ</rt></ruby>を<ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby>にする。/ 把热心肠当作招牌。",
     "cn": ""
   },
   {
@@ -36,7 +36,7 @@
     "word_id": "2-95",
     "start": 59.79,
     "end": 77.67,
-    "jp": "【2-95】 得る[うる] ① [他動2] 得到，获得；（接动词连用形后）能够，可能\n△<ruby>利益<rt>りえき</rt></ruby>を<ruby>得<rt>う</rt></ruby>る。/ 获取利益。\n△それはあり<ruby>得<rt>う</rt></ruby>ることだ。/ 那是有可能的事。",
+    "jp": "【2-95】 <ruby>得<rt>う</rt></ruby>る ① [他動2] 得到，获得；（接动词连用形后）能够，可能\n△<ruby>利益<rt>りえき</rt></ruby>を<ruby>得<rt>う</rt></ruby>る。/ 获取利益。\n△それはあり<ruby>得<rt>う</rt></ruby>ることだ。/ 那是有可能的事。",
     "cn": ""
   },
   {
@@ -44,7 +44,7 @@
     "word_id": "2-96",
     "start": 77.67,
     "end": 90.78,
-    "jp": "【2-96】 売れ行き[うれゆき] ⓪ [名] 销路，销售情况\n△<ruby>売<rt>う</rt></ruby>れ<ruby>行<rt>ゆ</rt></ruby>きがいい。/ 销路很好。",
+    "jp": "【2-96】 <ruby>売<rt>う</rt></ruby>れ<ruby>行<rt>ゆ</rt></ruby>き ⓪ [名] 销路，销售情况\n△<ruby>売<rt>う</rt></ruby>れ<ruby>行<rt>ゆ</rt></ruby>きがいい。/ 销路很好。",
     "cn": ""
   },
   {
@@ -108,7 +108,7 @@
     "word_id": "2-104",
     "start": 192.89,
     "end": 213.2,
-    "jp": "【2-104】 描く[えがく] ② [他動1] 画，描绘；描写；想象\n△<ruby>山水<rt>さんすい</rt></ruby>を<ruby>描<rt>えが</rt></ruby>く。/ 画山水。\n△<ruby>明<rt>あか</rt></ruby>るい<ruby>未来<rt>みらい</rt></ruby>を<ruby>心<rt>こころ</rt></ruby>に<ruby>描<rt>えが</rt></ruby>く。/ 在心中描绘光明的未来。",
+    "jp": "【2-104】 <ruby>描<rt>えが</rt></ruby>く ② [他動1] 画，描绘；描写；想象\n△<ruby>山水<rt>さんすい</rt></ruby>を<ruby>描<rt>えが</rt></ruby>く。/ 画山水。\n△<ruby>明<rt>あか</rt></ruby>るい<ruby>未来<rt>みらい</rt></ruby>を<ruby>心<rt>こころ</rt></ruby>に<ruby>描<rt>えが</rt></ruby>く。/ 在心中描绘光明的未来。",
     "cn": ""
   },
   {
@@ -156,7 +156,7 @@
     "word_id": "2-110",
     "start": 284.56,
     "end": 305.3,
-    "jp": "【2-110】 偉い[えらい] ② [イ形] 伟大，了不起；严重；吃力，累人\n△<ruby>偉<rt>えら</rt></ruby>い<ruby>事業<rt>じぎょう</rt></ruby> / 伟大的事业。\n△<ruby>偉<rt>えら</rt></ruby>い<ruby>仕事<rt>しごと</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>受<rt>う</rt></ruby>けた。/ 接手了一份吃力的工作。",
+    "jp": "【2-110】 <ruby>偉<rt>えら</rt></ruby>い ② [イ形] 伟大，了不起；严重；吃力，累人\n△<ruby>偉<rt>えら</rt></ruby>い<ruby>事業<rt>じぎょう</rt></ruby> / 伟大的事业。\n△<ruby>偉<rt>えら</rt></ruby>い<ruby>仕事<rt>しごと</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>受<rt>う</rt></ruby>けた。/ 接手了一份吃力的工作。",
     "cn": ""
   },
   {
@@ -164,7 +164,7 @@
     "word_id": "2-111",
     "start": 305.3,
     "end": 322.13,
-    "jp": "【2-111】 得る[える] ① [他動2] 得到，获得；领会\n△<ruby>信頼<rt>しんらい</rt></ruby>を<ruby>得<rt>え</rt></ruby>る。/ 得到信任。\n△<ruby>要領<rt>ようりょう</rt></ruby>を<ruby>得<rt>え</rt></ruby>る。/ 掌握要领。",
+    "jp": "【2-111】 <ruby>得<rt>え</rt></ruby>る ① [他動2] 得到，获得；领会\n△<ruby>信頼<rt>しんらい</rt></ruby>を<ruby>得<rt>え</rt></ruby>る。/ 得到信任。\n△<ruby>要領<rt>ようりょう</rt></ruby>を<ruby>得<rt>え</rt></ruby>る。/ 掌握要领。",
     "cn": ""
   },
   {
