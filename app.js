@@ -492,3 +492,16 @@ document.addEventListener('visibilitychange', () => {
     requestWakeLock();
   }
 });
+
+// 快捷键支持：按空格键切换 播放/暂停（并阻止页面默认向下滚动）
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space' || e.key === ' ') {
+    const tag = document.activeElement ? document.activeElement.tagName : '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+    e.preventDefault();
+    if (document.activeElement && (tag === 'BUTTON' || tag === 'SELECT')) {
+      document.activeElement.blur();
+    }
+    togglePlayPause();
+  }
+});
