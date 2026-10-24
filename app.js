@@ -37,20 +37,25 @@ function saveProgress(lessonId, idx, timeSec) {
 }
 
 function initLessonOptions() {
-  if (!window.LESSONS_CONFIG) return;
-  lessonSelect.innerHTML = '';
+  const configList = (typeof LESSONS !== 'undefined' && Array.isArray(LESSONS)) ? LESSONS : window.LESSONS_CONFIG;
   const savedLessonId = localStorage.getItem(STORAGE_LAST_LESSON);
-  const hasSaved = savedLessonId && window.LESSONS_CONFIG.some(item => item.id === savedLessonId);
 
-  window.LESSONS_CONFIG.forEach(item => {
-    const opt = document.createElement('option');
-    opt.value = item.id;
-    opt.textContent = item.title;
-    if (hasSaved ? (item.id === savedLessonId) : item.default) {
-      opt.selected = true;
-    }
-    lessonSelect.appendChild(opt);
-  });
+  if (configList && configList.length > 0) {
+    lessonSelect.innerHTML = '';
+    const hasSaved = savedLessonId && configList.some(item => item.id === savedLessonId);
+    configList.forEach((item, idx) => {
+      const opt = document.createElement('option');
+      opt.value = item.id;
+      opt.textContent = item.title;
+      if (hasSaved ? (item.id === savedLessonId) : (item.default || idx === 0)) {
+        opt.selected = true;
+      }
+      lessonSelect.appendChild(opt);
+    });
+  } else if (savedLessonId) {
+    const exists = Array.from(lessonSelect.options).some(o => o.value === savedLessonId);
+    if (exists) lessonSelect.value = savedLessonId;
+  }
 }
 initLessonOptions();
 
