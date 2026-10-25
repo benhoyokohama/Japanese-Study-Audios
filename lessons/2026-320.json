@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "word_id": "6-1",
+    "start": 0.2,
+    "end": 17.58,
+    "jp": "【6-1】 <ruby>距離<rt>きょり</rt></ruby> ① [名] 距离\n△<ruby>距離<rt>きょり</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る。/ 测量距离。\n△<ruby>私<rt>わたし</rt></ruby>の<ruby>考<rt>かんが</rt></ruby>えとはだいぶ<ruby>距離<rt>きょり</rt></ruby>がある。 / 和我的想法有很大差距。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "6-2",
+    "start": 17.58,
+    "end": 29.47,
+    "jp": "【6-2】 <ruby>嫌<rt>きら</rt></ruby>い ① [名・ナ形] 讨厌，厌恶\n△<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>で<ruby>嫌<rt>きら</rt></ruby>いな<ruby>物<rt>もの</rt></ruby>はない。/ 没有讨厌的食物。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "6-3",
+    "start": 29.47,
+    "end": 41.59,
+    "jp": "【6-3】 <ruby>嫌<rt>きら</rt></ruby>う ③ [他動1] 讨厌，嫌恶\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>皆<rt>みな</rt></ruby>に<ruby>嫌<rt>きら</rt></ruby>われている。/ 他大家都讨厌他。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "6-4",
+    "start": 41.59,
+    "end": 53.67,
+    "jp": "【6-4】 きらきら ② [副] 闪烁，闪耀\n△<ruby>星<rt>ほし</rt></ruby>がきらきらと<ruby>光<rt>ひか</rt></ruby>る。/ 星星闪烁放光。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "6-5",
+    "start": 53.67,
+    "end": 66.61,
+    "jp": "【6-5】 <ruby>気楽<rt>きらく</rt></ruby> ① [名・ナ形] 轻松，安逸\n△<ruby>試験<rt>しけん</rt></ruby>が<ruby>済<rt>す</rt></ruby>んだから<ruby>気楽<rt>きらく</rt></ruby>だ。/ 考试结束了，所以很轻松。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "6-6",
+    "start": 66.61,
+    "end": 77.03,
+    "jp": "【6-6】 <ruby>霧<rt>きり</rt></ruby> ② [名] 雾\n△<ruby>霧<rt>きり</rt></ruby>が<ruby>深<rt>ふか</rt></ruby>い。/ 雾很大。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "6-7",
+    "start": 77.03,
+    "end": 89.84,
+    "jp": "【6-7】 ギリギリ ⓪ [名・副] 极限，勉强赶上\n△<ruby>時間<rt>じかん</rt></ruby>ギリギリで<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>う。/ 勉强按时赶上。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "6-8",
+    "start": 89.84,
+    "end": 111.02,
+    "jp": "【6-8】 <ruby>切<rt>き</rt></ruby>る ① [他動1] 切，割；断绝；剪；限定\n△<ruby>髪<rt>かみ</rt></ruby>を<ruby>切<rt>き</rt></ruby>る。/ 剪头发。\n△<ruby>縁<rt>えん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る。/ 断绝关系。\n△<ruby>期限<rt>きげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る。/ 限定期限。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "6-9",
+    "start": 111.02,
+    "end": 123.87,
+    "jp": "【6-9】 <ruby>記録<rt>きろく</rt></ruby> ③ [名・他動3] 记录，记载\n△<ruby>事件<rt>じけん</rt></ruby>の<ruby>経過<rt>けいか</rt></ruby>を<ruby>記録<rt>きろく</rt></ruby>しておく。/ 把事件的经过记录下来。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "6-10",
+    "start": 123.87,
+    "end": 135.82,
+    "jp": "【6-10】 <ruby>議論<rt>ぎろん</rt></ruby> ③ [名・他動3] 讨论，争论\n△<ruby>計画<rt>けいかく</rt></ruby>について<ruby>議論<rt>ぎろん</rt></ruby>する。/ 就计划进行讨论。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "6-11",
+    "start": 135.82,
+    "end": 151.45,
+    "jp": "【6-11】 <ruby>金<rt>きん</rt></ruby> ① [名] 黄金，金子\n△<ruby>指輪<rt>ゆびわ</rt></ruby>の<ruby>金<rt>きん</rt></ruby> / 金戒指\n△金メダル[きんめだる] / 金牌",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "6-12",
+    "start": 151.45,
+    "end": 167.13,
+    "jp": "【6-12】 <ruby>銀<rt>ぎん</rt></ruby> ① [名] 白银，银\n△<ruby>銀<rt>ぎん</rt></ruby>の<ruby>食器<rt>しょっき</rt></ruby> / 银餐具\n△銀メダル[ぎんめだる] / 银牌",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "6-13",
+    "start": 167.13,
+    "end": 179.02,
+    "jp": "【6-13】 <ruby>禁煙<rt>きんえん</rt></ruby> ③ [名・自動3] 禁止吸烟，戒烟\n△<ruby>車内<rt>しゃない</rt></ruby>は<ruby>禁煙<rt>きんえん</rt></ruby>だ。/ 车内禁止吸烟。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "6-14",
+    "start": 179.02,
+    "end": 191.72,
+    "jp": "【6-14】 <ruby>禁煙席<rt>きんえんせき</rt></ruby> ⑤ [名] 禁烟座位，禁烟区\n△<ruby>禁煙席<rt>きんえんせき</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>る。/ 坐在禁烟区。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "6-15",
+    "start": 191.72,
+    "end": 203.65,
+    "jp": "【6-15】 <ruby>金額<rt>きんがく</rt></ruby> ① [名] 金额，数额\n△<ruby>金額<rt>きんがく</rt></ruby>が<ruby>書<rt>か</rt></ruby>き<ruby>出<rt>だ</rt></ruby>される。/ 金额被列出来。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "6-16",
+    "start": 203.65,
+    "end": 215.19,
+    "jp": "【6-16】 <ruby>緊急<rt>きんきゅう</rt></ruby> ② [名・ナ形] 紧急，迫切\n△<ruby>緊急<rt>きんきゅう</rt></ruby>の<ruby>要件<rt>ようけん</rt></ruby> / 紧急要事",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "6-17",
+    "start": 215.19,
+    "end": 227.34,
+    "jp": "【6-17】 <ruby>金銭<rt>きんせん</rt></ruby> ① [名] 金钱，钱款\n△<ruby>金銭<rt>きんせん</rt></ruby>で<ruby>買<rt>か</rt></ruby>えないもの / 用金钱买不到的东西",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "6-18",
+    "start": 227.34,
+    "end": 239.47,
+    "jp": "【6-18】 <ruby>金属<rt>きんぞく</rt></ruby> ① [名] 金属\n△<ruby>金属<rt>きんぞく</rt></ruby>は<ruby>熱<rt>ねつ</rt></ruby>で<ruby>溶<rt>と</rt></ruby>ける。/ 金属遇热会融化。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "6-19",
+    "start": 239.47,
+    "end": 250.27,
+    "jp": "【6-19】 <ruby>近代<rt>きんだい</rt></ruby> ① [名] 近代\n△<ruby>近代史<rt>きんだいし</rt></ruby> / 近代史",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "6-20",
+    "start": 250.27,
+    "end": 261.87,
+    "jp": "【6-20】 <ruby>緊張<rt>きんちょう</rt></ruby> ③ [名・自動3] 紧张\n△<ruby>緊張<rt>きんちょう</rt></ruby>した<ruby>顔<rt>かお</rt></ruby>つき / 紧张的神情",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "6-21",
+    "start": 261.87,
+    "end": 273.68,
+    "jp": "【6-21】 <ruby>近年<rt>きんねん</rt></ruby> ① [名] 近年，最近\n△<ruby>近年<rt>きんねん</rt></ruby>の<ruby>気候変動<rt>きこうへんどう</rt></ruby> / 近年的气候变化",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "6-22",
+    "start": 273.68,
+    "end": 285.1,
+    "jp": "【6-22】 <ruby>勤勉<rt>きんべん</rt></ruby> ② [名・ナ形] 勤勉，勤奋\n△<ruby>勤勉<rt>きんべん</rt></ruby>に<ruby>働<rt>はた</rt></ruby>く。/ 勤奋工作。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "6-23",
+    "start": 285.1,
+    "end": 296.36,
+    "jp": "【6-23】 <ruby>勤務<rt>きんむ</rt></ruby> ① [名・自動3] 勤务，上班\n△<ruby>夜間勤務<rt>やかんきんむ</rt></ruby>につく。/ 上夜班。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "6-24",
+    "start": 296.36,
+    "end": 308.61,
+    "jp": "【6-24】 <ruby>具合<rt>ぐあい</rt></ruby> ① [名] 情况，状态；身体状况\n△<ruby>体<rt>からだ</rt></ruby>の<ruby>具合<rt>ぐあい</rt></ruby>がいい。/ 身体状况好。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "6-25",
+    "start": 308.61,
+    "end": 319.03,
+    "jp": "【6-25】 <ruby>食<rt>く</rt></ruby>う ① [他動1] 吃（粗俗说法）；生活\n△ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>く</rt></ruby>う。/ 吃饭。",
+    "cn": ""
+  }
+]
