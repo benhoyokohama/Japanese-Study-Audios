@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "word_id": "4-31",
+    "start": 0.2,
+    "end": 17.39,
+    "jp": "【4-31】 <ruby>確認<rt>かくにん</rt></ruby> ⓪ [名・他動3] 确认，证实\n△<ruby>安全確認<rt>あんぜんかくにん</rt></ruby> / 确认安全\n△<ruby>本人<rt>ほんにん</rt></ruby>であることを<ruby>確認<rt>かくにん</rt></ruby>する。/ 证实是本人。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "4-32",
+    "start": 17.39,
+    "end": 34.17,
+    "jp": "【4-32】 <ruby>学費<rt>がくひ</rt></ruby> ⓪ [名] 学费\n△アルバイトをして<ruby>学費<rt>がくひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐ。/ 打工挣学费。\n△<ruby>学費免除<rt>がくひめんじょ</rt></ruby> / 免除学费",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "4-33",
+    "start": 34.17,
+    "end": 49.73,
+    "jp": "【4-33】 <ruby>学部<rt>がくぶ</rt></ruby> ⓪② [名] （大学）院，系；本科\n△<ruby>医学部<rt>いがくぶ</rt></ruby> / 医学系\n△<ruby>学部生<rt>がくぶせい</rt></ruby> / 本科生",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "4-34",
+    "start": 49.73,
+    "end": 61.81,
+    "jp": "【4-34】 <ruby>学問<rt>がくもん</rt></ruby> ② [名・自動3] 学问，知识；学习\n△<ruby>学問<rt>がくもん</rt></ruby>に<ruby>励<rt>はげ</rt></ruby>む。/ 努力求学。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "4-35",
+    "start": 61.81,
+    "end": 78.76,
+    "jp": "【4-35】 <ruby>学力<rt>がくりょく</rt></ruby> ②① [名] 学力，学习能力\n△<ruby>学力<rt>がくりょく</rt></ruby>を<ruby>養<rt>やしな</rt></ruby>う。/ 培养学习能力。\n△<ruby>学力<rt>がくりょく</rt></ruby>テスト / 学力测验",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "4-36",
+    "start": 78.76,
+    "end": 91.12,
+    "jp": "【4-36】 <ruby>学歴<rt>がくれき</rt></ruby> ⓪ [名] 学历\n△<ruby>履歴書<rt>りれきしょ</rt></ruby>に<ruby>学歴<rt>がくれき</rt></ruby>を<ruby>書<rt>か</rt></ruby>く。/ 在简历上写学历。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "4-37",
+    "start": 91.12,
+    "end": 111.51,
+    "jp": "【4-37】 <ruby>隠<rt>かく</rt></ruby>れる ③ [自動2] 隐藏，躲藏；隐居，隐遁\n△<ruby>人<rt>ひと</rt></ruby>ごみに<ruby>隠<rt>かく</rt></ruby>れる。/ 藏身于人群中。\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>世間<rt>せけん</rt></ruby>から<ruby>隠<rt>かく</rt></ruby>れて<ruby>暮<rt>く</rt></ruby>らしている。/ 他过着与世隔绝的隐居生活。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "4-38",
+    "start": 111.51,
+    "end": 130.21,
+    "jp": "【4-38】 <ruby>影<rt>かげ</rt></ruby> ① [名] 影子；影像，倒影\n△カーテンに<ruby>人<rt>ひと</rt></ruby>の<ruby>影<rt>かげ</rt></ruby>が<ruby>映<rt>うつ</rt></ruby>っている。/ 窗帘上映着人影。\n△<ruby>鏡<rt>かがみ</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>っている<ruby>影<rt>かげ</rt></ruby> / 照在镜子中的影像",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "4-39",
+    "start": 130.21,
+    "end": 153.29,
+    "jp": "【4-39】 <ruby>陰<rt>かげ</rt></ruby> ① [名] 阴凉处，背阴处；背后；暗地里\n△<ruby>木陰<rt>こかげ</rt></ruby>で<ruby>休<rt>やす</rt></ruby>む。/ 在树荫下休息。\n△<ruby>戸<rt>と</rt></ruby>の<ruby>陰<rt>かげ</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れる。/ 藏在门背后。\n△<ruby>陰<rt>かげ</rt></ruby>で<ruby>悪口<rt>わるくち</rt></ruby>を<ruby>言<rt>い</rt></ruby>う。/ 在背后说坏话。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "4-40",
+    "start": 153.29,
+    "end": 165.75,
+    "jp": "【4-40】 <ruby>掛<rt>か</rt></ruby>け<ruby>算<rt>ざん</rt></ruby> ② [名] 乘法\n△<ruby>掛<rt>か</rt></ruby>け<ruby>算<rt>ざん</rt></ruby>で<ruby>答<rt>こた</rt></ruby>えを<ruby>出<rt>だ</rt></ruby>す。/ 用乘法算出答案。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "4-41",
+    "start": 165.75,
+    "end": 198.52,
+    "jp": "【4-41】 <ruby>掛<rt>か</rt></ruby>ける ② [他動2] 挂上；戴上；浇；花费；坐；开动（机器）\n△カーテンを<ruby>掛<rt>か</rt></ruby>ける。/ 挂窗帘。\n△メガネを<ruby>掛<rt>か</rt></ruby>ける。/ 戴眼镜。\n△<ruby>時間<rt>じかん</rt></ruby>を<ruby>掛<rt>か</rt></ruby>ける。/ 花费时间。\n△<ruby>椅子<rt>いす</rt></ruby>に<ruby>掛<rt>か</rt></ruby>ける。/ 坐在椅子上。\n△エンジンを<ruby>掛<rt>か</rt></ruby>ける。/ 开动引擎。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "4-42",
+    "start": 198.52,
+    "end": 216.32,
+    "jp": "【4-42】 <ruby>欠<rt>か</rt></ruby>ける ② [自動2] 掉了一块，破损；缺少，不足\n△<ruby>茶碗<rt>ちゃわん</rt></ruby>が<ruby>欠<rt>か</rt></ruby>ける。/ 茶碗有缺口。\n△<ruby>常識<rt>じょうしき</rt></ruby>に<ruby>欠<rt>か</rt></ruby>ける。/ 缺少常识。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "4-43",
+    "start": 216.32,
+    "end": 232.16,
+    "jp": "【4-43】 <ruby>架<rt>か</rt></ruby>ける ② [他動2] 架设；铺设\n△<ruby>橋<rt>はし</rt></ruby>を<ruby>架<rt>か</rt></ruby>ける。/ 架桥。\n△<ruby>鉄道<rt>てつどう</rt></ruby>を<ruby>架<rt>か</rt></ruby>ける。/ 铺设铁路。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "4-44",
+    "start": 232.16,
+    "end": 243.38,
+    "jp": "【4-44】 <ruby>過去<rt>かこ</rt></ruby> ① [名] 过去，往昔\n△<ruby>過去<rt>かこ</rt></ruby>のことは<ruby>問<rt>と</rt></ruby>わない。/ 既往不咎。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "4-45",
+    "start": 243.38,
+    "end": 258.43,
+    "jp": "【4-45】 <ruby>籠<rt>かご</rt></ruby> ⓪ [名] 筐，篮，笼\n△<ruby>籠<rt>かご</rt></ruby>を<ruby>編<rt>あ</rt></ruby>む。/ 编筐。\n△<ruby>鳥籠<rt>とりかご</rt></ruby> / 鸟笼",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "4-46",
+    "start": 258.43,
+    "end": 270.53,
+    "jp": "【4-46】 <ruby>囲<rt>かこ</rt></ruby>む ⓪ [他動1] 围，包围\n△<ruby>日本<rt>にほん</rt></ruby>は<ruby>海<rt>うみ</rt></ruby>に<ruby>囲<rt>かこ</rt></ruby>まれている。/ 日本四面环海。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "4-47",
+    "start": 270.53,
+    "end": 281.4,
+    "jp": "【4-47】 <ruby>火災<rt>かさい</rt></ruby> ⓪ [名] 火灾\n△<ruby>火災<rt>かさい</rt></ruby>が<ruby>起<rt>お</rt></ruby>こる。/ 发生火灾。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "4-48",
+    "start": 281.4,
+    "end": 303.47,
+    "jp": "【4-48】 <ruby>重<rt>かさ</rt></ruby>なる ⓪ [自動1] 重叠；碰在一起，赶在一起\n△テーブルの<ruby>上<rt>うえ</rt></ruby>に<ruby>皿<rt>さら</rt></ruby>が<ruby>五枚<rt>ごまい</rt></ruby><ruby>重<rt>かさ</rt></ruby>なっている。/ 桌子上五个盘子叠在一起。\n△<ruby>元旦<rt>がんたん</rt></ruby>と<ruby>日曜日<rt>にちようび</rt></ruby>が<ruby>重<rt>かさ</rt></ruby>なる。/ 元旦和星期天赶在一起。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "4-49",
+    "start": 303.47,
+    "end": 321.84,
+    "jp": "【4-49】 <ruby>重<rt>かさ</rt></ruby>ねる ⓪ [他動2] 重叠地堆放；反复，屡次\n△<ruby>本<rt>ほん</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ねる。/ 把书摞起来。\n△<ruby>研究<rt>けんきゅう</rt></ruby>に<ruby>研究<rt>けんきゅう</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ねる。/ 反复研究。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "4-50",
+    "start": 321.84,
+    "end": 342.27,
+    "jp": "【4-50】 <ruby>飾<rt>かざ</rt></ruby>り ⓪ [名] 装饰，装饰品；门面，摆设\n△<ruby>帽子<rt>ぼうし</rt></ruby>に<ruby>飾<rt>かざ</rt></ruby>りをつける。/ 在帽子上装装饰品。\n△<ruby>会長<rt>かいちょう</rt></ruby>といっても<ruby>飾<rt>かざ</rt></ruby>りだ。/ 虽说是会长，但只是个摆设。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "4-51",
+    "start": 342.27,
+    "end": 357.87,
+    "jp": "【4-51】 <ruby>火山<rt>かざん</rt></ruby> ① [名] 火山\n△<ruby>活火山<rt>かっかざん</rt></ruby> / 活火山\n△<ruby>火山<rt>かざん</rt></ruby>が<ruby>爆発<rt>ばくはつ</rt></ruby>する。/ 火山爆发。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "4-52",
+    "start": 357.87,
+    "end": 371.15,
+    "jp": "【4-52】 <ruby>貸<rt>か</rt></ruby>し<ruby>借<rt>か</rt></ruby>り ②③ [名・他動3] 借贷，借出和借入\n△お<ruby>金<rt>かね</rt></ruby>の<ruby>貸<rt>か</rt></ruby>し<ruby>借<rt>か</rt></ruby>りはしないほうがよい。/ 最好不要有金钱借贷。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "4-53",
+    "start": 371.15,
+    "end": 382.31,
+    "jp": "【4-53】 <ruby>賢<rt>かしこ</rt></ruby>い ③ [イ形] 聪明，伶俐\n△<ruby>賢<rt>かしこ</rt></ruby>いやり<ruby>方<rt>かた</rt></ruby> / 聪明的做法",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "4-54",
+    "start": 382.31,
+    "end": 393.26,
+    "jp": "【4-54】 <ruby>歌手<rt>かしゅ</rt></ruby> ① [名] 歌手，歌唱家\n△アイドル<ruby>歌手<rt>かしゅ</rt></ruby> / 偶像歌手",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "4-55",
+    "start": 393.26,
+    "end": 406.85,
+    "jp": "【4-55】 〜箇所[〜かしょ] [接尾] ……处，……个地方\n△ゴミは<ruby>一箇所<rt>いっかしょ</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>めてください。/ 请把垃圾集中在一处。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "4-56",
+    "start": 406.85,
+    "end": 418.9,
+    "jp": "【4-56】 ガスレンジ ③ [名] 煤气灶\n△ガスレンジを<ruby>掃除<rt>そうじ</rt></ruby>する。/ 清洁煤气灶。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "4-57",
+    "start": 418.9,
+    "end": 435.8,
+    "jp": "【4-57】 <ruby>稼<rt>かせ</rt></ruby>ぐ ② [他動1] 赚钱，挣钱；赚取（分数、时间等）\n△<ruby>学費<rt>がくひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐ。/ 挣学费。\n△<ruby>点数<rt>てんすう</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐ。/ 争取高分。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "4-58",
+    "start": 435.8,
+    "end": 454.22,
+    "jp": "【4-58】 <ruby>片足<rt>かたあし</rt></ruby> ② [名] 一条腿，一只脚；一只鞋（袜子）\n△<ruby>片足<rt>かたあし</rt></ruby>で<ruby>立<rt>た</rt></ruby>っている。/ 单腿站立。\n△<ruby>靴下<rt>くつした</rt></ruby>が<ruby>片足<rt>かたあし</rt></ruby>しかない。/ 只有一只袜子。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "4-59",
+    "start": 454.22,
+    "end": 467.93,
+    "jp": "【4-59】 <ruby>方々<rt>かたがた</rt></ruby> ② [名] 各位，诸位\n△ご<ruby>出席<rt>しゅっせき</rt></ruby>の<ruby>方々<rt>かたがた</rt></ruby>はこちらへどうぞ。/ 出席的各位请到这边来。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "4-60",
+    "start": 467.93,
+    "end": 486.32,
+    "jp": "【4-60】 <ruby>片付<rt>かたづ</rt></ruby>ける ④ [他動2] 整理，收拾；解决，处理\n△<ruby>食器<rt>しょっき</rt></ruby>を<ruby>片付<rt>かたづ</rt></ruby>ける。/ 收拾餐具。\n△<ruby>仕事<rt>しごと</rt></ruby>を<ruby>片付<rt>かたづ</rt></ruby>ける。/ 处理完工作。",
+    "cn": ""
+  }
+]
