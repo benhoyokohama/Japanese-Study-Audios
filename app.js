@@ -145,22 +145,26 @@ if (topPlayBtn) {
   topPlayBtn.onclick = () => togglePlayPause();
 }
 
-function playSentence(idx) {
+function playSentence(idx, seamless = false) {
   if (!sentences || idx < 0 || idx >= sentences.length) return;
   currentIndex = idx;
   highlightSentence(idx);
   const targetTime = Number(sentences[idx].start) || 0;
+  // 如果是自然顺延到下一句且当前时间已经紧邻目标句开头，不重复赋值 currentTime，保持锁屏音频流绝对连续
+  if (seamless && !coreAudio.paused && Math.abs((coreAudio.currentTime || 0) - targetTime) < 0.35) {
+    return;
+  }
   playAtTime(targetTime);
 }
 
 function handleEndAction() {
   if (playMode === 0) {
-    playSentence(currentIndex);
+    playSentence(currentIndex, false);
   } else if (playMode === 1) {
-    if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
-    else playSentence(0);
+    if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1, true);
+    else playSentence(0, false);
   } else if (playMode === 2) {
-    if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1);
+    if (currentIndex < sentences.length - 1) playSentence(currentIndex + 1, true);
     else playNextLesson();
   }
 }
@@ -225,9 +229,14 @@ tickerInterval = setInterval(() => {
   }
   if (isPlaying && sentences && sentences[currentIndex]) {
     const s = sentences[currentIndex];
+    const isLastSentence = (currentIndex >= sentences.length - 1);
     const endTime = Math.min(Number(s.end) || dur, dur > 0 ? dur : Infinity);
     if (cur >= endTime - 0.08) {
-      handleEndAction();
+      // 如果是单句循环，或者还不是本课最后一句，正常更新句索引；
+      // 如果是本课最后一句且为全文循环/顺序播放，交由原生 ended 事件在后台安全切课！
+      if (playMode === 0 || !isLastSentence) {
+        handleEndAction();
+      }
     }
   }
 }, 100);
@@ -396,7 +405,11 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
       : `已恢复至: 第 ${currentIndex + 1} / ${sentences.length} 句`;
 
     if (autoPlay) {
-      playAtTime(targetTime);
+      if (targetTime > 0.5) {
+        playAtTime(targetTime);
+      } else if (coreAudio.paused) {
+        coreAudio.play().catch(() => {});
+      }
       requestWakeLock();
     }
   } catch (err) {
