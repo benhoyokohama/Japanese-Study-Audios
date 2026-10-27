@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-随身日语 (jp-reader) - 文字 + TTS 课件生成标准引擎
+随身日语 (jp-reader) - 文字 + TTS 课件生成标准引擎 (支持多音字自动精准注音朗读)
 """
 import os
 import re
@@ -22,9 +22,9 @@ def extract_full_word_kana(first_line: str) -> str:
     """提取词条首行完整纯假名读音（支持整词注音与单字注音，绝不重复朗读）"""
     word_part = first_line.strip().split()[0]
     word_part = re.sub(r'\[([^\]]+)\]', lambda m: '' if POS_PATTERN.match(m.group(1).strip()) else m.group(0), word_part)
-    word_part = re.sub(r'[⓪①②③④⑤⑥⑦⑧⑨⑩⑪⑫～~・]', '', word_part).strip()
+    word_part = re.sub(r'[⓪①②③④⑤⑥⑦⑧⑨⑩⑪⑫～~〜・]', '', word_part).strip()
 
-    brackets = re.findall(r'\[([ぁ-んー]+)\]', word_part)
+    brackets = re.findall(r'\[([ぁ-んァ-ンー]+)\]', word_part)
     if len(brackets) == 1 and word_part.endswith(f"[{brackets[0]}]"):
         base_before = word_part[:word_part.rfind('[')]
         kana_inside = brackets[0]
@@ -32,8 +32,46 @@ def extract_full_word_kana(first_line: str) -> str:
         if (m_tail and kana_inside.endswith(m_tail.group(1))) or (base_before[:1] in 'おご' and kana_inside.startswith(base_before[:1])):
             return kana_inside
 
-    res = re.sub(r'[一-龥々ヶ]+\[([ぁ-んー]+)\]', lambda m: m.group(1), word_part)
+    res = re.sub(r'[一-龥々ヶ]+\[([ぁ-んァ-ンー]+)\]', lambda m: m.group(1), word_part)
     return res.strip()
+
+def prepare_tts_ja_sentence(ex_ja: str, head_line: str) -> str:
+    """
+    通用例句 TTS 读音预处理引擎：
+    1. 提取当前词条本尊的所有显式注音对 (如 柄[がら]、明日[あす])，在例句中优先使用标定假名；
+    2. 对例句中所有「无送假名的独立单汉字词」(如 柄[がら]が、角[かど]を、金[かね]の) 自动替换为标注假名，
+       彻底杜绝 TTS 将单汉字多音词误读为其他训读/音读；
+    3. 其余复合词剥离括号保留汉字，维持 TTS 自然分词与句调。
+    """
+    # 规范化波浪号注音
+    ex_ja = re.sub(r'([〜~])([一-龥々ヶ]+)\[[〜~]([ぁ-んァ-ンー]+)\]', r'\1\2[\3]', ex_ja)
+
+    # A. 提取词头自身的汉字注音映射（例如 4-105 词头是 柄[がら]）
+    head_word_part = head_line.strip().split()[0]
+    head_pairs = re.findall(r'([一-龥々ヶ]+)\[([ぁ-んァ-ンー]+)\]', head_word_part)
+    for kj, kn in head_pairs:
+        # 如果词头是单汉字词或特殊训读词，例句中凡是出现 完全一致的 漢字[かな] かつ后面不带送假名(或是独立词)，直接转为假名
+        ex_ja = ex_ja.replace(f"{kj}[{kn}]", kn)
+
+    # B. 通用规则：例句中任何「单汉字[假名]」且后面紧跟助词/标点/空格（说明是独立单字名词，极易发生多音字误读，如 柄[がら]、角[かど]、表[おもて]、縁[えん]、金[かね]、後[のち]）
+    # 以及动词特殊训读（单汉字[2个以上假名]+送假名，如 抱[いだ]く、ز[はか]る）
+    ex_ja = re.sub(
+        r'(?<![一-龥々ヶ])([一-龥])\[([ぁ-んー]+)\](?=[がをにへでとのもはやか、。！？\s/]|$)',
+        lambda m: m.group(2),
+        ex_ja
+    )
+    # 单汉字动词异读保护（如 抱[いだ]く、生[は]える、研[と]ぐ）
+    ex_ja = re.sub(
+        r'(?<![一-龥々ヶ])([一-龥])\[([ぁ-んー]{2,})\](?=[ぁ-ん])',
+        lambda m: m.group(2),
+        ex_ja
+    )
+
+    # C. 剥离剩余常规复合词的注音括号
+    ex_ja = strip_furigana(ex_ja).strip()
+    if ex_ja == "AイコールB":
+        ex_ja = "エー イコール ビー"
+    return ex_ja
 
 def parse_item_to_segments(raw_text: str):
     """将词条原始文本拆解为 [(语言, 朗读文本, 停顿毫秒), ...]"""
@@ -54,11 +92,8 @@ def parse_item_to_segments(raw_text: str):
         line = line.lstrip('△').strip()
         if '/' in line:
             ex_ja, ex_zh = line.split('/', 1)
-            ex_ja = ex_ja.replace("抱[いだ]", "いだ").replace("明日[あす]", "あす")
-            ex_ja = strip_furigana(ex_ja).strip()
+            ex_ja = prepare_tts_ja_sentence(ex_ja, first_line)
             ex_zh = ex_zh.strip()
-            if ex_ja == "AイコールB":
-                ex_ja = "エー イコール ビー"
             segs.append(("ja", ex_ja, 250))
             segs.append(("zh", ex_zh, 450))
     return segs
@@ -82,7 +117,7 @@ async def ensure_word_audio(rec: dict, force: bool = False) -> AudioSegment:
         return AudioSegment.from_mp3(cached_mp3)
 
     segs = parse_item_to_segments(rec["raw"])
-    print(f"  🎙️ 合成词条 【{wid:5s}】 -> {segs[0][1]}", flush=True)
+    print(f"  🎙️ 合成词条 【{wid:5s}】 -> {segs[0][1]} | 例句: {[s[1] for s in segs[2:] if s[0]=='ja']}", flush=True)
     item_audio = AudioSegment.empty()
     for s_idx, (lang, text, pause_ms) in enumerate(segs):
         tmp = f"temp_tts/{wid}_{s_idx}.mp3"
@@ -107,7 +142,8 @@ async def build_lesson(lesson_id: str, records: list, force_audio: bool = False)
         full_audio += word_audio
         end_sec = round(len(full_audio) / 1000.0, 2)
 
-        jp_html = rec.get("jp_ruby") or to_ruby(f"【{wid}】 {rec['raw']}")
+        jp_html = to_ruby(f"【{wid}】 {rec['raw']}")
+        rec["jp_ruby"] = jp_html
         item_data = {
             "id": idx,
             "word_id": wid,
@@ -126,22 +162,3 @@ async def build_lesson(lesson_id: str, records: list, force_audio: bool = False)
     with open(json_out, "w", encoding="utf-8") as f:
         json.dump(sentences, f, ensure_ascii=False, indent=2)
     print(f"✅ 课程 {lesson_id} 构建完成！总时长: {len(full_audio)/1000.0:.2f}s")
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="文字+TTS 课件构建工具")
-    parser.add_argument("--db", default="vocab_bank/unit1.json", help="词库 JSON 路径")
-    parser.add_argument("--lesson-id", help="指定单独构建的课程 ID，如 2026-399")
-    parser.add_argument("--word-ids", help="逗号分隔的自定义词条编号，如 1-15,1-61,1-109")
-    parser.add_argument("--force", action="store_true", help="强制重新合成 TTS 音频")
-    args = parser.parse_args()
-
-    with open(args.db, "r", encoding="utf-8") as f:
-        db_data = json.load(f)
-
-    if args.lesson_id and args.word_ids:
-        target_set = [w.strip() for w in args.word_ids.split(",") if w.strip()]
-        id_map = {r["word_id"]: r for r in db_data}
-        selected = [id_map[w] for w in target_set if w in id_map]
-        asyncio.run(build_lesson(args.lesson_id, selected, force_audio=args.force))
-    else:
-        print(f"已加载词库 {args.db}（共 {len(db_data)} 词）。可使用 --lesson-id 与 --word-ids 构建自定义课程。")

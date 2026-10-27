@@ -54,7 +54,14 @@ def _format_ruby_with_okurigana(base: str, reading: str) -> str:
 # 匹配词块：可选波浪号 + 可选接头词(お/ご) + 汉字块(可含中间送假名及末尾送假名) + [平假名读音]
 RUBY_PATTERN = re.compile(r'([～~]?[おご]?[一-龥々ヶ]+(?:[ぁ-ん]+[一-龥々ヶ]+)*[ぁ-ん]*)\[([ぁ-んー]+)\]')
 
+
+def normalize_tilde_ruby(text: str) -> str:
+    # 将 〜箇所[〜かしょ] 规范化为 〜箇所[かしょ]，确保正则完美生成 <ruby>
+    text = re.sub(r'([〜~])([一-龥々ヶ]+)\[[〜~]([ぁ-んァ-ンー]+)\]', r'\1\2[\3]', text)
+    return text
+
 def to_ruby(text: str) -> str:
+    text = normalize_tilde_ruby(text)
     """将 漢字[かな] 及 带送假名词头[かな] 转换为标准 <ruby> 标签，保留词性 [名] 等不变"""
     def repl(match):
         base = match.group(1)

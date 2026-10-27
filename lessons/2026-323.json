@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "word_id": "6-91",
+    "start": 0.2,
+    "end": 19.17,
+    "jp": "【6-91】 <ruby>計算<rt>けいさん</rt></ruby> ⓪ [名・他動3] 计算；考虑，盘算\n△<ruby>運賃<rt>うんちん</rt></ruby>は<ruby>距離<rt>きょり</rt></ruby>で<ruby>計算<rt>けいさん</rt></ruby>する。/ 运费按距离计算。\n△<ruby>計算<rt>けいさん</rt></ruby>された<ruby>行動<rt>こうどう</rt></ruby> / 经过深思熟虑的行动",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "6-92",
+    "start": 19.17,
+    "end": 30.91,
+    "jp": "【6-92】 <ruby>形式<rt>けいしき</rt></ruby> ⓪ [名] 形式\n△<ruby>形式<rt>けいしき</rt></ruby>に<ruby>重<rt>おも</rt></ruby>きを<ruby>置<rt>お</rt></ruby>く。/ 注重形式。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "6-93",
+    "start": 30.91,
+    "end": 44.16,
+    "jp": "【6-93】 <ruby>掲示板<rt>けいじばん</rt></ruby> ⓪ [名] 告示牌，布告栏\n△<ruby>掲示板<rt>けいじばん</rt></ruby>で<ruby>宿題<rt>しゅくだい</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する。/ 看布告栏确认作业。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "6-94",
+    "start": 44.16,
+    "end": 55.61,
+    "jp": "【6-94】 <ruby>芸術<rt>げいじゅつ</rt></ruby> ⓪① [名] 艺术\n△<ruby>芸術作品<rt>げいじゅつさくひん</rt></ruby> / 艺术作品",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "6-95",
+    "start": 55.61,
+    "end": 68.26,
+    "jp": "【6-95】 <ruby>携帯電話<rt>けいたいでんわ</rt></ruby> ⑤ [名] 手机，移动电话\n△<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>で<ruby>話<rt>はな</rt></ruby>す。/ 用手机通话。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "6-96",
+    "start": 68.26,
+    "end": 79.93,
+    "jp": "【6-96】 <ruby>毛糸<rt>けいと</rt></ruby> ① [名] 毛线，绒线\n△<ruby>毛糸<rt>けいと</rt></ruby>で<ruby>靴下<rt>くつした</rt></ruby>を<ruby>編<rt>あ</rt></ruby>む。/ 用毛线织袜子。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "6-97",
+    "start": 79.93,
+    "end": 95.92,
+    "jp": "【6-97】 <ruby>契約<rt>けいやく</rt></ruby> ⓪ [名・他動3] 契约，合同\n△<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ。/ 签订合同。\n△<ruby>契約書<rt>けいやくしょ</rt></ruby> / 合同书",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "6-98",
+    "start": 95.92,
+    "end": 106.44,
+    "jp": "【6-98】 <ruby>外科<rt>げか</rt></ruby> ① [名] 外科\n△<ruby>外科手術<rt>げかしゅじゅつ</rt></ruby> / 外科手术",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "6-99",
+    "start": 106.44,
+    "end": 119.83,
+    "jp": "【6-99】 <ruby>外科医<rt>げかい</rt></ruby> ② [名] 外科医生\n△<ruby>外科医<rt>げかい</rt></ruby>になってからもう<ruby>三十年<rt>さんじゅうねん</rt></ruby>だ。/ 成为外科医生已经三十年了。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "6-100",
+    "start": 119.83,
+    "end": 136.13,
+    "jp": "【6-100】 <ruby>下校<rt>げこう</rt></ruby> ⓪ [名・自動3] 放学，离校\n△<ruby>下校時間<rt>げこうじかん</rt></ruby> / 放学时间\n△<ruby>午後五時<rt>ごごごじ</rt></ruby>に<ruby>下校<rt>げこう</rt></ruby>する。/ 下午五点放学。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "6-101",
+    "start": 136.13,
+    "end": 146.6,
+    "jp": "【6-101】 <ruby>下車<rt>げしゃ</rt></ruby> ⓪① [名・自動3] 下车\n△<ruby>途中下車<rt>とちゅうげしゃ</rt></ruby> / 中途下车",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "6-102",
+    "start": 146.6,
+    "end": 158.32,
+    "jp": "【6-102】 <ruby>下旬<rt>げじゅん</rt></ruby> ⓪ [名] 下旬\n△<ruby>五月下旬<rt>ごがつげじゅん</rt></ruby>に<ruby>帰国<rt>きこく</rt></ruby>する。/ 五月下旬回国。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "6-103",
+    "start": 158.32,
+    "end": 174.19,
+    "jp": "【6-103】 <ruby>化粧<rt>けしょう</rt></ruby> ⓪ [名・自動3] 化妆，打扮\n△お<ruby>化粧<rt>けしょう</rt></ruby>をする。/ 化妆。\n△<ruby>化粧<rt>けしょう</rt></ruby>を<ruby>落<rt>お</rt></ruby>とす。/ 卸妆。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "6-104",
+    "start": 174.19,
+    "end": 191.52,
+    "jp": "【6-104】 <ruby>下水<rt>げすい</rt></ruby> ⓪ [名] 污水；下水道\n△<ruby>下水<rt>げすい</rt></ruby>を<ruby>川<rt>かわ</rt></ruby>に<ruby>流<rt>なが</rt></ruby>す。/ 把污水排到河里。\n△<ruby>下水<rt>げすい</rt></ruby>がつかえた。/ 下水道堵住了。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "6-105",
+    "start": 191.52,
+    "end": 208.76,
+    "jp": "【6-105】 <ruby>削<rt>けず</rt></ruby>る ⓪ [他動1] 削，刨；削减，删去\n△<ruby>鉛筆<rt>えんぴつ</rt></ruby>を<ruby>削<rt>けず</rt></ruby>る。/ 削铅笔。\n△<ruby>予算<rt>よさん</rt></ruby>を<ruby>削<rt>けず</rt></ruby>る。/ 削减预算。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "6-106",
+    "start": 208.76,
+    "end": 224.49,
+    "jp": "【6-106】 〜<ruby>桁<rt>けた</rt></ruby> [接尾] ……位数\n△<ruby>二桁<rt>ふたけた</rt></ruby><ruby>上<rt>あ</rt></ruby>げる。/ 进两位数。\n△<ruby>一桁<rt>ひとけた</rt></ruby><ruby>間違<rt>まちが</rt></ruby>えた。/ 算错了一位数。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "6-107",
+    "start": 224.49,
+    "end": 240.19,
+    "jp": "【6-107】 <ruby>下駄<rt>げた</rt></ruby> ⓪ [名] 木屐\n△<ruby>下駄<rt>げた</rt></ruby>を<ruby>履<rt>は</rt></ruby>く。/ 穿木屐。\n△<ruby>下駄<rt>げた</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける。/ 交由别人全权处理。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "6-108",
+    "start": 240.19,
+    "end": 257.24,
+    "jp": "【6-108】 けち ⓪ [名・ナ形] 吝啬，小气；简陋\n△けちな<ruby>人<rt>ひと</rt></ruby> / 吝啬的人\n△けちをつける。/ 挑毛病，鸡蛋里挑骨头。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "6-109",
+    "start": 257.24,
+    "end": 274.65,
+    "jp": "【6-109】 <ruby>結果<rt>けっか</rt></ruby> ⓪① [名・自動3] 结果，结局\n△<ruby>期末<rt>きまつ</rt></ruby>テストの<ruby>結果<rt>けっか</rt></ruby> / 期末考试的结果\n△<ruby>幸福<rt>こうふく</rt></ruby>な<ruby>結果<rt>けっか</rt></ruby>に<ruby>終<rt>お</rt></ruby>わる。/ 以幸福的结局告终。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "6-110",
+    "start": 274.65,
+    "end": 291.0,
+    "jp": "【6-110】 <ruby>月給<rt>げっきゅう</rt></ruby> ⓪ [名] 月薪，（月）工资\n△<ruby>月給<rt>げっきゅう</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる。/ 涨月薪。\n△<ruby>月給<rt>げっきゅう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う。/ 发工资。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "6-111",
+    "start": 291.0,
+    "end": 310.93,
+    "jp": "【6-111】 <ruby>結局<rt>けっきょく</rt></ruby> ⓪ [名・副] 结局，结果；终究，归根到底\n△<ruby>事件<rt>じけん</rt></ruby>の<ruby>結局<rt>けっきょく</rt></ruby> / 事件的结局\n△<ruby>結局<rt>けっきょく</rt></ruby>はお<ruby>金<rt>かね</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>だ。/ 归根到底还是钱的问题。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "6-112",
+    "start": 310.93,
+    "end": 328.17,
+    "jp": "【6-112】 <ruby>欠勤<rt>けっきん</rt></ruby> ⓪ [名・自動3] 缺勤，请假\n△<ruby>欠勤届<rt>けっきんとどけ</rt></ruby> / 请假条\n△<ruby>病気<rt>びょうき</rt></ruby>で<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>欠勤<rt>けっきん</rt></ruby>する。/ 因病请假不上班。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "6-113",
+    "start": 328.17,
+    "end": 353.07,
+    "jp": "【6-113】 <ruby>結構<rt>けっこう</rt></ruby> ① [名・ナ形・副] 漂亮，很好；足够，可以；不用，不要；相当\n△<ruby>結構<rt>けっこう</rt></ruby>な<ruby>贈<rt>おく</rt></ruby>り<ruby>物<rt>もの</rt></ruby> / 很好的礼物\n△それで<ruby>結構<rt>けっこう</rt></ruby>だ。/ 那样就可以了。\n△<ruby>結構<rt>けっこう</rt></ruby><ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ。/ 相当有用。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "6-114",
+    "start": 353.07,
+    "end": 369.94,
+    "jp": "【6-114】 <ruby>決心<rt>けっしん</rt></ruby> ① [名・自動3] 决心，决意\n△<ruby>決心<rt>けっしん</rt></ruby>が<ruby>固<rt>かた</rt></ruby>い。/ 决心坚定。\n△なかなか<ruby>決心<rt>けっしん</rt></ruby>がつかない。/ 迟迟下不了决心。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "6-115",
+    "start": 369.94,
+    "end": 387.09,
+    "jp": "【6-115】 <ruby>欠席<rt>けっせき</rt></ruby> ⓪ [名・自動3] 缺席；缺课\n△<ruby>無断欠席<rt>むだんけっせき</rt></ruby> / 无故缺席\n△<ruby>病気<rt>びょうき</rt></ruby>で<ruby>学校<rt>がっこう</rt></ruby>を<ruby>欠席<rt>けっせき</rt></ruby>する。/ 因病缺课。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "6-116",
+    "start": 387.09,
+    "end": 404.04,
+    "jp": "【6-116】 <ruby>欠点<rt>けってん</rt></ruby> ③ [名] 缺点，短处，毛病\n△<ruby>欠点<rt>けってん</rt></ruby>を<ruby>直<rt>なお</rt></ruby>す。/ 改正缺点。\n△<ruby>欠点<rt>けってん</rt></ruby>を<ruby>改<rt>あらた</rt></ruby>める。/ 克服缺点。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "6-117",
+    "start": 404.04,
+    "end": 414.89,
+    "jp": "【6-117】 げっぷ ⓪ [名] 饱嗝，打嗝儿\n△げっぷが<ruby>出<rt>で</rt></ruby>る。/ 打嗝儿。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "6-118",
+    "start": 414.89,
+    "end": 432.2,
+    "jp": "【6-118】 <ruby>月末<rt>げつまつ</rt></ruby> ⓪ [名] 月末，月终，月底\n△<ruby>月末<rt>げつまつ</rt></ruby>に<ruby>引越<rt>ひっこ</rt></ruby>す。/ 月底搬家。\n△<ruby>月末勘定<rt>げつまつかんじょう</rt></ruby> / 月底结账",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "6-119",
+    "start": 432.2,
+    "end": 449.87,
+    "jp": "【6-119】 <ruby>結論<rt>けつろん</rt></ruby> ⓪ [名・自動3] 结论\n△<ruby>結論<rt>けつろん</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す。/ 得出结论。\n△<ruby>慌<rt>あわ</rt></ruby>てて<ruby>結論<rt>けつろん</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す<ruby>必要<rt>ひつよう</rt></ruby>がない。/ 没必要急于下结论。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "6-120",
+    "start": 449.87,
+    "end": 463.73,
+    "jp": "【6-120】 <ruby>煙<rt>けむ</rt></ruby>たい ⓪ [イ形] 烟气熏人，呛人；（对某人）感到拘束、敬畏\n△<ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>が<ruby>煙<rt>けむ</rt></ruby>たい。/ 屋里烟气熏人。",
+    "cn": ""
+  }
+]

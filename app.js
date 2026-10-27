@@ -336,7 +336,7 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
 
   try {
     const jsonUrl = `./lessons/${lessonId}.json?t=${Date.now()}`;
-    const mp3Url = `./lessons/${lessonId}.mp3?v=20261024_101_53w`;
+    const mp3Url = `./lessons/${lessonId}.mp3?v=20261025_u5u6_full`;
 
     // 关键修复：如果是自动连播下一课 (autoPlay)，必须在 await fetch 之前同步切换音频源并立即调用 play()，
     // 否则手机熄屏状态下经过 await 网络异步等待后，系统会剥夺后台自动播放权限！
