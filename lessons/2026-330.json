@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "word_id": "8-61",
+    "start": 0.2,
+    "end": 11.31,
+    "jp": "【8-61】 <ruby>札<rt>さつ</rt></ruby> ⓪ [名] 纸币，钞票\n△<ruby>千円札<rt>せんえんさつ</rt></ruby> / 一千日元的纸币",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "8-62",
+    "start": 11.31,
+    "end": 29.11,
+    "jp": "【8-62】 <ruby>撮影<rt>さつえい</rt></ruby> ⓪ [名・他動3] 摄影，拍摄，拍照\n△<ruby>映画<rt>えいが</rt></ruby>を<ruby>撮影<rt>さつえい</rt></ruby>する。/ 拍电影。\n△<ruby>記念撮影<rt>きねんさつえい</rt></ruby>をする。/ 拍照留念。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "8-63",
+    "start": 29.11,
+    "end": 40.15,
+    "jp": "【8-63】 <ruby>作家<rt>さっか</rt></ruby> ⓪① [名] 作家，作者\n△<ruby>作家<rt>さっか</rt></ruby>になる。/ 成为作家。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "8-64",
+    "start": 40.15,
+    "end": 57.8,
+    "jp": "【8-64】 さっさと ① [副] 赶快，利索地，迅速地\n△さっさと<ruby>歩<rt>ある</rt></ruby>きなさい。/ 快点走。\n△さっさと<ruby>逃<rt>に</rt></ruby>げ<ruby>去<rt>さ</rt></ruby>る。/ 迅速逃走。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "8-65",
+    "start": 57.8,
+    "end": 78.23,
+    "jp": "【8-65】 ざっと ⓪ [副] 粗略地，大略；大约，大概\n△ざっと<ruby>目<rt>め</rt></ruby>を<ruby>通<rt>とお</rt></ruby>す。/ 粗略地浏览一遍。\n△<ruby>損害<rt>そんがい</rt></ruby>はざっと<ruby>十万円<rt>じゅうまんえん</rt></ruby>の<ruby>見込<rt>みこ</rt></ruby>みだ。/ 损失预计大约有十万日元。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "8-66",
+    "start": 78.23,
+    "end": 104.88,
+    "jp": "【8-66】 さっぱり ③ [副・自動3] 整洁，利落；直爽，痛快；清淡；（接否定）完全不\n△さっぱりした<ruby>身<rt>み</rt></ruby>なりをしている。/ 打扮得干净利落。\n△さっぱりした<ruby>気持<rt>きも</rt></ruby>ち / 心情舒畅\n△この<ruby>料理<rt>りょうり</rt></ruby>はさっぱりしている。/ 这道菜清淡爽口。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "8-67",
+    "start": 104.88,
+    "end": 126.13,
+    "jp": "【8-67】 さて ① [接] （承上启下或转换话题）那么，却说\n△<ruby>時間<rt>じかん</rt></ruby>になった、さて<ruby>仕事<rt>しごと</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>めよう。/ 到时间了，那么开始工作吧！\n△さて、<ruby>何<rt>なに</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>めたらよいか。/ 那么，该从哪里着手好呢？",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "8-68",
+    "start": 126.13,
+    "end": 144.54,
+    "jp": "【8-68】 <ruby>錆<rt>さ</rt></ruby>びる ② [自動2] 生锈；（技艺）荒疏\n△<ruby>小刀<rt>こがたな</rt></ruby>が<ruby>錆<rt>さ</rt></ruby>びた。/ 小刀生锈了。\n△せっかくの<ruby>腕<rt>うで</rt></ruby>も<ruby>使<rt>つか</rt></ruby>わないと<ruby>錆<rt>さ</rt></ruby>びる。/ 好好的手艺不用就会生疏。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "8-69",
+    "start": 144.54,
+    "end": 155.75,
+    "jp": "【8-69】 <ruby>座布団<rt>ざぶとん</rt></ruby> ② [名] 坐垫\n△<ruby>座布団<rt>ざぶとん</rt></ruby>を<ruby>敷<rt>し</rt></ruby>く。/ 铺坐垫。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "8-70",
+    "start": 155.75,
+    "end": 173.55,
+    "jp": "【8-70】 <ruby>差別<rt>さべつ</rt></ruby> ① [名・他動3] 差别，歧视，区别对待\n△<ruby>差別<rt>さべつ</rt></ruby>をつける。/ 加以区别对待。\n△<ruby>差別<rt>さべつ</rt></ruby>をなくす。/ 消除歧视与差别。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "8-71",
+    "start": 173.55,
+    "end": 190.5,
+    "jp": "【8-71】 サボる ② [自他動1] 偷懒，旷工，逃学\n△<ruby>仕事<rt>しごと</rt></ruby>をサボる。/ 上班摸鱼偷懒。\n△<ruby>学校<rt>がっこう</rt></ruby>をサボる。/ 逃学。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "8-72",
+    "start": 190.5,
+    "end": 208.82,
+    "jp": "【8-72】 <ruby>様々<rt>さまざま</rt></ruby> ② [名・ナ形] 各种各样，形形色色\n△<ruby>様々<rt>さまざま</rt></ruby>な<ruby>型<rt>かた</rt></ruby> / 各种款式\n△<ruby>人<rt>ひと</rt></ruby>の<ruby>性格<rt>せいかく</rt></ruby>は<ruby>様々<rt>さまざま</rt></ruby>だ。/ 人的性格千差万别。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "8-73",
+    "start": 208.82,
+    "end": 226.34,
+    "jp": "【8-73】 <ruby>覚<rt>さ</rt></ruby>ます ② [他動1] 弄醒；使醒悟\n△<ruby>子供<rt>こども</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>で<ruby>目<rt>め</rt></ruby>を<ruby>覚<rt>さ</rt></ruby>ました。/ 被孩子的声音吵醒。\n△<ruby>迷<rt>まよ</rt></ruby>いを<ruby>覚<rt>さ</rt></ruby>ます。/ 从迷茫中醒悟。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "8-74",
+    "start": 226.34,
+    "end": 245.81,
+    "jp": "【8-74】 <ruby>冷<rt>さ</rt></ruby>ます ② [他動1] 弄凉，吹凉；泼冷水，使冷却\n△お<ruby>湯<rt>ゆ</rt></ruby>を<ruby>吹<rt>ふ</rt></ruby>いて<ruby>冷<rt>さ</rt></ruby>ます。/ 把热水吹凉。\n△<ruby>人<rt>ひと</rt></ruby>の<ruby>情熱<rt>じょうねつ</rt></ruby>を<ruby>冷<rt>さ</rt></ruby>ます。/ 给别人的热情泼冷水。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "8-75",
+    "start": 245.81,
+    "end": 262.55,
+    "jp": "【8-75】 <ruby>寒気<rt>さむけ</rt></ruby> ⓪ [名] （发烧前的）寒战，发冷\n△<ruby>寒気<rt>さむけ</rt></ruby>がする。/ 觉得身上发冷打寒战。\n△<ruby>寒気<rt>さむけ</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>える。/ 感到阵阵发冷。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "8-76",
+    "start": 262.55,
+    "end": 279.33,
+    "jp": "【8-76】 <ruby>冷<rt>さ</rt></ruby>める ② [自動2] 变凉，冷却；（热情）减退\n△<ruby>味噌汁<rt>みそしる</rt></ruby>が<ruby>冷<rt>さ</rt></ruby>める。/ 味噌汤凉了。\n△<ruby>熱<rt>ねつ</rt></ruby>が<ruby>冷<rt>さ</rt></ruby>めた。/ 狂热劲儿过去了。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "8-77",
+    "start": 279.33,
+    "end": 296.98,
+    "jp": "【8-77】 <ruby>左右<rt>さゆう</rt></ruby> ① [名・他動3] 左右；支配，控制\n△<ruby>船<rt>ふね</rt></ruby>が<ruby>左右<rt>さゆう</rt></ruby>に<ruby>揺<rt>ゆ</rt></ruby>れる。/ 船左右摇晃。\n△<ruby>感情<rt>かんじょう</rt></ruby>に<ruby>左右<rt>さゆう</rt></ruby>される。/ 受情绪左右。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "8-78",
+    "start": 296.98,
+    "end": 309.2,
+    "jp": "【8-78】 <ruby>再来月<rt>さらいげつ</rt></ruby> ②③ [名] 下下个月\n△<ruby>再来月<rt>さらいげつ</rt></ruby>の<ruby>計画<rt>けいかく</rt></ruby> / 下下个月的计划",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "8-79",
+    "start": 309.2,
+    "end": 321.56,
+    "jp": "【8-79】 <ruby>再来週<rt>さらいしゅう</rt></ruby> ⓪ [名] 下下周，大下周\n△<ruby>再来週<rt>さらいしゅう</rt></ruby>のこと / 下下周的事情",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "8-80",
+    "start": 321.56,
+    "end": 333.59,
+    "jp": "【8-80】 <ruby>再来年<rt>さらいねん</rt></ruby> ⓪ [名] 后年\n△<ruby>再来年<rt>さらいねん</rt></ruby>に<ruby>結婚<rt>けっこん</rt></ruby>する。/ 后年结婚。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "8-81",
+    "start": 333.59,
+    "end": 347.37,
+    "jp": "【8-81】 サラダ<ruby>油<rt>さらだあぶら</rt></ruby> ④ [名] 色拉油\n△サラダ<ruby>油<rt>あぶら</rt></ruby>で<ruby>野菜<rt>やさい</rt></ruby>を<ruby>炒<rt>いた</rt></ruby>める。/ 用色拉油炒菜。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "8-82",
+    "start": 347.37,
+    "end": 368.4,
+    "jp": "【8-82】 <ruby>更<rt>さら</rt></ruby>に ① [副] 更加，越发；又，再，进一步\n△<ruby>雨<rt>あめ</rt></ruby>は<ruby>更<rt>さら</rt></ruby>に<ruby>激<rt>はげ</rt></ruby>しくなった。/ 雨下得更大了。\n△<ruby>試験<rt>しけん</rt></ruby>の<ruby>範囲<rt>はんい</rt></ruby>は<ruby>更<rt>さら</rt></ruby>に<ruby>五<rt>ご</rt></ruby>ページ<ruby>増<rt>ふ</rt></ruby>やす。/ 考试范围再增加五页。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "8-83",
+    "start": 368.4,
+    "end": 381.1,
+    "jp": "【8-83】 サラリーマン ③ [名] 工薪族，公司职员\n△サラリーマン<ruby>階級<rt>かいきゅう</rt></ruby> / 工薪阶层",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "8-84",
+    "start": 381.1,
+    "end": 393.03,
+    "jp": "【8-84】 <ruby>猿<rt>さる</rt></ruby> ① [名] 猴子，猿猴\n△<ruby>猿<rt>さる</rt></ruby>も<ruby>木<rt>き</rt></ruby>から<ruby>落<rt>お</rt></ruby>ちる。/ 智者千虑，必有一失。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "8-85",
+    "start": 393.03,
+    "end": 413.25,
+    "jp": "【8-85】 <ruby>騒<rt>さわ</rt></ruby>がしい ④ [イ形] 吵闹，喧嚣；（社会）动荡不安\n△<ruby>周<rt>まわ</rt></ruby>りが<ruby>騒<rt>さわ</rt></ruby>がしくてよく<ruby>聞<rt>き</rt></ruby>こえない。/ 周围太吵，听不清楚。\n△<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>が<ruby>騒<rt>さわ</rt></ruby>がしい。/ 世道动荡不安。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "8-86",
+    "start": 413.25,
+    "end": 432.05,
+    "jp": "【8-86】 <ruby>騒<rt>さわ</rt></ruby>ぐ ② [自動1] 吵闹，喧哗；慌乱，骚动；起哄\n△<ruby>心<rt>こころ</rt></ruby>が<ruby>騒<rt>さわ</rt></ruby>ぐ。/ 心里忐忑不安。\n△<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んで<ruby>騒<rt>さわ</rt></ruby>ぐ。/ 喝酒喧哗闹事。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "8-87",
+    "start": 432.05,
+    "end": 450.3,
+    "jp": "【8-87】 <ruby>爽<rt>さわ</rt></ruby>やか ② [ナ形] 清爽，爽朗；（心情）舒畅\n△<ruby>爽<rt>さわ</rt></ruby>やかな<ruby>天気<rt>てんき</rt></ruby> / 秋高气爽的天气\n△<ruby>気分<rt>きぶん</rt></ruby>が<ruby>爽<rt>さわ</rt></ruby>やかになる。/ 心情变得舒畅。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "8-88",
+    "start": 450.3,
+    "end": 468.33,
+    "jp": "【8-88】 <ruby>触<rt>さわ</rt></ruby>る ⓪ [自動1] 碰，摸，触；触犯，伤害\n△<ruby>指<rt>ゆび</rt></ruby>で<ruby>触<rt>さわ</rt></ruby>る。/ 用手指触摸。\n△<ruby>人<rt>ひと</rt></ruby>の<ruby>痛<rt>いた</rt></ruby>いところに<ruby>触<rt>さわ</rt></ruby>る。/ 戳别人的痛处。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "8-89",
+    "start": 468.33,
+    "end": 485.18,
+    "jp": "【8-89】 <ruby>参加<rt>さんか</rt></ruby> ⓪ [名・自動3] 参加，加入\n△<ruby>参加<rt>さんか</rt></ruby>を<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>む。/ 报名参加。\n△<ruby>労働組合<rt>ろうどうくみあい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する。/ 加入工会。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "8-90",
+    "start": 485.18,
+    "end": 497.23,
+    "jp": "【8-90】 <ruby>三角形<rt>さんかくけい</rt></ruby> ③④ [名] 三角形\n△<ruby>三角形<rt>さんかくけい</rt></ruby>に<ruby>切<rt>き</rt></ruby>る。/ 切成三角形。",
+    "cn": ""
+  }
+]
