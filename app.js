@@ -17,6 +17,32 @@ let playMode = 1;
 let isPlaying = false;
 let tickerInterval = null;
 
+const lessonJsonCache = {};
+let preloadedAudioUrl = '';
+
+function preloadNextLessonAssets() {
+  try {
+    const options = Array.from(lessonSelect.options);
+    const cur = options.findIndex(o => o.value === lessonSelect.value);
+    if (cur === -1) return;
+    const nextId = options[(cur + 1) % options.length].value;
+    if (!lessonJsonCache[nextId]) {
+      fetch(`./lessons/${nextId}.json?t=${Date.now()}`)
+        .then(r => r.ok ? r.json() : null)
+        .then(data => { if (data) lessonJsonCache[nextId] = data; })
+        .catch(() => {});
+    }
+    const nextMp3 = `./lessons/${nextId}.mp3?v=20261028_lockfix`;
+    if (preloadedAudioUrl !== nextMp3) {
+      preloadedAudioUrl = nextMp3;
+      const preloadAudio = new Audio();
+      preloadAudio.preload = 'auto';
+      preloadAudio.src = nextMp3;
+    }
+  } catch (e) {}
+}
+
+
 const STORAGE_LAST_LESSON = 'jp_reader_last_lesson';
 function getSavedProgress(lessonId) {
   try {
@@ -118,6 +144,7 @@ function playAtTime(offsetSec) {
   coreAudio.play().then(() => {
     isPlaying = true;
     btnPlayPause.textContent = '⏸ 暂停';
+    preloadNextLessonAssets();
     if (topPlayBtn) topPlayBtn.textContent = '⏸';
     if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
   }).catch(err => {
@@ -207,8 +234,7 @@ if ('mediaSession' in navigator) {
   navigator.mediaSession.setActionHandler('previoustrack', () => { prevSentence(); });
 }
 
-clearInterval(tickerInterval);
-tickerInterval = setInterval(() => {
+function syncPlaybackTick() {
   const cur = coreAudio.currentTime || 0;
   const dur = coreAudio.duration || 0;
 
@@ -224,22 +250,55 @@ tickerInterval = setInterval(() => {
     topPlayBtn.textContent = isPlaying ? '⏸' : '▶';
   }
 
-  if (isPlaying) {
-    saveProgress(lessonSelect.value, currentIndex, cur);
-  }
-  if (isPlaying && sentences && sentences[currentIndex]) {
+  if (!isPlaying || !sentences || sentences.length === 0) return;
+
+  // 单句循环模式：严格卡在当前句末尾循环
+  if (playMode === 0) {
     const s = sentences[currentIndex];
-    const isLastSentence = (currentIndex >= sentences.length - 1);
-    const endTime = Math.min(Number(s.end) || dur, dur > 0 ? dur : Infinity);
-    if (cur >= endTime - 0.08) {
-      // 如果是单句循环，或者还不是本课最后一句，正常更新句索引；
-      // 如果是本课最后一句且为全文循环/顺序播放，交由原生 ended 事件在后台安全切课！
-      if (playMode === 0 || !isLastSentence) {
-        handleEndAction();
+    if (s) {
+      const endTime = Math.min(Number(s.end) || dur, dur > 0 ? dur : Infinity);
+      if (cur >= endTime - 0.08) {
+        playSentence(currentIndex, false);
       }
     }
+    return;
   }
-}, 100);
+
+  // 全文循环(1) 或 顺序播放(2)：
+  // 关键修复：熄屏时定时器可能休眠很久，唤醒时直接根据真实音频时间 cur 查找当前实际所在的句子，
+  // 绝不能因为滞后的 currentIndex 触发 playSentence 把音频拉回前面的句子！
+  const lastIdx = sentences.length - 1;
+  const lastEnd = Number(sentences[lastIdx].end) || dur;
+
+  // 如果已经到达全课最后一句末尾，什么都不做，100% 交由原生 audio 'ended' 事件切下一课
+  if ((dur > 0 && cur >= dur - 0.25) || (lastEnd > 0 && cur >= lastEnd - 0.15)) {
+    if (currentIndex !== lastIdx) {
+      currentIndex = lastIdx;
+      highlightSentence(lastIdx);
+    }
+    return;
+  }
+
+  // 正常顺延：根据真实时间 cur 匹配当前句并高亮，绝不主动重置 coreAudio.currentTime
+  let matchedIdx = -1;
+  for (let i = 0; i < sentences.length; i++) {
+    const st = Number(sentences[i].start) || 0;
+    const ed = Number(sentences[i].end) || Infinity;
+    if (cur >= st - 0.05 && cur < ed - 0.05) {
+      matchedIdx = i;
+      break;
+    }
+  }
+  if (matchedIdx !== -1 && matchedIdx !== currentIndex) {
+    currentIndex = matchedIdx;
+    highlightSentence(currentIndex);
+  }
+  saveProgress(lessonSelect.value, currentIndex, cur);
+}
+
+clearInterval(tickerInterval);
+tickerInterval = setInterval(syncPlaybackTick, 200);
+coreAudio.addEventListener('timeupdate', syncPlaybackTick);
 
 seekSlider.oninput = () => {
   const dur = coreAudio.duration || 0;
@@ -345,10 +404,10 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
 
   try {
     const jsonUrl = `./lessons/${lessonId}.json?t=${Date.now()}`;
-    const mp3Url = `./lessons/${lessonId}.mp3?v=20261027_final`;
+    const mp3Url = `./lessons/${lessonId}.mp3?v=20261028_lockfix`;
 
-    // 关键修复：如果是自动连播下一课 (autoPlay)，必须在 await fetch 之前同步切换音频源并立即调用 play()，
-    // 否则手机熄屏状态下经过 await 网络异步等待后，系统会剥夺后台自动播放权限！
+    // 关键修复1：如果是自动连播下一课 (autoPlay)，在当前同步调用栈第一行立即切换 src 并 play()，
+    // 绝不等待任何异步操作，也绝不在后续回调里二次修改 currentTime 打断音频流！
     if (autoPlay) {
       coreAudio.src = mp3Url;
       coreAudio.playbackRate = parseFloat(speedSelect.value) || 1.0;
@@ -363,11 +422,16 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
       }
     }
 
-    const jsonRes = await fetch(jsonUrl);
-    if (!jsonRes.ok) throw new Error(`课文加载失败: ${jsonRes.status}`);
-    sentences = await jsonRes.json();
+    // 优先使用预加载缓存的 JSON，熄屏切课时实现 0 毫秒同步渲染
+    if (lessonJsonCache[lessonId]) {
+      sentences = lessonJsonCache[lessonId];
+    } else {
+      const jsonRes = await fetch(jsonUrl);
+      if (!jsonRes.ok) throw new Error(`课文加载失败: ${jsonRes.status}`);
+      sentences = await jsonRes.json();
+      lessonJsonCache[lessonId] = sentences;
+    }
 
-    // 读取该课上次保存的进度
     const savedProg = getSavedProgress(lessonId);
     let targetIdx = (startSentenceIdx !== null && startSentenceIdx !== undefined)
       ? startSentenceIdx
@@ -386,14 +450,12 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
     coreAudio.onloadedmetadata = () => {
       const dur = coreAudio.duration || 0;
       timeDuration.textContent = formatTime(dur);
-      if (targetTime > 0 && targetTime < dur) {
+      // 只有在非自动从头连播（或指定了大于 0.5s 的恢复位置）时才修改 currentTime，
+      // 严禁在 autoPlay 从 0 秒开播时二次赋值 currentTime 打断锁屏音频流！
+      if (!autoPlay && targetTime > 0 && targetTime < dur) {
         coreAudio.currentTime = targetTime;
         timeCurrent.textContent = formatTime(targetTime);
         seekSlider.value = (targetTime / dur) * 100 || 0;
-      }
-      if (autoPlay) {
-        coreAudio.playbackRate = parseFloat(speedSelect.value) || 1.0;
-        coreAudio.play().catch(() => {});
       }
     };
 
@@ -404,21 +466,15 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
       ? `播放中: 第 ${currentIndex + 1} / ${sentences.length} 句`
       : `已恢复至: 第 ${currentIndex + 1} / ${sentences.length} 句`;
 
+    // 提前预热下一课的 JSON 和音频
+    setTimeout(preloadNextLessonAssets, 1500);
+
     if (autoPlay) {
-      if (targetTime > 0.5) {
-        playAtTime(targetTime);
-      } else if (coreAudio.paused) {
-        coreAudio.play().catch(() => {});
-      }
       requestWakeLock();
     }
   } catch (err) {
     console.error(err);
     statusText.textContent = '⚠️ 加载失败: ' + err.message;
-    cardsList.innerHTML = `<div style="padding:20px;text-align:center;color:#ef4444;background:#fee2e2;border-radius:10px;">
-      加载失败: ${err.message}<br><br>
-      <button onclick="location.reload()" style="padding:6px 12px;cursor:pointer;">刷新重试</button>
-    </div>`;
   }
 }
 
