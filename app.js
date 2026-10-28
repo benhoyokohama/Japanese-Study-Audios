@@ -399,7 +399,7 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
 }
 
 lessonSelect.onchange = () => loadLesson(lessonSelect.value, null, false);
-loadLesson(lessonSelect.value || '2026-300', null, false);
+loadLesson(lessonSelect.value || '2026-101', null, false);
 
 window.playSentence = playSentence;
 window.togglePlayPause = togglePlayPause;
