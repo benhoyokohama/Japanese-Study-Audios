@@ -404,10 +404,8 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
 
   try {
     const jsonUrl = `./lessons/${lessonId}.json?t=${Date.now()}`;
-    const mp3Url = `./lessons/${lessonId}.mp3?v=20261028_lockfix`;
+    const mp3Url = `./lessons/${lessonId}.mp3?v=20261028_u7_lockfix`;
 
-    // 关键修复1：如果是自动连播下一课 (autoPlay)，在当前同步调用栈第一行立即切换 src 并 play()，
-    // 绝不等待任何异步操作，也绝不在后续回调里二次修改 currentTime 打断音频流！
     if (autoPlay) {
       coreAudio.src = mp3Url;
       coreAudio.playbackRate = parseFloat(speedSelect.value) || 1.0;
@@ -422,7 +420,6 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
       }
     }
 
-    // 优先使用预加载缓存的 JSON，熄屏切课时实现 0 毫秒同步渲染
     if (lessonJsonCache[lessonId]) {
       sentences = lessonJsonCache[lessonId];
     } else {
@@ -450,8 +447,6 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
     coreAudio.onloadedmetadata = () => {
       const dur = coreAudio.duration || 0;
       timeDuration.textContent = formatTime(dur);
-      // 只有在非自动从头连播（或指定了大于 0.5s 的恢复位置）时才修改 currentTime，
-      // 严禁在 autoPlay 从 0 秒开播时二次赋值 currentTime 打断锁屏音频流！
       if (!autoPlay && targetTime > 0 && targetTime < dur) {
         coreAudio.currentTime = targetTime;
         timeCurrent.textContent = formatTime(targetTime);
@@ -466,7 +461,6 @@ async function loadLesson(lessonId, startSentenceIdx = null, autoPlay = false) {
       ? `播放中: 第 ${currentIndex + 1} / ${sentences.length} 句`
       : `已恢复至: 第 ${currentIndex + 1} / ${sentences.length} 句`;
 
-    // 提前预热下一课的 JSON 和音频
     setTimeout(preloadNextLessonAssets, 1500);
 
     if (autoPlay) {
