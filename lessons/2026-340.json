@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "11-1",
+    "start": 0.2,
+    "end": 18.4,
+    "jp": "【11-1】 <ruby>信頼<rt>しんらい</rt></ruby> ⓪ [名・他動3] 信任，信赖\n△<ruby>信頼<rt>しんらい</rt></ruby>しにくい<ruby>人<rt>ひと</rt></ruby> / 难以信任的人\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>先生<rt>せんせい</rt></ruby>に<ruby>信頼<rt>しんらい</rt></ruby>されている。/ 他深受老师的信任。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "11-2",
+    "start": 18.4,
+    "end": 30.0,
+    "jp": "【11-2】 <ruby>心理<rt>しんり</rt></ruby> ① [名] 心理\n△<ruby>子供<rt>こども</rt></ruby>の<ruby>心理<rt>しんり</rt></ruby>を<ruby>分析<rt>ぶんせき</rt></ruby>する。/ 分析儿童的心理。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "11-3",
+    "start": 30.0,
+    "end": 41.81,
+    "jp": "【11-3】 <ruby>心理学<rt>しんりがく</rt></ruby> ③ [名] 心理学\n△<ruby>児童心理学<rt>じどうしんりがく</rt></ruby> / 儿童心理学",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "11-4",
+    "start": 41.81,
+    "end": 53.16,
+    "jp": "【11-4】 <ruby>森林<rt>しんりん</rt></ruby> ⓪ [名] 森林\n△<ruby>森林開発<rt>しんりんかいはつ</rt></ruby> / 森林开发",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "11-5",
+    "start": 53.16,
+    "end": 71.91,
+    "jp": "【11-5】 <ruby>親類<rt>しんるい</rt></ruby> ⓪ [名] 亲戚，亲属；同类\n△<ruby>遠<rt>とお</rt></ruby>い<ruby>親類<rt>しんるい</rt></ruby>より<ruby>近<rt>ちか</rt></ruby>くの<ruby>他人<rt>たにん</rt></ruby>。/ 远亲不如近邻。\n△<ruby>猫<rt>ねこ</rt></ruby>は<ruby>虎<rt>とら</rt></ruby>の<ruby>親類<rt>しんるい</rt></ruby>だ。/ 猫和虎是同类。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "11-6",
+    "start": 71.91,
+    "end": 84.06,
+    "jp": "【11-6】 <ruby>人類<rt>じんるい</rt></ruby> ① [名] 人类\n△<ruby>人類<rt>じんるい</rt></ruby>の<ruby>幸福<rt>こうふく</rt></ruby>を<ruby>図<rt>はか</rt></ruby>る。/ 谋求人类的幸福。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "11-7",
+    "start": 84.06,
+    "end": 99.69,
+    "jp": "【11-7】 <ruby>酢<rt>す</rt></ruby> ① [名] 醋\n△<ruby>野菜<rt>やさい</rt></ruby>に<ruby>酢<rt>す</rt></ruby>をかける。/ 往蔬菜上浇醋。\n△<ruby>酢<rt>す</rt></ruby>が<ruby>足<rt>た</rt></ruby>りない。/ 醋放少了。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "11-8",
+    "start": 99.69,
+    "end": 116.33,
+    "jp": "【11-8】 <ruby>図<rt>ず</rt></ruby> ① [名] 图，图表；地图\n△<ruby>図<rt>ず</rt></ruby>で<ruby>示<rt>しめ</rt></ruby>す。/ 用图表示。\n△<ruby>会場<rt>かいじょう</rt></ruby>までの<ruby>図<rt>ず</rt></ruby>を<ruby>添<rt>そ</rt></ruby>える。/ 附上去会场的地图。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "11-9",
+    "start": 116.33,
+    "end": 127.69,
+    "jp": "【11-9】 <ruby>水温<rt>すいおん</rt></ruby> ⓪ [名] 水温\n△<ruby>水温<rt>すいおん</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る。/ 测量水温。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "11-10",
+    "start": 127.69,
+    "end": 138.56,
+    "jp": "【11-10】 <ruby>西瓜<rt>すいか</rt></ruby> ⓪ [名] 西瓜\n△<ruby>西瓜<rt>すいか</rt></ruby>の<ruby>種<rt>たね</rt></ruby> / 西瓜籽",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "11-11",
+    "start": 138.56,
+    "end": 155.18,
+    "jp": "【11-11】 <ruby>水産<rt>すいさん</rt></ruby> ⓪ [名] 水产，水产品\n△<ruby>水産業<rt>すいさんぎょう</rt></ruby> / 水产业\n△<ruby>水産試験場<rt>すいさんしけんじょう</rt></ruby> / 水产试验场",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "11-12",
+    "start": 155.18,
+    "end": 170.91,
+    "jp": "【11-12】 <ruby>炊事<rt>すいじ</rt></ruby> ⓪ [名・自動3] 炊事，做饭\n△<ruby>炊事<rt>すいじ</rt></ruby>をする。/ 做饭。\n△<ruby>炊事係<rt>すいじがかり</rt></ruby> / 炊事员",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "11-13",
+    "start": 170.91,
+    "end": 183.48,
+    "jp": "【11-13】 <ruby>水蒸気<rt>すいじょうき</rt></ruby> ③ [名] 水蒸气\n△<ruby>水<rt>みず</rt></ruby>が<ruby>水蒸気<rt>すいじょうき</rt></ruby>に<ruby>変<rt>か</rt></ruby>わる。/ 水变成水蒸气。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "11-14",
+    "start": 183.48,
+    "end": 200.77,
+    "jp": "【11-14】 スイッチ ②① [名] 开关，电门\n△スイッチを<ruby>入<rt>い</rt></ruby>れる。/ 打开开关。\n△<ruby>電灯<rt>でんとう</rt></ruby>のスイッチをつける。/ 打开电灯开关。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "11-15",
+    "start": 200.77,
+    "end": 214.07,
+    "jp": "【11-15】 <ruby>炊飯器<rt>すいはんき</rt></ruby> ③ [名] 电饭煲，煮饭器\n△<ruby>電気炊飯器<rt>でんきすいはんき</rt></ruby>でご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>く。/ 用电饭煲煮饭。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "11-16",
+    "start": 214.07,
+    "end": 225.81,
+    "jp": "【11-16】 <ruby>水分<rt>すいぶん</rt></ruby> ① [名] 水分\n△<ruby>水分<rt>すいぶん</rt></ruby>を<ruby>吸収<rt>きゅうしゅう</rt></ruby>する。/ 吸收水分。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "11-17",
+    "start": 225.81,
+    "end": 241.83,
+    "jp": "【11-17】 <ruby>睡眠<rt>すいみん</rt></ruby> ⓪ [名・自動3] 睡眠\n△<ruby>睡眠不足<rt>すいみんぶそく</rt></ruby> / 睡眠不足\n△<ruby>睡眠<rt>すいみん</rt></ruby>が<ruby>浅<rt>あさ</rt></ruby>い。/ 睡眠浅。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "11-18",
+    "start": 241.83,
+    "end": 257.72,
+    "jp": "【11-18】 <ruby>数字<rt>すうじ</rt></ruby> ⓪ [名] 数字\n△アラビア<ruby>数字<rt>すうじ</rt></ruby> / 阿拉伯数字\n△<ruby>数字<rt>すうじ</rt></ruby>で<ruby>示<rt>しめ</rt></ruby>す。/ 用数字表示。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "11-19",
+    "start": 257.72,
+    "end": 271.0,
+    "jp": "【11-19】 <ruby>図々<rt>ずうずう</rt></ruby>しい ⑤ [イ形] 厚颜无耻，脸皮厚\n△<ruby>図々<rt>ずうずう</rt></ruby>しいことを<ruby>言<rt>い</rt></ruby>うな。/ 不要说厚脸皮的话。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "11-20",
+    "start": 271.0,
+    "end": 282.69,
+    "jp": "【11-20】 <ruby>数人<rt>すうにん</rt></ruby> ⓪ [名] 数人，几个人\n△<ruby>数人<rt>すうにん</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby> / 几个学生",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "11-21",
+    "start": 282.69,
+    "end": 293.66,
+    "jp": "【11-21】 <ruby>数年<rt>すうねん</rt></ruby> ⓪ [名] 数年，几年\n△<ruby>数年間<rt>すうねんかん</rt></ruby> / 数年间",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "11-22",
+    "start": 293.66,
+    "end": 316.16,
+    "jp": "【11-22】 <ruby>末<rt>すえ</rt></ruby> ⓪ [名] 末尾，末了；将来，前途；（排行）最小的\n△<ruby>年<rt>とし</rt></ruby>の<ruby>末<rt>すえ</rt></ruby> / 年末\n△<ruby>末<rt>すえ</rt></ruby>が<ruby>頼<rt>たの</rt></ruby>もしい。/ 前途有望。\n△<ruby>末<rt>すえ</rt></ruby>の<ruby>娘<rt>むすめ</rt></ruby> / 最小的女儿",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "11-23",
+    "start": 316.16,
+    "end": 328.95,
+    "jp": "【11-23】 <ruby>末<rt>すえ</rt></ruby>っ<ruby>子<rt>こ</rt></ruby> ⓪ [名] 最小的孩子，老幺\n△<ruby>男<rt>おとこ</rt></ruby>の<ruby>末<rt>すえ</rt></ruby>っ<ruby>子<rt>こ</rt></ruby> / 最小的儿子",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "11-24",
+    "start": 328.95,
+    "end": 341.58,
+    "jp": "【11-24】 スカーフ ② [名] 围巾，丝巾，方巾\n△<ruby>首<rt>くび</rt></ruby>にスカーフを<ruby>巻<rt>ま</rt></ruby>く。/ 在脖子上围丝巾。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "11-25",
+    "start": 341.58,
+    "end": 360.38,
+    "jp": "【11-25】 <ruby>好<rt>す</rt></ruby>き<ruby>嫌<rt>きら</rt></ruby>い ② [名] 好恶；挑食，挑剔\n△<ruby>誰<rt>だれ</rt></ruby>にも<ruby>好<rt>す</rt></ruby>き<ruby>嫌<rt>きら</rt></ruby>いがある。/ 谁都有好恶。\n△<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>に<ruby>好<rt>す</rt></ruby>き<ruby>嫌<rt>きら</rt></ruby>いが<ruby>激<rt>はげ</rt></ruby>しい。/ 吃东西很挑食。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "11-26",
+    "start": 360.38,
+    "end": 372.94,
+    "jp": "【11-26】 <ruby>好<rt>す</rt></ruby>き<ruby>好<rt>ず</rt></ruby>き ② [名・ナ形] 各有所好，喜好不同\n△<ruby>人<rt>ひと</rt></ruby>には<ruby>好<rt>す</rt></ruby>き<ruby>好<rt>ず</rt></ruby>きがある。/ 人各有所好。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "11-27",
+    "start": 372.94,
+    "end": 390.61,
+    "jp": "【11-27】 <ruby>隙間<rt>すきま</rt></ruby> ⓪ [名] 缝隙，空隙；闲暇\n△<ruby>戸<rt>と</rt></ruby>の<ruby>隙間<rt>すきま</rt></ruby>から<ruby>風<rt>かぜ</rt></ruby>が<ruby>入<rt>はい</rt></ruby>る。/ 风从门缝吹进来。\n△<ruby>仕事<rt>しごと</rt></ruby>の<ruby>隙間<rt>すきま</rt></ruby> / 工作间隙",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "11-28",
+    "start": 390.61,
+    "end": 408.95,
+    "jp": "【11-28】 <ruby>掬<rt>すく</rt></ruby>う ⓪ [他動1] 舀，捞，捧；绊（脚）\n△<ruby>水<rt>みず</rt></ruby>を<ruby>掬<rt>すく</rt></ruby>う。/ 捧水，舀水。\n△<ruby>足<rt>あし</rt></ruby>を<ruby>掬<rt>すく</rt></ruby>って<ruby>相手<rt>あいて</rt></ruby>を<ruby>倒<rt>たお</rt></ruby>す。/ 使绊子把对方绊倒。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "11-29",
+    "start": 408.95,
+    "end": 420.69,
+    "jp": "【11-29】 スクール ② [名] 学校，培训班\n△スイミングスクール / 游泳培训班",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "11-30",
+    "start": 420.69,
+    "end": 438.24,
+    "jp": "【11-30】 スケート ② [名] 滑冰，溜冰；冰鞋\n△スケートをつけて<ruby>滑<rt>すべ</rt></ruby>る。/ 穿上冰鞋滑冰。\n△スケートに<ruby>行<rt>い</rt></ruby>く。/ 去滑冰。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "11-31",
+    "start": 438.24,
+    "end": 458.22,
+    "jp": "【11-31】 <ruby>進<rt>すす</rt></ruby>める ⓪ [他動2] 向前移动；推进，开展；拨快；晋升\n△<ruby>時計<rt>とけい</rt></ruby>を<ruby>一時間進<rt>いちじかんすす</rt></ruby>める。/ 把表拨快一小时。\n△<ruby>仕事<rt>しごと</rt></ruby>を<ruby>進<rt>すす</rt></ruby>める。/ 推进工作。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "11-32",
+    "start": 458.22,
+    "end": 476.01,
+    "jp": "【11-32】 <ruby>勧<rt>すす</rt></ruby>める ⓪ [他動2] 劝，推荐，建议\n△<ruby>酒<rt>さけ</rt></ruby>を<ruby>勧<rt>すす</rt></ruby>める。/ 劝酒。\n△<ruby>両親<rt>りょうしん</rt></ruby>に<ruby>旅行<rt>りょこう</rt></ruby>を<ruby>勧<rt>すす</rt></ruby>める。/ 劝父母去旅行。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "11-33",
+    "start": 476.01,
+    "end": 492.58,
+    "jp": "【11-33】 すする ⓪ [他動1] 小口喝，啜饮；吸（鼻涕）\n△お<ruby>茶<rt>ちゃ</rt></ruby>をすする。/ 啜饮茶水。\n△<ruby>鼻<rt>はな</rt></ruby>をすする。/ 吸溜鼻涕。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "11-34",
+    "start": 492.58,
+    "end": 504.44,
+    "jp": "【11-34】 <ruby>進<rt>すす</rt></ruby>んで ⓪ [副] 自愿，主动地\n△<ruby>進<rt>すす</rt></ruby>んで<ruby>参加<rt>さんか</rt></ruby>する。/ 主动参加。",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "11-35",
+    "start": 504.44,
+    "end": 515.29,
+    "jp": "【11-35】 スター ②① [名] 星星；明星\n△<ruby>映画<rt>えいが</rt></ruby>スター / 电影明星",
+    "cn": ""
+  }
+]
