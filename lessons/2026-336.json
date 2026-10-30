@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "word_id": "10-1",
+    "start": 0.2,
+    "end": 11.68,
+    "jp": "【10-1】 <ruby>祝日<rt>しゅくじつ</rt></ruby> ⓪ [名] 法定节假日\n△<ruby>祝日<rt>しゅくじつ</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う。/ 庆祝节日。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "10-2",
+    "start": 11.68,
+    "end": 24.45,
+    "jp": "【10-2】 <ruby>宿泊<rt>しゅくはく</rt></ruby> ⓪ [名・自動3] 投宿，住宿\n△<ruby>友人<rt>ゆうじん</rt></ruby>のところに<ruby>宿泊<rt>しゅくはく</rt></ruby>する。/ 借宿在朋友家里。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "10-3",
+    "start": 24.45,
+    "end": 40.87,
+    "jp": "【10-3】 <ruby>受験<rt>じゅけん</rt></ruby> ⓪ [名・他動3] 应试，报考\n△<ruby>大学<rt>だいがく</rt></ruby>を<ruby>受験<rt>じゅけん</rt></ruby>する。/ 报考大学。\n△<ruby>受験<rt>じゅけん</rt></ruby>を<ruby>準備<rt>じゅんび</rt></ruby>する。/ 备战考试。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "10-4",
+    "start": 40.87,
+    "end": 56.84,
+    "jp": "【10-4】 <ruby>手術<rt>しゅじゅつ</rt></ruby> ① [名・他動3] 手术\n△<ruby>手術<rt>しゅじゅつ</rt></ruby>をする。/ 做手术。\n△<ruby>手術<rt>しゅじゅつ</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける。/ 接受手术。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "10-5",
+    "start": 56.84,
+    "end": 73.55,
+    "jp": "【10-5】 <ruby>首相<rt>しゅしょう</rt></ruby> ⓪ [名] 首相，总理\n△<ruby>首相<rt>しゅしょう</rt></ruby>に<ruby>指名<rt>しめい</rt></ruby>される。/ 被提名为首相。\n△<ruby>首相官邸<rt>しゅしょうかんてい</rt></ruby> / 首相官邸",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "10-6",
+    "start": 73.55,
+    "end": 91.08,
+    "jp": "【10-6】 <ruby>主人<rt>しゅじん</rt></ruby> ① [名] 一家之主；丈夫；店主\n△<ruby>家<rt>いえ</rt></ruby>の<ruby>主人<rt>しゅじん</rt></ruby>となる。/ 成为一家之主。\n△<ruby>主人<rt>しゅじん</rt></ruby>のある<ruby>女<rt>おんな</rt></ruby> / 有夫之妇",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "10-7",
+    "start": 91.08,
+    "end": 107.52,
+    "jp": "【10-7】 <ruby>受信<rt>じゅしん</rt></ruby> ⓪ [名・自他動3] 接收（信号、邮件）；收听\n△<ruby>受信<rt>じゅしん</rt></ruby>アンテナ / 接收天线\n△<ruby>放送<rt>ほうそう</rt></ruby>を<ruby>受信<rt>じゅしん</rt></ruby>する。/ 收听广播。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "10-8",
+    "start": 107.52,
+    "end": 124.31,
+    "jp": "【10-8】 <ruby>手段<rt>しゅだん</rt></ruby> ① [名] 手段，办法\n△あらゆる<ruby>手段<rt>しゅだん</rt></ruby>を<ruby>尽<rt>つ</rt></ruby>くす。/ 采取各种手段。\n△<ruby>手段<rt>しゅだん</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ばない。/ 不择手段。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "10-9",
+    "start": 124.31,
+    "end": 141.14,
+    "jp": "【10-9】 <ruby>主張<rt>しゅちょう</rt></ruby> ⓪ [名・他動3] 主张，观点\n△<ruby>自分<rt>じぶん</rt></ruby>の<ruby>主張<rt>しゅちょう</rt></ruby>を<ruby>通<rt>とお</rt></ruby>す。/ 坚持自己的主张。\n△<ruby>主張<rt>しゅちょう</rt></ruby>を<ruby>曲<rt>ま</rt></ruby>げない。/ 不改变主张。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "10-10",
+    "start": 141.14,
+    "end": 164.5,
+    "jp": "【10-10】 <ruby>出身<rt>しゅっしん</rt></ruby> ⓪ [名] 籍贯，出身；毕业于\n△<ruby>東京出身<rt>とうきょうしゅっしん</rt></ruby>の<ruby>者<rt>もの</rt></ruby> / 籍贯东京的人\n△<ruby>農民出身<rt>のうみんしゅっしん</rt></ruby>の<ruby>首相<rt>しゅしょう</rt></ruby> / 农民出身的首相\n△<ruby>出身校<rt>しゅっしんこう</rt></ruby> / 母校，毕业院校",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "10-11",
+    "start": 164.5,
+    "end": 181.28,
+    "jp": "【10-11】 <ruby>出版<rt>しゅっぱん</rt></ruby> ⓪ [名・他動3] 出版\n△<ruby>出版<rt>しゅっぱん</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>受<rt>う</rt></ruby>ける。/ 承接出版。\n△<ruby>自費<rt>じひ</rt></ruby>で<ruby>出版<rt>しゅっぱん</rt></ruby>する。/ 自费出版。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "10-12",
+    "start": 181.28,
+    "end": 201.07,
+    "jp": "【10-12】 <ruby>出品<rt>しゅっぴん</rt></ruby> ⓪ [名・他動3] 参展，展出展品\n△<ruby>国際見本市<rt>こくさいみほんいち</rt></ruby>に<ruby>出品<rt>しゅっぴん</rt></ruby>する。/ 在国际商品交易会上展出商品。\n△<ruby>出品点数<rt>しゅっぴんてんすう</rt></ruby> / 参展物品件数",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "10-13",
+    "start": 201.07,
+    "end": 218.16,
+    "jp": "【10-13】 <ruby>寿命<rt>じゅみょう</rt></ruby> ⓪ [名] 寿命\n△<ruby>人間<rt>にんげん</rt></ruby>の<ruby>平均寿命<rt>へいきんじゅみょう</rt></ruby> / 人类的平均寿命\n△<ruby>寿命<rt>じゅみょう</rt></ruby>が<ruby>縮<rt>ちぢ</rt></ruby>まる。/ 折寿，要命。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "10-14",
+    "start": 218.16,
+    "end": 233.89,
+    "jp": "【10-14】 <ruby>主要<rt>しゅよう</rt></ruby> ⓪ [名・ナ形] 主要\n△<ruby>主要<rt>しゅよう</rt></ruby>メンバー / 主要成员\n△<ruby>主要<rt>しゅよう</rt></ruby>な<ruby>議題<rt>ぎだい</rt></ruby> / 主要议题",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "10-15",
+    "start": 233.89,
+    "end": 246.28,
+    "jp": "【10-15】 <ruby>需要<rt>じゅよう</rt></ruby> ⓪ [名] 需要，需求\n△<ruby>消費者<rt>しょうひしゃ</rt></ruby>の<ruby>需要<rt>じゅよう</rt></ruby>を<ruby>満<rt>み</rt></ruby>たす。/ 满足消费者的需求。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "10-16",
+    "start": 246.28,
+    "end": 263.23,
+    "jp": "【10-16】 <ruby>順<rt>じゅん</rt></ruby> ⓪ [名] 顺序，次序；轮班\n△<ruby>背<rt>せ</rt></ruby>の<ruby>高<rt>たか</rt></ruby>い<ruby>順<rt>じゅん</rt></ruby>に<ruby>並<rt>なら</rt></ruby>ぶ。/ 按身高顺序排列。\n△<ruby>順<rt>じゅん</rt></ruby>が<ruby>来<rt>く</rt></ruby>る。/ 轮到自己了。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "10-17",
+    "start": 263.23,
+    "end": 274.2,
+    "jp": "【10-17】 <ruby>巡査<rt>じゅんさ</rt></ruby> ① [名] 警察，巡警\n△<ruby>巡査<rt>じゅんさ</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>ぶ。/ 叫警察。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "10-18",
+    "start": 274.2,
+    "end": 291.49,
+    "jp": "【10-18】 <ruby>順序<rt>じゅんじょ</rt></ruby> ① [名] 顺序，次序；程序，步骤\n△<ruby>順序<rt>じゅんじょ</rt></ruby>を<ruby>乱<rt>みだ</rt></ruby>す。/ 打乱顺序。\n△<ruby>式<rt>しき</rt></ruby>の<ruby>順序<rt>じゅんじょ</rt></ruby> / 仪式的程序",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "10-19",
+    "start": 291.49,
+    "end": 309.4,
+    "jp": "【10-19】 <ruby>純粋<rt>じゅんすい</rt></ruby> ⓪ [名・ナ形] 纯粹，纯净；纯洁，纯真\n△<ruby>純粋<rt>じゅんすい</rt></ruby>な<ruby>水<rt>みず</rt></ruby> / 纯净的水\n△<ruby>純粋<rt>じゅんすい</rt></ruby>な<ruby>若者<rt>わかもの</rt></ruby> / 纯真的年轻人",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "10-20",
+    "start": 309.4,
+    "end": 326.76,
+    "jp": "【10-20】 <ruby>順調<rt>じゅんちょう</rt></ruby> ⓪ [名・ナ形] 顺利，顺当\n△<ruby>工事<rt>こうじ</rt></ruby>が<ruby>順調<rt>じゅんちょう</rt></ruby>に<ruby>進<rt>すす</rt></ruby>んでいる。/ 工程进展顺利。\n△<ruby>万事順調<rt>ばんじじゅんちょう</rt></ruby> / 万事顺利",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "10-21",
+    "start": 326.76,
+    "end": 340.37,
+    "jp": "【10-21】 <ruby>順<rt>じゅん</rt></ruby>に ⓪ [副] 依次，按顺序\n△<ruby>背<rt>せ</rt></ruby>の<ruby>高<rt>たか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>から<ruby>順<rt>じゅん</rt></ruby>に<ruby>並<rt>なら</rt></ruby>ぶ。/ 从个子高的人开始依次排列。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "10-22",
+    "start": 340.37,
+    "end": 359.53,
+    "jp": "【10-22】 <ruby>順番<rt>じゅんばん</rt></ruby> ⓪ [名] 顺序，依次，轮流\n△<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>答<rt>こた</rt></ruby>える。/ 依次回答。\n△<ruby>学生<rt>がくせい</rt></ruby>を<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>立<rt>た</rt></ruby>てて<ruby>読<rt>よ</rt></ruby>ませる。/ 让学生轮流站起来朗读。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "10-23",
+    "start": 359.53,
+    "end": 374.13,
+    "jp": "【10-23】 初〜[しょ〜] [接頭] 初……，第一……\n△<ruby>初夏<rt>しょか</rt></ruby> / 初夏\n△<ruby>初日<rt>しょにち</rt></ruby> / 第一天",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "10-24",
+    "start": 374.13,
+    "end": 384.72,
+    "jp": "【10-24】 〜<ruby>所<rt>しょ</rt></ruby> [接尾] ……所，……处\n△<ruby>事務所<rt>じむしょ</rt></ruby> / 事务所，办公室",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "10-25",
+    "start": 384.72,
+    "end": 399.72,
+    "jp": "【10-25】 〜<ruby>書<rt>しょ</rt></ruby> [接尾] ……书（文件、单据）\n△<ruby>報告書<rt>ほうこくしょ</rt></ruby> / 报告书\n△<ruby>請求書<rt>せいきゅうしょ</rt></ruby> / 账单，请款单",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "10-26",
+    "start": 399.72,
+    "end": 414.85,
+    "jp": "【10-26】 〜<ruby>証<rt>しょう</rt></ruby> [接尾] ……证\n△<ruby>学生証<rt>がくせいしょう</rt></ruby> / 学生证\n△<ruby>保険証<rt>ほけんしょう</rt></ruby> / 保险证",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "10-27",
+    "start": 414.85,
+    "end": 425.68,
+    "jp": "【10-27】 〜<ruby>場<rt>じょう</rt></ruby> [接尾] ……场，场所\n△<ruby>結婚式場<rt>けっこんしきじょう</rt></ruby> / 婚礼会场",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "10-28",
+    "start": 425.68,
+    "end": 437.11,
+    "jp": "【10-28】 〜<ruby>畳<rt>じょう</rt></ruby> [接尾] （计算榻榻米的单位）张，叠\n△<ruby>六畳<rt>ろくじょう</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby> / 六张榻榻米大的房间",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "10-29",
+    "start": 437.11,
+    "end": 453.72,
+    "jp": "【10-29】 <ruby>小<rt>しょう</rt></ruby> ① [名] 小\n△<ruby>小会社<rt>しょうがいしゃ</rt></ruby> / 小公司\n△<ruby>大<rt>だい</rt></ruby>は<ruby>小<rt>しょう</rt></ruby>を<ruby>兼<rt>か</rt></ruby>ねる。/ 大可兼小，大材可以小用。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "10-30",
+    "start": 453.72,
+    "end": 470.67,
+    "jp": "【10-30】 <ruby>使用<rt>しよう</rt></ruby> ⓪ [名・他動3] 使用\n△<ruby>使用<rt>しよう</rt></ruby>を<ruby>許<rt>ゆる</rt></ruby>す。/ 允许使用。\n△<ruby>時間<rt>じかん</rt></ruby>を<ruby>有効<rt>ゆうこう</rt></ruby>に<ruby>使用<rt>しよう</rt></ruby>する。/ 有效地利用时间。",
+    "cn": ""
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "word_id": "9-1",
+    "start": 0.2,
+    "end": 17.41,
+    "jp": "【9-1】 <ruby>事実<rt>じじつ</rt></ruby> ① [名] 事实，真实\n△<ruby>事実<rt>じじつ</rt></ruby>に<ruby>反<rt>はん</rt></ruby>する。/ 与事实相反。\n△<ruby>事実<rt>じじつ</rt></ruby>を<ruby>明<rt>あき</rt></ruby>らかにする。/ 弄清事实真相。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "9-2",
+    "start": 17.41,
+    "end": 33.19,
+    "jp": "【9-2】 <ruby>支社<rt>ししゃ</rt></ruby> ① [名] 分公司，分社\n△<ruby>支社<rt>ししゃ</rt></ruby>を<ruby>設<rt>もう</rt></ruby>ける。/ 设立分公司。\n△<ruby>大阪支社<rt>おおさかししゃ</rt></ruby> / 大阪分公司",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "9-3",
+    "start": 33.19,
+    "end": 49.11,
+    "jp": "【9-3】 <ruby>自習<rt>じしゅう</rt></ruby> ⓪ [名・自他動3] 自习，自学\n△<ruby>家<rt>いえ</rt></ruby>で<ruby>自習<rt>じしゅう</rt></ruby>する。/ 在家自习。\n△<ruby>自習室<rt>じしゅうしつ</rt></ruby> / 自习室",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "9-4",
+    "start": 49.11,
+    "end": 65.94,
+    "jp": "【9-4】 <ruby>支出<rt>ししゅつ</rt></ruby> ⓪ [名・他動3] 支出，开支\n△<ruby>支出<rt>ししゅつ</rt></ruby>が<ruby>予算<rt>よさん</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えた。/ 支出超过预算。\n△<ruby>支出<rt>ししゅつ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。/ 开支多。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "9-5",
+    "start": 65.94,
+    "end": 76.94,
+    "jp": "【9-5】 <ruby>次女<rt>じじょ</rt></ruby> ① [名] 次女，二女儿\n△<ruby>次女<rt>じじょ</rt></ruby>が<ruby>生<rt>う</rt></ruby>まれる。/ 生下二女儿。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "9-6",
+    "start": 76.94,
+    "end": 93.17,
+    "jp": "【9-6】 <ruby>市場<rt>しじょう</rt></ruby> ① [名] 市场；交易所\n△<ruby>青物市場<rt>あおものしじょう</rt></ruby> / 蔬菜市场\n△<ruby>株式市場<rt>かぶしきしじょう</rt></ruby> / 股票市场",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "9-7",
+    "start": 93.17,
+    "end": 112.4,
+    "jp": "【9-7】 <ruby>事情<rt>じじょう</rt></ruby> ⓪ [名] 情形，情况；缘故，理由\n△<ruby>事情<rt>じじょう</rt></ruby>を<ruby>詳<rt>くわ</rt></ruby>しく<ruby>説明<rt>せつめい</rt></ruby>する。/ 详细说明情况。\n△<ruby>事情<rt>じじょう</rt></ruby>があって<ruby>欠席<rt>けっせき</rt></ruby>する。/ 因故缺席。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "9-8",
+    "start": 112.4,
+    "end": 132.06,
+    "jp": "【9-8】 <ruby>自身<rt>じしん</rt></ruby> ① [名] 自己，自身；（事物）本身\n△<ruby>自分自身<rt>じぶんじしん</rt></ruby>で<ruby>気<rt>き</rt></ruby>をつけなさい。/ 自己要小心。\n△<ruby>計画自身<rt>けいかくじしん</rt></ruby>には<ruby>非難<rt>ひなん</rt></ruby>の<ruby>余地<rt>よち</rt></ruby>がない。/ 计划本身无可非议。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "9-9",
+    "start": 132.06,
+    "end": 145.77,
+    "jp": "【9-9】 <ruby>自信満々<rt>じしんまんまん</rt></ruby> ⓪ [名・ナ形] 信心十足，满怀自信\n△<ruby>自信満々<rt>じしんまんまん</rt></ruby>で<ruby>答<rt>こた</rt></ruby>える。/ 满怀自信地回答。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "9-10",
+    "start": 145.77,
+    "end": 163.32,
+    "jp": "【9-10】 <ruby>沈<rt>しず</rt></ruby>む ⓪ [自動1] 下沉，沉没；（心情）消沉，郁闷\n△<ruby>地盤<rt>じばん</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>む。/ 地基下沉。\n△<ruby>沈<rt>しず</rt></ruby>んだ<ruby>気持<rt>きも</rt></ruby>ち / 郁闷的心情",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "9-11",
+    "start": 163.32,
+    "end": 180.18,
+    "jp": "【9-11】 <ruby>姿勢<rt>しせい</rt></ruby> ⓪ [名] 姿势；态度\n△<ruby>彼<rt>かれ</rt></ruby>の<ruby>姿勢<rt>しせい</rt></ruby>がよい。/ 他的姿势端正。\n△<ruby>姿勢<rt>しせい</rt></ruby>を<ruby>明<rt>あき</rt></ruby>らかにする。/ 明确态度。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "9-12",
+    "start": 180.18,
+    "end": 197.68,
+    "jp": "【9-12】 <ruby>時速<rt>じそく</rt></ruby> ⓪ [名] 时速\n△<ruby>自動車<rt>じどうしゃ</rt></ruby>の<ruby>時速<rt>じそく</rt></ruby> / 汽车的时速\n△<ruby>制限時速四十<rt>せいげんじそくよんじゅう</rt></ruby>キロ / 限速每小时四十公里",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "9-13",
+    "start": 197.68,
+    "end": 223.75,
+    "jp": "【9-13】 <ruby>従<rt>したが</rt></ruby>う ⓪ [自動1] 跟随；顺着，沿着；服从，听从；遵照\n△<ruby>案内人<rt>あんないにん</rt></ruby>に<ruby>従<rt>したが</rt></ruby>って<ruby>見学<rt>けんがく</rt></ruby>する。/ 跟随向导参观。\n△<ruby>親<rt>おや</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>に<ruby>従<rt>したが</rt></ruby>う。/ 听从父母的意见。\n△<ruby>習慣<rt>しゅうかん</rt></ruby>に<ruby>従<rt>したが</rt></ruby>う。/ 依照习惯。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "9-14",
+    "start": 223.75,
+    "end": 235.42,
+    "jp": "【9-14】 <ruby>下書<rt>したが</rt></ruby>き ⓪ [名・他動3] 草稿，底稿\n△<ruby>演説<rt>えんぜつ</rt></ruby>の<ruby>下書<rt>したが</rt></ruby>き / 演说的草稿",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "9-15",
+    "start": 235.42,
+    "end": 246.97,
+    "jp": "【9-15】 <ruby>下着<rt>したぎ</rt></ruby> ⓪ [名] 贴身衣服，内衣\n△<ruby>下着<rt>したぎ</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>える。/ 换内衣。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "9-16",
+    "start": 246.97,
+    "end": 266.51,
+    "jp": "【9-16】 <ruby>支度<rt>したく</rt></ruby> ⓪ [名・自他動3] 准备；装束，打扮\n△<ruby>朝食<rt>ちょうしょく</rt></ruby>の<ruby>支度<rt>したく</rt></ruby>をする。/ 准备早饭。\n△<ruby>支度<rt>したく</rt></ruby>に<ruby>長<rt>なが</rt></ruby>くかかって<ruby>遅刻<rt>ちこく</rt></ruby>した。/ 打扮时间太长，结果迟到了。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "9-17",
+    "start": 266.51,
+    "end": 279.6,
+    "jp": "【9-17】 <ruby>親<rt>した</rt></ruby>しい ③ [イ形] 亲近，亲密，要好\n△<ruby>彼<rt>かれ</rt></ruby>とは<ruby>親<rt>した</rt></ruby>しい<ruby>間柄<rt>あいだがら</rt></ruby>だ。/ 我和他关系很亲密。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "9-18",
+    "start": 279.6,
+    "end": 297.65,
+    "jp": "【9-18】 <ruby>親<rt>した</rt></ruby>しむ ③ [自動1] 亲近，亲密；喜爱，爱好\n△<ruby>親<rt>した</rt></ruby>しみにくい<ruby>顔<rt>かお</rt></ruby> / 不易亲近的面孔\n△スポーツに<ruby>親<rt>した</rt></ruby>しむ。/ 喜爱运动。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "9-19",
+    "start": 297.65,
+    "end": 316.81,
+    "jp": "【9-19】 <ruby>質<rt>しつ</rt></ruby> ⓪ [名] 质量，品质；性质，本质\n△<ruby>製品<rt>せいひん</rt></ruby>の<ruby>質<rt>しつ</rt></ruby>を<ruby>高<rt>たか</rt></ruby>める。/ 提高产品质量。\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>質<rt>しつ</rt></ruby>のよい<ruby>学生<rt>がくせい</rt></ruby>だ。/ 他是品质优良的学生。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "9-20",
+    "start": 316.81,
+    "end": 331.72,
+    "jp": "【9-20】 〜<ruby>室<rt>しつ</rt></ruby> [接尾] ……室，房间\n△<ruby>温室<rt>おんしつ</rt></ruby> / 温室\n△<ruby>寝室<rt>しんしつ</rt></ruby> / 卧室",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "9-21",
+    "start": 331.72,
+    "end": 357.97,
+    "jp": "【9-21】 しっかり ③ [副・自動3] 结实，牢固；稳健；可靠；振作\n△しっかり<ruby>縛<rt>しば</rt></ruby>る。/ 结结实实地绑上。\n△<ruby>年<rt>とし</rt></ruby>はとっても<ruby>足<rt>あし</rt></ruby>はしっかりしている。/ 虽然上了年纪，但腿脚还很稳健。\n△しっかりしろ！ / 振作起来！",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "9-22",
+    "start": 357.97,
+    "end": 377.75,
+    "jp": "【9-22】 <ruby>実感<rt>じっかん</rt></ruby> ⓪ [名・他動3] 真切感受到，深切体会到\n△<ruby>実感<rt>じっかん</rt></ruby>を<ruby>語<rt>かた</rt></ruby>る。/ 谈切身体会。\n△<ruby>教育<rt>きょういく</rt></ruby>の<ruby>重要性<rt>じゅうようせい</rt></ruby>を<ruby>実感<rt>じっかん</rt></ruby>する。/ 深切体会到教育的重要性。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "9-23",
+    "start": 377.75,
+    "end": 389.03,
+    "jp": "【9-23】 <ruby>失業<rt>しつぎょう</rt></ruby> ⓪ [名・自動3] 失业\n△<ruby>失業保険<rt>しつぎょうほけん</rt></ruby> / 失业保险",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "9-24",
+    "start": 389.03,
+    "end": 408.26,
+    "jp": "【9-24】 <ruby>実験<rt>じっけん</rt></ruby> ⓪ [名・自他動3] 实验，试验\n△<ruby>実験<rt>じっけん</rt></ruby>によって<ruby>証明<rt>しょうめい</rt></ruby>する。/ 通过实验来证明。\n△<ruby>自分<rt>じぶん</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>から<ruby>考察<rt>こうさつ</rt></ruby>する。/ 根据自己的实验进行分析。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "9-25",
+    "start": 408.26,
+    "end": 420.72,
+    "jp": "【9-25】 <ruby>実現<rt>じつげん</rt></ruby> ⓪ [名・自他動3] 实现\n△<ruby>長年<rt>ながねん</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>実現<rt>じつげん</rt></ruby>する。/ 实现多年的梦想。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "9-26",
+    "start": 420.72,
+    "end": 439.36,
+    "jp": "【9-26】 しつこい ③ [イ形] （颜色、味道）浓艳，油腻；纠缠不休，腻烦\n△しつこい<ruby>色<rt>いろ</rt></ruby> / 过于浓艳的颜色\n△しつこく<ruby>言<rt>い</rt></ruby>い<ruby>争<rt>あらそ</rt></ruby>う。/ 纠缠不休地争吵。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "9-27",
+    "start": 439.36,
+    "end": 458.54,
+    "jp": "【9-27】 <ruby>実行<rt>じっこう</rt></ruby> ⓪ [名・他動3] 实行，实践，执行\n△<ruby>計画通<rt>けいかくどお</rt></ruby>りに<ruby>実行<rt>じっこう</rt></ruby>する。/ 按照计划实行。\n△<ruby>政策<rt>せいさく</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>に<ruby>移<rt>うつ</rt></ruby>す。/ 将政策付诸实施。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "9-28",
+    "start": 458.54,
+    "end": 473.35,
+    "jp": "【9-28】 <ruby>実社会<rt>じっしゃかい</rt></ruby> ③ [名] 现实社会，实际社会\n△<ruby>学校<rt>がっこう</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>して<ruby>実社会<rt>じっしゃかい</rt></ruby>に<ruby>出<rt>で</rt></ruby>る。/ 从学校毕业步入社会。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "9-29",
+    "start": 473.35,
+    "end": 492.63,
+    "jp": "【9-29】 <ruby>実習<rt>じっしゅう</rt></ruby> ⓪ [名・他動3] 实习，见习\n△<ruby>工場<rt>こうじょう</rt></ruby>へ<ruby>実習<rt>じっしゅう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。/ 到工厂去实习。\n△<ruby>教育実習<rt>きょういくじっしゅう</rt></ruby>に<ruby>中学校<rt>ちゅうがっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く。/ 到中学进行教育实习。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "9-30",
+    "start": 492.63,
+    "end": 507.46,
+    "jp": "【9-30】 <ruby>実生活<rt>じっせいかつ</rt></ruby> ③ [名] 实际生活，现实生活\n△<ruby>実生活<rt>じっせいかつ</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>つもの / 在实际生活中有用的东西",
+    "cn": ""
+  }
+]

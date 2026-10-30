@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "word_id": "9-31",
+    "start": 0.2,
+    "end": 17.87,
+    "jp": "【9-31】 <ruby>実績<rt>じっせき</rt></ruby> ⓪ [名] （实际）成绩，业绩，成效\n△かなりの<ruby>実績<rt>じっせき</rt></ruby>をあげる。/ 取得可观的业绩。\n△<ruby>実績<rt>じっせき</rt></ruby>がある。/ 有实际业绩。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "9-32",
+    "start": 17.87,
+    "end": 36.24,
+    "jp": "【9-32】 じっと ⓪ [副・自動3] 一动不动，静静地；凝视；忍耐\n△じっと<ruby>座<rt>すわ</rt></ruby>っている。/ 一动不动地坐着。\n△じっと<ruby>見<rt>み</rt></ruby>つめる。/ 目不转睛地凝视。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "9-33",
+    "start": 36.24,
+    "end": 56.55,
+    "jp": "【9-33】 <ruby>実<rt>じつ</rt></ruby>に ② [副] 实在，确实，的确；非常，真是\n△この<ruby>映画<rt>えいが</rt></ruby>は<ruby>実<rt>じつ</rt></ruby>に<ruby>面白<rt>おもしろ</rt></ruby>い。/ 这部电影确实很有意思。\n△<ruby>実<rt>じつ</rt></ruby>に<ruby>美<rt>うつく</rt></ruby>しい。/ 真是太美了。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "9-34",
+    "start": 56.55,
+    "end": 73.5,
+    "jp": "【9-34】 <ruby>尻尾<rt>しっぽ</rt></ruby> ③ [名] 尾巴；末尾，末端\n△<ruby>尻尾<rt>しっぽ</rt></ruby>を<ruby>巻<rt>ま</rt></ruby>いて<ruby>逃<rt>に</rt></ruby>げる。/ 夹着尾巴逃跑。\n△<ruby>尻尾<rt>しっぽ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す。/ 露出马脚。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "9-35",
+    "start": 73.5,
+    "end": 91.46,
+    "jp": "【9-35】 <ruby>失望<rt>しつぼう</rt></ruby> ⓪ [名・自動3] 失望\n△<ruby>顔<rt>かお</rt></ruby>に<ruby>失望<rt>しつぼう</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>が<ruby>見<rt>み</rt></ruby>えた。/ 脸上露出了失望的神色。\n△<ruby>彼<rt>かれ</rt></ruby>には<ruby>失望<rt>しつぼう</rt></ruby>した。/ 对他失望了。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "9-36",
+    "start": 91.46,
+    "end": 107.6,
+    "jp": "【9-36】 <ruby>実用<rt>じつよう</rt></ruby> ⓪ [名] 实用\n△<ruby>実用価値<rt>じつようかち</rt></ruby>がある。/ 有实用价值。\n△<ruby>実用性<rt>じつようせい</rt></ruby> / 实用性",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "9-37",
+    "start": 107.6,
+    "end": 123.44,
+    "jp": "【9-37】 <ruby>実用化<rt>じつようか</rt></ruby> ⓪ [名・自他動3] 实用化，投入实际应用\n△<ruby>彼<rt>かれ</rt></ruby>の<ruby>発明<rt>はつめい</rt></ruby>は<ruby>最近実用化<rt>さいきんじつようか</rt></ruby>された。/ 他的发明最近被投入实际应用了。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "9-38",
+    "start": 123.44,
+    "end": 136.69,
+    "jp": "【9-38】 <ruby>実用的<rt>じつようてき</rt></ruby> ⓪ [ナ形] 实用的，具有实用性的\n△<ruby>実用的<rt>じつようてき</rt></ruby>な<ruby>贈<rt>おく</rt></ruby>り<ruby>物<rt>もの</rt></ruby> / 实用的礼物",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "9-39",
+    "start": 136.69,
+    "end": 154.15,
+    "jp": "【9-39】 <ruby>実力<rt>じつりょく</rt></ruby> ⓪ [名] 实力\n△<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている。/ 具备实力。\n△<ruby>英語<rt>えいご</rt></ruby>の<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>養<rt>やしな</rt></ruby>う。/ 培养英语实力。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "9-40",
+    "start": 154.15,
+    "end": 171.07,
+    "jp": "【9-40】 <ruby>失恋<rt>しつれん</rt></ruby> ⓪ [名・自動3] 失恋\n△<ruby>失恋<rt>しつれん</rt></ruby>に<ruby>泣<rt>な</rt></ruby>く<ruby>顔<rt>かお</rt></ruby> / 因失恋而哭泣的脸\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>失恋<rt>しつれん</rt></ruby>した。/ 他失恋了。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "9-41",
+    "start": 171.07,
+    "end": 182.6,
+    "jp": "【9-41】 <ruby>指定<rt>してい</rt></ruby> ⓪ [名・他動3] 指定\n△<ruby>学校指定<rt>がっこうしてい</rt></ruby>の<ruby>旅館<rt>りょかん</rt></ruby> / 学校指定的旅馆",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "9-42",
+    "start": 182.6,
+    "end": 195.92,
+    "jp": "【9-42】 <ruby>指定席<rt>していせき</rt></ruby> ② [名] 指定席位，对号入座的座位\n△<ruby>指定席<rt>していせき</rt></ruby>を<ruby>予約<rt>よやく</rt></ruby>する。/ 预订对号座位。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "9-43",
+    "start": 195.92,
+    "end": 208.07,
+    "jp": "【9-43】 <ruby>私鉄<rt>してつ</rt></ruby> ⓪ [名] 私营铁路，民营铁路\n△<ruby>私鉄<rt>してつ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>える。/ 换乘私铁。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "9-44",
+    "start": 208.07,
+    "end": 223.75,
+    "jp": "【9-44】 <ruby>支店<rt>してん</rt></ruby> ⓪ [名] 分店，支行\n△<ruby>支店<rt>してん</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す。/ 开分店。\n△<ruby>支店<rt>してん</rt></ruby>を<ruby>設<rt>もう</rt></ruby>ける。/ 设立分店。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "9-45",
+    "start": 223.75,
+    "end": 242.57,
+    "jp": "【9-45】 <ruby>指導<rt>しどう</rt></ruby> ⓪ [名・他動3] 指导，教导\n△<ruby>指導<rt>しどう</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける。/ 接受指导。\n△<ruby>体育<rt>たいいく</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>に<ruby>水泳<rt>すいえい</rt></ruby>を<ruby>指導<rt>しどう</rt></ruby>してもらった。/ 请体育老师指导游泳。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "9-46",
+    "start": 242.57,
+    "end": 254.65,
+    "jp": "【9-46】 <ruby>児童<rt>じどう</rt></ruby> ① [名] 儿童（多指学龄儿童）\n△<ruby>児童向<rt>じどうむ</rt></ruby>きの<ruby>小説<rt>しょうせつ</rt></ruby> / 适合儿童阅读的小说",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "9-47",
+    "start": 254.65,
+    "end": 266.27,
+    "jp": "【9-47】 <ruby>自動<rt>じどう</rt></ruby> ⓪ [名] 自动\n△<ruby>扉<rt>とびら</rt></ruby>は<ruby>自動<rt>じどう</rt></ruby>になっている。/ 门是自动的。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "9-48",
+    "start": 266.27,
+    "end": 278.56,
+    "jp": "【9-48】 <ruby>自動的<rt>じどうてき</rt></ruby> ⓪ [ナ形] 自动的\n△<ruby>自動的<rt>じどうてき</rt></ruby>に<ruby>退会<rt>たいかい</rt></ruby>になる。/ 自动退会。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "9-49",
+    "start": 278.56,
+    "end": 292.72,
+    "jp": "【9-49】 <ruby>自動販売機<rt>じどうはんばいき</rt></ruby> ⑤ [名] 自动售货机\n△<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>からジュースを<ruby>買<rt>か</rt></ruby>う。/ 从自动售货机买果汁。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "9-50",
+    "start": 292.72,
+    "end": 315.63,
+    "jp": "【9-50】 <ruby>品<rt>しな</rt></ruby> ⓪ [名] 物品，东西；商品，货物；质量，品质\n△<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>品<rt>しな</rt></ruby> / 贵重物品\n△<ruby>品<rt>しな</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる。/ 商品断货。\n△<ruby>品<rt>しな</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちる。/ 品质下降。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "9-51",
+    "start": 315.63,
+    "end": 331.6,
+    "jp": "【9-51】 <ruby>市内<rt>しない</rt></ruby> ① [名] 市内，城内\n△<ruby>家<rt>いえ</rt></ruby>は<ruby>市内<rt>しない</rt></ruby>にある。/ 家在市内。\n△<ruby>市内電話<rt>しないでんわ</rt></ruby> / 市内电话",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "9-52",
+    "start": 331.6,
+    "end": 344.73,
+    "jp": "【9-52】 <ruby>品数<rt>しなかず</rt></ruby> ③ [名] （物品的）品种，数量\n△あの<ruby>店<rt>みせ</rt></ruby>は<ruby>品数<rt>しなかず</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。/ 那家商店的货物品种多。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "9-53",
+    "start": 344.73,
+    "end": 355.75,
+    "jp": "【9-53】 <ruby>次男<rt>じなん</rt></ruby> ① [名] 次子，二儿子\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>次男<rt>じなん</rt></ruby>だ。/ 他是二儿子。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "9-54",
+    "start": 355.75,
+    "end": 374.76,
+    "jp": "【9-54】 しばしば ①⓪ [副] 屡次，多次，常常\n△しばしば<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る。/ 常常下雨。\n△<ruby>彼<rt>かれ</rt></ruby>に<ruby>騙<rt>だま</rt></ruby>されたことはしばしばある。/ 屡次受他欺骗。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "9-55",
+    "start": 374.76,
+    "end": 391.5,
+    "jp": "【9-55】 <ruby>始発<rt>しはつ</rt></ruby> ⓪ [名] 始发，首班车\n△<ruby>始発駅<rt>しはつえき</rt></ruby> / 始发站\n△<ruby>始発<rt>しはつ</rt></ruby>のバスに<ruby>乗<rt>の</rt></ruby>る。/ 坐首班公交车。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "9-56",
+    "start": 391.5,
+    "end": 403.07,
+    "jp": "【9-56】 <ruby>芝生<rt>しばふ</rt></ruby> ⓪ [名] 草坪，草地\n△<ruby>芝生<rt>しばふ</rt></ruby>に<ruby>横<rt>よこ</rt></ruby>たわる。/ 躺在草坪上。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "9-57",
+    "start": 403.07,
+    "end": 419.52,
+    "jp": "【9-57】 <ruby>支払<rt>しはら</rt></ruby>い ⓪ [名] 支付，付款\n△<ruby>支払<rt>しはら</rt></ruby>いを<ruby>受<rt>う</rt></ruby>ける。/ 收到付款。\n△<ruby>支払<rt>しはら</rt></ruby>いが<ruby>遅<rt>おく</rt></ruby>れる。/ 付款延迟。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "9-58",
+    "start": 419.52,
+    "end": 436.8,
+    "jp": "【9-58】 <ruby>支払<rt>しはら</rt></ruby>う ③ [他動1] 支付，付款\n△<ruby>給与<rt>きゅうよ</rt></ruby>を<ruby>支払<rt>しはら</rt></ruby>う。/ 支付工资。\n△<ruby>借金<rt>しゃっきん</rt></ruby>をきれいに<ruby>支払<rt>しはら</rt></ruby>った。/ 还清了借款。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "9-59",
+    "start": 436.8,
+    "end": 456.92,
+    "jp": "【9-59】 <ruby>縛<rt>しば</rt></ruby>る ② [他動1] 捆，绑，扎；束缚，限制\n△<ruby>泥棒<rt>どろぼう</rt></ruby>を<ruby>木<rt>き</rt></ruby>に<ruby>縛<rt>しば</rt></ruby>る。/ 把小偷绑在树上。\n△<ruby>仕事<rt>しごと</rt></ruby>に<ruby>縛<rt>しば</rt></ruby>られて<ruby>暇<rt>ひま</rt></ruby>がない。/ 被工作束缚，没有空闲。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "9-60",
+    "start": 456.92,
+    "end": 468.11,
+    "jp": "【9-60】 <ruby>字引<rt>じびき</rt></ruby> ⓪ [名] 字典，词典\n△<ruby>字引<rt>じびき</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>く。/ 查字典。",
+    "cn": ""
+  }
+]
