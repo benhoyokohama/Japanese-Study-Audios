@@ -35,10 +35,47 @@ def extract_full_word_kana(first_line: str) -> str:
     res = re.sub(r'[一-龥々ヶ]+\[([ぁ-んァ-ンー]+)\]', lambda m: m.group(1), word_part)
     return res.strip()
 
+MULTI_COMPOUNDS = {
+    "山間", "市場", "今日", "明日", "昨日", "一昨日", "一昨昨日", "大人", "下手", "上手",
+    "生物", "工夫", "大家", "人気", "気配", "年月", "行方", "心中", "世間", "白髪",
+    "紅葉", "相撲", "田舎", "土産", "果物", "竹刀", "木刀", "最中", "有無", "金銭",
+    "親しい", "辛い", "苦い", "甘い", "濃い", "浅い", "深い", "粗い", "荒い", "細かい"
+}
+
 def prepare_tts_ja_sentence(ex_ja: str, head_line: str) -> str:
-    """将例句中的 漢字[かな] 100% 转换为所标注的精确假名送入 TTS，彻底杜绝多音字误读"""
+    """
+    精准 TTS 例句预处理：
+    1. 当前词条本尊 (Headword) 无论几个汉字，在例句中 100% 替换为标注假名 (解决 今日[こんにち]、昨日[さくじつ] 等)；
+    2. 命中多音复合词表 (如 山間[さんかん]、大家[おおや] 等) 100% 替换为标注假名；
+    3. 独立单汉字词 (如 柄[がら]が) 与特殊训读动词 (如 抱[いだ]く) 100% 替换为标注假名；
+    4. 其余无歧义常规复合词保留汉字，确保 TTS 分词与句调自然流畅。
+    """
     ex_ja = re.sub(r"([〜~])([一-龥々ヶ]+)\[[〜~]([ぁ-んァ-ンー]+)\]", r"\1\2[\3]", ex_ja)
-    ex_ja = re.sub(r"[一-龥々ヶ]+\[([ぁ-んァ-ンー]+)\]", lambda m: m.group(1), ex_ja)
+
+    # A. 词头本尊的所有注音对 (无论单字还是多字) 强制替换为假名
+    head_word_part = head_line.strip().split()[0]
+    for kj, kn in re.findall(r"([一-龥々ヶ]+)\[([ぁ-んァ-ンー]+)\]", head_word_part):
+        ex_ja = ex_ja.replace(f"{kj}[{kn}]", kn)
+
+    # B. 多音复合词表中的词强制替换为标注假名
+    ex_ja = re.sub(
+        r"([一-龥々ヶ]{2,})\[([ぁ-んァ-ンー]+)\]",
+        lambda m: m.group(2) if m.group(1) in MULTI_COMPOUNDS else m.group(0),
+        ex_ja
+    )
+
+    # C. 独立单汉字名词 (后接助词/标点) 及特殊训读单汉字动词强制替换为标注假名
+    ex_ja = re.sub(
+        r"(?<![一-龥々ヶ])([一-龥])\[([ぁ-んー]+)\](?=[がをにへでとのもはやか、。！？\s/]|$)",
+        lambda m: m.group(2),
+        ex_ja
+    )
+    ex_ja = re.sub(
+        r"(?<![一-龥々ヶ])([一-龥])\[([ぁ-んー]{2,})\](?=[ぁ-ん])",
+        lambda m: m.group(2),
+        ex_ja
+    )
+
     ex_ja = strip_furigana(ex_ja).strip()
     if ex_ja == "AイコールB":
         ex_ja = "エー イコール ビー"
