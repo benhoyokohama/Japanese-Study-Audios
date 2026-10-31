@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "word_id": "2-4",
+    "start": 0.2,
+    "end": 15.15,
+    "jp": "【2-4】 いつからか ① [副] 不知从何时起\n△いつからか<ruby>彼<rt>かれ</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>が<ruby>見<rt>み</rt></ruby>えなくなった。/ 不知从何时起看不到他的身影了。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "2-5",
+    "start": 15.15,
+    "end": 27.54,
+    "jp": "【2-5】 <ruby>一気<rt>いっき</rt></ruby>に ① [副] 一口气\n△<ruby>頂上<rt>ちょうじょう</rt></ruby>まで<ruby>一気<rt>いっき</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>る。/ 一口气爬到山顶。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "2-8",
+    "start": 27.54,
+    "end": 39.38,
+    "jp": "【2-8】 <ruby>一瞬<rt>いっしゅん</rt></ruby> ① [名] 一瞬间，一刹那\n△<ruby>一瞬<rt>いっしゅん</rt></ruby>の<ruby>出来事<rt>できごと</rt></ruby> / 一瞬间发生的事。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "2-9",
+    "start": 39.38,
+    "end": 50.76,
+    "jp": "【2-9】 いっそ ⓪ [副] 干脆，索性\n△いっそやめてしまおう。/ 索性算了吧。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "2-10",
+    "start": 50.76,
+    "end": 62.69,
+    "jp": "【2-10】 <ruby>一体<rt>いったい</rt></ruby> ⓪ [副] 到底，究竟\n△<ruby>一体<rt>いったい</rt></ruby>どういうことですか。/ 到底是怎么回事？",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "2-11",
+    "start": 62.69,
+    "end": 81.29,
+    "jp": "【2-11】 いつの<ruby>間<rt>いつのま</rt></ruby>にか ⑥ [副] 不知不觉地\n△<ruby>好<rt>す</rt></ruby>きな<ruby>小説<rt>しょうせつ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでいたら、いつの<ruby>間<rt>ま</rt></ruby>にか<ruby>三時間<rt>さんじかん</rt></ruby>も<ruby>経<rt>た</rt></ruby>ってしまった。/ 读着喜欢的小说，不知不觉已经过去了三个小时。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "2-14",
+    "start": 81.29,
+    "end": 98.77,
+    "jp": "【2-14】 <ruby>一遍<rt>いっぺん</rt></ruby> ⓪ [名] 一遍，一回；一次，一下子\n△<ruby>一遍<rt>いっぺん</rt></ruby><ruby>読<rt>よ</rt></ruby>む。/ 念一遍。\n△<ruby>一遍<rt>いっぺん</rt></ruby>に<ruby>片付<rt>かたづ</rt></ruby>ける。/ 一下子解决。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "2-15",
+    "start": 98.77,
+    "end": 112.36,
+    "jp": "【2-15】 <ruby>一方通行<rt>いっぽうつうこう</rt></ruby> ⑤ [名] 单行道，单向通行\n△<ruby>一方通行<rt>いっぽうつうこう</rt></ruby>の<ruby>道路<rt>どうろ</rt></ruby> / 单行道。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "2-18",
+    "start": 112.36,
+    "end": 125.83,
+    "jp": "【2-18】 <ruby>従兄弟<rt>いとこ</rt></ruby> ② [名] 堂兄弟姐妹，表兄弟姐妹\n△<ruby>私<rt>わたし</rt></ruby>には<ruby>従兄弟<rt>いとこ</rt></ruby>が<ruby>三人<rt>さんにん</rt></ruby>いる。/ 我有三个表兄弟。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "2-22",
+    "start": 125.83,
+    "end": 137.23,
+    "jp": "【2-22】 <ruby>鼾<rt>いびき</rt></ruby> ③ [名] 鼾声\n△<ruby>大<rt>おお</rt></ruby>きな<ruby>鼾<rt>いびき</rt></ruby>をかく。/ 打呼噜。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "2-24",
+    "start": 137.23,
+    "end": 150.31,
+    "jp": "【2-24】 <ruby>今頃<rt>いまごろ</rt></ruby> ① [名・副] 现在，此时；这时候\n△<ruby>今頃<rt>いまごろ</rt></ruby>どこにいるのだろう。/ 现在他人在哪里呢？",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "2-25",
+    "start": 150.31,
+    "end": 169.09,
+    "jp": "【2-25】 イメージ ② [名] 印象，形象\n△<ruby>初<rt>はじ</rt></ruby>めて<ruby>会<rt>あ</rt></ruby>った<ruby>兄<rt>あに</rt></ruby>の<ruby>彼女<rt>かのじょ</rt></ruby>は、<ruby>私<rt>わたし</rt></ruby>のイメージとはぜんぜん<ruby>違<rt>ちが</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>だった。/ 第一次见到的哥哥的女友，和我想象中的形象完全不同。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "2-27",
+    "start": 169.09,
+    "end": 182.36,
+    "jp": "【2-27】 <ruby>嫌<rt>いや</rt></ruby>がる ③ [他動1] 嫌恶，讨厌，不愿意\n△<ruby>子供<rt>こども</rt></ruby>が<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>むのを<ruby>嫌<rt>いや</rt></ruby>がる。/ 孩子不愿意吃药。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "2-32",
+    "start": 182.36,
+    "end": 200.99,
+    "jp": "【2-32】 いらいら ① [副・自動3] 着急，焦急，急躁\n△<ruby>待<rt>ま</rt></ruby>たされていらいらする。/ 等得着急。\n△いらいらしながらバスを<ruby>待<rt>ま</rt></ruby>つ。/ 焦急地等待公共汽车。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "2-34",
+    "start": 200.99,
+    "end": 212.59,
+    "jp": "【2-34】 <ruby>入<rt>い</rt></ruby>れ<ruby>物<rt>もの</rt></ruby> ⓪ [名] 容器，器具\n△プラスチックの<ruby>入<rt>い</rt></ruby>れ<ruby>物<rt>もの</rt></ruby> / 塑料容器。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "2-38",
+    "start": 212.59,
+    "end": 227.35,
+    "jp": "【2-38】 いわゆる ③ [連体] 所谓的，人们常说的\n△これがいわゆる<ruby>日本<rt>にほん</rt></ruby>の<ruby>伝統文化<rt>でんとうぶんか</rt></ruby>だ。/ 这就是所谓的日本传统文化。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "2-52",
+    "start": 227.35,
+    "end": 240.39,
+    "jp": "【2-52】 うがい ⓪ [名・自動3] 漱口\n△<ruby>帰<rt>かえ</rt></ruby>ったら<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってうがいをしなさい。/ 回家后要洗手漱口。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "2-53",
+    "start": 240.39,
+    "end": 255.82,
+    "jp": "【2-53】 <ruby>浮<rt>う</rt></ruby>く ⓪ [自動1] 浮，漂；浮现；轻浮\n△<ruby>油<rt>あぶら</rt></ruby>の<ruby>特質<rt>とくしつ</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つは<ruby>水<rt>みず</rt></ruby>に<ruby>浮<rt>う</rt></ruby>くことだ。/ 油的特性之一是浮在水面上。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "2-54",
+    "start": 255.82,
+    "end": 274.79,
+    "jp": "【2-54】 <ruby>浮<rt>う</rt></ruby>かぶ ⓪ [自動1] 漂浮；浮现，想起\n△<ruby>空<rt>そら</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>い<ruby>雲<rt>くも</rt></ruby>が<ruby>浮<rt>う</rt></ruby>かんでいる。/ 天空中飘着白云。\n△いい<ruby>考<rt>かんが</rt></ruby>えが<ruby>浮<rt>う</rt></ruby>かんだ。/ 想出了一个好主意。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "2-55",
+    "start": 274.79,
+    "end": 287.03,
+    "jp": "【2-55】 <ruby>浮<rt>う</rt></ruby>かべる ⓪ [他動2] 使浮起；露出（笑容等）\n△<ruby>顔<rt>かお</rt></ruby>に<ruby>微笑<rt>ほほえ</rt></ruby>みを<ruby>浮<rt>う</rt></ruby>かべる。/ 脸上露出微笑。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "2-56",
+    "start": 287.03,
+    "end": 298.51,
+    "jp": "【2-56】 <ruby>受<rt>う</rt></ruby>かる ② [自動1] （考试）合格，考上\n△<ruby>大学試験<rt>だいがくしけん</rt></ruby>に<ruby>受<rt>う</rt></ruby>かる。/ 考上大学。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "2-59",
+    "start": 298.51,
+    "end": 312.24,
+    "jp": "【2-59】 <ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>り ⓪ [名] 领取，收受；收据，收条\n△<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>りサインをする。/ 签收包裹。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "2-61",
+    "start": 312.24,
+    "end": 325.16,
+    "jp": "【2-61】 <ruby>受<rt>う</rt></ruby>け<ruby>持<rt>も</rt></ruby>つ ③ [他動1] 负责，担任\n△<ruby>三年生<rt>さんねんせい</rt></ruby>のクラスを<ruby>受<rt>う</rt></ruby>け<ruby>持<rt>も</rt></ruby>つ。/ 担任三年级班主任。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "2-64",
+    "start": 325.16,
+    "end": 341.51,
+    "jp": "【2-64】 <ruby>失<rt>うしな</rt></ruby>う ⓪ [他動1] 失去，丧失\n△<ruby>自信<rt>じしん</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う。/ 失去自信。\n△<ruby>意識<rt>いしき</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う。/ 失去意识。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "2-66",
+    "start": 341.51,
+    "end": 354.28,
+    "jp": "【2-66】 <ruby>薄暗<rt>うすぐら</rt></ruby>い ④ [イ形] 昏暗，微暗\n△<ruby>薄暗<rt>うすぐら</rt></ruby>い<ruby>部屋<rt>へや</rt></ruby>で<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む。/ 在昏暗的房间里看书。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "2-68",
+    "start": 354.28,
+    "end": 368.47,
+    "jp": "【2-68】 <ruby>嘘<rt>うそ</rt></ruby>つき ② [名] 骗子，爱说谎的人\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>嘘<rt>うそ</rt></ruby>つきだから<ruby>信<rt>しん</rt></ruby>じられない。/ 他是个爱撒谎的人，不可信。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "2-73",
+    "start": 368.47,
+    "end": 380.93,
+    "jp": "【2-73】 <ruby>内側<rt>うちがわ</rt></ruby> ⓪ [名] 内侧，里面\n△ドアの<ruby>内側<rt>うちがわ</rt></ruby>から<ruby>鍵<rt>かぎ</rt></ruby>をかける。/ 从门里面锁门。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "2-75",
+    "start": 380.93,
+    "end": 397.78,
+    "jp": "【2-75】 うっかり ③ [副・自動3] 粗心，不留神，无意中\n△<ruby>急<rt>いそ</rt></ruby>いでいたので、うっかり<ruby>違<rt>ちが</rt></ruby>う<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ってしまった。/ 因为太匆忙，一不留神坐错了电车。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "2-76",
+    "start": 397.78,
+    "end": 414.63,
+    "jp": "【2-76】 <ruby>映<rt>うつ</rt></ruby>す ② [他動1] 映，照；放映\n△<ruby>鏡<rt>かがみ</rt></ruby>に<ruby>姿<rt>すがた</rt></ruby>を<ruby>映<rt>うつ</rt></ruby>す。/ 照镜子。\n△<ruby>映画<rt>えいが</rt></ruby>を<ruby>映<rt>うつ</rt></ruby>す。/ 放映电影。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "2-77",
+    "start": 414.63,
+    "end": 432.9,
+    "jp": "【2-77】 <ruby>訴<rt>うった</rt></ruby>える ④ [他動2] 控告，起诉；呼吁，倾诉\n△<ruby>裁判所<rt>さいばんしょ</rt></ruby>に<ruby>訴<rt>うった</rt></ruby>える。/ 向法院起诉。\n△<ruby>平和<rt>へいわ</rt></ruby>を<ruby>訴<rt>うった</rt></ruby>える。/ 呼吁和平。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "2-78",
+    "start": 432.9,
+    "end": 452.13,
+    "jp": "【2-78】 <ruby>映<rt>うつ</rt></ruby>る ② [自動1] 映，照；显像\n△<ruby>月<rt>つき</rt></ruby>の<ruby>光<rt>ひかり</rt></ruby>が<ruby>水<rt>みず</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>る。/ 月光映在水中。\n△うちのテレビはよく<ruby>映<rt>うつ</rt></ruby>っている。/ 我家的电视机显像很清楚。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "2-79",
+    "start": 452.13,
+    "end": 463.8,
+    "jp": "【2-79】 うなずく ③ [自動1] 点头，首肯\n△<ruby>聞<rt>き</rt></ruby>きながらうなずく。/ 边听边点头。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "2-81",
+    "start": 463.8,
+    "end": 481.38,
+    "jp": "【2-81】 <ruby>奪<rt>うば</rt></ruby>う ② [他動1] 抢夺；剥夺；强烈吸引\n△<ruby>自由<rt>じゆう</rt></ruby>を<ruby>奪<rt>うば</rt></ruby>う。/ 剥夺自由。\n△<ruby>心<rt>こころ</rt></ruby>を<ruby>奪<rt>うば</rt></ruby>う。/ 夺人心魄，令人陶醉。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "2-85",
+    "start": 481.38,
+    "end": 495.97,
+    "jp": "【2-85】 <ruby>裏返<rt>うらがえ</rt></ruby>す ③ [他動1] 翻过来，把里面翻到外面\n△<ruby>洗濯物<rt>せんたくもの</rt></ruby>を<ruby>裏返<rt>うらがえ</rt></ruby>して<ruby>干<rt>ほ</rt></ruby>す。/ 把洗好的衣服翻过来晾晒。",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "2-86",
+    "start": 495.97,
+    "end": 511.65,
+    "jp": "【2-86】 <ruby>恨<rt>うら</rt></ruby>み ③ [名] 恨，怨恨\n△<ruby>恨<rt>うら</rt></ruby>みを<ruby>抱<rt>いだ</rt></ruby>く。/ 怀恨在心。\n△<ruby>恨<rt>うら</rt></ruby>みを<ruby>買<rt>か</rt></ruby>う。/ 招怨，得罪人。",
+    "cn": ""
+  },
+  {
+    "id": 36,
+    "word_id": "2-87",
+    "start": 511.65,
+    "end": 527.88,
+    "jp": "【2-87】 <ruby>恨<rt>うら</rt></ruby>む ② [他動1] 恨，怨恨，抱怨\n△<ruby>人<rt>ひと</rt></ruby>に<ruby>恨<rt>うら</rt></ruby>まれる。/ 招人怨恨。\n△わが<ruby>身<rt>み</rt></ruby>を<ruby>恨<rt>うら</rt></ruby>む。/ 怨自己。",
+    "cn": ""
+  },
+  {
+    "id": 37,
+    "word_id": "2-88",
+    "start": 527.88,
+    "end": 538.98,
+    "jp": "【2-88】 <ruby>裏門<rt>うらもん</rt></ruby> ⓪ [名] 后门\n△<ruby>裏門<rt>うらもん</rt></ruby>から<ruby>入<rt>はい</rt></ruby>る。/ 从后门进去。",
+    "cn": ""
+  },
+  {
+    "id": 38,
+    "word_id": "2-89",
+    "start": 538.98,
+    "end": 556.96,
+    "jp": "【2-89】 うらやましい ⑤ [イ形] 羡慕的，令人羡慕的\n△うらやましい<ruby>話<rt>はなし</rt></ruby> / 令人羡慕的事。\n△うらやましそうに<ruby>見<rt>み</rt></ruby>る。/ 用羡慕的眼光看。",
+    "cn": ""
+  },
+  {
+    "id": 39,
+    "word_id": "2-93",
+    "start": 556.96,
+    "end": 567.84,
+    "jp": "【2-93】 <ruby>売<rt>う</rt></ruby>り<ruby>手<rt>て</rt></ruby> ⓪ [名] 卖主，卖方\n△<ruby>売<rt>う</rt></ruby>り<ruby>手<rt>て</rt></ruby><ruby>市場<rt>しじょう</rt></ruby> / 卖方市场。",
+    "cn": ""
+  },
+  {
+    "id": 40,
+    "word_id": "2-94",
+    "start": 567.84,
+    "end": 586.35,
+    "jp": "【2-94】 <ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby> ⓪ [名] 出售的商品；招牌，噱头\n△<ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby>に<ruby>出<rt>だ</rt></ruby>す。/ 作为商品出售。\n△<ruby>親切<rt>しんせつ</rt></ruby>を<ruby>売<rt>う</rt></ruby>り<ruby>物<rt>もの</rt></ruby>にする。/ 把热心肠当作招牌。",
+    "cn": ""
+  },
+  {
+    "id": 41,
+    "word_id": "2-95",
+    "start": 586.35,
+    "end": 603.56,
+    "jp": "【2-95】 <ruby>得<rt>う</rt></ruby>る ① [他動2] 得到，获得；（接动词连用形后）能够，可能\n△<ruby>利益<rt>りえき</rt></ruby>を<ruby>得<rt>う</rt></ruby>る。/ 获取利益。\n△それはあり<ruby>得<rt>う</rt></ruby>ることだ。/ 那是有可能的事。",
+    "cn": ""
+  },
+  {
+    "id": 42,
+    "word_id": "2-96",
+    "start": 603.56,
+    "end": 615.28,
+    "jp": "【2-96】 <ruby>売<rt>う</rt></ruby>れ<ruby>行<rt>ゆ</rt></ruby>き ⓪ [名] 销路，销售情况\n△<ruby>売<rt>う</rt></ruby>れ<ruby>行<rt>ゆ</rt></ruby>きがいい。/ 销路很好。",
+    "cn": ""
+  },
+  {
+    "id": 43,
+    "word_id": "2-97",
+    "start": 615.28,
+    "end": 634.87,
+    "jp": "【2-97】 うろうろ ① [副・自動3] 徘徊，转来转去；惊慌失措\n△うろうろと<ruby>歩<rt>ある</rt></ruby>き<ruby>回<rt>まわ</rt></ruby>る。/ 来回徘徊。\n△<ruby>急用<rt>きゅうよう</rt></ruby>があってうろうろした。/ 因为有急事而惊慌失措。",
+    "cn": ""
+  },
+  {
+    "id": 44,
+    "word_id": "2-98",
+    "start": 634.87,
+    "end": 650.48,
+    "jp": "【2-98】 <ruby>上着<rt>うわぎ</rt></ruby> ⓪ [名] 上衣，外套\n△<ruby>上着<rt>うわぎ</rt></ruby>を<ruby>着<rt>き</rt></ruby>る。/ 穿上衣。\n△<ruby>上着<rt>うわぎ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>ぐ。/ 脱上衣。",
+    "cn": ""
+  },
+  {
+    "id": 45,
+    "word_id": "2-99",
+    "start": 650.48,
+    "end": 661.95,
+    "jp": "【2-99】 <ruby>運賃<rt>うんちん</rt></ruby> ① [名] 运费，车船费\n△<ruby>運賃<rt>うんちん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う。/ 支付运费。",
+    "cn": ""
+  },
+  {
+    "id": 46,
+    "word_id": "2-102",
+    "start": 661.95,
+    "end": 677.97,
+    "jp": "【2-102】 <ruby>栄養<rt>えいよう</rt></ruby> ⓪ [名] 营养\n△<ruby>栄養<rt>えいよう</rt></ruby>が<ruby>足<rt>た</rt></ruby>りない。/ 缺乏营养。\n△<ruby>栄養<rt>えいよう</rt></ruby>を<ruby>取<rt>と</rt></ruby>る。/ 摄取营养。",
+    "cn": ""
+  },
+  {
+    "id": 47,
+    "word_id": "2-104",
+    "start": 677.97,
+    "end": 697.22,
+    "jp": "【2-104】 <ruby>描<rt>えが</rt></ruby>く ② [他動1] 画，描绘；描写；想象\n△<ruby>山水<rt>さんすい</rt></ruby>を<ruby>描<rt>えが</rt></ruby>く。/ 画山水。\n△<ruby>明<rt>あか</rt></ruby>るい<ruby>未来<rt>みらい</rt></ruby>を<ruby>心<rt>こころ</rt></ruby>に<ruby>描<rt>えが</rt></ruby>く。/ 在心中描绘光明的未来。",
+    "cn": ""
+  },
+  {
+    "id": 48,
+    "word_id": "2-105",
+    "start": 697.22,
+    "end": 708.43,
+    "jp": "【2-105】 <ruby>液体<rt>えきたい</rt></ruby> ⓪ [名] 液体，流体\n△<ruby>液体空気<rt>えきたいくうき</rt></ruby> / 液态空气。",
+    "cn": ""
+  },
+  {
+    "id": 49,
+    "word_id": "2-107",
+    "start": 708.43,
+    "end": 721.4,
+    "jp": "【2-107】 <ruby>閲覧室<rt>えつらんしつ</rt></ruby> ③ [名] 阅览室\n△<ruby>閲覧室<rt>えつらんしつ</rt></ruby>で<ruby>資料<rt>しりょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む。/ 在阅览室阅读资料。",
+    "cn": ""
+  },
+  {
+    "id": 50,
+    "word_id": "2-111",
+    "start": 721.4,
+    "end": 737.48,
+    "jp": "【2-111】 <ruby>得<rt>え</rt></ruby>る ① [他動2] 得到，获得；领会\n△<ruby>信頼<rt>しんらい</rt></ruby>を<ruby>得<rt>え</rt></ruby>る。/ 得到信任。\n△<ruby>要領<rt>ようりょう</rt></ruby>を<ruby>得<rt>え</rt></ruby>る。/ 掌握要领。",
+    "cn": ""
+  },
+  {
+    "id": 51,
+    "word_id": "2-114",
+    "start": 737.48,
+    "end": 754.03,
+    "jp": "【2-114】 <ruby>宴会<rt>えんかい</rt></ruby> ⓪ [名] 宴会\n△<ruby>宴会<rt>えんかい</rt></ruby>を<ruby>催<rt>もよお</rt></ruby>す。/ 举行宴会。\n△<ruby>宴会<rt>えんかい</rt></ruby>に<ruby>出席<rt>しゅつせき</rt></ruby>する。/ 出席宴会。",
+    "cn": ""
+  },
+  {
+    "id": 52,
+    "word_id": "2-115",
+    "start": 754.03,
+    "end": 765.0,
+    "jp": "【2-115】 <ruby>沿岸<rt>えんがん</rt></ruby> ⓪ [名] 沿岸，沿海\n△<ruby>沿岸都市<rt>えんがんとし</rt></ruby> / 沿海城市。",
+    "cn": ""
+  },
+  {
+    "id": 53,
+    "word_id": "2-118",
+    "start": 765.0,
+    "end": 782.67,
+    "jp": "【2-118】 <ruby>援助<rt>えんじょ</rt></ruby> ① [名・他動3] 援助，支援，帮助\n△<ruby>海外援助計画<rt>かいがいえんじょけいかく</rt></ruby> / 海外援助计划。\n△<ruby>友人<rt>ゆうじん</rt></ruby>が<ruby>援助<rt>えんじょ</rt></ruby>してくれた。/ 朋友援助了我。",
+    "cn": ""
+  },
+  {
+    "id": 54,
+    "word_id": "2-120",
+    "start": 782.67,
+    "end": 802.36,
+    "jp": "【2-120】 <ruby>演説<rt>えんぜつ</rt></ruby> ⓪ [名・自動3] 演说，演讲\n△<ruby>彼<rt>かれ</rt></ruby>の<ruby>演説<rt>えんぜつ</rt></ruby>には<ruby>人<rt>ひと</rt></ruby>を<ruby>納得<rt>なっとく</rt></ruby>させるものがある。/ 他的演说很有说服力。\n△とうとうと<ruby>演説<rt>えんぜつ</rt></ruby>する。/ 口若悬河地演讲。",
+    "cn": ""
+  }
+]
