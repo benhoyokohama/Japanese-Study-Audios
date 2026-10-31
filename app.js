@@ -17,7 +17,7 @@ let playMode = 1; // 0: 单句循环, 1: 全文循环, 2: 顺序播放
 let isPlaying = false;
 let isSwitchingLesson = false;
 const lessonJsonCache = {};
-const MP3_VER = '20261028_v3';
+const MP3_VER = '20261031_sankan';
 
 // Web Audio API 极低音量保活器：防止 iOS 锁屏在切课加载新 MP3 的瞬间挂起后台线程
 let keepAliveCtx = null;
