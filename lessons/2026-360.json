@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "16-1",
+    "start": 0.2,
+    "end": 12.9,
+    "jp": "【16-1】 <ruby>乗<rt>の</rt></ruby>り<ruby>過<rt>す</rt></ruby>ごす ④ [自動1] 坐过站\n△<ruby>居眠<rt>いねむ</rt></ruby>りして<ruby>乗<rt>の</rt></ruby>り<ruby>過<rt>す</rt></ruby>ごす。/ 因打盹而坐过站。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "16-2",
+    "start": 12.9,
+    "end": 32.08,
+    "jp": "【16-2】 <ruby>載<rt>の</rt></ruby>る ⓪ [自動1] 放，置，载；刊登，刊载\n△<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>が<ruby>載<rt>の</rt></ruby>っている。/ 桌子上放着书。\n△<ruby>広告<rt>こうこく</rt></ruby>が<ruby>新聞<rt>しんぶん</rt></ruby>に<ruby>載<rt>の</rt></ruby>る。/ 广告刊登在报纸上。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "16-3",
+    "start": 32.08,
+    "end": 49.42,
+    "jp": "【16-3】 <ruby>鈍<rt>のろ</rt></ruby>い ② [イ形] 缓慢；迟钝，愚笨\n△<ruby>足<rt>あし</rt></ruby>が<ruby>鈍<rt>のろ</rt></ruby>い。/ 走路慢，步伐迟缓。\n△<ruby>頭<rt>あたま</rt></ruby>の<ruby>動<rt>うご</rt></ruby>きが<ruby>鈍<rt>のろ</rt></ruby>い。/ 头脑迟钝。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "16-4",
+    "start": 49.42,
+    "end": 61.42,
+    "jp": "【16-4】 のろのろ ① [副・自動3] 迟缓，慢吞吞地\n△のろのろと<ruby>進<rt>すす</rt></ruby>む。/ 慢吞吞地前进。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "16-5",
+    "start": 61.42,
+    "end": 93.83,
+    "jp": "【16-5】 のんき ① [ナ形] 安闲，悠然自得；慢性子，不慌不忙；马马虎虎，漫不经心\n△<ruby>学生時代<rt>がくせいじだい</rt></ruby>はのんきだ。/ 学生时代是悠闲自在的。\n△あの<ruby>人<rt>ひと</rt></ruby>はのんきな<ruby>性質<rt>せいしつ</rt></ruby>だ。/ 那个人是慢性子。\n△<ruby>自分<rt>じぶん</rt></ruby>の<ruby>年<rt>とし</rt></ruby>を<ruby>知<rt>し</rt></ruby>らないとはずいぶんのんきな<ruby>人<rt>ひと</rt></ruby>だ。/ 连自己的岁数都不知道，真是个漫不经心的人。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "16-6",
+    "start": 93.83,
+    "end": 113.28,
+    "jp": "【16-6】 のんびり ③ [副・自動3] 悠闲自在，无拘无束，悠然自得\n△のんびりした<ruby>田舎<rt>いなか</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby> / 悠闲自在的乡间生活\n△のんびり<ruby>暮<rt>く</rt></ruby>らす。/ 悠闲度日。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "16-7",
+    "start": 113.28,
+    "end": 125.21,
+    "jp": "【16-7】 バー ① [名] 酒吧；横杆\n△<ruby>友人<rt>ゆうじん</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>にバーに<ruby>行<rt>い</rt></ruby>く。/ 和朋友一起去酒吧。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "16-8",
+    "start": 125.21,
+    "end": 136.9,
+    "jp": "【16-8】 パーセント ③ [名] 百分率，百分数\n△<ruby>五<rt>ご</rt></ruby>パーセント / 百分之五",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "16-9",
+    "start": 136.9,
+    "end": 158.03,
+    "jp": "【16-9】 パート ① [名] 部分，要素；职责，角色；非全日制零工\n△<ruby>最初<rt>さいしょ</rt></ruby>のパート / 最初的部分\n△チームで<ruby>重要<rt>じゅうよう</rt></ruby>なパートを<ruby>受<rt>う</rt></ruby>け<ruby>持<rt>も</rt></ruby>つ。/ 在团队中担任重要角色。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "16-10",
+    "start": 158.03,
+    "end": 171.59,
+    "jp": "【16-10】 <ruby>拝啓<rt>はいけい</rt></ruby> ⓪ [名] （书信开头）敬启者，谨启\n△<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>拝啓<rt>はいけい</rt></ruby>と<ruby>書<rt>か</rt></ruby>く。/ 在信件开头写上“敬启者”。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "16-11",
+    "start": 171.59,
+    "end": 183.04,
+    "jp": "【16-11】 <ruby>歯医者<rt>はいしゃ</rt></ruby> ① [名] 牙科医生，牙医\n△<ruby>歯医者<rt>はいしゃ</rt></ruby>にかかる。/ 看牙医。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "16-12",
+    "start": 183.04,
+    "end": 199.11,
+    "jp": "【16-12】 <ruby>配送<rt>はいそう</rt></ruby> ⓪ [名・他動3] 配送，分发\n△<ruby>進物<rt>しんもつ</rt></ruby>の<ruby>配送<rt>はいそう</rt></ruby> / 配送礼品\n△<ruby>配送課<rt>はいそうか</rt></ruby> / 配送科",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "16-13",
+    "start": 199.11,
+    "end": 219.06,
+    "jp": "【16-13】 <ruby>配達<rt>はいたつ</rt></ruby> ⓪ [名・他動3] 投递，送达\n△<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>配達<rt>はいたつ</rt></ruby>する。/ 送报纸。\n△<ruby>大雨<rt>おおあめ</rt></ruby>のため<ruby>郵便<rt>ゆうびん</rt></ruby>の<ruby>配達<rt>はいたつ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れている。/ 由于大雨，邮件的投递延误了。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "16-14",
+    "start": 219.06,
+    "end": 236.28,
+    "jp": "【16-14】 <ruby>売店<rt>ばいてん</rt></ruby> ⓪ [名] 小卖部，售货亭\n△<ruby>売店<rt>ばいてん</rt></ruby>で<ruby>切手<rt>きって</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。/ 在售货亭买邮票。\n△<ruby>駅<rt>えき</rt></ruby>の<ruby>売店<rt>ばいてん</rt></ruby> / 车站小卖部",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "16-15",
+    "start": 236.28,
+    "end": 253.11,
+    "jp": "【16-15】 <ruby>俳優<rt>はいゆう</rt></ruby> ⓪ [名] 演员\n△<ruby>映画<rt>えいが</rt></ruby>の<ruby>俳優<rt>はいゆう</rt></ruby> / 电影演员\n△<ruby>俳優<rt>はいゆう</rt></ruby>の<ruby>卵<rt>たまご</rt></ruby> / 未来的演员，演员苗子",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "16-16",
+    "start": 253.11,
+    "end": 269.72,
+    "jp": "【16-16】 <ruby>入<rt>はい</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む ④ [自動1] 进入，钻进里面\n△<ruby>奥<rt>おく</rt></ruby>へ<ruby>入<rt>はい</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む。/ 进入深处。\n△<ruby>部屋<rt>へや</rt></ruby>に<ruby>入<rt>はい</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む。/ 钻进房间里。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "16-17",
+    "start": 269.72,
+    "end": 289.67,
+    "jp": "【16-17】 <ruby>這<rt>は</rt></ruby>う ① [自動1] 爬，匍匐；（植物）爬藤，攀缘；爬行，蠕动\n△<ruby>赤<rt>あか</rt></ruby>ちゃんが<ruby>這<rt>は</rt></ruby>うようになった。/ 婴儿会爬了。\n△<ruby>蔦<rt>つた</rt></ruby>は<ruby>壁<rt>かべ</rt></ruby>に<ruby>這<rt>は</rt></ruby>う。/ 常春藤顺着墙壁攀爬。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "16-18",
+    "start": 289.67,
+    "end": 299.59,
+    "jp": "【16-18】 <ruby>蝿<rt>はえ</rt></ruby> ⓪ [名] 苍蝇\n△<ruby>蝿<rt>はえ</rt></ruby>を<ruby>叩<rt>たた</rt></ruby>く。/ 打苍蝇。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "16-19",
+    "start": 299.59,
+    "end": 315.05,
+    "jp": "【16-19】 <ruby>生<rt>は</rt></ruby>える ② [自動2] 生长，长出\n△<ruby>髭<rt>ひげ</rt></ruby>が<ruby>生<rt>は</rt></ruby>える。/ 长胡子。\n△<ruby>歯<rt>は</rt></ruby>が<ruby>生<rt>は</rt></ruby>える。/ 长牙。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "16-20",
+    "start": 315.05,
+    "end": 337.76,
+    "jp": "【16-20】 <ruby>馬鹿<rt>ばか</rt></ruby>らしい ④ [イ形] 愚蠢，无聊；不值得，划不来\n△<ruby>馬鹿<rt>ばか</rt></ruby>らしいことを<ruby>言<rt>い</rt></ruby>うな。/ 不要说蠢话。\n△コーヒー<ruby>一杯<rt>いっぱい</rt></ruby>に<ruby>八百円<rt>はっぴゃくえん</rt></ruby>も<ruby>払<rt>はら</rt></ruby>うなんて<ruby>馬鹿<rt>ばか</rt></ruby>らしい。/ 一杯咖啡花八百日元，真划不来。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "16-21",
+    "start": 337.76,
+    "end": 353.18,
+    "jp": "【16-21】 <ruby>秤<rt>はかり</rt></ruby> ③ [名] 秤\n△ばね<ruby>秤<rt>ばかり</rt></ruby> / 弹簧秤\n△<ruby>秤<rt>はかり</rt></ruby>にかける。/ 用秤称。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "16-22",
+    "start": 353.18,
+    "end": 370.44,
+    "jp": "【16-22】 量る／<ruby>測<rt>はか</rt></ruby>る ② [他動1] 称量，测量；衡量，计算\n△<ruby>秤<rt>はかり</rt></ruby>で<ruby>量<rt>はか</rt></ruby>る。/ 用秤称重。\n△<ruby>時間<rt>じかん</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る。/ 测量时间。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "16-23",
+    "start": 370.44,
+    "end": 386.82,
+    "jp": "【16-23】 <ruby>図<rt>はか</rt></ruby>る ② [他動1] 谋求，筹划\n△<ruby>地域開発<rt>ちいきかいはつ</rt></ruby>を<ruby>図<rt>はか</rt></ruby>る。/ 谋求地区开发。\n△<ruby>幸福<rt>こうふく</rt></ruby>を<ruby>図<rt>はか</rt></ruby>る。/ 谋求幸福。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "16-24",
+    "start": 386.82,
+    "end": 404.32,
+    "jp": "【16-24】 <ruby>吐<rt>は</rt></ruby>き<ruby>気<rt>け</rt></ruby> ③ [名] 恶心，想吐的感觉\n△<ruby>吐<rt>は</rt></ruby>き<ruby>気<rt>け</rt></ruby>がする。/ 觉得恶心想吐。\n△<ruby>船<rt>ふね</rt></ruby>に<ruby>酔<rt>よ</rt></ruby>って<ruby>吐<rt>は</rt></ruby>き<ruby>気<rt>け</rt></ruby>を<ruby>催<rt>もよお</rt></ruby>す。/ 晕船觉得恶心。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "16-25",
+    "start": 404.32,
+    "end": 435.27,
+    "jp": "【16-25】 はきはき ① [副・自動3] 干脆，爽快；敏捷，麻利；活泼伶俐\n△はきはきと<ruby>答<rt>こた</rt></ruby>える。/ 爽快地作答。\n△はきはきした<ruby>態度<rt>たいど</rt></ruby> / 干脆利落的态度\n△もっとはきはきと<ruby>行動<rt>こうどう</rt></ruby>しなさい。/ 行动再麻利一些。\n△はきはきしている<ruby>子供<rt>こども</rt></ruby> / 活泼伶俐的孩子",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "16-26",
+    "start": 435.27,
+    "end": 458.3,
+    "jp": "【16-26】 <ruby>吐<rt>は</rt></ruby>く ① [他動1] 吐出，呕吐；冒出，喷出；说出，吐露\n△<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>吐<rt>は</rt></ruby>く。/ 把吃的东西吐出来。\n△<ruby>煙<rt>けむり</rt></ruby>を<ruby>吐<rt>は</rt></ruby>く。/ 冒烟。\n△<ruby>本音<rt>ほんね</rt></ruby>を<ruby>吐<rt>は</rt></ruby>く。/ 吐露真言。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "16-27",
+    "start": 458.3,
+    "end": 474.87,
+    "jp": "【16-27】 <ruby>掃<rt>は</rt></ruby>く ① [他動1] 扫，清扫；刷抹\n△<ruby>箒<rt>ほうき</rt></ruby>で<ruby>庭<rt>にわ</rt></ruby>を<ruby>掃<rt>は</rt></ruby>く。/ 用扫帚打扫院子。\n△<ruby>眉<rt>まゆ</rt></ruby>を<ruby>掃<rt>は</rt></ruby>く。/ 描眉。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "16-28",
+    "start": 474.87,
+    "end": 486.17,
+    "jp": "【16-28】 〜<ruby>泊<rt>はく</rt></ruby> [接尾] ……宿，住……晚\n△<ruby>京都<rt>きょうと</rt></ruby>に<ruby>一泊<rt>いっぱく</rt></ruby>する。/ 在京都住一晚。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "16-29",
+    "start": 486.17,
+    "end": 497.89,
+    "jp": "【16-29】 <ruby>拍手<rt>はくしゅ</rt></ruby> ① [名・自動3] 拍手，鼓掌\n△<ruby>心<rt>こころ</rt></ruby>から<ruby>拍手<rt>はくしゅ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る。/ 衷心鼓掌。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "16-30",
+    "start": 497.89,
+    "end": 523.77,
+    "jp": "【16-30】 <ruby>激<rt>はげ</rt></ruby>しい ③ [イ形] 激烈，猛烈；性情急躁；（程度）剧烈，厉害\n△<ruby>雨<rt>あめ</rt></ruby>が<ruby>激<rt>はげ</rt></ruby>しくなってくる。/ 雨越下越大了。\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>激<rt>はげ</rt></ruby>しい<ruby>気性<rt>きしょう</rt></ruby>の<ruby>持<rt>も</rt></ruby>ち<ruby>主<rt>ぬし</rt></ruby>だ。/ 他是个性情急躁的人。\n△<ruby>激<rt>はげ</rt></ruby>しい<ruby>寒<rt>さむ</rt></ruby>さ / 剧烈的寒冷",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "16-31",
+    "start": 523.77,
+    "end": 539.76,
+    "jp": "【16-31】 バケツ ⓪ [名] 水桶\n△バケツで<ruby>水<rt>みず</rt></ruby>を<ruby>汲<rt>く</rt></ruby>む。/ 用水桶打水。\n△ポリバケツ / 塑料水桶",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "16-32",
+    "start": 539.76,
+    "end": 556.12,
+    "jp": "【16-32】 <ruby>剥<rt>は</rt></ruby>げる ② [自動2] 褪色；脱落，剥落\n△<ruby>色<rt>いろ</rt></ruby>が<ruby>剥<rt>は</rt></ruby>げる。/ 褪色。\n△ペンキが<ruby>剥<rt>は</rt></ruby>げる。/ 油漆剥落。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "16-33",
+    "start": 556.12,
+    "end": 576.07,
+    "jp": "【16-33】 <ruby>挟<rt>はさ</rt></ruby>まる ③ [自動1] 夹（在两个物体之间）；夹（在双方之间）\n△<ruby>指<rt>ゆび</rt></ruby>がドアに<ruby>挟<rt>はさ</rt></ruby>まった。/ 手指被夹在门缝里了。\n△<ruby>両方<rt>りょうほう</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に<ruby>挟<rt>はさ</rt></ruby>まって<ruby>困<rt>こま</rt></ruby>っている。/ 夹在双方之间左右为难。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "16-34",
+    "start": 576.07,
+    "end": 599.53,
+    "jp": "【16-34】 <ruby>挟<rt>はさ</rt></ruby>む ② [他動1] 夹；插，插入；隔着\n△<ruby>箸<rt>はし</rt></ruby>で<ruby>挟<rt>はさ</rt></ruby>む。/ 用筷子夹。\n△<ruby>口<rt>くち</rt></ruby>を<ruby>挟<rt>はさ</rt></ruby>む。/ 插嘴。\n△<ruby>二人<rt>ふたり</rt></ruby>はテーブルを<ruby>挟<rt>はさ</rt></ruby>んで<ruby>座<rt>すわ</rt></ruby>った。/ 两人隔着桌子相对而坐。",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "16-35",
+    "start": 599.53,
+    "end": 622.31,
+    "jp": "【16-35】 <ruby>端<rt>はし</rt></ruby> ⓪ [名] 端，尖端；边，边缘；起点，开端\n△<ruby>棒<rt>ぼう</rt></ruby>の<ruby>端<rt>はし</rt></ruby> / 棍子的一端\n△<ruby>端<rt>はし</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>る。/ 坐在边上。\n△<ruby>端<rt>はし</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>める。/ 从头开始。",
+    "cn": ""
+  }
+]

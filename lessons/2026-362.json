@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "16-71",
+    "start": 0.2,
+    "end": 11.68,
+    "jp": "【16-71】 <ruby>鼻水<rt>はなみず</rt></ruby> ⓪ [名] 鼻涕\n△<ruby>鼻水<rt>はなみず</rt></ruby>をすする。/ 吸鼻涕。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "16-72",
+    "start": 11.68,
+    "end": 23.46,
+    "jp": "【16-72】 <ruby>花婿<rt>はなむこ</rt></ruby> ② [名] 新郎\n△<ruby>花婿<rt>はなむこ</rt></ruby>を<ruby>紹介<rt>しょうかい</rt></ruby>する。/ 介绍新郎。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "16-73",
+    "start": 23.46,
+    "end": 34.84,
+    "jp": "【16-73】 <ruby>花嫁<rt>はなよめ</rt></ruby> ② [名] 新娘\n△<ruby>花嫁姿<rt>はなよめすがた</rt></ruby> / 新娘的装束",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "16-74",
+    "start": 34.84,
+    "end": 53.14,
+    "jp": "【16-74】 <ruby>跳<rt>は</rt></ruby>ねる ② [自動2] 跳跃，跳起；溅，飞溅\n△<ruby>魚<rt>さかな</rt></ruby>が<ruby>水面<rt>すいめん</rt></ruby>に<ruby>跳<rt>は</rt></ruby>ねる。/ 鱼跳出水面。\n△ズボンに<ruby>泥<rt>どろ</rt></ruby>が<ruby>跳<rt>は</rt></ruby>ねる。/ 泥点溅到裤子上。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "16-75",
+    "start": 53.14,
+    "end": 77.41,
+    "jp": "【16-75】 <ruby>幅<rt>はば</rt></ruby> ⓪ [名] 宽度，幅面；幅度，范围；差价\n△<ruby>幅<rt>はば</rt></ruby>の<ruby>広<rt>ひろ</rt></ruby>い<ruby>道路<rt>どうろ</rt></ruby> / 路面宽阔的道路\n△<ruby>幅広<rt>はばひろ</rt></ruby>い<ruby>支持<rt>しじ</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける。/ 得到广泛的支持。\n△<ruby>値上<rt>ねあ</rt></ruby>げ<ruby>幅<rt>はば</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きい。/ 涨价的幅度很大。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "16-76",
+    "start": 77.41,
+    "end": 89.18,
+    "jp": "【16-76】 <ruby>母親<rt>ははおや</rt></ruby> ⓪ [名] 母亲\n△<ruby>母親<rt>ははおや</rt></ruby>になる。/ 做母亲，为人母。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "16-77",
+    "start": 89.18,
+    "end": 106.58,
+    "jp": "【16-77】 <ruby>省<rt>はぶ</rt></ruby>く ② [他動1] 省略，减去；精简，从略\n△<ruby>手間<rt>てま</rt></ruby>を<ruby>省<rt>はぶ</rt></ruby>く。/ 省事。\n△<ruby>説明<rt>せつめい</rt></ruby>を<ruby>省<rt>はぶ</rt></ruby>く。/ 解释从略。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "16-78",
+    "start": 106.58,
+    "end": 123.46,
+    "jp": "【16-78】 <ruby>歯磨<rt>はみが</rt></ruby>き ② [名・自動3] 刷牙；牙膏，牙粉\n△<ruby>歯磨<rt>はみが</rt></ruby>き<ruby>楊枝<rt>ようじ</rt></ruby> / 牙刷\n△<ruby>練<rt>ね</rt></ruby>り<ruby>歯磨<rt>はみが</rt></ruby>き / 牙膏",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "16-79",
+    "start": 123.46,
+    "end": 146.2,
+    "jp": "【16-79】 <ruby>嵌<rt>は</rt></ruby>める ⓪ [他動2] 镶嵌，安上；戴上；欺骗，陷害\n△<ruby>戸<rt>と</rt></ruby>を<ruby>嵌<rt>は</rt></ruby>める。/ 装上门扇。\n△<ruby>指輪<rt>ゆびわ</rt></ruby>を<ruby>嵌<rt>は</rt></ruby>める。/ 戴上戒指。\n△<ruby>人<rt>ひと</rt></ruby>を<ruby>嵌<rt>は</rt></ruby>める。/ 欺骗人，坑害人。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "16-80",
+    "start": 146.2,
+    "end": 157.7,
+    "jp": "【16-80】 <ruby>場面<rt>ばめん</rt></ruby> ① [名] 场面，情景，场景\n△<ruby>悲<rt>かな</rt></ruby>しい<ruby>場面<rt>ばめん</rt></ruby> / 悲伤的场面",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "16-81",
+    "start": 157.7,
+    "end": 173.98,
+    "jp": "【16-81】 <ruby>早<rt>はや</rt></ruby>め ⓪ [名・ナ形] 提前，早些\n△<ruby>早<rt>はや</rt></ruby>めの<ruby>手配<rt>てはい</rt></ruby> / 提前准备\n△<ruby>少<rt>すこ</rt></ruby>し<ruby>早<rt>はや</rt></ruby>めに<ruby>行<rt>い</rt></ruby>こう。/ 早点去吧！",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "16-82",
+    "start": 173.98,
+    "end": 190.31,
+    "jp": "【16-82】 <ruby>早<rt>はや</rt></ruby>める ③ [他動2] 提前\n△<ruby>会議<rt>かいぎ</rt></ruby>を<ruby>早<rt>はや</rt></ruby>めた。/ 会议提前了。\n△<ruby>期日<rt>きじつ</rt></ruby>を<ruby>早<rt>はや</rt></ruby>める。/ 把日期提前。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "16-83",
+    "start": 190.31,
+    "end": 208.24,
+    "jp": "【16-83】 <ruby>速<rt>はや</rt></ruby>める ③ [他動2] 加速，加快\n△<ruby>足<rt>あし</rt></ruby>を<ruby>速<rt>はや</rt></ruby>める。/ 加快步伐。\n△<ruby>工事<rt>こうじ</rt></ruby>の<ruby>進度<rt>しんど</rt></ruby>を<ruby>大幅<rt>おおはば</rt></ruby>に<ruby>速<rt>はや</rt></ruby>めた。/ 大大加快了工程进度。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "16-84",
+    "start": 208.24,
+    "end": 219.14,
+    "jp": "【16-84】 <ruby>流行<rt>はやり</rt></ruby> ⓪ [名] 流行，时髦\n△<ruby>流行<rt>はやり</rt></ruby>を<ruby>追<rt>お</rt></ruby>う。/ 追求时髦。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "16-85",
+    "start": 219.14,
+    "end": 240.99,
+    "jp": "【16-85】 <ruby>腹<rt>はら</rt></ruby> ② [名] 腹部，肚子；心情，情绪\n△<ruby>腹<rt>はら</rt></ruby>を<ruby>壊<rt>こわ</rt></ruby>す。/ 吃坏肚子，闹肚子。\n△<ruby>腹<rt>はら</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る。/ 肚子饿。\n△<ruby>腹<rt>はら</rt></ruby>が<ruby>立<rt>た</rt></ruby>つ。/ 生气，发怒。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "16-86",
+    "start": 240.99,
+    "end": 253.36,
+    "jp": "【16-86】 <ruby>払<rt>はら</rt></ruby>い<ruby>戻<rt>もど</rt></ruby>し ⓪ [名] 退还，退款\n△<ruby>料金<rt>りょうきん</rt></ruby>の<ruby>払<rt>はら</rt></ruby>い<ruby>戻<rt>もど</rt></ruby>し / 退还费用",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "16-87",
+    "start": 253.36,
+    "end": 271.1,
+    "jp": "【16-87】 <ruby>払<rt>はら</rt></ruby>い<ruby>戻<rt>もど</rt></ruby>す ⑤ [他動1] 退还，退款\n△<ruby>運賃<rt>うんちん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>い<ruby>戻<rt>もど</rt></ruby>す。/ 退还车费。\n△<ruby>貯金<rt>ちょきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>い<ruby>戻<rt>もど</rt></ruby>す。/ 提取存款。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "16-88",
+    "start": 271.1,
+    "end": 289.08,
+    "jp": "【16-88】 ばらばら ⓪ [副・ナ形] 分散，散乱，七零八落\n△ばらばらになって<ruby>逃<rt>に</rt></ruby>げる。/ 四散逃跑。\n△<ruby>髪<rt>かみ</rt></ruby>をばらばらにする。/ 把头发弄乱。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "16-89",
+    "start": 289.08,
+    "end": 305.75,
+    "jp": "【16-89】 バランス ⓪ [名] 平衡；均势\n△バランスを<ruby>取<rt>と</rt></ruby>る。/ 保持平衡。\n△バランスを<ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>す。/ 恢复平衡。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "16-90",
+    "start": 305.75,
+    "end": 327.41,
+    "jp": "【16-90】 <ruby>針<rt>はり</rt></ruby> ① [名] 针，针状物；刺\n△<ruby>針<rt>はり</rt></ruby>を<ruby>打<rt>う</rt></ruby>つ。/ 打针，扎针灸。\n△バラの<ruby>針<rt>はり</rt></ruby> / 玫瑰刺\n△<ruby>針<rt>はり</rt></ruby>のある<ruby>言葉<rt>ことば</rt></ruby> / 带刺的话，有讽刺意味的话",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "16-91",
+    "start": 327.41,
+    "end": 370.97,
+    "jp": "【16-91】 <ruby>張<rt>は</rt></ruby>る ⓪ [自他動1] 发芽；伸展，扎根；结（冰）；紧绷；扩张；张挂；铺设\n△<ruby>木<rt>き</rt></ruby>の<ruby>芽<rt>め</rt></ruby>が<ruby>張<rt>は</rt></ruby>る。/ 树木发芽。\n△<ruby>根<rt>ね</rt></ruby>が<ruby>張<rt>は</rt></ruby>る。/ 根部伸展，扎根。\n△<ruby>薄氷<rt>うすごおり</rt></ruby>が<ruby>張<rt>は</rt></ruby>った。/ 结了一层薄冰。\n△<ruby>気<rt>き</rt></ruby>が<ruby>張<rt>は</rt></ruby>る。/ 精神紧张。\n△<ruby>勢力<rt>せいりょく</rt></ruby>を<ruby>張<rt>は</rt></ruby>る。/ 扩张势力。\n△<ruby>幕<rt>まく</rt></ruby>を<ruby>張<rt>は</rt></ruby>る。/ 张挂帷幕。\n△<ruby>床<rt>ゆか</rt></ruby>にタイルを<ruby>張<rt>は</rt></ruby>る。/ 在地板上铺瓷砖。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "16-92",
+    "start": 370.97,
+    "end": 389.34,
+    "jp": "【16-92】 <ruby>晴<rt>は</rt></ruby>れ<ruby>上<rt>あ</rt></ruby>がる ④ [自動1] 放晴，万里无云\n△<ruby>間<rt>ま</rt></ruby>もなく<ruby>晴<rt>は</rt></ruby>れ<ruby>上<rt>あ</rt></ruby>がった。/ 不一会儿天就放晴了。\n△<ruby>空<rt>そら</rt></ruby>が<ruby>晴<rt>は</rt></ruby>れ<ruby>上<rt>あ</rt></ruby>がった。/ 天空放晴，万里无云。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "16-93",
+    "start": 389.34,
+    "end": 401.89,
+    "jp": "【16-93】 バレーボール ④ [名] 排球\n△<ruby>放課後<rt>ほうかご</rt></ruby>にバレーボールをする。/ 放学后打排球。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "16-94",
+    "start": 401.89,
+    "end": 416.59,
+    "jp": "【16-94】 半〜[はん〜] [接頭] 半……\n△<ruby>半年<rt>はんとし</rt></ruby> / 半年\n△<ruby>半熟<rt>はんじゅく</rt></ruby> / 半熟",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "16-95",
+    "start": 416.59,
+    "end": 432.41,
+    "jp": "【16-95】 <ruby>範囲<rt>はんい</rt></ruby> ① [名] 范围，界限\n△<ruby>範囲<rt>はんい</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げる。/ 扩大范围。\n△<ruby>範囲<rt>はんい</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える。/ 超出范围。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "16-96",
+    "start": 432.41,
+    "end": 444.94,
+    "jp": "【16-96】 <ruby>繁華街<rt>はんかがい</rt></ruby> ③ [名] 繁华街区\n△<ruby>繁華街<rt>はんかがい</rt></ruby>で<ruby>商売<rt>しょうばい</rt></ruby>をする。/ 在繁华街区做生意。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "16-97",
+    "start": 444.94,
+    "end": 456.68,
+    "jp": "【16-97】 <ruby>半額<rt>はんがく</rt></ruby> ⓪ [名] 半价，半数\n△<ruby>半額<rt>はんがく</rt></ruby>の<ruby>割引券<rt>わりびきけん</rt></ruby> / 半价优惠券",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "16-98",
+    "start": 456.68,
+    "end": 475.36,
+    "jp": "【16-98】 パンク ⓪ [名・自動3] （轮胎）穿孔，爆胎；撑破\n△パンクを<ruby>直<rt>なお</rt></ruby>す。/ 修补轮胎。\n△お<ruby>腹一杯<rt>なかいっぱい</rt></ruby>でパンクしそうだ。/ 吃得太饱，肚皮快要撑破了。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "16-99",
+    "start": 475.36,
+    "end": 486.33,
+    "jp": "【16-99】 <ruby>判子<rt>はんこ</rt></ruby> ⓪ [名] 印章，图章\n△<ruby>判子<rt>はんこ</rt></ruby>を<ruby>押<rt>お</rt></ruby>す。/ 盖章。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "16-100",
+    "start": 486.33,
+    "end": 502.76,
+    "jp": "【16-100】 <ruby>反抗<rt>はんこう</rt></ruby> ⓪ [名・自動3] 反抗，对抗\n△<ruby>反抗期<rt>はんこうき</rt></ruby> / （青春）叛逆期\n△<ruby>命令<rt>めいれい</rt></ruby>に<ruby>反抗<rt>はんこう</rt></ruby>する。/ 违抗命令。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "16-101",
+    "start": 502.76,
+    "end": 518.75,
+    "jp": "【16-101】 <ruby>犯罪<rt>はんざい</rt></ruby> ⓪ [名] 犯罪\n△<ruby>犯罪<rt>はんざい</rt></ruby>を<ruby>犯<rt>おか</rt></ruby>す。/ 犯罪。\n△<ruby>犯罪<rt>はんざい</rt></ruby>の<ruby>予防<rt>よぼう</rt></ruby> / 预防犯罪",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "16-102",
+    "start": 518.75,
+    "end": 537.84,
+    "jp": "【16-102】 <ruby>万歳<rt>ばんざい</rt></ruby> ③ [名・感] 万岁；可喜可贺\n△<ruby>大声<rt>おおごえ</rt></ruby>で<ruby>万歳<rt>ばんざい</rt></ruby>を<ruby>叫<rt>さけ</rt></ruby>ぶ。/ 高呼万岁。\n△うまくいけば<ruby>万歳<rt>ばんざい</rt></ruby>だ。/ 如果进展顺利的话，真是可喜可贺。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "16-103",
+    "start": 537.84,
+    "end": 550.65,
+    "jp": "【16-103】 ハンサム ① [ナ形] 英俊，帅气\n△<ruby>彼<rt>かれ</rt></ruby>はなかなかハンサムだ。/ 他很有风度、很帅气。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "16-104",
+    "start": 550.65,
+    "end": 569.17,
+    "jp": "【16-104】 <ruby>半数<rt>はんすう</rt></ruby> ③ [名] 半数\n△<ruby>半数<rt>はんすう</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える。/ 超过半数。\n△<ruby>合格者<rt>ごうかくしゃ</rt></ruby>は<ruby>半数<rt>はんすう</rt></ruby>にも<ruby>満<rt>み</rt></ruby>たなかった。/ 合格的人连半数都不到。",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "16-105",
+    "start": 569.17,
+    "end": 580.95,
+    "jp": "【16-105】 <ruby>半袖<rt>はんそで</rt></ruby> ⓪ [名] 短袖；短袖衣服\n△<ruby>半袖<rt>はんそで</rt></ruby>のシャツ / 短袖衬衣",
+    "cn": ""
+  }
+]
