@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "19-106",
+    "start": 0.2,
+    "end": 23.35,
+    "jp": "【19-106】 <ruby>元<rt>もと</rt></ruby> ① [名] 过去，以前，原来；原样，原来的状态\n△<ruby>元<rt>もと</rt></ruby>の<ruby>家<rt>いえ</rt></ruby> / 原来的家\n△<ruby>元<rt>もと</rt></ruby>の<ruby>校長<rt>こうちょう</rt></ruby> / 原来的校长\n△<ruby>元<rt>もと</rt></ruby>のまま / 一如原样，保持不变",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "19-107",
+    "start": 23.35,
+    "end": 50.67,
+    "jp": "【19-107】 <ruby>戻<rt>もど</rt></ruby>す ② [他動1] 归还；送回，放回，退回；使……倒退\n△<ruby>図書室<rt>としょしつ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>を<ruby>戻<rt>もど</rt></ruby>す。/ 还图书室的书。\n△<ruby>使<rt>つか</rt></ruby>ったら<ruby>戻<rt>もど</rt></ruby>しておきなさい。/ 用完请放回原处。\n△<ruby>時計<rt>とけい</rt></ruby>を<ruby>三分<rt>さんぷん</rt></ruby>だけ<ruby>元<rt>もと</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>す。/ 将分针拨回三分钟。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "19-108",
+    "start": 50.67,
+    "end": 76.27,
+    "jp": "【19-108】 <ruby>求<rt>もと</rt></ruby>める ③ [他動2] 想要，渴望，需要；寻求，寻找；要求，征求\n△<ruby>平和<rt>へいわ</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める。/ 渴望和平。\n△<ruby>幸福<rt>こうふく</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める。/ 寻求幸福。\n△<ruby>本人<rt>ほんにん</rt></ruby>の<ruby>同意<rt>どうい</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める。/ 征求本人同意。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "19-109",
+    "start": 76.27,
+    "end": 95.04,
+    "jp": "【19-109】 もともと ⓪ [副] 原来，本来，根本，从来\n△もともと<ruby>忘<rt>わす</rt></ruby>れっぽい。/ 本来就记性不好。\n△もともとやる<ruby>気<rt>き</rt></ruby>がない。/ 一开始就没有干劲。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "19-110",
+    "start": 95.04,
+    "end": 108.99,
+    "jp": "【19-110】 <ruby>物置<rt>ものおき</rt></ruby> ③ [名] 库房，储藏室\n△<ruby>使<rt>つか</rt></ruby>わないものを<ruby>物置<rt>ものおき</rt></ruby>にしまう。/ 把不用的东西收纳在库房里。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "19-111",
+    "start": 108.99,
+    "end": 126.37,
+    "jp": "【19-111】 <ruby>物音<rt>ものおと</rt></ruby> ③ [名] 响音，响动，声音\n△<ruby>物音<rt>ものおと</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる。/ 发出响声。\n△<ruby>何<rt>なに</rt></ruby>か<ruby>物音<rt>ものおと</rt></ruby>がする。/ 有什么响动。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "19-112",
+    "start": 126.37,
+    "end": 144.96,
+    "jp": "【19-112】 <ruby>物事<rt>ものごと</rt></ruby> ③ [名] 事物，事情\n△<ruby>物事<rt>ものごと</rt></ruby>には<ruby>順序<rt>じゅんじょ</rt></ruby>がある。/ 事情都有顺序。\n△<ruby>物事<rt>ものごと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>でも<ruby>初<rt>はじ</rt></ruby>めが<ruby>大切<rt>たいせつ</rt></ruby>だ。/ 万事开头最重要。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "19-113",
+    "start": 144.96,
+    "end": 164.16,
+    "jp": "【19-113】 <ruby>物差<rt>ものさ</rt></ruby>し ③ [名] 尺子；标准，尺度\n△<ruby>物差<rt>ものさ</rt></ruby>しで<ruby>布<rt>ぬの</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る。/ 用尺子量布。\n△<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>の<ruby>物差<rt>ものさ</rt></ruby>しが<ruby>違<rt>ちが</rt></ruby>う。/ 考虑问题的标准不同。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "19-114",
+    "start": 164.16,
+    "end": 183.47,
+    "jp": "【19-114】 <ruby>物凄<rt>ものすご</rt></ruby>い ④ [イ形] 可怕，令人害怕；惊人，猛烈，不得了\n△<ruby>物凄<rt>ものすご</rt></ruby>い<ruby>顔<rt>かお</rt></ruby>つき / 相貌可怕\n△<ruby>物凄<rt>ものすご</rt></ruby>く<ruby>寒<rt>さむ</rt></ruby>い。/ 冷得不得了。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "19-115",
+    "start": 183.47,
+    "end": 196.14,
+    "jp": "【19-115】 <ruby>紅葉<rt>もみじ</rt></ruby> ① [名] 红叶\n△<ruby>秋<rt>あき</rt></ruby>の<ruby>紅葉<rt>もみじ</rt></ruby>がとても<ruby>綺麗<rt>きれい</rt></ruby>だ。/ 秋天的红叶十分漂亮。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "19-116",
+    "start": 196.14,
+    "end": 212.78,
+    "jp": "【19-116】 <ruby>揉<rt>も</rt></ruby>む ⓪ [他動1] 搓，揉；捏，推拿，按摩\n△<ruby>両手<rt>りょうて</rt></ruby>を<ruby>揉<rt>も</rt></ruby>む。/ 搓双手。\n△<ruby>肩<rt>かた</rt></ruby>を<ruby>揉<rt>も</rt></ruby>む。/ 按摩肩膀。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "19-117",
+    "start": 212.78,
+    "end": 231.53,
+    "jp": "【19-117】 <ruby>燃<rt>も</rt></ruby>やす ⓪ [他動1] 烧，燃烧；燃起，激起（某种感情）\n△<ruby>蝋燭<rt>ろうそく</rt></ruby>を<ruby>燃<rt>も</rt></ruby>やす。/ 点燃蜡烛。\n△<ruby>仕事<rt>しごと</rt></ruby>に<ruby>情熱<rt>じょうねつ</rt></ruby>を<ruby>燃<rt>も</rt></ruby>やす。/ 对工作充满热情。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "19-118",
+    "start": 231.53,
+    "end": 250.19,
+    "jp": "【19-118】 <ruby>模様<rt>もよう</rt></ruby> ⓪ [名] 花纹，图案；情况，情形\n△<ruby>縞模様<rt>しまもよう</rt></ruby> / 条纹图案\n△<ruby>学校<rt>がっこう</rt></ruby>の<ruby>模様<rt>もよう</rt></ruby>を<ruby>親<rt>おや</rt></ruby>に<ruby>教<rt>おし</rt></ruby>える。/ 告诉父母学校的情况。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "19-119",
+    "start": 250.19,
+    "end": 275.52,
+    "jp": "【19-119】 <ruby>盛<rt>も</rt></ruby>り<ruby>上<rt>あ</rt></ruby>がる ④ [自動1] 凸起，隆起；涌起，涌上来；（气氛等）高涨起来\n△<ruby>筋肉<rt>きんにく</rt></ruby>が<ruby>盛<rt>も</rt></ruby>り<ruby>上<rt>あ</rt></ruby>がる。/ 肌肉隆起。\n△<ruby>泡<rt>あわ</rt></ruby>が<ruby>盛<rt>も</rt></ruby>り<ruby>上<rt>あ</rt></ruby>がる。/ 往上冒泡。\n△<ruby>平和運動<rt>へいわうんどう</rt></ruby>が<ruby>盛<rt>も</rt></ruby>り<ruby>上<rt>あ</rt></ruby>がる。/ 和平运动高涨起来。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "19-120",
+    "start": 275.52,
+    "end": 292.11,
+    "jp": "【19-120】 <ruby>盛<rt>も</rt></ruby>る ⓪ [他動1] 盛满，装满；堆高，堆起\n△<ruby>御飯<rt>ごはん</rt></ruby>を<ruby>盛<rt>も</rt></ruby>る。/ 盛饭。\n△<ruby>土<rt>つち</rt></ruby>を<ruby>盛<rt>も</rt></ruby>る。/ 堆土。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "19-121",
+    "start": 292.11,
+    "end": 314.35,
+    "jp": "【19-121】 <ruby>文句<rt>もんく</rt></ruby> ① [名] 词句，话语；意见，牢骚\n△<ruby>文句<rt>もんく</rt></ruby>を<ruby>練<rt>ね</rt></ruby>る。/ 推敲词句。\n△<ruby>文句<rt>もんく</rt></ruby>を<ruby>言<rt>い</rt></ruby>う。/ 发牢骚。\n△<ruby>文句<rt>もんく</rt></ruby>をつける。/ 指责，挑剔找毛病。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "19-122",
+    "start": 314.35,
+    "end": 337.95,
+    "jp": "【19-122】 〜<ruby>屋<rt>や</rt></ruby> [接尾] 店，铺；从事某种职业的人；有某种性格特征的人\n△<ruby>八百屋<rt>やおや</rt></ruby> / 蔬菜水果店\n△<ruby>郵便屋<rt>ゆうびんや</rt></ruby> / 邮递员\n△わからず<ruby>屋<rt>や</rt></ruby> / 不明事理的人，不懂情理的人",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "19-123",
+    "start": 337.95,
+    "end": 364.53,
+    "jp": "【19-123】 やかましい ④ [イ形] 吵闹，嘈杂，喧闹；麻烦，啰唆；严格，严厉\n△<ruby>話<rt>はな</rt></ruby>し<ruby>声<rt>ごえ</rt></ruby>がやかましい。/ 人声嘈杂。\n△<ruby>手続<rt>てつづ</rt></ruby>きが<ruby>大変<rt>たいへん</rt></ruby>やかましい。/ 手续很麻烦。\n△<ruby>規則<rt>きそく</rt></ruby>がやかましい。/ 规则很严格。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "19-124",
+    "start": 364.53,
+    "end": 387.19,
+    "jp": "【19-124】 <ruby>薬缶<rt>やかん</rt></ruby> ⓪ [名] 水壶，烧水壶\n△<ruby>薬缶<rt>やかん</rt></ruby>で<ruby>湯<rt>ゆ</rt></ruby>を<ruby>沸<rt>わ</rt></ruby>かす。/ 用水壶烧水。\n△<ruby>薬缶<rt>やかん</rt></ruby>の<ruby>湯<rt>ゆ</rt></ruby>が<ruby>沸<rt>わ</rt></ruby>く。/ 水壶里的水开了。\n△<ruby>薬缶<rt>やかん</rt></ruby>を<ruby>火<rt>ひ</rt></ruby>にかける。/ 把水壶放在火上。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "19-125",
+    "start": 387.19,
+    "end": 399.51,
+    "jp": "【19-125】 <ruby>焼<rt>や</rt></ruby>けど ⓪ [名・自動3] 烧伤，烫伤\n△<ruby>熱湯<rt>ねっとう</rt></ruby>で<ruby>手<rt>て</rt></ruby>に<ruby>焼<rt>や</rt></ruby>けどをした。/ 开水把手烫伤了。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "19-126",
+    "start": 399.51,
+    "end": 415.48,
+    "jp": "【19-126】 <ruby>家賃<rt>やちん</rt></ruby> ① [名] 房租\n△<ruby>家賃<rt>やちん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う。/ 交房租。\n△<ruby>家賃<rt>やちん</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げる。/ 涨房租。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "19-127",
+    "start": 415.48,
+    "end": 426.21,
+    "jp": "【19-127】 <ruby>約<rt>やく</rt></ruby> ① [副] 大体，大约\n△<ruby>約半分<rt>やくはんぶん</rt></ruby> / 大约一半",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "19-128",
+    "start": 426.21,
+    "end": 443.93,
+    "jp": "【19-128】 <ruby>役員<rt>やくいん</rt></ruby> ⓪ [名] （团体等）负责人，干部；（公司的）董事\n△<ruby>役員<rt>やくいん</rt></ruby>を<ruby>改選<rt>かいせん</rt></ruby>する。/ 改选负责人。\n△<ruby>役員会議<rt>やくいんかいぎ</rt></ruby> / 董事会",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "19-129",
+    "start": 443.93,
+    "end": 456.53,
+    "jp": "【19-129】 <ruby>訳<rt>やく</rt></ruby>す ② [他動1] 翻译\n△<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>中国語<rt>ちゅうごくご</rt></ruby>に<ruby>訳<rt>やく</rt></ruby>す。/ 将日语翻译为中文。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "19-130",
+    "start": 456.53,
+    "end": 474.2,
+    "jp": "【19-130】 <ruby>役立<rt>やくだ</rt></ruby>つ ③ [自動1] 有用，有益\n△<ruby>研究<rt>けんきゅう</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>つ<ruby>資料<rt>しりょう</rt></ruby> / 对研究有用的资料\n△<ruby>実際<rt>じっさい</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>つ。/ 有实际用途。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "19-131",
+    "start": 474.2,
+    "end": 492.47,
+    "jp": "【19-131】 <ruby>役人<rt>やくにん</rt></ruby> ⓪ [名] 官员，官吏，公务员\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>政府<rt>せいふ</rt></ruby>の<ruby>役人<rt>やくにん</rt></ruby>になった。/ 他当上了政府官员。\n△<ruby>役人根性<rt>やくにんこんじょう</rt></ruby> / 官僚习气",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "19-132",
+    "start": 492.47,
+    "end": 511.27,
+    "jp": "【19-132】 <ruby>役目<rt>やくめ</rt></ruby> ③ [名] 任务；义务，职责\n△<ruby>役目<rt>やくめ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たす。/ 完成任务。\n△<ruby>子供<rt>こども</rt></ruby>を<ruby>守<rt>まも</rt></ruby>るのは<ruby>親<rt>おや</rt></ruby>の<ruby>役目<rt>やくめ</rt></ruby>だ。/ 保护孩子是父母的职责。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "19-133",
+    "start": 511.27,
+    "end": 528.97,
+    "jp": "【19-133】 <ruby>役割<rt>やくわり</rt></ruby> ⓪ [名] 任务，职务，作用\n△<ruby>役割<rt>やくわり</rt></ruby>を<ruby>決<rt>き</rt></ruby>める。/ 决定任务分工。\n△<ruby>各自<rt>かくじ</rt></ruby>の<ruby>役割<rt>やくわり</rt></ruby>を<ruby>果<rt>は</rt></ruby>たす。/ 各自完成任务。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "19-134",
+    "start": 528.97,
+    "end": 547.38,
+    "jp": "【19-134】 <ruby>薬局<rt>やっきょく</rt></ruby> ⓪ [名] 药铺，药房，药店\n△<ruby>病院<rt>びょういん</rt></ruby>の<ruby>薬局<rt>やっきょく</rt></ruby> / 医院的药房\n△<ruby>近<rt>ちか</rt></ruby>くの<ruby>薬局<rt>やっきょく</rt></ruby>で<ruby>薬<rt>くすり</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。/ 在附近的药店买药。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "19-135",
+    "start": 547.38,
+    "end": 566.06,
+    "jp": "【19-135】 やっと ⓪ [副] 好不容易，终于；勉勉强强，好歹\n△やっと<ruby>出来上<rt>できあ</rt></ruby>がった。/ 好不容易完成了。\n△やっと<ruby>暮<rt>く</rt></ruby>らしている。/ 勉强维持生计。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "19-136",
+    "start": 566.06,
+    "end": 607.82,
+    "jp": "【19-136】 やっぱり／やはり ② [副] 仍然，还是；也，同样；毕竟还是；果然\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>今<rt>いま</rt></ruby>でもやっぱり<ruby>勉強家<rt>べんきょうか</rt></ruby>だ。/ 他至今仍很用功。\n△<ruby>私<rt>わたし</rt></ruby>はやっぱり<ruby>反対<rt>はんたい</rt></ruby>だ。/ 我也同样反对。\n△<ruby>暖<rt>あたた</rt></ruby>かくてもやっぱり<ruby>冬<rt>ふゆ</rt></ruby>だ。/ 虽然暖和毕竟还是冬天。\n△<ruby>彼<rt>かれ</rt></ruby>に<ruby>聞<rt>き</rt></ruby>いてみたが、やっぱりわからない。/ 尽管问了他，还是不明白。\n△やっぱり<ruby>私<rt>わたし</rt></ruby>の<ruby>言<rt>い</rt></ruby>ったようになった。/ 果然跟我说的一样。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "19-137",
+    "start": 607.82,
+    "end": 630.17,
+    "jp": "【19-137】 <ruby>宿<rt>やど</rt></ruby> ① [名] 家，住处；（旅途中的）住宿，过夜；旅馆\n△<ruby>宿無<rt>やどな</rt></ruby>し / 没有住处，无家可归\n△<ruby>宿<rt>やど</rt></ruby>を<ruby>借<rt>か</rt></ruby>りる。/ 借宿。\n△<ruby>宿<rt>やど</rt></ruby>を<ruby>取<rt>と</rt></ruby>る。/ 订旅馆。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "19-138",
+    "start": 630.17,
+    "end": 645.9,
+    "jp": "【19-138】 <ruby>雇<rt>やと</rt></ruby>う ② [他動1] 雇，租雇\n△ガイドを<ruby>雇<rt>やと</rt></ruby>う。/ 雇向导。\n△<ruby>船<rt>ふね</rt></ruby>を<ruby>雇<rt>やと</rt></ruby>う。/ 雇船。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "19-139",
+    "start": 645.9,
+    "end": 661.99,
+    "jp": "【19-139】 <ruby>屋根<rt>やね</rt></ruby> ① [名] 屋顶，房顶，房盖\n△<ruby>丸屋根<rt>まるやね</rt></ruby> / 圆形屋顶\n△<ruby>自動車<rt>じどうしゃ</rt></ruby>の<ruby>屋根<rt>やね</rt></ruby> / 汽车顶，车篷",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "19-140",
+    "start": 661.99,
+    "end": 673.3,
+    "jp": "【19-140】 <ruby>破<rt>やぶ</rt></ruby>く ② [他動1] 弄破，撕破\n△<ruby>障子<rt>しょうじ</rt></ruby>を<ruby>破<rt>やぶ</rt></ruby>く。/ 弄破纸拉门。",
+    "cn": ""
+  }
+]

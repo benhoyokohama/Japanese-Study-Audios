@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "19-1",
+    "start": 0.2,
+    "end": 12.68,
+    "jp": "【19-1】 <ruby>回<rt>まわ</rt></ruby>り<ruby>道<rt>みち</rt></ruby> ⓪ [名・自動3] 绕道，绕远儿\n△この<ruby>道<rt>みち</rt></ruby>は<ruby>回<rt>まわ</rt></ruby>り<ruby>道<rt>みち</rt></ruby>になる。/ 这条路绕远。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "19-2",
+    "start": 12.68,
+    "end": 29.9,
+    "jp": "【19-2】 <ruby>満員<rt>まんいん</rt></ruby> ⓪ [名] 名额已满，满员\n△<ruby>旅館<rt>りょかん</rt></ruby>が<ruby>満員<rt>まんいん</rt></ruby>になる。/ 旅馆已经客满了。\n△<ruby>満員電車<rt>まんいんでんしゃ</rt></ruby> / 满载乘客的电车",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "19-3",
+    "start": 29.9,
+    "end": 41.52,
+    "jp": "【19-3】 <ruby>満開<rt>まんかい</rt></ruby> ⓪ [名・自動3] （花）盛开，满开\n△<ruby>桜<rt>さくら</rt></ruby>が<ruby>満開<rt>まんかい</rt></ruby>だ。/ 樱花盛开。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "19-4",
+    "start": 41.52,
+    "end": 58.88,
+    "jp": "【19-4】 <ruby>満席<rt>まんせき</rt></ruby> ⓪ [名] 满座，没有空位子\n△<ruby>満席<rt>まんせき</rt></ruby>の<ruby>飲食店<rt>いんしょくてん</rt></ruby> / 满座的餐厅\n△<ruby>満席<rt>まんせき</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby> / 没有空位的电车",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "19-5",
+    "start": 58.88,
+    "end": 84.93,
+    "jp": "【19-5】 <ruby>満足<rt>まんぞく</rt></ruby> ① [名・ナ形・自動3] 完全，完整，圆满；满足，满意\n△<ruby>満足<rt>まんぞく</rt></ruby>な<ruby>結果<rt>けっか</rt></ruby>を<ruby>得<rt>え</rt></ruby>る。/ 得到圆满的结果。\n△<ruby>満足<rt>まんぞく</rt></ruby>なお<ruby>皿<rt>さら</rt></ruby>は<ruby>一枚<rt>いちまい</rt></ruby>もない。/ 一个完整的碟子也没有。\n△<ruby>十分満足<rt>じゅうぶんまんぞく</rt></ruby>する。/ 十分满意。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "19-6",
+    "start": 84.93,
+    "end": 101.76,
+    "jp": "【19-6】 <ruby>満点<rt>まんてん</rt></ruby> ③ [名] （考试等）满分；最好，绝佳\n△<ruby>満点<rt>まんてん</rt></ruby>をつける。/ 打满分。\n△<ruby>栄養満点<rt>えいようまんてん</rt></ruby> / 营养极佳",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "19-7",
+    "start": 101.76,
+    "end": 116.22,
+    "jp": "【19-7】 〜み [接尾] ……的（样子、状态、程度）\n△<ruby>甘<rt>あま</rt></ruby>み / 甜味\n△<ruby>重<rt>おも</rt></ruby>み / 重量，分量",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "19-8",
+    "start": 116.22,
+    "end": 134.51,
+    "jp": "【19-8】 <ruby>見上<rt>みあ</rt></ruby>げる ⓪ [他動2] 仰视，抬头看；尊敬，敬重\n△<ruby>星空<rt>ほしぞら</rt></ruby>を<ruby>見上<rt>みあ</rt></ruby>げる。/ 仰视星空。\n△<ruby>見上<rt>みあ</rt></ruby>げた<ruby>人物<rt>じんぶつ</rt></ruby> / 令人尊敬的人物",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "19-9",
+    "start": 134.51,
+    "end": 147.33,
+    "jp": "【19-9】 <ruby>身動<rt>みうご</rt></ruby>き ② [名・自動3] 转动身体，动弹\n△<ruby>身動<rt>みうご</rt></ruby>きひとつできない。/ 身体一动也不能动。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "19-10",
+    "start": 147.33,
+    "end": 164.23,
+    "jp": "【19-10】 <ruby>見送<rt>みおく</rt></ruby>り ⓪ [名] 送行，送别\n△<ruby>駅<rt>えき</rt></ruby>まで<ruby>見送<rt>みおく</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。/ 送（他）到车站。\n△お<ruby>見送<rt>みおく</rt></ruby>りする。/ 去送行。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "19-11",
+    "start": 164.23,
+    "end": 183.56,
+    "jp": "【19-11】 <ruby>見送<rt>みおく</rt></ruby>る ⓪ [他動1] 目送；送行，送别\n△<ruby>飛<rt>と</rt></ruby>んでいく<ruby>鳥<rt>とり</rt></ruby>を<ruby>見送<rt>みおく</rt></ruby>る。/ 目送飞走的小鸟。\n△<ruby>弟<rt>おとうと</rt></ruby>をバス<ruby>停<rt>てい</rt></ruby>まで<ruby>見送<rt>みおく</rt></ruby>る。/ 将弟弟送到公交车站。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "19-12",
+    "start": 183.56,
+    "end": 203.22,
+    "jp": "【19-12】 <ruby>見下<rt>みお</rt></ruby>ろす ④ [他動1] 俯视，向下看；小看，瞧不起\n△<ruby>飛行機<rt>ひこうき</rt></ruby>から<ruby>町<rt>まち</rt></ruby>を<ruby>見下<rt>みお</rt></ruby>ろす。/ 从飞机上俯瞰城市。\n△<ruby>人<rt>ひと</rt></ruby>を<ruby>見下<rt>みお</rt></ruby>ろす。/ 看不起人。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "19-13",
+    "start": 203.22,
+    "end": 232.13,
+    "jp": "【19-13】 <ruby>磨<rt>みが</rt></ruby>く ⓪ [他動1] 刷净，擦亮，磨光；琢磨，推敲；锻炼，磨炼\n△<ruby>歯<rt>は</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>く。/ 刷牙。\n△<ruby>靴<rt>くつ</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>く。/ 擦皮鞋。\n△<ruby>言葉<rt>ことば</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>く。/ 推敲词句。\n△<ruby>腕<rt>うで</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>く。/ 磨炼本领。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "19-14",
+    "start": 232.13,
+    "end": 249.74,
+    "jp": "【19-14】 <ruby>見<rt>み</rt></ruby>かけ ⓪ [名] 外观，外表，外貌\n△<ruby>人<rt>ひと</rt></ruby>は<ruby>見<rt>み</rt></ruby>かけによらない。/ 人不可貌相。\n△<ruby>見<rt>み</rt></ruby>かけで<ruby>判断<rt>はんだん</rt></ruby>する。/ 凭借外表判断。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "19-15",
+    "start": 249.74,
+    "end": 269.97,
+    "jp": "【19-15】 <ruby>見掛<rt>みか</rt></ruby>ける ⓪ [他動2] 刚看，开始看；看到，（偶然）看见\n△<ruby>本<rt>ほん</rt></ruby>を<ruby>見掛<rt>みか</rt></ruby>けてやめる。/ 书刚看一半就放下了。\n△あの<ruby>人<rt>ひと</rt></ruby>を<ruby>町<rt>まち</rt></ruby>でよく<ruby>見掛<rt>みか</rt></ruby>ける。/ 我常在街上看见那个人。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "19-16",
+    "start": 269.97,
+    "end": 291.22,
+    "jp": "【19-16】 <ruby>見事<rt>みごと</rt></ruby> ① [名・ナ形] 美丽，好看；漂亮，卓越，精彩；完全，彻底\n△<ruby>桜<rt>さくら</rt></ruby>が<ruby>見事<rt>みごと</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>く。/ 樱花绚丽盛开。\n△<ruby>見事<rt>みごと</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けた。/ 彻底输了，输得一塌糊涂。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "19-17",
+    "start": 291.22,
+    "end": 308.37,
+    "jp": "【19-17】 <ruby>惨<rt>みじ</rt></ruby>め ① [名・ナ形] 凄惨，悲惨，惨痛\n△<ruby>惨<rt>みじ</rt></ruby>めな<ruby>生活<rt>せいかつ</rt></ruby> / 凄惨的生活\n△<ruby>惨<rt>みじ</rt></ruby>めな<ruby>思<rt>おも</rt></ruby>いをする。/ 感到悲惨。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "19-18",
+    "start": 308.37,
+    "end": 324.48,
+    "jp": "【19-18】 ミス ① [名・自動3] （对未婚女性的称呼）小姐；失误，差错\n△ミス<ruby>日本<rt>にほん</rt></ruby> / 日本小姐\n△ミスコンテスト / 选美大赛",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "19-19",
+    "start": 324.48,
+    "end": 343.47,
+    "jp": "【19-19】 <ruby>水割<rt>みずわ</rt></ruby>り ⓪ [名] （往酒中等）掺水，加水；掺假，弄虚作假\n△ウイスキーの<ruby>水割<rt>みずわ</rt></ruby>り / 加水的威士忌酒\n△<ruby>仕事<rt>しごと</rt></ruby>の<ruby>水割<rt>みずわ</rt></ruby>り / 工作弄虚作假",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "19-20",
+    "start": 343.47,
+    "end": 357.15,
+    "jp": "【19-20】 <ruby>未成年<rt>みせいねん</rt></ruby> ② [名] 未成年，未成年人\n△<ruby>未成年者<rt>みせいねんしゃ</rt></ruby>の<ruby>喫煙<rt>きつえん</rt></ruby>を<ruby>禁<rt>きん</rt></ruby>ずる。/ 禁止未成年人吸烟。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "19-21",
+    "start": 357.15,
+    "end": 369.44,
+    "jp": "【19-21】 <ruby>店先<rt>みせさき</rt></ruby> ⓪ [名] 商店门前，店头\n△<ruby>店先<rt>みせさき</rt></ruby>の<ruby>商売<rt>しょうばい</rt></ruby> / 铺面的买卖",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "19-22",
+    "start": 369.44,
+    "end": 381.11,
+    "jp": "【19-22】 <ruby>味噌汁<rt>みそしる</rt></ruby> ③ [名] 酱汤，味噌汤\n△<ruby>味噌汁<rt>みそしる</rt></ruby>を<ruby>吸<rt>す</rt></ruby>う。/ 喝酱汤。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "19-23",
+    "start": 381.11,
+    "end": 401.04,
+    "jp": "【19-23】 みっともない ⑤ [イ形] 不像样，不体面，不成体统；难看，丑\n△みっともない<ruby>身<rt>み</rt></ruby>なり / 难看的装束\n△みっともない<ruby>顔<rt>かお</rt></ruby>をしている。/ 表情难看。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "19-24",
+    "start": 401.04,
+    "end": 419.04,
+    "jp": "【19-24】 <ruby>見<rt>み</rt></ruby>つめる ④ [他動2] 凝视，注视，盯着看\n△<ruby>相手<rt>あいて</rt></ruby>の<ruby>顔<rt>かお</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめる。/ 凝视对方的面孔。\n△<ruby>政局<rt>せいきょく</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめる。/ 关注政局。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "19-25",
+    "start": 419.04,
+    "end": 435.22,
+    "jp": "【19-25】 <ruby>見直<rt>みなお</rt></ruby>し ⓪ [名] 重看，再看；重新审视\n△<ruby>作文<rt>さくぶん</rt></ruby>は<ruby>書<rt>か</rt></ruby>いた<ruby>後<rt>あと</rt></ruby>の<ruby>見直<rt>みなお</rt></ruby>しが<ruby>大切<rt>たいせつ</rt></ruby>だ。/ 作文写完以后再检查一遍很重要。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "19-26",
+    "start": 435.22,
+    "end": 461.88,
+    "jp": "【19-26】 <ruby>見直<rt>みなお</rt></ruby>す ⓪ [自他動1] （疾病、行情等）好转；重看，再看；重新认识\n△<ruby>病人<rt>びょうにん</rt></ruby>が<ruby>見直<rt>みなお</rt></ruby>してきた。/ 病人的病情好转了。\n△<ruby>答案<rt>とうあん</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す。/ 重看答卷。\n△<ruby>彼<rt>かれ</rt></ruby>の<ruby>行為<rt>こうい</rt></ruby>で<ruby>彼<rt>かれ</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>した。/ 通过他的行为使我对他重新认识了。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "19-27",
+    "start": 461.88,
+    "end": 477.87,
+    "jp": "【19-27】 <ruby>身<rt>み</rt></ruby>なり ① [名] 打扮，装束\n△だらしない<ruby>身<rt>み</rt></ruby>なり / 打扮邋遢\n△<ruby>身<rt>み</rt></ruby>なりを<ruby>構<rt>かま</rt></ruby>わない。/ 不修边幅。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "19-28",
+    "start": 477.87,
+    "end": 495.27,
+    "jp": "【19-28】 <ruby>醜<rt>みにく</rt></ruby>い ③ [イ形] （容貌）丑，难看；丑陋，可耻\n△<ruby>醜<rt>みにく</rt></ruby>い<ruby>姿<rt>すがた</rt></ruby> / 难看的样子\n△<ruby>醜<rt>みにく</rt></ruby>い<ruby>争<rt>あらそ</rt></ruby>い / 丑陋的争斗",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "19-29",
+    "start": 495.27,
+    "end": 515.25,
+    "jp": "【19-29】 <ruby>実<rt>みの</rt></ruby>る ② [自動1] （农作物等）成熟，结果；有成绩，有成果\n△ミカンが<ruby>実<rt>みの</rt></ruby>る。/ 橘子（树）结果实了。\n△<ruby>彼<rt>かれ</rt></ruby>の<ruby>努力<rt>どりょく</rt></ruby>がやっと<ruby>実<rt>みの</rt></ruby>った。/ 他的努力终于有了成果。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "19-30",
+    "start": 515.25,
+    "end": 536.76,
+    "jp": "【19-30】 <ruby>身分<rt>みぶん</rt></ruby> ① [名] 身份，社会地位\n△<ruby>身分<rt>みぶん</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す。/ 隐瞒身份。\n△<ruby>身分<rt>みぶん</rt></ruby>の<ruby>高<rt>たか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby> / 地位高贵的人\n△<ruby>身分<rt>みぶん</rt></ruby>の<ruby>卑<rt>いや</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby> / 地位卑微的人",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "19-31",
+    "start": 536.76,
+    "end": 555.06,
+    "jp": "【19-31】 <ruby>見本<rt>みほん</rt></ruby> ⓪ [名] 样品，货样；榜样，典型\n△<ruby>見本<rt>みほん</rt></ruby>どおりにできる。/ 做得和样品一样。\n△<ruby>優等生<rt>ゆうとうせい</rt></ruby>の<ruby>見本<rt>みほん</rt></ruby> / 优秀学生的典型",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "19-32",
+    "start": 555.06,
+    "end": 566.56,
+    "jp": "【19-32】 <ruby>見舞<rt>みま</rt></ruby>い ⓪ [名] 问候，探望，慰问\n△<ruby>暑中見舞<rt>しょちゅうみま</rt></ruby>い / 暑期问候",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "19-33",
+    "start": 566.56,
+    "end": 583.32,
+    "jp": "【19-33】 <ruby>見舞<rt>みま</rt></ruby>う ② [他動1] 探望，慰问；遭受\n△<ruby>病人<rt>びょうにん</rt></ruby>を<ruby>見舞<rt>みま</rt></ruby>う。/ 探望病人。\n△<ruby>台風<rt>たいふう</rt></ruby>に<ruby>見舞<rt>みま</rt></ruby>われる。/ 遭受台风。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "19-34",
+    "start": 583.32,
+    "end": 593.67,
+    "jp": "【19-34】 ミリ ① [名] 毫（千分之一）；毫米\n△ミリグラム / 毫克",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "19-35",
+    "start": 593.67,
+    "end": 605.72,
+    "jp": "【19-35】 ミリメートル ③ [名] 毫米\n△<ruby>一<rt>いち</rt></ruby>ミリメートルの<ruby>差<rt>さ</rt></ruby> / 一毫米之差",
+    "cn": ""
+  }
+]
