@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "13-71",
+    "start": 0.2,
+    "end": 11.63,
+    "jp": "【13-71】 <ruby>通帳<rt>つうちょう</rt></ruby> ⓪ [名] 存折\n△<ruby>貯金通帳<rt>ちょきんつうちょう</rt></ruby> / 储蓄存折",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "13-72",
+    "start": 11.63,
+    "end": 29.44,
+    "jp": "【13-72】 <ruby>通訳<rt>つうやく</rt></ruby> ① [名・他動3] 口译；口译员\n△<ruby>同時通訳<rt>どうじつうやく</rt></ruby> / 同声传译\n△<ruby>英語<rt>えいご</rt></ruby>を<ruby>日本語<rt>にほんご</rt></ruby>に<ruby>通訳<rt>つうやく</rt></ruby>する。/ 把英语口译成日语。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "13-73",
+    "start": 29.44,
+    "end": 45.77,
+    "jp": "【13-73】 〜遣い／使い[〜づかい] [接尾] ……使用法，……开销\n△<ruby>金遣<rt>かねづか</rt></ruby>いが<ruby>荒<rt>あら</rt></ruby>い。/ 花钱大手大脚。\n△<ruby>人遣<rt>ひとづか</rt></ruby>いがうまい。/ 善于用人。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "13-74",
+    "start": 45.77,
+    "end": 63.13,
+    "jp": "【13-74】 <ruby>使<rt>つか</rt></ruby>い<ruby>捨<rt>す</rt></ruby>て ⓪ [名] 一次性使用，用完即弃\n△<ruby>使<rt>つか</rt></ruby>い<ruby>捨<rt>す</rt></ruby>ての<ruby>食器<rt>しょっき</rt></ruby> / 一次性餐具\n△<ruby>使<rt>つか</rt></ruby>い<ruby>捨<rt>す</rt></ruby>てにする。/ 用完即扔。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "13-75",
+    "start": 63.13,
+    "end": 83.42,
+    "jp": "【13-75】 <ruby>使<rt>つか</rt></ruby>い<ruby>道<rt>みち</rt></ruby> ⓪ [名] 用途，用处，用法\n△<ruby>説明書<rt>せつめいしょ</rt></ruby>をなくして<ruby>使<rt>つか</rt></ruby>い<ruby>道<rt>みち</rt></ruby>がわからない。/ 弄丢了说明书，不知道怎么用。\n△<ruby>使<rt>つか</rt></ruby>い<ruby>道<rt>みち</rt></ruby>がある。/ 派得上用场。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "13-76",
+    "start": 83.42,
+    "end": 107.28,
+    "jp": "【13-76】 <ruby>捕<rt>つか</rt></ruby>まる ⓪ [自動1] 被抓住，被逮住；抓住，扶住\n△<ruby>犯人<rt>はんにん</rt></ruby>が<ruby>捕<rt>つか</rt></ruby>まった。/ 犯人落网了。\n△<ruby>吊<rt>つ</rt></ruby>り<ruby>革<rt>かわ</rt></ruby>に<ruby>捕<rt>つか</rt></ruby>まる。/ 抓住电车吊环。\n△<ruby>友達<rt>ともだち</rt></ruby>に<ruby>捕<rt>つか</rt></ruby>まる。/ 被朋友拉住聊起来。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "13-77",
+    "start": 107.28,
+    "end": 129.85,
+    "jp": "【13-77】 <ruby>掴<rt>つか</rt></ruby>む ② [他動1] 抓住，握住；掌握，领会\n△<ruby>腕<rt>うで</rt></ruby>を<ruby>掴<rt>つか</rt></ruby>む。/ 抓住胳膊。\n△<ruby>要点<rt>ようてん</rt></ruby>を<ruby>掴<rt>つか</rt></ruby>む。/ 掌握要点。\n△<ruby>相手<rt>あいて</rt></ruby>の<ruby>弱点<rt>じゃくてん</rt></ruby>を<ruby>掴<rt>つか</rt></ruby>む。/ 抓住对方的弱点。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "13-78",
+    "start": 129.85,
+    "end": 145.27,
+    "jp": "【13-78】 <ruby>浸<rt>つ</rt></ruby>かる ⓪ [自動1] 浸泡，泡\n△<ruby>水<rt>みず</rt></ruby>に<ruby>浸<rt>つ</rt></ruby>かる。/ 浸泡在水里。\n△お<ruby>湯<rt>ゆ</rt></ruby>に<ruby>浸<rt>つ</rt></ruby>かる。/ 泡热水澡。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "13-79",
+    "start": 145.27,
+    "end": 160.81,
+    "jp": "【13-79】 <ruby>漬<rt>つ</rt></ruby>かる ⓪ [自動1] 腌好，腌入味\n△なすが<ruby>漬<rt>つ</rt></ruby>かる。/ 茄子腌好了。\n△<ruby>漬<rt>つ</rt></ruby>かりすぎ / 腌得太咸",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "13-80",
+    "start": 160.81,
+    "end": 177.64,
+    "jp": "【13-80】 <ruby>疲<rt>つか</rt></ruby>れ ③ [名] 疲劳，疲乏，劳累\n△<ruby>疲<rt>つか</rt></ruby>れが<ruby>出<rt>で</rt></ruby>る。/ 显出疲态，感到劳累。\n△<ruby>疲<rt>つか</rt></ruby>れを<ruby>取<rt>と</rt></ruby>る。/ 消除疲劳。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "13-81",
+    "start": 177.64,
+    "end": 197.59,
+    "jp": "【13-81】 <ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>い ⓪ [名] 交往，来往；应酬，奉陪\n△<ruby>長年<rt>ながねん</rt></ruby>の<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>い / 多年的交情\n△<ruby>社長<rt>しゃちょう</rt></ruby>の<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>いでゴルフに<ruby>行<rt>い</rt></ruby>く。/ 陪社长应酬去打高尔夫球。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "13-82",
+    "start": 197.59,
+    "end": 215.45,
+    "jp": "【13-82】 <ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う ③ [自動1] 交往，来往；陪同，奉陪\n△<ruby>友達<rt>ともだち</rt></ruby>と<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う。/ 与朋友交往。\n△<ruby>最後<rt>さいご</rt></ruby>まで<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う。/ 奉陪到底。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "13-83",
+    "start": 215.45,
+    "end": 227.36,
+    "jp": "【13-83】 <ruby>突<rt>つ</rt></ruby>き<ruby>当<rt>あ</rt></ruby>たり ⓪ [名] 尽头，顶头\n△<ruby>突<rt>つ</rt></ruby>き<ruby>当<rt>あ</rt></ruby>たりの<ruby>部屋<rt>へや</rt></ruby> / 走廊尽头的房间",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "13-84",
+    "start": 227.36,
+    "end": 246.4,
+    "jp": "【13-84】 <ruby>次々<rt>つぎつぎ</rt></ruby> ② [副] 接连不断，陆续\n△<ruby>次々<rt>つぎつぎ</rt></ruby>に<ruby>客<rt>きゃく</rt></ruby>が<ruby>来<rt>く</rt></ruby>る。/ 客人接踵而至。\n△<ruby>次々<rt>つぎつぎ</rt></ruby>と<ruby>作品<rt>さくひん</rt></ruby>を<ruby>発表<rt>はっぴょう</rt></ruby>する。/ 接连不断地发表作品。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "13-85",
+    "start": 246.4,
+    "end": 267.55,
+    "jp": "【13-85】 <ruby>月日<rt>つきひ</rt></ruby> ② [名] 岁月，时光；年月日，日期\n△<ruby>月日<rt>つきひ</rt></ruby>が<ruby>経<rt>た</rt></ruby>つのは<ruby>速<rt>はや</rt></ruby>いものだ。/ 日月如梭，时光飞逝。\n△<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>末<rt>すえ</rt></ruby>に<ruby>月日<rt>つきひ</rt></ruby>を<ruby>記<rt>しる</rt></ruby>す。/ 在信件末尾写上日期。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "13-86",
+    "start": 267.55,
+    "end": 290.1,
+    "jp": "【13-86】 <ruby>付<rt>つ</rt></ruby>く ① [自動1] 沾上，附着；增长（知识、力气）；跟随，配有\n△<ruby>泥<rt>どろ</rt></ruby>が<ruby>靴<rt>くつ</rt></ruby>に<ruby>付<rt>つ</rt></ruby>く。/ 泥巴沾在鞋上。\n△<ruby>知恵<rt>ちえ</rt></ruby>が<ruby>付<rt>つ</rt></ruby>く。/ 增长智慧。\n△<ruby>案内<rt>あんない</rt></ruby>が<ruby>付<rt>つ</rt></ruby>く。/ 配有导游陪同。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "13-87",
+    "start": 290.1,
+    "end": 312.14,
+    "jp": "【13-87】 <ruby>突<rt>つ</rt></ruby>く ① [他動1] 刺，扎；拄（拐杖）；攻打；戳中（痛处）\n△<ruby>針<rt>はり</rt></ruby>で<ruby>突<rt>つ</rt></ruby>く。/ 用针扎。\n△<ruby>相手<rt>あいて</rt></ruby>の<ruby>弱味<rt>よわみ</rt></ruby>を<ruby>突<rt>つ</rt></ruby>く。/ 戳中对方的软肋。\n△<ruby>杖<rt>つえ</rt></ruby>を<ruby>突<rt>つ</rt></ruby>く。/ 拄拐杖。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "13-88",
+    "start": 312.14,
+    "end": 334.18,
+    "jp": "【13-88】 <ruby>就<rt>つ</rt></ruby>く ① [自動1] 就（座）；就（职）；拜（师）\n△<ruby>席<rt>せき</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く。/ 就座。\n△<ruby>職<rt>しょく</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く。/ 就职，就业。\n△<ruby>先生<rt>せんせい</rt></ruby>に<ruby>就<rt>つ</rt></ruby>いて<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>習<rt>なら</rt></ruby>う。/ 师从老师学习日语。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "13-89",
+    "start": 334.18,
+    "end": 349.57,
+    "jp": "【13-89】 <ruby>注<rt>つ</rt></ruby>ぐ ⓪ [他動1] 斟（酒），倒（茶、水）\n△お<ruby>酒<rt>さけ</rt></ruby>を<ruby>注<rt>つ</rt></ruby>ぐ。/ 斟酒。\n△お<ruby>茶<rt>ちゃ</rt></ruby>を<ruby>注<rt>つ</rt></ruby>ぐ。/ 倒茶。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "13-90",
+    "start": 349.57,
+    "end": 365.49,
+    "jp": "【13-90】 〜作り／造り[〜づくり] [接尾] ……制造，……制作\n△<ruby>粘土作<rt>ねんどづく</rt></ruby>りのお<ruby>面<rt>めん</rt></ruby> / 泥塑面具\n△ガラス<ruby>作<rt>づく</rt></ruby>り / 玻璃制品",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "13-91",
+    "start": 365.49,
+    "end": 384.92,
+    "jp": "【13-91】 <ruby>作<rt>つく</rt></ruby>り<ruby>出<rt>だ</rt></ruby>す ④ [他動1] 创造出，制造出，生产出\n△カラーテレビを<ruby>作<rt>つく</rt></ruby>り<ruby>出<rt>だ</rt></ruby>す。/ 生产出彩色电视机。\n△<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>り<ruby>出<rt>だ</rt></ruby>す。/ 创造条件。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "13-92",
+    "start": 384.92,
+    "end": 412.94,
+    "jp": "【13-92】 <ruby>都合<rt>つごう</rt></ruby> ⓪ [名・他動3] 情况，缘由；方便，合适；筹措，安排\n△<ruby>経費<rt>けいひ</rt></ruby>の<ruby>都合<rt>つごう</rt></ruby>により<ruby>工事<rt>こうじ</rt></ruby>を<ruby>取<rt>と</rt></ruby>りやめる。/ 因经费原因停止施工。\n△<ruby>都合<rt>つごう</rt></ruby>がよい。/ 方便，合适。\n△なんとか<ruby>都合<rt>つごう</rt></ruby>しよう。/ 设法腾出时间（或筹措安排）一下吧。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "13-93",
+    "start": 412.94,
+    "end": 435.36,
+    "jp": "【13-93】 <ruby>土<rt>つち</rt></ruby> ② [名] 土，泥土，土壤；地面，大地\n△<ruby>祖国<rt>そこく</rt></ruby>の<ruby>土<rt>つち</rt></ruby>を<ruby>踏<rt>ふ</rt></ruby>む。/ 踏上祖国的土地。\n△<ruby>黒<rt>くろ</rt></ruby>い<ruby>土<rt>つち</rt></ruby> / 黑土\n△<ruby>土<rt>つち</rt></ruby>を<ruby>掘<rt>ほ</rt></ruby>る。/ 挖土。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "13-94",
+    "start": 435.36,
+    "end": 448.38,
+    "jp": "【13-94】 <ruby>包<rt>つつ</rt></ruby>み<ruby>紙<rt>がみ</rt></ruby> ⓪ [名] 包装纸\n△<ruby>包<rt>つつ</rt></ruby>み<ruby>紙<rt>がみ</rt></ruby>で<ruby>包<rt>つつ</rt></ruby>んだ<ruby>贈<rt>おく</rt></ruby>り<ruby>物<rt>もの</rt></ruby> / 用包装纸包好的礼物",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "13-95",
+    "start": 448.38,
+    "end": 468.35,
+    "jp": "【13-95】 <ruby>繋<rt>つな</rt></ruby>がる ⓪ [自動1] 连接，相连，接通；有联系\n△<ruby>校舎<rt>こうしゃ</rt></ruby>と<ruby>図書館<rt>としょかん</rt></ruby>とは<ruby>繋<rt>つな</rt></ruby>がっている。/ 教学楼和图书馆是相连的。\n△<ruby>血<rt>ち</rt></ruby>が<ruby>繋<rt>つな</rt></ruby>がる。/ 有血缘关系。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "13-96",
+    "start": 468.35,
+    "end": 492.15,
+    "jp": "【13-96】 <ruby>繋<rt>つな</rt></ruby>ぐ ⓪ [他動1] 拴，系；连接，牵（手）；维系\n△<ruby>馬<rt>うま</rt></ruby>を<ruby>大<rt>おお</rt></ruby>きな<ruby>木<rt>き</rt></ruby>に<ruby>繋<rt>つな</rt></ruby>ぐ。/ 把马拴在大树上。\n△<ruby>手<rt>て</rt></ruby>を<ruby>繋<rt>つな</rt></ruby>ぐ。/ 手牵手。\n△<ruby>水<rt>みず</rt></ruby>で<ruby>命<rt>いのち</rt></ruby>を<ruby>繋<rt>つな</rt></ruby>ぐ。/ 靠水维系生命。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "13-97",
+    "start": 492.15,
+    "end": 503.52,
+    "jp": "【13-97】 <ruby>津波<rt>つなみ</rt></ruby> ⓪ [名] 海啸\n△<ruby>津波<rt>つなみ</rt></ruby>に<ruby>襲<rt>おそ</rt></ruby>われる。/ 遭遇海啸袭击。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "13-98",
+    "start": 503.52,
+    "end": 521.63,
+    "jp": "【13-98】 <ruby>常<rt>つね</rt></ruby>に ① [副] 总是，经常，时刻\n△<ruby>常<rt>つね</rt></ruby>にあること / 常有的事\n△<ruby>健康<rt>けんこう</rt></ruby>には<ruby>常<rt>つね</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけている。/ 时刻注意健康。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "13-99",
+    "start": 521.63,
+    "end": 533.63,
+    "jp": "【13-99】 <ruby>翼<rt>つばさ</rt></ruby> ⓪ [名] 翅膀，羽翼；机翼\n△<ruby>翼<rt>つばさ</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げる。/ 展开翅膀。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "13-100",
+    "start": 533.63,
+    "end": 548.76,
+    "jp": "【13-100】 <ruby>粒<rt>つぶ</rt></ruby> ⓪ [名] 粒，颗粒\n△<ruby>米<rt>こめ</rt></ruby>の<ruby>粒<rt>つぶ</rt></ruby> / 米粒\n△<ruby>大粒<rt>おおつぶ</rt></ruby>の<ruby>汗<rt>あせ</rt></ruby> / 大颗的汗珠",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "13-101",
+    "start": 548.76,
+    "end": 571.86,
+    "jp": "【13-101】 <ruby>潰<rt>つぶ</rt></ruby>す ⓪ [他動1] 压碎，捣烂；弄垮；消磨（时间）\n△<ruby>卵<rt>たまご</rt></ruby>を<ruby>潰<rt>つぶ</rt></ruby>す。/ 把鸡蛋压碎。\n△<ruby>面目<rt>めんぼく</rt></ruby>を<ruby>潰<rt>つぶ</rt></ruby>す。/ 丢脸，有损体面。\n△<ruby>時間<rt>じかん</rt></ruby>を<ruby>潰<rt>つぶ</rt></ruby>す。/ 消磨时间。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "13-102",
+    "start": 571.86,
+    "end": 590.13,
+    "jp": "【13-102】 <ruby>潰<rt>つぶ</rt></ruby>れる ⓪ [自動2] 被压扁，压碎；倒闭，破产\n△<ruby>卵<rt>たまご</rt></ruby>が<ruby>潰<rt>つぶ</rt></ruby>れた。/ 鸡蛋被压碎了。\n△<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>潰<rt>つぶ</rt></ruby>れる。/ 公司破产倒闭。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "13-103",
+    "start": 590.13,
+    "end": 614.91,
+    "jp": "【13-103】 <ruby>詰<rt>つ</rt></ruby>まる ② [自動1] 塞满；堵塞，不通；理屈词穷；拮据\n△<ruby>日程<rt>にってい</rt></ruby>が<ruby>詰<rt>つ</rt></ruby>まっている。/ 日程排得满满当当。\n△<ruby>息<rt>いき</rt></ruby>が<ruby>詰<rt>つ</rt></ruby>まる。/ 喘不上气，窒息。\n△<ruby>言葉<rt>ことば</rt></ruby>に<ruby>詰<rt>つ</rt></ruby>まる。/ 语塞，无言以对。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "13-104",
+    "start": 614.91,
+    "end": 631.33,
+    "jp": "【13-104】 <ruby>罪<rt>つみ</rt></ruby> ① [名] 罪，罪过，犯罪\n△<ruby>罪<rt>つみ</rt></ruby>を<ruby>犯<rt>おか</rt></ruby>す。/ 犯罪。\n△<ruby>罪<rt>つみ</rt></ruby>を<ruby>他人<rt>たにん</rt></ruby>に<ruby>着<rt>き</rt></ruby>せる。/ 嫁祸于人。",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "13-105",
+    "start": 631.33,
+    "end": 647.95,
+    "jp": "【13-105】 <ruby>積<rt>つ</rt></ruby>む ⓪ [他動1] 堆积，装载；积累（经验）\n△<ruby>机<rt>つくえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>を<ruby>積<rt>つ</rt></ruby>む。/ 把书堆在桌子上。\n△<ruby>経験<rt>けいけん</rt></ruby>を<ruby>積<rt>つ</rt></ruby>む。/ 积累经验。",
+    "cn": ""
+  }
+]

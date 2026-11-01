@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "14-71",
+    "start": 0.2,
+    "end": 12.2,
+    "jp": "【14-71】 <ruby>登録<rt>とうろく</rt></ruby> ⓪ [名・他動3] 登记，注册，登录\n△<ruby>住民登録<rt>じゅうみんとうろく</rt></ruby> / 居民登记",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "14-72",
+    "start": 12.2,
+    "end": 38.95,
+    "jp": "【14-72】 <ruby>通<rt>とお</rt></ruby>す ① [他動1] 让通过；领进；贯彻，坚持；审阅通过\n△<ruby>切符<rt>きっぷ</rt></ruby>のない<ruby>人<rt>ひと</rt></ruby>は<ruby>通<rt>とお</rt></ruby>せない。/ 没有票的人不能放行。\n△お<ruby>客<rt>きゃく</rt></ruby>さんを<ruby>奥<rt>おく</rt></ruby>へ<ruby>通<rt>とお</rt></ruby>す。/ 把客人请进内室。\n△<ruby>国会<rt>こっかい</rt></ruby>が<ruby>予算<rt>よさん</rt></ruby>を<ruby>通<rt>とお</rt></ruby>す。/ 国会通过预算案。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "14-73",
+    "start": 38.95,
+    "end": 59.36,
+    "jp": "【14-73】 <ruby>遠回<rt>とおまわ</rt></ruby>り ③ [名・自動3] 绕远，绕道；走弯路\n△<ruby>人込<rt>ひとご</rt></ruby>みを<ruby>避<rt>さ</rt></ruby>けて<ruby>遠回<rt>とおまわ</rt></ruby>りをする。/ 避开拥挤人群绕道而行。\n△<ruby>遠回<rt>とおまわ</rt></ruby>りのやり<ruby>方<rt>かた</rt></ruby> / 拐弯抹角费周折的做法",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "14-74",
+    "start": 59.36,
+    "end": 70.98,
+    "jp": "【14-74】 〜通り[〜とおり] [接尾] ……种，……套\n△やり<ruby>方<rt>かた</rt></ruby>は<ruby>幾通<rt>いくとお</rt></ruby>りもある。/ 做法有好几种。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "14-75",
+    "start": 70.98,
+    "end": 87.91,
+    "jp": "【14-75】 〜通り[〜どおり] [接尾] 按照……，如……；……大街\n△<ruby>計画通<rt>けいかくどお</rt></ruby>りに<ruby>進<rt>すす</rt></ruby>んでいる。/ 正在按计划推进。\n△<ruby>銀座通<rt>ぎんざどお</rt></ruby>り / 银座大街",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "14-76",
+    "start": 87.91,
+    "end": 103.41,
+    "jp": "【14-76】 <ruby>通<rt>とお</rt></ruby>りかかる ⑤ [自動1] 恰巧路过，正巧经过\n△<ruby>通<rt>とお</rt></ruby>りかかったので、ちょっと<ruby>寄<rt>よ</rt></ruby>ってみた。/ 因为恰巧路过，就顺便去坐了坐。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "14-77",
+    "start": 103.41,
+    "end": 118.37,
+    "jp": "【14-77】 <ruby>通<rt>とお</rt></ruby>り<ruby>過<rt>す</rt></ruby>ぎる ⑤ [自動2] 走过，经过，越过\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>挨拶<rt>あいさつ</rt></ruby>もしないで<ruby>通<rt>とお</rt></ruby>り<ruby>過<rt>す</rt></ruby>ぎた。/ 他连招呼都没打就走过去了。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "14-78",
+    "start": 118.37,
+    "end": 135.87,
+    "jp": "【14-78】 溶かす／<ruby>融<rt>と</rt></ruby>かす ② [他動1] 溶化，融化，熔化\n△<ruby>銀<rt>ぎん</rt></ruby>を<ruby>溶<rt>と</rt></ruby>かす。/ 熔化银子。\n△<ruby>砂糖<rt>さとう</rt></ruby>を<ruby>水<rt>みず</rt></ruby>に<ruby>溶<rt>と</rt></ruby>かす。/ 把白糖溶化在水里。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "14-79",
+    "start": 135.87,
+    "end": 153.3,
+    "jp": "【14-79】 <ruby>尖<rt>とが</rt></ruby>る ② [自動1] 变尖；神经紧绷，过敏\n△<ruby>尖<rt>とが</rt></ruby>った<ruby>鼻<rt>はな</rt></ruby> / 高鼻梁，尖鼻子\n△<ruby>神経<rt>しんけい</rt></ruby>が<ruby>尖<rt>とが</rt></ruby>る。/ 神经高度紧绷。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "14-80",
+    "start": 153.3,
+    "end": 168.19,
+    "jp": "【14-80】 どきどき ① [副・自動3] 扑通扑通地跳，忐忑不安\n△<ruby>心臓<rt>しんぞう</rt></ruby>がどきどきする。/ 心脏扑通扑通直跳（心里七上八下）。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "14-81",
+    "start": 168.19,
+    "end": 186.26,
+    "jp": "【14-81】 <ruby>得<rt>とく</rt></ruby> ① [名・ナ形] 划算，合算；收益，好处\n△<ruby>二万円<rt>にまんえん</rt></ruby>の<ruby>得<rt>とく</rt></ruby>になる。/ 赚了两万日元。\n△そのほうがお<ruby>得<rt>とく</rt></ruby>だろう。/ 那样更划算吧。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "14-82",
+    "start": 186.26,
+    "end": 207.85,
+    "jp": "【14-82】 <ruby>解<rt>と</rt></ruby>く ① [他動1] 解开；解除；解答\n△<ruby>包<rt>つつ</rt></ruby>みを<ruby>解<rt>と</rt></ruby>く。/ 解开包裹。\n△<ruby>契約<rt>けいやく</rt></ruby>を<ruby>解<rt>と</rt></ruby>く。/ 解除合同。\n△<ruby>数学<rt>すうがく</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>を<ruby>解<rt>と</rt></ruby>く。/ 解答数学题。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "14-83",
+    "start": 207.85,
+    "end": 220.22,
+    "jp": "【14-83】 <ruby>溶<rt>と</rt></ruby>く ① [他動1] 溶解，调开，化开\n△<ruby>小麦粉<rt>こむぎこ</rt></ruby>を<ruby>水<rt>みず</rt></ruby>で<ruby>溶<rt>と</rt></ruby>く。/ 用水把面粉调开。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "14-84",
+    "start": 220.22,
+    "end": 236.62,
+    "jp": "【14-84】 <ruby>退<rt>ど</rt></ruby>く ⓪ [自動1] 闪开，让开，退下\n△<ruby>横<rt>よこ</rt></ruby>に<ruby>退<rt>ど</rt></ruby>く。/ 闪到一旁。\n△<ruby>速<rt>はや</rt></ruby>く<ruby>退<rt>ど</rt></ruby>け！/ 快闪开！",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "14-85",
+    "start": 236.62,
+    "end": 254.67,
+    "jp": "【14-85】 <ruby>毒<rt>どく</rt></ruby> ② [名] 毒，毒药；毒害，有害之物\n△<ruby>毒<rt>どく</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たる。/ 中毒。\n△タバコは<ruby>体<rt>からだ</rt></ruby>に<ruby>毒<rt>どく</rt></ruby>だ。/ 烟草对身体有害。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "14-86",
+    "start": 254.67,
+    "end": 277.75,
+    "jp": "【14-86】 <ruby>得意<rt>とくい</rt></ruby> ② [名・ナ形] 拿手，擅长；得意；主顾\n△<ruby>得意先<rt>とくいさき</rt></ruby> / 老主顾，常客\n△<ruby>得意<rt>とくい</rt></ruby>の<ruby>絶頂<rt>ぜっちょう</rt></ruby>にいる。/ 处于春风得意的巅峰。\n△<ruby>得意<rt>とくい</rt></ruby>の<ruby>技<rt>わざ</rt></ruby> / 拿手好戏",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "14-87",
+    "start": 277.75,
+    "end": 289.94,
+    "jp": "【14-87】 <ruby>得意先<rt>とくいさき</rt></ruby> ⓪ [名] 老主顾，客户\n△<ruby>得意先<rt>とくいさき</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う。/ 失去客户。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "14-88",
+    "start": 289.94,
+    "end": 302.33,
+    "jp": "【14-88】 <ruby>特色<rt>とくしょく</rt></ruby> ⓪ [名] 特色，特点\n△<ruby>地方<rt>ちほう</rt></ruby>の<ruby>特色<rt>とくしょく</rt></ruby>を<ruby>生<rt>い</rt></ruby>かす。/ 发挥地方特色。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "14-89",
+    "start": 302.33,
+    "end": 314.38,
+    "jp": "【14-89】 <ruby>独身<rt>どくしん</rt></ruby> ⓪ [名] 单身，独身\n△<ruby>独身<rt>どくしん</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らしている。/ 过着单身生活。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "14-90",
+    "start": 314.38,
+    "end": 325.86,
+    "jp": "【14-90】 <ruby>特長<rt>とくちょう</rt></ruby> ⓪ [名] 特长，优点\n△<ruby>特長<rt>とくちょう</rt></ruby>を<ruby>生<rt>い</rt></ruby>かす。/ 发挥特长。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "14-91",
+    "start": 325.86,
+    "end": 342.4,
+    "jp": "【14-91】 <ruby>特徴<rt>とくちょう</rt></ruby> ⓪ [名] 特征，特点\n△<ruby>特徴<rt>とくちょう</rt></ruby>を<ruby>捉<rt>とら</rt></ruby>える。/ 抓住特征。\n△<ruby>特徴<rt>とくちょう</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>える。/ 记住特征。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "14-92",
+    "start": 342.4,
+    "end": 359.61,
+    "jp": "【14-92】 <ruby>得点<rt>とくてん</rt></ruby> ⓪ [名・自動3] 得分，分数\n△<ruby>試験<rt>しけん</rt></ruby>の<ruby>得点<rt>とくてん</rt></ruby>が<ruby>気<rt>き</rt></ruby>になる。/ 挂念考试的得分。\n△<ruby>得点<rt>とくてん</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える。/ 统计得分。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "14-93",
+    "start": 359.61,
+    "end": 372.36,
+    "jp": "【14-93】 <ruby>独特<rt>どくとく</rt></ruby> ⓪ [名・ナ形] 独特，特有\n△<ruby>日本料理独特<rt>にほんりょうりどくとく</rt></ruby>の<ruby>風味<rt>ふうみ</rt></ruby> / 日本料理独特的风味",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "14-94",
+    "start": 372.36,
+    "end": 394.19,
+    "jp": "【14-94】 <ruby>解<rt>と</rt></ruby>ける ② [自動2] （绳结）松开；（紧张、误会）消除；（谜团）解开\n△<ruby>結<rt>むす</rt></ruby>び<ruby>目<rt>め</rt></ruby>が<ruby>解<rt>と</rt></ruby>ける。/ 绳结松开了。\n△<ruby>緊張<rt>きんちょう</rt></ruby>が<ruby>解<rt>と</rt></ruby>けた。/ 紧张情绪消除了。\n△<ruby>謎<rt>なぞ</rt></ruby>が<ruby>解<rt>と</rt></ruby>けた。/ 谜团解开了。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "14-95",
+    "start": 394.19,
+    "end": 412.0,
+    "jp": "【14-95】 溶ける／<ruby>融<rt>と</rt></ruby>ける ② [自動2] 溶化，融化，熔化\n△<ruby>塩<rt>しお</rt></ruby>は<ruby>水<rt>みず</rt></ruby>に<ruby>溶<rt>と</rt></ruby>ける。/ 盐溶于水。\n△<ruby>鉄<rt>てつ</rt></ruby>が<ruby>溶<rt>と</rt></ruby>けるほどの<ruby>高温<rt>こうおん</rt></ruby> / 能把铁熔化的高温",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "14-96",
+    "start": 412.0,
+    "end": 424.51,
+    "jp": "【14-96】 <ruby>退<rt>ど</rt></ruby>ける ⓪ [他動2] 挪开，移开，搬开\n△<ruby>道路<rt>どうろ</rt></ruby>の<ruby>石<rt>いし</rt></ruby>を<ruby>退<rt>ど</rt></ruby>ける。/ 搬开路上的石头。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "14-97",
+    "start": 424.51,
+    "end": 445.16,
+    "jp": "【14-97】 どこまで ① [副] 到哪里；到什么程度\n△どこまで<ruby>行<rt>い</rt></ruby>っても<ruby>砂漠<rt>さばく</rt></ruby>だ。/ 无论走到哪里都是沙漠。\n△どこまで<ruby>信<rt>しん</rt></ruby>じたらよいかわからない。/ 不知道该相信到什么程度才好。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "14-98",
+    "start": 445.16,
+    "end": 472.29,
+    "jp": "【14-98】 どこまでも ① [副] 无论到哪里都；坚持到底；终究，彻头彻尾\n△<ruby>犬<rt>いぬ</rt></ruby>はどこまでもついてくる。/ 狗不管到哪儿都跟着。\n△どこまでも<ruby>反対<rt>はんたい</rt></ruby>する。/ 坚决反对到底。\n△<ruby>子供<rt>こども</rt></ruby>はどこまでも<ruby>子供<rt>こども</rt></ruby>だ。/ 孩子终究还是孩子。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "14-99",
+    "start": 472.29,
+    "end": 485.61,
+    "jp": "【14-99】 ところが ③ [接] 然而，可是，不料\n△<ruby>行<rt>い</rt></ruby>ったところが、いなかった。/ 我去了，不料人却不在。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "14-100",
+    "start": 485.61,
+    "end": 501.41,
+    "jp": "【14-100】 <ruby>登山<rt>とざん</rt></ruby> ① [名・自動3] 登山，爬山\n△<ruby>富士山<rt>ふじさん</rt></ruby>に<ruby>登山<rt>とざん</rt></ruby>する。/ 攀登富士山。\n△<ruby>登山家<rt>とざんか</rt></ruby> / 登山家",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "14-101",
+    "start": 501.41,
+    "end": 513.78,
+    "jp": "【14-101】 <ruby>年寄<rt>としよ</rt></ruby>り ④ [名] 老人，上了年纪的人\n△<ruby>年寄<rt>としよ</rt></ruby>りの<ruby>面倒<rt>めんどう</rt></ruby>を<ruby>見<rt>み</rt></ruby>る。/ 照料老人。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "14-102",
+    "start": 513.78,
+    "end": 537.45,
+    "jp": "【14-102】 <ruby>閉<rt>と</rt></ruby>じる ② [自他動2] 合上，闭上，关闭；结束\n△<ruby>店<rt>みせ</rt></ruby>が<ruby>閉<rt>と</rt></ruby>じている。/ 商店关着门。\n△<ruby>本<rt>ほん</rt></ruby>を<ruby>閉<rt>と</rt></ruby>じる。/ 合上书本。\n△<ruby>宴会<rt>えんかい</rt></ruby>は<ruby>十一時<rt>じゅういちじ</rt></ruby>に<ruby>閉<rt>と</rt></ruby>じる。/ 宴会在十一点结束。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "14-103",
+    "start": 537.45,
+    "end": 549.14,
+    "jp": "【14-103】 <ruby>都心<rt>としん</rt></ruby> ⓪ [名] 市中心\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>都心<rt>としん</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいる。/ 他住在市中心。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "14-104",
+    "start": 549.14,
+    "end": 561.22,
+    "jp": "【14-104】 <ruby>戸棚<rt>とだな</rt></ruby> ⓪ [名] 橱柜，柜子\n△<ruby>食器<rt>しょっき</rt></ruby>を<ruby>戸棚<rt>とだな</rt></ruby>にしまう。/ 把餐具收进橱柜里。",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "14-105",
+    "start": 561.22,
+    "end": 575.6,
+    "jp": "【14-105】 <ruby>途端<rt>とたん</rt></ruby> ⓪ [名] 正当……的时候，刚一……就……\n△<ruby>立<rt>た</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>がった<ruby>途端<rt>とたん</rt></ruby>に<ruby>頭<rt>あたま</rt></ruby>をぶつけた。/ 刚一站起来就撞到了头。",
+    "cn": ""
+  }
+]
