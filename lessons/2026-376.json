@@ -1,0 +1,314 @@
+[
+  {
+    "id": 1,
+    "word_id": "20-1",
+    "start": 0.2,
+    "end": 30.55,
+    "jp": "【20-1】 <ruby>破<rt>やぶ</rt></ruby>る ② [他動1] 撕破，弄破；损坏，打破；违规，失约；打败\n△<ruby>紙<rt>かみ</rt></ruby>を<ruby>細<rt>こま</rt></ruby>かく<ruby>破<rt>やぶ</rt></ruby>る。/ 把纸撕得粉碎。\n△<ruby>交通規則<rt>こうつうきそく</rt></ruby>を<ruby>破<rt>やぶ</rt></ruby>る。/ 违反交通规则。\n△<ruby>約束<rt>やくそく</rt></ruby>を<ruby>破<rt>やぶ</rt></ruby>る。/ 失约。\n△<ruby>敵<rt>てき</rt></ruby>を<ruby>破<rt>やぶ</rt></ruby>る。/ 打败敌人。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "20-2",
+    "start": 30.55,
+    "end": 43.2,
+    "jp": "【20-2】 やり<ruby>直<rt>やりなお</rt></ruby>す ④ [他動1] 重做，再做，另做\n△<ruby>何度<rt>なんど</rt></ruby>もやり<ruby>直<rt>なお</rt></ruby>す。/ 重做很多次。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "20-3",
+    "start": 43.2,
+    "end": 68.46,
+    "jp": "【20-3】 やりとり ② [名・他動3] 交换，互换；对答，对话；敬酒\n△<ruby>贈<rt>おく</rt></ruby>り<ruby>物<rt>もの</rt></ruby>をやりとりする。/ 交换礼物。\n△<ruby>言葉<rt>ことば</rt></ruby>のやりとり / 对话，交谈\n△<ruby>杯<rt>さかずき</rt></ruby>のやりとりをする。/ 相互敬酒，觥筹交错。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "20-4",
+    "start": 68.46,
+    "end": 84.26,
+    "jp": "【20-4】 やる<ruby>気<rt>やるき</rt></ruby> ⓪ [名] 干劲\n△やる<ruby>気<rt>き</rt></ruby>が<ruby>出<rt>で</rt></ruby>る。/ 来干劲了。\n△やる<ruby>気<rt>き</rt></ruby>を<ruby>起<rt>お</rt></ruby>こす。/ 激发干劲。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "20-5",
+    "start": 84.26,
+    "end": 101.21,
+    "jp": "【20-5】 柔らか／<ruby>軟<rt>やわ</rt></ruby>らか ③ [ナ形] 柔软，柔和\n△<ruby>柔<rt>やわ</rt></ruby>らかな<ruby>風<rt>かぜ</rt></ruby> / 柔和的风\n△<ruby>態度<rt>たいど</rt></ruby>を<ruby>柔<rt>やわ</rt></ruby>らかにする。/ 采取柔和的态度。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "20-6",
+    "start": 101.21,
+    "end": 114.2,
+    "jp": "【20-6】 柔らかい／<ruby>軟<rt>やわ</rt></ruby>らかい ③ [イ形] 软，柔软；柔和，温和\n△<ruby>柔<rt>やわ</rt></ruby>らかい<ruby>体<rt>からだ</rt></ruby> / 柔软的身体",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "20-7",
+    "start": 114.2,
+    "end": 130.02,
+    "jp": "【20-7】 <ruby>勇気<rt>ゆうき</rt></ruby> ① [名] 勇气\n△<ruby>勇気<rt>ゆうき</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す。/ 拿出勇气。\n△<ruby>勇気<rt>ゆうき</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う。/ 失去勇气。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "20-8",
+    "start": 130.02,
+    "end": 141.07,
+    "jp": "【20-8】 <ruby>夕暮<rt>ゆうぐ</rt></ruby>れ ⓪ [名] 黄昏，傍晚\n△<ruby>秋<rt>あき</rt></ruby>の<ruby>夕暮<rt>ゆうぐ</rt></ruby>れ / 秋天的傍晚",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "20-9",
+    "start": 141.07,
+    "end": 157.11,
+    "jp": "【20-9】 <ruby>有効<rt>ゆうこう</rt></ruby> ⓪ [名・ナ形] 有效\n△<ruby>有効<rt>ゆうこう</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う。/ 有效利用。\n△<ruby>有効<rt>ゆうこう</rt></ruby>になる。/ 生效。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "20-10",
+    "start": 157.11,
+    "end": 168.41,
+    "jp": "【20-10】 <ruby>夕食<rt>ゆうしょく</rt></ruby> ⓪ [名] 晚饭，晚餐\n△<ruby>夕食<rt>ゆうしょく</rt></ruby>をとる。/ 吃晚饭。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "20-11",
+    "start": 168.41,
+    "end": 185.08,
+    "jp": "【20-11】 <ruby>優秀<rt>ゆうしゅう</rt></ruby> ⓪ [名・ナ形] 优秀\n△<ruby>優秀<rt>ゆうしゅう</rt></ruby>な<ruby>学生<rt>がくせい</rt></ruby> / 优秀学生\n△<ruby>優秀<rt>ゆうしゅう</rt></ruby>な<ruby>成績<rt>せいせき</rt></ruby> / 优秀的成绩",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "20-12",
+    "start": 185.08,
+    "end": 198.35,
+    "jp": "【20-12】 <ruby>優勝<rt>ゆうしょう</rt></ruby> ⓪ [名・自動3] 冠军，第一名，（获得）优胜\n△コンクールで<ruby>優勝<rt>ゆうしょう</rt></ruby>した。/ 在比赛中得了第一名。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "20-13",
+    "start": 198.35,
+    "end": 209.8,
+    "jp": "【20-13】 <ruby>友人<rt>ゆうじん</rt></ruby> ⓪ [名] 友人，朋友\n△<ruby>友人<rt>ゆうじん</rt></ruby>と<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う。/ 和朋友交往。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "20-14",
+    "start": 209.8,
+    "end": 227.31,
+    "jp": "【20-14】 <ruby>夕立<rt>ゆうだち</rt></ruby> ⓪ [名] （傍晚的）骤雨，雷阵雨\n△<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>夕立<rt>ゆうだち</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う。/ 在半途中遇到雷阵雨。\n△<ruby>夕立<rt>ゆうだち</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる。/ 雷阵雨停了。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "20-15",
+    "start": 227.31,
+    "end": 243.73,
+    "jp": "【20-15】 <ruby>夕日<rt>ゆうひ</rt></ruby> ① [名] 夕阳，夕照\n△<ruby>夕日<rt>ゆうひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>む。/ 夕阳西下。\n△<ruby>夕日<rt>ゆうひ</rt></ruby>が<ruby>部屋<rt>へや</rt></ruby>に<ruby>差<rt>さ</rt></ruby>し<ruby>込<rt>こ</rt></ruby>む。/ 夕阳照进屋子。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "20-16",
+    "start": 243.73,
+    "end": 264.36,
+    "jp": "【20-16】 <ruby>郵便<rt>ゆうびん</rt></ruby> ⓪ [名] 邮政，邮件\n△<ruby>書留郵便<rt>かきとめゆうびん</rt></ruby> / 挂号信\n△<ruby>郵便<rt>ゆうびん</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す。/ 寄邮件。\n△<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る。/ 邮寄。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "20-17",
+    "start": 264.36,
+    "end": 282.65,
+    "jp": "【20-17】 <ruby>郵便物<rt>ゆうびんぶつ</rt></ruby> ③ [名] 邮件\n△<ruby>日本向<rt>にほんむ</rt></ruby>け<ruby>郵便物<rt>ゆうびんぶつ</rt></ruby> / 寄往日本的邮件\n△<ruby>配達不能郵便物<rt>はいたつふのうゆうびんぶつ</rt></ruby> / 无法投递的邮件",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "20-18",
+    "start": 282.65,
+    "end": 294.66,
+    "jp": "【20-18】 <ruby>有名人<rt>ゆうめいじん</rt></ruby> ③ [名] 名人，著名人物\n△<ruby>有名人<rt>ゆうめいじん</rt></ruby>になる。/ 成为名人。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "20-19",
+    "start": 294.66,
+    "end": 307.12,
+    "jp": "【20-19】 ユーモア ① [名] 幽默，滑稽\n△ユーモアを<ruby>飛<rt>と</rt></ruby>ばす。/ 说俏皮话，讲幽默笑话。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "20-20",
+    "start": 307.12,
+    "end": 323.11,
+    "jp": "【20-20】 <ruby>有料<rt>ゆうりょう</rt></ruby> ⓪ [名] 收费\n△<ruby>有料道路<rt>ゆうりょうどうろ</rt></ruby> / 收费公路\n△<ruby>有料駐車場<rt>ゆうりょうちゅうしゃじょう</rt></ruby> / 收费停车场",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "20-21",
+    "start": 323.11,
+    "end": 333.6,
+    "jp": "【20-21】 <ruby>床<rt>ゆか</rt></ruby> ⓪ [名] 地板\n△<ruby>床<rt>ゆか</rt></ruby>を<ruby>張<rt>は</rt></ruby>る。/ 铺地板。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "20-22",
+    "start": 333.6,
+    "end": 346.13,
+    "jp": "【20-22】 <ruby>愉快<rt>ゆかい</rt></ruby> ① [名・ナ形] 愉快，欢快，有意思\n△<ruby>愉快<rt>ゆかい</rt></ruby>な<ruby>一日<rt>いちにち</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る。/ 度过愉快的一天。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "20-23",
+    "start": 346.13,
+    "end": 357.53,
+    "jp": "【20-23】 <ruby>浴衣<rt>ゆかた</rt></ruby> ⓪ [名] 夏季的单衣，浴衣\n△<ruby>浴衣<rt>ゆかた</rt></ruby>を<ruby>着<rt>き</rt></ruby>る。/ 穿浴衣。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "20-24",
+    "start": 357.53,
+    "end": 377.46,
+    "jp": "【20-24】 <ruby>雪<rt>ゆき</rt></ruby> ② [名] 雪；雪白\n△<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る。/ 下雪。\n△<ruby>雪<rt>ゆき</rt></ruby>に<ruby>覆<rt>おお</rt></ruby>われる。/ 被雪覆盖。\n△<ruby>雪<rt>ゆき</rt></ruby>の<ruby>肌<rt>はだ</rt></ruby> / 雪白的皮肤",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "20-25",
+    "start": 377.46,
+    "end": 388.75,
+    "jp": "【20-25】 〜行き[〜ゆき] [接尾] 去，开往……\n△<ruby>上野行<rt>うえのゆ</rt></ruby>きの<ruby>電車<rt>でんしゃ</rt></ruby> / 开往上野的电车",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "20-26",
+    "start": 388.75,
+    "end": 400.75,
+    "jp": "【20-26】 <ruby>行方<rt>ゆくえ</rt></ruby> ⓪ [名] 去向，下落，行踪\n△<ruby>行方<rt>ゆくえ</rt></ruby>がわからない。/ 下落不明。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "20-27",
+    "start": 400.75,
+    "end": 417.25,
+    "jp": "【20-27】 <ruby>豊<rt>ゆた</rt></ruby>か ① [ナ形] 丰富，富裕\n△<ruby>豊<rt>ゆた</rt></ruby>かな<ruby>才能<rt>さいのう</rt></ruby> / 丰富的才华\n△<ruby>豊<rt>ゆた</rt></ruby>かに<ruby>暮<rt>く</rt></ruby>らしている。/ 生活富裕。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "20-28",
+    "start": 417.25,
+    "end": 440.25,
+    "jp": "【20-28】 <ruby>湯気<rt>ゆげ</rt></ruby> ⓪ [名] 蒸汽，热气；水汽\n△<ruby>湯気<rt>ゆげ</rt></ruby>が<ruby>立<rt>た</rt></ruby>つ。/ 冒热气。\n△<ruby>湯気<rt>ゆげ</rt></ruby>でガラスが<ruby>曇<rt>くも</rt></ruby>る。/ 窗玻璃被水汽熏得模糊不清。\n△<ruby>湯気<rt>ゆげ</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たる。/ （洗澡）晕池子。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "20-29",
+    "start": 440.25,
+    "end": 471.23,
+    "jp": "【20-29】 <ruby>譲<rt>ゆず</rt></ruby>る ⓪ [他動1] 让给，转让；谦让；让步；出让，卖给\n△<ruby>所有権<rt>しょゆうけん</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>る。/ 转让所有权。\n△<ruby>互<rt>たが</rt></ruby>いに<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>る。/ 互相让座。\n△<ruby>一歩<rt>いっぽ</rt></ruby>も<ruby>譲<rt>ゆず</rt></ruby>れない。/ 一步也不能让。\n△<ruby>別荘<rt>べっそう</rt></ruby>を<ruby>友人<rt>ゆうじん</rt></ruby>に<ruby>安<rt>やす</rt></ruby>く<ruby>譲<rt>ゆず</rt></ruby>る。/ 把别墅便宜卖给朋友。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "20-30",
+    "start": 471.23,
+    "end": 483.06,
+    "jp": "【20-30】 <ruby>油断<rt>ゆだん</rt></ruby> ⓪ [名・自動3] 疏忽大意，缺乏警惕\n△<ruby>油断<rt>ゆだん</rt></ruby>がならない。/ 不可以疏忽大意。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "20-31",
+    "start": 483.06,
+    "end": 494.22,
+    "jp": "【20-31】 <ruby>茹<rt>ゆ</rt></ruby>でる ② [他動2] 煮，烀，焯\n△<ruby>卵<rt>たまご</rt></ruby>を<ruby>茹<rt>ゆ</rt></ruby>でる。/ 煮鸡蛋。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "20-32",
+    "start": 494.22,
+    "end": 505.29,
+    "jp": "【20-32】 <ruby>湯呑<rt>ゆの</rt></ruby>み ③ [名] 茶碗，茶杯\n△<ruby>大<rt>おお</rt></ruby>きな<ruby>湯呑<rt>ゆの</rt></ruby>み / 大茶碗",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "20-33",
+    "start": 505.29,
+    "end": 522.24,
+    "jp": "【20-33】 <ruby>指先<rt>ゆびさき</rt></ruby> ④ [名] 手指尖，脚趾尖\n△<ruby>指先<rt>ゆびさき</rt></ruby>が<ruby>器用<rt>きよう</rt></ruby>だ。/ 手巧。\n△<ruby>指先仕事<rt>ゆびさきしごと</rt></ruby> / 手工活儿",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "20-34",
+    "start": 522.24,
+    "end": 533.26,
+    "jp": "【20-34】 <ruby>指輪<rt>ゆびわ</rt></ruby> ⓪ [名] 戒指\n△<ruby>結婚指輪<rt>けっこんゆびわ</rt></ruby> / 结婚戒指",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "20-35",
+    "start": 533.26,
+    "end": 551.05,
+    "jp": "【20-35】 <ruby>夢見<rt>ゆめみ</rt></ruby>る ④ [他動2] 做梦；空想，梦想\n△<ruby>夢見<rt>ゆめみ</rt></ruby>る<ruby>心地<rt>ここち</rt></ruby> / 做梦似的感觉\n△<ruby>宇宙旅行<rt>うちゅうりょこう</rt></ruby>を<ruby>夢見<rt>ゆめみ</rt></ruby>る。/ 梦想去宇宙旅行。",
+    "cn": ""
+  },
+  {
+    "id": 36,
+    "word_id": "20-36",
+    "start": 551.05,
+    "end": 581.07,
+    "jp": "【20-36】 <ruby>緩<rt>ゆる</rt></ruby>い ② [イ形] 松，不紧，肥大；不严；平缓，不陡；缓慢\n△ズボンが<ruby>緩<rt>ゆる</rt></ruby>い。/ 裤子肥大。\n△この<ruby>学校<rt>がっこう</rt></ruby>の<ruby>規律<rt>きりつ</rt></ruby>が<ruby>緩<rt>ゆる</rt></ruby>い。/ 这个学校的纪律不严。\n△<ruby>緩<rt>ゆる</rt></ruby>い<ruby>上<rt>のぼ</rt></ruby>り<ruby>坂<rt>ざか</rt></ruby> / 平缓的上坡\n△<ruby>緩<rt>ゆる</rt></ruby>いスピード / 缓慢的速度",
+    "cn": ""
+  },
+  {
+    "id": 37,
+    "word_id": "20-37",
+    "start": 581.07,
+    "end": 596.82,
+    "jp": "【20-37】 <ruby>揺<rt>ゆ</rt></ruby>れ ⓪ [名] 摇晃，晃动，震动\n△<ruby>船<rt>ふね</rt></ruby>の<ruby>揺<rt>ゆ</rt></ruby>れ / 船的颠簸\n△<ruby>地震<rt>じしん</rt></ruby>の<ruby>揺<rt>ゆ</rt></ruby>れ / 地震的晃动",
+    "cn": ""
+  },
+  {
+    "id": 38,
+    "word_id": "20-38",
+    "start": 596.82,
+    "end": 621.34,
+    "jp": "【20-38】 <ruby>揺<rt>ゆ</rt></ruby>れる ⓪ [自動2] 动摇，不稳定；摇晃，摇摆；晃荡，颠簸\n△<ruby>計画<rt>けいかく</rt></ruby>が<ruby>揺<rt>ゆ</rt></ruby>れる。/ 计划动摇多变。\n△<ruby>心<rt>こころ</rt></ruby>が<ruby>揺<rt>ゆ</rt></ruby>れる。/ 心情摇摆，心神不宁。\n△バスが<ruby>揺<rt>ゆ</rt></ruby>れる。/ 汽车颠簸。",
+    "cn": ""
+  },
+  {
+    "id": 39,
+    "word_id": "20-39",
+    "start": 621.34,
+    "end": 636.68,
+    "jp": "【20-39】 <ruby>夜<rt>よ</rt></ruby> ① [名] 夜间，夜里，晚上\n△<ruby>夜<rt>よ</rt></ruby>が<ruby>明<rt>あ</rt></ruby>ける。/ 天亮。\n△<ruby>夜<rt>よ</rt></ruby>が<ruby>更<rt>ふ</rt></ruby>ける。/ 夜深。",
+    "cn": ""
+  }
+]
