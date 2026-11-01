@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "15-106",
+    "start": 0.2,
+    "end": 18.14,
+    "jp": "【15-106】 <ruby>年代<rt>ねんだい</rt></ruby> ① [名] 年代；时代，年龄段\n△<ruby>年代<rt>ねんだい</rt></ruby>の<ruby>差<rt>さ</rt></ruby>を<ruby>感<rt>かん</rt></ruby>じる。/ 感到不同年代间的代沟。\n△<ruby>大正年代<rt>たいしょうねんだい</rt></ruby> / 大正时代",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "15-107",
+    "start": 18.14,
+    "end": 30.84,
+    "jp": "【15-107】 <ruby>年頭<rt>ねんとう</rt></ruby> ⓪ [名] 岁首，年初，新年伊始\n△<ruby>年頭<rt>ねんとう</rt></ruby>の<ruby>挨拶<rt>あいさつ</rt></ruby> / 新年贺词",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "15-108",
+    "start": 30.84,
+    "end": 43.25,
+    "jp": "【15-108】 <ruby>年々<rt>ねんねん</rt></ruby> ① [副] 每年，年年，逐年\n△<ruby>年々<rt>ねんねん</rt></ruby>よくなっていく。/ 一年年地好起来。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "15-109",
+    "start": 43.25,
+    "end": 61.01,
+    "jp": "【15-109】 <ruby>年末<rt>ねんまつ</rt></ruby> ⓪ [名] 年末，年终，年底\n△<ruby>年末<rt>ねんまつ</rt></ruby>の<ruby>大売<rt>おおう</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し / 年终大甩卖\n△<ruby>年末<rt>ねんまつ</rt></ruby>に<ruby>帰省<rt>きせい</rt></ruby>する。/ 年底返乡。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "15-110",
+    "start": 61.01,
+    "end": 72.13,
+    "jp": "【15-110】 <ruby>年齢<rt>ねんれい</rt></ruby> ⓪ [名] 年龄\n△<ruby>年齢<rt>ねんれい</rt></ruby>を<ruby>問<rt>と</rt></ruby>わず。/ 不限年龄。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "15-111",
+    "start": 72.13,
+    "end": 91.86,
+    "jp": "【15-111】 <ruby>農家<rt>のうか</rt></ruby> ① [名] 农家，农户；农民\n△<ruby>農家<rt>のうか</rt></ruby>に<ruby>育<rt>そだ</rt></ruby>った。/ 在农家长大。\n△<ruby>一年中<rt>いちねんじゅう</rt></ruby>で<ruby>農家<rt>のうか</rt></ruby>の<ruby>一番忙<rt>いちばんいそが</rt></ruby>しい<ruby>時期<rt>じき</rt></ruby> / 一年中农民最忙的时期",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "15-112",
+    "start": 91.86,
+    "end": 109.54,
+    "jp": "【15-112】 <ruby>農業<rt>のうぎょう</rt></ruby> ① [名] 农业，农耕\n△<ruby>農業<rt>のうぎょう</rt></ruby>の<ruby>機械化<rt>きかいか</rt></ruby> / 农业机械化\n△<ruby>農業<rt>のうぎょう</rt></ruby>の<ruby>近代化<rt>きんだいか</rt></ruby>を<ruby>図<rt>はか</rt></ruby>る。/ 谋求农业现代化。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "15-113",
+    "start": 109.54,
+    "end": 122.33,
+    "jp": "【15-113】 <ruby>農作物<rt>のうさくぶつ</rt></ruby> ④ [名] 农作物，庄稼\n△<ruby>農作物<rt>のうさくぶつ</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>入<rt>い</rt></ruby>れる。/ 收割庄稼。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "15-114",
+    "start": 122.33,
+    "end": 135.06,
+    "jp": "【15-114】 <ruby>農産物<rt>のうさんぶつ</rt></ruby> ③ [名] 农产品\n△<ruby>農産物輸出国<rt>のうさんぶつゆしゅつこく</rt></ruby> / 农产品出口国",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "15-115",
+    "start": 135.06,
+    "end": 151.93,
+    "jp": "【15-115】 <ruby>農場<rt>のうじょう</rt></ruby> ⓪ [名] 农场\n△<ruby>農場<rt>のうじょう</rt></ruby>を<ruby>経営<rt>けいえい</rt></ruby>する。/ 经营农场。\n△<ruby>農場<rt>のうじょう</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>く。/ 在农场工作。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "15-116",
+    "start": 151.93,
+    "end": 167.81,
+    "jp": "【15-116】 <ruby>農村<rt>のうそん</rt></ruby> ⓪ [名] 农村\n△<ruby>都市<rt>とし</rt></ruby>と<ruby>農村<rt>のうそん</rt></ruby> / 城市与农村\n△<ruby>農村電化<rt>のうそんでんか</rt></ruby> / 农村电气化",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "15-117",
+    "start": 167.81,
+    "end": 183.77,
+    "jp": "【15-117】 <ruby>農民<rt>のうみん</rt></ruby> ① [名] 农民\n△<ruby>農民運動<rt>のうみんうんどう</rt></ruby> / 农民运动\n△<ruby>農民文学<rt>のうみんぶんがく</rt></ruby> / 农民文学",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "15-118",
+    "start": 183.77,
+    "end": 199.98,
+    "jp": "【15-118】 <ruby>能率<rt>のうりつ</rt></ruby> ⓪ [名] 效率\n△<ruby>能率<rt>のうりつ</rt></ruby>を<ruby>高<rt>たか</rt></ruby>める。/ 提高效率。\n△<ruby>能率<rt>のうりつ</rt></ruby>がいい。/ 效率高。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "15-119",
+    "start": 199.98,
+    "end": 217.17,
+    "jp": "【15-119】 <ruby>能力<rt>のうりょく</rt></ruby> ① [名] 能力\n△<ruby>能力<rt>のうりょく</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばす。/ 发展才能，提高能力。\n△<ruby>能力<rt>のうりょく</rt></ruby>を<ruby>生<rt>い</rt></ruby>かす。/ 发挥能力。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "15-120",
+    "start": 217.17,
+    "end": 235.32,
+    "jp": "【15-120】 <ruby>残<rt>のこ</rt></ruby>す ② [他動1] 留下，剩下；遗留\n△<ruby>放課後<rt>ほうかご</rt></ruby>に<ruby>残<rt>のこ</rt></ruby>される。/ 放学后被留下来。\n△<ruby>莫大<rt>ばくだい</rt></ruby>な<ruby>財産<rt>ざいさん</rt></ruby>を<ruby>残<rt>のこ</rt></ruby>す。/ 留下巨额遗产。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "15-121",
+    "start": 235.32,
+    "end": 252.63,
+    "jp": "【15-121】 <ruby>残<rt>のこ</rt></ruby>らず ③ [副] 全部，统统，一个不剩\n△<ruby>残<rt>のこ</rt></ruby>らず<ruby>調<rt>しら</rt></ruby>べた。/ 全部调查了。\n△<ruby>残<rt>のこ</rt></ruby>らず<ruby>食<rt>た</rt></ruby>べた。/ 全部吃光了。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "15-122",
+    "start": 252.63,
+    "end": 274.67,
+    "jp": "【15-122】 <ruby>残<rt>のこ</rt></ruby>り<ruby>物<rt>もの</rt></ruby> ⓪ [名] 剩下的东西，剩菜剩饭\n△お<ruby>昼<rt>ひる</rt></ruby>はいつも<ruby>残<rt>のこ</rt></ruby>り<ruby>物<rt>もの</rt></ruby>で<ruby>済<rt>す</rt></ruby>ます。/ 午饭总是吃剩饭凑合。\n△<ruby>残<rt>のこ</rt></ruby>り<ruby>物<rt>もの</rt></ruby>には<ruby>福<rt>ふく</rt></ruby>がある。/ 剩儿里有福气；后挑选的人反而有好运。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "15-123",
+    "start": 274.67,
+    "end": 301.04,
+    "jp": "【15-123】 <ruby>乗<rt>の</rt></ruby>せる ⓪ [他動2] 装载，让……搭乘；哄骗，使上当；合着（音乐拍子等）\n△<ruby>野菜<rt>やさい</rt></ruby>を<ruby>乗<rt>の</rt></ruby>せたトラック / 装载着蔬菜的卡车\n△うかつに<ruby>乗<rt>の</rt></ruby>せられた。/ 不小心上当了。\n△<ruby>三味線<rt>しゃみせん</rt></ruby>に<ruby>乗<rt>の</rt></ruby>せて<ruby>歌<rt>うた</rt></ruby>う。/ 合着三味线的伴奏唱歌。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "15-124",
+    "start": 301.04,
+    "end": 318.52,
+    "jp": "【15-124】 <ruby>望<rt>のぞ</rt></ruby>み ⓪ [名] 希望，愿望；抱负，志向\n△<ruby>成功<rt>せいこう</rt></ruby>の<ruby>望<rt>のぞ</rt></ruby>み / 成功的希望\n△<ruby>望<rt>のぞ</rt></ruby>みが<ruby>大<rt>おお</rt></ruby>きい。/ 抱负远大。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "15-125",
+    "start": 318.52,
+    "end": 337.72,
+    "jp": "【15-125】 <ruby>望<rt>のぞ</rt></ruby>む ⓪ [他動1] 眺望；希望，愿望，期望\n△<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>く<ruby>海<rt>うみ</rt></ruby>を<ruby>望<rt>のぞ</rt></ruby>む。/ 从山丘上远眺大海。\n△<ruby>成功<rt>せいこう</rt></ruby>を<ruby>望<rt>のぞ</rt></ruby>む。/ 期望成功。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "15-126",
+    "start": 337.72,
+    "end": 354.41,
+    "jp": "【15-126】 ノック ① [名・他動3] 敲门；（棒球）击球练习\n△ドアをノックする。/ 敲门。\n△ノックが<ruby>聞<rt>き</rt></ruby>こえる。/ 听到敲门声。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "15-127",
+    "start": 354.41,
+    "end": 379.17,
+    "jp": "【15-127】 <ruby>伸<rt>の</rt></ruby>ばす ② [他動1] 延长，拉长；伸展，伸开；发挥，提高\n△<ruby>命<rt>いのち</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばす。/ 延长寿命。\n△<ruby>腕<rt>うで</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばす。/ 伸展手臂；提高本领。\n△<ruby>個性<rt>こせい</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばす。/ 发展个性。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "15-128",
+    "start": 379.17,
+    "end": 396.0,
+    "jp": "【15-128】 <ruby>延<rt>の</rt></ruby>ばす ② [他動1] 延长，推迟，拖延\n△<ruby>会議<rt>かいぎ</rt></ruby>を<ruby>延<rt>の</rt></ruby>ばす。/ 推迟会议。\n△<ruby>期限<rt>きげん</rt></ruby>を<ruby>延<rt>の</rt></ruby>ばす。/ 延长期限。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "15-129",
+    "start": 396.0,
+    "end": 418.47,
+    "jp": "【15-129】 <ruby>伸<rt>の</rt></ruby>びる ② [自動2] 伸长，长高；舒展；扩大，增长\n△<ruby>背<rt>せ</rt></ruby>が<ruby>伸<rt>の</rt></ruby>びる。/ 个子长高。\n△<ruby>皺<rt>しわ</rt></ruby>が<ruby>伸<rt>の</rt></ruby>びる。/ 皱纹舒展。\n△<ruby>売<rt>う</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げが<ruby>伸<rt>の</rt></ruby>びる。/ 销售额增长。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "15-130",
+    "start": 418.47,
+    "end": 436.22,
+    "jp": "【15-130】 <ruby>延<rt>の</rt></ruby>びる ② [自動2] 延长；推迟，延期\n△<ruby>会期<rt>かいき</rt></ruby>が<ruby>延<rt>の</rt></ruby>びる。/ 会期延长。\n△<ruby>出発<rt>しゅっぱつ</rt></ruby>が<ruby>来週<rt>らいしゅう</rt></ruby>に<ruby>延<rt>の</rt></ruby>びる。/ 出发推迟到下周。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "15-131",
+    "start": 436.22,
+    "end": 457.61,
+    "jp": "【15-131】 <ruby>述<rt>の</rt></ruby>べる ② [他動2] 叙述，陈述，说明\n△<ruby>事実<rt>じじつ</rt></ruby>を<ruby>述<rt>の</rt></ruby>べる。/ 叙述事实。\n△<ruby>意見<rt>いけん</rt></ruby>を<ruby>述<rt>の</rt></ruby>べる。/ 陈述意见。\n△<ruby>事情<rt>じじょう</rt></ruby>を<ruby>述<rt>の</rt></ruby>べる。/ 说明情况。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "15-132",
+    "start": 457.61,
+    "end": 481.24,
+    "jp": "【15-132】 上り／<ruby>登<rt>のぼ</rt></ruby>り ⓪ [名] 登上，攀爬；上坡；上行\n△<ruby>上<rt>のぼ</rt></ruby>りのエレベーターを<ruby>待<rt>ま</rt></ruby>つ。/ 等上行的电梯。\n△そこからは<ruby>上<rt>のぼ</rt></ruby>りになる。/ 从那儿起是上坡路。\n△<ruby>上<rt>のぼ</rt></ruby>り<ruby>列車<rt>れっしゃ</rt></ruby> / 上行列车",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "15-133",
+    "start": 481.24,
+    "end": 510.87,
+    "jp": "【15-133】 登る／<ruby>上<rt>のぼ</rt></ruby>る ⓪ [自動1] 攀登，登上；（温度、地位）上升，升高；（数量）高达，达到\n△<ruby>山<rt>やま</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>る。/ 登山，爬山。\n△<ruby>気温<rt>きおん</rt></ruby>が<ruby>上<rt>のぼ</rt></ruby>る。/ 气温升高。\n△<ruby>地位<rt>ちい</rt></ruby>が<ruby>上<rt>のぼ</rt></ruby>る。/ 地位上升。\n△<ruby>参会者<rt>さんかいしゃ</rt></ruby>が<ruby>一万人<rt>いちまんにん</rt></ruby>に<ruby>上<rt>のぼ</rt></ruby>る。/ 与会者高达一万人。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "15-134",
+    "start": 510.87,
+    "end": 521.34,
+    "jp": "【15-134】 <ruby>海苔<rt>のり</rt></ruby> ② [名] 海苔，紫菜\n△<ruby>海苔巻<rt>のりま</rt></ruby>き / 紫菜卷",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "15-135",
+    "start": 521.34,
+    "end": 538.98,
+    "jp": "【15-135】 <ruby>乗<rt>の</rt></ruby>り<ruby>遅<rt>おく</rt></ruby>れる ⑤ [自動2] 没赶上（车、船）；跟不上（潮流）\n△<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>り<ruby>遅<rt>おく</rt></ruby>れる。/ 没赶上电车。\n△<ruby>流行<rt>りゅうこう</rt></ruby>に<ruby>乗<rt>の</rt></ruby>り<ruby>遅<rt>おく</rt></ruby>れる。/ 跟不上潮流。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "15-136",
+    "start": 538.98,
+    "end": 551.49,
+    "jp": "【15-136】 <ruby>乗<rt>の</rt></ruby>り<ruby>降<rt>お</rt></ruby>り ② [名・自動3] 上下（车、船等）\n△<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>乗<rt>の</rt></ruby>り<ruby>降<rt>お</rt></ruby>りに<ruby>注意<rt>ちゅうい</rt></ruby>する。/ 上下电车时当心。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "15-137",
+    "start": 551.49,
+    "end": 567.48,
+    "jp": "【15-137】 <ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>え ⓪ [名] 换乘，改乘\n△<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>え<ruby>駅<rt>えき</rt></ruby> / 换乘站\n△<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>え<ruby>切符<rt>きっぷ</rt></ruby> / 换乘车票",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "15-138",
+    "start": 567.48,
+    "end": 585.01,
+    "jp": "【15-138】 <ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>える ④ [他動2] 换乘，改乘\n△<ruby>電車<rt>でんしゃ</rt></ruby>を<ruby>三度乗<rt>さんどの</rt></ruby>り<ruby>換<rt>か</rt></ruby>える。/ 换三次电车。\n△<ruby>別<rt>べつ</rt></ruby>の<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>える。/ 换乘别的船。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "15-139",
+    "start": 585.01,
+    "end": 596.85,
+    "jp": "【15-139】 <ruby>乗<rt>の</rt></ruby>り<ruby>越<rt>こ</rt></ruby>し ⓪ [名] 坐过站\n△<ruby>乗<rt>の</rt></ruby>り<ruby>越<rt>こ</rt></ruby>し<ruby>料金<rt>りょうきん</rt></ruby> / 坐过站补交的车费",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "15-140",
+    "start": 596.85,
+    "end": 611.23,
+    "jp": "【15-140】 <ruby>乗<rt>の</rt></ruby>り<ruby>越<rt>こ</rt></ruby>す ③ [他動1] 坐过站；超越\n△<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>めたら<ruby>駅<rt>えき</rt></ruby>を<ruby>三<rt>みっ</rt></ruby>つ<ruby>乗<rt>の</rt></ruby>り<ruby>越<rt>こ</rt></ruby>していた。/ 醒来一看已经坐过了三站。",
+    "cn": ""
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "15-71",
+    "start": 0.2,
+    "end": 12.06,
+    "jp": "【15-71】 にこにこ ① [副・自動3] 笑嘻嘻，笑眯眯\n△にこにこ<ruby>笑<rt>わら</rt></ruby>う。/ 笑眯眯地笑。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "15-72",
+    "start": 12.06,
+    "end": 36.09,
+    "jp": "【15-72】 <ruby>濁<rt>にご</rt></ruby>る ② [自動1] 浑浊，污浊；（声音）沙哑，不洪亮；读浊音\n△この<ruby>川<rt>かわ</rt></ruby>は<ruby>濁<rt>にご</rt></ruby>っている。/ 这条河水很浑浊。\n△<ruby>声<rt>こえ</rt></ruby>が<ruby>濁<rt>にご</rt></ruby>る。/ 声音沙哑不洪亮。\n△<ruby>濁<rt>にご</rt></ruby>って<ruby>読<rt>よ</rt></ruby>む。/ 浊化来念。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "15-73",
+    "start": 36.09,
+    "end": 49.27,
+    "jp": "【15-73】 <ruby>偽物<rt>にせもの</rt></ruby> ⓪ [名] 假冒品，冒牌货，赝品\n△このサインは<ruby>偽物<rt>にせもの</rt></ruby>だ。/ 这个签名是假的。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "15-74",
+    "start": 49.27,
+    "end": 60.99,
+    "jp": "【15-74】 <ruby>日時<rt>にちじ</rt></ruby> ① [名] 日期和时间\n△<ruby>出発<rt>しゅっぱつ</rt></ruby>の<ruby>日時<rt>にちじ</rt></ruby> / 出发的日期和时间",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "15-75",
+    "start": 60.99,
+    "end": 74.17,
+    "jp": "【15-75】 <ruby>日常<rt>にちじょう</rt></ruby> ⓪ [名] 日常，平时\n△<ruby>日常<rt>にちじょう</rt></ruby>の<ruby>心掛<rt>こころが</rt></ruby>けが<ruby>大切<rt>たいせつ</rt></ruby>だ。/ 日常的留心很重要。",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "15-76",
+    "start": 74.17,
+    "end": 87.44,
+    "jp": "【15-76】 <ruby>日用品<rt>にちようひん</rt></ruby> ⓪ [名] 日常用品\n△<ruby>日用品<rt>にちようひん</rt></ruby>を<ruby>商<rt>あきな</rt></ruby>っている<ruby>店<rt>みせ</rt></ruby> / 经营日常用品的商店",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "15-77",
+    "start": 87.44,
+    "end": 100.53,
+    "jp": "【15-77】 にっこり ③ [副・自動3] 微微一笑，嫣然一笑\n△<ruby>彼女<rt>かのじょ</rt></ruby>はにっこり<ruby>笑<rt>わら</rt></ruby>って<ruby>答<rt>こた</rt></ruby>えた。/ 她莞尔一笑作答。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "15-78",
+    "start": 100.53,
+    "end": 112.94,
+    "jp": "【15-78】 <ruby>日程<rt>にってい</rt></ruby> ⓪ [名] 日程，每日的安排\n△<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる。/ 制定旅行日程。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "15-79",
+    "start": 112.94,
+    "end": 129.27,
+    "jp": "【15-79】 <ruby>二度<rt>にど</rt></ruby>と ⓪ [副] 再（也不……），第二次\n△<ruby>二度<rt>にど</rt></ruby>とない<ruby>機会<rt>きかい</rt></ruby> / 不会再有的机会\n△もう<ruby>二度<rt>にど</rt></ruby>と<ruby>言<rt>い</rt></ruby>わない。/ 再也不说了。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "15-80",
+    "start": 129.27,
+    "end": 141.89,
+    "jp": "【15-80】 <ruby>二度<rt>にど</rt></ruby>と<ruby>再<rt>ふたた</rt></ruby>び ① [副] 再（也不……），绝不再\n△<ruby>二度<rt>にど</rt></ruby>と<ruby>再<rt>ふたた</rt></ruby>び<ruby>行<rt>い</rt></ruby>かない。/ 绝不再去。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "15-81",
+    "start": 141.89,
+    "end": 166.0,
+    "jp": "【15-81】 <ruby>鈍<rt>にぶ</rt></ruby>い ② [イ形] 钝；（动作、头脑）迟钝，缓慢；（光线、声音）微弱，沉闷\n△<ruby>刃<rt>は</rt></ruby>が<ruby>鈍<rt>にぶ</rt></ruby>くて<ruby>切<rt>き</rt></ruby>れない。/ 刀刃太钝切不动。\n△<ruby>頭<rt>あたま</rt></ruby>の<ruby>動<rt>うご</rt></ruby>きが<ruby>鈍<rt>にぶ</rt></ruby>い。/ 脑子反应慢。\n△<ruby>鈍<rt>にぶ</rt></ruby>い<ruby>光<rt>ひかり</rt></ruby>を<ruby>放<rt>はな</rt></ruby>つ。/ 发出微弱的光。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "15-82",
+    "start": 166.0,
+    "end": 177.24,
+    "jp": "【15-82】 <ruby>入学<rt>にゅうがく</rt></ruby> ⓪ [名・自動3] 入学\n△<ruby>入学試験<rt>にゅうがくしけん</rt></ruby> / 入学考试",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "15-83",
+    "start": 177.24,
+    "end": 194.12,
+    "jp": "【15-83】 <ruby>女房<rt>にょうぼう</rt></ruby> ① [名] 妻子，老婆\n△<ruby>世話女房<rt>せわにょうぼう</rt></ruby> / 对丈夫照顾周到的贤妻\n△<ruby>女房<rt>にょうぼう</rt></ruby>をもらう。/ 娶妻。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "15-84",
+    "start": 194.12,
+    "end": 214.12,
+    "jp": "【15-84】 <ruby>睨<rt>にら</rt></ruby>む ② [他動1] 瞪，怒视；凝视，盯视\n△<ruby>彼<rt>かれ</rt></ruby>は<ruby>怒<rt>おこ</rt></ruby>った<ruby>目<rt>め</rt></ruby>で<ruby>私<rt>わたし</rt></ruby>を<ruby>睨<rt>にら</rt></ruby>んだ。/ 他用生气的眼神瞪了我一眼。\n△<ruby>子供<rt>こども</rt></ruby>の<ruby>顔<rt>かお</rt></ruby>を<ruby>睨<rt>にら</rt></ruby>む。/ 凝视孩子的脸。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "15-85",
+    "start": 214.12,
+    "end": 229.94,
+    "jp": "【15-85】 <ruby>煮<rt>に</rt></ruby>る ⓪ [他動2] 煮，炖，烧，熬\n△<ruby>大根<rt>だいこん</rt></ruby>を<ruby>煮<rt>に</rt></ruby>る。/ 煮萝卜。\n△<ruby>煮<rt>に</rt></ruby>た<ruby>魚<rt>さかな</rt></ruby> / 炖鱼",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "15-86",
+    "start": 229.94,
+    "end": 248.76,
+    "jp": "【15-86】 <ruby>人気<rt>にんき</rt></ruby> ⓪ [名] 声望，人缘；受欢迎，人气\n△<ruby>人気<rt>にんき</rt></ruby>がある。/ 有人缘；受欢迎。\n△<ruby>人気<rt>にんき</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う。/ 失去人气；不受欢迎。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "15-87",
+    "start": 248.76,
+    "end": 260.48,
+    "jp": "【15-87】 <ruby>人参<rt>にんじん</rt></ruby> ⓪ [名] 胡萝卜\n△<ruby>人参<rt>にんじん</rt></ruby>が<ruby>大好<rt>だいす</rt></ruby>きだ。/ 很喜欢吃胡萝卜。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "15-88",
+    "start": 260.48,
+    "end": 277.48,
+    "jp": "【15-88】 <ruby>人数<rt>にんずう</rt></ruby> ① [名] 人数；人多势众\n△<ruby>人数<rt>にんずう</rt></ruby>が<ruby>足<rt>た</rt></ruby>りない。/ 人数不够。\n△<ruby>人数<rt>にんずう</rt></ruby>で<ruby>圧倒<rt>あっとう</rt></ruby>する。/ 以人多取胜。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "15-89",
+    "start": 277.48,
+    "end": 294.29,
+    "jp": "【15-89】 <ruby>縫<rt>ぬ</rt></ruby>う ① [他動1] 缝，缝纫；缝合\n△<ruby>着物<rt>きもの</rt></ruby>を<ruby>縫<rt>ぬ</rt></ruby>う。/ 缝衣服。\n△<ruby>傷<rt>きず</rt></ruby>は<ruby>三針<rt>さんしん</rt></ruby>ほど<ruby>縫<rt>ぬ</rt></ruby>った。/ 伤口缝了三针。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "15-90",
+    "start": 294.29,
+    "end": 317.24,
+    "jp": "【15-90】 <ruby>抜<rt>ぬ</rt></ruby>く ⓪ [他動1] 抽出，拔掉；省去，偷懒；超过，赶超\n△<ruby>歯<rt>は</rt></ruby>を<ruby>抜<rt>ぬ</rt></ruby>く。/ 拔牙。\n△<ruby>手<rt>て</rt></ruby>を<ruby>抜<rt>ぬ</rt></ruby>く。/ 偷工减料。\n△<ruby>前<rt>まえ</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>を<ruby>抜<rt>ぬ</rt></ruby>く。/ 超过前面的车。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "15-91",
+    "start": 317.24,
+    "end": 347.16,
+    "jp": "【15-91】 <ruby>抜<rt>ぬ</rt></ruby>ける ⓪ [自動2] 脱落，掉下；漏掉，缺少；（气体、力气）跑掉，消失\n△<ruby>髪<rt>かみ</rt></ruby>の<ruby>毛<rt>け</rt></ruby>が<ruby>抜<rt>ぬ</rt></ruby>ける。/ 掉头发，脱发。\n△<ruby>二<rt>に</rt></ruby>ページが<ruby>抜<rt>ぬ</rt></ruby>けている。/ 缺了两页。\n△タイヤの<ruby>空気<rt>くうき</rt></ruby>が<ruby>抜<rt>ぬ</rt></ruby>けた。/ 轮胎漏气了。\n△<ruby>腰<rt>こし</rt></ruby>が<ruby>抜<rt>ぬ</rt></ruby>けた。/ 吓得腿软站不起来。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "15-92",
+    "start": 347.16,
+    "end": 359.74,
+    "jp": "【15-92】 <ruby>濡<rt>ぬ</rt></ruby>らす ⓪ [他動1] 浸湿，弄湿，淋湿\n△<ruby>手<rt>て</rt></ruby>を<ruby>水<rt>みず</rt></ruby>に<ruby>濡<rt>ぬ</rt></ruby>らす。/ 用水把手弄湿。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "15-93",
+    "start": 359.74,
+    "end": 374.99,
+    "jp": "【15-93】 <ruby>塗<rt>ぬ</rt></ruby>る ⓪ [他動1] 涂，抹，擦（颜料、药膏等）\n△<ruby>色<rt>いろ</rt></ruby>を<ruby>塗<rt>ぬ</rt></ruby>る。/ 涂色，上色。\n△<ruby>薬<rt>くすり</rt></ruby>を<ruby>塗<rt>ぬ</rt></ruby>る。/ 涂药。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "15-94",
+    "start": 374.99,
+    "end": 393.47,
+    "jp": "【15-94】 <ruby>温<rt>ぬる</rt></ruby>い ② [イ形] 微温，不冷不热；温和，不够严格，宽大\n△<ruby>温<rt>ぬる</rt></ruby>いお<ruby>茶<rt>ちゃ</rt></ruby> / 不凉不热的温茶水\n△<ruby>温<rt>ぬる</rt></ruby>い<ruby>処置<rt>しょち</rt></ruby> / 宽大的处理",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "15-95",
+    "start": 393.47,
+    "end": 410.3,
+    "jp": "【15-95】 <ruby>濡<rt>ぬ</rt></ruby>れる ⓪ [自動2] 淋湿，湿透\n△<ruby>雨<rt>あめ</rt></ruby>に<ruby>濡<rt>ぬ</rt></ruby>れた<ruby>歩道<rt>ほどう</rt></ruby> / 被雨淋湿的人行道\n△<ruby>涙<rt>なみだ</rt></ruby>に<ruby>濡<rt>ぬ</rt></ruby>れた<ruby>目<rt>め</rt></ruby> / 泪水濡湿的眼睛",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "15-96",
+    "start": 410.3,
+    "end": 433.91,
+    "jp": "【15-96】 <ruby>熱<rt>ねっ</rt></ruby>する ③ [自他動3] 加热，加温；热衷，激动\n△<ruby>鉄<rt>てつ</rt></ruby>を<ruby>熱<rt>ねっ</rt></ruby>して<ruby>溶<rt>と</rt></ruby>かす。/ 加热使铁熔化。\n△<ruby>熱<rt>ねっ</rt></ruby>しやすい<ruby>金属<rt>きんぞく</rt></ruby> / 容易导热的金属\n△<ruby>熱<rt>ねっ</rt></ruby>しやすい<ruby>人<rt>ひと</rt></ruby> / 容易激动的人",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "15-97",
+    "start": 433.91,
+    "end": 445.84,
+    "jp": "【15-97】 ネックレス ① [名] 项链\n△ネックレスを<ruby>選<rt>えら</rt></ruby>ぶ。/ 挑选项链。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "15-98",
+    "start": 445.84,
+    "end": 468.1,
+    "jp": "【15-98】 ネット ① [名] 网，发网；球网；净重\n△<ruby>頭<rt>あたま</rt></ruby>にネットを<ruby>被<rt>かぶ</rt></ruby>る。/ 头上戴发网。\n△ネットを<ruby>張<rt>は</rt></ruby>る。/ 架网，拉网。\n△ネット<ruby>一<rt>いち</rt></ruby>ポンド / 净重一磅",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "15-99",
+    "start": 468.1,
+    "end": 480.46,
+    "jp": "【15-99】 <ruby>熱湯<rt>ねっとう</rt></ruby> ⓪ [名] 沸水，开水，滚水\n△<ruby>熱湯<rt>ねっとう</rt></ruby>を<ruby>掛<rt>か</rt></ruby>ける。/ 浇开水。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "15-100",
+    "start": 480.46,
+    "end": 493.62,
+    "jp": "【15-100】 <ruby>寝巻<rt>ねま</rt></ruby>き ⓪ [名] 睡衣\n△<ruby>寝巻<rt>ねま</rt></ruby>きのままで<ruby>外<rt>そと</rt></ruby>へ<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>した。/ 穿着睡衣就跑到外面去了。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "15-101",
+    "start": 493.62,
+    "end": 508.76,
+    "jp": "【15-101】 <ruby>眠<rt>ねむ</rt></ruby>たい ⓪ [イ形] 困倦的，昏昏欲睡的\n△<ruby>昨晩<rt>さくばん</rt></ruby>はよく<ruby>眠<rt>ねむ</rt></ruby>ったのにまだ<ruby>眠<rt>ねむ</rt></ruby>たい。/ 虽然昨晚睡得很好，但还是很困。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "15-102",
+    "start": 508.76,
+    "end": 525.91,
+    "jp": "【15-102】 <ruby>眠気<rt>ねむけ</rt></ruby> ⓪ [名] 睡意，困意\n△<ruby>眠気<rt>ねむけ</rt></ruby>を<ruby>催<rt>もよお</rt></ruby>す。/ 犯困，产生睡意。\n△<ruby>眠気<rt>ねむけ</rt></ruby>を<ruby>覚<rt>さ</rt></ruby>ます。/ 驱散睡意，解困。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "15-103",
+    "start": 525.91,
+    "end": 538.44,
+    "jp": "【15-103】 <ruby>年賀状<rt>ねんがじょう</rt></ruby> ⓪ [名] 贺年卡，拜年明信片\n△<ruby>年賀状<rt>ねんがじょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>く。/ 写贺年卡。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "15-104",
+    "start": 538.44,
+    "end": 556.69,
+    "jp": "【15-104】 <ruby>年間<rt>ねんかん</rt></ruby> ⓪ [名] 年间，年代；一年间，全年\n△<ruby>明治年間<rt>めいじねんかん</rt></ruby> / 明治年间\n△<ruby>年間計画<rt>ねんかんけいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる。/ 制定全年计划。",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "15-105",
+    "start": 556.69,
+    "end": 575.46,
+    "jp": "【15-105】 <ruby>年中<rt>ねんじゅう</rt></ruby> ① [名・副] 全年，整年，一年到头\n△<ruby>年中無休<rt>ねんじゅうむきゅう</rt></ruby> / 全年无休，全年照常营业\n△<ruby>年中忙<rt>ねんじゅういそが</rt></ruby>しい。/ 终年繁忙。",
+    "cn": ""
+  }
+]
