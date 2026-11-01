@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "17-1",
+    "start": 0.2,
+    "end": 15.33,
+    "jp": "【17-1】 <ruby>秘書<rt>ひしょ</rt></ruby> ① [名] 秘书\n△<ruby>社長<rt>しゃちょう</rt></ruby>の<ruby>秘書<rt>ひしょ</rt></ruby> / 社长的秘书\n△<ruby>秘書<rt>ひしょ</rt></ruby>になる。/ 成为秘书。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "17-2",
+    "start": 15.33,
+    "end": 32.76,
+    "jp": "【17-2】 <ruby>非常<rt>ひじょう</rt></ruby> ⓪ [名・ナ形] 非常，特别；紧急，紧迫\n△<ruby>非常<rt>ひじょう</rt></ruby>な<ruby>暑<rt>あつ</rt></ruby>さ / 非常炎热\n△<ruby>非常<rt>ひじょう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby> / 紧急情况",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "17-3",
+    "start": 32.76,
+    "end": 48.32,
+    "jp": "【17-3】 非常〜[ひじょう〜] [接頭] 非常……，紧急……\n△<ruby>非常口<rt>ひじょうぐち</rt></ruby> / 紧急出口\n△<ruby>非常事態<rt>ひじょうじたい</rt></ruby> / 紧急事态",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "17-4",
+    "start": 48.32,
+    "end": 60.06,
+    "jp": "【17-4】 <ruby>美人<rt>びじん</rt></ruby> ① [名] 美人，美女\n△<ruby>近所<rt>きんじょ</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>美人<rt>びじん</rt></ruby> / 附近有名的美女",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "17-5",
+    "start": 60.06,
+    "end": 77.13,
+    "jp": "【17-5】 <ruby>額<rt>ひたい</rt></ruby> ⓪ [名] 额，前额，脑门\n△<ruby>額<rt>ひたい</rt></ruby>の<ruby>広<rt>ひろ</rt></ruby>い<ruby>人<rt>ひと</rt></ruby> / 宽额头的人\n△<ruby>猫<rt>ねこ</rt></ruby>の<ruby>額<rt>ひたい</rt></ruby> / 狭小的地方，弹丸之地",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "17-6",
+    "start": 77.13,
+    "end": 103.4,
+    "jp": "【17-6】 ひっくり<ruby>返<rt>ひっくりかえ</rt></ruby>す ⑤ [他動1] 颠倒过来，翻过来；推翻；弄翻，打翻\n△カードをひっくり<ruby>返<rt>かえ</rt></ruby>す。/ 把卡片翻过来。\n△<ruby>計画<rt>けいかく</rt></ruby>をひっくり<ruby>返<rt>かえ</rt></ruby>す。/ 推翻计划。\n△<ruby>茶碗<rt>ちゃわん</rt></ruby>をひっくり<ruby>返<rt>かえ</rt></ruby>す。/ 把茶碗打翻了。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "17-7",
+    "start": 103.4,
+    "end": 115.78,
+    "jp": "【17-7】 <ruby>日付<rt>ひづけ</rt></ruby> ⓪ [名] 年月日，日期\n△この<ruby>手紙<rt>てがみ</rt></ruby>には<ruby>日付<rt>ひづけ</rt></ruby>がない。/ 这封信没有写日期。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "17-8",
+    "start": 115.78,
+    "end": 133.14,
+    "jp": "【17-8】 <ruby>必死<rt>ひっし</rt></ruby> ⓪ [名・ナ形] 必死；拼命，殊死\n△<ruby>必死<rt>ひっし</rt></ruby>の<ruby>覚悟<rt>かくご</rt></ruby> / 必死的决心\n△<ruby>必死<rt>ひっし</rt></ruby>になって<ruby>働<rt>はたら</rt></ruby>く。/ 拼命工作。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "17-9",
+    "start": 133.14,
+    "end": 145.94,
+    "jp": "【17-9】 <ruby>筆者<rt>ひっしゃ</rt></ruby> ① [名] 笔者，作者\n△この<ruby>本<rt>ほん</rt></ruby>の<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>女性<rt>じょせい</rt></ruby>である。/ 这本书的作者是女性。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "17-10",
+    "start": 145.94,
+    "end": 157.94,
+    "jp": "【17-10】 <ruby>必要性<rt>ひつようせい</rt></ruby> ⓪ [名] 必要性\n△<ruby>必要性<rt>ひつようせい</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い。/ 很有必要。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "17-11",
+    "start": 157.94,
+    "end": 177.1,
+    "jp": "【17-11】 一〜[ひと〜] [接頭] 一……，一下；稍微，略微\n△<ruby>一揃<rt>ひとそろ</rt></ruby>い / 一套\n△<ruby>先生<rt>せんせい</rt></ruby>の<ruby>一言<rt>ひとこと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて<ruby>安心<rt>あんしん</rt></ruby>した。/ 听了老师的一句话，放下了心。",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "17-12",
+    "start": 177.1,
+    "end": 194.68,
+    "jp": "【17-12】 <ruby>一言<rt>ひとこと</rt></ruby> ② [名] 一言，一句话，三言两语\n△<ruby>一言<rt>ひとこと</rt></ruby>も<ruby>言<rt>い</rt></ruby>わない。/ 一言不发。\n△<ruby>最後<rt>さいご</rt></ruby>に<ruby>一言<rt>ひとこと</rt></ruby>。/ 最后说几句话。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "17-13",
+    "start": 194.68,
+    "end": 207.71,
+    "jp": "【17-13】 <ruby>人差<rt>ひとさ</rt></ruby>し<ruby>指<rt>ゆび</rt></ruby> ④ [名] 食指\n△<ruby>人差<rt>ひとさ</rt></ruby>し<ruby>指<rt>ゆび</rt></ruby>で<ruby>地図<rt>ちず</rt></ruby>を<ruby>指<rt>さ</rt></ruby>す。/ 用食指指着地图。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "17-14",
+    "start": 207.71,
+    "end": 226.08,
+    "jp": "【17-14】 <ruby>一<rt>ひと</rt></ruby>つ ② [副] 稍微，试着；请，务必\n△<ruby>一<rt>ひと</rt></ruby>つ<ruby>食<rt>た</rt></ruby>べてみよう。/ 尝一点看看。\n△<ruby>一<rt>ひと</rt></ruby>つよろしくお<ruby>願<rt>ねが</rt></ruby>いします。/ 请您多多关照。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "17-15",
+    "start": 226.08,
+    "end": 248.43,
+    "jp": "【17-15】 <ruby>人手<rt>ひとで</rt></ruby> ⓪ [名] 他人之手；帮手；（工作的）人手，人员\n△<ruby>人手<rt>ひとで</rt></ruby>に<ruby>渡<rt>わた</rt></ruby>す。/ 交到别人手里。\n△<ruby>人手<rt>ひとで</rt></ruby>を<ruby>借<rt>か</rt></ruby>りる。/ 找帮手。\n△<ruby>人手<rt>ひとで</rt></ruby>が<ruby>足<rt>た</rt></ruby>りない。/ 人手不够。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "17-16",
+    "start": 248.43,
+    "end": 260.56,
+    "jp": "【17-16】 <ruby>人出<rt>ひとで</rt></ruby> ⓪ [名] 外出的人群\n△<ruby>休日<rt>きゅうじつ</rt></ruby>は<ruby>人出<rt>ひとで</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。/ 节假日外出的人很多。",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "17-17",
+    "start": 260.56,
+    "end": 273.09,
+    "jp": "【17-17】 <ruby>一休<rt>ひとやす</rt></ruby>み ② [名・自動3] 休息片刻，歇一会儿\n△ここで<ruby>一休<rt>ひとやす</rt></ruby>みする。/ 在这里歇一会儿。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "17-18",
+    "start": 273.09,
+    "end": 284.83,
+    "jp": "【17-18】 <ruby>一人<rt>ひとり</rt></ruby>っ<ruby>子<rt>こ</rt></ruby> ③ [名] 独生子女\n△<ruby>一人<rt>ひとり</rt></ruby>っ<ruby>子政策<rt>こせいさく</rt></ruby> / 独生子女政策",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "17-19",
+    "start": 284.83,
+    "end": 304.11,
+    "jp": "【17-19】 <ruby>一人一人<rt>ひとりひとり</rt></ruby> ⑤ [名・副] 每一个人；一个一个地\n△これは<ruby>一人一人<rt>ひとりひとり</rt></ruby>の<ruby>責任<rt>せきにん</rt></ruby>だ。/ 这是每一个人的责任。\n△<ruby>一人一人<rt>ひとりひとり</rt></ruby><ruby>名前<rt>なまえ</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>ぶ。/ 一个一个地叫名字。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "17-20",
+    "start": 304.11,
+    "end": 321.61,
+    "jp": "【17-20】 <ruby>日<rt>ひ</rt></ruby>にち ⓪ [名] 天数，日子；日期\n△<ruby>日<rt>ひ</rt></ruby>にちが<ruby>経<rt>た</rt></ruby>つ。/ 时光流逝。\n△<ruby>会合<rt>かいごう</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>にちを<ruby>決<rt>き</rt></ruby>める。/ 定下聚会的日期。",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "17-21",
+    "start": 321.61,
+    "end": 338.61,
+    "jp": "【17-21】 <ruby>捻<rt>ひね</rt></ruby>る ② [他動1] 捻，拧，扭；转动\n△<ruby>髭<rt>ひげ</rt></ruby>を<ruby>捻<rt>ひね</rt></ruby>る。/ 捻胡须。\n△<ruby>腰<rt>こし</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>へ<ruby>捻<rt>ひね</rt></ruby>る。/ 把腰向左扭转。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "17-22",
+    "start": 338.61,
+    "end": 356.02,
+    "jp": "【17-22】 <ruby>批判<rt>ひはん</rt></ruby> ⓪ [名・他動3] 批评，批判，评论\n△<ruby>悪<rt>わる</rt></ruby>い<ruby>行<rt>おこな</rt></ruby>いを<ruby>批判<rt>ひはん</rt></ruby>する。/ 批判不良行为。\n△<ruby>批判<rt>ひはん</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける。/ 受到批评。",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "17-23",
+    "start": 356.02,
+    "end": 366.89,
+    "jp": "【17-23】 <ruby>日々<rt>ひび</rt></ruby> ① [名・副] 天天，每天\n△<ruby>日々<rt>ひび</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby> / 每天的生活",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "17-24",
+    "start": 366.89,
+    "end": 385.24,
+    "jp": "【17-24】 <ruby>批評<rt>ひひょう</rt></ruby> ⓪ [名・他動3] 评论，评价，批评\n△<ruby>映画<rt>えいが</rt></ruby>の<ruby>批評<rt>ひひょう</rt></ruby>を<ruby>新聞<rt>しんぶん</rt></ruby>に<ruby>載<rt>の</rt></ruby>せる。/ 在报纸上刊登影评。\n△<ruby>人<rt>ひと</rt></ruby>を<ruby>批評<rt>ひひょう</rt></ruby>する。/ 评价他人。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "17-25",
+    "start": 385.24,
+    "end": 400.87,
+    "jp": "【17-25】 <ruby>皮膚<rt>ひふ</rt></ruby> ① [名] 皮肤\n△<ruby>皮膚<rt>ひふ</rt></ruby>が<ruby>綺麗<rt>きれい</rt></ruby>だ。/ 皮肤白净。\n△<ruby>皮膚<rt>ひふ</rt></ruby>が<ruby>荒<rt>あ</rt></ruby>れている。/ 皮肤粗糙。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "17-26",
+    "start": 400.87,
+    "end": 416.76,
+    "jp": "【17-26】 <ruby>秘密<rt>ひみつ</rt></ruby> ⓪ [名・ナ形] 秘密，机密\n△<ruby>秘密<rt>ひみつ</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る。/ 保守秘密。\n△<ruby>秘密<rt>ひみつ</rt></ruby>が<ruby>漏<rt>も</rt></ruby>れた。/ 秘密泄露了。",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "17-27",
+    "start": 416.76,
+    "end": 432.83,
+    "jp": "【17-27】 <ruby>微妙<rt>びみょう</rt></ruby> ⓪ [名・ナ形] 微妙\n△<ruby>微妙<rt>びみょう</rt></ruby>な<ruby>言<rt>い</rt></ruby>い<ruby>回<rt>まわ</rt></ruby>し / 微妙的措辞\n△<ruby>微妙<rt>びみょう</rt></ruby>な<ruby>違<rt>ちが</rt></ruby>い / 微妙的差别",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "17-28",
+    "start": 432.83,
+    "end": 449.27,
+    "jp": "【17-28】 <ruby>紐<rt>ひも</rt></ruby> ⓪ [名] 带子，细绳\n△<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>紐<rt>ひも</rt></ruby>を<ruby>解<rt>ほど</rt></ruby>く。/ 解开行李的绳子。\n△<ruby>靴<rt>くつ</rt></ruby>の<ruby>紐<rt>ひも</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ。/ 系鞋带。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "17-29",
+    "start": 449.27,
+    "end": 462.17,
+    "jp": "【17-29】 <ruby>百貨店<rt>ひゃっかてん</rt></ruby> ③ [名] 百货商店\n△<ruby>百貨店<rt>ひゃっかてん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>って<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をする。/ 去百货商店买东西。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "17-30",
+    "start": 462.17,
+    "end": 473.93,
+    "jp": "【17-30】 <ruby>費用<rt>ひよう</rt></ruby> ① [名] 费用，开销，经费\n△<ruby>費用<rt>ひよう</rt></ruby>を<ruby>負担<rt>ふたん</rt></ruby>する。/ 负担费用。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "17-31",
+    "start": 473.93,
+    "end": 485.84,
+    "jp": "【17-31】 <ruby>美容<rt>びよう</rt></ruby> ⓪ [名] 美容\n△<ruby>美容<rt>びよう</rt></ruby>と<ruby>健康<rt>けんこう</rt></ruby>によい。/ 有益于美容和健康。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "17-32",
+    "start": 485.84,
+    "end": 501.76,
+    "jp": "【17-32】 <ruby>表<rt>ひょう</rt></ruby> ⓪ [名] 表，表格，图表\n△<ruby>表<rt>ひょう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る。/ 制表。\n△<ruby>表<rt>ひょう</rt></ruby>に<ruby>書<rt>か</rt></ruby>き<ruby>入<rt>い</rt></ruby>れる。/ 填入表格。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "17-33",
+    "start": 501.76,
+    "end": 516.84,
+    "jp": "【17-33】 〜<ruby>表<rt>ひょう</rt></ruby> [接尾] ……表\n△<ruby>時刻表<rt>じこくひょう</rt></ruby> / 时刻表\n△<ruby>日程表<rt>にっていひょう</rt></ruby> / 日程表",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "17-34",
+    "start": 516.84,
+    "end": 532.73,
+    "jp": "【17-34】 〜<ruby>病<rt>びょう</rt></ruby> [接尾] ……病\n△<ruby>心臓病<rt>しんぞうびょう</rt></ruby> / 心脏病\n△<ruby>臆病<rt>おくびょう</rt></ruby> / 胆怯，胆小，懦弱",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "17-35",
+    "start": 532.73,
+    "end": 545.79,
+    "jp": "【17-35】 <ruby>美容院<rt>びよういん</rt></ruby> ② [名] 美容院，美发店\n△<ruby>美容院<rt>びよういん</rt></ruby>で<ruby>髪<rt>かみ</rt></ruby>をカットする。/ 在美容院剪头发。",
+    "cn": ""
+  }
+]

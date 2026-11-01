@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "word_id": "17-106",
+    "start": 0.2,
+    "end": 25.34,
+    "jp": "【17-106】 ぶつかる ⓪ [自動1] 碰，撞；（偶然）碰到，遇到；冲突，争吵\n△<ruby>壁<rt>かべ</rt></ruby>にぶつかる。/ 撞到墙上。\n△<ruby>駅<rt>えき</rt></ruby>で<ruby>知<rt>し</rt></ruby>り<ruby>合<rt>あ</rt></ruby>いにぶつかった。/ 在车站遇到了熟人。\n△<ruby>真正面<rt>ましょうめん</rt></ruby>からぶつかる。/ 发生正面冲突。",
+    "cn": ""
+  },
+  {
+    "id": 2,
+    "word_id": "17-107",
+    "start": 25.34,
+    "end": 45.07,
+    "jp": "【17-107】 ぶつける ⓪ [他動2] 扔，投，抛；碰上，撞上\n△<ruby>質問<rt>しつもん</rt></ruby>をぶつける。/ （不客气地）抛出问题。\n△<ruby>車<rt>くるま</rt></ruby>を<ruby>電柱<rt>でんちゅう</rt></ruby>にぶつけてしまった。/ 车撞上了电线杆。",
+    "cn": ""
+  },
+  {
+    "id": 3,
+    "word_id": "17-108",
+    "start": 45.07,
+    "end": 55.78,
+    "jp": "【17-108】 <ruby>筆<rt>ふで</rt></ruby> ⓪ [名] 笔，毛笔\n△<ruby>筆<rt>ふで</rt></ruby>で<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く。/ 用毛笔写字。",
+    "cn": ""
+  },
+  {
+    "id": 4,
+    "word_id": "17-109",
+    "start": 55.78,
+    "end": 76.43,
+    "jp": "【17-109】 ふと ⓪ [副] 偶然，猛然，突然\n△ふと<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す。/ 偶然想起。\n△ふと<ruby>立<rt>た</rt></ruby>ち<ruby>止<rt>ど</rt></ruby>まる。/ 突然停下脚步。\n△ふと<ruby>振<rt>ふ</rt></ruby>り<ruby>向<rt>む</rt></ruby>く。/ 猛然回头。",
+    "cn": ""
+  },
+  {
+    "id": 5,
+    "word_id": "17-110",
+    "start": 76.43,
+    "end": 87.69,
+    "jp": "【17-110】 <ruby>部品<rt>ぶひん</rt></ruby> ⓪ [名] 零件，部件\n△ラジオの<ruby>部品<rt>ぶひん</rt></ruby> / 收音机的零部件",
+    "cn": ""
+  },
+  {
+    "id": 6,
+    "word_id": "17-111",
+    "start": 87.69,
+    "end": 106.64,
+    "jp": "【17-111】 <ruby>部分<rt>ぶぶん</rt></ruby> ① [名] 部分，一部分\n△<ruby>一部<rt>いちぶ</rt></ruby>の<ruby>部分<rt>ぶぶん</rt></ruby>が<ruby>完成<rt>かんせい</rt></ruby>しただけだ。/ 只完成了一部分。\n△これは<ruby>三<rt>みっ</rt></ruby>つの<ruby>部分<rt>ぶぶん</rt></ruby>からなっている。/ 这是由三个部分组成的。",
+    "cn": ""
+  },
+  {
+    "id": 7,
+    "word_id": "17-112",
+    "start": 106.64,
+    "end": 122.48,
+    "jp": "【17-112】 <ruby>父母<rt>ふぼ</rt></ruby> ① [名] 父母\n△<ruby>父母<rt>ふぼ</rt></ruby>の<ruby>国<rt>くに</rt></ruby> / 祖国\n△<ruby>子<rt>こ</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>知<rt>し</rt></ruby>る<ruby>父母<rt>ふぼ</rt></ruby>の<ruby>恩<rt>おん</rt></ruby>。/ 养儿方知父母恩。",
+    "cn": ""
+  },
+  {
+    "id": 8,
+    "word_id": "17-113",
+    "start": 122.48,
+    "end": 139.99,
+    "jp": "【17-113】 <ruby>不満<rt>ふまん</rt></ruby> ⓪ [名・ナ形] 不满，不满足，不满意\n△<ruby>不満<rt>ふまん</rt></ruby>を<ruby>漏<rt>も</rt></ruby>らす。/ 流露不满。\n△<ruby>不満<rt>ふまん</rt></ruby>に<ruby>思<rt>おも</rt></ruby>う。/ 感到不满足，觉得不满意。",
+    "cn": ""
+  },
+  {
+    "id": 9,
+    "word_id": "17-114",
+    "start": 139.99,
+    "end": 151.41,
+    "jp": "【17-114】 <ruby>踏<rt>ふ</rt></ruby>み<ruby>切<rt>き</rt></ruby>り ⓪ [名] 铁路道口\n△<ruby>踏<rt>ふ</rt></ruby>み<ruby>切<rt>き</rt></ruby>りを<ruby>渡<rt>わた</rt></ruby>る。/ 过铁路道口。",
+    "cn": ""
+  },
+  {
+    "id": 10,
+    "word_id": "17-115",
+    "start": 151.41,
+    "end": 168.37,
+    "jp": "【17-115】 <ruby>踏<rt>ふ</rt></ruby>む ⓪ [他動1] 踏，踩；走上，踏上\n△<ruby>人<rt>ひと</rt></ruby>の<ruby>足<rt>あし</rt></ruby>を<ruby>踏<rt>ふ</rt></ruby>む。/ 踩别人的脚。\n△<ruby>外国<rt>がいこく</rt></ruby>の<ruby>地<rt>ち</rt></ruby>を<ruby>踏<rt>ふ</rt></ruby>む。/ 踏上异国他乡。",
+    "cn": ""
+  },
+  {
+    "id": 11,
+    "word_id": "17-116",
+    "start": 168.37,
+    "end": 180.32,
+    "jp": "【17-116】 <ruby>麓<rt>ふもと</rt></ruby> ③ [名] 山脚，山麓\n△<ruby>山<rt>やま</rt></ruby>の<ruby>麓<rt>ふもと</rt></ruby>にある<ruby>家<rt>いえ</rt></ruby> / 在山脚下的房子",
+    "cn": ""
+  },
+  {
+    "id": 12,
+    "word_id": "17-117",
+    "start": 180.32,
+    "end": 192.44,
+    "jp": "【17-117】 <ruby>増<rt>ふ</rt></ruby>やす ② [他動1] 增加，增长，繁殖\n△<ruby>資本<rt>しほん</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす。/ 增加资本。",
+    "cn": ""
+  },
+  {
+    "id": 13,
+    "word_id": "17-118",
+    "start": 192.44,
+    "end": 205.02,
+    "jp": "【17-118】 <ruby>不愉快<rt>ふゆかい</rt></ruby> ② [名・ナ形] 不愉快，不痛快，不舒服\n△<ruby>不愉快<rt>ふゆかい</rt></ruby>に<ruby>感<rt>かん</rt></ruby>ずる。/ 感到不愉快。",
+    "cn": ""
+  },
+  {
+    "id": 14,
+    "word_id": "17-119",
+    "start": 205.02,
+    "end": 218.13,
+    "jp": "【17-119】 フライパン ⓪ [名] 平底炒菜锅，煎锅\n△フライパンで<ruby>卵<rt>たまご</rt></ruby>を<ruby>炒<rt>いた</rt></ruby>める。/ 用煎锅炒鸡蛋。",
+    "cn": ""
+  },
+  {
+    "id": 15,
+    "word_id": "17-120",
+    "start": 218.13,
+    "end": 237.75,
+    "jp": "【17-120】 プラス ① [名・他動3] 加号；正数；利益，好处；加，加上\n△<ruby>将来<rt>しょうらい</rt></ruby>プラスになる。/ 对将来有好处。\n△<ruby>三<rt>さん</rt></ruby>プラス<ruby>五<rt>ご</rt></ruby>は<ruby>八<rt>はち</rt></ruby>。/ 三加上五是八。",
+    "cn": ""
+  },
+  {
+    "id": 16,
+    "word_id": "17-121",
+    "start": 237.75,
+    "end": 248.6,
+    "jp": "【17-121】 ブラシ ① [名] 刷子\n△<ruby>歯<rt>は</rt></ruby>ブラシ / 牙刷",
+    "cn": ""
+  },
+  {
+    "id": 17,
+    "word_id": "17-122",
+    "start": 248.6,
+    "end": 261.95,
+    "jp": "【17-122】 プラットホーム ⑤ [名] 月台，站台\n△<ruby>電車<rt>でんしゃ</rt></ruby>がプラットホームに<ruby>滑<rt>すべ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む。/ 电车驶进站台。",
+    "cn": ""
+  },
+  {
+    "id": 18,
+    "word_id": "17-123",
+    "start": 261.95,
+    "end": 289.2,
+    "jp": "【17-123】 ぶらぶら ① [副・自動3] 摇晃，摆动；溜达；无工作，赋闲\n△<ruby>風鈴<rt>ふうりん</rt></ruby>が<ruby>風<rt>かぜ</rt></ruby>でぶらぶらしている。/ 风铃被风吹得来回摇晃。\n△<ruby>彼<rt>かれ</rt></ruby>はぶらぶら<ruby>家<rt>いえ</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>った。/ 他溜达着回家了。\n△<ruby>失業<rt>しつぎょう</rt></ruby>してぶらぶらしている。/ 失业赋闲在家。",
+    "cn": ""
+  },
+  {
+    "id": 19,
+    "word_id": "17-124",
+    "start": 289.2,
+    "end": 312.1,
+    "jp": "【17-124】 <ruby>振<rt>ふ</rt></ruby>り ② [名] 挥，摆动；（外表的）样子，打扮；装作，假装\n△<ruby>腕<rt>うで</rt></ruby>の<ruby>振<rt>ふ</rt></ruby>り / 胳膊的摆动\n△<ruby>変<rt>へん</rt></ruby>な<ruby>振<rt>ふ</rt></ruby>りをした<ruby>人<rt>ひと</rt></ruby> / 打扮古怪的人\n△<ruby>寝<rt>ね</rt></ruby>たふりをする。/ 假装睡觉。",
+    "cn": ""
+  },
+  {
+    "id": 20,
+    "word_id": "17-125",
+    "start": 312.1,
+    "end": 330.57,
+    "jp": "【17-125】 <ruby>振<rt>ふ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む ③ [他動1] 撒入；存入，汇入\n△スープに<ruby>胡椒<rt>こしょう</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む。/ 往汤里撒入胡椒粉。\n△<ruby>銀行振<rt>ぎんこうふ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>み / 银行转账汇款",
+    "cn": ""
+  },
+  {
+    "id": 21,
+    "word_id": "17-126",
+    "start": 330.57,
+    "end": 352.37,
+    "jp": "【17-126】 <ruby>振<rt>ふ</rt></ruby>る ⓪ [他動1] 挥，摇摆；撒；甩掉，拒绝\n△<ruby>手<rt>て</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>る。/ 挥手。\n△<ruby>首<rt>くび</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>る。/ 摇头。\n△<ruby>料理<rt>りょうり</rt></ruby>に<ruby>塩<rt>しお</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>る。/ 往菜上撒盐。",
+    "cn": ""
+  },
+  {
+    "id": 22,
+    "word_id": "17-127",
+    "start": 352.37,
+    "end": 369.75,
+    "jp": "【17-127】 フリー ② [名・ナ形] 无拘束，自由；免费，不要钱\n△フリーな<ruby>立場<rt>たちば</rt></ruby> / 自由的立场\n△フリーの<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby> / 免费饮料",
+    "cn": ""
+  },
+  {
+    "id": 23,
+    "word_id": "17-128",
+    "start": 369.75,
+    "end": 387.79,
+    "jp": "【17-128】 <ruby>振<rt>ふ</rt></ruby>り<ruby>向<rt>む</rt></ruby>く ③ [自動1] 回头；理睬\n△<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>のほうを<ruby>振<rt>ふ</rt></ruby>り<ruby>向<rt>む</rt></ruby>いた。/ 她把头转向我这边。\n△<ruby>振<rt>ふ</rt></ruby>り<ruby>向<rt>む</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>もない。/ 谁都不理睬。",
+    "cn": ""
+  },
+  {
+    "id": 24,
+    "word_id": "17-129",
+    "start": 387.79,
+    "end": 400.15,
+    "jp": "【17-129】 ブルー ② [名・ナ形] 蓝色，天蓝色；忧郁\n△ブルーのシャツを<ruby>着<rt>き</rt></ruby>る。/ 穿蓝色的衬衫。",
+    "cn": ""
+  },
+  {
+    "id": 25,
+    "word_id": "17-130",
+    "start": 400.15,
+    "end": 419.21,
+    "jp": "【17-130】 <ruby>震<rt>ふる</rt></ruby>える ⓪ [自動2] 震动；发抖，哆嗦\n△<ruby>地震<rt>じしん</rt></ruby>でガラスが<ruby>震<rt>ふる</rt></ruby>えた。/ 由于地震，窗玻璃震动起来了。\n△<ruby>怖<rt>こわ</rt></ruby>がって<ruby>震<rt>ふる</rt></ruby>える。/ 吓得发抖。",
+    "cn": ""
+  },
+  {
+    "id": 26,
+    "word_id": "17-131",
+    "start": 419.21,
+    "end": 431.02,
+    "jp": "【17-131】 <ruby>古<rt>ふる</rt></ruby>く ① [副] 很早以前，自古\n△<ruby>古<rt>ふる</rt></ruby>くからの<ruby>友人<rt>ゆうじん</rt></ruby> / 老友，故交",
+    "cn": ""
+  },
+  {
+    "id": 27,
+    "word_id": "17-132",
+    "start": 431.02,
+    "end": 450.45,
+    "jp": "【17-132】 <ruby>振<rt>ふ</rt></ruby>る<ruby>舞<rt>ま</rt></ruby>う ③ [自他動1] 行动，动作；请客，款待\n△<ruby>自由<rt>じゆう</rt></ruby>に<ruby>振<rt>ふ</rt></ruby>る<ruby>舞<rt>ま</rt></ruby>う。/ 自由行动。\n△<ruby>出席者全員<rt>しゅっせきしゃぜんいん</rt></ruby>に<ruby>酒<rt>さけ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>る<ruby>舞<rt>ま</rt></ruby>う。/ 款待全部出席者喝酒。",
+    "cn": ""
+  },
+  {
+    "id": 28,
+    "word_id": "17-133",
+    "start": 450.45,
+    "end": 474.48,
+    "jp": "【17-133】 ブレーキ ② [名] 制动器，刹车；阻碍，制止\n△<ruby>急<rt>きゅう</rt></ruby>ブレーキをかける。/ 紧急刹车。\n△ブレーキがきかない。/ 刹车失灵。\n△<ruby>行<rt>い</rt></ruby>き<ruby>過<rt>す</rt></ruby>ぎにブレーキをかける。/ 制止过火的行动。",
+    "cn": ""
+  },
+  {
+    "id": 29,
+    "word_id": "17-134",
+    "start": 474.48,
+    "end": 504.5,
+    "jp": "【17-134】 <ruby>触<rt>ふ</rt></ruby>れる ⓪ [自他動2] 接触，碰触；涉及，提到；（耳、目等）感觉到；违反\n△<ruby>手<rt>て</rt></ruby>で<ruby>品物<rt>しなもの</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れる。/ 用手触摸物品。\n△<ruby>事件<rt>じけん</rt></ruby>の<ruby>本質<rt>ほんしつ</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れる。/ 涉及事件的本质。\n△<ruby>目<rt>め</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れる。/ 看到，映入眼帘。\n△<ruby>法律<rt>ほうりつ</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れる。/ 违反法律。",
+    "cn": ""
+  },
+  {
+    "id": 30,
+    "word_id": "17-135",
+    "start": 504.5,
+    "end": 526.54,
+    "jp": "【17-135】 プログラム ③ [名] 节目，节目单；程序；计划表，日程安排表\n△<ruby>送別<rt>そうべつ</rt></ruby>のプログラム / 欢送会的节目单\n△<ruby>全<rt>すべ</rt></ruby>てはプログラムどおりに<ruby>進行<rt>しんこう</rt></ruby>した。/ 一切都按计划进行了。",
+    "cn": ""
+  },
+  {
+    "id": 31,
+    "word_id": "17-136",
+    "start": 526.54,
+    "end": 539.48,
+    "jp": "【17-136】 プロジェクター ③ [名] 放映机，投影仪\n△プロジェクターを<ruby>購入<rt>こうにゅう</rt></ruby>する。/ 购买投影仪。",
+    "cn": ""
+  },
+  {
+    "id": 32,
+    "word_id": "17-137",
+    "start": 539.48,
+    "end": 561.9,
+    "jp": "【17-137】 <ruby>風呂敷<rt>ふろしき</rt></ruby> ⓪ [名] 包袱皮，方形包布\n△<ruby>風呂敷<rt>ふろしき</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>を<ruby>包<rt>つつ</rt></ruby>む。/ 用包袱皮包书。\n△<ruby>風呂敷<rt>ふろしき</rt></ruby>を<ruby>解<rt>ほど</rt></ruby>く。/ 解开包袱皮。\n△<ruby>大風呂敷<rt>おおぶろしき</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げる。/ 大吹大擂。",
+    "cn": ""
+  },
+  {
+    "id": 33,
+    "word_id": "17-138",
+    "start": 561.9,
+    "end": 574.34,
+    "jp": "【17-138】 フロントガラス ⑤ [名] 挡风玻璃\n△フロントガラスを<ruby>拭<rt>ふ</rt></ruby>く。/ 擦挡风玻璃。",
+    "cn": ""
+  },
+  {
+    "id": 34,
+    "word_id": "17-139",
+    "start": 574.34,
+    "end": 595.27,
+    "jp": "【17-139】 ふわふわ ① [副・ナ形・自動3] 轻飘飘，软绵绵；心神不定，浮躁\n△<ruby>白<rt>しろ</rt></ruby>い<ruby>雲<rt>くも</rt></ruby>がふわふわと<ruby>浮<rt>う</rt></ruby>かんでいる。/ 白云轻飘飘地飘浮着。\n△ふわふわした<ruby>気分<rt>きぶん</rt></ruby> / 心神不定的心情",
+    "cn": ""
+  },
+  {
+    "id": 35,
+    "word_id": "17-140",
+    "start": 595.27,
+    "end": 612.11,
+    "jp": "【17-140】 <ruby>雰囲気<rt>ふんいき</rt></ruby> ③ [名] 气氛，氛围\n△<ruby>静<rt>しず</rt></ruby>かな<ruby>雰囲気<rt>ふんいき</rt></ruby> / 宁静的气氛\n△<ruby>雰囲気<rt>ふんいき</rt></ruby>を<ruby>和<rt>やわ</rt></ruby>らげる。/ 缓和气氛。",
+    "cn": ""
+  }
+]
