@@ -268,6 +268,15 @@ def align_official_audio(sentences: list[str], mp3_path: str) -> list[dict]:
 
     chunks = [[st / 1000.0, ed / 1000.0] for st, ed in nonsilent_ranges]
 
+    # 检查音频末尾静音余量：因为前端 app.js 会在 effectiveEnd - 0.35s 处触发连播/循环切课，
+    # 且日语末尾「〜ます。／〜です。」发音轻柔，若原声末尾静音不足 1.8s，自动追加 1.5s 静音缓冲。
+    trailing_silence = total_dur - chunks[-1][1]
+    if trailing_silence < 1.8:
+        audio = audio + AudioSegment.silent(duration=1500)
+        audio.export(mp3_path, format="mp3", bitrate="128k")
+        total_dur = len(audio) / 1000.0
+        print(f"  [+] 已为 {mp3_path} 末尾追加 1.5s 静音缓冲 (新总时长: {total_dur:.2f}s)")
+
     # 句内逗号停顿较短（通常 <= 1.3s），句号停顿较长（通常 >= 2.0s），
     # 反复合并间隔最小的两个相邻语音块，直到块数等于句子数 n_sent
     while len(chunks) > n_sent and len(chunks) > 1:
@@ -285,7 +294,12 @@ def align_official_audio(sentences: list[str], mp3_path: str) -> list[dict]:
     if len(chunks) == n_sent:
         for idx, (sent_ruby, (st, ed)) in enumerate(zip(sentences, chunks)):
             start_t = round(max(0.0, st - 0.15), 2)
-            end_t = round(min(total_dur, ed + 0.25), 2)
+            if idx < n_sent - 1:
+                next_st = chunks[idx + 1][0]
+                end_t = round(min(next_st - 0.25, ed + 0.85), 2)
+            else:
+                # 最后一句直接延伸至追加静音缓冲后的音频末尾，确保句尾余音完整播完
+                end_t = round(total_dur, 2)
             if idx > 0 and start_t < records[-1]["end"]:
                 start_t = records[-1]["end"]
 
